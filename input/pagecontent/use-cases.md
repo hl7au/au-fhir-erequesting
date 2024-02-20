@@ -1,19 +1,18 @@
-{% include use-case-feedback.md -%}
-
 ## AU eRequesting R1 use cases
+This page contains the use cases for AU eRequesting for the first release of the TDG Implementation Guide (R1). This is a working page and will reflect the current state of agreement by the TDG as well as the current draft of the use case material.
 
-The following draft use cases are in scope for AU eRequesting Release 1. 
+{% include use-case-feedback.md -%}
 
 ### Diagnostic imaging use cases
 
 <table border="1">
 <thead>
   <tr>
-    <th width="5%">ID</th>
-    <th width="45%">Description</th>
-    <th width="17%">Actors</th>
-    <th width="17%">Systems</th>
-    <th width="18%">Data Groups</th>
+    <th style="width:5%">ID</th>
+    <th style="width:45%">Description</th>
+    <th style="width:17%">Actors</th>
+    <th style="width:17%">Systems</th>
+    <th style="width:18%">Data Groups</th>
   </tr>
 </thead>
 <tbody>
@@ -40,7 +39,7 @@ The following draft use cases are in scope for AU eRequesting Release 1.
   </tr>
   <tr>
     <td>D04</td>
-    <td><strong>Request for diagnostic examination (Reassigned request)</strong><br<br>A doctor would like to obtain a CT Brain scan (with contrast) for a patient, following a consultation about neurological  symptoms.  The doctor and patient agree upon a local diagnostic imaging service provider and the doctor submits the eRequest for the scan to that provider.  Before the patient is due to attend the provider, the patient changes their mind and elects to have the test performed by a different provider. The patient makes a booking with the new provider and when they attend the appointment they present a token to the service provider who uses it to download the eRequest information into their booking system.</td>
+    <td><strong>Request for diagnostic examination (Reassigned request)</strong><br><br>A doctor would like to obtain a CT Brain scan (with contrast) for a patient, following a consultation about neurological  symptoms.  The doctor and patient agree upon a local diagnostic imaging service provider and the doctor submits the eRequest for the scan to that provider.  Before the patient is due to attend the provider, the patient changes their mind and elects to have the test performed by a different provider. The patient makes a booking with the new provider and when they attend the appointment they present a token to the service provider who uses it to download the eRequest information into their booking system.</td>
     <td>Patient<br>Requesting Practitioner (e.g. GP)<br>Diagnostic imaging service provider</td>
     <td>Requesting System<br>Service provider booking system<br>Token management system</td>
     <td>Patient Details<br>Requestor Details<br>Requested Service Details<br>Relevant Clinical Details<br>Billing Details<br>Provider Details (initial provider)<br>Token Identifier?</td>
@@ -53,11 +52,11 @@ The following draft use cases are in scope for AU eRequesting Release 1.
 <table border="1">
 <thead>
   <tr>
-    <th width="5%">ID</th>
-    <th width="45%">Description</th>
-    <th width="17%">Actors</th>
-    <th width="17%">Systems</th>
-    <th width="18%">Data Groups</th>
+    <th style="width:5%">ID</th>
+    <th style="width:45%">Description</th>
+    <th style="width:17%">Actors</th>
+    <th style="width:17%">Systems</th>
+    <th style="width:18%">Data Groups</th>
   </tr>
 </thead>
 <tbody>
@@ -107,28 +106,28 @@ The following draft use cases are in scope for AU eRequesting Release 1.
 <tbody>
   <tr>
     <td>G01</td>
-    <td>Tracking fulfilment of a Service Request:<br><br>A GP checks the status of a requested test for a patient, e.g. Accepted, Cancelled, Pending, Collected, Preliminary, Completed, etc.</td>
+    <td><strong>Tracking fulfilment of a Service Request:</strong><br><br>A GP checks the status of a requested test for a patient, e.g. Accepted, Cancelled, Pending, Collected, Preliminary, Completed, etc.</td>
     <td>Requesting Practitioner (e.g. GP)</td>
     <td>Requesting System<br>EHR</td>
     <td>Provider Details<br>Token Identifier?<br>Patient Identifiers?</td>
   </tr>
   <tr>
     <td>G02</td>
-    <td>Cancelling an eRequest (requestor):<br><br>An eRequest is revoked/cancelled by the health care professional because the requested service is no longer required.</td>
+    <td><strong>Cancelling an eRequest (requestor):</strong><br><br>An eRequest is revoked/cancelled by the health care professional because the requested service is no longer required.</td>
     <td>Requesting Practitioner (e.g. GP)</td>
     <td>Requesting System<br>EHR</td>
     <td>Provider Details<br>Token Identifier?<br>Patient Identifiers?</td>
   </tr>
   <tr>
     <td>G03</td>
-    <td>Cancelling an eRequest (provider):<br><br>An eRequest is revoked/cancelled by the service provider because they are no longer able to provide the requested service for the patient.</td>
+    <td><strong>Cancelling an eRequest (provider):</strong><br><br>An eRequest is revoked/cancelled by the service provider because they are no longer able to provide the requested service for the patient.</td>
     <td>Service Provider</td>
     <td>EHR</td>
     <td>Requestor Details<br>Token Identifier?<br>Patient Identifiers?</td>
   </tr>
   <tr>
     <td>G07</td>
-    <td>Specification of results to be copied to another clinician:<br><br>A hospital clinician requests a diagnostic examination of a patient after they have been discharged from the hospital as a follow-up test.  The results are requested to be sent to the hospital clinician and the patient's GP.</td>
+    <td><strong>Specification of results to be copied to another clinician:</strong><br><br>A hospital clinician requests a diagnostic examination of a patient after they have been discharged from the hospital as a follow-up test.  The results are requested to be sent to the hospital clinician and the patient's GP.</td>
     <td>Hospital Clinician / Specialist<br>GP / Specialist<br>Service Provider</td>
     <td>Requesting System<br>Service provider booking system</td>
     <td>Patient Details<br>Requestor Details<br>Requested Service Details<br>Relevant Clinical Details<br>Billing Details<br>Results Copy To</td>
