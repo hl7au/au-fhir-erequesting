@@ -1,0 +1,130 @@
+# ╭─────────────────────────Commonly Used ImplementationGuide Properties───────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. The most commonly   │
+# │  used properties are included. For a list of all supported properties and their functions,     │
+# │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+id: hl7.fhir.au.erequesting
+canonical: http://hl7.org.au/fhir/erequesting
+name: AUeRequesting
+title: AU eRequesting
+description: This implementation guide is provided to support the use of FHIR®© for clinical requesting and ordering in an Australian context. , and defines the minimum set of constraints on the FHIR resources to create the AU eRequesting profiles.
+status: draft # draft | active | retired | unknown
+version: 0.1.0-ci-build
+fhirVersion: 4.0.1
+copyright: Used by permission of HL7 International, all rights reserved Creative Commons License. HL7 Australia© 2024+; Licensed Under Creative Commons No Rights Reserved.
+copyrightYear: 2024
+releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+license: CC0-1.0 
+publisher:
+  name: HL7 Australia
+  url: https://confluence.hl7.org/display/HAFWG
+  # email: test@example.org
+jurisdiction: urn:iso:std:iso:3166#AU 
+# The dependencies property corresponds to IG.dependsOn. The key is the
+# package id and the value is the version (or dev/current). For advanced
+# use cases, the value can be an object with keys for id, uri, and version.
+dependencies:
+  hl7.fhir.au.base:
+    version: current
+  hl7.fhir.au.core: 
+    version: current
+# The pages property corresponds to IG.definition.page. SUSHI can
+# auto-generate the page list, but if the author includes pages in
+# this file, it is assumed that the author will fully manage the
+# pages section and SUSHI will not generate any page entries.
+# The page file name is used as the key. If title is not provided,
+# then the title will be generated from the file name.  If a
+# generation value is not provided, it will be inferred from the
+# file name extension.  Any subproperties that are valid filenames
+# with supported extensions (e.g., .md/.xml) will be treated as
+# sub-pages.
+pages:
+  index.md:
+    title: Home
+  conformance.md:
+  guidance.md:
+    erequesting-future.md:
+      title: Future of AU eRequesting
+    relationship.md: 
+      title: Relationship with other AU standards 
+    auereqdi.md:
+      title: AU eRequesting data for interoperability 
+  use-cases.md:
+    title: Use cases
+  artefacts.md:
+    title: FHIR artefacts      
+  # profiles-and-extensions.md:
+  # capability-statements.md:
+  # search-parameters.md:
+  # terminology.md:
+  examples.md:
+  downloads.md:
+  # changes.md:
+    # title: Change Log
+  # ImplementationGuide-hl7.fhir.au.erequesting.md:
+    # title: AU eRequesting ImplementationGuide Resource
+parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
+  # path-resource:
+    # - input/resources
+    # - fsh-generated/resources
+  path-pages:
+    - input/pagecontent
+    - input/intro-notes
+    - fsh-generated/includes
+    #- input/summaries
+  # path-expansion-params: '../../input/_resources/exp-params.json' 
+  active-tables: false
+  apply-contact: true
+  apply-jurisdiction: true
+  apply-publisher: true
+  apply-version: true
+  show-inherited-invariants: true
+  usage-stats-opt-out: true
+  excludexml: true
+  excludejson: true
+  excludettl: true
+  excludemap: true
+  shownav: false
+  # generate: #what does this do - todo: remove and see4
+  #   - xml
+  #   - json
+  # no-validate:
+  #   - '*/*'  # does not seems to work
+  #   - 'StructureDefinition/*'
+  # html-exempt:  
+  # ipa-comparison: 
+  #   - '{current}'
+  logging:
+    - tx #tx: Messages describing the use of the terminology server (for debugging)
+    - html #html: Log when validating an html page (troubleshooting only - leave off)
+    - generate #generate: Log when producing an individual resource (troubleshooting only - leave off)
+    - init #init: Messages describing the start up process (for debugging)
+    - progress #progress: Overall progress messages
+  releaselabel: CI Build
+#
+# The parameters property represents IG.definition.parameter. Rather
+# than a list of code/value pairs (as in the ImplementationGuide
+# resource), the code is the YAML key. If a parameter allows repeating
+# values, the value in the YAML should be a sequence/array.
+# For parameters defined by core FHIR see:
+# http://build.fhir.org/codesystem-guide-parameter-code.html
+# For parameters defined by the FHIR Tools IG see:
+# http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
+#
+#
+# ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
+# │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
+# │  resource. These properties are less commonly needed than those above.                         │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+#
+# Those who need more control or want to add additional details to the contact values can use
+# contact directly and follow the format outlined in the ImplementationGuide resource and
+# ContactDetail.
+#
+contact:
+  name: HL7 Australia FHIR Work Group
+  telecom:
+    system: url # phone | fax | email | pager | url | sms | other
+    value: https://confluence.hl7.org/display/HAFWG
+    use: work
+
