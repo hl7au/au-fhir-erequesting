@@ -24,10 +24,10 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="auereqdi.html">eRequesting Data for Interoperability</a>
+        <a href="auereqdi.html">AU eRequesting Data for Interoperability</a>
       </li>
       <li>
-        <a href="relationship.html">Relationship with other AU standards</a>
+        <a href="relationship.html">Relationship with other HL7 AU FHIR IGs</a>
       </li>
       <li>
         <a href="erequesting-future.html">Future of AU eRequesting </a>

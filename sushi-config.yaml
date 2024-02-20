@@ -46,9 +46,9 @@ pages:
     erequesting-future.md:
       title: Future of AU eRequesting
     relationship.md: 
-      title: Relationship with other AU standards 
+      title: Relationship with other HL7 AU FHIR IGs
     auereqdi.md:
-      title: AU eRequesting data for interoperability 
+      title: AU eRequesting Data for Interoperability
   use-cases.md:
     title: Use cases
   artefacts.md:

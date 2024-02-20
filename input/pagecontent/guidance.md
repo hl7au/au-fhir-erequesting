@@ -1,3 +1,4 @@
-- [Future of AU eRequesting](erequesting-future.html)
-- [Relationship with other AU standards](relationship.html)
 - [eRequesting Data for Interoperability](auereqdi.html)
+- [Relationship with other HL7 AU FHIR IGs](relationship.html)
+- [Future of AU eRequesting](erequesting-future.html)
+
