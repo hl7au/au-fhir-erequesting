@@ -21,19 +21,17 @@ In focus for the Sparked initiative are:
 
 ### How to read this guide
 
-This is a placeholder for when content becomes available. 
-
 This guide is divided into several pages which are listed at the top of each page in the menu bar.
 
 - [Home](index.html): This page provides the introduction and scope for this guide.
-- [Conformance](conformance.html): This page describes the set of rules to claim conformance to this guide including the expectations for must support elements in AU Core profiles.
-- [Guidance](guidance.html): This set of pages lists the guidance for this guide.
-  - [AU eRequesting data for interoperability](aureqdi.html): This page maps AU eRequesting profiles to the AUeRequestingDI data classes and data elements.
-  - [Relationship with other HL7 AU FHIR IGs](relationship.html): This page provides information on the relationship between this and other HL7 AU FHIR implementation guides.
-  - [Future of AU eRequesting](erequesting-future.html): This page outlines the approach to adding new content to AU eRequesting.
+- [Conformance](conformance.html): This is a placeholder for when content becomes available.
+- [Guidance](guidance.html): This is a placeholder for when content becomes available.
+  - [AU eRequesting data for interoperability](aureqdi.html): This is a placeholder for when content becomes available.
+  - [Relationship with other HL7 AU FHIR IGs](relationship.html): This is a placeholder for when content becomes available.
+  - [Future of AU eRequesting](erequesting-future.html): This is a placeholder for when content becomes available.
 - [Use Cases](use-cases.html): This page describes the use cases in scope of eRequesting R1. 
-- [FHIR Artefacts](artifacts.html): These pages provide detailed descriptions and formal definitions for all the FHIR artefacts defined in this guide.
-- [Examples](examples.html): This page lists all the examples used in this guide.
-- [Downloads](downloads.html): This page provides links to downloadable artefacts that developers can use to help them implement this guide.
+- [FHIR Artefacts](artifacts.html): This is a placeholder for when content becomes available.
+- [Examples](examples.html): This is a placeholder for when content becomes available.
+- [Downloads](downloads.html): This is a placeholder for when content becomes available.
 
 
