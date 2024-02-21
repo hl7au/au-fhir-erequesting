@@ -10,11 +10,11 @@ Visit the [HL7 Australia - AU eRequesting Technical Design Group Home](https://c
 
 #### Discuss an issue in chat.fhir.org
 
-If you have a question, feature request, or proposed change, the best place to start is Zulip e.g. the Australia stream https://chat.fhir.org/#narrow/stream/179173-australia.
+If you have a question, feature request, or proposed change, the best place to start is Zulip e.g. the Australia stream [https://chat.fhir.org/#narrow/stream/179173-australia](https://chat.fhir.org/#narrow/stream/179173-australia).
 
 #### Identify future work or raise discussion points
 
-To identify future work or raise discussion points, you can post in the Australia stream https://chat.fhir.org/#narrow/stream/179173-australia or raise [specification feedback](https://confluence.hl7.org/display/HL7/Specification+Feedback) through a [Jira issue tracker](https://jira.hl7.org/issues/?filter=21325).
+To identify future work or raise discussion points, you can post in the Australia stream [https://chat.fhir.org/#narrow/stream/179173-australia](https://chat.fhir.org/#narrow/stream/179173-australia) or raise [specification feedback](https://confluence.hl7.org/display/HL7/Specification+Feedback) through a [Jira issue tracker](https://jira.hl7.org/issues/?filter=21325).
 
 
 ##### Discuss with the team
