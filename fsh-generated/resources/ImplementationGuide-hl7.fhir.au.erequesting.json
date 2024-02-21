@@ -60,7 +60,16 @@
     }
   ],
   "definition": {
-    "resource": [],
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/fish-patient"
+        },
+        "name": "Fish Patient",
+        "description": "A patient that is a type of fish.",
+        "exampleBoolean": false
+      }
+    ],
     "page": {
       "nameUrl": "toc.html",
       "title": "Table of Contents",
@@ -128,6 +137,10 @@
       {
         "code": "releaselabel",
         "value": "ci-build"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources fsh-generated/resources"
       },
       {
         "code": "path-pages",

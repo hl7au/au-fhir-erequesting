@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "outputFile": "StructureDefinition-fish-patient.json",
+    "fshName": "FishPatient",
+    "fshType": "Profile",
+    "fshFile": "FishPatient.fsh",
+    "startLine": 1,
+    "endLine": 6
+  }
+]

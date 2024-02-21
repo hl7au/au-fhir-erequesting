@@ -64,9 +64,9 @@ pages:
   # ImplementationGuide-hl7.fhir.au.erequesting.md:
     # title: AU eRequesting ImplementationGuide Resource
 parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
-  # path-resource:
-    # - input/resources
-    # - fsh-generated/resources
+  path-resource:
+    input/resources
+    fsh-generated/resources
   path-pages:
     - input/pagecontent
     - input/intro-notes

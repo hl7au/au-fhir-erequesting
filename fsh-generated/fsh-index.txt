@@ -1,1 +1,2 @@
-Output File  Name  Type  FSH File  Lines
+Output File                            Name         Type     FSH File         Lines
+StructureDefinition-fish-patient.json  FishPatient  Profile  FishPatient.fsh  1 - 6
