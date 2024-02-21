@@ -1,0 +1,218 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hl7.fhir.au.erequesting",
+  "url": "http://hl7.org.au/fhir/erequesting/ImplementationGuide/hl7.fhir.au.erequesting",
+  "version": "0.1.0-ci-build",
+  "name": "AUeRequesting",
+  "title": "AU eRequesting",
+  "status": "draft",
+  "publisher": "HL7 Australia",
+  "contact": [
+    {
+      "name": "HL7 Australia",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://confluence.hl7.org/display/HAFWG"
+        }
+      ]
+    },
+    {
+      "name": "HL7 Australia FHIR Work Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://confluence.hl7.org/display/HAFWG",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "This implementation guide is provided to support the use of FHIR®© for clinical requesting and ordering in an Australian context. , and defines the minimum set of constraints on the FHIR resources to create the AU eRequesting profiles.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "AU",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "copyright": "Used by permission of HL7 International, all rights reserved Creative Commons License. HL7 Australia© 2024+; Licensed Under Creative Commons No Rights Reserved.",
+  "packageId": "hl7.fhir.au.erequesting",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "hl7.fhir.au.base",
+      "version": "current",
+      "uri": "http://hl7.org.au/fhir/ImplementationGuide/hl7.fhir.au.base",
+      "id": "hl7_fhir_au_base"
+    },
+    {
+      "packageId": "hl7.fhir.au.core",
+      "version": "current",
+      "uri": "http://hl7.org.au/fhir/core/ImplementationGuide/hl7.fhir.au.core",
+      "id": "hl7_fhir_au_core"
+    }
+  ],
+  "definition": {
+    "resource": [],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "conformance.html",
+          "title": "Conformance",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "guidance.html",
+          "title": "Guidance",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "erequesting-future.html",
+              "title": "Future of AU eRequesting",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "relationship.html",
+              "title": "Relationship with other HL7 AU FHIR IGs",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "auereqdi.html",
+              "title": "AU eRequesting Data for Interoperability",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "use-cases.html",
+          "title": "Use cases",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "artefacts.html",
+          "title": "FHIR artefacts",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "examples.html",
+          "title": "Examples",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2024"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/pagecontent"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/intro-notes"
+      },
+      {
+        "code": "path-pages",
+        "value": "fsh-generated/includes"
+      },
+      {
+        "code": "active-tables",
+        "value": "false"
+      },
+      {
+        "code": "apply-contact",
+        "value": "true"
+      },
+      {
+        "code": "apply-jurisdiction",
+        "value": "true"
+      },
+      {
+        "code": "apply-publisher",
+        "value": "true"
+      },
+      {
+        "code": "apply-version",
+        "value": "true"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "true"
+      },
+      {
+        "code": "usage-stats-opt-out",
+        "value": "true"
+      },
+      {
+        "code": "excludexml",
+        "value": "true"
+      },
+      {
+        "code": "excludejson",
+        "value": "true"
+      },
+      {
+        "code": "excludettl",
+        "value": "true"
+      },
+      {
+        "code": "excludemap",
+        "value": "true"
+      },
+      {
+        "code": "shownav",
+        "value": "false"
+      },
+      {
+        "code": "logging",
+        "value": "tx"
+      },
+      {
+        "code": "logging",
+        "value": "html"
+      },
+      {
+        "code": "logging",
+        "value": "generate"
+      },
+      {
+        "code": "logging",
+        "value": "init"
+      },
+      {
+        "code": "logging",
+        "value": "progress"
+      },
+      {
+        "code": "releaselabel",
+        "value": "CI Build"
+      }
+    ]
+  }
+}

@@ -1,7 +1,24 @@
-.DS_Store
+# Temporary folders #
+#####################
+/output/
+/input-cache/
+/temp/
+/template/
+
+# Don't commit this because it's so large #
+###########################################
+/input-cache/org.hl7.fhir.publisher.jar
+/input-cache/publisher.jar
+
+# Windows generated files #
+###########################
 Thumbs.db
-/fsh-generated
-/input-cache
-/output
-/temp
-/template
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+
+# backup files #
+################
+*.bak
