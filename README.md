@@ -14,7 +14,7 @@ AU eRequesting R1 is in currently in development. Ballot for Comment is schedule
 
 ### 1. Join the AU eRequesting Technical Design Group
 
-See [How to Register - Participant Information](https://confluence.csiro.au/display/FHIR/How+to+Register+-+Participant+Information) for information on how to participate in the AU eRequesting Technical Design Group and Clinical Design Group as part of Sparked, the Australian FHIR Accelerator. Visit the [HL7 Australia - AU eRequesting Technical Design Group Home](https://confluence.hl7.org/display/HAFWG/HL7+Australia+-+AU+eRequesting+Technical+Design+Group+Home)
+See [How to Register - Participant Information](https://confluence.csiro.au/display/FHIR/How+to+Register+-+Participant+Information) for information on how to participate in the AU eRequesting Technical Design Group and Clinical Design Group as part of Sparked, the Australian FHIR Accelerator. Visit the [HL7 Australia - AU eRequesting Technical Design Group Home](https://confluence.hl7.org/display/HAFWG/HL7+Australia+-+AU+eRequesting+Technical+Design+Group+Home).
 
 ### 2. Discuss an issue in chat.fhir.org
 
