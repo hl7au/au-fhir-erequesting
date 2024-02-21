@@ -3,7 +3,7 @@
 [AU eRequesting](http://build.fhir.org/ig/hl7au/au-fhir-erequesting/) is provided to support the use of HL7<sup>&reg;</sup> FHIR<sup>&reg;&copy;</sup> for clinical requesting and ordering in an Australian context. It sets the minimum expectations on FHIR resources to support conformance and implementation in systems.
 
 ## Did you find an error?
-If it's a specification error please search the issues list in [Jira issue tracker](https://jira.hl7.org/issues/?filter=21325) to ensure the error was not already reported. You can use the ![Propose-a-change](https://github.com/hl7au/au-fhir-core/assets/116611317/642b45cb-c82e-4fb5-a24c-37b263289fac)
+If it's a specification error please search the issues list in [Jira issue tracker](https://jira.hl7.org/issues/?filter=21312) to ensure the error was not already reported. You can use the ![Propose-a-change](https://github.com/hl7au/au-fhir-core/assets/116611317/642b45cb-c82e-4fb5-a24c-37b263289fac)
  option at the bottom of each page of the IG to trigger the creation of a Jira issue.
 
 If you've found an issue with this repository or it's contents then you please [raise a GitHub issue](https://github.com/hl7au/au-fhir-erequesting/issues/new).
@@ -22,7 +22,7 @@ If you have a question, feature request, or proposed change, the best place to s
 
 ### 3. Identify future work or raise discussion points
 
-To identify future work or raise discussion points, you can post in the Australia stream https://chat.fhir.org/#narrow/stream/179173-australia or raise [specification feedback](https://confluence.hl7.org/display/HL7/Specification+Feedback) through a [Jira issue tracker](https://jira.hl7.org/issues/?filter=21325).
+To identify future work or raise discussion points, you can post in the Australia stream https://chat.fhir.org/#narrow/stream/179173-australia or raise [specification feedback](https://confluence.hl7.org/display/HL7/Specification+Feedback) through a [Jira issue tracker](https://jira.hl7.org/issues/?filter=21312).
 
 ### 4. Discuss with the team
 
