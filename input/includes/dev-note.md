@@ -14,7 +14,7 @@ If you have a question, feature request, or proposed change, the best place to s
 
 #### Identify future work or raise discussion points
 
-To identify future work or raise discussion points, you can post in the Australia stream [https://chat.fhir.org/#narrow/stream/179173-australia](https://chat.fhir.org/#narrow/stream/179173-australia) or raise [specification feedback](https://confluence.hl7.org/display/HL7/Specification+Feedback) through a [Jira issue tracker](https://jira.hl7.org/issues/?filter=21312).
+To identify future work or raise discussion points, you can post in the Australia stream [https://chat.fhir.org/#narrow/stream/179173-australia](https://chat.fhir.org/#narrow/stream/179173-australia) or raise [specification feedback](https://confluence.hl7.org/display/HL7/Specification+Feedback) through a [Jira issue tracker](https://jira.hl7.org/issues/?filter=21447#).
 
 
 ##### Discuss with the team
