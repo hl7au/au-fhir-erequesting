@@ -63,10 +63,58 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/fish-patient"
+          "reference": "StructureDefinition/erequesting-encounter"
         },
-        "name": "Fish Patient",
-        "description": "A patient that is a type of fish.",
+        "name": "Diagnostic Encounter",
+        "description": "Minimum Encounter for a Diagnostic Request.  Its main purpose at present is to carry the AMB code to designate that we are restricting requests to community-based rather than hospital-based.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/erequesting-servicerequest-rule3exemption"
+        },
+        "name": "Diagnostic Request Rule 3 Exemption",
+        "description": "Extension to request rule 3 exemption",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/erequesting-task-request"
+        },
+        "name": "Diagnostic Requesting Task",
+        "description": "Diagnostic Requesting Task to track fulfilment of a Diagnostic Request. See [ERequestTaskBase](StructureDefinition-erequesting-task-base.html) for a description of the expected `status` changes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/erequesting-diagnostic-request-base"
+        },
+        "name": "Diagnostic Service Requesting Base",
+        "description": "Diagnostic Service Requesting Base used for Pathology and Radiology.  Carries all the common attributes for diagnostic requests.  Only put attributes here if not specific to pathology or radiology.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/erequesting-diagnosticrequest-pathology"
+        },
+        "name": "Diagnostic Service Requesting Pathology",
+        "description": "Diagnositic Service requesting for pathology.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/erequesting-diagnosticrequest-radiology"
+        },
+        "name": "Diagnostic Service Requesting Radiology",
+        "description": "Diagnostic Service Requesting for Radiology.  This will in future hold radiology-specific requesting content.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/erequesting-task-base"
+        },
+        "name": "Diagnostic Task Base",
+        "description": "Diagnostic Task Base is a shared Task foundation for future use.",
         "exampleBoolean": false
       }
     ],
@@ -115,6 +163,11 @@
         {
           "nameUrl": "artefacts.html",
           "title": "FHIR artefacts",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles-and-extensions.html",
+          "title": "Profiles and Extensions",
           "generation": "markdown"
         },
         {

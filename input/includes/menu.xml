@@ -37,10 +37,7 @@
   <li>
     <a href="use-cases.html">Use cases</a>
   </li>
-  <li>
-    <a href="artefacts.html">FHIR Artefacts</a>
-  </li>
-<!--   <li class="dropdown">
+  <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artefacts
       <b class="caret"></b>
     </a>
@@ -49,16 +46,22 @@
         <a href="profiles-and-extensions.html">Profiles and Extensions</a>
       </li>
       <li>
-        <a href="search-parameters.html">Search Parameters</a>
+        <!-- <a href="search-parameters.html">Search Parameters</a> -->
+        <a>Search Parameters</a>
+
       </li>
       <li>
-        <a href="terminology.html">Terminology</a>
+        <!-- <a href="terminology.html">Terminology</a> -->
+        <a>Terminology</a>
+
     </li>
       <li>
-        <a href="capability-statements.html">Capability Statements</a>
+        <!-- <a href="capability-statements.html">Capability Statements</a> -->
+        <a>Capability Statements</a>
+
       </li>
     </ul>
-  </li> -->
+  </li>
   <li>
     <a href="examples.html">Examples</a>
   </li>

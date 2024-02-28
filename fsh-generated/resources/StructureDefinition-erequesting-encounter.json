@@ -1,0 +1,72 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "erequesting-encounter",
+  "url": "http://hl7.org.au/fhir/erequesting/StructureDefinition/erequesting-encounter",
+  "name": "ERequestingEncounter",
+  "title": "Diagnostic Encounter",
+  "status": "draft",
+  "description": "Minimum Encounter for a Diagnostic Request.  Its main purpose at present is to carry the AMB code to designate that we are restricting requests to community-based rather than hospital-based.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "http://hl7.org.au/fhir/core/StructureDefinition/au-core-encounter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter.id",
+        "path": "Encounter.id",
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.status",
+        "path": "Encounter.status",
+        "short": "Assumes the encounter where the request was made is finished",
+        "patternCode": "finished"
+      },
+      {
+        "id": "Encounter.class",
+        "path": "Encounter.class",
+        "short": "Assumes the encounter where the request was made is Outpatient (i.e. AMB ambulatory)",
+        "patternCoding": {
+          "code": "AMB",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+        }
+      },
+      {
+        "id": "Encounter.subject",
+        "path": "Encounter.subject",
+        "short": "Patient the request is for"
+      },
+      {
+        "id": "Encounter.subject.reference",
+        "path": "Encounter.subject.reference",
+        "short": "Relative reference to Patient",
+        "min": 1
+      }
+    ]
+  }
+}

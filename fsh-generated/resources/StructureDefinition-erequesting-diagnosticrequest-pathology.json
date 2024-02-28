@@ -1,0 +1,140 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "erequesting-diagnosticrequest-pathology",
+  "url": "http://hl7.org.au/fhir/erequesting/StructureDefinition/erequesting-diagnosticrequest-pathology",
+  "name": "ERequestingDiagnosticRequestPathology",
+  "title": "Diagnostic Service Requesting Pathology",
+  "status": "draft",
+  "description": "Diagnositic Service requesting for pathology.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "quick",
+      "uri": "http://siframework.org/cqf",
+      "name": "Quality Improvement and Clinical Knowledge (QUICK)"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "ServiceRequest",
+  "baseDefinition": "http://hl7.org.au/fhir/erequesting/StructureDefinition/erequesting-diagnostic-request-base",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ServiceRequest.extension:requestingRule3exemption",
+        "path": "ServiceRequest.extension",
+        "sliceName": "requestingRule3exemption",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.au/fhir/erequesting/StructureDefinition/erequesting-servicerequest-rule3exemption"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.code",
+        "path": "ServiceRequest.code",
+        "short": "Pathology test code or free text test name",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://www.rcpa.edu.au/fhir/ValueSet/spia-requesting-refset-3"
+        }
+      },
+      {
+        "id": "ServiceRequest.code.coding",
+        "path": "ServiceRequest.code.coding",
+        "short": "Ideally a value set from SNOMED-CT such as RCPA SPIA request codes, but may need to support lab maintained test codes."
+      },
+      {
+        "id": "ServiceRequest.code.text",
+        "path": "ServiceRequest.code.text",
+        "short": "Test name selected or free text entered by the user",
+        "min": 1
+      },
+      {
+        "id": "ServiceRequest.quantity[x]",
+        "path": "ServiceRequest.quantity[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "ServiceRequest.quantity[x]:quantityQuantity",
+        "path": "ServiceRequest.quantity[x]",
+        "sliceName": "quantityQuantity",
+        "short": "Allows provide quantity of a test (normally 1)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.occurrence[x]",
+        "path": "ServiceRequest.occurrence[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "ServiceRequest.occurrence[x]:occurrencePeriod",
+        "path": "ServiceRequest.occurrence[x]",
+        "sliceName": "occurrencePeriod",
+        "short": "Period over which the service should occur independent of regulatory obligation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}
