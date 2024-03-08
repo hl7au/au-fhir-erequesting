@@ -1,0 +1,75 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "erequesting-servicerequest-rule3exemption",
+  "url": "http://hl7.org.au/fhir/erequesting/StructureDefinition/erequesting-servicerequest-rule3exemption",
+  "name": "ERequestingServiceRequestRule3Exemption",
+  "title": "Diagnostic Request Rule 3 Exemption",
+  "status": "draft",
+  "description": "Extension to request rule 3 exemption",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "ServiceRequest",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Diagnostic Request Rule 3 Exemption",
+        "definition": "Extension to request rule 3 exemption"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org.au/fhir/erequesting/StructureDefinition/erequesting-servicerequest-rule3exemption"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Extension.value[x]:valueBoolean",
+        "path": "Extension.value[x]",
+        "sliceName": "valueBoolean",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

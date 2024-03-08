@@ -1,10 +1,58 @@
 [
   {
-    "outputFile": "StructureDefinition-fish-patient.json",
-    "fshName": "FishPatient",
+    "outputFile": "StructureDefinition-erequesting-diagnostic-request-base.json",
+    "fshName": "ERequestingDiagnosticRequestBase",
     "fshType": "Profile",
-    "fshFile": "FishPatient.fsh",
+    "fshFile": "erequesting/eRequestingDiagnosticRequestBase.fsh",
     "startLine": 1,
-    "endLine": 6
+    "endLine": 26
+  },
+  {
+    "outputFile": "StructureDefinition-erequesting-diagnosticrequest-pathology.json",
+    "fshName": "ERequestingDiagnosticRequestPathology",
+    "fshType": "Profile",
+    "fshFile": "erequesting/eRequestingDiagnosticRequestPath.fsh",
+    "startLine": 1,
+    "endLine": 19
+  },
+  {
+    "outputFile": "StructureDefinition-erequesting-diagnosticrequest-radiology.json",
+    "fshName": "ERequestingDiagnosticRequestRadiology",
+    "fshType": "Profile",
+    "fshFile": "erequesting/eRequestingDiagnosticRequestRad.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "StructureDefinition-erequesting-encounter.json",
+    "fshName": "ERequestingEncounter",
+    "fshType": "Profile",
+    "fshFile": "erequesting/eRequestingEncounter.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "StructureDefinition-erequesting-servicerequest-rule3exemption.json",
+    "fshName": "ERequestingServiceRequestRule3Exemption",
+    "fshType": "Extension",
+    "fshFile": "erequesting/eRequestingDiagnosticRequestPath.fsh",
+    "startLine": 21,
+    "endLine": 27
+  },
+  {
+    "outputFile": "StructureDefinition-erequesting-task-base.json",
+    "fshName": "ERequestingTaskBase",
+    "fshType": "Profile",
+    "fshFile": "erequesting/eRequestingTaskBase.fsh",
+    "startLine": 1,
+    "endLine": 24
+  },
+  {
+    "outputFile": "StructureDefinition-erequesting-task-request.json",
+    "fshName": "ERequestingTaskRequest",
+    "fshType": "Profile",
+    "fshFile": "erequesting/eRequestingTaskRequest.fsh",
+    "startLine": 1,
+    "endLine": 9
   }
 ]

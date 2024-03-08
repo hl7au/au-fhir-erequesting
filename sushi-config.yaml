@@ -53,7 +53,7 @@ pages:
     title: Use cases
   artefacts.md:
     title: FHIR artefacts      
-  # profiles-and-extensions.md:
+  profiles-and-extensions.md:
   # capability-statements.md:
   # search-parameters.md:
   # terminology.md:

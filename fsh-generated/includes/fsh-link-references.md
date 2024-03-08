@@ -1,1 +1,7 @@
-[FishPatient]: StructureDefinition-fish-patient.html
+[ERequestingEncounter]: StructureDefinition-erequesting-encounter.html
+[ERequestingServiceRequestRule3Exemption]: StructureDefinition-erequesting-servicerequest-rule3exemption.html
+[ERequestingTaskRequest]: StructureDefinition-erequesting-task-request.html
+[ERequestingDiagnosticRequestBase]: StructureDefinition-erequesting-diagnostic-request-base.html
+[ERequestingDiagnosticRequestPathology]: StructureDefinition-erequesting-diagnosticrequest-pathology.html
+[ERequestingDiagnosticRequestRadiology]: StructureDefinition-erequesting-diagnosticrequest-radiology.html
+[ERequestingTaskBase]: StructureDefinition-erequesting-task-base.html
