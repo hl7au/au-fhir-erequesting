@@ -24,7 +24,7 @@ This guide is divided into several pages which are listed at the top of each pag
 - [Home](index.html): This page provides the introduction and scope for this guide.
 - [Conformance](conformance.html): This is a placeholder for when content becomes available.
 - [Guidance](guidance.html): This is a placeholder for when content becomes available.
-  - [AU eRequesting data for interoperability](aureqdi.html): This is a placeholder for when content becomes available.
+  - [AU eRequesting data for interoperability](auereqdi.html): This is a placeholder for when content becomes available.
   - [Relationship with other HL7 AU FHIR IGs](relationship.html): This is a placeholder for when content becomes available.
   - [Future of AU eRequesting](erequesting-future.html): This is a placeholder for when content becomes available.
 - [Use Cases](use-cases.html): This page describes the use cases in scope of eRequesting R1. 
