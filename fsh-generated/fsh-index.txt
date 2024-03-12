@@ -1,8 +1,6 @@
-Output File                                                         Name                                     Type       FSH File                                          Lines
-StructureDefinition-erequesting-diagnostic-request-base.json        ERequestingDiagnosticRequestBase         Profile    erequesting/eRequestingDiagnosticRequestBase.fsh  1 - 26
-StructureDefinition-erequesting-diagnosticrequest-pathology.json    ERequestingDiagnosticRequestPathology    Profile    erequesting/eRequestingDiagnosticRequestPath.fsh  1 - 19
-StructureDefinition-erequesting-diagnosticrequest-radiology.json    ERequestingDiagnosticRequestRadiology    Profile    erequesting/eRequestingDiagnosticRequestRad.fsh   1 - 8
-StructureDefinition-erequesting-encounter.json                      ERequestingEncounter                     Profile    erequesting/eRequestingEncounter.fsh              1 - 20
-StructureDefinition-erequesting-servicerequest-rule3exemption.json  ERequestingServiceRequestRule3Exemption  Extension  erequesting/eRequestingDiagnosticRequestPath.fsh  21 - 27
-StructureDefinition-erequesting-task-base.json                      ERequestingTaskBase                      Profile    erequesting/eRequestingTaskBase.fsh               1 - 24
-StructureDefinition-erequesting-task-request.json                   ERequestingTaskRequest                   Profile    erequesting/eRequestingTaskRequest.fsh            1 - 9
+Output File                                                       Name                                   Type     FSH File                                          Lines
+StructureDefinition-erequesting-diagnostic-request-base.json      ERequestingDiagnosticRequestBase       Profile  erequesting/eRequestingDiagnosticRequestBase.fsh  1 - 24
+StructureDefinition-erequesting-diagnosticrequest-pathology.json  ERequestingDiagnosticRequestPathology  Profile  erequesting/eRequestingDiagnosticRequestPath.fsh  1 - 12
+StructureDefinition-erequesting-diagnosticrequest-radiology.json  ERequestingDiagnosticRequestRadiology  Profile  erequesting/eRequestingDiagnosticRequestRad.fsh   1 - 8
+StructureDefinition-erequesting-task-base.json                    ERequestingTaskBase                    Profile  erequesting/eRequestingTaskBase.fsh               1 - 24
+StructureDefinition-erequesting-task-request.json                 ERequestingTaskRequest                 Profile  erequesting/eRequestingTaskRequest.fsh            1 - 9

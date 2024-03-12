@@ -6,8 +6,6 @@ Description: "Diagnostic Service Requesting Base used for Pathology and Radiolog
 * . ^short = "Diagnostic Service Requesting Base"
 * ^abstract = true
 
-* extension contains ResultCopiesTo named copiesto 0..* MS
-
 * subject MS
 * subject only Reference(AUCorePatient)
   * reference 1..

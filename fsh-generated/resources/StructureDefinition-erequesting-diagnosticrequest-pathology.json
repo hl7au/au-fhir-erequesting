@@ -42,22 +42,6 @@
   "differential": {
     "element": [
       {
-        "id": "ServiceRequest.extension:requestingRule3exemption",
-        "path": "ServiceRequest.extension",
-        "sliceName": "requestingRule3exemption",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org.au/fhir/erequesting/StructureDefinition/erequesting-servicerequest-rule3exemption"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
         "id": "ServiceRequest.code",
         "path": "ServiceRequest.code",
         "short": "Pathology test code or free text test name",
@@ -78,62 +62,6 @@
         "path": "ServiceRequest.code.text",
         "short": "Test name selected or free text entered by the user",
         "min": 1
-      },
-      {
-        "id": "ServiceRequest.quantity[x]",
-        "path": "ServiceRequest.quantity[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "ServiceRequest.quantity[x]:quantityQuantity",
-        "path": "ServiceRequest.quantity[x]",
-        "sliceName": "quantityQuantity",
-        "short": "Allows provide quantity of a test (normally 1)",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Quantity"
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "ServiceRequest.occurrence[x]",
-        "path": "ServiceRequest.occurrence[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "ServiceRequest.occurrence[x]:occurrencePeriod",
-        "path": "ServiceRequest.occurrence[x]",
-        "sliceName": "occurrencePeriod",
-        "short": "Period over which the service should occur independent of regulatory obligation",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Period"
-          }
-        ],
-        "mustSupport": true
       }
     ]
   }
