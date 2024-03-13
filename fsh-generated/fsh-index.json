@@ -24,6 +24,7 @@
     "endLine": 8
   },
   {
+
     "outputFile": "StructureDefinition-erequesting-task-base.json",
     "fshName": "ERequestingTaskBase",
     "fshType": "Profile",
