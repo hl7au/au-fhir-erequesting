@@ -63,22 +63,6 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/erequesting-encounter"
-        },
-        "name": "Diagnostic Encounter",
-        "description": "Minimum Encounter for a Diagnostic Request.  Its main purpose at present is to carry the AMB code to designate that we are restricting requests to community-based rather than hospital-based.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/erequesting-servicerequest-rule3exemption"
-        },
-        "name": "Diagnostic Request Rule 3 Exemption",
-        "description": "Extension to request rule 3 exemption",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/erequesting-task-request"
         },
         "name": "Diagnostic Requesting Task",

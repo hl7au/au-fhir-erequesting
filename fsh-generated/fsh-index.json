@@ -5,7 +5,7 @@
     "fshType": "Profile",
     "fshFile": "erequesting/eRequestingDiagnosticRequestBase.fsh",
     "startLine": 1,
-    "endLine": 26
+    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-erequesting-diagnosticrequest-pathology.json",
@@ -13,7 +13,7 @@
     "fshType": "Profile",
     "fshFile": "erequesting/eRequestingDiagnosticRequestPath.fsh",
     "startLine": 1,
-    "endLine": 19
+    "endLine": 12
   },
   {
     "outputFile": "StructureDefinition-erequesting-diagnosticrequest-radiology.json",
@@ -24,22 +24,7 @@
     "endLine": 8
   },
   {
-    "outputFile": "StructureDefinition-erequesting-encounter.json",
-    "fshName": "ERequestingEncounter",
-    "fshType": "Profile",
-    "fshFile": "erequesting/eRequestingEncounter.fsh",
-    "startLine": 1,
-    "endLine": 20
-  },
-  {
-    "outputFile": "StructureDefinition-erequesting-servicerequest-rule3exemption.json",
-    "fshName": "ERequestingServiceRequestRule3Exemption",
-    "fshType": "Extension",
-    "fshFile": "erequesting/eRequestingDiagnosticRequestPath.fsh",
-    "startLine": 21,
-    "endLine": 27
-  },
-  {
+
     "outputFile": "StructureDefinition-erequesting-task-base.json",
     "fshName": "ERequestingTaskBase",
     "fshType": "Profile",
