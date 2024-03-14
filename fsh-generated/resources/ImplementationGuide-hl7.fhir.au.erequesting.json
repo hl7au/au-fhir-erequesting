@@ -48,19 +48,27 @@
   "dependsOn": [
     {
       "packageId": "hl7.fhir.au.base",
-      "version": "current",
+      "version": "4.2.0-preview",
       "uri": "http://hl7.org.au/fhir/ImplementationGuide/hl7.fhir.au.base",
       "id": "hl7_fhir_au_base"
     },
     {
       "packageId": "hl7.fhir.au.core",
-      "version": "current",
+      "version": "0.3.0-ballot",
       "uri": "http://hl7.org.au/fhir/core/ImplementationGuide/hl7.fhir.au.core",
       "id": "hl7_fhir_au_core"
     }
   ],
   "definition": {
     "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/erequesting-encounter"
+        },
+        "name": "Diagnostic Encounter",
+        "description": "Minimum Encounter for a Diagnostic Request.  Its main purpose at present is to carry the AMB code to designate that we are restricting requests to community-based rather than hospital-based.",
+        "exampleBoolean": false
+      },
       {
         "reference": {
           "reference": "StructureDefinition/erequesting-task-request"
