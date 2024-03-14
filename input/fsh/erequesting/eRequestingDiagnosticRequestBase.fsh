@@ -10,15 +10,5 @@ Description: "Diagnostic Service Requesting Base used for Pathology and Radiolog
 * subject only Reference(AUCorePatient)
   * reference 1..
 
-* encounter 1.. MS
-* encounter only Reference(AUCoreEncounter)
-  * reference 1..
-  
 * requester 1..1
 * requester only Reference(AUCorePractitionerRole) 
-
-* supportingInfo MS
-* supportingInfo only Reference (Observation or AUCoreCondition)
-  * ^short = "Supporting request information such as pregnacy status"
-  * reference 1..
-    * ^short = "Reference to contained resource or relative resource URL"
