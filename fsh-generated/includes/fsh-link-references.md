@@ -1,3 +1,4 @@
+[ERequestingEncounter]: StructureDefinition-erequesting-encounter.html
 [ERequestingTaskRequest]: StructureDefinition-erequesting-task-request.html
 [ERequestingDiagnosticRequestBase]: StructureDefinition-erequesting-diagnostic-request-base.html
 [ERequestingDiagnosticRequestPathology]: StructureDefinition-erequesting-diagnosticrequest-pathology.html
