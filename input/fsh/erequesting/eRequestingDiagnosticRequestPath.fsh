@@ -4,7 +4,6 @@ Id: erequesting-diagnosticrequest-pathology
 Title: "Diagnostic Service Requesting Pathology"
 Description: "Diagnositic Service requesting for pathology."
 
-
 * code 1.. MS
 * code ^short = "Pathology test code or free text test name"
 * code from $RCPA-SPIA (extensible)
@@ -12,3 +11,7 @@ Description: "Diagnositic Service requesting for pathology."
 * code.text 1..1
 * code.text ^short = "Test name selected or free text entered by the user"
 
+* category = $sct#108252007 "Laboratory procedure"
+
+* quantityQuantity 1..1 MS
+  * ^short = "Allows provide quantity of a test (normally 1)"
