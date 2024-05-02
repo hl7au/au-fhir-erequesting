@@ -1,18 +1,23 @@
 Profile: ERequestingDiagnosticRequestBase
 Parent: AUBaseDiagnosticRequest
 Id: erequesting-diagnostic-request-base
-Title: "Diagnostic Service Requesting Base"
-Description: "Diagnostic Service Requesting Base used for Pathology and Radiology.  Carries all the common attributes for diagnostic requests.  Only put attributes here if not specific to pathology or radiology."
-* . ^short = "Diagnostic Service Requesting Base"
+Title: "Diagnostic Request Base"
+Description: "Diagnostic Request Base used for Pathology and Radiology.  Carries all the common attributes for diagnostic requests.  Only put attributes here if not specific to pathology or radiology."
+* . ^short = "Diagnostic Request Base"
 * ^abstract = true
 
 * extension contains ResultCopiesTo named copiesto 0..* MS
+* extension contains ERequestingDiagnosticRequestFasting named requestFasting 0..1 MS
 
-* category 1..1 MS
-* category from ERequestingDiagnosticRequestCategory (required)
+* requisition 1..1 
+* requisition ^type.profile = Canonical(ERequestingPlacerGroupNumber)
+
+* doNotPerform 0..0
 
 * reasonCode ..1 MS
 * reasonCode.text 1..1
+
+* intent = #order (exactly)
 
 * reasonReference MS
 
@@ -31,6 +36,9 @@ Description: "Diagnostic Service Requesting Base used for Pathology and Radiolog
 * supportingInfo MS
 * supportingInfo obeys narrative-for-supportinginfo
 
+* patientInstruction MS
+* patientInstruction ^short = "Instructions to patient. Must support where available."
+
 * occurrencePeriod MS
   * ^short = "Period over which the service should occur independent of regulatory obligation"
 
@@ -43,8 +51,28 @@ Description: "Diagnostic Service Requesting Base used for Pathology and Radiolog
   * reference 1..
     * ^short = "Reference to contained Coverage resource"
 
+* contained ^slicing.rules = #open
+* contained ^slicing.discriminator.type = #type
+* contained ^slicing.discriminator.path = "$this"
+* contained contains 
+    coverage 0..1 MS 
+* contained[coverage] only ERequestingCoverage
+
 
 Invariant: narrative-for-supportinginfo
 Description: "Always require a narrative for supportingInfo references in ServiceRequest"
 Severity: #error
 Expression: "resolve().text.div.exists()"
+
+
+Profile: ERequestingDiagnosticRequestFasting
+Parent: http://hl7.org/fhir/StructureDefinition/servicerequest-precondition
+Id: erequesting-diagnosticrequest-fasting
+Title: "Fasting Precondition"
+Description: "Extension to request patient fasting."
+* ^context.type = #element
+* ^context.expression = "ServiceRequest"
+
+* valueCodeableConcept MS
+* valueCodeableConcept = $sct#726054005 "After fasting" 
+  * text MS
