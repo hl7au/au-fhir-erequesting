@@ -55,8 +55,8 @@ pages:
     title: FHIR artefacts      
   profiles-and-extensions.md:
   # capability-statements.md:
-  # search-parameters.md:
-  # terminology.md:
+  search-parameters-and-operations.md:
+  terminology.md:
   examples.md:
   downloads.md:
   # changes.md:
@@ -126,5 +126,4 @@ contact:
   telecom:
     system: url # phone | fax | email | pager | url | sms | other
     value: https://confluence.hl7.org/display/HAFWG
-    use: work
 
