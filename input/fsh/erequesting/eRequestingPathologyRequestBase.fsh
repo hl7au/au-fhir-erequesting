@@ -6,3 +6,16 @@ Description: "Pathology request base profile used for both a pathology request a
 
 * . ^short = "Pathology Request Base"
 * ^abstract = true
+
+* extension contains ERequestingPathologyRule3Exemption named requestRule3exemption 0..1 MS
+
+* specimen MS
+* specimen only Reference(ERequestingSpecimen)
+
+Extension: ERequestingPathologyRule3Exemption
+Id: erequesting-pathology-rule3exemption
+Title: "Rule 3 Exemption"
+Description: "Extension to request rule 3 exemption"
+Context: ServiceRequest
+
+* valueBoolean MS

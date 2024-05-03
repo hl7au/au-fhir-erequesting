@@ -12,7 +12,5 @@ Description: "Radiology request."
 * category 1..1 MS
 * category = $sct#363679005 "Imaging"
 
-* bodySite MS
-
 * basedOn 1..1
 * basedOn only Reference(ERequestingRadiologyRequestGroup)

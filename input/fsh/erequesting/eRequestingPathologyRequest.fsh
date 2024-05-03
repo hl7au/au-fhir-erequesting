@@ -4,8 +4,6 @@ Id: erequesting-pathology-request
 Title: "Pathology Request"
 Description: "Pathology request."
 
-* extension contains ERequestingPathologyRule3Exemption named requestRule3exemption 0..1 MS
-
 * code 1.. MS
 * code ^short = "Pathology test code or free text test name"
 * code from $RCPA-SPIA (extensible)
@@ -19,16 +17,5 @@ Description: "Pathology request."
 * quantityQuantity 1..1 MS
   * ^short = "Allows provide quantity of a test (normally 1)"
 
-* specimen MS
-* specimen only Reference(ERequestingSpecimen)
-
 * basedOn 1..1
 * basedOn only Reference(ERequestingPathologyRequestGroup)
-
-Extension: ERequestingPathologyRule3Exemption
-Id: erequesting-pathology-rule3exemption
-Title: "Rule 3 Exemption"
-Description: "Extension to request rule 3 exemption"
-Context: ServiceRequest
-
-* valueBoolean MS
