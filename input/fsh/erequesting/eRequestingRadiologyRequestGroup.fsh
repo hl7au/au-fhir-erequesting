@@ -7,5 +7,3 @@ Description: "A group of radiology requests as would be captured in a radiology 
 * basedOn 0..0
 
 * code 0..0
-
-* category 0..0
