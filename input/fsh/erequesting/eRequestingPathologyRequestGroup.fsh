@@ -7,5 +7,3 @@ Description: "A group of pathology requests as would be captured in a pathology 
 * basedOn 0..0
 
 * code 0..0
-
-* category 0..0
