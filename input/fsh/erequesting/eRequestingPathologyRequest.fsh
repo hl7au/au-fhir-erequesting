@@ -11,9 +11,6 @@ Description: "Pathology request."
 * code.text 1..1
 * code.text ^short = "Test name selected or free text entered by the user"
 
-* category 1..1 MS
-* category = $sct#108252007 "Laboratory procedure" (exactly)
-
 * quantityQuantity 1..1 MS
   * ^short = "Allows provide quantity of a test (normally 1)"
 
