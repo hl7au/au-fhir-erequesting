@@ -1,5 +1,7 @@
 # Temporary folders #
 #####################
+/.vs
+/fsh-generated
 /output/
 /input-cache/
 /temp/
