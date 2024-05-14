@@ -5,4 +5,5 @@ Description: "Codes for urgent communication request modes from filler back to t
 * $v3-ParticipationMode#SMSWRIT
 * $v3-ParticipationMode#EMAILWRIT
 * $v3-ParticipationMode#PHONE
+* $v3-ParticipationMode#FAXWRIT
 * ^experimental = true
