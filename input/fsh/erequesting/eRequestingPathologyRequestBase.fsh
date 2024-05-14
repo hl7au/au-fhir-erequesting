@@ -12,6 +12,9 @@ Description: "Pathology request base profile used for both a pathology request a
 * specimen MS
 * specimen only Reference(ERequestingSpecimen)
 
+* category 1..1 MS
+* category = $sct#108252007 "Laboratory procedure" (exactly)
+
 Extension: ERequestingPathologyRule3Exemption
 Id: erequesting-pathology-rule3exemption
 Title: "Rule 3 Exemption"

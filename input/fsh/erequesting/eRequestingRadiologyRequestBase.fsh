@@ -8,3 +8,6 @@ Description: "Radiology request base profile used for both a radiology request a
 * ^abstract = true
 
 * bodySite MS
+
+* category 1..1 MS
+* category = $sct#363679005 "Imaging"

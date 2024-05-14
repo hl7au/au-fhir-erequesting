@@ -143,7 +143,7 @@
 [Quick Start]: #search
 [Respiratory rate]: {{site.data.fhir.path}}resprate.html
 [Required Binding]: {{site.data.fhir.path}}terminologies.html#required
-[SMART App Launch Framework]: {{site.data.fhir.hl7_fhir_uv_smart_app_launch}}
+<!-- [SMART App Launch Framework]: {{site.data.fhir.hl7_fhir_uv_smart_app_launch}} -->
 [SNOMED CT]: http://snomed.info/sct
 [SNOMED CT]: {{site.data.fhir.path}}valueset-procedure-code.html
 [Search Parameter Registry]: {{site.data.fhir.path}}searchparameter-registry.html
@@ -280,7 +280,7 @@
 [QuestionnaireResponse]: {{site.data.fhir.path}}questionnaireresponse.html
 [Questionnaire]: {{site.data.fhir.path}}questionnaire.html
 [Structured Data Capture (SDC) Questionnaire Response Profile]: {{site.data.fhir.hl7_fhir_uv_sdc}}/StructureDefinition-sdc-questionnaireresponse.html
-[Structured Data Capture (SDC)]: {{site.data.fhir.hl7_fhir_uv_sdc}}
+<!-- [Structured Data Capture (SDC)]: {{site.data.fhir.hl7_fhir_uv_sdc}} -->
 [General Requirements]: general-requirements.html
 [Directory of published versions]: {{site.data.fhir.canonical}}/history.html
 [General Requirements]: general-requirements.html
