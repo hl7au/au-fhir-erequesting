@@ -122,8 +122,8 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
 # ContactDetail.
 #
 contact:
-  name: HL7 Australia FHIR Work Group
-  telecom:
-    system: url # phone | fax | email | pager | url | sms | other
-    value: https://confluence.hl7.org/display/HAFWG
-
+  - name: HL7 Australia FHIR Work Group
+    telecom:
+      - system: url # phone | fax | email | pager | url | sms | other
+        value: https://confluence.hl7.org/display/HAFWG
+        use: work
