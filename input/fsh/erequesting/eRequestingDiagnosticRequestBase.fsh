@@ -16,10 +16,10 @@ Description: "Diagnostic Request Base used for Pathology and Radiology.  Carries
 
 * reasonCode ..1 MS
 * reasonCode.text 1..1
+* reasonReference MS
 
 * intent = #order (exactly)
 
-* reasonReference MS
 
 * priority MS
 * priority from ERequestingDiagnosticRequestPriority (required)
@@ -35,6 +35,26 @@ Description: "Diagnostic Request Base used for Pathology and Radiology.  Carries
 
 * supportingInfo MS
 * supportingInfo obeys narrative-for-supportinginfo
+  * ^short = "Supporting request information such as implanted device or conditions"
+  * reference 1..
+    * ^short = "Reference to contained resource or relative resource URL"
+* supportingInfo ^slicing.rules = #open
+* supportingInfo ^slicing.discriminator.type = #profile
+* supportingInfo ^slicing.discriminator.path = "$this.resolve()"
+* supportingInfo contains 
+    device 0.. MS and
+    condition 0.. MS and
+    allergy 0.. MS
+    // and
+    // pregnancystatus 0..1 MS and
+    // gestationalage 0..1 MS and
+    // lastmenstrualperiod 0..1 MS 
+// * supportingInfo[pregnancystatus] only Reference(AUCorePregnancyStatus)
+// * supportingInfo[gestationalage] only Reference(AUCoreGestationalAge)
+// * supportingInfo[lastmenstrualperiod] only Reference(AUCoreLastMenstrualPeriod)
+* supportingInfo[device] only Reference(ERequestingDevice)
+* supportingInfo[condition] only Reference(AUCoreCondition)
+* supportingInfo[allergy] only Reference(AUCoreAllergyIntolerance)
 
 * patientInstruction MS
 * patientInstruction ^short = "Instructions to patient. Must support where available."
