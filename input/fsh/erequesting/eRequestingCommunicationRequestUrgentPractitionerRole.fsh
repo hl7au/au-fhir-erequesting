@@ -31,7 +31,7 @@ Description: "Urgent communication request to a practitioner.  This is used when
     * ^short = "Reference to contained PractitionerRole resource" 
 * medium 1..1 MS
 * medium from ERequestingCommunicationUrgentMedium
-  * ^short = "SMSWRIT | EMAILWRIT | PHONE"
+  * ^short = "SMSWRIT | EMAILWRIT | PHONE | FAXWRIT"
 * category 1..1 MS
 * category = $communication-category#alert
   * ^short = "alert"
@@ -60,9 +60,22 @@ Description: "This profile supports a PractitionerRole for clinician communicati
 * practitioner 1.. MS
   * reference 1..
 * telecom 1..1 MS
-  * ^short = "Contact phone number"
+  * ^short = "Contact phone number, fax number, or email"
   * system 1..1
-  * system = #phone (exactly)
-    * ^short = "phone"
   * value 1..1
-    * ^short = "Contact phone number"
+* telecom ^slicing.discriminator[+].type = #value
+* telecom ^slicing.discriminator[=].path = "system"
+* telecom ^slicing.rules = #closed
+* telecom contains 
+    phone 0..1 MS and
+    fax 0..1 MS and
+    email 0..1 MS and 
+    sms 0..1 MS
+* telecom[phone].system = #phone
+  * ^short = "Contact via a phone number"
+* telecom[fax].system = #fax
+  * ^short = "Contact via a fax"
+* telecom[email].system = #email
+  * ^short = "Contact via email"
+* telecom[sms].system = #sms
+  * ^short = "Contact via SMS"

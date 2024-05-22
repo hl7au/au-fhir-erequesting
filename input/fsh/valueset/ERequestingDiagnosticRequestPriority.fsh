@@ -5,3 +5,4 @@ Description: "Priority codes for pathology and radiology requests."
 * ^experimental = true
 * $request-priority#routine
 * $request-priority#urgent
+* $request-priority#emergency
