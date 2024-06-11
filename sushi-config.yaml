@@ -53,10 +53,10 @@ pages:
     title: Use cases
   artefacts.md:
     title: FHIR artefacts      
-  # profiles-and-extensions.md:
-  # capability-statements.md:
-  # search-parameters.md:
-  # terminology.md:
+    profiles-and-extensions.md:
+    # capability-statements.md:
+    search-parameters-and-operations.md:
+  terminology.md:
   examples.md:
   downloads.md:
   # changes.md:
@@ -101,6 +101,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - init #init: Messages describing the start up process (for debugging)
     - progress #progress: Overall progress messages
   releaselabel: CI Build
+  fmm-definition: https://build.fhir.org/ig/hl7au/au-fhir-base/guidance.html#maturity-levels
 #
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
