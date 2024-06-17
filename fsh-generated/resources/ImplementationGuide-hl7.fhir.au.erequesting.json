@@ -63,10 +63,10 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/fish-patient"
+          "reference": "StructureDefinition/au-erequesting-servicerequest"
         },
-        "name": "Fish Patient",
-        "description": "A patient that is a type of fish.",
+        "name": "eRequesting ServiceRequest",
+        "description": "This profile defines a service request structure to represent a request for a diagnostic investigation. It is based on the [AU Base Diagnostic Request](http://hl7.org.au/fhir/StructureDefinition/au-diagnosticrequest).",
         "exampleBoolean": false
       }
     ],
@@ -115,6 +115,23 @@
         {
           "nameUrl": "artefacts.html",
           "title": "FHIR artefacts",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "profiles-and-extensions.html",
+              "title": "Profiles and Extensions",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "search-parameters-and-operations.html",
+              "title": "Search Parameters and Operations",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "terminology.html",
+          "title": "Terminology",
           "generation": "markdown"
         },
         {
@@ -225,6 +242,10 @@
       {
         "code": "releaselabel",
         "value": "CI Build"
+      },
+      {
+        "code": "fmm-definition",
+        "value": "https://build.fhir.org/ig/hl7au/au-fhir-base/guidance.html#maturity-levels"
       }
     ]
   }
