@@ -47,6 +47,8 @@ pages:
       title: Future of AU eRequesting
     relationship.md: 
       title: Relationship with other HL7 AU FHIR IGs
+    variance.md:
+      title: AU Variance Statement
     auereqdi.md:
       title: AU eRequesting Data for Interoperability
   use-cases.md:
