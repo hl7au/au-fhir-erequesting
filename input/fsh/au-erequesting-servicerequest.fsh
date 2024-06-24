@@ -52,9 +52,9 @@ Description: "This profile defines a service request structure to represent a re
 Invariant: au-erequesting-srr-00
 Description: "Date must include at least year, month, and day"
 Severity: #error
-Expression: "TBD"
+Expression: "authoredOn.exists()"
 
 Invariant: au-erequesting-srr-01
 Description: "Category shall be one of SNOMED CT 108252007 Laboratory procedure or SNOMED CT 363679005 Imaging"
 Severity: #error
-Expression: "TBD"
+Expression: "category.exists()"
