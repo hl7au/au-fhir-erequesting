@@ -4,7 +4,7 @@ Id: au-erequesting-servicerequest
 Title: "AU eRequesting ServiceRequest"
 Description: "This profile defines a service request structure to represent a request for a diagnostic investigation. It is based on the [AU Base Diagnostic Request](http://hl7.org.au/fhir/StructureDefinition/au-diagnosticrequest)."
 
-* status = #draft
+* ^status = #draft
 
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension.valueInteger = 0
