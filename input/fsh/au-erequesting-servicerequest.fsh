@@ -15,6 +15,7 @@ Description: "This profile defines a service request structure to represent a re
 
 
 * identifier MS 
+
 * status MS
 
 * intent 1..1
@@ -28,6 +29,7 @@ Description: "This profile defines a service request structure to represent a re
 
 * authoredOn 1..1
 * authoredOn MS 
+* authoredOn obeys au-erequesting-srr-00
 
 * requester 1..1
 * requester MS
@@ -37,5 +39,22 @@ Description: "This profile defines a service request structure to represent a re
 
 * category 1..*
 * category MS
+* category obeys au-erequesting-srr-01
 
+* note MS
 
+* insurance MS
+
+* encounter MS
+
+* reasonCode MS
+
+Invariant: au-erequesting-srr-00
+Description: "Date must include at least year, month, and day"
+Severity: #error
+Expression: "TBD"
+
+Invariant: au-erequesting-srr-01
+Description: "Category shall be one of SNOMED CT 108252007 Laboratory procedure or SNOMED CT 363679005 Imaging"
+Severity: #error
+Expression: "TBD"
