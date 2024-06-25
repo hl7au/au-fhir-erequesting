@@ -29,7 +29,7 @@ Description: "This profile defines a service request structure to represent a re
 
 * authoredOn 1..1
 * authoredOn MS 
-* authoredOn obeys au-erequesting-srr-00
+* authoredOn obeys au-ereq-srr-00
 
 * requester 1..1
 * requester MS
@@ -39,7 +39,7 @@ Description: "This profile defines a service request structure to represent a re
 
 * category 1..*
 * category MS
-* category obeys au-erequesting-srr-01
+* category obeys au-ereq-srr-01
 
 * note MS
 
@@ -49,12 +49,12 @@ Description: "This profile defines a service request structure to represent a re
 
 * reasonCode MS
 
-Invariant: au-erequesting-srr-00
+Invariant: au-ereq-srr-00
 Description: "Date must include at least year, month, and day"
 Severity: #error
 Expression: "authoredOn.exists()"
 
-Invariant: au-erequesting-srr-01
+Invariant: au-ereq-srr-01
 Description: "Category shall be one of SNOMED CT 108252007 Laboratory procedure or SNOMED CT 363679005 Imaging"
 Severity: #error
 Expression: "category.exists()"
