@@ -2,13 +2,18 @@
 <!-- Compliant with Services Australia Test Data -->
 <Patient xmlns="http://hl7.org/fhir">
     <id value="fred-roberts"/>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-name">
+        <valueString value="Patient - Fred Roberts"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
+        <valueMarkdown value="Fred Roberts"/>
+    </extension>
     <meta>
         <profile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient"/>
     </meta>
     <extension url="http://hl7.org.au/fhir/StructureDefinition/indigenous-status">
         <valueCoding>
-            <system
-                value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1"/>
+            <system value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1"/>
             <code value="4"/>
             <display value="Neither Aboriginal nor Torres Strait Islander origin"/>
         </valueCoding>
@@ -41,7 +46,7 @@
         <use value="usual"/>
         <family value="Roberts"/>
         <given value="Fred"/>
-     </name>
+    </name>
     <telecom>
         <system value="phone"/>
         <value value="0491570158"/>

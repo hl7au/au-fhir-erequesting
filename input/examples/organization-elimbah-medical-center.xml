@@ -2,6 +2,12 @@
 <!-- Compliant with Services Australia Test Data -->
 <Organization xmlns="http://hl7.org/fhir">
     <id value="elimbah-medical-center"/>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-name">
+        <valueString value="Organization - Elimbah Medical Center"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
+        <valueMarkdown value="Elimbah Medical Center"/>
+    </extension>
     <meta>
         <profile value="http://hl7.org.au/fhir/StructureDefinition/au-organization"/>
     </meta>
