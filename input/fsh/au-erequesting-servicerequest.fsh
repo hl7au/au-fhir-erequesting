@@ -28,7 +28,7 @@ Description: "This profile defines a service request structure to represent a re
 * authoredOn obeys au-ereq-srr-00
 
 * requester 1..1 MS
-* requester only Reference(AUCorePractitionerRole)
+* requester only Reference(PractitionerRole)
 
 * requisition 1..1 MS
 * requisition ^type.profile = "http://hl7.org.au/fhir/StructureDefinition/au-localorderidentifier"
