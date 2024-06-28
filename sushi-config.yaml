@@ -10,8 +10,6 @@ title: AU eRequesting
 description: This implementation guide is provided to support the use of FHIR®© for clinical requesting and ordering in an Australian context. , and defines the minimum set of constraints on the FHIR resources to create the AU eRequesting profiles.
 status: draft # draft | active | retired | unknown
 extension:
-  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg  #<<< must include a http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension that identifies the workgroup responsible for the IG. This is the authoritative element.
-    valueCode: HAFWG  
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
     valueCode: draft
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm  #<<<<< the default FMM level for the artifacts in this IG
