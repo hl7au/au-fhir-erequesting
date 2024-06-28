@@ -37,4 +37,4 @@ The following link to the ImplementationGuide resource defines the technical det
 
 - [XML](ImplementationGuide-hl7.fhir.au.core.xml) 
 - [JSON](ImplementationGuide-hl7.fhir.au.core.json)
-- [TTL](ImplementationGuide-hl7.fhir.au.core.ttl) -->
+- [TTL](ImplementationGuide-hl7.fhir.au.core.ttl)
