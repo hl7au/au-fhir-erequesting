@@ -13,7 +13,6 @@ Description: "This profile defines a service request structure to represent a re
 
 * . ^short = "A diagnostic service request"
 
-
 * identifier MS 
 
 * status MS
@@ -29,7 +28,7 @@ Description: "This profile defines a service request structure to represent a re
 
 * authoredOn 1..1
 * authoredOn MS 
-* authoredOn obeys au-ereq-srr-00
+* authoredOn obeys au-ereq-srr-01
 
 * requester 1..1
 * requester MS
@@ -39,7 +38,6 @@ Description: "This profile defines a service request structure to represent a re
 
 * category 1..*
 * category MS
-* category obeys au-ereq-srr-01
 
 * note MS
 
@@ -49,12 +47,14 @@ Description: "This profile defines a service request structure to represent a re
 
 * reasonCode MS
 
-Invariant: au-ereq-srr-00
-Description: "Date must include at least year, month, and day"
-Severity: #error
-Expression: "authoredOn.exists()"
+* obeys au-ereq-srr-02
 
 Invariant: au-ereq-srr-01
+Description: "Date must include at least year, month, and day"
+Severity: #error
+Expression: "$this.toString().matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$')"
+
+Invariant: au-ereq-srr-02
 Description: "Category shall be one of SNOMED CT 108252007 Laboratory procedure or SNOMED CT 363679005 Imaging"
 Severity: #error
-Expression: "category.exists()"
+Expression: "category.coding.where(system='http://snomed.info/sct' and code='108252007').exists() or category.coding.where(system='http://snomed.info/sct' and code='363679005').exists()"
