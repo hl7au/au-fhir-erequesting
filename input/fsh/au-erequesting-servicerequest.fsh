@@ -6,10 +6,7 @@ Description: "This profile defines a service request structure to represent a re
 
 * ^status = #draft
 
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
-* ^extension.valueInteger = 0
-* ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
-* ^extension.valueCode = #draft
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 
 * . ^short = "A diagnostic service request"
 
@@ -17,27 +14,25 @@ Description: "This profile defines a service request structure to represent a re
 
 * status MS
 
-* intent 1..1
-* intent MS
+* intent 1..1 MS
+* intent = #order
 
-* code 1..1
-* code MS
+* code 1..1 MS
 
 * subject MS
-* subject MS
+* subject only Reference(AUCorePatient)
 
-* authoredOn 1..1
-* authoredOn MS 
-* authoredOn obeys au-ereq-srr-01
 
-* requester 1..1
-* requester MS
+* authoredOn 1..1 MS
+* authoredOn obeys au-ereq-srr-00
 
-* requisition 1..1
-* requisition MS 
+* requester 1..1 MS
+* requester only Reference(PractitionerRole)
 
-* category 1..*
-* category MS
+* requisition 1..1 MS
+* requisition ^type.profile = "http://hl7.org.au/fhir/StructureDefinition/au-localorderidentifier"
+
+* category 1..* MS
 
 * note MS
 
