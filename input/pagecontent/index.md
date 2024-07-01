@@ -27,7 +27,7 @@ This guide is divided into several pages which are listed at the top of each pag
   - [AU eRequesting data for interoperability](auereqdi.html): This is a placeholder for when content becomes available.
   - [Relationship with other HL7 AU FHIR IGs](relationship.html): This is a placeholder for when content becomes available.
   - [AU Variance Statement](variance.html): This page documents variance from AU Base and AU Core.
-  - [Future of AU eRequesting](future.html): This is a placeholder for when content becomes available.
+  - [Future of AU eRequesting](future.html): This page outlines the approach to developing AU eRequesting and yearly update cycle.
 - [Use Cases](use-cases.html): This page describes the use cases in scope of eRequesting R1. 
 - [FHIR Artefacts](artifacts.html): These pages provide detailed descriptions and formal definitions for all the FHIR artefacts defined in this guide.
   - [Profiles and Extensions](profiles-and-extensions.html): This set of pages describes the profiles and extensions that are defined in this guide to exchange quality data. Each profile page includes a narrative description and guidance, formal definition and a "Quick Start" guide which summarises the supported search transactions for each profile. Although the guidance typically focuses on the profiled elements, it may also may focus on un-profiled elements to aid with implementation.
