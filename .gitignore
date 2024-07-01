@@ -4,6 +4,7 @@
 /input-cache/
 /temp/
 /template/
+/.vs/
 
 # Don't commit this because it's so large #
 ###########################################

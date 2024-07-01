@@ -68,6 +68,7 @@ pages:
   terminology.md:
   examples.md:
   downloads.md:
+  license.md:
   # changes.md:
     # title: Change Log
   # ImplementationGuide-hl7.fhir.au.erequesting.md:
