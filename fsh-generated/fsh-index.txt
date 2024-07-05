@@ -1,2 +1,5 @@
-Output File                                             Name                         Type     FSH File                           Lines
-StructureDefinition-au-erequesting-servicerequest.json  AUeRequestingServiceRequest  Profile  au-erequesting-servicerequest.fsh  1 - 55
+Output File                                             Name                         Type      FSH File                           Lines
+ActorDefinition-eRequestingFiller.json                  eRequestingFiller            Instance  actors.fsh                         13 - 22
+ActorDefinition-eRequestingPatient.json                 eRequestingPatient           Instance  actors.fsh                         25 - 34
+ActorDefinition-eRequestingPlacer.json                  eRequestingPlacer            Instance  actors.fsh                         1 - 10
+StructureDefinition-au-erequesting-servicerequest.json  AUeRequestingServiceRequest  Profile   au-erequesting-servicerequest.fsh  1 - 55

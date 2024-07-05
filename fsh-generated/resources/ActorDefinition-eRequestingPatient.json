@@ -1,0 +1,11 @@
+{
+  "resourceType": "ActorDefinition",
+  "id": "eRequestingPatient",
+  "url": "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-actor-patient",
+  "name": "AUeRequestingPatient",
+  "title": "AU eRequesting Patient",
+  "status": "active",
+  "description": "this is an example of the patient actor",
+  "type": "system",
+  "documentation": "this is an example of the patient actor"
+}

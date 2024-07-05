@@ -77,6 +77,30 @@
     "resource": [
       {
         "reference": {
+          "reference": "ActorDefinition/eRequestingFiller"
+        },
+        "name": "AU eRequesting Filler",
+        "description": "this is an example of the filler actor",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ActorDefinition/eRequestingPatient"
+        },
+        "name": "AU eRequesting Patient",
+        "description": "this is an example of the patient actor",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ActorDefinition/eRequestingPlacer"
+        },
+        "name": "AU eRequesting Placer",
+        "description": "this is an example of the placer actor",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/au-erequesting-servicerequest"
         },
         "name": "AU eRequesting ServiceRequest",
