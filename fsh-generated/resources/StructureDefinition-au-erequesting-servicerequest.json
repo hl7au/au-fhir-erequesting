@@ -144,11 +144,7 @@
             "extension": [
               {
                 "url": "code",
-                "valueCode": "SHALL:no-error"
-              },
-              {
-                "url": "actor",
-                "valueCanonical": "http://hl7.org.au/fhir/core/ActorDefinition/au-erequesting-actor-filler"
+                "valueCode": "SHALL:display"
               },
               {
                 "url": "actor",
