@@ -1,7 +1,7 @@
 {
   "resourceType": "ActorDefinition",
   "id": "eRequestingPlacer",
-  "url": "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-actor-placer",
+  "url": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer",
   "name": "AUeRequestingPlacer",
   "title": "AU eRequesting Placer",
   "status": "active",

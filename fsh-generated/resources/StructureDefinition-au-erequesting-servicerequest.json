@@ -88,6 +88,59 @@
       },
       {
         "id": "ServiceRequest.code",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
+            "extension": [
+              {
+                "url": "purpose",
+                "valueCode": "preferred"
+              },
+              {
+                "url": "valueSet",
+                "valueCanonical": "https://www.rcpa.edu.au/fhir/ValueSet/spia-haematology-refset-3"
+              },
+              {
+                "url": "documentation",
+                "valueMarkdown": "This is preferred for pathology haematology."
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
+            "extension": [
+              {
+                "url": "purpose",
+                "valueCode": "preferred"
+              },
+              {
+                "url": "valueSet",
+                "valueCanonical": "https://www.rcpa.edu.au/fhir/ValueSet/spia-immunopathology-refset-3"
+              },
+              {
+                "url": "documentation",
+                "valueMarkdown": "This is preferred for pathology immunopathology."
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
+            "extension": [
+              {
+                "url": "purpose",
+                "valueCode": "preferred"
+              },
+              {
+                "url": "valueSet",
+                "valueCanonical": "https://healthterminologies.gov.au/fhir/ValueSet/imaging-procedure-1"
+              },
+              {
+                "url": "documentation",
+                "valueMarkdown": "This is preferred for diagnostic imaging."
+              }
+            ]
+          }
+        ],
         "path": "ServiceRequest.code",
         "min": 1,
         "mustSupport": true
@@ -122,7 +175,7 @@
               },
               {
                 "url": "actor",
-                "valueCanonical": "http://hl7.org.au/fhir/core/ActorDefinition/au-erequesting-actor-placer"
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
               }
             ]
           },
@@ -135,7 +188,7 @@
               },
               {
                 "url": "actor",
-                "valueCanonical": "http://hl7.org.au/fhir/core/ActorDefinition/au-erequesting-actor-filler"
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
               }
             ]
           },
@@ -148,7 +201,7 @@
               },
               {
                 "url": "actor",
-                "valueCanonical": "http://hl7.org.au/fhir/core/ActorDefinition/au-erequesting-actor-patient"
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
               }
             ]
           }
