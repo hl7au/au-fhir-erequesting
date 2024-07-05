@@ -88,62 +88,66 @@
       },
       {
         "id": "ServiceRequest.code",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
-            "extension": [
-              {
-                "url": "purpose",
-                "valueCode": "preferred"
-              },
-              {
-                "url": "valueSet",
-                "valueCanonical": "https://www.rcpa.edu.au/fhir/ValueSet/spia-haematology-refset-3"
-              },
-              {
-                "url": "documentation",
-                "valueMarkdown": "This is preferred for pathology haematology."
-              }
-            ]
-          },
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
-            "extension": [
-              {
-                "url": "purpose",
-                "valueCode": "preferred"
-              },
-              {
-                "url": "valueSet",
-                "valueCanonical": "https://www.rcpa.edu.au/fhir/ValueSet/spia-immunopathology-refset-3"
-              },
-              {
-                "url": "documentation",
-                "valueMarkdown": "This is preferred for pathology immunopathology."
-              }
-            ]
-          },
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
-            "extension": [
-              {
-                "url": "purpose",
-                "valueCode": "preferred"
-              },
-              {
-                "url": "valueSet",
-                "valueCanonical": "https://healthterminologies.gov.au/fhir/ValueSet/imaging-procedure-1"
-              },
-              {
-                "url": "documentation",
-                "valueMarkdown": "This is preferred for diagnostic imaging."
-              }
-            ]
-          }
-        ],
         "path": "ServiceRequest.code",
         "min": 1,
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "example",
+          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/evaluation-procedure-1",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
+              "extension": [
+                {
+                  "url": "purpose",
+                  "valueCode": "preferred"
+                },
+                {
+                  "url": "valueSet",
+                  "valueCanonical": "https://www.rcpa.edu.au/fhir/ValueSet/spia-haematology-refset-3"
+                },
+                {
+                  "url": "documentation",
+                  "valueMarkdown": "This is preferred for pathology haematology."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
+              "extension": [
+                {
+                  "url": "purpose",
+                  "valueCode": "preferred"
+                },
+                {
+                  "url": "valueSet",
+                  "valueCanonical": "https://www.rcpa.edu.au/fhir/ValueSet/spia-immunopathology-refset-3"
+                },
+                {
+                  "url": "documentation",
+                  "valueMarkdown": "This is preferred for pathology immunopathology."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
+              "extension": [
+                {
+                  "url": "purpose",
+                  "valueCode": "preferred"
+                },
+                {
+                  "url": "valueSet",
+                  "valueCanonical": "https://healthterminologies.gov.au/fhir/ValueSet/imaging-procedure-1"
+                },
+                {
+                  "url": "documentation",
+                  "valueMarkdown": "This is preferred for diagnostic imaging."
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "ServiceRequest.subject",

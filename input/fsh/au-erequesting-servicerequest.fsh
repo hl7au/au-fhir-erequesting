@@ -19,15 +19,15 @@ Description: "This profile defines a service request structure to represent a re
 * intent = #order
 
 * code 1..1 MS
-* code ^extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][0].extension[purpose].valueCode = #preferred
-* code ^extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][0].extension[valueSet].valueCanonical = "https://www.rcpa.edu.au/fhir/ValueSet/spia-haematology-refset-3"
-* code ^extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][0].extension[documentation].valueMarkdown = "This is preferred for pathology haematology."
-* code ^extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][1].extension[purpose].valueCode = #preferred
-* code ^extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][1].extension[valueSet].valueCanonical = "https://www.rcpa.edu.au/fhir/ValueSet/spia-immunopathology-refset-3"
-* code ^extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][1].extension[documentation].valueMarkdown = "This is preferred for pathology immunopathology."
-* code ^extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][2].extension[purpose].valueCode = #preferred
-* code ^extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][2].extension[valueSet].valueCanonical = "https://healthterminologies.gov.au/fhir/ValueSet/imaging-procedure-1"
-* code ^extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][2].extension[documentation].valueMarkdown = "This is preferred for diagnostic imaging."
+* code ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][0].extension[purpose].valueCode = #preferred
+* code ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][0].extension[valueSet].valueCanonical = "https://www.rcpa.edu.au/fhir/ValueSet/spia-haematology-refset-3"
+* code ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][0].extension[documentation].valueMarkdown = "This is preferred for pathology haematology."
+* code ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][1].extension[purpose].valueCode = #preferred
+* code ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][1].extension[valueSet].valueCanonical = "https://www.rcpa.edu.au/fhir/ValueSet/spia-immunopathology-refset-3"
+* code ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][1].extension[documentation].valueMarkdown = "This is preferred for pathology immunopathology."
+* code ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][2].extension[purpose].valueCode = #preferred
+* code ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][2].extension[valueSet].valueCanonical = "https://healthterminologies.gov.au/fhir/ValueSet/imaging-procedure-1"
+* code ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][2].extension[documentation].valueMarkdown = "This is preferred for diagnostic imaging."
 
 
 * subject MS
