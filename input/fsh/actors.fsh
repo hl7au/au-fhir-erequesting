@@ -1,7 +1,7 @@
 Instance: eRequestingPlacer
 InstanceOf: ActorDefinition
 Usage: #definition
-* url = "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-actor-placer"
+* url = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * name = "AUeRequestingPlacer"
 * title = "AU eRequesting Placer"
 * status = #active
@@ -13,7 +13,7 @@ Usage: #definition
 Instance: eRequestingFiller
 InstanceOf: ActorDefinition
 Usage: #definition
-* url = "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-actor-filler"
+* url = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
 * name = "AUeRequestingFiller"
 * title = "AU eRequesting Filler"
 * status = #active
@@ -25,7 +25,7 @@ Usage: #definition
 Instance: eRequestingPatient
 InstanceOf: ActorDefinition
 Usage: #definition
-* url = "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-actor-patient"
+* url = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 * name = "AUeRequestingPatient"
 * title = "AU eRequesting Patient"
 * status = #active

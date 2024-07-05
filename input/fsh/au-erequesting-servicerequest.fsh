@@ -26,11 +26,11 @@ Description: "This profile defines a service request structure to represent a re
 * authoredOn 1..1 MS
 * authoredOn obeys au-ereq-srr-01
 * authoredOn ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
-* authoredOn ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical =  "http://hl7.org.au/fhir/core/ActorDefinition/au-erequesting-actor-placer"
+* authoredOn ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical =  "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * authoredOn ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[code].valueCode = #SHALL:handle
-* authoredOn ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical =  "http://hl7.org.au/fhir/core/ActorDefinition/au-erequesting-actor-filler"
+* authoredOn ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical =  "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
 * authoredOn ^extension[http://hl7.org/fhir/StructureDefinition/obligation][2].extension[code].valueCode = #SHALL:display
-* authoredOn ^extension[http://hl7.org/fhir/StructureDefinition/obligation][2].extension[actor].valueCanonical =  "http://hl7.org.au/fhir/core/ActorDefinition/au-erequesting-actor-patient"
+* authoredOn ^extension[http://hl7.org/fhir/StructureDefinition/obligation][2].extension[actor].valueCanonical =  "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 
 
 * requester 1..1 MS
