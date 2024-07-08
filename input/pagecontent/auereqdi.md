@@ -6,7 +6,8 @@ AUeReqDI Release 1 (R1) is focused on an agreement of the minimum data required 
 
 With AUeReqDI defining clinical data requirements and FHIR AU eRequesting providing the Implementation Guide for FHIR-based electronic requesting of diagnostic imaging and pathology services, an interpretation of AUeReqDI is necessary which is undertaken through the community.
 
-Updates to AU eRequesting depend upon community input through the evolution of AUCDI and AU Core. We encourage requesting any necessary clarifications to AUeReqDI or AUCDI through through the respective process that helps inform future updates to FHIR AU eRequesting and AU Core. In addition, we encourage our audience to submit questions and feedback to AU eRequesting or AU Core specifications by clicking on the Propose a change link in the footer of every page.
+Updates to AU eRequesting and AU Core depend upon community input and we encourage our audience to submit questions and feedback on implementation guides by clicking on the Propose a change link in the footer of every page.  We encourage requesting any necessary clarifications to AUeReqDI or AUCDI through through the respective process that helps inform future updates to FHIR AU eRequesting and AU Core. 
+
 
 ### AUeReqDI mappings into AU eRequesting
 
