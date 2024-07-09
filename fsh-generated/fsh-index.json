@@ -1,10 +1,10 @@
 [
   {
-    "outputFile": "StructureDefinition-fish-patient.json",
-    "fshName": "FishPatient",
+    "outputFile": "StructureDefinition-au-erequesting-servicerequest.json",
+    "fshName": "AUeRequestingServiceRequest",
     "fshType": "Profile",
-    "fshFile": "FishPatient.fsh",
+    "fshFile": "au-erequesting-servicerequest.fsh",
     "startLine": 1,
-    "endLine": 6
+    "endLine": 53
   }
 ]
