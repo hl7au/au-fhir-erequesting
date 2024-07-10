@@ -1,2 +1,6 @@
 Output File                                             Name                         Type     FSH File                           Lines
+<<<<<<< HEAD
 StructureDefinition-au-erequesting-servicerequest.json  AUERequestingServiceRequest  Profile  au-erequesting-servicerequest.fsh  1 - 45
+=======
+StructureDefinition-au-erequesting-servicerequest.json  AUeRequestingServiceRequest  Profile  au-erequesting-servicerequest.fsh  1 - 54
+>>>>>>> master

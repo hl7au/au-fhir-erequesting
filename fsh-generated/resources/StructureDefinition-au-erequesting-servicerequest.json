@@ -8,7 +8,11 @@
     }
   ],
   "url": "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest",
+<<<<<<< HEAD
   "name": "AUERequestingServiceRequest",
+=======
+  "name": "AUeRequestingServiceRequest",
+>>>>>>> master
   "title": "AU eRequesting ServiceRequest",
   "status": "draft",
   "description": "This profile defines a service request structure to represent a request for a diagnostic investigation. It is based on the [AU Base Diagnostic Request](http://hl7.org.au/fhir/StructureDefinition/au-diagnosticrequest).",
@@ -23,7 +27,16 @@
       {
         "id": "ServiceRequest",
         "path": "ServiceRequest",
-        "short": "A diagnostic service request"
+        "short": "A diagnostic service request",
+        "constraint": [
+          {
+            "key": "au-ereq-srr-02",
+            "severity": "error",
+            "human": "Category SHALL either be SNOMED CT 108252007 |Laboratory procedure or SNOMED CT 363679005 |Imaging",
+            "expression": "category.coding.where(system='http://snomed.info/sct' and code='108252007').exists() or category.coding.where(system='http://snomed.info/sct' and code='363679005').exists()",
+            "source": "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest"
+          }
+        ]
       },
       {
         "id": "ServiceRequest.identifier",
@@ -43,6 +56,22 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.requisition.type.coding",
+        "path": "ServiceRequest.requisition.type.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.requisition.type.coding.system",
+        "path": "ServiceRequest.requisition.type.coding.system",
+        "patternUri": "http://terminology.hl7.org/CodeSystem/v2-0203"
+      },
+      {
+        "id": "ServiceRequest.requisition.type.coding.code",
+        "path": "ServiceRequest.requisition.type.coding.code",
+        "patternCode": "PGN"
       },
       {
         "id": "ServiceRequest.status",
@@ -77,6 +106,11 @@
         "mustSupport": true
       },
       {
+        "id": "ServiceRequest.code.text",
+        "path": "ServiceRequest.code.text",
+        "min": 1
+      },
+      {
         "id": "ServiceRequest.subject",
         "path": "ServiceRequest.subject",
         "type": [
@@ -87,12 +121,33 @@
             ]
           }
         ],
+<<<<<<< HEAD
         "mustSupport": true
       },
       {
         "id": "ServiceRequest.encounter",
         "path": "ServiceRequest.encounter",
+=======
+>>>>>>> master
         "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.encounter",
+        "path": "ServiceRequest.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.au/fhir/core/StructureDefinition/au-core-encounter"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.encounter.reference",
+        "path": "ServiceRequest.encounter.reference",
+        "min": 1
       },
       {
         "id": "ServiceRequest.authoredOn",
@@ -100,10 +155,17 @@
         "min": 1,
         "constraint": [
           {
+<<<<<<< HEAD
             "key": "au-ereq-srr-00",
             "severity": "error",
             "human": "Date must include at least year, month, and day",
             "expression": "authoredOn.exists()",
+=======
+            "key": "au-ereq-srr-01",
+            "severity": "error",
+            "human": "Date must include at least year, month, and day",
+            "expression": "$this.toString().matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$')",
+>>>>>>> master
             "source": "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest"
           }
         ],
@@ -131,6 +193,22 @@
       {
         "id": "ServiceRequest.insurance",
         "path": "ServiceRequest.insurance",
+<<<<<<< HEAD
+=======
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.au/fhir/StructureDefinition/au-coverage"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.bodySite",
+        "path": "ServiceRequest.bodySite",
+>>>>>>> master
         "mustSupport": true
       },
       {
