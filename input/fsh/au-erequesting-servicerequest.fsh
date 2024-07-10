@@ -19,6 +19,7 @@ Description: "This profile defines a service request structure to represent a re
 * intent = #order
 
 * code 1..1 MS
+* code.text 1..1
 
 * subject MS
 * subject only Reference(AUCorePatient)
@@ -40,10 +41,15 @@ Description: "This profile defines a service request structure to represent a re
 * note MS
 
 * insurance MS
+* insurance only Reference(AUBaseCoverage)
 
 * encounter MS
+* encounter only Reference(AUCoreEncounter)
+* encounter.reference 1..1
 
 * reasonCode MS
+
+* bodySite MS
 
 * obeys au-ereq-srr-02
 

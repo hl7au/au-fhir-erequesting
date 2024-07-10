@@ -3,14 +3,13 @@
   "id": "au-erequesting-servicerequest",
   "extension": [
     {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-      "valueInteger": 0,
-      "valueCode": "draft"
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
     }
   ],
-  "url": "http://hl7.org.au/fhir/erequesting/StructureDefinition/au-erequesting-servicerequest",
-  "name": "ERequestingServiceRequest",
-  "title": "eRequesting ServiceRequest",
+  "url": "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest",
+  "name": "AUeRequestingServiceRequest",
+  "title": "AU eRequesting ServiceRequest",
   "status": "draft",
   "description": "This profile defines a service request structure to represent a request for a diagnostic investigation. It is based on the [AU Base Diagnostic Request](http://hl7.org.au/fhir/StructureDefinition/au-diagnosticrequest).",
   "fhirVersion": "4.0.1",
@@ -24,7 +23,16 @@
       {
         "id": "ServiceRequest",
         "path": "ServiceRequest",
-        "short": "A diagnostic service request"
+        "short": "A diagnostic service request",
+        "constraint": [
+          {
+            "key": "au-ereq-srr-02",
+            "severity": "error",
+            "human": "Category SHALL either be SNOMED CT 108252007 |Laboratory procedure or SNOMED CT 363679005 |Imaging",
+            "expression": "category.coding.where(system='http://snomed.info/sct' and code='108252007').exists() or category.coding.where(system='http://snomed.info/sct' and code='363679005').exists()",
+            "source": "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest"
+          }
+        ]
       },
       {
         "id": "ServiceRequest.identifier",
@@ -35,17 +43,41 @@
         "id": "ServiceRequest.requisition",
         "path": "ServiceRequest.requisition",
         "min": 1,
+        "type": [
+          {
+            "code": "Identifier",
+            "profile": [
+              "http://hl7.org.au/fhir/StructureDefinition/au-localorderidentifier"
+            ]
+          }
+        ],
         "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.requisition.type.coding",
+        "path": "ServiceRequest.requisition.type.coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "ServiceRequest.requisition.type.coding.system",
+        "path": "ServiceRequest.requisition.type.coding.system",
+        "patternUri": "http://terminology.hl7.org/CodeSystem/v2-0203"
+      },
+      {
+        "id": "ServiceRequest.requisition.type.coding.code",
+        "path": "ServiceRequest.requisition.type.coding.code",
+        "patternCode": "PGN"
       },
       {
         "id": "ServiceRequest.status",
         "path": "ServiceRequest.status",
-        "patternCode": "draft",
         "mustSupport": true
       },
       {
         "id": "ServiceRequest.intent",
         "path": "ServiceRequest.intent",
+        "patternCode": "order",
         "mustSupport": true
       },
       {
@@ -61,20 +93,96 @@
         "mustSupport": true
       },
       {
+        "id": "ServiceRequest.code.text",
+        "path": "ServiceRequest.code.text",
+        "min": 1
+      },
+      {
         "id": "ServiceRequest.subject",
         "path": "ServiceRequest.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient"
+            ]
+          }
+        ],
         "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.encounter",
+        "path": "ServiceRequest.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.au/fhir/core/StructureDefinition/au-core-encounter"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.encounter.reference",
+        "path": "ServiceRequest.encounter.reference",
+        "min": 1
       },
       {
         "id": "ServiceRequest.authoredOn",
         "path": "ServiceRequest.authoredOn",
         "min": 1,
+        "constraint": [
+          {
+            "key": "au-ereq-srr-01",
+            "severity": "error",
+            "human": "Date must include at least year, month, and day",
+            "expression": "$this.toString().matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$')",
+            "source": "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest"
+          }
+        ],
         "mustSupport": true
       },
       {
         "id": "ServiceRequest.requester",
         "path": "ServiceRequest.requester",
         "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.reasonCode",
+        "path": "ServiceRequest.reasonCode",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.insurance",
+        "path": "ServiceRequest.insurance",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.au/fhir/StructureDefinition/au-coverage"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.bodySite",
+        "path": "ServiceRequest.bodySite",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.note",
+        "path": "ServiceRequest.note",
         "mustSupport": true
       }
     ]
