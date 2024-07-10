@@ -1,0 +1,11 @@
+{
+  "resourceType": "ActorDefinition",
+  "id": "au-erequesting-actor-patientaccess",
+  "url": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess",
+  "name": "AUeRequestingPatientAccess",
+  "title": "AU eRequesting Patient Access",
+  "status": "draft",
+  "description": "The AU eRequesting Patient Access system is the digital interface that allows patients or their representatives to view and manage their requests for diagnostic services. It provides access to request details, enabling patients to choose service providers and track the status of their requests.",
+  "type": "system",
+  "documentation": "An AU eRequesting Patient Access (client): TBD"
+}

@@ -1,0 +1,11 @@
+{
+  "resourceType": "ActorDefinition",
+  "id": "au-erequesting-actor-filler",
+  "url": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler",
+  "name": "AUeRequestingFiller",
+  "title": "AU eRequesting Filler",
+  "status": "draft",
+  "description": "The AU eRequesting Filler is a system responsible for finding and retrieving diagnostic service requests so that service providers can fulfil them It ensures that service providers have the necessary details to fulfil the requests and manages the requests through the fulfilment process.",
+  "type": "system",
+  "documentation": "An AU eRequesting Filler (client): TBD"
+}

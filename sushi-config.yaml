@@ -64,6 +64,8 @@ pages:
     # capability-statements.md:
     search-parameters-and-operations.md:
   terminology.md:
+  actors.md:
+    title: Actor Definitions
   examples.md:
   downloads.md:
   license.md:
