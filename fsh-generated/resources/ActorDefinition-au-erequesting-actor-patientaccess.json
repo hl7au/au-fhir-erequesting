@@ -5,7 +5,7 @@
   "name": "AUeRequestingPatientAccess",
   "title": "AU eRequesting Patient Access",
   "status": "draft",
-  "description": "The AU eRequesting Patient Access system is the digital interface that allows patients or their representatives to view and manage their requests for diagnostic services. It provides access to request details, enabling patients to choose service providers and track the status of their requests.",
+  "description": "The AU eRequesting Patient Access is a system that is the digital interface that allows patients or their representatives to view and manage requests for diagnostic services. It provides access to request information, enabling patients to choose service providers and track the status of requests.",
   "type": "system",
   "documentation": "An AU eRequesting Patient Access (client): TBD"
 }
