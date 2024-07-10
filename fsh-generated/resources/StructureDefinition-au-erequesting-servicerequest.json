@@ -93,6 +93,11 @@
         "mustSupport": true
       },
       {
+        "id": "ServiceRequest.code.text",
+        "path": "ServiceRequest.code.text",
+        "min": 1
+      },
+      {
         "id": "ServiceRequest.subject",
         "path": "ServiceRequest.subject",
         "type": [
