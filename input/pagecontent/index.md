@@ -23,7 +23,8 @@ This guide is divided into several pages which are listed at the top of each pag
 
 - [Home](index.html): This page provides the introduction and scope for this guide.
 - [Conformance](conformance.html): This is a placeholder for when content becomes available.
-- [Guidance](guidance.html): This is a placeholder for when content becomes available.
+- [Guidance](guidance.html): This set of pages lists the guidance for this guide.
+  - [General Guidance](general-guidance.html):  This page provides guidance on using the profiles defined in this guide.
   - [AU eRequesting data for interoperability](auereqdi.html): This is a placeholder for when content becomes available.
   - [Relationship with other HL7 AU FHIR IGs](relationship.html): This is a placeholder for when content becomes available.
   - [AU Variance Statement](variance.html): This page documents variance from AU Base and AU Core.

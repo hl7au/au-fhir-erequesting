@@ -98,6 +98,11 @@
         {
           "nameUrl": "guidance.html",
           "title": "Guidance",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "general-guidance.html",
+          "title": "General Guidance",
           "generation": "markdown",
           "page": [
             {
