@@ -17,6 +17,25 @@ The AU eRequesting project includes:
 
 {% include dependency-table.xhtml %}
 
+### AU eRequesting Actors
+
+The following actors are part of AU eRequesting:
+
+**AU eRequesting Placer**
+
+A system that is responsible for initiating and creating diagnostic service requests. This system connects to enable requesters to provide the necessary information to create a request, ensuring that required data is accurately collected and provided to service providers with sufficient information for them to fulfil the request.  
+
+
+**AU eRequesting Filler**
+
+A system that is responsible for finding and retrieving diagnostic service requests so that service providers can fulfil them. It ensures that service providers have the necessary information to fulfil the requests and manages the requests through the fulfilment process.
+
+
+**AU eRequesting Patient Access**
+
+A system that is the digital interface that allows patients or their representatives to view and manage requests for diagnostic services. It provides access to request information, enabling patients to choose service providers and track the status of requests.
+
+
 ### How to read this guide
 
 This guide is divided into several pages which are listed at the top of each page in the menu bar.
@@ -33,6 +52,7 @@ This guide is divided into several pages which are listed at the top of each pag
 - [FHIR Artefacts](artifacts.html): These pages provide detailed descriptions and formal definitions for all the FHIR artefacts defined in this guide.
   - [Profiles and Extensions](profiles-and-extensions.html): This set of pages describes the profiles and extensions that are defined in this guide to exchange quality data. Each profile page includes a narrative description and guidance, formal definition and a "Quick Start" guide which summarises the supported search transactions for each profile. Although the guidance typically focuses on the profiled elements, it may also may focus on un-profiled elements to aid with implementation.
   - [Terminology](terminology.html): This set of pages lists the value sets and code systems defined in this guide.
+  - [Actor Definitions](actors.html): This set of pages define the AU aRequesting actors, AU eRequesting Placer, AU eRequesting Filler and AU eRequesting Patient Access.
 - [Examples](examples.html): This is a placeholder for when content becomes available.
 - [Downloads](downloads.html): This is a placeholder for when content becomes available.
 

@@ -73,6 +73,30 @@
     "resource": [
       {
         "reference": {
+          "reference": "ActorDefinition/au-erequesting-actor-filler"
+        },
+        "name": "AU eRequesting Filler",
+        "description": "The AU eRequesting Filler is a system that is responsible for finding and retrieving diagnostic service requests so that service providers can fulfil them. It ensures that service providers have the necessary information to fulfil the requests and manages the requests through the fulfilment process.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ActorDefinition/au-erequesting-actor-patientaccess"
+        },
+        "name": "AU eRequesting Patient Access",
+        "description": "The AU eRequesting Patient Access is a system that is the digital interface that allows patients or their representatives to view and manage requests for diagnostic services. It provides access to request information, enabling patients to choose service providers and track the status of requests.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ActorDefinition/au-erequesting-actor-placer"
+        },
+        "name": "AU eRequesting Placer",
+        "description": "The AU eRequesting Placer is a system that is responsible for initiating and creating diagnostic service requests. This system connects to enable requesters to provide the necessary information to create a request, ensuring that required data is accurately collected and provided to service providers with sufficient information for them to fulfil the request.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/au-erequesting-servicerequest"
         },
         "name": "AU eRequesting ServiceRequest",
@@ -152,6 +176,11 @@
         {
           "nameUrl": "terminology.html",
           "title": "Terminology",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "actors.html",
+          "title": "Actor Definitions",
           "generation": "markdown"
         },
         {
