@@ -184,14 +184,21 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "downloads.html",
-          "title": "Downloads",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "license.html",
-          "title": "License",
-          "generation": "markdown"
+          "nameUrl": "support.html",
+          "title": "Support",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "downloads.html",
+              "title": "Downloads",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "license.html",
+              "title": "License",
+              "generation": "markdown"
+            }
+          ]
         }
       ]
     },

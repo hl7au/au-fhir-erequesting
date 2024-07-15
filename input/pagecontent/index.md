@@ -41,19 +41,21 @@ A system that is the digital interface that allows patients or their representat
 This guide is divided into several pages which are listed at the top of each page in the menu bar.
 
 - [Home](index.html): This page provides the introduction and scope for this guide.
-- [Conformance](conformance.html): This is a placeholder for when content becomes available.
-- [Guidance](guidance.html): This is a placeholder for when content becomes available.
-  - [AU eRequesting data for interoperability](auereqdi.html): This is a placeholder for when content becomes available.
-  - [Relationship with other HL7 AU FHIR IGs](relationship.html): This is a placeholder for when content becomes available.
+- [Conformance](conformance.html): This page describes the set of rules to claim conformance to this guide
+- [Guidance](guidance.html): These pages list the guidance for this guide. 
+  - [AU eRequesting Data for Interoperability](auereqdi.html): This page maps the AU eRequesting resources and elements to AUeReqDI data classes and data elements.
+  - [Relationship with other HL7 AU FHIR IGs](relationship.html): This page provides guidance on the relationship between AU eRequesting and other implementation guides.
   - [AU Variance Statement](variance.html): This page documents variance from AU Base and AU Core.
   - [Future of AU eRequesting](future.html): This page outlines the approach to developing AU eRequesting and yearly update cycle.
 - [Use Cases](use-cases.html): This page describes the use cases in scope of eRequesting R1. 
 - [FHIR Artefacts](artifacts.html): These pages provide detailed descriptions and formal definitions for all the FHIR artefacts defined in this guide.
-  - [Profiles and Extensions](profiles-and-extensions.html): This set of pages describes the profiles and extensions that are defined in this guide to exchange quality data. Each profile page includes a narrative description and guidance, formal definition and a "Quick Start" guide which summarises the supported search transactions for each profile. Although the guidance typically focuses on the profiled elements, it may also may focus on un-profiled elements to aid with implementation.
-  - [Terminology](terminology.html): This set of pages lists the value sets and code systems defined in this guide.
-  - [Actor Definitions](actors.html): This set of pages define the AU aRequesting actors, AU eRequesting Placer, AU eRequesting Filler and AU eRequesting Patient Access.
-- [Examples](examples.html): This is a placeholder for when content becomes available.
-- [Downloads](downloads.html): This is a placeholder for when content becomes available.
+  - [Profiles and Extensions](profiles-and-extensions.html): This page describes the profiles and extensions that are defined in this guide to exchange quality data. Each profile page includes a narrative description and guidance, formal definition and a "Quick Start" guide which summarises the supported search transactions for each profile. Although the guidance typically focuses on the profiled elements, it may also may focus on un-profiled elements to aid with implementation.
+  - [Terminology](terminology.html): This page lists the value sets and code systems defined in this guide.
+  - [Actor Definitions](actors.html): This page defines the AU aRequesting actors, AU eRequesting Placer, AU eRequesting Filler and AU eRequesting Patient Access.
+- [Examples](examples.html): This page lists all the examples used in this guide.
+- [Support](support.html): These pages provide supporting material for implementation of AU eRequesting.
+  - [Downloads](downloads.html): This page provides links to downloadable artefacts.
+  - [License and Legal](license.html): This page outlines the license and legal requirements for material in AU eRequesting.
 
 ### Collaboration
 This guide is the product of collaborative work undertaken with participants from:
