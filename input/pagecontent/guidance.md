@@ -1,5 +1,6 @@
 - [General Guidance](general-guidance.html)
 - [eRequesting Data for Interoperability](auereqdi.html)
-- [Relationship with other HL7 AU FHIR IGs](relationship.html)
+- [Relationship with other IGs](relationship.html)
+- [AU Variance Statement](variance.html)
 - [Future of AU eRequesting](future.html)
 
