@@ -2,7 +2,7 @@ Profile: AUeRequestingServiceRequest
 Parent: AUBaseDiagnosticRequest
 Id: au-erequesting-servicerequest
 Title: "AU eRequesting ServiceRequest"
-Description: "This profile sets minimum expectations for a ServiceRequest resource that is used to record, search, and fetch information about diagnostic requests, plans, or orders for a service for a patient. It is based on the [AU Base Diagnostic Request](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnosticrequest.html) and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the ServiceRequest when conforming to this profile."
+Description: "This profile sets minimum expectations for a ServiceRequest resource that is used to record, search, and fetch information about diagnostic requests for a patient. It is based on the [AU Base Diagnostic Request](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnosticrequest.html) and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the ServiceRequest when conforming to this profile."
 
 * ^status = #draft
 
