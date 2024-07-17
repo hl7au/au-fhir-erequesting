@@ -20,6 +20,7 @@ Description: "This profile defines a service request structure to represent a re
 
 * code 1..1 MS
 * code.text 1..1
+* code ^comment = "For pathology orders, code SHOULD come from [RCPA SPIA Pathology Requesting](https://www.rcpa.edu.au/fhir/ValueSet/spia-requesting-refset-3)  value set. If unavailable, select a suitable code from the SNOMED CT [Pathology Procedure](https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1) value set rather than just local codes. Coding is preferred over using free text without codes.\n\nFor imaging orders, code SHOULD come from RANZCR Radiology Referral value set. If unavailable, select a suitable code from the SNOMED CT [Imaging Procedure](https://healthterminologies.gov.au/fhir/ValueSet/imaging-procedure-1) value set rather than just local codes. Coding is preferred over using free text without codes." 
 
 * subject MS
 * subject only Reference(AUCorePatient)
