@@ -51,7 +51,7 @@ pages:
     future.md:
       title: Future of AU eRequesting
     relationship.md: 
-      title: Relationship with other HL7 AU FHIR IGs
+      title: Relationship with other IGs
     variance.md:
       title: AU Variance Statement
     auereqdi.md:
@@ -64,9 +64,12 @@ pages:
     # capability-statements.md:
     search-parameters-and-operations.md:
   terminology.md:
+  actors.md:
+    title: Actor Definitions
   examples.md:
-  downloads.md:
-  license.md:
+  support.md:
+    downloads.md:
+    license.md:
   # changes.md:
     # title: Change Log
   # ImplementationGuide-hl7.fhir.au.erequesting.md:
