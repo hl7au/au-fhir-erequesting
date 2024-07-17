@@ -23,16 +23,7 @@
       {
         "id": "ServiceRequest",
         "path": "ServiceRequest",
-        "short": "A diagnostic service request",
-        "constraint": [
-          {
-            "key": "au-ereq-srr-02",
-            "severity": "error",
-            "human": "Category SHALL either be SNOMED CT 108252007 |Laboratory procedure or SNOMED CT 363679005 |Imaging",
-            "expression": "category.coding.where(system='http://snomed.info/sct' and code='108252007').exists() or category.coding.where(system='http://snomed.info/sct' and code='363679005').exists()",
-            "source": "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest"
-          }
-        ]
+        "short": "A diagnostic service request"
       },
       {
         "id": "ServiceRequest.identifier",
@@ -151,7 +142,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+              "http://hl7.org.au/fhir/core/StructureDefinition/au-core-practitionerrole"
             ]
           }
         ],
@@ -173,11 +164,6 @@
             ]
           }
         ],
-        "mustSupport": true
-      },
-      {
-        "id": "ServiceRequest.bodySite",
-        "path": "ServiceRequest.bodySite",
         "mustSupport": true
       },
       {

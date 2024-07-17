@@ -81,6 +81,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/au-erequesting-imag-request"
+        },
+        "name": "AU eRequesting Pathology Service Request",
+        "description": "This profile defines a service request structure to represent a request for a diagnostic investigation. It is based on the [AU Base Diagnostic Request](http://hl7.org.au/fhir/StructureDefinition/au-diagnosticrequest).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/au-erequesting-path-request"
+        },
+        "name": "AU eRequesting Pathology Service Request",
+        "description": "This profile defines a service request structure to represent a request for a diagnostic investigation. It is based on the [AU Base Diagnostic Request](http://hl7.org.au/fhir/StructureDefinition/au-diagnosticrequest).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ActorDefinition/au-erequesting-actor-patientaccess"
         },
         "name": "AU eRequesting Patient Access",

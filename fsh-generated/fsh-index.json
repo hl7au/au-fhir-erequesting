@@ -24,11 +24,27 @@
     "endLine": 10
   },
   {
+    "outputFile": "StructureDefinition-au-erequesting-imag-request.json",
+    "fshName": "AUeRequestingImagingServiceRequest",
+    "fshType": "Profile",
+    "fshFile": "au-erequesting-imag-request.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "StructureDefinition-au-erequesting-path-request.json",
+    "fshName": "AUeRequestingpathologyServiceRequest",
+    "fshType": "Profile",
+    "fshFile": "au-erequesting-path-request.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
     "outputFile": "StructureDefinition-au-erequesting-servicerequest.json",
     "fshName": "AUeRequestingServiceRequest",
     "fshType": "Profile",
     "fshFile": "au-erequesting-servicerequest.fsh",
     "startLine": 1,
-    "endLine": 54
+    "endLine": 50
   }
 ]
