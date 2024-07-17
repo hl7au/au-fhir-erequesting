@@ -1,18 +1,10 @@
 [
   {
     "outputFile": "StructureDefinition-au-erequesting-servicerequest.json",
-<<<<<<< HEAD
-    "fshName": "AUERequestingServiceRequest",
-    "fshType": "Profile",
-    "fshFile": "au-erequesting-servicerequest.fsh",
-    "startLine": 1,
-    "endLine": 45
-=======
     "fshName": "AUeRequestingServiceRequest",
     "fshType": "Profile",
     "fshFile": "au-erequesting-servicerequest.fsh",
     "startLine": 1,
     "endLine": 54
->>>>>>> master
   }
 ]
