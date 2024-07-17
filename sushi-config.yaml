@@ -51,7 +51,7 @@ pages:
     future.md:
       title: Future of AU eRequesting
     relationship.md: 
-      title: Relationship with other HL7 AU FHIR IGs
+      title: Relationship with other IGs
     variance.md:
       title: AU Variance Statement
     auereqdi.md:
@@ -67,8 +67,9 @@ pages:
   actors.md:
     title: Actor Definitions
   examples.md:
-  downloads.md:
-  license.md:
+  support.md:
+    downloads.md:
+    license.md:
   # changes.md:
     # title: Change Log
   # ImplementationGuide-hl7.fhir.au.erequesting.md:
@@ -111,7 +112,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - init #init: Messages describing the start up process (for debugging)
     - progress #progress: Overall progress messages
   releaselabel: CI Build
-  fmm-definition: https://build.fhir.org/ig/hl7au/au-fhir-base/guidance.html#maturity-levels
+  fmm-definition: https://build.fhir.org/ig/hl7au/au-fhir-base/generalguidance.html#maturity-levels
 #
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
