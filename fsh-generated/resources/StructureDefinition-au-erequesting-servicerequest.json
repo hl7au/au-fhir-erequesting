@@ -11,7 +11,7 @@
   "name": "AUeRequestingServiceRequest",
   "title": "AU eRequesting ServiceRequest",
   "status": "draft",
-  "description": "This profile defines a service request structure to represent a request for a diagnostic investigation. It is based on the [AU Base Diagnostic Request](http://hl7.org.au/fhir/StructureDefinition/au-diagnosticrequest).",
+  "description": "This profile sets minimum expectations for a ServiceRequest resource that is used to record, search, and fetch information about diagnostic requests for a patient. It is based on the [AU Base Diagnostic Request](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-diagnosticrequest.html) and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the ServiceRequest when conforming to this profile.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -20,20 +20,6 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "ServiceRequest",
-        "path": "ServiceRequest",
-        "short": "A diagnostic service request",
-        "constraint": [
-          {
-            "key": "au-ereq-srr-02",
-            "severity": "error",
-            "human": "Category SHALL either be SNOMED CT 108252007 |Laboratory procedure or SNOMED CT 363679005 |Imaging",
-            "expression": "category.coding.where(system='http://snomed.info/sct' and code='108252007').exists() or category.coding.where(system='http://snomed.info/sct' and code='363679005').exists()",
-            "source": "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest"
-          }
-        ]
-      },
       {
         "id": "ServiceRequest.identifier",
         "path": "ServiceRequest.identifier",
@@ -151,7 +137,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
+              "http://hl7.org.au/fhir/core/StructureDefinition/au-core-practitionerrole"
             ]
           }
         ],
@@ -173,11 +159,6 @@
             ]
           }
         ],
-        "mustSupport": true
-      },
-      {
-        "id": "ServiceRequest.bodySite",
-        "path": "ServiceRequest.bodySite",
         "mustSupport": true
       },
       {
