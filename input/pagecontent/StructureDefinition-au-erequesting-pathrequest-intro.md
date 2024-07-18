@@ -3,13 +3,9 @@ TBD
 
 ### Profile specific implementation guidance
 - The use of coding can vary significantly across systems, implementers need to understand that they may encounter codes they do not recognise and be prepared to handle those resources appropriately. Systems **SHALL** populate `ServiceRequest.code.text` so that systems can at least display the service requested even if the system does not recognise the code supplied.
-- Pathology orders are represented as:
-  - `ServiceRequest.category` = "108252007" (Laboratory procedure)
-  - `ServiceRequest.code`:
-    - **SHOULD** be selected from the preferred <a href="https://www.healthterminologies.gov.au/integration/R4/fhir/ValueSet/spia-requesting-refset-3">RCPA - SPIA Requesting Pathology Terminology Reference Set</a> value set
-    - if a system is unable to provide a code from the preferred <a href="https://www.healthterminologies.gov.au/integration/R4/fhir/ValueSet/spia-requesting-refset-3">RCPA - SPIA Requesting Pathology Terminology Reference Set</a>, it is preferred to select a suitable code from the SNOMED CT <a href="https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1">Pathology Procedure</a> value set over only supplying local codes
-    - coding is preferred over supplying only free text with no codes
+- `ServiceRequest.code`:
+  - **SHOULD** be selected from the preferred <a href="https://www.healthterminologies.gov.au/integration/R4/fhir/ValueSet/spia-requesting-refset-3">RCPA - SPIA Requesting Pathology Terminology Reference Set</a> value set
+  - if a system is unable to provide a code from the preferred <a href="https://www.healthterminologies.gov.au/integration/R4/fhir/ValueSet/spia-requesting-refset-3">RCPA - SPIA Requesting Pathology Terminology Reference Set</a>, it is preferred to select a suitable code from the SNOMED CT <a href="https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1">Pathology Procedure</a> value set over only supplying local codes
+  - coding is preferred over supplying only free text with no codes
 
-<div class="stu-note markdown="1">
-The current binding to the <a href="https://www.healthterminologies.gov.au/integration/R4/fhir/ValueSet/spia-requesting-refset-3">RCPA - SPIA Requesting Pathology Terminology Reference Set</a> (v3.1) is a temporary workaround. This value set is included to support the current implementation until version 4 of the RCPA - SPIA Requesting Pathology Terminology Reference Set becomes available. This value set will be replaced once version 4 is published.
-</div>
+<div class="stu-note">The current binding to the <a href="https://www.healthterminologies.gov.au/integration/R4/fhir/ValueSet/spia-requesting-refset-3">RCPA - SPIA Requesting Pathology Terminology Reference Set</a> (v3.1) is a temporary workaround. This value set is included to support the current implementation until version 4 of the RCPA - SPIA Requesting Pathology Terminology Reference Set becomes available. This value set will be replaced once version 4 is published.</div>
