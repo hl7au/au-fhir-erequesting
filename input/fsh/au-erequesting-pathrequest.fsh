@@ -1,4 +1,4 @@
-Profile: AUeRequestingPathologyServiceRequest
+Profile: AUeRequestingPathologyRequest
 Parent: AUeRequestingServiceRequest
 Id: au-erequesting-pathrequest
 Title: "AU eRequesting Pathology Request"
@@ -16,7 +16,7 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 * code from https://www.rcpa.edu.au/fhir/ValueSet/spia-requesting-refset-3 (preferred)
 * code ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][0].extension[purpose].valueCode = #preferred
 * code ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][0].extension[valueSet].valueCanonical = "https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1"  
-* code ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][0].extension[documentation].valueMarkdown = "For use when a suitable code from the preferred RCPA SPIA Pathology Requesting value set is unavailable."  
+* code ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][0].extension[documentation].valueMarkdown = "For use when a suitable code from the preferred RCPA - SPIA Requesting Pathology Terminology Reference Set is unavailable."  
 
 * bodySite MS
 
