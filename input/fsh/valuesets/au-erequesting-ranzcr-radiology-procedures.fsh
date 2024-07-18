@@ -3,6 +3,7 @@ Id: ranzcr-referral-procedures
 Title: "RANZCR Referral Procedures"
 Description: "Standard codes for use in requesting radiology tests in Australia, derived from the RANZCR Referral Set (RRS)."
 * ^version = "1.0.0"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^status = #draft
 * ^experimental = false
 * ^date = "2024-07-17"
