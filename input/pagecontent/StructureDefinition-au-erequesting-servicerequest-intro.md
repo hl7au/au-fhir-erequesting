@@ -1,6 +1,3 @@
-### Usage scenarios
-TBD
-
 ### Profile specific implementation guidance
 - This profile provides a shared base that is common across requests for specific domains. Where a profile is defined for a specific domain that profile **SHALL** be used:
   - pathology requests **SHALL** use [AU eRequesting Pathology Request](StructureDefinition-au-erequesting-pathrequest.html) profile
