@@ -81,7 +81,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/au-erequesting-imagingrequest"
+          "reference": "StructureDefinition/au-erequesting-servicerequest-imag"
         },
         "name": "AU eRequesting Imaging Request",
         "description": "This profile sets minimum expectations for a ServiceRequest resource that is used to record, search, and fetch information about diagnostic imaging requests for a patient. It is based on the [AU eRequesting ServiceRequest](https://build.fhir.org/ig/hl7au/au-fhir-erequesting/StructureDefinition-au-erequesting-servicerequest.html) and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the ServiceRequest when conforming to this profile.",
@@ -89,10 +89,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/au-erequesting-pathrequest"
+          "reference": "StructureDefinition/au-erequesting-servicerequest-path"
         },
         "name": "AU eRequesting Pathology Request",
-        "description": "This profile sets minimum expectations for a ServiceRequest resource that is used to record, search, and fetch information about pathology test requests for a patient. It is based on the [AU eRequesting ServiceRequest](https://build.fhir.org/ig/hl7au/au-fhir-erequesting/StructureDefinition-au-erequesting-servicerequest.html) and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the ServiceRequest when conforming to this profile.",
+        "description": "This profile sets minimum expectations for a ServiceRequest resource that is used to record, search, and fetch information about pathology requests for a patient. It is based on the [AU eRequesting ServiceRequest](https://build.fhir.org/ig/hl7au/au-fhir-erequesting/StructureDefinition-au-erequesting-servicerequest.html) and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the ServiceRequest when conforming to this profile.",
         "exampleBoolean": false
       },
       {

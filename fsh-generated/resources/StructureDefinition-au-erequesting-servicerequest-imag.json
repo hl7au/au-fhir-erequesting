@@ -1,13 +1,13 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "au-erequesting-imagingrequest",
+  "id": "au-erequesting-servicerequest-imag",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
       "valueInteger": 0
     }
   ],
-  "url": "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-imagingrequest",
+  "url": "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest-imag",
   "name": "AUeRequestingImagingRequest",
   "title": "AU eRequesting Imaging Request",
   "status": "draft",
@@ -29,6 +29,22 @@
       {
         "id": "ServiceRequest.category",
         "path": "ServiceRequest.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "ServiceRequest.category:imaging",
+        "path": "ServiceRequest.category",
+        "sliceName": "imaging",
+        "min": 1,
+        "max": "1",
         "patternCodeableConcept": {
           "coding": [
             {
