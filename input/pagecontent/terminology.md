@@ -6,7 +6,7 @@ As well as terminology defined in FHIR, this specification supports terminology 
 
 This implementation guide does not define any unique value sets. The value sets used in this guide are defined in the base FHIR specification, [AU Base](https://build.fhir.org/ig/hl7au/au-fhir-base/terminology.html), or [NCTS](https://www.healthterminologies.gov.au/integration/R4/fhir/metadata).  
 
-The list below shows the value sets bound to a supported element, element slice, or extension.
+The list below shows the value sets bound as [preferred](https://hl7.org/fhir/R4/terminologies.html#preferred) or greater to a supported element, element slice, or extension.
 
 |ValueSet|Profile where used|Published|
 |---| ---| ---|
@@ -32,7 +32,6 @@ The list below shows the value sets bound to a supported element, element slice,
 |[Reason for Request](https://healthterminologies.gov.au/fhir/ValueSet/reason-for-request-1)|[AU eRequesting ServiceRequest](StructureDefinition-au-erequesting-servicerequest.html), [AU eRequesting Imaging Request](StructureDefinition-au-erequesting-servicerequest-imag.html), [AU eRequesting Pathology Request](StructureDefinition-au-erequesting-servicerequest-path.html)|NCTS|
 |[RequestIntent](https://hl7.org/fhir/R4/valueset-request-intent.html)|[AU eRequesting ServiceRequest](StructureDefinition-au-erequesting-servicerequest.html), [AU eRequesting Imaging Request](StructureDefinition-au-erequesting-servicerequest-imag.html), [AU eRequesting Pathology Request](StructureDefinition-au-erequesting-servicerequest-path.html)|FHIR|
 |[RequestStatus](https://hl7.org/fhir/R4/valueset-request-status.html)|[AU eRequesting ServiceRequest](StructureDefinition-au-erequesting-servicerequest.html), [AU eRequesting Imaging Request](StructureDefinition-au-erequesting-servicerequest-imag.html), [AU eRequesting Pathology Request](StructureDefinition-au-erequesting-servicerequest-path.html)|FHIR|
-|[Service Request Category Codes](http://hl7.org/fhir/ValueSet/servicerequest-category)|[AU eRequesting ServiceRequest](StructureDefinition-au-erequesting-servicerequest.html), [AU eRequesting Imaging Request](StructureDefinition-au-erequesting-servicerequest-imag.html), [AU eRequesting Pathology Request](StructureDefinition-au-erequesting-servicerequest-path.html)|FHIR|
 {:.grid}
 
 
@@ -41,7 +40,7 @@ The list below shows the value sets bound to a supported element, element slice,
 
 This implementation guide does not define any unique code systems. The code systems used in this guide are defined in the base FHIR specification, [AU Base](https://build.fhir.org/ig/hl7au/au-fhir-base/terminology.html), or [NCTS](https://www.healthterminologies.gov.au/integration/R4/fhir/metadata).  
 
-The list below shows the code systems used in a value set that is bound to a supported element or element slice.
+The list below shows the code systems used in the value sets above.
 
 |CodeSystem|ValueSet where used|Published|
 |---|---|---|---|
