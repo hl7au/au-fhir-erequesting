@@ -113,6 +113,14 @@
       },
       {
         "reference": {
+          "reference": "ActorDefinition/au-erequesting-actor-server"
+        },
+        "name": "AU eRequesting Server",
+        "description": "The eRequesting Server system accepts diagnostic service requests and makes diagnostic service requests accessible.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/au-erequesting-servicerequest"
         },
         "name": "AU eRequesting ServiceRequest",
@@ -317,7 +325,7 @@
       },
       {
         "code": "fmm-definition",
-        "value": "https://build.fhir.org/ig/hl7au/au-fhir-base/guidance.html#maturity-levels"
+        "value": "https://build.fhir.org/ig/hl7au/au-fhir-base/generalguidance.html#maturity-levels"
       }
     ]
   }
