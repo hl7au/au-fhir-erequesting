@@ -1,0 +1,47 @@
+<Encounter xmlns="http://hl7.org/fhir">
+    <id value="consultation"/>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-name">
+        <valueString value="Encounter - Consultation"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
+        <valueMarkdown value="Consultation with patient Fred Roberts"/>
+    </extension>
+    <meta>
+        <profile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-encounter"/>
+    </meta>
+    <status value="finished"/>
+    <class>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+        <code value="AMB"/>
+        <display value="ambulatory"/>
+    </class>
+    <serviceType>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="788007007"/>
+            <display value="General practice service"/>
+        </coding>
+    </serviceType>
+    <subject>
+        <reference value="Patient/fred-roberts"/>
+    </subject>
+    <participant>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+                <code value="PPRF"/>
+                <display value="primary performer"/>
+            </coding>
+        </type>
+        <individual>
+            <reference value="PractitionerRole/guthridge-jarred-gp"/>
+        </individual>
+    </participant>
+    <period>
+        <start value="2024-05-11T10:15:00+10:00"/>
+        <end value="2024-05-11T10:30:00+10:00"/>
+    </period>
+    <serviceProvider>
+        <reference value="Organization/elimbah-medical-center"/>
+    </serviceProvider>
+</Encounter>
