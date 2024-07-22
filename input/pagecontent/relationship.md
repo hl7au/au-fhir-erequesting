@@ -27,7 +27,7 @@ TBD AU eRequesting Data for Interoperability (AUeReqDI) statement.
 
 TBD statement on relationship between AUeReqDI and AU eRequesting IG.
 
-See [AU eRequesting data for interoperability](aureqdi.html) for the relationship between the AUeReqDI Data Groups and Elements and AU eRequesting profiles.
+See [AU eRequesting data for interoperability](auereqdi.html) for the relationship between the AUeReqDI Data Groups and Elements and AU eRequesting profiles.
 
 The relationship of AU eRequesting to AUeReqDI and other implementation guides is shown in the figure below.
 
