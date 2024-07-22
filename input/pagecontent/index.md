@@ -35,6 +35,10 @@ A system that is responsible for finding and retrieving diagnostic service reque
 
 A system that is the digital interface that allows patients or their representatives to view and manage requests for diagnostic services. It provides access to request information, enabling patients to choose service providers and track the status of requests.
 
+**AU eRequesting Server**
+
+A system that accepts diagnostic service requests and makes diagnostic service requests accessible.
+
 
 ### How to read this guide
 

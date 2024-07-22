@@ -12,8 +12,8 @@
     "fshName": "au-erequesting-actor-patientaccess",
     "fshType": "Instance",
     "fshFile": "actors.fsh",
-    "startLine": 24,
-    "endLine": 33
+    "startLine": 23,
+    "endLine": 32
   },
   {
     "outputFile": "ActorDefinition-au-erequesting-actor-placer.json",
@@ -22,6 +22,14 @@
     "fshFile": "actors.fsh",
     "startLine": 1,
     "endLine": 10
+  },
+  {
+    "outputFile": "ActorDefinition-au-erequesting-actor-server.json",
+    "fshName": "au-erequesting-actor-server",
+    "fshType": "Instance",
+    "fshFile": "actors.fsh",
+    "startLine": 34,
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-au-erequesting-servicerequest-imag.json",
@@ -45,6 +53,6 @@
     "fshType": "Profile",
     "fshFile": "au-erequesting-servicerequest.fsh",
     "startLine": 1,
-    "endLine": 47
+    "endLine": 99
   }
 ]

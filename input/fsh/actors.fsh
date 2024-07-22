@@ -20,7 +20,6 @@ Usage: #definition
 * type = #system
 * documentation = "An AU eRequesting Filler (client): TBD"
 
-
 Instance: au-erequesting-actor-patientaccess
 InstanceOf: ActorDefinition
 Usage: #definition
@@ -31,3 +30,14 @@ Usage: #definition
 * description = "The AU eRequesting Patient Access is a system that is the digital interface that allows patients or their representatives to view and manage requests for diagnostic services. It provides access to request information, enabling patients to choose service providers and track the status of requests."
 * type = #system
 * documentation = "An AU eRequesting Patient Access (client): TBD"
+
+Instance: au-erequesting-actor-server
+InstanceOf: ActorDefinition
+Usage: #definition
+* url = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+* name = "AUeRequestingServer"
+* title = "AU eRequesting Server"
+* status = #draft
+* description = "The eRequesting Server is a system that accepts diagnostic service requests and makes diagnostic service requests accessible."
+* type = #system
+* documentation = "An AU eRequesting Server (server): TBD"
