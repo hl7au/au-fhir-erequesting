@@ -1,0 +1,11 @@
+{
+  "resourceType": "ActorDefinition",
+  "id": "au-erequesting-actor-server",
+  "url": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server",
+  "name": "AUeRequestingServer",
+  "title": "AU eRequesting Server",
+  "status": "draft",
+  "description": "The eRequesting Server is a system that accepts diagnostic service requests and makes diagnostic service requests accessible.",
+  "type": "system",
+  "documentation": "An AU eRequesting Server (server): TBD"
+}

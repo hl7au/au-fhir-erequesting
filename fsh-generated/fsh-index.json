@@ -1,10 +1,58 @@
 [
   {
-    "outputFile": "StructureDefinition-fish-patient.json",
-    "fshName": "FishPatient",
-    "fshType": "Profile",
-    "fshFile": "FishPatient.fsh",
+    "outputFile": "ActorDefinition-au-erequesting-actor-filler.json",
+    "fshName": "au-erequesting-actor-filler",
+    "fshType": "Instance",
+    "fshFile": "actors.fsh",
+    "startLine": 12,
+    "endLine": 21
+  },
+  {
+    "outputFile": "ActorDefinition-au-erequesting-actor-patientaccess.json",
+    "fshName": "au-erequesting-actor-patientaccess",
+    "fshType": "Instance",
+    "fshFile": "actors.fsh",
+    "startLine": 23,
+    "endLine": 32
+  },
+  {
+    "outputFile": "ActorDefinition-au-erequesting-actor-placer.json",
+    "fshName": "au-erequesting-actor-placer",
+    "fshType": "Instance",
+    "fshFile": "actors.fsh",
     "startLine": 1,
-    "endLine": 6
+    "endLine": 10
+  },
+  {
+    "outputFile": "ActorDefinition-au-erequesting-actor-server.json",
+    "fshName": "au-erequesting-actor-server",
+    "fshType": "Instance",
+    "fshFile": "actors.fsh",
+    "startLine": 34,
+    "endLine": 43
+  },
+  {
+    "outputFile": "StructureDefinition-au-erequesting-servicerequest-imag.json",
+    "fshName": "AUeRequestingImagingRequest",
+    "fshType": "Profile",
+    "fshFile": "au-erequesting-servicerequest-imag.fsh",
+    "startLine": 1,
+    "endLine": 25
+  },
+  {
+    "outputFile": "StructureDefinition-au-erequesting-servicerequest-path.json",
+    "fshName": "AUeRequestingPathologyRequest",
+    "fshType": "Profile",
+    "fshFile": "au-erequesting-servicerequest-path.fsh",
+    "startLine": 1,
+    "endLine": 25
+  },
+  {
+    "outputFile": "StructureDefinition-au-erequesting-servicerequest.json",
+    "fshName": "AUeRequestingServiceRequest",
+    "fshType": "Profile",
+    "fshFile": "au-erequesting-servicerequest.fsh",
+    "startLine": 1,
+    "endLine": 99
   }
 ]

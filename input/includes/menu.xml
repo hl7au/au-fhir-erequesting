@@ -27,13 +27,13 @@
         <a href="auereqdi.html">AU eRequesting Data for Interoperability</a>
       </li>
       <li>
-        <a href="relationship.html">Relationship with other HL7 AU FHIR IGs</a>
+        <a href="relationship.html">Relationship with other IGs</a>
       </li>
       <li>
         <a href="variance.html">AU Variance Statement</a>
       </li>
       <li>
-        <a href="erequesting-future.html">Future of AU eRequesting </a>
+        <a href="future.html">Future of AU eRequesting </a>
       </li>
     </ul>
   </li>
@@ -54,6 +54,9 @@
         <!-- <li>
         <a href="capability-statements.html">Capability Statements</a>
       </li> -->
+      <li>
+        <a href="actors.html">Actor Definitions</a>
+      </li>
     </ul>
   </li>
   <li>

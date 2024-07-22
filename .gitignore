@@ -6,6 +6,7 @@
 /template/
 /.vs/
 
+
 # Don't commit this because it's so large #
 ###########################################
 /input-cache/org.hl7.fhir.publisher.jar
@@ -23,3 +24,6 @@ Thumbs.db
 # backup files #
 ################
 *.bak
+
+
+AUbvase - what ges in terminkigy page - everythig in the diff and in the implemntation guidance
