@@ -14,4 +14,4 @@ The AU eRequesting Patient Access is a system that is the digital interface that
 
 - [AU eRequesting Server actor](ActorDefinition-au-erequesting-actor-server.html)
 
-The eRequesting Server system accepts diagnostic service requests and makes diagnostic service requests accessible.
+The eRequesting Server is a system that accepts diagnostic service requests and makes diagnostic service requests accessible.

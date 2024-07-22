@@ -5,7 +5,7 @@
   "name": "AUeRequestingServer",
   "title": "AU eRequesting Server",
   "status": "draft",
-  "description": "The eRequesting Server system accepts diagnostic service requests and makes diagnostic service requests accessible.",
+  "description": "The eRequesting Server is a system that accepts diagnostic service requests and makes diagnostic service requests accessible.",
   "type": "system",
   "documentation": "An AU eRequesting Server (server): TBD"
 }

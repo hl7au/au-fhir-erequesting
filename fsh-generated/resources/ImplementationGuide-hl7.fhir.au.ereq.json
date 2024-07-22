@@ -116,7 +116,7 @@
           "reference": "ActorDefinition/au-erequesting-actor-server"
         },
         "name": "AU eRequesting Server",
-        "description": "The eRequesting Server system accepts diagnostic service requests and makes diagnostic service requests accessible.",
+        "description": "The eRequesting Server is a system that accepts diagnostic service requests and makes diagnostic service requests accessible.",
         "exampleBoolean": false
       },
       {
@@ -167,14 +167,14 @@
           "reference": "ServiceRequest/order-fbc-1"
         },
         "name": "order-fbc-1",
-        "exampleCanonical": "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest"
+        "exampleCanonical": "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest-path"
       },
       {
         "reference": {
           "reference": "ServiceRequest/order-xray-1"
         },
         "name": "order-xray-1",
-        "exampleCanonical": "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest"
+        "exampleCanonical": "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest-imag"
       }
     ],
     "page": {

@@ -37,7 +37,7 @@ A system that is the digital interface that allows patients or their representat
 
 **AU eRequesting Server**
 
-A system accepts that accepts diagnostic service requests and makes diagnostic service requests accessible.
+A system that accepts diagnostic service requests and makes diagnostic service requests accessible.
 
 
 ### How to read this guide
