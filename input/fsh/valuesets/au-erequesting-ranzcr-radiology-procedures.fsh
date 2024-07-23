@@ -1,10 +1,11 @@
-ValueSet: RANZCRReferralProcedures
-Id: ranzcr-referral-procedures
-Title: "RANZCR Referral Procedures"
+ValueSet: RANZCRRadiologyProcedures
+Id: ranzcr-radiology-procedures
+Title: "RANZCR Radiology Procedures"
 Description: "Standard codes for use in requesting radiology tests in Australia, derived from the RANZCR Radiology Referral Set (RRS)."
 * ^meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^version = "1.0.0"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
+* ^url = "https://ranzcr.com/fhir/ValueSet/radiology-procedures"
 * ^status = #draft
 * ^experimental = false
 * ^date = "2024-07-17"
