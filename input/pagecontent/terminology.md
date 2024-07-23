@@ -29,7 +29,7 @@ The list below shows the value sets bound to a supported element or element slic
 |[Individual Healthcare Identifier Status](https://healthterminologies.gov.au/fhir/ValueSet/ihi-status-1)|[AU Core Patient](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-patient.html)|NCTS|
 |[NameUse](https://hl7.org/fhir/R4/valueset-name-use.html)|[AU Core Patient](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-patient.html)|FHIR|
 |[Order Identifier Type](https://build.fhir.org/ig/hl7au/au-fhir-base//ValueSet-order-identifier-type.html)|[AU eRequesting ServiceRequest](StructureDefinition-au-erequesting-servicerequest.html)|AU Base|
-|[RANZCR Radiology Procedures](ValueSet-ranzcr-radiology-procedures.html)|[AU eRequesting ServiceRequest](StructureDefinition-au-erequesting-servicerequest.html)|AU eRequesting|
+|[RANZCR Radiology Referral](ValueSet-ranzcr-radiology-referral.html)|[AU eRequesting ServiceRequest](StructureDefinition-au-erequesting-servicerequest.html)|AU eRequesting|
 |[Reason for Request](https://healthterminologies.gov.au/fhir/ValueSet/reason-for-request-1)|[AU eRequesting ServiceRequest](StructureDefinition-au-erequesting-servicerequest.html)|NCTS|
 |[RequestIntent](https://hl7.org/fhir/R4/valueset-request-intent.html)|[AU eRequesting ServiceRequest](StructureDefinition-au-erequesting-servicerequest.html)|FHIR|
 |[RequestStatus](https://hl7.org/fhir/R4/valueset-request-status.html)|[AU eRequesting ServiceRequest](StructureDefinition-au-erequesting-servicerequest.html)|FHIR|

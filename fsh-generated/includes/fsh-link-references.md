@@ -12,5 +12,4 @@
 [guthridge-jarred-gp]: PractitionerRole-guthridge-jarred-gp.html
 [order-fbc-1]: ServiceRequest-order-fbc-1.html
 [order-xray-1]: ServiceRequest-order-xray-1.html
-[AUeRequestingServiceRequest]: StructureDefinition-au-erequesting-servicerequest.html
-[RANZCRRadiologyProcedures]: ValueSet-ranzcr-radiology-procedures.html
+[RANZCRRadiologyReferral]: ValueSet-ranzcr-radiology-referral.html

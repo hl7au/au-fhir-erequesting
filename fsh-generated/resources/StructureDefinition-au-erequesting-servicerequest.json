@@ -21,23 +21,6 @@
   "differential": {
     "element": [
       {
-<<<<<<< Updated upstream
-=======
-        "id": "ServiceRequest",
-        "path": "ServiceRequest",
-        "short": "A diagnostic service request",
-        "constraint": [
-          {
-            "key": "au-ereq-srr-02",
-            "severity": "error",
-            "human": "Category SHALL either be SNOMED CT 108252007 |Laboratory procedure or SNOMED CT 363679005 |Imaging",
-            "expression": "category.coding.where(system='http://snomed.info/sct' and code='108252007').exists() or category.coding.where(system='http://snomed.info/sct' and code='363679005').exists()",
-            "source": "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest"
-          }
-        ]
-      },
-      {
->>>>>>> Stashed changes
         "id": "ServiceRequest.identifier",
         "extension": [
           {
@@ -307,14 +290,6 @@
             ]
           }
         ],
-<<<<<<< Updated upstream
-=======
-        "mustSupport": true
-      },
-      {
-        "id": "ServiceRequest.encounter",
-        "path": "ServiceRequest.encounter",
->>>>>>> Stashed changes
         "mustSupport": true
       },
       {
@@ -442,11 +417,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-<<<<<<< Updated upstream
               "http://hl7.org.au/fhir/core/StructureDefinition/au-core-practitionerrole"
-=======
-              "http://hl7.org/fhir/StructureDefinition/PractitionerRole"
->>>>>>> Stashed changes
             ]
           }
         ],
@@ -454,7 +425,6 @@
       },
       {
         "id": "ServiceRequest.reasonCode",
-<<<<<<< Updated upstream
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/obligation",
@@ -483,14 +453,11 @@
             ]
           }
         ],
-=======
->>>>>>> Stashed changes
         "path": "ServiceRequest.reasonCode",
         "mustSupport": true
       },
       {
         "id": "ServiceRequest.insurance",
-<<<<<<< Updated upstream
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/obligation",
@@ -528,14 +495,10 @@
             ]
           }
         ],
-=======
-        "path": "ServiceRequest.insurance",
->>>>>>> Stashed changes
         "mustSupport": true
       },
       {
         "id": "ServiceRequest.note",
-<<<<<<< Updated upstream
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/obligation",
@@ -564,8 +527,6 @@
             ]
           }
         ],
-=======
->>>>>>> Stashed changes
         "path": "ServiceRequest.note",
         "mustSupport": true
       }
