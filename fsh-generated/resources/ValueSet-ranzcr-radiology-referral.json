@@ -1,0 +1,2085 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "RANZCRRadiologyReferral",
+  "id": "ranzcr-radiology-referral",
+  "title": "RANZCR Radiology Referral",
+  "description": "Standard codes for use in requesting radiology tests in Australia, derived from the RANZCR Radiology Referral Set (RRS).",
+  "url": "https://ranzcr.com/fhir/ValueSet/radiology-referral",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 0
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "version": "1.0.0",
+  "experimental": false,
+  "date": "2024-07-17",
+  "publisher": "HL7 Australia",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "45036003",
+            "display": "Ultrasound of abdomen"
+          },
+          {
+            "code": "444900008",
+            "display": "Ultrasound of abdomen with contrast"
+          },
+          {
+            "code": "418394000",
+            "display": "Ultrasound scan of abdomen and pelvis"
+          },
+          {
+            "code": "241462009",
+            "display": "Ultrasound of abdominal aorta"
+          },
+          {
+            "code": "241512001",
+            "display": "Ultrasound of Achilles tendon"
+          },
+          {
+            "code": "871000087105",
+            "display": "Ultrasound of left Achilles tendon"
+          },
+          {
+            "code": "881000087107",
+            "display": "Ultrasound of right Achilles tendon"
+          },
+          {
+            "code": "1921000087100",
+            "display": "Ultrasound of bilateral Achilles tendons"
+          },
+          {
+            "code": "431844005",
+            "display": "Ultrasound of acromioclavicular joint"
+          },
+          {
+            "code": "241480000",
+            "display": "Ultrasound scan of adrenals"
+          },
+          {
+            "code": "11691000087107",
+            "display": "Ultrasound of left adrenal gland"
+          },
+          {
+            "code": "11681000087105",
+            "display": "Ultrasound of right adrenal gland"
+          },
+          {
+            "code": "11651000087102",
+            "display": "Ultrasound of bilateral adrenal glands"
+          },
+          {
+            "code": "718475004",
+            "display": "Ultrasound scan for amniotic fluid index"
+          },
+          {
+            "code": "241505005",
+            "display": "Ultrasound of ankle"
+          },
+          {
+            "code": "891000087109",
+            "display": "Ultrasound of left ankle"
+          },
+          {
+            "code": "901000087105",
+            "display": "Ultrasound of right ankle"
+          },
+          {
+            "code": "1541000087101",
+            "display": "Ultrasound of left and right ankle"
+          },
+          {
+            "code": "432853001",
+            "display": "Ultrasound of anterior abdominal wall"
+          },
+          {
+            "code": "445867003",
+            "display": "Ultrasound angiography of arteriovenous fistula"
+          },
+          {
+            "code": "432635009",
+            "display": "Ultrasound of axilla"
+          },
+          {
+            "code": "911000087107",
+            "display": "Ultrasound of left axilla"
+          },
+          {
+            "code": "921000087104",
+            "display": "Ultrasound of right axilla"
+          },
+          {
+            "code": "1551000087103",
+            "display": "Ultrasound of bilateral axillae"
+          },
+          {
+            "code": "432667007",
+            "display": "Ultrasound of biceps tendon"
+          },
+          {
+            "code": "21181000087107",
+            "display": "Ultrasound of left biceps tendon"
+          },
+          {
+            "code": "21171000087105",
+            "display": "Ultrasound of right biceps tendon"
+          },
+          {
+            "code": "21551000087105",
+            "display": "Ultrasound of bilateral biceps tendons"
+          },
+          {
+            "code": "44052005",
+            "display": "Ultrasound of biliary tract"
+          },
+          {
+            "code": "397521009",
+            "display": "Ultrasound biomicroscopy of anterior segment of eyeball"
+          },
+          {
+            "code": "713856004",
+            "display": "Ultrasound scan of brachial plexus"
+          },
+          {
+            "code": "47079000",
+            "display": "Ultrasound of breast"
+          },
+          {
+            "code": "951000087106",
+            "display": "Ultrasound of left breast"
+          },
+          {
+            "code": "961000087109",
+            "display": "Ultrasound of right breast"
+          },
+          {
+            "code": "1571000087109",
+            "display": "Ultrasound of bilateral breasts"
+          },
+          {
+            "code": "426494009",
+            "display": "Ultrasound scan of calcaneum"
+          },
+          {
+            "code": "431622002",
+            "display": "Ultrasound of calf"
+          },
+          {
+            "code": "991000087101",
+            "display": "Ultrasound of calf of left lower leg"
+          },
+          {
+            "code": "1001000087107",
+            "display": "Ultrasound of calf of right lower leg"
+          },
+          {
+            "code": "1581000087106",
+            "display": "Ultrasound of bilateral calves"
+          },
+          {
+            "code": "433169002",
+            "display": "Ultrasound of clavicular region"
+          },
+          {
+            "code": "432372006",
+            "display": "Ultrasound of coccyx"
+          },
+          {
+            "code": "431785009",
+            "display": "Ultrasound compression venography of lower limb"
+          },
+          {
+            "code": "431756003",
+            "display": "Ultrasound of cranial cavity"
+          },
+          {
+            "code": "438491001",
+            "display": "Ultrasound of soft tissue of craniofacial region"
+          },
+          {
+            "code": "418889006",
+            "display": "Ultrasound scan of diaphragm"
+          },
+          {
+            "code": "446782006",
+            "display": "Ultrasound of deep inferior epigastric perforator skin flap"
+          },
+          {
+            "code": "433223007",
+            "display": "Doppler ultrasound of aorta"
+          },
+          {
+            "code": "710162005",
+            "display": "Doppler ultrasound of arteriovenous fistula"
+          },
+          {
+            "code": "431323001",
+            "display": "Doppler ultrasound of artery of lower limb"
+          },
+          {
+            "code": "394719009",
+            "display": "Doppler ultrasonography of carotid artery"
+          },
+          {
+            "code": "8891000087103",
+            "display": "Doppler ultrasound of left carotid artery"
+          },
+          {
+            "code": "8901000087102",
+            "display": "Doppler ultrasound of right carotid artery"
+          },
+          {
+            "code": "764689005",
+            "display": "Doppler ultrasound compression venography of lower limb"
+          },
+          {
+            "code": "765168005",
+            "display": "Doppler ultrasound compression venography of upper limb"
+          },
+          {
+            "code": "418793009",
+            "display": "Doppler ultrasonography of femoropopliteal artery"
+          },
+          {
+            "code": "425813003",
+            "display": "Doppler ultrasound scan of middle cerebral artery of fetus"
+          },
+          {
+            "code": "431779002",
+            "display": "Doppler ultrasound guided central venous catheterisation"
+          },
+          {
+            "code": "432509002",
+            "display": "Doppler ultrasound guided dialysis catheterisation"
+          },
+          {
+            "code": "431653000",
+            "display": "Doppler ultrasound of aorta and iliac artery"
+          },
+          {
+            "code": "712532003",
+            "display": "Doppler ultrasound of iliac vein"
+          },
+          {
+            "code": "699578000",
+            "display": "Doppler ultrasound of inferior epigastric artery"
+          },
+          {
+            "code": "438857006",
+            "display": "Doppler ultrasound of inferior vena cava"
+          },
+          {
+            "code": "446849004",
+            "display": "Doppler ultrasound of jugular vein"
+          },
+          {
+            "code": "431988002",
+            "display": "Doppler ultrasound of transplanted kidney"
+          },
+          {
+            "code": "431362005",
+            "display": "Doppler ultrasound of liver and portal system"
+          },
+          {
+            "code": "6231000087102",
+            "display": "Doppler ultrasound of artery of left lower limb"
+          },
+          {
+            "code": "6241000087108",
+            "display": "Doppler ultrasound of artery of right lower limb"
+          },
+          {
+            "code": "6751000087102",
+            "display": "Doppler ultrasound of arteries of bilateral lower limbs"
+          },
+          {
+            "code": "432336004",
+            "display": "Doppler ultrasound of vein of lower limb"
+          },
+          {
+            "code": "18061000087100",
+            "display": "Doppler ultrasound of vein of left lower limb"
+          },
+          {
+            "code": "17921000087107",
+            "display": "Doppler ultrasound of vein of right lower limb"
+          },
+          {
+            "code": "18301000087101",
+            "display": "Doppler ultrasound of veins of bilateral lower limbs"
+          },
+          {
+            "code": "429807002",
+            "display": "Transvaginal Doppler ultrasound of pelvis"
+          },
+          {
+            "code": "418762008",
+            "display": "Doppler ultrasonography of penis"
+          },
+          {
+            "code": "432216002",
+            "display": "Ultrasound of popliteal fossa"
+          },
+          {
+            "code": "702585002",
+            "display": "Doppler ultrasound of renal artery"
+          },
+          {
+            "code": "709640007",
+            "display": "Doppler ultrasound of renal vein"
+          },
+          {
+            "code": "764727000",
+            "display": "Doppler ultrasonography guided marking of skin over great saphenous vein"
+          },
+          {
+            "code": "764728005",
+            "display": "Doppler ultrasonography guided marking of skin over small saphenous vein"
+          },
+          {
+            "code": "713683001",
+            "display": "Doppler ultrasound of subclavian vein"
+          },
+          {
+            "code": "14751000087106",
+            "display": "Doppler ultrasound of left subclavian vein"
+          },
+          {
+            "code": "14761000087109",
+            "display": "Doppler ultrasound of right subclavian vein"
+          },
+          {
+            "code": "14831000087105",
+            "display": "Doppler ultrasound of bilateral subclavian veins"
+          },
+          {
+            "code": "699579008",
+            "display": "Doppler ultrasound of superior epigastric artery"
+          },
+          {
+            "code": "431363000",
+            "display": "Doppler ultrasound of superior mesenteric artery"
+          },
+          {
+            "code": "432335000",
+            "display": "Doppler ultrasound of superior mesenteric vein"
+          },
+          {
+            "code": "445751002",
+            "display": "Doppler ultrasound of temporal artery"
+          },
+          {
+            "code": "440495009",
+            "display": "Doppler ultrasound of testis"
+          },
+          {
+            "code": "702622007",
+            "display": "Doppler ultrasound of thoracodorsal artery"
+          },
+          {
+            "code": "431648005",
+            "display": "Transcranial Doppler ultrasound"
+          },
+          {
+            "code": "718078008",
+            "display": "Doppler ultrasound of transplanted liver"
+          },
+          {
+            "code": "431324007",
+            "display": "Doppler ultrasound of artery of upper limb"
+          },
+          {
+            "code": "6251000087106",
+            "display": "Doppler ultrasound of artery of left upper limb"
+          },
+          {
+            "code": "6261000087109",
+            "display": "Doppler ultrasound of artery of right upper limb"
+          },
+          {
+            "code": "6761000087104",
+            "display": "Doppler ultrasound of arteries of bilateral upper limbs"
+          },
+          {
+            "code": "431818005",
+            "display": "Doppler ultrasound of vein of upper limb"
+          },
+          {
+            "code": "14541000087102",
+            "display": "Doppler ultrasound of vein of left upper limb"
+          },
+          {
+            "code": "14531000087108",
+            "display": "Doppler ultrasound of vein of right upper limb"
+          },
+          {
+            "code": "431218003",
+            "display": "Ultrasound Doppler flow mapping of vein of lower limb"
+          },
+          {
+            "code": "6291000087101",
+            "display": "Doppler ultrasound flow mapping of vein of left lower limb"
+          },
+          {
+            "code": "6281000087103",
+            "display": "Doppler ultrasound flow mapping of vein of right lower limb"
+          },
+          {
+            "code": "6771000087108",
+            "display": "Doppler ultrasound flow mapping of veins of bilateral lower limbs"
+          },
+          {
+            "code": "431394000",
+            "display": "Ultrasound Doppler flow mapping of vein of upper limb"
+          },
+          {
+            "code": "6311000087100",
+            "display": "Doppler ultrasound flow mapping of vein of left upper limb"
+          },
+          {
+            "code": "6301000087102",
+            "display": "Doppler ultrasound flow mapping of vein of right upper limb"
+          },
+          {
+            "code": "6781000087105",
+            "display": "Doppler ultrasound flow mapping of veins of bilateral upper limbs"
+          },
+          {
+            "code": "418956005",
+            "display": "Doppler ultrasonography of vertebral arteries"
+          },
+          {
+            "code": "441491005",
+            "display": "Ultrasound elastography of liver"
+          },
+          {
+            "code": "241498001",
+            "display": "Ultrasound scan of elbow"
+          },
+          {
+            "code": "1011000087109",
+            "display": "Ultrasound of left elbow"
+          },
+          {
+            "code": "1021000087101",
+            "display": "Ultrasound of right elbow"
+          },
+          {
+            "code": "1591000087108",
+            "display": "Ultrasound of bilateral elbows"
+          },
+          {
+            "code": "431553009",
+            "display": "Endoanal ultrasound examination of rectal sphincter"
+          },
+          {
+            "code": "429820004",
+            "display": "Endorectal ultrasound"
+          },
+          {
+            "code": "19731001",
+            "display": "Ultrasound study of eye"
+          },
+          {
+            "code": "866200001",
+            "display": "Ultrasonography of bilateral eyes"
+          },
+          {
+            "code": "427072002",
+            "display": "Ultrasound scan of foot"
+          },
+          {
+            "code": "1031000087104",
+            "display": "Ultrasound of left foot"
+          },
+          {
+            "code": "1041000087105",
+            "display": "Ultrasound of right foot"
+          },
+          {
+            "code": "1601000087100",
+            "display": "Ultrasound of bilateral feet"
+          },
+          {
+            "code": "426019005",
+            "display": "Ultrasound of forearm"
+          },
+          {
+            "code": "1051000087108",
+            "display": "Ultrasound of left forearm"
+          },
+          {
+            "code": "1061000087106",
+            "display": "Ultrasound of right forearm"
+          },
+          {
+            "code": "432849003",
+            "display": "Ultrasound of forefoot"
+          },
+          {
+            "code": "169250003",
+            "display": "Ultrasound scan of gallbladder"
+          },
+          {
+            "code": "715193009",
+            "display": "Ultrasound scan of gallbladder with contrast"
+          },
+          {
+            "code": "770557001",
+            "display": "Ultrasound guided insertion of peripherally inserted central catheter"
+          },
+          {
+            "code": "718305004",
+            "display": "Ultrasound guided insertion of tunnelled drain into thorax"
+          },
+          {
+            "code": "1106671000000108",
+            "display": "Ultrasonography guided insertion of magnetic marker into breast"
+          },
+          {
+            "code": "1104451000000105",
+            "display": "Ultrasonography guided insertion of magnetic marker into left breast"
+          },
+          {
+            "code": "1104461000000108",
+            "display": "Ultrasonography guided insertion of magnetic marker into right breast"
+          },
+          {
+            "code": "1104471000000101",
+            "display": "Ultrasonography guided insertion of magnetic marker into bilateral breasts"
+          },
+          {
+            "code": "725505001",
+            "display": "Vacuum assisted excision of lesion of breast using ultrasound guidance"
+          },
+          {
+            "code": "432556004",
+            "display": "Aspiration of abdomen using ultrasound guidance"
+          },
+          {
+            "code": "33527008",
+            "display": "Ultrasound guided aspiration of cyst"
+          },
+          {
+            "code": "711182000",
+            "display": "Ultrasound guided aspiration of lower limb"
+          },
+          {
+            "code": "17211000087107",
+            "display": "Ultrasound guided aspiration of left lower limb"
+          },
+          {
+            "code": "17221000087104",
+            "display": "Ultrasound guided aspiration of right lower limb"
+          },
+          {
+            "code": "17641000087105",
+            "display": "Ultrasound guided aspiration of bilateral lower limbs"
+          },
+          {
+            "code": "710240002",
+            "display": "Ultrasound guided aspiration of head and neck"
+          },
+          {
+            "code": "931000087102",
+            "display": "Ultrasound guided aspiration of left breast"
+          },
+          {
+            "code": "419791000",
+            "display": "Ultrasound scan and aspiration of pelvis"
+          },
+          {
+            "code": "14361000087105",
+            "display": "Ultrasound guided aspiration of cyst of bilateral kidneys"
+          },
+          {
+            "code": "419516008",
+            "display": "Ultrasound scan and aspiration of chest"
+          },
+          {
+            "code": "716033004",
+            "display": "Ultrasound guided aspiration of cyst of thyroid"
+          },
+          {
+            "code": "277667006",
+            "display": "Ultrasound guided biopsy"
+          },
+          {
+            "code": "446843003",
+            "display": "Biopsy of chest using ultrasound guidance"
+          },
+          {
+            "code": "431810003",
+            "display": "Biopsy of femur using ultrasound guidance"
+          },
+          {
+            "code": "432398000",
+            "display": "Biopsy of foot using ultrasound guidance"
+          },
+          {
+            "code": "433136002",
+            "display": "Biopsy of hand using ultrasound guidance"
+          },
+          {
+            "code": "432373001",
+            "display": "Biopsy of hip using ultrasound guidance"
+          },
+          {
+            "code": "431982001",
+            "display": "Biopsy of humerus using ultrasound guidance"
+          },
+          {
+            "code": "438813007",
+            "display": "Biopsy of kidney using ultrasound guidance"
+          },
+          {
+            "code": "1141000087106",
+            "display": "Ultrasound guided biopsy of left kidney"
+          },
+          {
+            "code": "1151000087109",
+            "display": "Ultrasound guided biopsy of right kidney"
+          },
+          {
+            "code": "1641000087102",
+            "display": "Ultrasound guided biopsy of bilateral kidneys"
+          },
+          {
+            "code": "433135003",
+            "display": "Biopsy of knee using ultrasound guidance"
+          },
+          {
+            "code": "438300009",
+            "display": "Biopsy of liver using ultrasound guidance"
+          },
+          {
+            "code": "432217006",
+            "display": "Biopsy of neck using ultrasound guidance"
+          },
+          {
+            "code": "1217397004",
+            "display": "Ultrasonography guided biopsy of pancreas"
+          },
+          {
+            "code": "1220627000",
+            "display": "Ultrasonography guided biopsy of pelvis"
+          },
+          {
+            "code": "432721000",
+            "display": "Biopsy of shoulder using ultrasound guidance"
+          },
+          {
+            "code": "709644003",
+            "display": "Ultrasound guided biopsy of spleen"
+          },
+          {
+            "code": "440492007",
+            "display": "Biopsy of thyroid using ultrasound guidance"
+          },
+          {
+            "code": "440512006",
+            "display": "Biopsy of transplanted kidney using ultrasound guidance"
+          },
+          {
+            "code": "431811004",
+            "display": "Ultrasound guided biopsy of wrist"
+          },
+          {
+            "code": "433221009",
+            "display": "Coeliac plexus block using ultrasound guidance"
+          },
+          {
+            "code": "715996000",
+            "display": "Ultrasound guided insertion of drain into pericardium"
+          },
+          {
+            "code": "715283006",
+            "display": "Ultrasound guided removal of drain"
+          },
+          {
+            "code": "703869007",
+            "display": "Ultrasound guided drainage of abdomen"
+          },
+          {
+            "code": "419803002",
+            "display": "Ultrasound scan and drainage of breast"
+          },
+          {
+            "code": "12601000087109",
+            "display": "Ultrasound guided drainage of left breast"
+          },
+          {
+            "code": "12351000087103",
+            "display": "Ultrasound guided drainage of right breast"
+          },
+          {
+            "code": "12651000087105",
+            "display": "Ultrasound guided drainage of bilateral breasts"
+          },
+          {
+            "code": "702793000",
+            "display": "Ultrasound guided drainage of pelvis"
+          },
+          {
+            "code": "420122003",
+            "display": "Ultrasound scan and drainage of chest"
+          },
+          {
+            "code": "419777006",
+            "display": "Ultrasound scan and drainage of thyroid"
+          },
+          {
+            "code": "788639001",
+            "display": "Endoscopic ultrasound guided fiducial marker insertion into pancreas"
+          },
+          {
+            "code": "1145042007",
+            "display": "Ultrasonography guided transperineal insertion of fiducial marker into prostate using transrectal ultrasonographic guidance"
+          },
+          {
+            "code": "715278003",
+            "display": "Ultrasound guided fine needle aspiration biopsy of supraclavicular fossa"
+          },
+          {
+            "code": "431732002",
+            "display": "Fine needle aspiration and core needle biopsy of axilla using ultrasound guidance"
+          },
+          {
+            "code": "433805008",
+            "display": "Fine needle aspiration and core needle biopsy of breast using ultrasound guidance"
+          },
+          {
+            "code": "716518003",
+            "display": "Ultrasound guided fine needle aspiration of liver"
+          },
+          {
+            "code": "447853006",
+            "display": "Fine needle aspiration biopsy of neck using ultrasound guidance"
+          },
+          {
+            "code": "707849001",
+            "display": "Ultrasound guided selective destruction of fetus"
+          },
+          {
+            "code": "434368008",
+            "display": "Injection of medial collateral ligament bursa using ultrasound guidance"
+          },
+          {
+            "code": "433794007",
+            "display": "Ultrasound guided injection of anserine bursa"
+          },
+          {
+            "code": "431478006",
+            "display": "Injection of semimembranosus bursa using ultrasound guidance"
+          },
+          {
+            "code": "431227002",
+            "display": "Injection of trochanteric bursa using ultrasound guidance"
+          },
+          {
+            "code": "432872001",
+            "display": "Injection of ankle using ultrasound guidance"
+          },
+          {
+            "code": "432873006",
+            "display": "Injection of elbow using ultrasound guidance"
+          },
+          {
+            "code": "432106002",
+            "display": "Injection of foot using ultrasound guidance"
+          },
+          {
+            "code": "432147004",
+            "display": "Injection of hand using ultrasound guidance"
+          },
+          {
+            "code": "431979006",
+            "display": "Injection of hip using ultrasound guidance"
+          },
+          {
+            "code": "431980009",
+            "display": "Injection of knee using ultrasound guidance"
+          },
+          {
+            "code": "713682006",
+            "display": "Ultrasound guided injection of sacroiliac joint"
+          },
+          {
+            "code": "14371000087101",
+            "display": "Ultrasound guided injection of left sacroiliac joint"
+          },
+          {
+            "code": "14381000087104",
+            "display": "Ultrasound guided injection of right sacroiliac joint"
+          },
+          {
+            "code": "14711000087107",
+            "display": "Ultrasound guided injection of bilateral sacroiliac joints"
+          },
+          {
+            "code": "432816007",
+            "display": "Injection of shoulder using ultrasound guidance"
+          },
+          {
+            "code": "433774003",
+            "display": "Injection of subacromial bursa using ultrasound guidance"
+          },
+          {
+            "code": "433843006",
+            "display": "Injection of subdeltoid bursa using ultrasound guidance"
+          },
+          {
+            "code": "715276004",
+            "display": "Ultrasound guided injection of subtalar joint"
+          },
+          {
+            "code": "432234003",
+            "display": "Injection of wrist using ultrasound guidance"
+          },
+          {
+            "code": "715459001",
+            "display": "Ultrasound guided injection of marker into axilla"
+          },
+          {
+            "code": "450460004",
+            "display": "Nephrostomy using ultrasound guidance"
+          },
+          {
+            "code": "13391000087100",
+            "display": "Ultrasound guided left nephrostomy"
+          },
+          {
+            "code": "13401000087102",
+            "display": "Ultrasound guided right nephrostomy"
+          },
+          {
+            "code": "443272003",
+            "display": "Ultrasound guided puncture of peripheral vein"
+          },
+          {
+            "code": "448689003",
+            "display": "Radiofrequency biopsy of breast using ultrasound guidance"
+          },
+          {
+            "code": "718144000",
+            "display": "Ultrasound guided removal of tunnelled drain from thorax"
+          },
+          {
+            "code": "711308006",
+            "display": "Ultrasound guided puncture of cyst of kidney"
+          },
+          {
+            "code": "17001000087100",
+            "display": "Ultrasound guided puncture of cyst of left kidney"
+          },
+          {
+            "code": "17011000087103",
+            "display": "Ultrasound guided puncture of cyst of right kidney"
+          },
+          {
+            "code": "440499003",
+            "display": "Radiofrequency ablation of lesion of kidney using ultrasound guidance"
+          },
+          {
+            "code": "438815000",
+            "display": "Radiofrequency ablation of lesion of liver using ultrasound guidance"
+          },
+          {
+            "code": "433069004",
+            "display": "Marking of skin of breast using ultrasound guidance"
+          },
+          {
+            "code": "432587002",
+            "display": "Ultrasound guided suprapubic catheterisation"
+          },
+          {
+            "code": "431718004",
+            "display": "Injection of thrombin using ultrasound guidance"
+          },
+          {
+            "code": "447263007",
+            "display": "Drainage of pelvis by transvaginal approach using ultrasound guidance"
+          },
+          {
+            "code": "713699007",
+            "display": "Ultrasound guided vacuum assisted excision of breast"
+          },
+          {
+            "code": "303924009",
+            "display": "Ultrasound scan of hand"
+          },
+          {
+            "code": "1121000087102",
+            "display": "Ultrasound of left hand"
+          },
+          {
+            "code": "1131000087100",
+            "display": "Ultrasound of right hand"
+          },
+          {
+            "code": "1631000087108",
+            "display": "Ultrasound of both hands"
+          },
+          {
+            "code": "432668002",
+            "display": "Ultrasound of hand and wrist"
+          },
+          {
+            "code": "241502008",
+            "display": "Ultrasound scan of hip"
+          },
+          {
+            "code": "426100003",
+            "display": "Ultrasound scan of left hip"
+          },
+          {
+            "code": "427472005",
+            "display": "Ultrasound scan of right hip"
+          },
+          {
+            "code": "426903000",
+            "display": "Ultrasound scan of both hips"
+          },
+          {
+            "code": "431345000",
+            "display": "Hydrodistension of glenohumeral joint using ultrasound guidance"
+          },
+          {
+            "code": "433156001",
+            "display": "Intraoperative epiaortic ultrasound"
+          },
+          {
+            "code": "306005",
+            "display": "Ultrasound of kidney"
+          },
+          {
+            "code": "11581000087109",
+            "display": "Ultrasound of left kidney"
+          },
+          {
+            "code": "11521000087108",
+            "display": "Ultrasound of right kidney"
+          },
+          {
+            "code": "13301000087109",
+            "display": "Ultrasound of bilateral kidneys"
+          },
+          {
+            "code": "241504009",
+            "display": "Ultrasound of knee"
+          },
+          {
+            "code": "1161000087107",
+            "display": "Ultrasound of left knee region"
+          },
+          {
+            "code": "1171000087103",
+            "display": "Ultrasound of right knee region"
+          },
+          {
+            "code": "1651000087104",
+            "display": "Ultrasound of both knees"
+          },
+          {
+            "code": "432547007",
+            "display": "Reduction of intestinal intussusception using ultrasound guidance"
+          },
+          {
+            "code": "105377009",
+            "display": "Ultrasound liver"
+          },
+          {
+            "code": "443630007",
+            "display": "Ultrasound of liver with contrast"
+          },
+          {
+            "code": "420052009",
+            "display": "Ultrasound scan of lower abdomen"
+          },
+          {
+            "code": "440694004",
+            "display": "Ultrasound of midfoot"
+          },
+          {
+            "code": "241453007",
+            "display": "Ultrasound scan of neck"
+          },
+          {
+            "code": "432430009",
+            "display": "Ultrasound of sciatic nerve"
+          },
+          {
+            "code": "785805004",
+            "display": "Measurement of cervical length using transvaginal ultrasound"
+          },
+          {
+            "code": "433153009",
+            "display": "Chorionic villus sampling using obstetric ultrasound guidance"
+          },
+          {
+            "code": "169229007",
+            "display": "Dating/booking ultrasound scan"
+          },
+          {
+            "code": "169230002",
+            "display": "Ultrasound scan for fetal viability"
+          },
+          {
+            "code": "418090003",
+            "display": "Obstetric Doppler ultrasound"
+          },
+          {
+            "code": "432246004",
+            "display": "Transvaginal obstetric Doppler ultrasound"
+          },
+          {
+            "code": "427623005",
+            "display": "Obstetric umbilical artery Doppler"
+          },
+          {
+            "code": "700442004",
+            "display": "Ultrasound scan of fetal ductus venosus"
+          },
+          {
+            "code": "241493005",
+            "display": "Ultrasound scan for fetal growth"
+          },
+          {
+            "code": "414880004",
+            "display": "Nuchal ultrasound scan"
+          },
+          {
+            "code": "277668001",
+            "display": "Ultrasound scan of pancreas"
+          },
+          {
+            "code": "241474008",
+            "display": "Ultrasound scan of transplanted pancreas"
+          },
+          {
+            "code": "241454001",
+            "display": "Ultrasound scan of parathyroid"
+          },
+          {
+            "code": "432158008",
+            "display": "Ultrasound of pathological specimen"
+          },
+          {
+            "code": "24848001",
+            "display": "Ultrasound scan of pelvis"
+          },
+          {
+            "code": "429915000",
+            "display": "Transvaginal ultrasound of pelvis"
+          },
+          {
+            "code": "241485005",
+            "display": "Ultrasound scan of penis"
+          },
+          {
+            "code": "432245000",
+            "display": "Ultrasound of plantar fascia"
+          },
+          {
+            "code": "16436161000119108",
+            "display": "Ultrasound scan of left popliteal fossa"
+          },
+          {
+            "code": "16436111000119105",
+            "display": "Ultrasound scan of right popliteal fossa"
+          },
+          {
+            "code": "20311000087105",
+            "display": "Ultrasound of bilateral popliteal fossa"
+          },
+          {
+            "code": "713599004",
+            "display": "Post mortem ultrasound"
+          },
+          {
+            "code": "241487002",
+            "display": "Ultrasound scan of prostate"
+          },
+          {
+            "code": "432003008",
+            "display": "Ultrasound of rib"
+          },
+          {
+            "code": "432674002",
+            "display": "Ultrasound of sacroiliac joint"
+          },
+          {
+            "code": "428605000",
+            "display": "Ultrasound scan of sacral spine"
+          },
+          {
+            "code": "241456004",
+            "display": "Ultrasound scan of salivary glands"
+          },
+          {
+            "code": "432004002",
+            "display": "Ultrasound of scalp"
+          },
+          {
+            "code": "426827002",
+            "display": "Ultrasound scan of chest wall"
+          },
+          {
+            "code": "709590000",
+            "display": "Ultrasound of perineum"
+          },
+          {
+            "code": "433177003",
+            "display": "Ultrasound of scapula"
+          },
+          {
+            "code": "432720004",
+            "display": "Ultrasound of seminal vesicles"
+          },
+          {
+            "code": "303922008",
+            "display": "Ultrasound of shoulder region"
+          },
+          {
+            "code": "1221000087108",
+            "display": "Ultrasound of left shoulder region"
+          },
+          {
+            "code": "1231000087105",
+            "display": "Ultrasound of right shoulder region"
+          },
+          {
+            "code": "1681000087107",
+            "display": "Ultrasound of bilateral shoulders"
+          },
+          {
+            "code": "432089005",
+            "display": "Ultrasound guided marking of skin over great saphenous vein"
+          },
+          {
+            "code": "169238009",
+            "display": "Ultrasound skull scan"
+          },
+          {
+            "code": "770578003",
+            "display": "Ultrasound of soft tissue of lumbar region of back"
+          },
+          {
+            "code": "770579006",
+            "display": "Ultrasound of soft tissue of thoracic region of back"
+          },
+          {
+            "code": "431623007",
+            "display": "Ultrasound of cervical spine"
+          },
+          {
+            "code": "432651001",
+            "display": "Ultrasound of lumbar spine"
+          },
+          {
+            "code": "432898007",
+            "display": "Ultrasound of thoracic spine"
+          },
+          {
+            "code": "241476005",
+            "display": "Ultrasound scan of spleen"
+          },
+          {
+            "code": "713495007",
+            "display": "Ultrasound of spleen with contrast"
+          },
+          {
+            "code": "432856009",
+            "display": "Ultrasound of sternoclavicular joint"
+          },
+          {
+            "code": "432405006",
+            "display": "Ultrasound of sternum"
+          },
+          {
+            "code": "433862009",
+            "display": "Exercise stress ultrasound of heart with contrast"
+          },
+          {
+            "code": "431843004",
+            "display": "Ultrasound of subtalar joint"
+          },
+          {
+            "code": "718290002",
+            "display": "Ultrasound scan of liver for early detection of hepatocellular carcinoma"
+          },
+          {
+            "code": "432855008",
+            "display": "Ultrasound of symphysis pubis"
+          },
+          {
+            "code": "432404005",
+            "display": "Ultrasound of temporomandibular joint"
+          },
+          {
+            "code": "425410009",
+            "display": "Ultrasound scan of thigh"
+          },
+          {
+            "code": "1241000087104",
+            "display": "Ultrasound of left thigh"
+          },
+          {
+            "code": "1251000087101",
+            "display": "Ultrasound of right thigh"
+          },
+          {
+            "code": "1691000087109",
+            "display": "Ultrasound of bilateral thighs"
+          },
+          {
+            "code": "432002003",
+            "display": "Ultrasound of thumb"
+          },
+          {
+            "code": "1261000087103",
+            "display": "Ultrasound of left thumb"
+          },
+          {
+            "code": "1271000087107",
+            "display": "Ultrasound of right thumb"
+          },
+          {
+            "code": "1701000087109",
+            "display": "Ultrasound of bilateral thumbs"
+          },
+          {
+            "code": "241455000",
+            "display": "Ultrasound scan of thyroid"
+          },
+          {
+            "code": "432663006",
+            "display": "Ultrasound of toe"
+          },
+          {
+            "code": "21491000087101",
+            "display": "Ultrasound of toe of left foot"
+          },
+          {
+            "code": "21151000087104",
+            "display": "Ultrasound of toe of right foot"
+          },
+          {
+            "code": "431894006",
+            "display": "Ultrasound of transjugular intrahepatic portosystemic shunt stent"
+          },
+          {
+            "code": "105376000",
+            "display": "Transoesophageal echocardiography"
+          },
+          {
+            "code": "241484009",
+            "display": "Ultrasound scan of transplanted kidney"
+          },
+          {
+            "code": "241472007",
+            "display": "Ultrasound scan of transplanted liver"
+          },
+          {
+            "code": "433236007",
+            "display": "Transthoracic echocardiogram"
+          },
+          {
+            "code": "434167009",
+            "display": "Transthoracic ultrasound of heart with contrast"
+          },
+          {
+            "code": "434158009",
+            "display": "Transthoracic three dimensional ultrasound of heart"
+          },
+          {
+            "code": "418398002",
+            "display": "Ultrasound scan of upper abdomen"
+          },
+          {
+            "code": "449921006",
+            "display": "Ultrasound of upper limb"
+          },
+          {
+            "code": "1281000087109",
+            "display": "Ultrasound of left upper limb"
+          },
+          {
+            "code": "1291000087106",
+            "display": "Ultrasound of right upper limb"
+          },
+          {
+            "code": "1711000087106",
+            "display": "Ultrasound of left and right upper limb"
+          },
+          {
+            "code": "786917009",
+            "display": "Ultrasound bladder vibrometry"
+          },
+          {
+            "code": "700387001",
+            "display": "Ultrasound of urinary bladder for post-void residual volume"
+          },
+          {
+            "code": "241499009",
+            "display": "Ultrasound of wrist"
+          },
+          {
+            "code": "1301000087105",
+            "display": "Ultrasound of left wrist"
+          },
+          {
+            "code": "1311000087107",
+            "display": "Ultrasound of right wrist"
+          },
+          {
+            "code": "1721000087103",
+            "display": "Ultrasound of left and right wrist"
+          },
+          {
+            "code": "60654006",
+            "display": "X-ray of abdomen"
+          },
+          {
+            "code": "713565002",
+            "display": "Plain X-ray of abdomen with contrast"
+          },
+          {
+            "code": "427961005",
+            "display": "X-ray of acetabulum"
+          },
+          {
+            "code": "168633004",
+            "display": "Acromioclavicular joint X-ray"
+          },
+          {
+            "code": "3461000087100",
+            "display": "Plain X-ray of left acromioclavicular joint"
+          },
+          {
+            "code": "3471000087109",
+            "display": "Plain X-ray of right acromioclavicular joint"
+          },
+          {
+            "code": "3961000087106",
+            "display": "Plain X-ray of bilateral acromioclavicular joints"
+          },
+          {
+            "code": "19490002",
+            "display": "Ankle X-ray"
+          },
+          {
+            "code": "426420006",
+            "display": "X-ray of left ankle"
+          },
+          {
+            "code": "426721006",
+            "display": "X-ray of right ankle"
+          },
+          {
+            "code": "425703002",
+            "display": "X-ray of both ankles"
+          },
+          {
+            "code": "168682004",
+            "display": "Stress X-ray ankle joint"
+          },
+          {
+            "code": "37815002",
+            "display": "Calcaneum X-ray"
+          },
+          {
+            "code": "3481000087106",
+            "display": "Plain X-ray of left calcaneum"
+          },
+          {
+            "code": "3491000087108",
+            "display": "Plain X-ray of right calcaneum"
+          },
+          {
+            "code": "3971000087102",
+            "display": "Plain X-ray of bilateral calcanei"
+          },
+          {
+            "code": "241072004",
+            "display": "Carpal tunnel X-ray"
+          },
+          {
+            "code": "428665002",
+            "display": "X-ray of carpometacarpal joint under stress"
+          },
+          {
+            "code": "16319081000119105",
+            "display": "Plain X-ray orthodontic cephalogram"
+          },
+          {
+            "code": "445515006",
+            "display": "X-ray of CSF shunt"
+          },
+          {
+            "code": "712970008",
+            "display": "Plain X-ray of cervical spine"
+          },
+          {
+            "code": "61368000",
+            "display": "Diagnostic radiography of spine with flexion and extension studies"
+          },
+          {
+            "code": "241092006",
+            "display": "Cervicothoracic junction X-ray"
+          },
+          {
+            "code": "399208008",
+            "display": "Plain chest X-ray"
+          },
+          {
+            "code": "168594001",
+            "display": "Clavicle X-ray"
+          },
+          {
+            "code": "3501000087100",
+            "display": "Plain X-ray of left clavicle"
+          },
+          {
+            "code": "3511000087103",
+            "display": "Plain X-ray of right clavicle"
+          },
+          {
+            "code": "3981000087100",
+            "display": "Plain X-ray of bilateral clavicles"
+          },
+          {
+            "code": "24856003",
+            "display": "Coccyx X-ray"
+          },
+          {
+            "code": "445844000",
+            "display": "X-ray of cochlear implant"
+          },
+          {
+            "code": "418181007",
+            "display": "X-ray for colonic transit study"
+          },
+          {
+            "code": "76913009",
+            "display": "Elbow X-ray"
+          },
+          {
+            "code": "3521000087106",
+            "display": "Plain X-ray of left elbow"
+          },
+          {
+            "code": "3531000087108",
+            "display": "Plain X-ray of right elbow"
+          },
+          {
+            "code": "3991000087103",
+            "display": "Plain X-ray of bilateral elbows"
+          },
+          {
+            "code": "703940002",
+            "display": "X-ray of elbow for bone age"
+          },
+          {
+            "code": "68306006",
+            "display": "X-ray of facial bones"
+          },
+          {
+            "code": "241075002",
+            "display": "Femur X-ray"
+          },
+          {
+            "code": "3541000087102",
+            "display": "Plain X-ray of left femur"
+          },
+          {
+            "code": "3551000087104",
+            "display": "Plain X-ray of right femur"
+          },
+          {
+            "code": "4001000087105",
+            "display": "Plain X-ray of bilateral femurs"
+          },
+          {
+            "code": "1597004",
+            "display": "Skeletal X-ray of ankle and foot"
+          },
+          {
+            "code": "52221007",
+            "display": "Foot X-ray"
+          },
+          {
+            "code": "426908009",
+            "display": "X-ray of left foot"
+          },
+          {
+            "code": "426311001",
+            "display": "X-ray of right foot"
+          },
+          {
+            "code": "426581005",
+            "display": "X-ray of both feet"
+          },
+          {
+            "code": "276015003",
+            "display": "Forefoot X-ray"
+          },
+          {
+            "code": "39714003",
+            "display": "Skeletal X-ray of wrist and hand"
+          },
+          {
+            "code": "428603007",
+            "display": "X-ray of hand and wrist for bone age"
+          },
+          {
+            "code": "49345004",
+            "display": "Hand X-ray"
+          },
+          {
+            "code": "3621000087107",
+            "display": "Plain X-ray of left hand"
+          },
+          {
+            "code": "3631000087109",
+            "display": "Plain X-ray of right hand"
+          },
+          {
+            "code": "4041000087108",
+            "display": "Plain X-ray of bilateral hands"
+          },
+          {
+            "code": "241081005",
+            "display": "Hindfoot X-ray"
+          },
+          {
+            "code": "408740001",
+            "display": "Hip X-ray"
+          },
+          {
+            "code": "3641000087103",
+            "display": "Plain X-ray of left hip"
+          },
+          {
+            "code": "3651000087100",
+            "display": "Plain X-ray of right hip"
+          },
+          {
+            "code": "4051000087106",
+            "display": "Plain X-ray of bilateral hips"
+          },
+          {
+            "code": "1225002",
+            "display": "X-ray of humerus"
+          },
+          {
+            "code": "3661000087102",
+            "display": "Plain X-ray of left humerus"
+          },
+          {
+            "code": "3671000087106",
+            "display": "Plain X-ray of right humerus"
+          },
+          {
+            "code": "4061000087109",
+            "display": "Plain X-ray of bilateral humeri"
+          },
+          {
+            "code": "81618005",
+            "display": "Intravenous cholangiogram"
+          },
+          {
+            "code": "31911002",
+            "display": "Kidneys, ureter, bladder X-ray"
+          },
+          {
+            "code": "74016001",
+            "display": "Knee X-ray"
+          },
+          {
+            "code": "427019001",
+            "display": "X-ray of left knee"
+          },
+          {
+            "code": "427407003",
+            "display": "X-ray of right knee"
+          },
+          {
+            "code": "426860004",
+            "display": "X-ray of both knees"
+          },
+          {
+            "code": "58011003",
+            "display": "Larynx X-ray"
+          },
+          {
+            "code": "449617002",
+            "display": "X-ray of lower leg for bone length measurement"
+          },
+          {
+            "code": "5433008",
+            "display": "Skeletal X-ray of lower limb"
+          },
+          {
+            "code": "9241000087103",
+            "display": "Plain X-ray of left lower limb"
+          },
+          {
+            "code": "9251000087100",
+            "display": "Plain X-ray of right lower limb"
+          },
+          {
+            "code": "9771000087103",
+            "display": "Plain X-ray of bilateral lower limbs"
+          },
+          {
+            "code": "840361000",
+            "display": "Plain X-ray of lumbar spine"
+          },
+          {
+            "code": "431892005",
+            "display": "X-ray of lumbar spine and pelvis"
+          },
+          {
+            "code": "419942003",
+            "display": "X-ray of lumbar spine and sacroiliac joints"
+          },
+          {
+            "code": "19589009",
+            "display": "Mandible X-ray"
+          },
+          {
+            "code": "440695003",
+            "display": "X-ray of midfoot"
+          },
+          {
+            "code": "87411003",
+            "display": "Nasal bones X-ray"
+          },
+          {
+            "code": "711419008",
+            "display": "Fluoroscopy guided nasogastric tube procedure"
+          },
+          {
+            "code": "168719007",
+            "display": "Neck soft tissue X-ray"
+          },
+          {
+            "code": "75675001",
+            "display": "X-ray of orbits"
+          },
+          {
+            "code": "89846007",
+            "display": "Orthopantogram"
+          },
+          {
+            "code": "84492002",
+            "display": "Sinuses X-ray"
+          },
+          {
+            "code": "168669007",
+            "display": "Patella X-ray"
+          },
+          {
+            "code": "3681000087108",
+            "display": "Plain X-ray of left patella"
+          },
+          {
+            "code": "3691000087105",
+            "display": "Plain X-ray of right patella"
+          },
+          {
+            "code": "4071000087100",
+            "display": "Plain X-ray of bilateral patellae"
+          },
+          {
+            "code": "241091004",
+            "display": "X-ray pelvimetry"
+          },
+          {
+            "code": "268425006",
+            "display": "Pelvis X-ray"
+          },
+          {
+            "code": "302402006",
+            "display": "Radius and/or ulna X-ray"
+          },
+          {
+            "code": "57235004",
+            "display": "Sacrum X-ray"
+          },
+          {
+            "code": "8449009",
+            "display": "Radiography of sacrococcygeal spine"
+          },
+          {
+            "code": "367414003",
+            "display": "Salivary gland X-ray"
+          },
+          {
+            "code": "241071006",
+            "display": "Scaphoid X-ray"
+          },
+          {
+            "code": "3841000087104",
+            "display": "Plain X-ray of left scaphoid"
+          },
+          {
+            "code": "3851000087101",
+            "display": "Plain X-ray of right scaphoid"
+          },
+          {
+            "code": "4091000087101",
+            "display": "Plain X-ray of bilateral scaphoids"
+          },
+          {
+            "code": "49626003",
+            "display": "Scapula X-ray"
+          },
+          {
+            "code": "3741000087108",
+            "display": "Plain X-ray of left scapula"
+          },
+          {
+            "code": "3751000087106",
+            "display": "Plain X-ray of right scapula"
+          },
+          {
+            "code": "4101000087106",
+            "display": "Plain X-ray of bilateral scapulae"
+          },
+          {
+            "code": "29592009",
+            "display": "Shoulder X-ray"
+          },
+          {
+            "code": "3761000087109",
+            "display": "Plain X-ray of left shoulder"
+          },
+          {
+            "code": "3771000087100",
+            "display": "Plain X-ray of right shoulder"
+          },
+          {
+            "code": "4111000087108",
+            "display": "Plain X-ray of bilateral shoulders"
+          },
+          {
+            "code": "241108003",
+            "display": "Skeletal survey - peripheral"
+          },
+          {
+            "code": "42075002",
+            "display": "Skull X-ray"
+          },
+          {
+            "code": "168599006",
+            "display": "Sternoclavicular joint X-ray"
+          },
+          {
+            "code": "718020004",
+            "display": "X-ray tomography of sternum"
+          },
+          {
+            "code": "241085001",
+            "display": "Subtalar joint X-ray"
+          },
+          {
+            "code": "40372003",
+            "display": "Temporomandibular joint X-ray"
+          },
+          {
+            "code": "444634007",
+            "display": "X-ray of thoracic and lumbar spine"
+          },
+          {
+            "code": "168600009",
+            "display": "Thoracic inlet X-ray"
+          },
+          {
+            "code": "45554006",
+            "display": "X-ray of thoracic spine"
+          },
+          {
+            "code": "241074003",
+            "display": "Thumb X-ray"
+          },
+          {
+            "code": "3781000087103",
+            "display": "Plain X-ray of left thumb"
+          },
+          {
+            "code": "3791000087101",
+            "display": "Plain X-ray of right thumb"
+          },
+          {
+            "code": "4121000087100",
+            "display": "Plain X-ray of bilateral thumbs"
+          },
+          {
+            "code": "783631001",
+            "display": "Plain X-ray of tibia and fibula"
+          },
+          {
+            "code": "3801000087102",
+            "display": "Plain X-ray of left tibia and left fibula"
+          },
+          {
+            "code": "3811000087100",
+            "display": "Plain X-ray of right tibia and right fibula"
+          },
+          {
+            "code": "4131000087103",
+            "display": "Plain X-ray of bilateral tibia and bilateral fibula"
+          },
+          {
+            "code": "79760008",
+            "display": "X-ray of spine"
+          },
+          {
+            "code": "60027007",
+            "display": "X-ray of wrist"
+          },
+          {
+            "code": "3821000087108",
+            "display": "Plain X-ray of left wrist"
+          },
+          {
+            "code": "3831000087105",
+            "display": "Plain X-ray of right wrist"
+          },
+          {
+            "code": "4141000087109",
+            "display": "Plain X-ray of bilateral wrists"
+          },
+          {
+            "code": "429148001",
+            "display": "X-ray of zygoma"
+          },
+          {
+            "code": "773131009",
+            "display": "Plain X-ray for ulnar variance view"
+          },
+          {
+            "code": "171229005",
+            "display": "Screening chest X-ray"
+          },
+          {
+            "code": "28367004",
+            "display": "Cholangiogram"
+          },
+          {
+            "code": "241175004",
+            "display": "Cholecystogram"
+          },
+          {
+            "code": "168854009",
+            "display": "Cystography"
+          },
+          {
+            "code": "56087001",
+            "display": "Dacryocystography"
+          },
+          {
+            "code": "1004089004",
+            "display": "Fistulography with contrast"
+          },
+          {
+            "code": "720707009",
+            "display": "Plain X-ray of gastrointestinal tract with marker capsule for transit study"
+          },
+          {
+            "code": "431397007",
+            "display": "Insertion of gastrostomy tube using fluoroscopic guidance"
+          },
+          {
+            "code": "433032002",
+            "display": "Removal of gastrostomy tube using fluoroscopic guidance"
+          },
+          {
+            "code": "55612007",
+            "display": "Hepatic venography"
+          },
+          {
+            "code": "168884001",
+            "display": "Hysterosalpingography"
+          },
+          {
+            "code": "433173004",
+            "display": "Fluoroscopy guided insertion of permanent inferior vena cava filter"
+          },
+          {
+            "code": "432079006",
+            "display": "Fluoroscopy guided removal of inferior vena cava filter"
+          },
+          {
+            "code": "32265006",
+            "display": "Intravenous pyelogram"
+          },
+          {
+            "code": "174304002",
+            "display": "Hydrostatic reduction of intussusception of rectum"
+          },
+          {
+            "code": "419245009",
+            "display": "Fluoroscopic micturating cystourethrography"
+          },
+          {
+            "code": "175988004",
+            "display": "Nephrostogram"
+          },
+          {
+            "code": "431410007",
+            "display": "Nephrostomy using fluoroscopic guidance"
+          },
+          {
+            "code": "251000087100",
+            "display": "Fluoroscopy guided left nephrostomy"
+          },
+          {
+            "code": "261000087102",
+            "display": "Fluoroscopy guided right nephrostomy"
+          },
+          {
+            "code": "701000087108",
+            "display": "Fluoroscopy guided bilateral nephrostomy"
+          },
+          {
+            "code": "431341009",
+            "display": "Removal of nephrostomy tube using fluoroscopic guidance"
+          },
+          {
+            "code": "84200003",
+            "display": "Angiography of pulmonary arteries"
+          },
+          {
+            "code": "765041007",
+            "display": "Angiography of left pulmonary artery"
+          },
+          {
+            "code": "765042000",
+            "display": "Angiography of right pulmonary artery"
+          },
+          {
+            "code": "79516005",
+            "display": "Renal angiography"
+          },
+          {
+            "code": "431484009",
+            "display": "Fluoroscopy guided percutaneous transluminal angioplasty of renal artery"
+          },
+          {
+            "code": "331000087101",
+            "display": "Fluoroscopy guided angioplasty of left renal artery with contrast"
+          },
+          {
+            "code": "341000087107",
+            "display": "Fluoroscopy guided angioplasty of right renal artery with contrast"
+          },
+          {
+            "code": "751000087109",
+            "display": "Fluoroscopy guided angioplasty of bilateral renal arteries with contrast"
+          },
+          {
+            "code": "405250000",
+            "display": "Retrograde pyelogram"
+          },
+          {
+            "code": "1010454006",
+            "display": "Retrograde pyelography of left renal pelvis"
+          },
+          {
+            "code": "1010455007",
+            "display": "Retrograde pyelography of right renal pelvis"
+          },
+          {
+            "code": "241233006",
+            "display": "Spinal arteriography"
+          },
+          {
+            "code": "431298004",
+            "display": "Fluoroscopic myelogram of lumbar spine with cervical puncture"
+          },
+          {
+            "code": "241147001",
+            "display": "Tube oesophagram"
+          },
+          {
+            "code": "703100007",
+            "display": "Fluoroscopy guided ureteric stent procedure"
+          },
+          {
+            "code": "168864000",
+            "display": "Urethrogram"
+          },
+          {
+            "code": "710294007",
+            "display": "Fluoroscopy guided urodynamic study"
+          },
+          {
+            "code": "703106001",
+            "display": "Fluoroscopy guided vascular stent procedure"
+          },
+          {
+            "code": "4970003",
+            "display": "Venography"
+          },
+          {
+            "code": "431911003",
+            "display": "Vertebroplasty using fluoroscopic guidance"
+          },
+          {
+            "code": "371576000",
+            "display": "Video imaging"
+          },
+          {
+            "code": "241149003",
+            "display": "Videofluoroscopy swallow"
+          },
+          {
+            "code": "710132004",
+            "display": "Fluoroscopy guided catheterisation of artery"
+          },
+          {
+            "code": "432945008",
+            "display": "Percutaneous removal of calculus from biliary tract using fluoroscopic guidance"
+          },
+          {
+            "code": "431845006",
+            "display": "Replacement of biliary drain using fluoroscopic guidance"
+          },
+          {
+            "code": "1222890004",
+            "display": "Biliary drainage using imaging guidance"
+          },
+          {
+            "code": "83735008",
+            "display": "Insertion of biliary stent by ERCP"
+          },
+          {
+            "code": "241232001",
+            "display": "Angiography of bronchial artery"
+          },
+          {
+            "code": "85895003",
+            "display": "Contrast bronchogram"
+          },
+          {
+            "code": "438523006",
+            "display": "Fluoroscopy guided percutaneous transluminal balloon test occlusion of middle cerebral artery"
+          }
+        ]
+      }
+    ]
+  }
+}
