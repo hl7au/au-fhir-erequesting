@@ -309,6 +309,10 @@
         "value": "fsh-generated/includes"
       },
       {
+        "code": "special-url",
+        "value": "https://ranzcr.com/fhir/ValueSet/radiology-referral"
+      },
+      {
         "code": "active-tables",
         "value": "false"
       },

@@ -59,7 +59,7 @@
     "outputFile": "ValueSet-ranzcr-radiology-referral.json",
     "fshName": "RANZCRRadiologyReferral",
     "fshType": "ValueSet",
-    "fshFile": "valuesets/au-erequesting-ranzcr-radiology-procedures.fsh",
+    "fshFile": "valuesets/au-erequesting-ranzcr-radiology-referral.fsh",
     "startLine": 1,
     "endLine": 525
   }

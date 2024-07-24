@@ -1,4 +1,4 @@
-<div class="stu-note">It is intended that this profile will always support the latest version of the RANZCR Radiology Referral value set in ServiceRequest.code. Work is underway to make that available shortly. Implementers are advised to take note that the current binding will be replaced as soon as a version of the RANZCR Radiology Referral value set is available.</div>
+{% include rrv-dev-note.md %}
 
 ### Profile specific implementation guidance
 - `ServiceRequest.code`:
