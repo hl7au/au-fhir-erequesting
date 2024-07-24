@@ -1,525 +1,525 @@
 ValueSet: RANZCRRadiologyReferral
 Id: ranzcr-radiology-referral
-Title: "RANZCR Radiology Referral"
+Title: "RANZCR Referral Procedures"
 Description: "Standard codes for use in requesting radiology tests in Australia, derived from the RANZCR Radiology Referral Set (RRS)."
 * ^meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+* ^url = "https://ranzcr.com/fhir/ValueSet/radiology-referral"
 * ^version = "1.0.0"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
-* ^url = "https://ranzcr.com/fhir/ValueSet/radiology-referral"
 * ^status = #draft
 * ^experimental = false
 * ^date = "2024-07-17"
 * ^publisher = "HL7 Australia"
-* $sct#45036003 "Ultrasound of abdomen"
-* $sct#444900008 "Ultrasound of abdomen with contrast"
-* $sct#418394000 "Ultrasound scan of abdomen and pelvis"
-* $sct#241462009 "Ultrasound of abdominal aorta"
-* $sct#241512001 "Ultrasound of Achilles tendon"
-* $sct#871000087105 "Ultrasound of left Achilles tendon"
-* $sct#881000087107 "Ultrasound of right Achilles tendon"
-* $sct#1921000087100 "Ultrasound of bilateral Achilles tendons"
-* $sct#431844005 "Ultrasound of acromioclavicular joint"
-* $sct#241480000 "Ultrasound scan of adrenals"
-* $sct#11691000087107 "Ultrasound of left adrenal gland"
-* $sct#11681000087105 "Ultrasound of right adrenal gland"
-* $sct#11651000087102 "Ultrasound of bilateral adrenal glands"
-* $sct#718475004 "Ultrasound scan for amniotic fluid index"
-* $sct#241505005 "Ultrasound of ankle"
-* $sct#891000087109 "Ultrasound of left ankle"
-* $sct#901000087105 "Ultrasound of right ankle"
-* $sct#1541000087101 "Ultrasound of left and right ankle"
-* $sct#432853001 "Ultrasound of anterior abdominal wall"
-* $sct#445867003 "Ultrasound angiography of arteriovenous fistula"
-* $sct#432635009 "Ultrasound of axilla"
-* $sct#911000087107 "Ultrasound of left axilla"
-* $sct#921000087104 "Ultrasound of right axilla"
-* $sct#1551000087103 "Ultrasound of bilateral axillae"
-* $sct#432667007 "Ultrasound of biceps tendon"
-* $sct#21181000087107 "Ultrasound of left biceps tendon"
-* $sct#21171000087105 "Ultrasound of right biceps tendon"
-* $sct#21551000087105 "Ultrasound of bilateral biceps tendons"
-* $sct#44052005 "Ultrasound of biliary tract"
-* $sct#397521009 "Ultrasound biomicroscopy of anterior segment of eyeball"
-* $sct#713856004 "Ultrasound scan of brachial plexus"
-* $sct#47079000 "Ultrasound of breast"
-* $sct#951000087106 "Ultrasound of left breast"
-* $sct#961000087109 "Ultrasound of right breast"
-* $sct#1571000087109 "Ultrasound of bilateral breasts"
-* $sct#426494009 "Ultrasound scan of calcaneum"
-* $sct#431622002 "Ultrasound of calf"
-* $sct#991000087101 "Ultrasound of calf of left lower leg"
-* $sct#1001000087107 "Ultrasound of calf of right lower leg"
-* $sct#1581000087106 "Ultrasound of bilateral calves"
-* $sct#433169002 "Ultrasound of clavicular region"
-* $sct#432372006 "Ultrasound of coccyx"
-* $sct#431785009 "Ultrasound compression venography of lower limb"
-* $sct#431756003 "Ultrasound of cranial cavity"
-* $sct#438491001 "Ultrasound of soft tissue of craniofacial region"
-* $sct#418889006 "Ultrasound scan of diaphragm"
-* $sct#446782006 "Ultrasound of deep inferior epigastric perforator skin flap"
-* $sct#433223007 "Doppler ultrasound of aorta"
-* $sct#710162005 "Doppler ultrasound of arteriovenous fistula"
-* $sct#431323001 "Doppler ultrasound of artery of lower limb"
-* $sct#394719009 "Doppler ultrasonography of carotid artery"
-* $sct#8891000087103 "Doppler ultrasound of left carotid artery"
-* $sct#8901000087102 "Doppler ultrasound of right carotid artery"
-* $sct#764689005 "Doppler ultrasound compression venography of lower limb"
-* $sct#765168005 "Doppler ultrasound compression venography of upper limb"
-* $sct#418793009 "Doppler ultrasonography of femoropopliteal artery"
-* $sct#425813003 "Doppler ultrasound scan of middle cerebral artery of fetus"
-* $sct#431779002 "Doppler ultrasound guided central venous catheterisation"
-* $sct#432509002 "Doppler ultrasound guided dialysis catheterisation"
-* $sct#431653000 "Doppler ultrasound of aorta and iliac artery"
-* $sct#712532003 "Doppler ultrasound of iliac vein"
-* $sct#699578000 "Doppler ultrasound of inferior epigastric artery"
-* $sct#438857006 "Doppler ultrasound of inferior vena cava"
-* $sct#446849004 "Doppler ultrasound of jugular vein"
-* $sct#431988002 "Doppler ultrasound of transplanted kidney"
-* $sct#431362005 "Doppler ultrasound of liver and portal system"
-* $sct#6231000087102 "Doppler ultrasound of artery of left lower limb"
-* $sct#6241000087108 "Doppler ultrasound of artery of right lower limb"
-* $sct#6751000087102 "Doppler ultrasound of arteries of bilateral lower limbs"
-* $sct#432336004 "Doppler ultrasound of vein of lower limb"
-* $sct#18061000087100 "Doppler ultrasound of vein of left lower limb"
-* $sct#17921000087107 "Doppler ultrasound of vein of right lower limb"
-* $sct#18301000087101 "Doppler ultrasound of veins of bilateral lower limbs"
-* $sct#429807002 "Transvaginal Doppler ultrasound of pelvis"
-* $sct#418762008 "Doppler ultrasonography of penis"
-* $sct#432216002 "Ultrasound of popliteal fossa"
-* $sct#702585002 "Doppler ultrasound of renal artery"
-* $sct#709640007 "Doppler ultrasound of renal vein"
-* $sct#764727000 "Doppler ultrasonography guided marking of skin over great saphenous vein"
-* $sct#764728005 "Doppler ultrasonography guided marking of skin over small saphenous vein"
-* $sct#713683001 "Doppler ultrasound of subclavian vein"
-* $sct#14751000087106 "Doppler ultrasound of left subclavian vein"
-* $sct#14761000087109 "Doppler ultrasound of right subclavian vein"
-* $sct#14831000087105 "Doppler ultrasound of bilateral subclavian veins"
-* $sct#699579008 "Doppler ultrasound of superior epigastric artery"
-* $sct#431363000 "Doppler ultrasound of superior mesenteric artery"
-* $sct#432335000 "Doppler ultrasound of superior mesenteric vein"
-* $sct#445751002 "Doppler ultrasound of temporal artery"
-* $sct#440495009 "Doppler ultrasound of testis"
-* $sct#702622007 "Doppler ultrasound of thoracodorsal artery"
-* $sct#431648005 "Transcranial Doppler ultrasound"
-* $sct#718078008 "Doppler ultrasound of transplanted liver"
-* $sct#431324007 "Doppler ultrasound of artery of upper limb"
-* $sct#6251000087106 "Doppler ultrasound of artery of left upper limb"
-* $sct#6261000087109 "Doppler ultrasound of artery of right upper limb"
-* $sct#6761000087104 "Doppler ultrasound of arteries of bilateral upper limbs"
-* $sct#431818005 "Doppler ultrasound of vein of upper limb"
-* $sct#14541000087102 "Doppler ultrasound of vein of left upper limb"
-* $sct#14531000087108 "Doppler ultrasound of vein of right upper limb"
-* $sct#431218003 "Ultrasound Doppler flow mapping of vein of lower limb"
-* $sct#6291000087101 "Doppler ultrasound flow mapping of vein of left lower limb"
-* $sct#6281000087103 "Doppler ultrasound flow mapping of vein of right lower limb"
-* $sct#6771000087108 "Doppler ultrasound flow mapping of veins of bilateral lower limbs"
-* $sct#431394000 "Ultrasound Doppler flow mapping of vein of upper limb"
-* $sct#6311000087100 "Doppler ultrasound flow mapping of vein of left upper limb"
-* $sct#6301000087102 "Doppler ultrasound flow mapping of vein of right upper limb"
-* $sct#6781000087105 "Doppler ultrasound flow mapping of veins of bilateral upper limbs"
-* $sct#418956005 "Doppler ultrasonography of vertebral arteries"
-* $sct#441491005 "Ultrasound elastography of liver"
-* $sct#241498001 "Ultrasound scan of elbow"
-* $sct#1011000087109 "Ultrasound of left elbow"
-* $sct#1021000087101 "Ultrasound of right elbow"
-* $sct#1591000087108 "Ultrasound of bilateral elbows"
-* $sct#431553009 "Endoanal ultrasound examination of rectal sphincter"
-* $sct#429820004 "Endorectal ultrasound"
-* $sct#19731001 "Ultrasound study of eye"
-* $sct#866200001 "Ultrasonography of bilateral eyes"
-* $sct#427072002 "Ultrasound scan of foot"
-* $sct#1031000087104 "Ultrasound of left foot"
-* $sct#1041000087105 "Ultrasound of right foot"
-* $sct#1601000087100 "Ultrasound of bilateral feet"
-* $sct#426019005 "Ultrasound of forearm"
-* $sct#1051000087108 "Ultrasound of left forearm"
-* $sct#1061000087106 "Ultrasound of right forearm"
-* $sct#432849003 "Ultrasound of forefoot"
-* $sct#169250003 "Ultrasound scan of gallbladder"
-* $sct#715193009 "Ultrasound scan of gallbladder with contrast"
-* $sct#770557001 "Ultrasound guided insertion of peripherally inserted central catheter"
-* $sct#718305004 "Ultrasound guided insertion of tunnelled drain into thorax"
-* $sct#1106671000000108 "Ultrasonography guided insertion of magnetic marker into breast"
-* $sct#1104451000000105 "Ultrasonography guided insertion of magnetic marker into left breast"
-* $sct#1104461000000108 "Ultrasonography guided insertion of magnetic marker into right breast"
-* $sct#1104471000000101 "Ultrasonography guided insertion of magnetic marker into bilateral breasts"
-* $sct#725505001 "Vacuum assisted excision of lesion of breast using ultrasound guidance"
-* $sct#432556004 "Aspiration of abdomen using ultrasound guidance"
-* $sct#33527008 "Ultrasound guided aspiration of cyst"
-* $sct#711182000 "Ultrasound guided aspiration of lower limb"
-* $sct#17211000087107 "Ultrasound guided aspiration of left lower limb"
-* $sct#17221000087104 "Ultrasound guided aspiration of right lower limb"
-* $sct#17641000087105 "Ultrasound guided aspiration of bilateral lower limbs"
-* $sct#710240002 "Ultrasound guided aspiration of head and neck"
-* $sct#931000087102 "Ultrasound guided aspiration of left breast"
-* $sct#419791000 "Ultrasound scan and aspiration of pelvis"
-* $sct#14361000087105 "Ultrasound guided aspiration of cyst of bilateral kidneys"
-* $sct#419516008 "Ultrasound scan and aspiration of chest"
-* $sct#716033004 "Ultrasound guided aspiration of cyst of thyroid"
-* $sct#277667006 "Ultrasound guided biopsy"
-* $sct#446843003 "Biopsy of chest using ultrasound guidance"
-* $sct#431810003 "Biopsy of femur using ultrasound guidance"
-* $sct#432398000 "Biopsy of foot using ultrasound guidance"
-* $sct#433136002 "Biopsy of hand using ultrasound guidance"
-* $sct#432373001 "Biopsy of hip using ultrasound guidance"
-* $sct#431982001 "Biopsy of humerus using ultrasound guidance"
-* $sct#438813007 "Biopsy of kidney using ultrasound guidance"
-* $sct#1141000087106 "Ultrasound guided biopsy of left kidney"
-* $sct#1151000087109 "Ultrasound guided biopsy of right kidney"
-* $sct#1641000087102 "Ultrasound guided biopsy of bilateral kidneys"
-* $sct#433135003 "Biopsy of knee using ultrasound guidance"
-* $sct#438300009 "Biopsy of liver using ultrasound guidance"
-* $sct#432217006 "Biopsy of neck using ultrasound guidance"
-* $sct#1217397004 "Ultrasonography guided biopsy of pancreas"
-* $sct#1220627000 "Ultrasonography guided biopsy of pelvis"
-* $sct#432721000 "Biopsy of shoulder using ultrasound guidance"
-* $sct#709644003 "Ultrasound guided biopsy of spleen"
-* $sct#440492007 "Biopsy of thyroid using ultrasound guidance"
-* $sct#440512006 "Biopsy of transplanted kidney using ultrasound guidance"
-* $sct#431811004 "Ultrasound guided biopsy of wrist"
-* $sct#433221009 "Coeliac plexus block using ultrasound guidance"
-* $sct#715996000 "Ultrasound guided insertion of drain into pericardium"
-* $sct#715283006 "Ultrasound guided removal of drain"
-* $sct#703869007 "Ultrasound guided drainage of abdomen"
-* $sct#419803002 "Ultrasound scan and drainage of breast"
-* $sct#12601000087109 "Ultrasound guided drainage of left breast"
-* $sct#12351000087103 "Ultrasound guided drainage of right breast"
-* $sct#12651000087105 "Ultrasound guided drainage of bilateral breasts"
-* $sct#702793000 "Ultrasound guided drainage of pelvis"
-* $sct#420122003 "Ultrasound scan and drainage of chest"
-* $sct#419777006 "Ultrasound scan and drainage of thyroid"
-* $sct#788639001 "Endoscopic ultrasound guided fiducial marker insertion into pancreas"
-* $sct#1145042007 "Ultrasonography guided transperineal insertion of fiducial marker into prostate using transrectal ultrasonographic guidance"
-* $sct#715278003 "Ultrasound guided fine needle aspiration biopsy of supraclavicular fossa"
-* $sct#431732002 "Fine needle aspiration and core needle biopsy of axilla using ultrasound guidance"
-* $sct#433805008 "Fine needle aspiration and core needle biopsy of breast using ultrasound guidance"
-* $sct#716518003 "Ultrasound guided fine needle aspiration of liver"
-* $sct#447853006 "Fine needle aspiration biopsy of neck using ultrasound guidance"
-* $sct#707849001 "Ultrasound guided selective destruction of fetus"
-* $sct#434368008 "Injection of medial collateral ligament bursa using ultrasound guidance"
-* $sct#433794007 "Ultrasound guided injection of anserine bursa"
-* $sct#431478006 "Injection of semimembranosus bursa using ultrasound guidance"
-* $sct#431227002 "Injection of trochanteric bursa using ultrasound guidance"
-* $sct#432872001 "Injection of ankle using ultrasound guidance"
-* $sct#432873006 "Injection of elbow using ultrasound guidance"
-* $sct#432106002 "Injection of foot using ultrasound guidance"
-* $sct#432147004 "Injection of hand using ultrasound guidance"
-* $sct#431979006 "Injection of hip using ultrasound guidance"
-* $sct#431980009 "Injection of knee using ultrasound guidance"
-* $sct#713682006 "Ultrasound guided injection of sacroiliac joint"
-* $sct#14371000087101 "Ultrasound guided injection of left sacroiliac joint"
-* $sct#14381000087104 "Ultrasound guided injection of right sacroiliac joint"
-* $sct#14711000087107 "Ultrasound guided injection of bilateral sacroiliac joints"
-* $sct#432816007 "Injection of shoulder using ultrasound guidance"
-* $sct#433774003 "Injection of subacromial bursa using ultrasound guidance"
-* $sct#433843006 "Injection of subdeltoid bursa using ultrasound guidance"
-* $sct#715276004 "Ultrasound guided injection of subtalar joint"
-* $sct#432234003 "Injection of wrist using ultrasound guidance"
-* $sct#715459001 "Ultrasound guided injection of marker into axilla"
-* $sct#450460004 "Nephrostomy using ultrasound guidance"
-* $sct#13391000087100 "Ultrasound guided left nephrostomy"
-* $sct#13401000087102 "Ultrasound guided right nephrostomy"
-* $sct#443272003 "Ultrasound guided puncture of peripheral vein"
-* $sct#448689003 "Radiofrequency biopsy of breast using ultrasound guidance"
-* $sct#718144000 "Ultrasound guided removal of tunnelled drain from thorax"
-* $sct#711308006 "Ultrasound guided puncture of cyst of kidney"
-* $sct#17001000087100 "Ultrasound guided puncture of cyst of left kidney"
-* $sct#17011000087103 "Ultrasound guided puncture of cyst of right kidney"
-* $sct#440499003 "Radiofrequency ablation of lesion of kidney using ultrasound guidance"
-* $sct#438815000 "Radiofrequency ablation of lesion of liver using ultrasound guidance"
-* $sct#433069004 "Marking of skin of breast using ultrasound guidance"
-* $sct#432587002 "Ultrasound guided suprapubic catheterisation"
-* $sct#431718004 "Injection of thrombin using ultrasound guidance"
-* $sct#447263007 "Drainage of pelvis by transvaginal approach using ultrasound guidance"
-* $sct#713699007 "Ultrasound guided vacuum assisted excision of breast"
-* $sct#303924009 "Ultrasound scan of hand"
-* $sct#1121000087102 "Ultrasound of left hand"
-* $sct#1131000087100 "Ultrasound of right hand"
-* $sct#1631000087108 "Ultrasound of both hands"
-* $sct#432668002 "Ultrasound of hand and wrist"
-* $sct#241502008 "Ultrasound scan of hip"
-* $sct#426100003 "Ultrasound scan of left hip"
-* $sct#427472005 "Ultrasound scan of right hip"
-* $sct#426903000 "Ultrasound scan of both hips"
-* $sct#431345000 "Hydrodistension of glenohumeral joint using ultrasound guidance"
-* $sct#433156001 "Intraoperative epiaortic ultrasound"
-* $sct#306005 "Ultrasound of kidney"
-* $sct#11581000087109 "Ultrasound of left kidney"
-* $sct#11521000087108 "Ultrasound of right kidney"
-* $sct#13301000087109 "Ultrasound of bilateral kidneys"
-* $sct#241504009 "Ultrasound of knee"
-* $sct#1161000087107 "Ultrasound of left knee region"
-* $sct#1171000087103 "Ultrasound of right knee region"
-* $sct#1651000087104 "Ultrasound of both knees"
-* $sct#432547007 "Reduction of intestinal intussusception using ultrasound guidance"
-* $sct#105377009 "Ultrasound liver"
-* $sct#443630007 "Ultrasound of liver with contrast"
-* $sct#420052009 "Ultrasound scan of lower abdomen"
-* $sct#440694004 "Ultrasound of midfoot"
-* $sct#241453007 "Ultrasound scan of neck"
-* $sct#432430009 "Ultrasound of sciatic nerve"
-* $sct#785805004 "Measurement of cervical length using transvaginal ultrasound"
-* $sct#433153009 "Chorionic villus sampling using obstetric ultrasound guidance"
-* $sct#169229007 "Dating/booking ultrasound scan"
-* $sct#169230002 "Ultrasound scan for fetal viability"
-* $sct#418090003 "Obstetric Doppler ultrasound"
-* $sct#432246004 "Transvaginal obstetric Doppler ultrasound"
-* $sct#427623005 "Obstetric umbilical artery Doppler"
-* $sct#700442004 "Ultrasound scan of fetal ductus venosus"
-* $sct#241493005 "Ultrasound scan for fetal growth"
-* $sct#414880004 "Nuchal ultrasound scan"
-* $sct#277668001 "Ultrasound scan of pancreas"
-* $sct#241474008 "Ultrasound scan of transplanted pancreas"
-* $sct#241454001 "Ultrasound scan of parathyroid"
-* $sct#432158008 "Ultrasound of pathological specimen"
-* $sct#24848001 "Ultrasound scan of pelvis"
-* $sct#429915000 "Transvaginal ultrasound of pelvis"
-* $sct#241485005 "Ultrasound scan of penis"
-* $sct#432245000 "Ultrasound of plantar fascia"
-* $sct#16436161000119108 "Ultrasound scan of left popliteal fossa"
-* $sct#16436111000119105 "Ultrasound scan of right popliteal fossa"
-* $sct#20311000087105 "Ultrasound of bilateral popliteal fossa"
-* $sct#713599004 "Post mortem ultrasound"
-* $sct#241487002 "Ultrasound scan of prostate"
-* $sct#432003008 "Ultrasound of rib"
-* $sct#432674002 "Ultrasound of sacroiliac joint"
-* $sct#428605000 "Ultrasound scan of sacral spine"
-* $sct#241456004 "Ultrasound scan of salivary glands"
-* $sct#432004002 "Ultrasound of scalp"
-* $sct#426827002 "Ultrasound scan of chest wall"
-* $sct#709590000 "Ultrasound of perineum"
-* $sct#433177003 "Ultrasound of scapula"
-* $sct#432720004 "Ultrasound of seminal vesicles"
-* $sct#303922008 "Ultrasound of shoulder region"
-* $sct#1221000087108 "Ultrasound of left shoulder region"
-* $sct#1231000087105 "Ultrasound of right shoulder region"
-* $sct#1681000087107 "Ultrasound of bilateral shoulders"
-* $sct#432089005 "Ultrasound guided marking of skin over great saphenous vein"
-* $sct#169238009 "Ultrasound skull scan"
-* $sct#770578003 "Ultrasound of soft tissue of lumbar region of back"
-* $sct#770579006 "Ultrasound of soft tissue of thoracic region of back"
-* $sct#431623007 "Ultrasound of cervical spine"
-* $sct#432651001 "Ultrasound of lumbar spine"
-* $sct#432898007 "Ultrasound of thoracic spine"
-* $sct#241476005 "Ultrasound scan of spleen"
-* $sct#713495007 "Ultrasound of spleen with contrast"
-* $sct#432856009 "Ultrasound of sternoclavicular joint"
-* $sct#432405006 "Ultrasound of sternum"
-* $sct#433862009 "Exercise stress ultrasound of heart with contrast"
-* $sct#431843004 "Ultrasound of subtalar joint"
-* $sct#718290002 "Ultrasound scan of liver for early detection of hepatocellular carcinoma"
-* $sct#432855008 "Ultrasound of symphysis pubis"
-* $sct#432404005 "Ultrasound of temporomandibular joint"
-* $sct#425410009 "Ultrasound scan of thigh"
-* $sct#1241000087104 "Ultrasound of left thigh"
-* $sct#1251000087101 "Ultrasound of right thigh"
-* $sct#1691000087109 "Ultrasound of bilateral thighs"
-* $sct#432002003 "Ultrasound of thumb"
-* $sct#1261000087103 "Ultrasound of left thumb"
-* $sct#1271000087107 "Ultrasound of right thumb"
-* $sct#1701000087109 "Ultrasound of bilateral thumbs"
-* $sct#241455000 "Ultrasound scan of thyroid"
-* $sct#432663006 "Ultrasound of toe"
-* $sct#21491000087101 "Ultrasound of toe of left foot"
-* $sct#21151000087104 "Ultrasound of toe of right foot"
-* $sct#431894006 "Ultrasound of transjugular intrahepatic portosystemic shunt stent"
-* $sct#105376000 "Transoesophageal echocardiography"
-* $sct#241484009 "Ultrasound scan of transplanted kidney"
-* $sct#241472007 "Ultrasound scan of transplanted liver"
-* $sct#433236007 "Transthoracic echocardiogram"
-* $sct#434167009 "Transthoracic ultrasound of heart with contrast"
-* $sct#434158009 "Transthoracic three dimensional ultrasound of heart"
-* $sct#418398002 "Ultrasound scan of upper abdomen"
-* $sct#449921006 "Ultrasound of upper limb"
-* $sct#1281000087109 "Ultrasound of left upper limb"
-* $sct#1291000087106 "Ultrasound of right upper limb"
-* $sct#1711000087106 "Ultrasound of left and right upper limb"
-* $sct#786917009 "Ultrasound bladder vibrometry"
-* $sct#700387001 "Ultrasound of urinary bladder for post-void residual volume"
-* $sct#241499009 "Ultrasound of wrist"
-* $sct#1301000087105 "Ultrasound of left wrist"
-* $sct#1311000087107 "Ultrasound of right wrist"
-* $sct#1721000087103 "Ultrasound of left and right wrist"
-* $sct#60654006 "X-ray of abdomen"
-* $sct#713565002 "Plain X-ray of abdomen with contrast"
-* $sct#427961005 "X-ray of acetabulum"
-* $sct#168633004 "Acromioclavicular joint X-ray"
-* $sct#3461000087100 "Plain X-ray of left acromioclavicular joint"
-* $sct#3471000087109 "Plain X-ray of right acromioclavicular joint"
-* $sct#3961000087106 "Plain X-ray of bilateral acromioclavicular joints"
-* $sct#19490002 "Ankle X-ray"
-* $sct#426420006 "X-ray of left ankle"
-* $sct#426721006 "X-ray of right ankle"
-* $sct#425703002 "X-ray of both ankles"
-* $sct#168682004 "Stress X-ray ankle joint"
-* $sct#37815002 "Calcaneum X-ray"
-* $sct#3481000087106 "Plain X-ray of left calcaneum"
-* $sct#3491000087108 "Plain X-ray of right calcaneum"
-* $sct#3971000087102 "Plain X-ray of bilateral calcanei"
-* $sct#241072004 "Carpal tunnel X-ray"
-* $sct#428665002 "X-ray of carpometacarpal joint under stress"
-* $sct#16319081000119105 "Plain X-ray orthodontic cephalogram"
-* $sct#445515006 "X-ray of CSF shunt"
-* $sct#712970008 "Plain X-ray of cervical spine"
-* $sct#61368000 "Diagnostic radiography of spine with flexion and extension studies"
-* $sct#241092006 "Cervicothoracic junction X-ray"
-* $sct#399208008 "Plain chest X-ray"
-* $sct#168594001 "Clavicle X-ray"
-* $sct#3501000087100 "Plain X-ray of left clavicle"
-* $sct#3511000087103 "Plain X-ray of right clavicle"
-* $sct#3981000087100 "Plain X-ray of bilateral clavicles"
-* $sct#24856003 "Coccyx X-ray"
-* $sct#445844000 "X-ray of cochlear implant"
-* $sct#418181007 "X-ray for colonic transit study"
-* $sct#76913009 "Elbow X-ray"
-* $sct#3521000087106 "Plain X-ray of left elbow"
-* $sct#3531000087108 "Plain X-ray of right elbow"
-* $sct#3991000087103 "Plain X-ray of bilateral elbows"
-* $sct#703940002 "X-ray of elbow for bone age"
-* $sct#68306006 "X-ray of facial bones"
-* $sct#241075002 "Femur X-ray"
-* $sct#3541000087102 "Plain X-ray of left femur"
-* $sct#3551000087104 "Plain X-ray of right femur"
-* $sct#4001000087105 "Plain X-ray of bilateral femurs"
-* $sct#1597004 "Skeletal X-ray of ankle and foot"
-* $sct#52221007 "Foot X-ray"
-* $sct#426908009 "X-ray of left foot"
-* $sct#426311001 "X-ray of right foot"
-* $sct#426581005 "X-ray of both feet"
-* $sct#276015003 "Forefoot X-ray"
-* $sct#39714003 "Skeletal X-ray of wrist and hand"
-* $sct#428603007 "X-ray of hand and wrist for bone age"
-* $sct#49345004 "Hand X-ray"
-* $sct#3621000087107 "Plain X-ray of left hand"
-* $sct#3631000087109 "Plain X-ray of right hand"
-* $sct#4041000087108 "Plain X-ray of bilateral hands"
-* $sct#241081005 "Hindfoot X-ray"
-* $sct#408740001 "Hip X-ray"
-* $sct#3641000087103 "Plain X-ray of left hip"
-* $sct#3651000087100 "Plain X-ray of right hip"
-* $sct#4051000087106 "Plain X-ray of bilateral hips"
-* $sct#1225002 "X-ray of humerus"
-* $sct#3661000087102 "Plain X-ray of left humerus"
-* $sct#3671000087106 "Plain X-ray of right humerus"
-* $sct#4061000087109 "Plain X-ray of bilateral humeri"
-* $sct#81618005 "Intravenous cholangiogram"
-* $sct#31911002 "Kidneys, ureter, bladder X-ray"
-* $sct#74016001 "Knee X-ray"
-* $sct#427019001 "X-ray of left knee"
-* $sct#427407003 "X-ray of right knee"
-* $sct#426860004 "X-ray of both knees"
-* $sct#58011003 "Larynx X-ray"
-* $sct#449617002 "X-ray of lower leg for bone length measurement"
-* $sct#5433008 "Skeletal X-ray of lower limb"
-* $sct#9241000087103 "Plain X-ray of left lower limb"
-* $sct#9251000087100 "Plain X-ray of right lower limb"
-* $sct#9771000087103 "Plain X-ray of bilateral lower limbs"
-* $sct#840361000 "Plain X-ray of lumbar spine"
-* $sct#431892005 "X-ray of lumbar spine and pelvis"
-* $sct#419942003 "X-ray of lumbar spine and sacroiliac joints"
-* $sct#19589009 "Mandible X-ray"
-* $sct#440695003 "X-ray of midfoot"
-* $sct#87411003 "Nasal bones X-ray"
-* $sct#711419008 "Fluoroscopy guided nasogastric tube procedure"
-* $sct#168719007 "Neck soft tissue X-ray"
-* $sct#75675001 "X-ray of orbits"
-* $sct#89846007 "Orthopantogram"
-* $sct#84492002 "Sinuses X-ray"
-* $sct#168669007 "Patella X-ray"
-* $sct#3681000087108 "Plain X-ray of left patella"
-* $sct#3691000087105 "Plain X-ray of right patella"
-* $sct#4071000087100 "Plain X-ray of bilateral patellae"
-* $sct#241091004 "X-ray pelvimetry"
-* $sct#268425006 "Pelvis X-ray"
-* $sct#302402006 "Radius and/or ulna X-ray"
-* $sct#57235004 "Sacrum X-ray"
-* $sct#8449009 "Radiography of sacrococcygeal spine"
-* $sct#367414003 "Salivary gland X-ray"
-* $sct#241071006 "Scaphoid X-ray"
-* $sct#3841000087104 "Plain X-ray of left scaphoid"
-* $sct#3851000087101 "Plain X-ray of right scaphoid"
-* $sct#4091000087101 "Plain X-ray of bilateral scaphoids"
-* $sct#49626003 "Scapula X-ray"
-* $sct#3741000087108 "Plain X-ray of left scapula"
-* $sct#3751000087106 "Plain X-ray of right scapula"
-* $sct#4101000087106 "Plain X-ray of bilateral scapulae"
-* $sct#29592009 "Shoulder X-ray"
-* $sct#3761000087109 "Plain X-ray of left shoulder"
-* $sct#3771000087100 "Plain X-ray of right shoulder"
-* $sct#4111000087108 "Plain X-ray of bilateral shoulders"
-* $sct#241108003 "Skeletal survey - peripheral"
-* $sct#42075002 "Skull X-ray"
-* $sct#168599006 "Sternoclavicular joint X-ray"
-* $sct#718020004 "X-ray tomography of sternum"
-* $sct#241085001 "Subtalar joint X-ray"
-* $sct#40372003 "Temporomandibular joint X-ray"
-* $sct#444634007 "X-ray of thoracic and lumbar spine"
-* $sct#168600009 "Thoracic inlet X-ray"
-* $sct#45554006 "X-ray of thoracic spine"
-* $sct#241074003 "Thumb X-ray"
-* $sct#3781000087103 "Plain X-ray of left thumb"
-* $sct#3791000087101 "Plain X-ray of right thumb"
-* $sct#4121000087100 "Plain X-ray of bilateral thumbs"
-* $sct#783631001 "Plain X-ray of tibia and fibula"
-* $sct#3801000087102 "Plain X-ray of left tibia and left fibula"
-* $sct#3811000087100 "Plain X-ray of right tibia and right fibula"
-* $sct#4131000087103 "Plain X-ray of bilateral tibia and bilateral fibula"
-* $sct#79760008 "X-ray of spine"
-* $sct#60027007 "X-ray of wrist"
-* $sct#3821000087108 "Plain X-ray of left wrist"
-* $sct#3831000087105 "Plain X-ray of right wrist"
-* $sct#4141000087109 "Plain X-ray of bilateral wrists"
-* $sct#429148001 "X-ray of zygoma"
-* $sct#773131009 "Plain X-ray for ulnar variance view"
-* $sct#171229005 "Screening chest X-ray"
-* $sct#28367004 "Cholangiogram"
-* $sct#241175004 "Cholecystogram"
-* $sct#168854009 "Cystography"
-* $sct#56087001 "Dacryocystography"
-* $sct#1004089004 "Fistulography with contrast"
-* $sct#720707009 "Plain X-ray of gastrointestinal tract with marker capsule for transit study"
-* $sct#431397007 "Insertion of gastrostomy tube using fluoroscopic guidance"
-* $sct#433032002 "Removal of gastrostomy tube using fluoroscopic guidance"
-* $sct#55612007 "Hepatic venography"
-* $sct#168884001 "Hysterosalpingography"
-* $sct#433173004 "Fluoroscopy guided insertion of permanent inferior vena cava filter"
-* $sct#432079006 "Fluoroscopy guided removal of inferior vena cava filter"
-* $sct#32265006 "Intravenous pyelogram"
-* $sct#174304002 "Hydrostatic reduction of intussusception of rectum"
-* $sct#419245009 "Fluoroscopic micturating cystourethrography"
-* $sct#175988004 "Nephrostogram"
-* $sct#431410007 "Nephrostomy using fluoroscopic guidance"
-* $sct#251000087100 "Fluoroscopy guided left nephrostomy"
-* $sct#261000087102 "Fluoroscopy guided right nephrostomy"
-* $sct#701000087108 "Fluoroscopy guided bilateral nephrostomy"
-* $sct#431341009 "Removal of nephrostomy tube using fluoroscopic guidance"
-* $sct#84200003 "Angiography of pulmonary arteries"
-* $sct#765041007 "Angiography of left pulmonary artery"
-* $sct#765042000 "Angiography of right pulmonary artery"
-* $sct#79516005 "Renal angiography"
-* $sct#431484009 "Fluoroscopy guided percutaneous transluminal angioplasty of renal artery"
-* $sct#331000087101 "Fluoroscopy guided angioplasty of left renal artery with contrast"
-* $sct#341000087107 "Fluoroscopy guided angioplasty of right renal artery with contrast"
-* $sct#751000087109 "Fluoroscopy guided angioplasty of bilateral renal arteries with contrast"
-* $sct#405250000 "Retrograde pyelogram"
-* $sct#1010454006 "Retrograde pyelography of left renal pelvis"
-* $sct#1010455007 "Retrograde pyelography of right renal pelvis"
-* $sct#241233006 "Spinal arteriography"
-* $sct#431298004 "Fluoroscopic myelogram of lumbar spine with cervical puncture"
-* $sct#241147001 "Tube oesophagram"
-* $sct#703100007 "Fluoroscopy guided ureteric stent procedure"
-* $sct#168864000 "Urethrogram"
-* $sct#710294007 "Fluoroscopy guided urodynamic study"
-* $sct#703106001 "Fluoroscopy guided vascular stent procedure"
-* $sct#4970003 "Venography"
-* $sct#431911003 "Vertebroplasty using fluoroscopic guidance"
-* $sct#371576000 "Video imaging"
-* $sct#241149003 "Videofluoroscopy swallow"
-* $sct#710132004 "Fluoroscopy guided catheterisation of artery"
-* $sct#432945008 "Percutaneous removal of calculus from biliary tract using fluoroscopic guidance"
-* $sct#431845006 "Replacement of biliary drain using fluoroscopic guidance"
-* $sct#1222890004 "Biliary drainage using imaging guidance"
-* $sct#83735008 "Insertion of biliary stent by ERCP"
-* $sct#241232001 "Angiography of bronchial artery"
-* $sct#85895003 "Contrast bronchogram"
-* $sct#438523006 "Fluoroscopy guided percutaneous transluminal balloon test occlusion of middle cerebral artery"
+* $sct#45036003
+* $sct#444900008
+* $sct#418394000
+* $sct#241462009
+* $sct#241512001
+* $sct#871000087105
+* $sct#881000087107
+* $sct#1921000087100
+* $sct#431844005
+* $sct#241480000
+* $sct#11691000087107
+* $sct#11681000087105
+* $sct#11651000087102
+* $sct#718475004
+* $sct#241505005
+* $sct#891000087109
+* $sct#901000087105
+* $sct#1541000087101
+* $sct#432853001
+* $sct#445867003
+* $sct#432635009
+* $sct#911000087107
+* $sct#921000087104
+* $sct#1551000087103
+* $sct#432667007
+* $sct#21181000087107
+* $sct#21171000087105
+* $sct#21551000087105
+* $sct#44052005
+* $sct#397521009
+* $sct#713856004
+* $sct#47079000
+* $sct#951000087106
+* $sct#961000087109
+* $sct#1571000087109
+* $sct#426494009
+* $sct#431622002
+* $sct#991000087101
+* $sct#1001000087107
+* $sct#1581000087106
+* $sct#433169002
+* $sct#432372006
+* $sct#431785009
+* $sct#431756003
+* $sct#438491001
+* $sct#418889006
+* $sct#446782006
+* $sct#433223007
+* $sct#710162005
+* $sct#431323001
+* $sct#394719009
+* $sct#8891000087103
+* $sct#8901000087102
+* $sct#764689005
+* $sct#765168005
+* $sct#418793009
+* $sct#425813003
+* $sct#431779002
+* $sct#432509002
+* $sct#431653000
+* $sct#712532003
+* $sct#699578000
+* $sct#438857006
+* $sct#446849004
+* $sct#431988002
+* $sct#431362005
+* $sct#6231000087102
+* $sct#6241000087108
+* $sct#6751000087102
+* $sct#432336004
+* $sct#18061000087100
+* $sct#17921000087107
+* $sct#18301000087101
+* $sct#429807002
+* $sct#418762008
+* $sct#432216002
+* $sct#702585002
+* $sct#709640007
+* $sct#764727000
+* $sct#764728005
+* $sct#713683001
+* $sct#14751000087106
+* $sct#14761000087109
+* $sct#14831000087105
+* $sct#699579008
+* $sct#431363000
+* $sct#432335000
+* $sct#445751002
+* $sct#440495009
+* $sct#702622007
+* $sct#431648005
+* $sct#718078008
+* $sct#431324007
+* $sct#6251000087106
+* $sct#6261000087109
+* $sct#6761000087104
+* $sct#431818005
+* $sct#14541000087102
+* $sct#14531000087108
+* $sct#431218003
+* $sct#6291000087101
+* $sct#6281000087103
+* $sct#6771000087108
+* $sct#431394000
+* $sct#6311000087100
+* $sct#6301000087102
+* $sct#6781000087105
+* $sct#418956005
+* $sct#441491005
+* $sct#241498001
+* $sct#1011000087109
+* $sct#1021000087101
+* $sct#1591000087108
+* $sct#431553009
+* $sct#429820004
+* $sct#19731001
+* $sct#866200001
+* $sct#427072002
+* $sct#1031000087104
+* $sct#1041000087105
+* $sct#1601000087100
+* $sct#426019005
+* $sct#1051000087108
+* $sct#1061000087106
+* $sct#432849003
+* $sct#169250003
+* $sct#715193009
+* $sct#770557001
+* $sct#718305004
+* $sct#1106671000000108
+* $sct#1104451000000105
+* $sct#1104461000000108
+* $sct#1104471000000101
+* $sct#725505001
+* $sct#432556004
+* $sct#33527008
+* $sct#711182000
+* $sct#17211000087107
+* $sct#17221000087104
+* $sct#17641000087105
+* $sct#710240002
+* $sct#931000087102
+* $sct#419791000
+* $sct#14361000087105
+* $sct#419516008
+* $sct#716033004
+* $sct#277667006
+* $sct#446843003
+* $sct#431810003
+* $sct#432398000
+* $sct#433136002
+* $sct#432373001
+* $sct#431982001
+* $sct#438813007
+* $sct#1141000087106
+* $sct#1151000087109
+* $sct#1641000087102
+* $sct#433135003
+* $sct#438300009
+* $sct#432217006
+* $sct#1217397004
+* $sct#1220627000
+* $sct#432721000
+* $sct#709644003
+* $sct#440492007
+* $sct#440512006
+* $sct#431811004
+* $sct#433221009
+* $sct#715996000
+* $sct#715283006
+* $sct#703869007
+* $sct#419803002
+* $sct#12601000087109
+* $sct#12351000087103
+* $sct#12651000087105
+* $sct#702793000
+* $sct#420122003
+* $sct#419777006
+* $sct#788639001
+* $sct#1145042007
+* $sct#715278003
+* $sct#431732002
+* $sct#433805008
+* $sct#716518003
+* $sct#447853006
+* $sct#707849001
+* $sct#434368008
+* $sct#433794007
+* $sct#431478006
+* $sct#431227002
+* $sct#432872001
+* $sct#432873006
+* $sct#432106002
+* $sct#432147004
+* $sct#431979006
+* $sct#431980009
+* $sct#713682006
+* $sct#14371000087101
+* $sct#14381000087104
+* $sct#14711000087107
+* $sct#432816007
+* $sct#433774003
+* $sct#433843006
+* $sct#715276004
+* $sct#432234003
+* $sct#715459001
+* $sct#450460004
+* $sct#13391000087100
+* $sct#13401000087102
+* $sct#443272003
+* $sct#448689003
+* $sct#718144000
+* $sct#711308006
+* $sct#17001000087100
+* $sct#17011000087103
+* $sct#440499003
+* $sct#438815000
+* $sct#433069004
+* $sct#432587002
+* $sct#431718004
+* $sct#447263007
+* $sct#713699007
+* $sct#303924009
+* $sct#1121000087102
+* $sct#1131000087100
+* $sct#1631000087108
+* $sct#432668002
+* $sct#241502008
+* $sct#426100003
+* $sct#427472005
+* $sct#426903000
+* $sct#431345000
+* $sct#433156001
+* $sct#306005
+* $sct#11581000087109
+* $sct#11521000087108
+* $sct#13301000087109
+* $sct#241504009
+* $sct#1161000087107
+* $sct#1171000087103
+* $sct#1651000087104
+* $sct#432547007
+* $sct#105377009
+* $sct#443630007
+* $sct#420052009
+* $sct#440694004
+* $sct#241453007
+* $sct#432430009
+* $sct#785805004
+* $sct#433153009
+* $sct#169229007
+* $sct#169230002
+* $sct#418090003
+* $sct#432246004
+* $sct#427623005
+* $sct#700442004
+* $sct#241493005
+* $sct#414880004
+* $sct#277668001
+* $sct#241474008
+* $sct#241454001
+* $sct#432158008
+* $sct#24848001
+* $sct#429915000
+* $sct#241485005
+* $sct#432245000
+* $sct#16436161000119108
+* $sct#16436111000119105
+* $sct#20311000087105
+* $sct#713599004
+* $sct#241487002
+* $sct#432003008
+* $sct#432674002
+* $sct#428605000
+* $sct#241456004
+* $sct#432004002
+* $sct#426827002
+* $sct#709590000
+* $sct#433177003
+* $sct#432720004
+* $sct#303922008
+* $sct#1221000087108
+* $sct#1231000087105
+* $sct#1681000087107
+* $sct#432089005
+* $sct#169238009
+* $sct#770578003
+* $sct#770579006
+* $sct#431623007
+* $sct#432651001
+* $sct#432898007
+* $sct#241476005
+* $sct#713495007
+* $sct#432856009
+* $sct#432405006
+* $sct#433862009
+* $sct#431843004
+* $sct#718290002
+* $sct#432855008
+* $sct#432404005
+* $sct#425410009
+* $sct#1241000087104
+* $sct#1251000087101
+* $sct#1691000087109
+* $sct#432002003
+* $sct#1261000087103
+* $sct#1271000087107
+* $sct#1701000087109
+* $sct#241455000
+* $sct#432663006
+* $sct#21491000087101
+* $sct#21151000087104
+* $sct#431894006
+* $sct#105376000
+* $sct#241484009
+* $sct#241472007
+* $sct#433236007
+* $sct#434167009
+* $sct#434158009
+* $sct#418398002
+* $sct#449921006
+* $sct#1281000087109
+* $sct#1291000087106
+* $sct#1711000087106
+* $sct#786917009
+* $sct#700387001
+* $sct#241499009
+* $sct#1301000087105
+* $sct#1311000087107
+* $sct#1721000087103
+* $sct#60654006
+* $sct#713565002
+* $sct#427961005
+* $sct#168633004
+* $sct#3461000087100
+* $sct#3471000087109
+* $sct#3961000087106
+* $sct#19490002
+* $sct#426420006
+* $sct#426721006
+* $sct#425703002
+* $sct#168682004
+* $sct#37815002
+* $sct#3481000087106
+* $sct#3491000087108
+* $sct#3971000087102
+* $sct#241072004
+* $sct#428665002
+* $sct#16319081000119105
+* $sct#445515006
+* $sct#712970008
+* $sct#61368000
+* $sct#241092006
+* $sct#399208008
+* $sct#168594001
+* $sct#3501000087100
+* $sct#3511000087103
+* $sct#3981000087100
+* $sct#24856003
+* $sct#445844000
+* $sct#418181007
+* $sct#76913009
+* $sct#3521000087106
+* $sct#3531000087108
+* $sct#3991000087103
+* $sct#703940002
+* $sct#68306006
+* $sct#241075002
+* $sct#3541000087102
+* $sct#3551000087104
+* $sct#4001000087105
+* $sct#1597004
+* $sct#52221007
+* $sct#426908009
+* $sct#426311001
+* $sct#426581005
+* $sct#276015003
+* $sct#39714003
+* $sct#428603007
+* $sct#49345004
+* $sct#3621000087107
+* $sct#3631000087109
+* $sct#4041000087108
+* $sct#241081005
+* $sct#408740001
+* $sct#3641000087103
+* $sct#3651000087100
+* $sct#4051000087106
+* $sct#1225002
+* $sct#3661000087102
+* $sct#3671000087106
+* $sct#4061000087109
+* $sct#81618005
+* $sct#31911002
+* $sct#74016001
+* $sct#427019001
+* $sct#427407003
+* $sct#426860004
+* $sct#58011003
+* $sct#449617002
+* $sct#5433008
+* $sct#9241000087103
+* $sct#9251000087100
+* $sct#9771000087103
+* $sct#840361000
+* $sct#431892005
+* $sct#419942003
+* $sct#19589009
+* $sct#440695003
+* $sct#87411003
+* $sct#711419008
+* $sct#168719007
+* $sct#75675001
+* $sct#89846007
+* $sct#84492002
+* $sct#168669007
+* $sct#3681000087108
+* $sct#3691000087105
+* $sct#4071000087100
+* $sct#241091004
+* $sct#268425006
+* $sct#302402006
+* $sct#57235004
+* $sct#8449009
+* $sct#367414003
+* $sct#241071006
+* $sct#3841000087104
+* $sct#3851000087101
+* $sct#4091000087101
+* $sct#49626003
+* $sct#3741000087108
+* $sct#3751000087106
+* $sct#4101000087106
+* $sct#29592009
+* $sct#3761000087109
+* $sct#3771000087100
+* $sct#4111000087108
+* $sct#241108003
+* $sct#42075002
+* $sct#168599006
+* $sct#718020004
+* $sct#241085001
+* $sct#40372003
+* $sct#444634007
+* $sct#168600009
+* $sct#45554006
+* $sct#241074003
+* $sct#3781000087103
+* $sct#3791000087101
+* $sct#4121000087100
+* $sct#783631001
+* $sct#3801000087102
+* $sct#3811000087100
+* $sct#4131000087103
+* $sct#79760008
+* $sct#60027007
+* $sct#3821000087108
+* $sct#3831000087105
+* $sct#4141000087109
+* $sct#429148001
+* $sct#773131009
+* $sct#171229005
+* $sct#28367004
+* $sct#241175004
+* $sct#168854009
+* $sct#56087001
+* $sct#1004089004
+* $sct#720707009
+* $sct#431397007
+* $sct#433032002
+* $sct#55612007
+* $sct#168884001
+* $sct#433173004
+* $sct#432079006
+* $sct#32265006
+* $sct#174304002
+* $sct#419245009
+* $sct#175988004
+* $sct#431410007
+* $sct#251000087100
+* $sct#261000087102
+* $sct#701000087108
+* $sct#431341009
+* $sct#84200003
+* $sct#765041007
+* $sct#765042000
+* $sct#79516005
+* $sct#431484009
+* $sct#331000087101
+* $sct#341000087107
+* $sct#751000087109
+* $sct#405250000
+* $sct#1010454006
+* $sct#1010455007
+* $sct#241233006
+* $sct#431298004
+* $sct#241147001
+* $sct#703100007
+* $sct#168864000
+* $sct#710294007
+* $sct#703106001
+* $sct#4970003
+* $sct#431911003
+* $sct#371576000
+* $sct#241149003
+* $sct#710132004
+* $sct#432945008
+* $sct#431845006
+* $sct#1222890004
+* $sct#83735008
+* $sct#241232001
+* $sct#85895003
+* $sct#438523006

@@ -180,7 +180,7 @@
         "reference": {
           "reference": "ValueSet/ranzcr-radiology-referral"
         },
-        "name": "RANZCR Radiology Referral",
+        "name": "RANZCR Referral Procedures",
         "description": "Standard codes for use in requesting radiology tests in Australia, derived from the RANZCR Radiology Referral Set (RRS).",
         "exampleBoolean": false
       }
