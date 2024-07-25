@@ -178,9 +178,9 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/ranzcr-radiology-referral"
+          "reference": "ValueSet/ranzcr-radiology-procedures"
         },
-        "name": "RANZCR Referral Procedures",
+        "name": "RANZCR Radiology Procedures",
         "description": "Standard codes for use in requesting radiology tests in Australia, derived from the RANZCR Radiology Referral Set (RRS).",
         "exampleBoolean": false
       }
@@ -310,7 +310,7 @@
       },
       {
         "code": "special-url",
-        "value": "https://ranzcr.com/fhir/ValueSet/radiology-referral"
+        "value": "https://ranzcr.com/fhir/ValueSet/radiology-procedures"
       },
       {
         "code": "active-tables",

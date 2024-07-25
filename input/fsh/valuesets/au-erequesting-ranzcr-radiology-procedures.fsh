@@ -1,15 +1,17 @@
-ValueSet: RANZCRRadiologyReferral
-Id: ranzcr-radiology-referral
-Title: "RANZCR Referral Procedures"
+ValueSet: RANZCRRadiologyProcedures
+Id: ranzcr-radiology-procedures
+Title: "RANZCR Radiology Procedures"
 Description: "Standard codes for use in requesting radiology tests in Australia, derived from the RANZCR Radiology Referral Set (RRS)."
 * ^meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
-* ^url = "https://ranzcr.com/fhir/ValueSet/radiology-referral"
+* ^url = "https://ranzcr.com/fhir/ValueSet/radiology-procedures"
 * ^version = "1.0.0"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^status = #draft
 * ^experimental = false
 * ^date = "2024-07-17"
 * ^publisher = "HL7 Australia"
+* ^copyright = "Copyright © 2023 Royal Australian and New Zealand College of Radiologists- All rights reserved. \n\nThis resource includes SNOMED Clinical Terms™ (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO.\n\n
+The rights to use and implement or implementation of SNOMED CT content are limited to the extent it is necessary to allow for the end use of this material.  No further rights are granted in respect of the International Release and no further use of any SNOMED CT content by any other party is permitted."
 * $sct#45036003
 * $sct#444900008
 * $sct#418394000
