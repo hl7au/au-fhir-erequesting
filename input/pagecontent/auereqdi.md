@@ -17,6 +17,7 @@ Column attribute descriptions are as follows:
 - <b>AUeReqDI/AUCDI Data Element</b>: Represents a single, discreet clinical concept defined by AUeReqDI or AUCDI.
 - <b>AU eRequesting Profile(s)/AU Core Profile(s)</b>: Represents the mapping of AUeReqDI or AUCDI Data Groups and Data Elements to AU eRequesting or AU Core FHIR artefacts.
 - <b>FHIR Path</b>: The specific path in the FHIR standards for each AUeReqDI or AUCDI Data Element within, showing where and how to implement these elements in FHIR-based systems. 
+- <b>Comment</b>: Additional information about the mapping including an explanation of where an element or group is not yet mapped.
 
 <table border="1" cellspacing="0" cellpadding="0" width="100%">
 <thead>
