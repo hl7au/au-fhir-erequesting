@@ -310,7 +310,7 @@
       },
       {
         "code": "special-url",
-        "value": "https://ranzcr.com/fhir/ValueSet/radiology-procedures"
+        "value": "https://ranzcr.com/fhir/ValueSet/radiology-referral"
       },
       {
         "code": "active-tables",
