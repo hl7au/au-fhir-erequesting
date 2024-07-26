@@ -32,7 +32,7 @@ Many value sets used in this guide are defined in the base FHIR specification, [
 |[Order Identifier Type](https://build.fhir.org/ig/hl7au/au-fhir-base//ValueSet-order-identifier-type.html)|[AU eRequesting ServiceRequest](StructureDefinition-au-erequesting-servicerequest.html)|AU Base|
 |[Pathology Procedure](https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1)|[AU eRequesting Pathology Request](StructureDefinition-au-erequesting-servicerequest-path.html)|NCTS|
 |[RCPA - SPIA Requesting Pathology Terminology Reference Set](https://www.healthterminologies.gov.au/integration/R4/fhir/ValueSet/spia-requesting-refset-3)|[AU eRequesting Pathology Request](StructureDefinition-au-erequesting-servicerequest-path.html)|NCTS|
-|[RANZCR Radiology Procedures](ValueSet-ranzcr-radiology-procedures.html)|[AU eRequesting ServiceRequest](StructureDefinition-au-erequesting-servicerequest-imag.html)|AU eRequesting Imaging Request|
+|[RANZCR Radiology Procedures](ValueSet-ranzcr-radiology-procedures.html)|[AU eRequesting Imaging Request](StructureDefinition-au-erequesting-servicerequest-imag.html)|AU eRequesting|
 |[Reason for Request](https://healthterminologies.gov.au/fhir/ValueSet/reason-for-request-1)|[AU eRequesting ServiceRequest](StructureDefinition-au-erequesting-servicerequest.html)|NCTS|
 |[RequestIntent](https://hl7.org/fhir/R4/valueset-request-intent.html)|[AU eRequesting ServiceRequest](StructureDefinition-au-erequesting-servicerequest.html)|FHIR|
 |[RequestStatus](https://hl7.org/fhir/R4/valueset-request-status.html)|[AU eRequesting ServiceRequest](StructureDefinition-au-erequesting-servicerequest.html)|FHIR|
