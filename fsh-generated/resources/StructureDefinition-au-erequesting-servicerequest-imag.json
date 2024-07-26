@@ -74,7 +74,7 @@
                 },
                 {
                   "url": "documentation",
-                  "valueMarkdown": "For use when a suitable code from the preferred RANZCR Radiology Referral value set is unavailable."
+                  "valueMarkdown": "For use when a suitable code from the preferred RANZCR Radiology Procedures value set is unavailable."
                 }
               ]
             }
