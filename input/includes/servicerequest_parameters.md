@@ -1,4 +1,4 @@
-<table class="list">
+<table class="list" width="100%">
 <tbody>
   <tr>
     <th>Parameter(s)</th>
