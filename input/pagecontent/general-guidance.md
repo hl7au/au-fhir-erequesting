@@ -1,6 +1,6 @@
 ### Read/Search Syntax
 
-Searching resources is defined by the [FHIR RESTful API](https://hl7.org/fhir/R4/http.html) and included here for informative purposes. The [AU Core CapabilityStatements](capability-statements.html) document the server and client rules for the RESTful interactions described in this guide.
+Searching resources is defined by the [FHIR RESTful API](https://hl7.org/fhir/R4/http.html) and included here for informative purposes. The [AU eRequesting CapabilityStatements](capability-statements.html) document the server and client rules for the RESTful interactions described in this guide.
 
 All the search interactions in this guide use the `GET` command with the following syntax:
 

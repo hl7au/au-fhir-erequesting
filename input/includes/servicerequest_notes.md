@@ -10,7 +10,7 @@ The following search parameters and search parameter combinations **SHALL** be s
     
       1. GET [base]/ServiceRequest?_id=2169591
 
-    *Implementation Notes:* Fetches a bundle with the requested ServiceRequest, instead of just the resource itself ([how to search by id of the resource](https://hl7.org/fhir/r4/search.html#id)), and allows for the inclusion of additional search parameters such as _include, _revinclude, or _lastUpdated
+    *Implementation Notes:* Fetches a bundle with the requested ServiceRequest, instead of just the resource itself, and allows for the inclusion of additional search parameters such as _include, _revinclude, or _lastUpdated ([how to search by id of the resource](https://hl7.org/fhir/r4/search.html#id))
 
 
 1. **SHALL** support searching using the **[`requisition`](https://hl7.org/fhir/R4/observation.html#search)** search parameter:
