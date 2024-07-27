@@ -276,9 +276,9 @@ Column attribute descriptions are as follows:
   </tr>
   <tr>
     <td colspan="2">Last updated</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td>This data element is added to AUCDI R1; work is underway to map to AU Core.</td>
+    <td>-</td>
+    <td>-</td>
+    <td>This AUCDI element is a <a href="future.html#future-candidate-requirements-under-consideration">Future Candidate Requirement Under Consideration</a>. Future versions of AU Core will develop and test approaches to addressing Last Updated.</td>
   </tr>
   <tr>
     <td rowspan="5">Problem/Diagnosis summary</td>
@@ -307,9 +307,9 @@ Column attribute descriptions are as follows:
   </tr>
   <tr>
     <td colspan="2">Last updated</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td>This data element is added to AUCDI R1; work is underway to map to AU Core.</td>
+    <td>-</td>
+    <td>-</td>
+    <td>This AUCDI element is a <a href="future.html#future-candidate-requirements-under-consideration">Future Candidate Requirement Under Consideration</a>. Future versions of AU Core will develop and test approaches to addressing Last Updated.</td>
   </tr>
     <tr>
     <td rowspan="4">Sex and gender summary</td>
@@ -332,9 +332,9 @@ Column attribute descriptions are as follows:
   </tr>
   <tr>
     <td colspan="2">Last updated</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td>This data element is added to AUCDI R1; work is underway to map to AU Core.</td>
+    <td>-</td>
+    <td>-</td>
+    <td>This AUCDI element is a <a href="future.html#future-candidate-requirements-under-consideration">Future Candidate Requirement Under Consideration</a>. Future versions of AU Core will develop and test approaches to addressing Last Updated.</td>
   </tr>
 </tbody>
 </table>
