@@ -1,0 +1,28 @@
+#### Mandatory Search Parameters:
+
+The following search parameters and search parameter combinations **SHALL** be supported:
+
+1. **SHOULD** support fetching a ServiceRequest using the **[`_id`](https://hl7.org/fhir/R4/servicerequest.html#search)** search parameter:
+ 
+    `GET [base]/ServiceRequest?_id=[id]`
+
+    Example:
+    
+      1. GET [base]/ServiceRequest?_id=2169591
+
+  returns a bundle with the requested resource, instead of just the resource itself. Additional parameters can be added which may provide additional functionality on top of this base read equivalence
+
+    *Implementation Notes:* Fetches a bundle with the requested ServiceRequest, instead of just the resource itself ([how to search by id of the resource](https://hl7.org/fhir/r4/search.html#id)), and allows for the inclusion of additional search parameters such as _include, _revinclude, or _lastUpdated
+
+
+1. **SHALL** support searching using the **[`requisition`](https://hl7.org/fhir/R4/observation.html#search)** search parameter:
+
+
+    `GET [base]/ServiceRequest?identifier=[system|][code]`
+
+    Example:
+    
+      1. GET [base]/ServiceRequest?identifier=EMC4542244-5624
+      1. GET [base]/ServiceRequest?identifier=https://elimbahmedicalcentre.example.com.au/orders/order-identifier\|EMC4542244-5624 
+
+    *Implementation Notes:* Fetches a bundle containing ServiceRequest resources matching the requisition ([how to search by token](http://hl7.org/fhir/R4/search.html#token))
