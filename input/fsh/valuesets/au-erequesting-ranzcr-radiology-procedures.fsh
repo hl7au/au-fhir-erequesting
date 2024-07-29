@@ -1,4 +1,4 @@
-ValueSet: RANZCRRadiologyProcedures
+ValueSet: RANZCRRadiologyReferral
 Id: ranzcr-radiology-referral
 Title: "RANZCR Radiology Referral"
 Description: "Standard codes for use in requesting radiology tests in Australia, derived from the RANZCR Radiology Referral Set (RRS)."
