@@ -16,7 +16,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 1. **SHALL** support searching using the **[`requisition`](https://hl7.org/fhir/R4/servicerequest.html#search)** search parameter:
 
 
-    `GET [base]/ServiceRequest?requisition={system|}[code]`
+    `GET [base]/ServiceRequest?requisition={system|}{code}`
 
     Example:
     
