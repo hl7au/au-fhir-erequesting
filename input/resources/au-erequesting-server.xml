@@ -38,9 +38,9 @@
   </implementationGuide>
   <rest>
     <mode value="server"/>
-    <documentation value="TBD"/>
+    <documentation value="**SHALL** support ServiceRequest."/>
     <security>
-      <description value="TBD"/>
+      <description value="None defined."/>
     </security>
     <!-- SERVICEREQUEST :: DONE -->
     <resource>
