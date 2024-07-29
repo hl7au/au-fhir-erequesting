@@ -3,4 +3,4 @@ The following CapabilityStatements define the specific capabilities that differe
 
 - [AU eRequesting Server CapabilityStatement](CapabilityStatement-au-erequesting-server.html)
 
-This CapabilityStatement describes the basic rules for the [AU eRequesting Server actor](ActorDefinition-au-erequesting-actor-server.html) that is responsible for accepting diagnostic service requests and making diagnostic service requests accessible. The complete list of FHIR profiles, RESTful operations, and search parameters supported by AU eRequesting requesters are defined in this CapabilityStatement.
+This CapabilityStatement describes the basic rules for the [AU eRequesting Server actor](ActorDefinition-au-erequesting-actor-server.html) that is responsible for accepting diagnostic service requests and making diagnostic service requests accessible. The complete list of FHIR profiles, RESTful operations, and search parameters supported by AU eRequesting servers are defined in this CapabilityStatement.
