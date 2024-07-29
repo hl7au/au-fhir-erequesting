@@ -3,6 +3,6 @@ ActorDefinition-au-erequesting-actor-filler.json             au-erequesting-acto
 ActorDefinition-au-erequesting-actor-patientaccess.json      au-erequesting-actor-patientaccess  Instance  actors.fsh                              23 - 32
 ActorDefinition-au-erequesting-actor-placer.json             au-erequesting-actor-placer         Instance  actors.fsh                              1 - 10
 ActorDefinition-au-erequesting-actor-server.json             au-erequesting-actor-server         Instance  actors.fsh                              34 - 43
-StructureDefinition-au-erequesting-servicerequest-imag.json  AUeRequestingImagingRequest         Profile   au-erequesting-servicerequest-imag.fsh  1 - 25
-StructureDefinition-au-erequesting-servicerequest-path.json  AUeRequestingPathologyRequest       Profile   au-erequesting-servicerequest-path.fsh  1 - 25
-StructureDefinition-au-erequesting-servicerequest.json       AUeRequestingServiceRequest         Profile   au-erequesting-servicerequest.fsh       1 - 99
+StructureDefinition-au-erequesting-servicerequest-imag.json  AUeRequestingImagingRequest         Profile   au-erequesting-servicerequest-imag.fsh  1 - 35
+StructureDefinition-au-erequesting-servicerequest-path.json  AUeRequestingPathologyRequest       Profile   au-erequesting-servicerequest-path.fsh  1 - 35
+StructureDefinition-au-erequesting-servicerequest.json       AUeRequestingServiceRequest         Profile   au-erequesting-servicerequest.fsh       1 - 189

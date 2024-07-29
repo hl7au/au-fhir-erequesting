@@ -37,7 +37,7 @@
     "fshType": "Profile",
     "fshFile": "au-erequesting-servicerequest-imag.fsh",
     "startLine": 1,
-    "endLine": 25
+    "endLine": 35
   },
   {
     "outputFile": "StructureDefinition-au-erequesting-servicerequest-path.json",
@@ -45,7 +45,7 @@
     "fshType": "Profile",
     "fshFile": "au-erequesting-servicerequest-path.fsh",
     "startLine": 1,
-    "endLine": 25
+    "endLine": 35
   },
   {
     "outputFile": "StructureDefinition-au-erequesting-servicerequest.json",
@@ -53,6 +53,6 @@
     "fshType": "Profile",
     "fshFile": "au-erequesting-servicerequest.fsh",
     "startLine": 1,
-    "endLine": 99
+    "endLine": 189
   }
 ]
