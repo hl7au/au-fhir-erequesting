@@ -276,9 +276,9 @@ Column attribute descriptions are as follows:
   </tr>
   <tr>
     <td colspan="2">Last updated</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td>This data element is added to AUCDI R1; work is underway to map to AU Core.</td>
+    <td>-</td>
+    <td>-</td>
+    <td>This AUCDI element is a <a href="https://build.fhir.org/ig/hl7au/au-fhir-core/future.html#future-candidate-requirements-under-consideration">Future Candidate Requirement Under Consideration</a>. Future versions of AU Core will develop and test approaches to addressing Last Updated.</td>
   </tr>
   <tr>
     <td rowspan="5">Problem/Diagnosis summary</td>
@@ -307,16 +307,16 @@ Column attribute descriptions are as follows:
   </tr>
   <tr>
     <td colspan="2">Last updated</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td>This data element is added to AUCDI R1; work is underway to map to AU Core.</td>
+    <td>-</td>
+    <td>-</td>
+    <td>This AUCDI element is a <a href="https://build.fhir.org/ig/hl7au/au-fhir-core/future.html#future-candidate-requirements-under-consideration">Future Candidate Requirement Under Consideration</a>. Future versions of AU Core will develop and test approaches to addressing Last Updated.</td>
   </tr>
     <tr>
     <td rowspan="4">Sex and gender summary</td>
     <td colspan="2">Sex assigned at birth</td>
     <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-patient.html">AU Core Patient</a></td>
     <td>Patient.extension.where(url='http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender')</td>
-    <td>The <a href="https://build.fhir.org/ig/hl7au/au-fhir-base//StructureDefinition-individual-recordedSexOrGender.html">Person Recorded Sex or Gender extension</a> is profiled by <a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-rsg-sexassignedab.html">AU Core Sex Assigned At Birth (RSG)</a> to represent the concept of Sex assigned at birth.</td>
+    <td>The <a href="http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender">Person Recorded Sex or Gender extension</a> is profiled by <a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-rsg-sexassignedab.html">AU Core Sex Assigned At Birth (RSG)</a> to represent the concept of Sex assigned at birth.</td>
   </tr>
   <tr>
     <td colspan="2">Gender identity</td>
@@ -332,9 +332,9 @@ Column attribute descriptions are as follows:
   </tr>
   <tr>
     <td colspan="2">Last updated</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td>This data element is added to AUCDI R1; work is underway to map to AU Core.</td>
+    <td>-</td>
+    <td>-</td>
+    <td>This AUCDI element is a <a href="https://build.fhir.org/ig/hl7au/au-fhir-core/future.html#future-candidate-requirements-under-consideration">Future Candidate Requirement Under Consideration</a>. Future versions of AU Core will develop and test approaches to addressing Last Updated.</td>
   </tr>
 </tbody>
 </table>
