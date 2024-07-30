@@ -58,8 +58,8 @@
         "id": "ServiceRequest.code",
         "path": "ServiceRequest.code",
         "binding": {
-          "strength": "example",
-          "valueSet": "https://healthterminologies.gov.au/fhir/ValueSet/evaluation-procedure-1",
+          "strength": "preferred",
+          "valueSet": "https://ranzcr.com/fhir/ValueSet/radiology-referral",
           "extension": [
             {
               "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",

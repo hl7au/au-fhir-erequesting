@@ -85,6 +85,8 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - input/intro-notes
     - fsh-generated/includes
     - input/resources
+  special-url:
+    https://ranzcr.com/fhir/ValueSet/radiology-referral
     #- input/summaries
   # path-expansion-params: '../../input/_resources/exp-params.json' 
   active-tables: false
