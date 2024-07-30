@@ -175,6 +175,14 @@
         },
         "name": "order-xray-1",
         "exampleCanonical": "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest-imag"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ranzcr-radiology-referral"
+        },
+        "name": "RANZCR Radiology Referral",
+        "description": "Standard codes for use in requesting radiology tests in Australia, derived from the RANZCR Radiology Referral Set (RRS).",
+        "exampleBoolean": false
       }
     ],
     "page": {
@@ -299,6 +307,10 @@
       {
         "code": "path-pages",
         "value": "fsh-generated/includes"
+      },
+      {
+        "code": "special-url",
+        "value": "https://ranzcr.com/fhir/ValueSet/radiology-referral"
       },
       {
         "code": "active-tables",
