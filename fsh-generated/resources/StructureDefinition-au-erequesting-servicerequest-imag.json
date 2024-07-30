@@ -59,7 +59,7 @@
         "path": "ServiceRequest.code",
         "binding": {
           "strength": "preferred",
-          "valueSet": "https://ranzcr.com/fhir/ValueSet/radiology-procedures",
+          "valueSet": "https://ranzcr.com/fhir/ValueSet/radiology-referral",
           "extension": [
             {
               "url": "http://hl7.org/fhir/tools/StructureDefinition/additional-binding",
@@ -74,7 +74,7 @@
                 },
                 {
                   "url": "documentation",
-                  "valueMarkdown": "For use when a suitable code from the preferred RANZCR Radiology Procedures value set is unavailable."
+                  "valueMarkdown": "For use when a suitable code from the preferred RANZCR Radiology Referral value set is unavailable."
                 }
               ]
             }
@@ -83,6 +83,73 @@
       },
       {
         "id": "ServiceRequest.bodySite",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:populate-if-known"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:able-to-populate"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:no-error"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
+              }
+            ]
+          }
+        ],
         "path": "ServiceRequest.bodySite",
         "mustSupport": true
       }

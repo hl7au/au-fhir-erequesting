@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "name": "RANZCRRadiologyProcedures",
-  "id": "ranzcr-radiology-procedures",
-  "title": "RANZCR Radiology Procedures",
+  "name": "RANZCRRadiologyReferral",
+  "id": "ranzcr-radiology-referral",
+  "title": "RANZCR Radiology Referral",
   "description": "Standard codes for use in requesting radiology tests in Australia, derived from the RANZCR Radiology Referral Set (RRS).",
-  "url": "https://ranzcr.com/fhir/ValueSet/radiology-procedures",
+  "url": "https://ranzcr.com/fhir/ValueSet/radiology-referral",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
