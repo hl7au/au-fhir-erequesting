@@ -8,6 +8,7 @@ Usage: #definition
 * description = "The AU eRequesting Placer is a system that is responsible for initiating and creating diagnostic service requests. This system connects to enable requesters to provide the necessary information to create a request, ensuring that required data is accurately collected and provided to service providers with sufficient information for them to fulfil the request."
 * type = #system
 * documentation = "AU eRequesting Placer (client): TBD"
+* capabilities = "http://hl7.org.au/fhir/ereq/CapabilityStatement/au-erequesting-placer"
 
 Instance: au-erequesting-actor-filler
 InstanceOf: ActorDefinition
