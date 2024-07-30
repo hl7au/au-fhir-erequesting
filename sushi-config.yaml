@@ -63,7 +63,7 @@ pages:
   artefacts.md:
     title: FHIR artefacts      
     profiles-and-extensions.md:
-    # capability-statements.md:
+    capability-statements.md:
     search-parameters-and-operations.md:
   terminology.md:
   actors.md:
@@ -84,6 +84,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - input/pagecontent
     - input/intro-notes
     - fsh-generated/includes
+    - input/resources
   special-url:
     https://ranzcr.com/fhir/ValueSet/radiology-referral
     #- input/summaries

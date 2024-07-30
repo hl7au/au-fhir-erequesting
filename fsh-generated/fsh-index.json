@@ -29,7 +29,7 @@
     "fshType": "Instance",
     "fshFile": "actors.fsh",
     "startLine": 34,
-    "endLine": 43
+    "endLine": 44
   },
   {
     "outputFile": "StructureDefinition-au-erequesting-servicerequest-imag.json",
@@ -59,7 +59,7 @@
     "outputFile": "ValueSet-ranzcr-radiology-referral.json",
     "fshName": "RANZCRRadiologyReferral",
     "fshType": "ValueSet",
-    "fshFile": "valuesets/au-erequesting-ranzcr-radiology-procedures.fsh",
+    "fshFile": "valuesets\\au-erequesting-ranzcr-radiology-procedures.fsh",
     "startLine": 1,
     "endLine": 527
   }
