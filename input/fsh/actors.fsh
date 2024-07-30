@@ -41,3 +41,4 @@ Usage: #definition
 * description = "The eRequesting Server is a system that accepts diagnostic service requests and makes diagnostic service requests accessible."
 * type = #system
 * documentation = "An AU eRequesting Server (server): TBD"
+* capabilities = "http://hl7.org.au/fhir/ereq/CapabilityStatement/au-erequesting-server"

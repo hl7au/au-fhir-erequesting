@@ -48,6 +48,45 @@
                 "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
               }
             ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:able-to-populate"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:no-error"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
+              }
+            ]
           }
         ],
         "path": "ServiceRequest.identifier",
@@ -79,6 +118,45 @@
               {
                 "url": "actor",
                 "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:able-to-populate"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:no-error"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
               }
             ]
           }
@@ -139,6 +217,45 @@
                 "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
               }
             ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:able-to-populate"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:no-error"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
+              }
+            ]
           }
         ],
         "path": "ServiceRequest.status",
@@ -170,6 +287,45 @@
               {
                 "url": "actor",
                 "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:able-to-populate"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:no-error"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
               }
             ]
           }
@@ -206,6 +362,45 @@
                 "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
               }
             ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:able-to-populate"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:no-error"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
+              }
+            ]
           }
         ],
         "path": "ServiceRequest.category",
@@ -238,6 +433,45 @@
               {
                 "url": "actor",
                 "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:able-to-populate"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:no-error"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
               }
             ]
           }
@@ -279,6 +513,45 @@
                 "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
               }
             ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:able-to-populate"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:no-error"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
+              }
+            ]
           }
         ],
         "path": "ServiceRequest.subject",
@@ -318,6 +591,45 @@
               {
                 "url": "actor",
                 "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:able-to-populate"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:no-error"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
               }
             ]
           }
@@ -366,6 +678,45 @@
                 "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
               }
             ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:able-to-populate"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:no-error"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
+              }
+            ]
           }
         ],
         "path": "ServiceRequest.authoredOn",
@@ -407,6 +758,45 @@
               {
                 "url": "actor",
                 "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:able-to-populate"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:no-error"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
               }
             ]
           }
@@ -451,6 +841,45 @@
                 "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
               }
             ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:able-to-populate"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:no-error"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
+              }
+            ]
           }
         ],
         "path": "ServiceRequest.reasonCode",
@@ -482,6 +911,45 @@
               {
                 "url": "actor",
                 "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:able-to-populate"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:no-error"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
               }
             ]
           }
@@ -523,6 +991,45 @@
               {
                 "url": "actor",
                 "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:able-to-populate"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:no-error"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
               }
             ]
           }
