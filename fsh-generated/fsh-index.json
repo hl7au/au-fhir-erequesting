@@ -53,6 +53,14 @@
     "fshType": "Profile",
     "fshFile": "au-erequesting-servicerequest.fsh",
     "startLine": 1,
-    "endLine": 99
+    "endLine": 189
+  },
+  {
+    "outputFile": "ValueSet-ranzcr-radiology-referral.json",
+    "fshName": "RANZCRRadiologyReferral",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\au-erequesting-ranzcr-radiology-procedures.fsh",
+    "startLine": 1,
+    "endLine": 527
   }
 ]

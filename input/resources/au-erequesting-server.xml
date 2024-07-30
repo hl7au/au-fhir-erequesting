@@ -38,7 +38,7 @@
   </implementationGuide>
   <rest>
     <mode value="server"/>
-    <documentation value="The AU eRequesting Server **SHALL**:&#xA;1. Support the ServiceRequest resource profiles.&#xA;1. Implement the RESTful behavior according to the FHIR specification.&#xA;1. Declare a CapabilityStatement identifying the list of profiles, operations, and search parameters supported."/>
+    <documentation value="The AU eRequesting Server **SHALL**:&#xA;1. Support at least one AU eRequesting ServiceRequest profile, and the conformance expectations for the ServiceRequest resource. &#xA;1. Implement the RESTful behavior according to the FHIR specification."/>
     <security>
       <description value="None defined."/>
     </security>
