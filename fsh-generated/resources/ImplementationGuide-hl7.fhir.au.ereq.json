@@ -115,7 +115,7 @@
         "reference": {
           "reference": "CapabilityStatement/au-erequesting-placer"
         },
-        "description": "This CapabilityStatement describes the basic rules for the [AU eRequesting Placer actor](ActorDefinition-au-erequesting-actor-placer.html) that is responsible for initiating and creating diagnostic service requests. The complete list of FHIR profiles, RESTful operations, and search parameters supported by AU eRequesting clients are defined in this CapabilityStatement.",
+        "description": "This CapabilityStatement describes the basic rules for the [AU eRequesting Placer actor](ActorDefinition-au-erequesting-actor-placer.html) that is responsible for initiating and creating diagnostic service requests. The complete list of FHIR profiles, RESTful operations, and search parameters supported by AU eRequesting placers are defined in this CapabilityStatement.",
         "exampleBoolean": false,
         "name": "AU eRequesting Placer CapabilityStatement"
       },

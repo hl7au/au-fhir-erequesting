@@ -8,7 +8,7 @@
   <name value="AUeRequestingPlacerCapabilityStatement"/>
   <title value="AU eRequesting Placer CapabilityStatement"/>
   <status value="draft"/>
-  <description value="This CapabilityStatement describes the basic rules for the [AU eRequesting Placer actor](ActorDefinition-au-erequesting-actor-placer.html) that is responsible for initiating and creating diagnostic service requests. The complete list of FHIR profiles, RESTful operations, and search parameters supported by AU eRequesting clients are defined in this CapabilityStatement."/>
+  <description value="This CapabilityStatement describes the basic rules for the [AU eRequesting Placer actor](ActorDefinition-au-erequesting-actor-placer.html) that is responsible for initiating and creating diagnostic service requests. The complete list of FHIR profiles, RESTful operations, and search parameters supported by AU eRequesting placers are defined in this CapabilityStatement."/>
   <kind value="requirements"/>
   <fhirVersion value="4.0.1"/>
   <format value="json">
@@ -50,20 +50,20 @@
       <type value="ServiceRequest"/>
       <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
+          <valueCode value="SHOULD"/>
         </extension>
       </supportedProfile>
       <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest-path">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
+          <valueCode value="SHOULD"/>
         </extension>
       </supportedProfile>
       <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest-imag">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
+          <valueCode value="SHOULD"/>
         </extension>
       </supportedProfile>
-      <documentation value="Servers **SHALL** support the ServiceRequest resource, at least one AU eRequesting ServiceRequest profile, and the conformance expectations for the ServiceRequest resource."/>
+      <documentation value="Placers **SHALL** support the ServiceRequest resource, at least one AU eRequesting ServiceRequest profile, and the conformance expectations for the ServiceRequest resource."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
