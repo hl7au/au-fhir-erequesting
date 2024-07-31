@@ -55,7 +55,7 @@ This guide is divided into several pages which are listed at the top of each pag
 - [FHIR Artefacts](artifacts.html): These pages provide detailed descriptions and formal definitions for all the FHIR artefacts defined in this guide.
   - [Profiles and Extensions](profiles-and-extensions.html): This page describes the profiles and extensions that are defined in this guide to support electronic requesting. Each profile page includes a narrative description and guidance, formal definition and a "Notes" section which summarises the supported search transactions for each profile. Although the guidance typically focuses on the profiled elements, it may also may focus on un-profiled elements to aid with implementation.
   - [Terminology](terminology.html): This page lists the value sets and code systems supported in this guide.
-  - [Capability Statements](capability-statements.html): This page defines the expected FHIR capabilities of AU eRequesting Server.
+  - [Capability Statements](capability-statements.html): This page defines the expected FHIR capabilities of AU eRequesting Server and AU eRequesting Placer.
   - [Actor Definitions](actors.html): This page defines the AU aRequesting actors, AU eRequesting Placer, AU eRequesting Filler and AU eRequesting Patient Access.
 - [Examples](examples.html): This page lists all the examples used in this guide.
 - [Support](support.html): These pages provide supporting material for implementation of AU eRequesting.
