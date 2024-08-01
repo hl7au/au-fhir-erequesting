@@ -5,7 +5,7 @@
     <valueString value="ServiceRequest - X-Ray"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
-    <valueMarkdown value="X-Ray order for patient Fred Roberts"/>
+    <valueMarkdown value="This is an example of *AU eRequesting Imaging Request* profile, illustrating a request for an X-Ray for a patient. &#xa;&#xa;Patient: Fred Roberts."/>
   </extension>
   <meta>
     <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest-imag"/>
