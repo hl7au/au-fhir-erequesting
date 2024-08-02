@@ -1,5 +1,5 @@
 ## AU eRequesting R1 use cases
-This page contains the use cases for AU eRequesting for the first release of the TDG Implementation Guide (R1). This is a working page and will reflect the current state of agreement by the TDG as well as the current draft of the use case material.
+This page contains the use cases for AU eRequesting for the first release of the TDG Implementation Guide (R1).
 
 ### Diagnostic imaging use cases
 
@@ -9,7 +9,7 @@ This page contains the use cases for AU eRequesting for the first release of the
     <th style="width:5%">ID</th>
     <th style="width:45%">Description</th>
     <th style="width:17%">Actors</th>
-    <th style="width:18%">Data Groups</th>
+    <th style="width:18%">AUeReqDI/AUCDI Data Group</th>
   </tr>
 </thead>
 <tbody>
@@ -56,7 +56,7 @@ This page contains the use cases for AU eRequesting for the first release of the
     <td>P10</td>
     <td><strong>Request for a pathology test (generic data collection requirements)</strong><br><br>A requesting clinician requires a pathology test for a patient, following a consultation. The request contains information such as: Patient demographics (including sex and gender), Specimen type, Type of test required, Reason for requesting, any precautions about the patient’s other conditions such as device implants/allergies/medicines/related pathology results, destination(s) where the results need to be sent back to (including Copy To/Carbon Copy/copy to practitioners, as well as the original requestor), and information to support billing.</td>
     <td><a href="ActorDefinition-au-erequesting-actor-placer.html">AU eRequesting Placer actor</a></td>
-   <td>Service request<br>Pathology test request<br>Implanted medical device summary<br>Adverse reaction risk summary<br>Problem/Diagnosis summary<br>Sex and gender summary<br>REMOVE: Patient Details, Requestor Details, Requested Service Details, Relevant Clinical Details, Billing Details, Preferred Reporting Clinician</td>
+   <td>Service request<br>Pathology test request<br>Implanted medical device summary<br>Adverse reaction risk summary<br>Problem/Diagnosis summary<br>Sex and gender summary<br></td>
   </tr>
   <tr>
     <td>P02</td>
@@ -80,7 +80,7 @@ This page contains the use cases for AU eRequesting for the first release of the
   <tr>
     <td>P09</td>
     <td><strong>Rule 3 INR Test</strong><br><br>A clinician requests an ongoing International Normalized Ratio (INR) test specifying a "Rule 3 Exemption" for a patient undergoing anticoagulant therapy. The requester requires 6 INR tests to be performed over the next 6 months.</td>
-    <td><a href="ActorDefinition-au-erequesting-actor-placer.html">AU eRequesting Placer actor</a><br><a href="ActorDefinition-au-erequesting-actor-filler.html">AU eRequesting Filler actor</a><br><a href="ActorDefinition-au-erequesting-actor-server.html">AU eRequesting Server actor</a></td>
+    <td><a href="ActorDefinition-au-erequesting-actor-placer.html">AU eRequesting Placer actor</a></td>
    <td>Service request<br>Pathology test request<br>Implanted medical device summary<br>Adverse reaction risk summary<br>Problem/Diagnosis summary<br>Sex and gender summary<br></td>
   </tr>
 </tbody>
@@ -119,7 +119,7 @@ This page contains the use cases for AU eRequesting for the first release of the
   <tr>
     <td>G07</td>
     <td><strong>Specification of results to be copied to another clinician</strong><br><br>A hospital clinician requests diagnostic imaging for a patient after they have been discharged from the hospital, as a follow-up test. The results are requested to be sent to the hospital clinician and the patient's GP.</td>
-    <td><a href="ActorDefinition-au-erequesting-actor-placer.html">AU eRequesting Placer actor</a><br><a href="ActorDefinition-au-erequesting-actor-filler.html">AU eRequesting Filler actor</a><br><a href="ActorDefinition-au-erequesting-actor-server.html">AU eRequesting Server actor</a></td>
+    <td><a href="ActorDefinition-au-erequesting-actor-placer.html">AU eRequesting Placer actor</a><br><a href="ActorDefinition-au-erequesting-actor-server.html">AU eRequesting Server actor</a></td>
    <td>Service request<br>Pathology test request<br>Implanted medical device summary<br>Adverse reaction risk summary<br>Problem/Diagnosis summary<br>Sex and gender summary</td>
   </tr>
 </tbody>
