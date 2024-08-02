@@ -1,5 +1,10 @@
 ## AU eRequesting R1 use cases
 This page contains the use cases for AU eRequesting for the first release of the TDG Implementation Guide (R1).
+Column attribute descriptions are as follows:
+- **ID**: Represents a unique identifier for each use case.
+- **Description**: Represents the detailed narrative of the use case, outlining the scenario and the sequence of actions involved.
+- **Actor**: Represents the actors involved in the use case. 
+- **AUeReqDI/AUCDI Data Group**: Represents the relevant AU eRequest Diagnostic Imaging (AUeReqDI) or the Australian Clinical Diagnostic Imaging (AUCDI) data group. 
 
 ### Diagnostic imaging use cases
 
