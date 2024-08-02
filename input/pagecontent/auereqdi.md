@@ -33,216 +33,216 @@ Column attribute descriptions are as follows:
   <tr>
     <td rowspan="9">Service request</td>
     <td colspan="2">Service name</td>
-    <td>TBD</td>
-    <td>TBD</td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest.html">AU eRequesting ServiceRequest</a></td>
+    <td>ServiceRequest.code</td>
     <td></td>
   </tr>
   <tr>
     <td colspan="2">Clinical indication</td>
-    <td>TBD</td>
-    <td>TBD</td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest.html">AU eRequesting ServiceRequest</a></td>
+    <td>ServiceRequest.reasonCode</td>
     <td></td>
   </tr>
   <tr>
     <td colspan="2">Clinical context</td>
-    <td>TBD</td>
-    <td>TBD</td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest.html">AU eRequesting ServiceRequest</a></td>
+    <td>ServiceRequest.note</td>
     <td></td>
   </tr>
   <tr>
     <td colspan="2">Urgency</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td></td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest.html">AU eRequesting ServiceRequest</a></td>
+    <td>ServiceRequest.priority</td>
+    <td>This element is allowed but does not have a Must Support flag.</td>
   </tr>
    <tr>
     <td colspan="2">Service due</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td></td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest.html">AU eRequesting ServiceRequest</a></td>
+    <td>ServiceRequest.occurrence[x]</td>
+    <td>This element is allowed but does not have a Must Support flag.<br><br>This element is choice between occurrenceTiming | occurrenceDateTime | occurrencePeriod.</td>
   </tr>
    <tr>
     <td colspan="2">Comment</td>
-    <td>TBD</td>
-    <td>TBD</td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest.html">AU eRequesting ServiceRequest</a></td>
+    <td>ServiceRequest.note</td>
     <td></td>
   </tr>
    <tr>
     <td colspan="2">Distribution list</td>
     <td>TBD</td>
     <td>TBD</td>
-    <td></td>
+    <td>Work is underway in AU eRequesting to map this element. Feedback is requested on the appropriateness of using either CommunicationRequest or an extension to support distribution list.</td>
   </tr>
    <tr>
     <td colspan="2">Urgent contact</td>
     <td>TBD</td>
     <td>TBD</td>
-    <td></td>
+    <td>Work is underway in AU eRequesting to map this element. Feedback is requested on the appropriateness of using either CommunicationRequest or an extension to support urgent contact.</td>
   </tr>
    <tr>
     <td colspan="2">Billing guidance</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td></td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest.html">AU eRequesting ServiceRequest</a><br><br><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-coverage.html">AU Base Coverage</a></td>
+    <td>ServiceRequest.insurance</td>
+    <td>ServiceRequest.insurance references a Coverage resource.</td>
   </tr>
   <tr>
     <td rowspan="12">Medical imaging request</td>
     <td colspan="2">Test name</td>
-    <td>TBD</td>
-    <td>TBD</td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest-imag.html">AU eRequesting Imaging Request</a></td>
+    <td>ServiceRequest.code</td>
     <td></td>
   </tr>
   <tr>
     <td colspan="2">Modality</td>
-    <td>TBD</td>
-    <td>TBD</td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest-imag.html">AU eRequesting Imaging Request</a></td>
+    <td>ServiceRequest.code</td>
     <td></td>
   </tr>
     <tr>
     <td colspan="2">Target body site</td>
-    <td>TBD</td>
-    <td>TBD</td>
+   <td><a href="StructureDefinition-au-erequesting-servicerequest-imag.html">AU eRequesting Imaging Request</a></td>
+    <td>ServiceRequest.code | ServiceRequest.bodySite</td>
     <td></td>
   </tr>
     <tr>
     <td colspan="2">Contrast use</td>
-    <td>TBD</td>
-    <td>TBD</td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest-imag.html">AU eRequesting Imaging Request</a></td>
+    <td>ServiceRequest.code</td>
     <td></td>
   </tr>
     <tr>
     <td colspan="2">Clinical indication</td>
-    <td>TBD</td>
-    <td>TBD</td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest-imag.html">AU eRequesting Imaging Request</a></td>
+    <td>ServiceRequest.reasonCode</td>
     <td></td>
   </tr>
     <tr>
     <td colspan="2">Clinical context</td>
-    <td>TBD</td>
-    <td>TBD</td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest-imag.html">AU eRequesting Imaging Request</a></td>
+    <td>ServiceRequest.note</td>
     <td></td>
   </tr>
     <tr>
     <td colspan="2">Urgency</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td></td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest-imag.html">AU eRequesting Imaging Request</a></td>
+    <td>ServiceRequest.priority</td>
+    <td>This element is allowed but does not have a Must Support flag.</td>
   </tr>
     <tr>
     <td colspan="2">Service due</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td></td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest-imag.html">AU eRequesting Imaging Request</a></td>
+    <td>ServiceRequest.occurrence[x]</td>
+    <td>This element is allowed but does not have a Must Support flag.<br><br>This element is choice between occurrenceTiming | occurrenceDateTime | occurrencePeriod.</td>
   </tr>
     <tr>
     <td colspan="2">Comment</td>
-    <td>TBD</td>
-    <td>TBD</td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest-imag.html">AU eRequesting Imaging Request</a></td>
+    <td>ServiceRequest.note</td>
     <td></td>
   </tr>
     <tr>
     <td colspan="2">Distribution list</td>
     <td>TBD</td>
     <td>TBD</td>
-    <td></td>
+    <td>Work is underway in AU eRequesting to map this element. Feedback is requested on the appropriateness of using either CommunicationRequest or an extension to support distribution list.</td>
   </tr>
     <tr>
     <td colspan="2">Urgent contact</td>
     <td>TBD</td>
     <td>TBD</td>
-    <td></td>
+    <td>Work is underway in AU eRequesting to map this element. Feedback is requested on the appropriateness of using either CommunicationRequest or an extension to support urgent contact.</td>
   </tr>
     <tr>
     <td colspan="2">Billing guidance</td>
-    <td>TBD</td>
-    <td>TBD</td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest-imag.html">AU eRequesting Imaging Request</a><br><br><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-coverage.html">AU Base Coverage</a></td>
+    <td>ServiceRequest.insurance</td>
     <td></td>
   </tr>
  <tr>
     <td rowspan="10">Pathology test request</td>
     <td colspan="2">Test name</td>
-    <td>TBD</td>
-    <td>TBD</td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest-path.html">AU eRequesting Pathology Request</a></td>
+    <td>ServiceRequest.code</td>
     <td></td>
   </tr>
   <tr>
     <td colspan="2">Fasting status</td>
     <td>TBD</td>
     <td>TBD</td>
-    <td></td>
+    <td>Work is underway in AU eRequesting to map this element. Feedback is requested on the appropriateness of using ServiceRequest.note or an extension to support fasting status.</td>
   </tr>
     <tr>
     <td colspan="2">Clinical indication</td>
-    <td>TBD</td>
-    <td>TBD</td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest-path.html">AU eRequesting Pathology Request</a></td>
+    <td>ServiceRequest.reasonCode</td>
     <td></td>
   </tr>
     <tr>
     <td colspan="2">Clinical context</td>
-    <td>TBD</td>
-    <td>TBD</td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest-path.html">AU eRequesting Pathology Request</a></td>
+    <td>ServiceRequest.note</td>
     <td></td>
   </tr>
     <tr>
     <td colspan="2">Urgency</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td></td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest-path.html">AU eRequesting Pathology Request</a></td>
+    <td>ServiceRequest.priority</td>
+    <td>This element is allowed but does not have a Must Support flag.</td>
   </tr>
     <tr>
     <td colspan="2">Service due</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td></td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest-path.html">AU eRequesting Pathology Request</a></td>
+    <td>ServiceRequest.occurrence[x]</td>
+    <td>This element is allowed but does not have a Must Support flag.<br><br>This element is choice between occurrenceTiming | occurrenceDateTime | occurrencePeriod.</td>
   </tr>
     <tr>
     <td colspan="2">Comment</td>
-    <td>TBD</td>
-    <td>TBD</td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest-path.html">AU eRequesting Pathology Request</a></td>
+    <td>ServiceRequest.note</td>
     <td></td>
   </tr>
     <tr>
     <td colspan="2">Distribution list</td>
     <td>TBD</td>
     <td>TBD</td>
-    <td></td>
+    <td>Work is underway in AU eRequesting to map this element. Feedback is requested on the appropriateness of using either CommunicationRequest or an extension to support distribution list.</td>
   </tr>
     <tr>
     <td colspan="2">Urgent contact</td>
     <td>TBD</td>
     <td>TBD</td>
-    <td></td>
+    <td>Work is underway in AU eRequesting to map this element. Feedback is requested on the appropriateness of using either CommunicationRequest or an extension to support urgent contact.</td>
   </tr>
     <tr>
     <td colspan="2">Billing guidance</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td></td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest-path.html">AU eRequesting Pathology Request</a><br><br><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-coverage.html">AU Base Coverage</a></td>
+    <td>ServiceRequest.insurance<br><br>Coverage</td>
+    <td>ServiceRequest.insurance references a Coverage resource.</td>
   </tr>
   <tr>
     <td rowspan="10">Implanted medical device summary</td>
     <td colspan="2">Device type name</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td></td>
+    <td>Device</td>
+    <td>Device.type</td>
+    <td>The Device resource has not yet been profiled for use in AU eRequesting.</td>
   </tr>
   <tr>
     <td colspan="2">Overall status</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td></td>
+    <td>Device</td>
+    <td>Device.status</td>
+    <td>The Device resource has not yet been profiled for use in AU eRequesting.</td>
   </tr>
     <tr>
     <td colspan="2">Overall comment</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td></td>
+    <td>Device</td>
+    <td>Device.note</td>
+    <td>The Device resource has not yet been profiled for use in AU eRequesting.</td>
   </tr>
     <tr>
     <td colspan="2">Last updated</td>
     <td>TBD</td>
     <td>TBD</td>
-    <td></td>
+    <td>Work is underway in AU eRequesting to map this element. Feedback is requested on the appropriateness of using Provenance or an extension to support last updated.</td>
   </tr>
 </tbody>
 <thead>
