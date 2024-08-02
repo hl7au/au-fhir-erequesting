@@ -3,8 +3,8 @@ This page contains the use cases for AU eRequesting for the first release of the
 Column attribute descriptions are as follows:
 - **ID**: Represents a unique identifier for each use case.
 - **Description**: Represents the detailed narrative of the use case, outlining the scenario and the sequence of actions involved.
-- **Actor**: Represents the actors involved in the use case. 
-- **AUeReqDI/AUCDI Data Group**: Represents the relevant AU eRequest Diagnostic Imaging (AUeReqDI) or the Australian Clinical Diagnostic Imaging (AUCDI) data group. 
+- **Actor(s)**: Represents the actors involved in the use case. 
+- **AUeReqDI/AUCDI Data Group(s)**: Represents the relevant AU eRequest Diagnostic Imaging (AUeReqDI) or the Australian Clinical Diagnostic Imaging (AUCDI) data group. 
 
 ### Diagnostic imaging use cases
 
@@ -13,8 +13,8 @@ Column attribute descriptions are as follows:
   <tr>
     <th style="width:5%">ID</th>
     <th style="width:45%">Description</th>
-    <th style="width:17%">Actors</th>
-    <th style="width:18%">AUeReqDI/AUCDI Data Group</th>
+    <th style="width:17%">Actor(s)</th>
+    <th style="width:18%">AUeReqDI/AUCDI Data Group(s)</th>
   </tr>
 </thead>
 <tbody>
@@ -52,8 +52,8 @@ Column attribute descriptions are as follows:
   <tr>
     <th style="width:5%">ID</th>
     <th style="width:45%">Description</th>
-    <th style="width:17%">Actors</th>
-    <th style="width:18%">Data Groups</th>
+    <th style="width:17%">Actor(s)</th>
+    <th style="width:18%">AUeReqDI/AUCDI Data Group(s)</th>
   </tr>
 </thead>
 <tbody>
@@ -98,8 +98,8 @@ Column attribute descriptions are as follows:
   <tr>
     <th width="5%">ID</th>
     <th width="45%">Description</th>
-    <th width="17%">Actors</th>
-    <th width="18%">AUeReqDI/AUCDI Data Group</th>
+    <th style="width:17%">Actor(s)</th>
+    <th style="width:18%">AUeReqDI/AUCDI Data Group(s)</th>
   </tr>
 </thead>
 <tbody>
