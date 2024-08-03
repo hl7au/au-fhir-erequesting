@@ -1,4 +1,10 @@
-This page contains the use cases for AU eRequesting for the first release of the TDG Implementation Guide (R1). This is a working page and will reflect the current state of agreement by the TDG as well as the current draft of the use case material.
+In the context of AU eRequesting, use cases focus on standirdising clinical requesting and ordering within the Australian healthcare system, specifically targeting Pathology and Imaging requests in AU eRequesting Release 1 (R1). The use cases aim to ensure that the system supports accurate and efficient data exchange and workflow management.
+
+The use cases for AU eRequesting are divided into two main aspects:
+- Workflow Perspective: This aspect covers the entire process of making a request, acknowledging it, and updating the status as it progresses. The workflow is designed to be flexible, accommodating different types of requests while remaining agnostic to specific payloads.
+- Payload and Status Transition: This focuses on the content of the request and the stages it passes through, from initiation to completion. The initial emphasis is on Pathology and Imaging requests, ensuring that these areas are well-supported and clearly defined.
+
+By addressing these aspects, the use cases for AU eRequesting help establish a framework for standardized eRequests, enabling systems to handle requests efficiently and consistently within the Australian healthcare context.
 
 Column attribute descriptions are as follows:
 - **ID**: A unique identifier for each use case.
