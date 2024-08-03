@@ -60,10 +60,9 @@ pages:
       title: AU eRequesting Data for Interoperability
   use-cases.md:
     title: Use Cases
-  artefacts.html:
-    profiles-and-extensions.md:
-    capability-statements.md:
-    search-parameters-and-operations.md:
+  profiles-and-extensions.md:
+  capability-statements.md:
+  search-parameters-and-operations.md:
   terminology.md:
   actors.md:
     title: Actor Definitions
