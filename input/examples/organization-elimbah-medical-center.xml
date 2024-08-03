@@ -6,7 +6,7 @@
         <valueString value="Organization - Elimbah Medical Center"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
-        <valueMarkdown value="This is an organization example using the *AU Core Organization* profile."/>
+        <valueMarkdown value="This is an organization example for the *AU Core Organization* profile."/>
     </extension>
     <meta>
         <profile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-organization"/>

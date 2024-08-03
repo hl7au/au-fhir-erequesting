@@ -5,7 +5,7 @@
         <valueString value="ServiceRequest - Full Blood Count"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
-        <valueMarkdown value="This is an example of the *AU eRequesting Pathology Request* profile, illustrating a request for a FBC for a patient. &#xa;&#xa;Patient: Fred Roberts."/>
+        <valueMarkdown value="This is an example for the *AU eRequesting Pathology Request* profile, illustrating a request for a FBC for a patient. Patient: Fred Roberts."/>
     </extension>
     <meta>
         <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest-path"/>

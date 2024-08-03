@@ -4,7 +4,7 @@
         <valueString value="Encounter - Consultation"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
-        <valueMarkdown value="This is a consultation encounter example using the *AU Core Encounter* profile.&#xa;&#xa;Patient: Fred Roberts"/>
+        <valueMarkdown value="This is a consultation encounter example for the *AU Core Encounter* profile."/>
     </extension>
     <meta>
         <profile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-encounter"/>
