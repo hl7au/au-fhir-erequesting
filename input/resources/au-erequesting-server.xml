@@ -105,5 +105,100 @@
         <type value="token"/>
       </searchParam>
     </resource>
+    <!-- ENCOUNTER -->
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD"/>
+      </extension>
+      <type value="Encounter"/>
+      <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-encounter">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <documentation value="Servers **SHOULD** support the Encounter resource, the AU Core profile, and the conformance expectations for the Encounter resource."/>
+      <!-- TBC 
+      <referencePolicy value="resolves">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+      </referencePolicy> -->
+    </resource>
+    <!-- ORGANIZATION -->
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD"/>
+      </extension>
+      <type value="Organization"/>
+      <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-organization">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <documentation value="Servers **SHOULD** support the Organization resource, the AU Core profile, and the conformance expectations for the Organization resource."/>
+      <!-- TBC 
+      <referencePolicy value="resolves">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+      </referencePolicy> -->
+    </resource>
+    <!-- PATIENT -->
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD"/>
+      </extension>
+      <type value="Patient"/>
+      <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <documentation value="Servers **SHOULD** support the Patient resource, the AU Core profile, and the conformance expectations for the Patient resource."/>
+      <!-- TBC 
+      <referencePolicy value="resolves">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+      </referencePolicy> -->
+    </resource>
+    <!-- PRACTITIONER -->
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD"/>
+      </extension>
+      <type value="Practitioner"/>
+      <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-practitioner">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <documentation value="Servers **SHOULD** support the Practitioner resource, the AU Core profile, and the conformance expectations for the Practitioner resource."/>
+      <!-- TBC 
+      <referencePolicy value="resolves">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+      </referencePolicy> -->
+    </resource>
+    <!-- PRACTITIONERROLE -->
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD"/>
+      </extension>
+      <type value="PractitionerRole"/>
+      <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-practitionerrole">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <documentation value="Servers **SHOULD** support the PractitionerRole resource, the AU Core profile, and the conformance expectations for the PractitionerRole resource."/>
+      <!-- TBC 
+      <referencePolicy value="resolves">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+      </referencePolicy> -->
+    </resource>
   </rest>
 </CapabilityStatement>
