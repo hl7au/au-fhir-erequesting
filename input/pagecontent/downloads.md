@@ -38,3 +38,10 @@ The following link to the ImplementationGuide resource defines the technical det
 - [XML](ImplementationGuide-hl7.fhir.au.ereq.xml) 
 - [JSON](ImplementationGuide-hl7.fhir.au.ereq.json)
 - [TTL](ImplementationGuide-hl7.fhir.au.ereq.ttl)
+
+### OpenAPI (a.k.a., Swagger) Definition Files
+
+ The following [OpenAPI](https://www.openapis.org/) files are generated from the AU eRequesting CapabilityStatements:
+
+- [AU eRequesting Placer](au-erequesting-placer.openapi.json)
+- [AU eRequesting Server](au-erequesting-server.openapi.json)
