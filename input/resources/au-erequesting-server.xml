@@ -9,6 +9,7 @@
   <title value="AU eRequesting Server CapabilityStatement"/>
   <status value="draft"/>
   <description value="This CapabilityStatement describes the basic rules for the [AU eRequesting Server actor](ActorDefinition-au-erequesting-actor-server.html) that is  is a system that accepts diagnostic service requests and makes diagnostic service requests accessible. The complete list of FHIR profiles, RESTful operations, and search parameters supported by AU eRequesting servers are defined in this CapabilityStatement.&#xA;&#xA; 
+<div class="table-responsive">
 <table class="grid">
   <thead>
     <tr>
@@ -60,7 +61,7 @@
     </tr>
   </tbody>
 </table>
-"/>
+</div>"/>
   <kind value="requirements"/>
   <fhirVersion value="4.0.1"/>
   <format value="json">
