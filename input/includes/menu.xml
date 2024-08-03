@@ -41,7 +41,7 @@
     </ul>
   </li>
   <li>
-    <a href="use-cases.html">Use cases</a>
+    <a href="use-cases.html">Use Cases</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artefacts
