@@ -8,8 +8,9 @@
   <name value="AUeRequestingServerCapabilityStatement"/>
   <title value="AU eRequesting Server CapabilityStatement"/>
   <status value="draft"/>
-  <description value="This CapabilityStatement describes the basic rules for the [AU eRequesting Server actor](ActorDefinition-au-erequesting-actor-server.html) that is  is a system that accepts diagnostic service requests and makes diagnostic service requests accessible. The complete list of FHIR profiles, RESTful operations, and search parameters supported by AU eRequesting servers are defined in this CapabilityStatement.
-  AU Core Profile |Must Support Element|Reference
+  <description value="This CapabilityStatement describes the basic rules for the [AU eRequesting Server actor](ActorDefinition-au-erequesting-actor-server.html) that is  is a system that accepts diagnostic service requests and makes diagnostic service requests accessible. The complete list of FHIR profiles, RESTful operations, and search parameters supported by AU eRequesting servers are defined in this CapabilityStatement. TBD
+  
+AU Core Profile |Must Support Element|Reference
 ---|---|---
 AU Core Diagnostic Result Observation|Observation.performer|AU Core Practitioner, AU Core PractitionerRole, AU Core Organization, AU Core Patient, AU Base RelatedPerson
 AU Core Diagnostic Result Observation|Observation.hasMember|AU Core Diagnostic Result Observation, AU Core Pathology Result Observation
@@ -19,7 +20,8 @@ AU Core Pathology Result Observation|Observation.performer|AU Core Practitioner,
 AU Core Procedure|Procedure.reasonReference|AU Core Condition, Observation, AU Core Procedure, DocumentReference
 AU Core MedicationRequest|MedicationRequest.requester|AU Core Practitioner, AU Core PractitionerRole, AU Core Organization, AU Core Patient, AU Base Related Person
 AU Core MedicationRequest|MedicationRequest.reasonReference|AU Core Condition, Observation
-{:.grid}"/>
+{:.grid}
+"/>
   <kind value="requirements"/>
   <fhirVersion value="4.0.1"/>
   <format value="json">
