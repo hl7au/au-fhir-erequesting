@@ -1,6 +1,6 @@
 
 ### Summary of Must Support and References Between Profiles
-The table below provides identifies where a Profile has a Must Support reference to other profiles or resources (i.e., Target Profiles). This list is provided to clarify where additional profiles or resources may need to be supported if a server supports a particular resource.
+The table below provides identifies where a Profile has a Must Support reference to other profiles or resources (i.e., Target Profiles). This list is provided to clarify where additional profiles or resources may need to be supported if a placer supports a particular resource.
 
 |Resource Type|Profile|Supported Target Reference|
 |---|---|---|---|
