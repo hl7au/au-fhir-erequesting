@@ -3,12 +3,12 @@ AU eRequesting is provided to support the use of HL7<sup>&reg;</sup> FHIR<sup>&r
 
 AU eRequesting defines the Data model and RESTful API interactions that set minimum expectations for placing and accessing electronic requests for patients.
 
-The focus AU eRequesting Release 1 (R1) is support of pathology and medical imaging requests, and developing a foundational request model that can be applied beyond diagnostic requesting. 
+The focus AU eRequesting Release 1 (R1) is support of pathology and medical imaging requests in community-based care provision, and developing a foundational request model that can be applied beyond diagnostic requesting. 
 
 
 ### Project background
 
-This implementation guide is under development through the AU eRequesting project as part of the [Sparked AU FHIR Accelerator](https://confluence.hl7.org/display/HA/Sparked+FHIR+Accelerator). The Sparked AU FHIR Accelerator is a community comprising government, technology vendors, provider organisations, peak bodies, practitioners, and domain experts, to accelerate the creation and use of national FHIR standards in health care information exchange.
+This implementation guide is under development through the AU eRequesting project as part of the [Sparked AU FHIR Accelerator](https://sparked.csiro.au). The Sparked AU FHIR Accelerator is a community comprising government, technology vendors, provider organisations, peak bodies, practitioners, and domain experts, to accelerate the creation and use of national FHIR standards in health care information exchange.
 
 The AU eRequesting project includes:
 - AU eRequesting Data for Interoperability
