@@ -28,8 +28,6 @@ Additionally, implementers are advised to be familiar with the AU Core requireme
 - [Missing Data](https://build.fhir.org/ig/hl7au/au-fhir-core/general-requirements.html#missing-data)
 - [Suppressed Data](https://build.fhir.org/ig/hl7au/au-fhir-core/general-requirements.html#suppressed-data)
 
-Feedback is requested on ... the applicability of AU Core definition of Missing Data and Suppressed Data for all elements. TBD.
-
 The requirements of the FHIR standard and [FHIR Conformance Rules](http://hl7.org/fhir/conformance-rules.html) apply, and define the use of terms in this guide including the conformance verbs - **SHALL**, **SHALL NOT**, **SHOULD**, **SHOULD NOT**, **MAY**.
 
 ### Conformance Artifacts
@@ -44,7 +42,33 @@ The [AU eRequesting Placer CapabilityStatement](CapabilityStatement-au-erequesti
 
 The [AU eRequesting Server CapabilityStatement](CapabilityStatement-au-erequesting-server.html) defines the conformance requirements and expectations of an [AU eRequesting Server](ActorDefinition-au-erequesting-actor-server.html) actor responsible for accepts diagnostic service requests and makes diagnostic service requests accessible. The complete list of FHIR profiles, REST API interactions, and search parameters that can be implemented by an AU eRequesting Server are defined in this capability statement. An AU eRequesting Server declares conformance to this list of capabilities based on the resource types and interactions it implement.
 
-The AU eRequesting Filler CapabilityStatement and AU eRequesting Patient Access CapabilityStatement are not yet defined. 
+The AU eRequesting Filler CapabilityStatement and AU eRequesting Patient Access CapabilityStatement are not yet defined.
+
+### Declaring Conformance
+Servers that are conformant to the AU eRequesting API declare conformance by:
+* hosting a capability statement at [url]/metadata that is available to both authenticated and unauthenticated clients and that declares that IPA is supported using CapabilityStatement.instantiates, as shown in the following fragment:
+
+    ```
+    {
+      "resourceType": "CapabilityStatement",
+      ...
+      "instantiates": [
+        "http://hl7.org.au/fhir/ereq/CapabilityStatement/au-erequesting-server"
+      ],
+      ...  
+      "rest": [
+        {
+          "mode": "server",
+        ...
+        }
+      ] 
+    }
+    ```
+
+### Exchange Format Support
+In FHIR, resources are exchanged in the following formats: JSON, XML, and Turtle. Due to the popularity of JavaScript-based apps and ease of usage with JSON, the most popular exchange format for REST-styled APIs is JSON. 
+
+<p class="request-for-feedback">Input is requested on the appropriateness of mandating JSON or XML.  Please comment by raising <a href="https://jira.hl7.org/projects/FHIR/issues">HL7 Jira Issues</a>.</p>
 
 ### Mandatory Elements
 Mandatory elements are elements with minimum cardinality > 0. When an element is mandatory, the data is expected to always be present. Very rarely, it may not be, and in this circumstance see the guidance in AU Core on [Missing Data](https://build.fhir.org/ig/hl7au/au-fhir-core/general-requirements.html#missing-data). 
@@ -108,4 +132,5 @@ Example: AU eRequesting AllergyIntolerance profile showing clinicalStatus and ve
     ...
 }
 ~~~
+
 
