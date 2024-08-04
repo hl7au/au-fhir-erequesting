@@ -208,7 +208,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Placers **MAY** support the Condition resource, the AU Core profile, and the conformance expectations for the PractitionerRole resource."/>
+      <documentation value="Placers **MAY** support the Condition resource, the AU Core profile, and the conformance expectations for the Condition resource."/>
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">

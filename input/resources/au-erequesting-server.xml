@@ -230,7 +230,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Servers **MAY** support the Condition resource, the AU Core profile, and the conformance expectations for the PractitionerRole resource."/>
+      <documentation value="Servers **MAY** support the Condition resource, the AU Core profile, and the conformance expectations for the Condition resource."/>
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -338,7 +338,7 @@
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="MAY"/>
       </extension>
-      <type value="Procedure"/>
+      <type value="RelatedPerson"/>
       <supportedProfile value="http://hl7.org.au/fhir/StructureDefinition/au-relatedperson">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
