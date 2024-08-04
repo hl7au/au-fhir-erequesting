@@ -250,30 +250,23 @@
         },
         {
           "nameUrl": "use-cases.html",
-          "title": "Use cases",
+          "title": "Use Cases",
           "generation": "markdown"
         },
         {
-          "nameUrl": "artefacts.html",
-          "title": "FHIR artefacts",
-          "generation": "markdown",
-          "page": [
-            {
-              "nameUrl": "profiles-and-extensions.html",
-              "title": "Profiles and Extensions",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "capability-statements.html",
-              "title": "Capability Statements",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "search-parameters-and-operations.html",
-              "title": "Search Parameters and Operations",
-              "generation": "markdown"
-            }
-          ]
+          "nameUrl": "profiles-and-extensions.html",
+          "title": "Profiles and Extensions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "capability-statements.html",
+          "title": "Capability Statements",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "search-parameters-and-operations.html",
+          "title": "Search Parameters and Operations",
+          "generation": "markdown"
         },
         {
           "nameUrl": "terminology.html",
@@ -316,7 +309,7 @@
       },
       {
         "code": "releaselabel",
-        "value": "ci-build"
+        "value": "CI Build"
       },
       {
         "code": "path-resource",
