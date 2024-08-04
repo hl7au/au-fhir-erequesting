@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://hl7.org.au/fhir/ereq/ImplementationGuide/hl7.fhir.au.ereq",
-  "version": "0.1.0-ci-build",
+  "version": "0.1.0-ballot",
   "name": "AUeRequestingImplementationGuide",
   "title": "AU eRequesting Implementation Guide",
   "status": "draft",
@@ -309,7 +309,7 @@
       },
       {
         "code": "releaselabel",
-        "value": "CI Build"
+        "value": "R1"
       },
       {
         "code": "path-resource",
