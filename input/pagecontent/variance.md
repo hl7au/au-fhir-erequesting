@@ -9,10 +9,10 @@ The Variance Statement identifies where an AU Realm FHIR implementation guide do
 The Variance Statement undergoes review and assessment by the FHIR Work Group as part of the FHIR IG balloting process. For more details on the requirements of a Variance Statement, refer to [AU FHIR IG Variance Requirements](https://confluence.hl7.org/display/HA/Process%3A++AU+FHIR+IG+Variance+Requirements).
 
 ### Variance from AU Base
-This implementation guide has no variance (i.e. fully compliant) from AU Base FHIR Implementation Guide version 4.2.1-ci-build ([current](https://build.fhir.org/ig/hl7au/au-fhir-base/)).
+This implementation guide has no variance (i.e. fully compliant) from AU Base FHIR Implementation Guide version 4.2.2-ballot ([4.2.2-ballot](https://hl7.org.au/fhir/4.2.2-ballot/)).
 
 ### Variance from AU Core
-This implementation guide has no variance (i.e. fully compliant) from AU Core FHIR Implementation Guide version 0.4.0-ci-build ([current](https://build.fhir.org/ig/hl7au/au-fhir-core/)).
+This implementation guide has no variance (i.e. fully compliant) from AU Core FHIR Implementation Guide version 1.0.0-ballot ([1.0.0-ballot](https://hl7.org.au/fhir/core/1.0.0-ballot/)).
 
 #### Additionally Profiled Resources
 This implementation guide profiles the following resources that are not profiled in AU Core:
