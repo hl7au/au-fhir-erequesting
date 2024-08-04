@@ -1,0 +1,66 @@
+[
+  {
+    "outputFile": "ActorDefinition-au-erequesting-actor-filler.json",
+    "fshName": "au-erequesting-actor-filler",
+    "fshType": "Instance",
+    "fshFile": "actors.fsh",
+    "startLine": 13,
+    "endLine": 22
+  },
+  {
+    "outputFile": "ActorDefinition-au-erequesting-actor-patientaccess.json",
+    "fshName": "au-erequesting-actor-patientaccess",
+    "fshType": "Instance",
+    "fshFile": "actors.fsh",
+    "startLine": 24,
+    "endLine": 33
+  },
+  {
+    "outputFile": "ActorDefinition-au-erequesting-actor-placer.json",
+    "fshName": "au-erequesting-actor-placer",
+    "fshType": "Instance",
+    "fshFile": "actors.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "ActorDefinition-au-erequesting-actor-server.json",
+    "fshName": "au-erequesting-actor-server",
+    "fshType": "Instance",
+    "fshFile": "actors.fsh",
+    "startLine": 35,
+    "endLine": 45
+  },
+  {
+    "outputFile": "StructureDefinition-au-erequesting-servicerequest-imag.json",
+    "fshName": "AUeRequestingImagingRequest",
+    "fshType": "Profile",
+    "fshFile": "au-erequesting-servicerequest-imag.fsh",
+    "startLine": 1,
+    "endLine": 36
+  },
+  {
+    "outputFile": "StructureDefinition-au-erequesting-servicerequest-path.json",
+    "fshName": "AUeRequestingPathologyRequest",
+    "fshType": "Profile",
+    "fshFile": "au-erequesting-servicerequest-path.fsh",
+    "startLine": 1,
+    "endLine": 35
+  },
+  {
+    "outputFile": "StructureDefinition-au-erequesting-servicerequest.json",
+    "fshName": "AUeRequestingServiceRequest",
+    "fshType": "Profile",
+    "fshFile": "au-erequesting-servicerequest.fsh",
+    "startLine": 1,
+    "endLine": 189
+  },
+  {
+    "outputFile": "ValueSet-ranzcr-radiology-referral.json",
+    "fshName": "RANZCRRadiologyReferral",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\au-erequesting-ranzcr-radiology-procedures.fsh",
+    "startLine": 1,
+    "endLine": 527
+  }
+]
