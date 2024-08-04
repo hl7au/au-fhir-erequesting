@@ -1,5 +1,4 @@
 An [AU eRequesting Server](ActorDefinition-au-erequesting-actor-server.html) that declares Profile Support + Interaction Support conformance:
-- **SHALL** [declare conformance](declaring-conformance.html#profile-support--interaction-support) to the [AU eRequesting Server Capability Statement](CapabilityStatement-au-erequesting-server.html) in the server's CapabilityStatement.
 - **SHALL** specify the implemented resource types, associated AU eRequesting profiles, REST API interactions and search parameters in the server's CapabilityStatement.
 - **SHALL** implement the [mandatory](#mandatory-elements) and/or [Must Support](#must-support-and-obligation) requirements for the elements defined as such in the implemented AU eRequesting profiles.
 - **SHALL** implement the required REST API interactions and search parameters as defined in the [AU eRequesting Server Capability Statement](CapabilityStatement-au-erequesting-server.html#resourcesSummary1).
