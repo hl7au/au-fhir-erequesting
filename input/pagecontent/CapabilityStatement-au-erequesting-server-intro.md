@@ -1,10 +1,13 @@
-|AU Core Profile |Must Support Element|Reference|
----|---|---
-|AU Core Diagnostic Result Observation|Observation.performer|AU Core Practitioner, AU Core PractitionerRole, AU Core Organization, AU Core Patient, AU Base RelatedPerson|
-|AU Core Diagnostic Result Observation|Observation.hasMember|AU Core Diagnostic Result Observation, AU Core Pathology Result Observation|
-|AU Core Encounter|Encounter.participant.individual|AU Core Practitioner, AU Core PractitionerRole, AU Base Related Person|
-|AU Core Encounter|Encounter.reasonReference|AU Core Condition, Observation, AU Core Procedure|
-|AU Core Pathology Result Observation|Observation.performer|AU Core Practitioner, AU Core PractitionerRole, AU Core Organization, AU Core Patient, AU Base RelatedPerson|
-|AU Core Procedure|Procedure.reasonReference|AU Core Condition, Observation, AU Core Procedure, DocumentReference|
-|AU Core MedicationRequest|MedicationRequest.requester|AU Core Practitioner, AU Core PractitionerRole, AU Core Organization, AU Core Patient, AU Base Related Person|
-|AU Core MedicationRequest|MedicationRequest.reasonReference|AU Core Condition, Observation|
+The table below provides identifies where a Profile has a Must Support reference to other profiles or resources (i.e., Target Profiles).
+
+|Resource Type|Profile|Supported Target Reference|
+|---|---|---|---|
+|ServiceRequest|[AU eRequesting ServiceRequest](StructureDefinition-au-erequesting-servicerequest.html), [AU eRequesting Imaging Request](StructureDefinition-au-erequesting-servicerequest-imag.html), [AU eRequesting Pathology Request](StructureDefinition-au-erequesting-servicerequest-path.html)|[AU Base Coverage](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-coverage.html), [AU Core Encounter](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-encounter.html), [AU Core Patient](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-patient.html), [AU Core PractitionerRole](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-practitionerrole.html)|
+|Coverage|[AU Base Coverage](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-coverage.html)|-|
+|Encounter|[AU Core Encounter](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-encounter.html)|[AU Core Condition](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-condition.html), [AU Core Location](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-location.html), [Observation](http://hl7.org/fhir/R4/observation.html), [AU Core Organization](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-organization.html), [AU Core Patient](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-patient.html), [AU Core Practitioner](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-practitioner.html), [AU Core PractitionerRole](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-practitionerrole.html), [AU Core Procedure](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-procedure.html), [AU Base Related Person](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-relatedperson.html)|
+|Organization|[AU Core Organization](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-organization.html)|-|
+|Patient|[AU Core Patient](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-patient.html)|
+|PractitionerRole|[AU Core PractitionerRole](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-practitionerrole.html)|[AU Core Organization](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-organization.html), [AU Core Practitioner](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-practitioner.html)|
+|Practitioner|[AU Core Practitioner](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-practitioner.html)|-|
+|Procedure|AU Core Procedure|AU Core Condition, Observation, AU Core Procedure, DocumentReference|
+{:.grid}
