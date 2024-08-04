@@ -3,15 +3,20 @@
 ### Introduction
 AU eRequesting is provided to support the use of HL7<sup>&reg;</sup> FHIR<sup>&reg;&copy;</sup> for clinical requesting and ordering in an Australian context. It sets the minimum expectations on FHIR resources to support conformance and implementation in systems.
 
-AU eRequesting sets the minimum expectations for a system to record, update, search and retrieve information associated with a clinical service request. 
+AU eRequesting defines the Data model and RESTful API interactions that set minimum expectations for placing and accessing electronic requests for patients.
+
+The focus AU eRequesting Release 1 (R1) is support of pathology and medical imaging requests in community-based care provision, and developing a foundational request model that can be applied beyond diagnostic requesting. 
+
 
 ### Project background
 
-This implementation guide is under development through the AU eRequesting project as part of the [Sparked AU FHIR Accelerator](https://confluence.hl7.org/display/HA/Sparked+FHIR+Accelerator). The Sparked AU FHIR Accelerator is a community comprising government, technology vendors, provider organisations, peak bodies, practitioners, and domain experts, to accelerate the creation and use of national FHIR standards in health care information exchange.
+This implementation guide is under development through the AU eRequesting project as part of the [Sparked AU FHIR Accelerator](https://sparked.csiro.au). The Sparked AU FHIR Accelerator is a community comprising government, technology vendors, provider organisations, peak bodies, practitioners, and domain experts, to accelerate the creation and use of national FHIR standards in health care information exchange.
 
 The AU eRequesting project includes:
 - AU eRequesting Data for Interoperability
 - AU eRequesting FHIR Implementation Guide
+
+The [Australian eRequesting Data for Interoperability (AUeReqDI)](https://sparked.csiro.au/index.php/sparked-products-resources/auereqdi/auereqdi-release-1/) is focused on an agreement of the minimum data required to support standardised eRequesting within the Australian health context, and forms a common language foundation that allows systems to exchange semantically accurate data for eRequests. AUeReqDI outputs form a set of data requirements to be considered and referred to as part of the development and definition of AU eRequesting. 
 
 {% include dev-note.md -%}
 
