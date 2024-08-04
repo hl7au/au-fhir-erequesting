@@ -9,59 +9,19 @@
   <title value="AU eRequesting Server CapabilityStatement"/>
   <status value="draft"/>
   <description value="This CapabilityStatement describes the basic rules for the [AU eRequesting Server actor](ActorDefinition-au-erequesting-actor-server.html) that is  is a system that accepts diagnostic service requests and makes diagnostic service requests accessible. The complete list of FHIR profiles, RESTful operations, and search parameters supported by AU eRequesting servers are defined in this CapabilityStatement.&#xA;&#xA; 
-<div class="table-responsive">
-<table class="grid">
-  <thead>
-    <tr>
-      <th>AU Core Profile</th>
-      <th>Must Support Element</th>
-      <th>Reference</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>AU Core Diagnostic Result Observation</td>
-      <td>Observation.performer</td>
-      <td>AU Core Practitioner, AU Core PractitionerRole, AU Core Organization, AU Core Patient, AU Base RelatedPerson</td>
-    </tr>
-    <tr>
-      <td>AU Core Diagnostic Result Observation</td>
-      <td>Observation.hasMember</td>
-      <td>AU Core Diagnostic Result Observation, AU Core Pathology Result Observation</td>
-    </tr>
-    <tr>
-      <td>AU Core Encounter</td>
-      <td>Encounter.participant.individual</td>
-      <td>AU Core Practitioner, AU Core PractitionerRole, AU Base Related Person</td>
-    </tr>
-    <tr>
-      <td>AU Core Encounter</td>
-      <td>Encounter.reasonReference</td>
-      <td>AU Core Condition, Observation, AU Core Procedure</td>
-    </tr>
-    <tr>
-      <td>AU Core Pathology Result Observation</td>
-      <td>Observation.performer</td>
-      <td>AU Core Practitioner, AU Core PractitionerRole, AU Core Organization, AU Core Patient, AU Base RelatedPerson</td>
-    </tr>
-    <tr>
-      <td>AU Core Procedure</td>
-      <td>Procedure.reasonReference</td>
-      <td>AU Core Condition, Observation, AU Core Procedure, DocumentReference</td>
-    </tr>
-    <tr>
-      <td>AU Core MedicationRequest</td>
-      <td>MedicationRequest.requester</td>
-      <td>AU Core Practitioner, AU Core PractitionerRole, AU Core Organization, AU Core Patient, AU Base Related Person</td>
-    </tr>
-    <tr>
-      <td>AU Core MedicationRequest</td>
-      <td>MedicationRequest.reasonReference</td>
-      <td>AU Core Condition, Observation</td>
-    </tr>
-  </tbody>
-</table>
-</div>"/>
+
+  
+|AU Core Profile |Must Support Element|Reference|
+---|---|---
+|AU Core Diagnostic Result Observation|Observation.performer|AU Core Practitioner, AU Core PractitionerRole, AU Core Organization, AU Core Patient, AU Base RelatedPerson|
+|AU Core Diagnostic Result Observation|Observation.hasMember|AU Core Diagnostic Result Observation, AU Core Pathology Result Observation|
+|AU Core Encounter|Encounter.participant.individual|AU Core Practitioner, AU Core PractitionerRole, AU Base Related Person|
+|AU Core Encounter|Encounter.reasonReference|AU Core Condition, Observation, AU Core Procedure|
+|AU Core Pathology Result Observation|Observation.performer|AU Core Practitioner, AU Core PractitionerRole, AU Core Organization, AU Core Patient, AU Base RelatedPerson|
+|AU Core Procedure|Procedure.reasonReference|AU Core Condition, Observation, AU Core Procedure, DocumentReference|
+|AU Core MedicationRequest|MedicationRequest.requester|AU Core Practitioner, AU Core PractitionerRole, AU Core Organization, AU Core Patient, AU Base Related Person|
+|AU Core MedicationRequest|MedicationRequest.reasonReference|AU Core Condition, Observation|
+"/>
   <kind value="requirements"/>
   <fhirVersion value="4.0.1"/>
   <format value="json">
