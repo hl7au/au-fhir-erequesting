@@ -48,8 +48,8 @@ Usage: #definition
 * description = "The eRequesting Server is a system that accepts diagnostic service requests and makes diagnostic service requests accessible."
 * type = #system
 * documentation = "An AU eRequesting Server (server):&#xa;&#xa;
-- **SHALL** specify the implemented resource types, associated AU eRequesting profiles, REST API interactions and search parameters in the server’s CapabilityStatement.&#xa;&#xa;
 - **SHALL** implement the [mandatory](conformance.html#mandatory-elements) and/or [Must Support](conformance.html#must-support-and-obligation) requirements for the elements defined as such in the implemented AU eRequesting profiles.&#xa;&#xa;
 - **SHALL** implement the required REST API interactions and search parameters as defined in the AU eRequesting Server Capability Statement.&#xa;&#xa;
+- **SHALL** specify the implemented resource types, associated AU eRequesting profiles, REST API interactions and search parameters in the server’s CapabilityStatement.&#xa;&#xa;
 - **SHOULD** declare conformance to the AU eRequesting Server Capability Statement in the server’s CapabilityStatement."
 * capabilities = "http://hl7.org.au/fhir/ereq/CapabilityStatement/au-erequesting-server"

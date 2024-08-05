@@ -11,9 +11,9 @@ An [AU eRequesting Patient Access](ActorDefinition-au-erequesting-actor-patienta
 - **SHALL** implement the required REST API interactions and search parameters as defined in the AU eRequesting Patient Access Capability Statement.
 
 An [AU eRequesting Server](ActorDefinition-au-erequesting-actor-server.html):
-- **SHALL** specify the implemented resource types, associated AU eRequesting profiles, REST API interactions and search parameters in the server's CapabilityStatement.
 - **SHALL** implement the [mandatory](#mandatory-elements) and/or [Must Support](#must-support-and-obligation) requirements for the elements defined as such in the implemented AU eRequesting profiles.
 - **SHALL** implement the required REST API interactions and search parameters as defined in the [AU eRequesting Server Capability Statement](CapabilityStatement-au-erequesting-server.html#resourcesSummary1).
+- **SHALL** specify the implemented resource types, associated AU eRequesting profiles, REST API interactions and search parameters in the server's CapabilityStatement.
 - **SHOULD** [declare conformance](#declaring-conformance) to the [AU eRequesting Server Capability Statement](CapabilityStatement-au-erequesting-server.html) in the server's CapabilityStatement.
 
 Implementers are advised to be familiar with the requirements of the FHIR standard when implementing AU eRequesting, in particular:
@@ -76,6 +76,8 @@ Mandatory elements are elements with minimum cardinality > 0. When an element is
 An element can be both *Must Support* and mandatory, in which case the guidance for mandatory's Missing Data apply as described in AU Core [Missing Must Support and Mandatory Data](https://build.fhir.org/ig/hl7au/au-fhir-core/general-requirements.html#missing-must-support-and-mandatory-data).
 
 The convention in this guide is to mark all mandatory elements as *Must Support* unless they are nested under an optional element.
+
+<p class="request-for-feedback">Input is requested on the appropriateness of allowing Missing Data or Suppressed Data for all elements. Please comment by raising <a href="https://jira.hl7.org/projects/FHIR/issues">HL7 Jira Issues</a>.</p>
 
 ### Must Support and Obligation
 Labelling an element *[Must Support](https://www.hl7.org/fhir/conformance-rules.html#mustSupport)* means that systems that produce or consume resources **SHALL** provide support for the element in some meaningful way. The FHIR standard does not define exactly what 'meaningful' support for an element means, but indicates that a profile **SHALL** make clear exactly what kind of support is required when an element is labelled as *Must Support*.
