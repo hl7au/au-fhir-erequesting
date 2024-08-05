@@ -14,7 +14,7 @@ An [AU eRequesting Server](ActorDefinition-au-erequesting-actor-server.html):
 - **SHALL** specify the implemented resource types, associated AU eRequesting profiles, REST API interactions and search parameters in the server's CapabilityStatement.
 - **SHALL** implement the [mandatory](#mandatory-elements) and/or [Must Support](#must-support-and-obligation) requirements for the elements defined as such in the implemented AU eRequesting profiles.
 - **SHALL** implement the required REST API interactions and search parameters as defined in the [AU eRequesting Server Capability Statement](CapabilityStatement-au-erequesting-server.html#resourcesSummary1).
-- **SHOULD** [declare conformance](#declaring-conformance.html) to the [AU eRequesting Server Capability Statement](CapabilityStatement-au-erequesting-server.html) in the server's CapabilityStatement.
+- **SHOULD** [declare conformance](#declaring-conformance) to the [AU eRequesting Server Capability Statement](CapabilityStatement-au-erequesting-server.html) in the server's CapabilityStatement.
 
 Implementers are advised to be familiar with the requirements of the FHIR standard when implementing AU eRequesting, in particular:
 - [FHIR Terminology requirements](http://hl7.org/fhir/R4/terminologies.html)
@@ -40,13 +40,13 @@ AU eRequesting profile elements include mandatory and *Must Support* requirement
 #### AU eRequesting Capability Statements
 The [AU eRequesting Placer CapabilityStatement](CapabilityStatement-au-erequesting-placer.html) defines the conformance requirements and expectations of an [AU eRequesting Placer](ActorDefinition-au-erequesting-actor-placer.html) actor responsible for initiating and creating diagnostic service requests. The complete list of FHIR profiles, REST API interactions, and search parameters that can be implemented by an AU eRequesting Placer are defined in this capability statement. AU eRequesting placers define their capabilities by choosing from this list based on the resource types they need need to place requests. 
 
-The [AU eRequesting Server CapabilityStatement](CapabilityStatement-au-erequesting-server.html) defines the conformance requirements and expectations of an [AU eRequesting Server](ActorDefinition-au-erequesting-actor-server.html) actor responsible for accepts diagnostic service requests and makes diagnostic service requests accessible. The complete list of FHIR profiles, REST API interactions, and search parameters that can be implemented by an AU eRequesting Server are defined in this capability statement. An AU eRequesting Server declares conformance to this list of capabilities based on the resource types and interactions it implement.
+The [AU eRequesting Server CapabilityStatement](CapabilityStatement-au-erequesting-server.html) defines the conformance requirements and expectations of an [AU eRequesting Server](ActorDefinition-au-erequesting-actor-server.html) actor responsible for accepting diagnostic service requests and making diagnostic service requests accessible. The complete list of FHIR profiles, REST API interactions, and search parameters that can be implemented by an AU eRequesting Server are defined in this capability statement. An AU eRequesting Server declares conformance to this list of capabilities based on the resource types and interactions it implements.
 
 The AU eRequesting Filler CapabilityStatement and AU eRequesting Patient Access CapabilityStatement are not yet defined.
 
 ### Declaring Conformance
 Servers that are conformant to the AU eRequesting API declare conformance by:
-* hosting a capability statement at [url]/metadata that is available to both authenticated and unauthenticated clients and that declares that IPA is supported using CapabilityStatement.instantiates, as shown in the following fragment:
+* hosting a capability statement at [url]/metadata that is available to both authenticated and unauthenticated clients and that declares that AU eRequesting is supported using CapabilityStatement.instantiates, as shown in the following fragment:
 
     ```
     {
@@ -80,7 +80,7 @@ The convention in this guide is to mark all mandatory elements as *Must Support*
 ### Must Support and Obligation
 Labelling an element *[Must Support](https://www.hl7.org/fhir/conformance-rules.html#mustSupport)* means that systems that produce or consume resources **SHALL** provide support for the element in some meaningful way. The FHIR standard does not define exactly what 'meaningful' support for an element means, but indicates that a profile **SHALL** make clear exactly what kind of support is required when an element is labelled as *Must Support*.
 
-Because AU eRequesting is a foundational standard, *Must Support* needs to be defined a way that does not impede or prescribe what a system does with the data, so as not to impede each implementation’s ability to tighten and define expectations for use under their own business rules, regulations, policies, etc. There is also a challenge that comes from inheritance of *Must Support* flags into implementation guides that have strict definitions for *Must Support* (e.g., must be able to display this value to an end user). AU eRequesting will only apply the *Must Support* flag on the elements that are necessary to support _minimum_ requirements and are expected to be flagged as *Must Support* across the majority of Australian FHIR implementation guides.
+Because AU eRequesting is a foundational standard, *Must Support* needs to be defined in a way that does not impede or prescribe what a system does with the data, so as not to impede each implementation’s ability to tighten and define expectations for use under their own business rules, regulations, policies, etc. There is also a challenge that comes from inheritance of *Must Support* flags into implementation guides that have strict definitions for *Must Support* (e.g., must be able to display this value to an end user). AU eRequesting will only apply the *Must Support* flag on the elements that are necessary to support _minimum_ requirements and are expected to be flagged as *Must Support* across the majority of Australian FHIR implementation guides.
 
 *Must Support* elements are treated differently between different AU eRequesting actors. In AU eRequesting, the meaning of *Must Support* is specified in terms of [Obligation Codes](https://hl7.org/fhir/extensions/CodeSystem-obligation.html) in [obligation extensions](https://hl7.org/fhir/extensions/StructureDefinition-obligation.html) on the element definition. The obligation codes used to define the minimum obligations of *Must Support* elements in this implementation guide are reiterated below.
 
@@ -110,24 +110,19 @@ Implementers should take note that the full set of constraints (i.e. invariants)
 
 When viewing the raw representation (e.g. XML or JSON) of a profile, elements labelled *Must Support* are flagged as `mustSupport` set to "true". 
 
-Example: AU eRequesting AllergyIntolerance profile showing clinicalStatus and verificationStatus labelled *Must Support*
+Example: AU eRequesting ServiceRequest profile showing identifier labelled *Must Support*
 ~~~
 {
     "resourceType" : "StructureDefinition",
     ...
-    "url" : "http://hl7.org.au/fhir/core/StructureDefinition/au-core-allergyintolerance",
+    "url" : "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest",
     ...
-    "type" : "AllergyIntolerance",
-    "baseDefinition" : "http://hl7.org.au/fhir/StructureDefinition/au-allergyintolerance",     
+    "type" : "ServiceRequest",
+    "baseDefinition" : "http://hl7.org.au/fhir/StructureDefinition/au-diagnosticrequest",     
     ...
            {
-              "id" : "AllergyIntolerance.clinicalStatus",
-              "path" : "AllergyIntolerance.clinicalStatus",
-              "mustSupport" : true
-           },
-           {
-              "id" : "AllergyIntolerance.verificationStatus",
-              "path" : "AllergyIntolerance.verificationStatus",
+              "id" : "ServiceRequest.identifier",
+              "path" : "ServiceRequest.identifier",
               "mustSupport" : true
            },
     ...
