@@ -6,7 +6,7 @@
         <valueString value="Practitioner - Dr. Jarred Guthridge"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
-        <valueMarkdown value="Shows an example for the *AU Core Practitioner* profile."/>
+        <valueMarkdown value="Shows an example of practitioner who has an HPI-I for the *AU Core Practitioner* profile."/>
     </extension>
     <meta>
         <profile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-practitioner"/>
