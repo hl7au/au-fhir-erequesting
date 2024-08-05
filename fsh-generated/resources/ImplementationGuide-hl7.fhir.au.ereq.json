@@ -105,6 +105,14 @@
       },
       {
         "reference": {
+          "reference": "CapabilityStatement/au-erequesting-patientaccess"
+        },
+        "description": "This CapabilityStatement describes the basic rules for the [AU eRequesting Patient Access actor](ActorDefinition-au-erequesting-actor-patientaccess.html) that is responsible for provding access to patients and their representatives to view and manage requests for diagnostic services. The complete list of FHIR profiles, RESTful operations, and search parameters supported by AU eRequesting placers are defined in this CapabilityStatement.",
+        "exampleBoolean": false,
+        "name": "AU eRequesting Patient Access CapabilityStatement"
+      },
+      {
+        "reference": {
           "reference": "ActorDefinition/au-erequesting-actor-placer"
         },
         "name": "AU eRequesting Placer",

@@ -48,15 +48,15 @@ A system that accepts diagnostic service requests and makes diagnostic service r
 
 ### AU eRequesting FHIR RESTful interactions
 
-The AU eRequesting RESTful interaction requirements, such as read and search operations, are outlined in the AU eRequesting [CapabilityStatements](capability-statements.html).
+The RESTful interaction requirements for AU eRequesting actors, such as read and search operations, are outlined in the AU eRequesting [CapabilityStatements](capability-statements.html).
 
-Below is a diagram that illustrates the interactions between the different actors:
+The diagram below illustrates the interactions between the various actors:
 
 <div> 
-  <img src="au-erequesting-actor-interactions.svg" alt="FHIR RESTful read interactions" style="width:100%"/>
+  <img src="au-erequesting-actor-interactions.svg" alt="FHIR RESTful read interactions" style="width:80%"/>
 </div>
 <br/>
-*Figure 1: FHIR RESTful read interactions*
+*Figure 1: FHIR RESTful interactions*
 <br/>
 
 ### How to read this guide
