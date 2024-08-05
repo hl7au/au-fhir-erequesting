@@ -81,7 +81,7 @@ Column attribute descriptions are as follows:
   </tr>
    <tr>
     <td colspan="2">Billing guidance</td>
-    <td><a href="StructureDefinition-au-erequesting-servicerequest.html">AU eRequesting ServiceRequest</a><br><br><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-coverage.html">AU Base Coverage</a></td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest.html">AU eRequesting ServiceRequest</a><br><br><a href="https://hl7.org.au/fhir/4.2.2-ballot/StructureDefinition-au-coverage.html">AU Base Coverage</a></td>
     <td>ServiceRequest.insurance</td>
     <td>ServiceRequest.insurance references a Coverage resource.</td>
   </tr>
@@ -154,7 +154,7 @@ Column attribute descriptions are as follows:
   </tr>
     <tr>
     <td colspan="2">Billing guidance</td>
-    <td><a href="StructureDefinition-au-erequesting-servicerequest-imag.html">AU eRequesting Imaging Request</a><br><br><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-coverage.html">AU Base Coverage</a></td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest-imag.html">AU eRequesting Imaging Request</a><br><br><a href="https://hl7.org.au/fhir/4.2.2-ballot/StructureDefinition-au-coverage.html">AU Base Coverage</a></td>
     <td>ServiceRequest.insurance</td>
     <td></td>
   </tr>
@@ -215,7 +215,7 @@ Column attribute descriptions are as follows:
   </tr>
     <tr>
     <td colspan="2">Billing guidance</td>
-    <td><a href="StructureDefinition-au-erequesting-servicerequest-path.html">AU eRequesting Pathology Request</a><br><br><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-coverage.html">AU Base Coverage</a></td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest-path.html">AU eRequesting Pathology Request</a><br><br><a href="https://hl7.org.au/fhir/4.2.2-ballot/StructureDefinition-au-coverage.html">AU Base Coverage</a></td>
     <td>ServiceRequest.insurance<br><br>Coverage</td>
     <td>ServiceRequest.insurance references a Coverage resource.</td>
   </tr>
@@ -258,19 +258,19 @@ Column attribute descriptions are as follows:
   <tr>
     <td rowspan="4">Adverse reaction risk summary</td>
     <td colspan="2">Substance name</td>
-    <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-allergyintolerance.html">AU Core AllergyIntolerance</a></td>
+    <td><a href="https://hl7.org.au/fhir/core/1.0.0-ballot/StructureDefinition-au-core-allergyintolerance.html">AU Core AllergyIntolerance</a></td>
     <td>AllergyIntolerance.code</td>
     <td></td>
   </tr>
   <tr>
     <td colspan="2">Manifestation</td>
-    <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-allergyintolerance.html">AU Core AllergyIntolerance</a></td>
+    <td><a href="https://hl7.org.au/fhir/core/1.0.0-ballot/StructureDefinition-au-core-allergyintolerance.html">AU Core AllergyIntolerance</a></td>
     <td>AllergyInterolance.reaction</td>
     <td></td>
   </tr>
   <tr>
     <td colspan="2">Comment</td>
-    <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-allergyintolerance.html">AU Core AllergyIntolerance</a></td>
+    <td><a href="https://hl7.org.au/fhir/core/1.0.0-ballot/StructureDefinition-au-core-allergyintolerance.html">AU Core AllergyIntolerance</a></td>
     <td>AllergyIntolerance.note</td>
     <td></td>
   </tr>
@@ -278,30 +278,30 @@ Column attribute descriptions are as follows:
     <td colspan="2">Last updated</td>
     <td>-</td>
     <td>-</td>
-    <td>This AUCDI element is a <a href="https://build.fhir.org/ig/hl7au/au-fhir-core/future.html#future-candidate-requirements-under-consideration">Future Candidate Requirement Under Consideration</a>. Future versions of AU Core will develop and test approaches to addressing Last Updated.</td>
+    <td>This AUCDI element is a <a href="https://hl7.org.au/fhir/core/1.0.0-ballot/future.html#future-candidate-requirements-under-consideration">Future Candidate Requirement Under Consideration</a>. Future versions of AU Core will develop and test approaches to addressing Last Updated.</td>
   </tr>
   <tr>
     <td rowspan="5">Problem/Diagnosis summary</td>
     <td colspan="2">Problem / Diagnosis name</td>
-    <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-condition.html">AU Core Condition</a></td>
+    <td><a href="https://hl7.org.au/fhir/core/1.0.0-ballot/StructureDefinition-au-core-condition.html">AU Core Condition</a></td>
     <td>Condition.code</td>
     <td></td>
   </tr>
   <tr>
     <td colspan="2">Body site/laterality</td>
-    <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-condition.html">AU Core Condition</a></td>
+    <td><a href="https://hl7.org.au/fhir/core/1.0.0-ballot/StructureDefinition-au-core-condition.html">AU Core Condition</a></td>
     <td>Condition.code</td>
     <td></td>
   </tr>
   <tr>
     <td colspan="2">Status</td>
-    <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-condition.html">AU Core Condition</a></td>
+    <td><a href="https://hl7.org.au/fhir/core/1.0.0-ballot/StructureDefinition-au-core-condition.html">AU Core Condition</a></td>
     <td>Condition.clinicalStatus</td>
     <td></td>
   </tr>
   <tr>
     <td colspan="2">Comment</td>
-    <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-condition.html">AU Core Condition</a></td>
+    <td><a href="https://hl7.org.au/fhir/core/1.0.0-ballot/StructureDefinition-au-core-condition.html">AU Core Condition</a></td>
     <td>Condition.note</td>
     <td></td>
   </tr>
@@ -309,24 +309,24 @@ Column attribute descriptions are as follows:
     <td colspan="2">Last updated</td>
     <td>-</td>
     <td>-</td>
-    <td>This AUCDI element is a <a href="https://build.fhir.org/ig/hl7au/au-fhir-core/future.html#future-candidate-requirements-under-consideration">Future Candidate Requirement Under Consideration</a>. Future versions of AU Core will develop and test approaches to addressing Last Updated.</td>
+    <td>This AUCDI element is a <a href="https://hl7.org.au/fhir/core/1.0.0-ballot/future.html#future-candidate-requirements-under-consideration">Future Candidate Requirement Under Consideration</a>. Future versions of AU Core will develop and test approaches to addressing Last Updated.</td>
   </tr>
     <tr>
     <td rowspan="4">Sex and gender summary</td>
     <td colspan="2">Sex assigned at birth</td>
-    <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-patient.html">AU Core Patient</a></td>
+    <td><a href="https://hl7.org.au/fhir/core/1.0.0-ballot/StructureDefinition-au-core-patient.html">AU Core Patient</a></td>
     <td>Patient.extension.where(url='http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender')</td>
-    <td>The <a href="http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender">Person Recorded Sex or Gender extension</a> is profiled by <a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-rsg-sexassignedab.html">AU Core Sex Assigned At Birth (RSG)</a> to represent the concept of Sex assigned at birth.</td>
+    <td>The <a href="http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender">Person Recorded Sex or Gender extension</a> is profiled by <a href="https://hl7.org.au/fhir/core/1.0.0-ballot/StructureDefinition-au-core-rsg-sexassignedab.html">AU Core Sex Assigned At Birth (RSG)</a> to represent the concept of Sex assigned at birth.</td>
   </tr>
   <tr>
     <td colspan="2">Gender identity</td>
-    <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-patient.html">AU Core Patient</a></td>
+    <td><a href="https://hl7.org.au/fhir/core/1.0.0-ballot/StructureDefinition-au-core-patient.html">AU Core Patient</a></td>
     <td>Patient.extension.where(url='http://hl7.org/fhir/StructureDefinition/individual-genderIdentity')</td>
     <td></td>
   </tr>
   <tr>
     <td colspan="2">Pronoun/s</td>
-    <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-patient.html">AU Core Patient</a></td>
+    <td><a href="https://hl7.org.au/fhir/core/1.0.0-ballot/StructureDefinition-au-core-patient.html">AU Core Patient</a></td>
     <td>Patient.extension.where(url='http://hl7.org/fhir/StructureDefinition/individual-pronouns')</td>
     <td></td>
   </tr>
@@ -334,7 +334,7 @@ Column attribute descriptions are as follows:
     <td colspan="2">Last updated</td>
     <td>-</td>
     <td>-</td>
-    <td>This AUCDI element is a <a href="https://build.fhir.org/ig/hl7au/au-fhir-core/future.html#future-candidate-requirements-under-consideration">Future Candidate Requirement Under Consideration</a>. Future versions of AU Core will develop and test approaches to addressing Last Updated.</td>
+    <td>This AUCDI element is a <a href="https://hl7.org.au/fhir/core/1.0.0-ballot/future.html#future-candidate-requirements-under-consideration">Future Candidate Requirement Under Consideration</a>. Future versions of AU Core will develop and test approaches to addressing Last Updated.</td>
   </tr>
 </tbody>
 </table>

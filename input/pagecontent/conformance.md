@@ -25,8 +25,8 @@ Implementers are advised to be familiar with the requirements of the FHIR standa
 - [FHIR Workflow](https://hl7.org/fhir/R5/workflow.html)
 
 Additionally, implementers are advised to be familiar with the AU Core requirements on:
-- [Missing Data](https://build.fhir.org/ig/hl7au/au-fhir-core/general-requirements.html#missing-data)
-- [Suppressed Data](https://build.fhir.org/ig/hl7au/au-fhir-core/general-requirements.html#suppressed-data)
+- [Missing Data](https://hl7.org.au/fhir/core/1.0.0-ballot/general-requirements.html#missing-data)
+- [Suppressed Data](https://hl7.org.au/fhir/core/1.0.0-ballot/general-requirements.html#suppressed-data)
 
 The requirements of the FHIR standard and [FHIR Conformance Rules](http://hl7.org/fhir/conformance-rules.html) apply, and define the use of terms in this guide including the conformance verbs - **SHALL**, **SHALL NOT**, **SHOULD**, **SHOULD NOT**, **MAY**.
 
@@ -73,9 +73,9 @@ In FHIR, resources are exchanged in the following formats: JSON, XML, and Turtle
 <p class="request-for-feedback">Input is requested on the appropriateness of mandating JSON or XML. Please comment by raising <a href="https://jira.hl7.org/projects/FHIR/issues">HL7 Jira Issues</a>.</p>
 
 ### Mandatory Elements
-Mandatory elements are elements with minimum cardinality > 0. When an element is mandatory, the data is expected to always be present. Very rarely, it may not be, and in this circumstance see the guidance in AU Core on [Missing Data](https://build.fhir.org/ig/hl7au/au-fhir-core/general-requirements.html#missing-data). 
+Mandatory elements are elements with minimum cardinality > 0. When an element is mandatory, the data is expected to always be present. Very rarely, it may not be, and in this circumstance see the guidance in AU Core on [Missing Data](https://hl7.org.au/fhir/core/1.0.0-ballot/general-requirements.html#missing-data). 
 
-An element can be both *Must Support* and mandatory, in which case the guidance for mandatory's Missing Data apply as described in AU Core [Missing Must Support and Mandatory Data](https://build.fhir.org/ig/hl7au/au-fhir-core/general-requirements.html#missing-must-support-and-mandatory-data).
+An element can be both *Must Support* and mandatory, in which case the guidance for mandatory's Missing Data apply as described in AU Core [Missing Must Support and Mandatory Data](https://hl7.org.au/fhir/core/1.0.0-ballot/general-requirements.html#missing-must-support-and-mandatory-data).
 
 The convention in this guide is to mark all mandatory elements as *Must Support* unless they are nested under an optional element.
 

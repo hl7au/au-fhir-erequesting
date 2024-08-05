@@ -1,4 +1,4 @@
-This guide is built on top of the FHIR standard and, where available, [AU Base](https://build.fhir.org/ig/hl7au/au-fhir-base/). It is compliant with the profile conformance requirements in [AU Core](https://build.fhir.org/ig/hl7au/au-fhir-core/).
+This guide is built on top of the FHIR standard and, where available, [AU Base](https://hl7.org.au/fhir/4.2.2-ballot/). It is compliant with the profile conformance requirements in [AU Core](https://hl7.org.au/fhir/core/1.0.0-ballot/).
 
 <div> 
     <img src="relationship.png" alt="Relationship with HL7 AU Base" style="width:70%"/>
@@ -41,8 +41,8 @@ The relationship of AU eRequesting to AUeReqDI and other implementation guides i
 
 Implementation Guide |Relationship
 ---|---
-[AU Base](https://build.fhir.org/ig/hl7au/au-fhir-base/)|This IG defines Australian realm concepts including terminology, identifiers, and extensions. AU Core uses AU Base, where available, as the basis for profiles that define the FHIR resources to be supported, and the elements, extensions, vocabularies, and value sets that SHALL be present are identified, and how they are used is defined.
-[AU Core](https://build.fhir.org/ig/hl7au/au-fhir-core/)|This IG defines a set of conformance requirements that enforce a set of 'minimum requirements' on the local concepts from AU Base, specifying the elements, extensions, vocabularies, and value sets that SHALL be present and how they SHALL be used, along with the RESTful API interactions. AU eRequesting is compliant with the profile conformance requirements in [AU Core](https://build.fhir.org/ig/hl7au/au-fhir-core/).
+[AU Base](https://hl7.org.au/fhir/4.2.2-ballot/)|This IG defines Australian realm concepts including terminology, identifiers, and extensions. AU Core uses AU Base, where available, as the basis for profiles that define the FHIR resources to be supported, and the elements, extensions, vocabularies, and value sets that SHALL be present are identified, and how they are used is defined.
+[AU Core](https://hl7.org.au/fhir/core/1.0.0-ballot/)|This IG defines a set of conformance requirements that enforce a set of 'minimum requirements' on the local concepts from AU Base, specifying the elements, extensions, vocabularies, and value sets that SHALL be present and how they SHALL be used, along with the RESTful API interactions. AU eRequesting is compliant with the profile conformance requirements in [AU Core](https://hl7.org.au/fhir/core/1.0.0-ballot/).
 [HL7 Cross Paradigm Implementation Guide: Gender Harmony - Sex and Gender Representation](https://hl7.org/xprod/ig/uv/gender-harmony/informative1/)|This IG provides definitive guidance on how to exchange clinical sex and gender affirming information using HL7 models. Sex and gender concepts from this IG have been reviewed for the potential for adoption in Australia. Where adopted, these concepts are included by reference in AU Base and profiled in AU Core.
 {:.grid}
 
