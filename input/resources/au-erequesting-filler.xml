@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-  <id value="au-erequesting-server"/>
+  <id value="au-erequesting-filler"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="0"/>
   </extension>
-  <url value="http://hl7.org.au/fhir/ereq/CapabilityStatement/au-erequesting-server"/>
-  <name value="AUeRequestingServerCapabilityStatement"/>
-  <title value="AU eRequesting Server CapabilityStatement"/>
+  <url value="http://hl7.org.au/fhir/ereq/CapabilityStatement/au-erequesting-filler"/>
+  <name value="AUeRequestingFillerCapabilityStatement"/>
+  <title value="AU eRequesting Filler CapabilityStatement"/>
   <status value="draft"/>
-  <description value="This CapabilityStatement describes the basic rules for the [AU eRequesting Server actor](ActorDefinition-au-erequesting-actor-server.html) that is  is a system that accepts diagnostic service requests and makes diagnostic service requests accessible. The complete list of FHIR profiles, RESTful operations, and search parameters supported by AU eRequesting servers are defined in this CapabilityStatement."/>
+  <description value="This CapabilityStatement describes the basic rules for the [AU eRequesting Filler actor](ActorDefinition-au-erequesting-actor-filler.html) that is  is a system that accepts diagnostic service requests and makes diagnostic service requests accessible. The complete list of FHIR profiles, RESTful operations, and search parameters supported by AU eRequesting fillers are defined in this CapabilityStatement."/>
   <kind value="requirements"/>
   <fhirVersion value="4.0.1"/>
   <format value="json">
@@ -37,8 +37,8 @@
     </extension>
   </implementationGuide>
   <rest>
-    <mode value="server"/>
-    <documentation value="The AU eRequesting Server **SHALL**:&#xA;1. Support at least one AU eRequesting ServiceRequest profile, and the conformance expectations for the ServiceRequest resource. &#xA;1. Implement the RESTful behavior according to the FHIR specification."/>
+    <mode value="filler"/>
+    <documentation value="The AU eRequesting Filler **SHALL**:&#xA;1. Support at least one AU eRequesting ServiceRequest profile, and the conformance expectations for the ServiceRequest resource. &#xA;1. Implement the RESTful behavior according to the FHIR specification."/>
     <security>
       <description value="None defined."/>
     </security>
@@ -63,18 +63,12 @@
           <valueCode value="SHOULD"/>
         </extension>
       </supportedProfile>
-      <documentation value="Servers **SHALL** support the ServiceRequest resource, at least one AU eRequesting ServiceRequest profile, and the conformance expectations for the ServiceRequest resource."/>
+      <documentation value="Fillers **SHALL** support the ServiceRequest resource, at least one AU eRequesting ServiceRequest profile, and the conformance expectations for the ServiceRequest resource."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
         <code value="read"/>
-      </interaction>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <code value="create"/>
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -122,7 +116,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Servers **SHOULD** support the Coverage resource, the AU Base profile, and the conformance expectations for the Coverage resource."/>
+      <documentation value="Fillers **SHOULD** support the Coverage resource, the AU Base profile, and the conformance expectations for the Coverage resource."/>
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -141,7 +135,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Servers **SHOULD** support the Encounter resource, the AU Core profile, and the conformance expectations for the Encounter resource."/>
+      <documentation value="Fillers **SHOULD** support the Encounter resource, the AU Core profile, and the conformance expectations for the Encounter resource."/>
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -160,7 +154,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Servers **SHOULD** support the Organization resource, the AU Core profile, and the conformance expectations for the Organization resource."/>
+      <documentation value="Fillers **SHOULD** support the Organization resource, the AU Core profile, and the conformance expectations for the Organization resource."/>
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -179,7 +173,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Servers **SHOULD** support the Patient resource, the AU Core profile, and the conformance expectations for the Patient resource."/>
+      <documentation value="Fillers **SHOULD** support the Patient resource, the AU Core profile, and the conformance expectations for the Patient resource."/>
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -198,7 +192,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Servers **SHOULD** support the Practitioner resource, the AU Core profile, and the conformance expectations for the Practitioner resource."/>
+      <documentation value="Fillers **SHOULD** support the Practitioner resource, the AU Core profile, and the conformance expectations for the Practitioner resource."/>
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -217,7 +211,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Servers **SHOULD** support the PractitionerRole resource, the AU Core profile, and the conformance expectations for the PractitionerRole resource."/>
+      <documentation value="Fillers **SHOULD** support the PractitionerRole resource, the AU Core profile, and the conformance expectations for the PractitionerRole resource."/>
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -236,7 +230,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Servers **MAY** support the Condition resource, the AU Core profile, and the conformance expectations for the Condition resource."/>
+      <documentation value="Fillers **MAY** support the Condition resource, the AU Core profile, and the conformance expectations for the Condition resource."/>
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -255,7 +249,7 @@
           <valueCode value="MAY"/>
         </extension>
       </supportedProfile>
-      <documentation value="Servers **MAY** support the DocumentReference resource."/>
+      <documentation value="Fillers **MAY** support the DocumentReference resource."/>
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -274,7 +268,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Servers **MAY** support the Location resource, the AU Core profile, and the conformance expectations for the Location resource."/>
+      <documentation value="Fillers **MAY** support the Location resource, the AU Core profile, and the conformance expectations for the Location resource."/>
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -293,7 +287,7 @@
           <valueCode value="MAY"/>
         </extension>
       </supportedProfile>
-      <documentation value="Servers **MAY** support the Observation resource."/>
+      <documentation value="Fillers **MAY** support the Observation resource."/>
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -312,7 +306,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Servers **MAY** support the Procedure resource, the AU Core profile, and the conformance expectations for the Procedure resource."/>
+      <documentation value="Fillers **MAY** support the Procedure resource, the AU Core profile, and the conformance expectations for the Procedure resource."/>
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -331,7 +325,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Servers **MAY** support the RelatedPerson resource, the AU Base profile, and the conformance expectations for the RelatedPerson resource."/>
+      <documentation value="Fillers **MAY** support the RelatedPerson resource, the AU Base profile, and the conformance expectations for the RelatedPerson resource."/>
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">

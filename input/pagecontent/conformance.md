@@ -4,11 +4,11 @@ An [AU eRequesting Placer](ActorDefinition-au-erequesting-actor-placer.html):
 
 An [AU eRequesting Filler](ActorDefinition-au-erequesting-actor-filler.html):
 - **SHALL** implement the [mandatory](#mandatory-elements) and/or [Must Support](#must-support-and-obligation) requirements for the elements defined as such in the implemented AU eRequesting profiles.
-- **SHALL** implement the required REST API interactions and search parameters as defined in the AU eRequesting Filler Capability Statement.
+- **SHALL** implement the required REST API interactions and search parameters as defined in the [AU eRequesting Filler Capability Statement](CapabilityStatement-au-erequesting-filler.html#resourcesSummary1).
 
 An [AU eRequesting Patient Access](ActorDefinition-au-erequesting-actor-patientaccess.html):
 - **SHALL** implement the [mandatory](#mandatory-elements) and/or [Must Support](#must-support-and-obligation) requirements for the elements defined as such in the implemented AU eRequesting profiles.
-- **SHALL** implement the required REST API interactions and search parameters as defined in the AU eRequesting Patient Access Capability Statement.
+- **SHALL** implement the required REST API interactions and search parameters as defined in the [AU eRequesting Patient Access Capability Statement]((CapabilityStatement-au-erequesting-patientaccess.html#resourcesSummary1)).
 
 An [AU eRequesting Server](ActorDefinition-au-erequesting-actor-server.html):
 - **SHALL** implement the [mandatory](#mandatory-elements) and/or [Must Support](#must-support-and-obligation) requirements for the elements defined as such in the implemented AU eRequesting profiles.
