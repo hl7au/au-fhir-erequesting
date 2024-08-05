@@ -23,6 +23,10 @@ jobs:
         unzip -q awscliv2.zip
         ./aws/install
     
+    - name: install sushi
+      run: |
+        npm install -g fsh-sushi
+    
     - name: Get the tag name
       id: get_tag
       run: echo "##[set-output name=tag;]${GITHUB_REF#refs/tags/}"
