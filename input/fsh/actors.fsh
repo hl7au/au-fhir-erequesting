@@ -24,6 +24,7 @@ Usage: #definition
 * documentation = "An AU eRequesting Filler (client):&#xa;&#xa;
 - **SHALL** implement the [mandatory](conformance.html#mandatory-elements) and/or [Must Support](conformance.html#must-support-and-obligation) requirements for the elements defined as such in the implemented AU eRequesting profiles.&#xa;&#xa;
 - **SHALL** implement the required REST API interactions and search parameters as defined in the AU eRequesting Filler Capability Statement."
+* capabilities = "http://hl7.org.au/fhir/ereq/CapabilityStatement/au-erequesting-filler"
 
 Instance: au-erequesting-actor-patientaccess
 InstanceOf: ActorDefinition
@@ -37,6 +38,7 @@ Usage: #definition
 * documentation = "An AU eRequesting Patient Access (client):&#xa;&#xa;
 - **SHALL** implement the [mandatory](conformance.html#mandatory-elements) and/or [Must Support](conformance.html#must-support-and-obligation) requirements for the elements defined as such in the implemented AU eRequesting profiles.&#xa;&#xa;
 - **SHALL** implement the required REST API interactions and search parameters as defined in the AU eRequesting Patient Access Capability Statement."
+* capabilities = "http://hl7.org.au/fhir/ereq/CapabilityStatement/au-erequesting-patientaccess"
 
 Instance: au-erequesting-actor-server
 InstanceOf: ActorDefinition
