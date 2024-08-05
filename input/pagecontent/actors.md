@@ -29,8 +29,8 @@ Actors operate in a typical sequence where placers initiate a request by creatin
 </figure>
 <p></p>
 
-The [AU eRequesting Placer actor](ActorDefinition-au-erequesting-actor-placer.html) can create and update ServiceRequest details by calling the [AU eRequesting Server actor](ActorDefinition-au-erequesting-actor-server.html).
+The AU eRequesting Placer actor can create and update ServiceRequest details by calling the AU eRequesting Server actor.
 
-The [AU eRequesting Patient Access actor](ActorDefinition-au-erequesting-actor-patientaccess.html) can search for ServiceRequest details by calling the [AU eRequesting Server actor](ActorDefinition-au-erequesting-actor-server.html).
+The AU eRequesting Patient Access actor can search for ServiceRequest details by calling the AU eRequesting Server actor.
 
-The [AU eRequesting Filler actor](ActorDefinition-au-erequesting-actor-filler.html) can retrieve ServiceRequest details by calling the [AU eRequesting Server actor](ActorDefinition-au-erequesting-actor-server.html).
+The AU eRequesting Filler actor can retrieve ServiceRequest details by calling the AU eRequesting Server actor.
