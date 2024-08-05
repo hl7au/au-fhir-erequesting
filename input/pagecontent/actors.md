@@ -27,8 +27,7 @@ Actors operate in a typical sequence where placers initiate a request by creatin
 </div>
 <figcaption>Figure - Actors Typical Sequence</figcaption>
 </figure>
-
-
+<p></p>
 
 The [AU eRequesting Placer actor](ActorDefinition-au-erequesting-actor-placer.html) can create and update ServiceRequest details by calling the [AU eRequesting Server actor](ActorDefinition-au-erequesting-actor-server.html).
 
