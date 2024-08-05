@@ -69,7 +69,7 @@ Actors operate in a typical sequence where placers initiate a request by creatin
 This sequence is shown in the diagram below:
 
 <div> 
-    <img src="actors-sequence.svg" alt="Actors Typical Sequence" style="width:80%;margin-left:auto;margin-right:auto;display:block"/>
+    <img src="actors-sequence.svg" alt="Actors Typical Sequence" style="width:80%"/>
 </div>
 *Figure 2: Actors Typical Sequence*
 
