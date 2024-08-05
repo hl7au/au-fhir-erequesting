@@ -55,9 +55,29 @@ The diagram below illustrates the interactions between the various actors:
 <div> 
   <img src="au-erequesting-actor-interactions.svg" alt="FHIR RESTful read interactions" style="width:80%"/>
 </div>
-<br/>
 *Figure 1: FHIR RESTful interactions*
 <br/>
+
+### AU eRequesting typical sequence
+
+The AU eRequesting Placer actor can create and update ServiceRequest details by calling the AU eRequesting Server actor.
+
+The AU eRequesting Patient Access actor can search for ServiceRequest details by calling the AU eRequesting Server actor.
+
+The AU eRequesting Filler actor can retrieve ServiceRequest details by calling the AU eRequesting Server actor.
+
+Actors operate in a typical sequence where placers initiate a request by creating (and updating) service requests, patients may access details of their requests and fillers retrieve service request details to enable fulfillment of the requests. 
+
+This sequence is shown in the diagram below:
+
+<div> 
+    <img src="actors-sequence.svg" alt="Actors Typical Sequence" style="width:80%"/>
+</div>
+*Figure 2: Actors Typical Sequence*
+
+<br/>
+
+
 
 ### How to read this guide
 
