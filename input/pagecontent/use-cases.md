@@ -1,10 +1,8 @@
-In the context of AU eRequesting, use cases focus on standirdising clinical requesting and ordering within the Australian healthcare system, specifically targeting Pathology and Imaging requests in AU eRequesting Release 1 (R1). The use cases aim to ensure that the system supports accurate and efficient data exchange and workflow management.
+The use cases for AU eRequesting focus on standirdising clinical requesting and ordering within the Australian healthcare system, specifically targeting Pathology and Imaging requests in AU eRequesting R1. These use cases aim to ensure systems support accurate and efficient data exchange and workflow management.
 
-The use cases for AU eRequesting are divided into two main aspects:
-- Workflow Perspective: This aspect covers the entire process of making a request, acknowledging it, and updating the status as it progresses. The workflow is designed to be flexible, accommodating different types of requests while remaining agnostic to specific payloads.
-- Payload and Status Transition: This focuses on the content of the request and the stages it passes through, from initiation to completion. The initial emphasis is on Pathology and Imaging requests, ensuring that these areas are well-supported and clearly defined.
+The use cases inform the development of AU eRequesting R1 by identifying the scope and focus on workflows and the information needed for data exchange. They aim to enable the fulfillment of service requests, provide patients with access to information, and allow the sharing of fulfillment status with requesters.
 
-By addressing these aspects, the use cases for AU eRequesting help establish a framework for standardized eRequests, enabling systems to handle requests efficiently and consistently within the Australian healthcare context.
+Community input is vital for updating AU eRequesting use cases. We encourage our audience to submit questions and feedback on the implementation guide by clicking on the Propose a change link in the footer of every page. We encourage requesting any necessary clarifications to AU eRequesting use cases through the respective process that helps inform future updates to FHIR AU eRequesting.
 
 Column attribute descriptions are as follows:
 - **ID**: A unique identifier for each use case.
