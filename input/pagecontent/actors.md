@@ -16,12 +16,15 @@ The AU eRequesting Patient Access is a system that is the digital interface that
 
 The eRequesting Server is a system that accepts diagnostic service requests and makes diagnostic service requests accessible.
 
-==Typical Sequence==
+## Actor Interaction
 Actors in eRequesting interact with each other to enable service requests to be placed, filled and accessed by patients.  
 
+<figure>
 <div> 
     <img src="actors-sequence.png" alt="Actors Typical Sequence" style="width:50%;margin-left:auto;margin-right:auto;display:block"/>
 </div>
+<figcaption>Actors Typical Sequence</figcaption>
+<figure>
 
 The [AU eRequesting Placer actor](ActorDefinition-au-erequesting-actor-placer.html) can create and update ServiceRequest details by calling the [AU eRequesting Server actor](ActorDefinition-au-erequesting-actor-server.html).
 
