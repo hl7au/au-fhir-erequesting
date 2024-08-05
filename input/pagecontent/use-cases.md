@@ -1,8 +1,6 @@
-The use cases for AU eRequesting focus on standirdising clinical requesting and ordering within the Australian healthcare system, specifically targeting Pathology and Imaging requests in AU eRequesting R1. These use cases aim to ensure systems support accurate and efficient data exchange and workflow management.
+The use cases below are those in scope of the first release of AU eRequesting. They are scoped to pathology and medical imaging requesting in community-based care provision. The use cases for AU eRequesting include workflow and information needs for data exchange. These form a basis of cases to be considered and referred to as part of the development and definition of AU eRequesting.
 
-The use cases inform the development of AU eRequesting R1 by identifying the scope and focus on workflows and the information needed for data exchange. They aim to enable the fulfillment of service requests, provide patients with access to information, and allow the sharing of fulfillment status with requesters.
-
-Community input is vital for updating AU eRequesting use cases. We encourage our audience to submit questions and feedback on the implementation guide by clicking on the Propose a change link in the footer of every page. We encourage requesting any necessary clarifications to AU eRequesting use cases through the respective process that helps inform future updates to FHIR AU eRequesting.
+Community input is vital for updating AU eRequesting use cases. We encourage our audience to submit questions and feedback on the implementation guide by clicking on the Propose a change link in the footer of every page.
 
 Column attribute descriptions are as follows:
 - **ID**: A unique identifier for each use case.
