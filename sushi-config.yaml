@@ -30,9 +30,9 @@ jurisdiction: urn:iso:std:iso:3166#AU
 # use cases, the value can be an object with keys for id, uri, and version.
 dependencies:
   hl7.fhir.au.base:
-    version: current
+    version: 4.2.2-ballot
   hl7.fhir.au.core: 
-    version: current
+    version: 1.0.0-ballot
 # The pages property corresponds to IG.definition.page. SUSHI can
 # auto-generate the page list, but if the author includes pages in
 # this file, it is assumed that the author will fully manage the

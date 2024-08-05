@@ -58,13 +58,13 @@
   "dependsOn": [
     {
       "packageId": "hl7.fhir.au.base",
-      "version": "current",
+      "version": "4.2.2-ballot",
       "uri": "http://hl7.org.au/fhir/ImplementationGuide/hl7.fhir.au.base",
       "id": "hl7_fhir_au_base"
     },
     {
       "packageId": "hl7.fhir.au.core",
-      "version": "current",
+      "version": "1.0.0-ballot",
       "uri": "http://hl7.org.au/fhir/core/ImplementationGuide/hl7.fhir.au.core",
       "id": "hl7_fhir_au_core"
     }
@@ -78,6 +78,14 @@
         "name": "AU eRequesting Filler",
         "description": "The AU eRequesting Filler is a system that is responsible for finding and retrieving diagnostic service requests so that service providers can fulfil them. It ensures that service providers have the necessary information to fulfil the requests and manages the requests through the fulfilment process.",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/au-erequesting-filler"
+        },
+        "description": "This CapabilityStatement describes the basic rules for the [AU eRequesting Filler actor](ActorDefinition-au-erequesting-actor-filler.html) that is responsible for finding and retrieving diagnostic service requests so that service providers can fulfil them. The complete list of FHIR profiles, RESTful operations, and search parameters supported by AU eRequesting fillers are defined in this CapabilityStatement.",
+        "exampleBoolean": false,
+        "name": "AU eRequesting Filler CapabilityStatement"
       },
       {
         "reference": {
@@ -107,7 +115,7 @@
         "reference": {
           "reference": "CapabilityStatement/au-erequesting-patientaccess"
         },
-        "description": "This CapabilityStatement describes the basic rules for the [AU eRequesting Patient Access actor](ActorDefinition-au-erequesting-actor-patientaccess.html) that is responsible for provding access to patients and their representatives to view and manage requests for diagnostic services. The complete list of FHIR profiles, RESTful operations, and search parameters supported by AU eRequesting placers are defined in this CapabilityStatement.",
+        "description": "This CapabilityStatement describes the basic rules for the [AU eRequesting Patient Access actor](ActorDefinition-au-erequesting-actor-patientaccess.html) that is the digital interface that allows patients or their representatives to view and manage requests for diagnostic services. The complete list of FHIR profiles, RESTful operations, and search parameters supported by AU eRequesting patient access clients are defined in this CapabilityStatement.",
         "exampleBoolean": false,
         "name": "AU eRequesting Patient Access CapabilityStatement"
       },
