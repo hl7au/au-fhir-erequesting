@@ -70,40 +70,12 @@
         </extension>
         <code value="read"/>
       </interaction>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <code value="update"/>
-      </interaction>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <code value="search-type"/>
-      </interaction>
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
         </extension>
       </referencePolicy> -->
-      <searchParam>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <name value="_id"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
-        <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <name value="requisition"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/ServiceRequest-requisition"/>
-        <type value="token"/>
-      </searchParam>
     </resource>
     <!-- COVERAGE -->
     <resource>
