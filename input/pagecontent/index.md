@@ -50,13 +50,13 @@ The RESTful interaction requirements for AU eRequesting actors, such as read and
 
 The diagram below illustrates the interactions between the various actors:
 
-<figure>
 <div> 
   <img src="au-erequesting-actor-interactions.svg" alt="FHIR RESTful read interactions" style="width:80%"/>
 </div>
-<figcaption>Figure 1: FHIR RESTful interactions</figcaption>
-</figure>
+*Figure 1: FHIR RESTful interactions*
 <br/>
+
+### AU eRequesting typical sequence
 
 The AU eRequesting Placer actor can create and update ServiceRequest details by calling the AU eRequesting Server actor.
 
@@ -68,12 +68,11 @@ Actors operate in a typical sequence where placers initiate a request by creatin
 
 This sequence is shown in the diagram below:
 
-<figure>
 <div> 
-    <img src="actors-sequence.png" alt="Actors Typical Sequence" style="width:611px;margin-left:auto;margin-right:auto;display:block"/>
+    <img src="actors-sequence.png" alt="Actors Typical Sequence" style="width:80%;margin-left:auto;margin-right:auto;display:block"/>
 </div>
-<figcaption>Figure 2: Actors Typical Sequence</figcaption>
-</figure>
+*Figure 2: Actors Typical Sequence*
+
 <br/>
 
 
