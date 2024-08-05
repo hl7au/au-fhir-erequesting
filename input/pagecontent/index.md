@@ -46,6 +46,18 @@ A system that is the digital interface that allows patients or their representat
 
 A system that accepts diagnostic service requests and makes diagnostic service requests accessible.
 
+### AU eRequesting FHIR RESTful interactions
+
+The AU eRequesting RESTful interaction requirements, such as read and search operations, are outlined in the AU eRequesting [CapabilityStatements](capability-statements.html).
+
+Below is a diagram that illustrates the interactions between the different actors:
+
+<div> 
+  <img src="au-erequesting-actor-interactions.svg" alt="FHIR RESTful read interactions" style="width:100%"/>
+</div>
+<br/>
+*Figure 1: FHIR RESTful read interactions*
+<br/>
 
 ### How to read this guide
 
