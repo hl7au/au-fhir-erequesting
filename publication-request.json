@@ -6,7 +6,7 @@
     "status" : "ballot",
     "sequence" : "AU eRequesting R1",
     "desc" : "This snapshot is published for the August 2024 ballot and Connectathon",
-    "first" : false,
+    "first" : true,
     "title" : "AU eRequesting",
     "ci-build" : "http://build.fhir.org/ig/hl7au/au-fhir-erequesting",
     "category" : "National Base",
