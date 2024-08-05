@@ -8,7 +8,7 @@
   <name value="AUeRequestingPatientAccessCapabilityStatement"/>
   <title value="AU eRequesting Patient Access CapabilityStatement"/>
   <status value="draft"/>
-  <description value="This CapabilityStatement describes the basic rules for the [AU eRequesting Patient Access actor](ActorDefinition-au-erequesting-actor-patientaccess.html) that is  is a system that accepts diagnostic service requests and makes diagnostic service requests accessible. The complete list of FHIR profiles, RESTful operations, and search parameters supported by AU eRequesting patient access clients are defined in this CapabilityStatement."/>
+  <description value="This CapabilityStatement describes the basic rules for the [AU eRequesting Patient Access actor](ActorDefinition-au-erequesting-actor-patientaccess.html) that is the digital interface that allows patients or their representatives to view and manage requests for diagnostic services. The complete list of FHIR profiles, RESTful operations, and search parameters supported by AU eRequesting patient access clients are defined in this CapabilityStatement."/>
   <kind value="requirements"/>
   <fhirVersion value="4.0.1"/>
   <format value="json">
