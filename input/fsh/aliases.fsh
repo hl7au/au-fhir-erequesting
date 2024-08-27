@@ -5,6 +5,7 @@ Alias: $loinc = http://loinc.org
 Alias: $AUCorePatient = http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient
 Alias: $AUCoreEncounter = http://hl7.org.au/fhir/core/StructureDefinition/au-core-encounter
 Alias: $AUCorePractitionerRole = http://hl7.org.au/fhir/core/StructureDefinition/au-core-practitionerrole
+Alias: $AUCoreOrganization = http://hl7.org.au/fhir/core/StructureDefinition/au-core-organization
 
 // AU Base profiles
 Alias: $AULocalOrderIdentifier = http://hl7.org.au/fhir/StructureDefinition/au-localorderidentifier
