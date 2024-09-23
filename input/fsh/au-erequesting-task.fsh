@@ -7,32 +7,41 @@ Description: "This profile sets minimum expectations for a Task resource that is
 * ^status = #draft
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 
+* groupIdentifier 1..1 MS
+* groupIdentifier ^type.profile = "http://hl7.org.au/fhir/StructureDefinition/au-localorderidentifier"
+* groupIdentifier.type.coding 1..1
+* groupIdentifier.type.coding.system 1..1 
+* groupIdentifier.type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203" (exactly) 
+* groupIdentifier.type.coding.code 1..1
+* groupIdentifier.type.coding.code = #PGN (exactly)
+
+* status MS
+
+* statusReason MS
+
+* intent MS
+* intent = #order (exactly)
+
+* priority MS 
+
+* focus 1..1 MS
+* focus only Reference(AUeRequestingPathologyRequest or AUeRequestingImagingRequest)
+
 * for 1..1 MS
 * for only Reference (AUCorePatient)
 
 * requester 1..1 MS
 * requester only Reference(AUCorePractitionerRole)
 
-* groupIdentifier 1..1 MS
-* groupIdentifier ^type.profile = "http://hl7.org.au/fhir/StructureDefinition/au-localorderidentifier"
-* groupIdentifier.type.coding 1..1
-* groupIdentifier.type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203"
-* groupIdentifier.type.coding.code = #PGN
+* authoredOn 1..1 MS
 
-* intent MS
-* intent = #order
-
-* priority MS 
-
-* status MS
-
-* statusReason MS
+* lastModified MS
 
 * owner MS
 * owner only Reference(AUCoreOrganization)
 
-* authoredOn 1..1 MS
 
-* lastModified MS
+
+
 
 
