@@ -1,5 +1,6 @@
 Alias: $sct = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
+Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 
 // AU Core profiles
 Alias: $AUCorePatient = http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient
@@ -15,4 +16,6 @@ Alias: $AUBaseCoverage = http://hl7.org.au/fhir/StructureDefinition/au-coverage
 Alias: $placer = http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer
 Alias: $filler = http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler
 Alias: $patientaccess = http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess
+
+
 

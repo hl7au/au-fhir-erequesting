@@ -8,12 +8,11 @@ Description: "This profile sets minimum expectations for a Task resource that is
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 
 * groupIdentifier 1..1 MS
-* groupIdentifier ^type.profile = "http://hl7.org.au/fhir/StructureDefinition/au-localorderidentifier"
-* groupIdentifier.type.coding 1..1
-* groupIdentifier.type.coding.system 1..1 
-* groupIdentifier.type.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0203" (exactly) 
-* groupIdentifier.type.coding.code 1..1
-* groupIdentifier.type.coding.code = #PGN (exactly)
+* groupIdentifier ^type.profile = $AULocalOrderIdentifier
+* groupIdentifier.type 
+  * coding 1..1    
+  * coding = $v2-0203#PGN
+
 
 * status MS
 
