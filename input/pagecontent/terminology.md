@@ -36,6 +36,7 @@ Many value sets used in this guide are defined in the base FHIR specification, [
 |[Reason for Request](https://healthterminologies.gov.au/fhir/ValueSet/reason-for-request-1)|[AU eRequesting ServiceRequest](StructureDefinition-au-erequesting-servicerequest.html)|NCTS|
 |[RequestIntent](https://hl7.org/fhir/R4/valueset-request-intent.html)|[AU eRequesting ServiceRequest](StructureDefinition-au-erequesting-servicerequest.html)|FHIR|
 |[RequestStatus](https://hl7.org/fhir/R4/valueset-request-status.html)|[AU eRequesting ServiceRequest](StructureDefinition-au-erequesting-servicerequest.html)|FHIR|
+|[TaskStatus](http://hl7.org.au/fhir/ereq/ValueSet/task-status.html)|[AU eRequesting Task](StructureDefinition-au-erequesting-task.html)|FHIR|
 {:.grid}
 
 
