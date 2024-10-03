@@ -24,5 +24,3 @@
 [order-fbc-1]: ServiceRequest-order-fbc-1.html
 [order-xray-1]: ServiceRequest-order-xray-1.html
 [RANZCRRadiologyReferral]: ValueSet-ranzcr-radiology-referral.html
-[task-fbc-1]: Task-task-fbc-1.html
-[task-xray-1]: Task-task-xray-1.html

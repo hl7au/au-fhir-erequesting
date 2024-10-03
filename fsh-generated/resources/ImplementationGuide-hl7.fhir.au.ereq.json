@@ -265,20 +265,6 @@
         "name": "RANZCR Radiology Referral",
         "description": "Standard codes for use in requesting radiology tests in Australia, derived from the RANZCR Radiology Referral Set (RRS).",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Task/task-fbc-1"
-        },
-        "name": "task-fbc-1",
-        "exampleCanonical": "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-task"
-      },
-      {
-        "reference": {
-          "reference": "Task/task-xray-1"
-        },
-        "name": "task-xray-1",
-        "exampleCanonical": "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-task"
       }
     ],
     "page": {
