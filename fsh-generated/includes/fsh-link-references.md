@@ -1,4 +1,7 @@
+[aimee-herbert]: Practitioner-aimee-herbert.html
+[aimee-herbert-pathologist]: PractitionerRole-aimee-herbert-pathologist.html
 [au-erequesting-actor-filler]: ActorDefinition-au-erequesting-actor-filler.html
+[AUeRequestingFillerCapabilityStatement]: CapabilityStatement-au-erequesting-filler.html
 [AUeRequestingImagingRequest]: StructureDefinition-au-erequesting-servicerequest-imag.html
 [AUeRequestingPathologyRequest]: StructureDefinition-au-erequesting-servicerequest-path.html
 [au-erequesting-actor-patientaccess]: ActorDefinition-au-erequesting-actor-patientaccess.html
@@ -8,11 +11,18 @@
 [au-erequesting-actor-server]: ActorDefinition-au-erequesting-actor-server.html
 [AUeRequestingServerCapabilityStatement]: CapabilityStatement-au-erequesting-server.html
 [AUeRequestingServiceRequest]: StructureDefinition-au-erequesting-servicerequest.html
+[AUeRequestingTask]: StructureDefinition-au-erequesting-task.html
 [consultation]: Encounter-consultation.html
 [elimbah-medical-center]: Organization-elimbah-medical-center.html
 [fred-roberts]: Patient-fred-roberts.html
 [guthridge-jarred]: Practitioner-guthridge-jarred.html
 [guthridge-jarred-gp]: PractitionerRole-guthridge-jarred-gp.html
+[kimberlee-mclaughlin]: Practitioner-kimberlee-mclaughlin.html
+[kimberlee-mclaughlin-radiologist]: PractitionerRole-kimberlee-mclaughlin-radiologist.html
+[kioma-pathology]: Organization-kioma-pathology.html
+[mount-charlton-radiology]: Organization-mount-charlton-radiology.html
 [order-fbc-1]: ServiceRequest-order-fbc-1.html
 [order-xray-1]: ServiceRequest-order-xray-1.html
 [RANZCRRadiologyReferral]: ValueSet-ranzcr-radiology-referral.html
+[task-fbc-1]: Task-task-fbc-1.html
+[task-xray-1]: Task-task-xray-1.html

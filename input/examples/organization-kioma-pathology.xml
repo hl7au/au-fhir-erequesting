@@ -38,7 +38,7 @@
     </telecom>
     <telecom>
         <system value="phone"/>
-        <value value="(07) 555 02887"/>
+        <value value="(07) 5550 5000"/>
         <use value="work"/>
     </telecom>
     <address>
@@ -47,7 +47,7 @@
         <line value="15 Hazlett Est"/>
         <city value="Kioma"/>
         <state value="QLD"/>
-        <postalCode value="44498"/>
+        <postalCode value="4498"/>
         <country value="AU"/>
     </address>
 </Organization>
