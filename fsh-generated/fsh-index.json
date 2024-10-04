@@ -5,15 +5,15 @@
     "fshType": "Instance",
     "fshFile": "actors.fsh",
     "startLine": 15,
-    "endLine": 24
+    "endLine": 27
   },
   {
     "outputFile": "ActorDefinition-au-erequesting-actor-patientaccess.json",
     "fshName": "au-erequesting-actor-patientaccess",
     "fshType": "Instance",
     "fshFile": "actors.fsh",
-    "startLine": 28,
-    "endLine": 37
+    "startLine": 29,
+    "endLine": 41
   },
   {
     "outputFile": "ActorDefinition-au-erequesting-actor-placer.json",
@@ -28,8 +28,8 @@
     "fshName": "au-erequesting-actor-server",
     "fshType": "Instance",
     "fshFile": "actors.fsh",
-    "startLine": 41,
-    "endLine": 55
+    "startLine": 43,
+    "endLine": 57
   },
   {
     "outputFile": "StructureDefinition-au-erequesting-servicerequest-imag.json",
@@ -54,6 +54,14 @@
     "fshFile": "au-erequesting-servicerequest.fsh",
     "startLine": 1,
     "endLine": 189
+  },
+  {
+    "outputFile": "StructureDefinition-au-erequesting-task.json",
+    "fshName": "AUeRequestingTask",
+    "fshType": "Profile",
+    "fshFile": "au-erequesting-task.fsh",
+    "startLine": 1,
+    "endLine": 40
   },
   {
     "outputFile": "ValueSet-ranzcr-radiology-referral.json",

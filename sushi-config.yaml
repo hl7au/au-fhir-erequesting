@@ -70,8 +70,8 @@ pages:
   support.md:
     downloads.md:
     license.md:
-  # changes.md:
-    # title: Change Log
+  changes.md:
+    title: Change Log
   # ImplementationGuide-hl7.fhir.au.erequesting.md:
     # title: AU eRequesting ImplementationGuide Resource
 parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
