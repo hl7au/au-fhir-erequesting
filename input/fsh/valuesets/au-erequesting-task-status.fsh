@@ -1,5 +1,5 @@
-ValueSet: TaskStatus
-Id: task-status
+ValueSet: AUeRequestingTaskStatus
+Id: au-erequesting-task-status
 Title: "AU eRequesting Task Status"
 Description: "Task status values used in the Australian eRequesting context."
 * ^meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
