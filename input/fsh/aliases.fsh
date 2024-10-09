@@ -1,5 +1,6 @@
 Alias: $sct = http://snomed.info/sct
 Alias: $loinc = http://loinc.org
+Alias: $taskstatus = http://hl7.org/fhir/task-status
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 
 // AU Core profiles
