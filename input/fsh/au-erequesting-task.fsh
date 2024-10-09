@@ -15,6 +15,7 @@ Description: "This profile sets minimum expectations for a Task resource that is
 
 
 * status MS
+* status from http://hl7.org.au/fhir/ereq/ValueSet/task-status (required)
 
 * statusReason MS
 
