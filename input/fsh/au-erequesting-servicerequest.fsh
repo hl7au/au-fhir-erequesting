@@ -192,4 +192,4 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 Invariant: au-ereq-srr-01
 Description: "Date must include at least year, month, and day"
 Severity: #error
-Expression: "$this.toString().matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$')"
+Expression: "$this.toString().length() >= 10"
