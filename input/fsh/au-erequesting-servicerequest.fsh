@@ -6,6 +6,8 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 
 * ^status = #draft
 
+* ^abstract = true
+
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 
 * identifier MS 
