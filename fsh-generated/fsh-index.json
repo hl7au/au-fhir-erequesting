@@ -37,7 +37,7 @@
     "fshType": "Profile",
     "fshFile": "au-erequesting-servicerequest-imag.fsh",
     "startLine": 1,
-    "endLine": 36
+    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-au-erequesting-servicerequest-path.json",
@@ -45,7 +45,7 @@
     "fshType": "Profile",
     "fshFile": "au-erequesting-servicerequest-path.fsh",
     "startLine": 1,
-    "endLine": 35
+    "endLine": 23
   },
   {
     "outputFile": "StructureDefinition-au-erequesting-servicerequest.json",
@@ -53,7 +53,7 @@
     "fshType": "Profile",
     "fshFile": "au-erequesting-servicerequest.fsh",
     "startLine": 1,
-    "endLine": 189
+    "endLine": 204
   },
   {
     "outputFile": "StructureDefinition-au-erequesting-task.json",
@@ -64,11 +64,19 @@
     "endLine": 40
   },
   {
+    "outputFile": "ValueSet-au-erequesting-task-status.json",
+    "fshName": "AUeRequestingTaskStatus",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\au-erequesting-task-status.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
     "outputFile": "ValueSet-ranzcr-radiology-referral.json",
     "fshName": "RANZCRRadiologyReferral",
     "fshType": "ValueSet",
     "fshFile": "valuesets\\au-erequesting-ranzcr-radiology-procedures.fsh",
     "startLine": 1,
-    "endLine": 527
+    "endLine": 979
   }
 ]
