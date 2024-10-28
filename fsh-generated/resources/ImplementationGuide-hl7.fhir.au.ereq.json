@@ -183,6 +183,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/au-erequesting-task-status"
+        },
+        "name": "AU eRequesting Task Status",
+        "description": "Task status values used in the Australian eRequesting context.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Encounter/consultation"
         },
         "name": "consultation",

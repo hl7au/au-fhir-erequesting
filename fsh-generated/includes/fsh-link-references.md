@@ -12,6 +12,7 @@
 [AUeRequestingServerCapabilityStatement]: CapabilityStatement-au-erequesting-server.html
 [AUeRequestingServiceRequest]: StructureDefinition-au-erequesting-servicerequest.html
 [AUeRequestingTask]: StructureDefinition-au-erequesting-task.html
+[AUeRequestingTaskStatus]: ValueSet-au-erequesting-task-status.html
 [consultation]: Encounter-consultation.html
 [elimbah-medical-center]: Organization-elimbah-medical-center.html
 [fred-roberts]: Patient-fred-roberts.html
