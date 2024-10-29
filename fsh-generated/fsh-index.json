@@ -8,8 +8,8 @@
     "endLine": 27
   },
   {
-    "outputFile": "ActorDefinition-au-erequesting-actor-patientaccess.json",
-    "fshName": "au-erequesting-actor-patientaccess",
+    "outputFile": "ActorDefinition-au-erequesting-actor-patient.json",
+    "fshName": "au-erequesting-actor-patient",
     "fshType": "Instance",
     "fshFile": "actors.fsh",
     "startLine": 29,
@@ -64,11 +64,19 @@
     "endLine": 40
   },
   {
+    "outputFile": "ValueSet-au-erequesting-task-status.json",
+    "fshName": "AUeRequestingTaskStatus",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets\\au-erequesting-task-status.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
     "outputFile": "ValueSet-ranzcr-radiology-referral.json",
     "fshName": "RANZCRRadiologyReferral",
     "fshType": "ValueSet",
     "fshFile": "valuesets\\au-erequesting-ranzcr-radiology-procedures.fsh",
     "startLine": 1,
-    "endLine": 527
+    "endLine": 979
   }
 ]

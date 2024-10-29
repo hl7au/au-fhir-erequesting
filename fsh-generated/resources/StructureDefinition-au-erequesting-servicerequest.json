@@ -84,7 +84,7 @@
               },
               {
                 "url": "actor",
-                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
               }
             ]
           }
@@ -156,7 +156,7 @@
               },
               {
                 "url": "actor",
-                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
               }
             ]
           }
@@ -253,7 +253,7 @@
               },
               {
                 "url": "actor",
-                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
               }
             ]
           }
@@ -325,7 +325,7 @@
               },
               {
                 "url": "actor",
-                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
               }
             ]
           }
@@ -398,7 +398,7 @@
               },
               {
                 "url": "actor",
-                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
               }
             ]
           }
@@ -471,7 +471,7 @@
               },
               {
                 "url": "actor",
-                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
               }
             ]
           }
@@ -549,7 +549,7 @@
               },
               {
                 "url": "actor",
-                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
               }
             ]
           }
@@ -629,7 +629,7 @@
               },
               {
                 "url": "actor",
-                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
               }
             ]
           }
@@ -714,7 +714,7 @@
               },
               {
                 "url": "actor",
-                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
               }
             ]
           }
@@ -726,7 +726,7 @@
             "key": "au-ereq-srr-01",
             "severity": "error",
             "human": "Date must include at least year, month, and day",
-            "expression": "$this.toString().matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$')",
+            "expression": "$this.toString().length() >= 10",
             "source": "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest"
           }
         ],
@@ -796,7 +796,7 @@
               },
               {
                 "url": "actor",
-                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
               }
             ]
           }
@@ -877,7 +877,7 @@
               },
               {
                 "url": "actor",
-                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
               }
             ]
           }
@@ -949,7 +949,7 @@
               },
               {
                 "url": "actor",
-                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
               }
             ]
           }
@@ -1029,7 +1029,7 @@
               },
               {
                 "url": "actor",
-                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
+                "valueCanonical": "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
               }
             ]
           }

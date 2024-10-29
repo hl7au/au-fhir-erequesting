@@ -4,14 +4,15 @@
 [AUeRequestingFillerCapabilityStatement]: CapabilityStatement-au-erequesting-filler.html
 [AUeRequestingImagingRequest]: StructureDefinition-au-erequesting-servicerequest-imag.html
 [AUeRequestingPathologyRequest]: StructureDefinition-au-erequesting-servicerequest-path.html
-[au-erequesting-actor-patientaccess]: ActorDefinition-au-erequesting-actor-patientaccess.html
-[AUeRequestingPatientAccessCapabilityStatement]: CapabilityStatement-au-erequesting-patientaccess.html
+[au-erequesting-actor-patient]: ActorDefinition-au-erequesting-actor-patient.html
+[AUeRequestingPatientCapabilityStatement]: CapabilityStatement-au-erequesting-patient.html
 [au-erequesting-actor-placer]: ActorDefinition-au-erequesting-actor-placer.html
 [AUeRequestingPlacerCapabilityStatement]: CapabilityStatement-au-erequesting-placer.html
 [au-erequesting-actor-server]: ActorDefinition-au-erequesting-actor-server.html
 [AUeRequestingServerCapabilityStatement]: CapabilityStatement-au-erequesting-server.html
 [AUeRequestingServiceRequest]: StructureDefinition-au-erequesting-servicerequest.html
 [AUeRequestingTask]: StructureDefinition-au-erequesting-task.html
+[AUeRequestingTaskStatus]: ValueSet-au-erequesting-task-status.html
 [consultation]: Encounter-consultation.html
 [elimbah-medical-center]: Organization-elimbah-medical-center.html
 [fred-roberts]: Patient-fred-roberts.html

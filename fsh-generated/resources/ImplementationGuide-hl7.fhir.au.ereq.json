@@ -119,19 +119,19 @@
       },
       {
         "reference": {
-          "reference": "ActorDefinition/au-erequesting-actor-patientaccess"
+          "reference": "ActorDefinition/au-erequesting-actor-patient"
         },
-        "name": "AU eRequesting Patient Access",
-        "description": "The AU eRequesting Patient Access is a system that is the digital interface that allows patients or their representatives to view and manage requests for diagnostic services. It provides access to request information, enabling patients to choose service providers and track the status of requests.",
+        "name": "AU eRequesting Patient",
+        "description": "A system that allows patients or their representatives to view diagnostic requests and fulfilment of diagnostic requests.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "CapabilityStatement/au-erequesting-patientaccess"
+          "reference": "CapabilityStatement/au-erequesting-patient"
         },
-        "description": "This CapabilityStatement describes the basic rules for the [AU eRequesting Patient Access actor](ActorDefinition-au-erequesting-actor-patientaccess.html) that is the digital interface that allows patients or their representatives to view and manage requests for diagnostic services. The complete list of FHIR profiles, RESTful operations, and search parameters supported by AU eRequesting patient access clients are defined in this CapabilityStatement.",
+        "description": "This CapabilityStatement describes the basic rules for the [AU eRequesting Patient actor](ActorDefinition-au-erequesting-actor-patient.html) that is the digital interface that allows patients or their representatives to view diagnostic requests and fulfilment of diagnostic requests. The complete list of FHIR profiles, RESTful operations, and search parameters supported by AU eRequesting patient clients are defined in this CapabilityStatement.",
         "exampleBoolean": false,
-        "name": "AU eRequesting Patient Access CapabilityStatement"
+        "name": "AU eRequesting Patient CapabilityStatement"
       },
       {
         "reference": {
@@ -179,6 +179,14 @@
         },
         "name": "AU eRequesting Task",
         "description": "This profile sets minimum expectations for a Task resource that is used to record, search, and fetch information about a task to be performed. It is based on the [Task](https://www.hl7.org/fhir/R4/task.html) and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the Task when conforming to this profile.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/au-erequesting-task-status"
+        },
+        "name": "AU eRequesting Task Status",
+        "description": "Task status values used in the Australian eRequesting context.",
         "exampleBoolean": false
       },
       {

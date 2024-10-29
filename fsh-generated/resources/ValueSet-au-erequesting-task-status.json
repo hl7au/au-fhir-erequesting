@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "name": "TaskStatus",
-  "id": "task-status",
+  "name": "AUeRequestingTaskStatus",
+  "id": "au-erequesting-task-status",
   "title": "AU eRequesting Task Status",
   "description": "Task status values used in the Australian eRequesting context.",
-  "url": "http://hl7.org.au/fhir/ereq/ValueSet/task-status",
+  "url": "http://hl7.org.au/fhir/ereq/ValueSet/au-erequesting-task-status",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
