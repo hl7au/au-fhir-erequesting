@@ -161,7 +161,7 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 * insurance ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
 
 
-* encounter 1..1 MS
+* encounter MS
 * encounter only Reference(AUCoreEncounter)
 * encounter.reference 1..1
 * encounter ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate-if-known
