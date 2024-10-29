@@ -41,6 +41,3 @@ To create a pull request:
 * Maintainers of this repository will then review and take appropriate action on your pull request
 
 
-
-
-
