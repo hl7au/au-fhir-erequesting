@@ -61,7 +61,7 @@
     "fshType": "Profile",
     "fshFile": "au-erequesting-task.fsh",
     "startLine": 1,
-    "endLine": 40
+    "endLine": 41
   },
   {
     "outputFile": "ValueSet-au-erequesting-task-status.json",

@@ -6,6 +6,6 @@ ActorDefinition-au-erequesting-actor-server.json             au-erequesting-acto
 StructureDefinition-au-erequesting-servicerequest-imag.json  AUeRequestingImagingRequest         Profile   au-erequesting-servicerequest-imag.fsh                    1 - 24
 StructureDefinition-au-erequesting-servicerequest-path.json  AUeRequestingPathologyRequest       Profile   au-erequesting-servicerequest-path.fsh                    1 - 23
 StructureDefinition-au-erequesting-servicerequest.json       AUeRequestingServiceRequest         Profile   au-erequesting-servicerequest.fsh                         1 - 204
-StructureDefinition-au-erequesting-task.json                 AUeRequestingTask                   Profile   au-erequesting-task.fsh                                   1 - 40
+StructureDefinition-au-erequesting-task.json                 AUeRequestingTask                   Profile   au-erequesting-task.fsh                                   1 - 41
 ValueSet-au-erequesting-task-status.json                     AUeRequestingTaskStatus             ValueSet  valuesets\au-erequesting-task-status.fsh                  1 - 21
 ValueSet-ranzcr-radiology-referral.json                      RANZCRRadiologyReferral             ValueSet  valuesets\au-erequesting-ranzcr-radiology-procedures.fsh  1 - 979
