@@ -1,5 +1,5 @@
 Profile: AUeRequestingPathologyRequest
-Parent: AUeRequestingServiceRequest
+Parent: AUeRequestingDiagnosticRequest
 Id: au-erequesting-servicerequest-path
 Title: "AU eRequesting Pathology Request"
 Description: "This profile sets minimum expectations for a ServiceRequest resource that is used to record, search, and fetch information about pathology requests for a patient. It is based on the [AU eRequesting ServiceRequest](https://build.fhir.org/ig/hl7au/au-fhir-erequesting/StructureDefinition-au-erequesting-servicerequest.html) and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the ServiceRequest when conforming to this profile."
