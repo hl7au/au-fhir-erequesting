@@ -5,7 +5,7 @@ Usage: #definition
 * name = "AUeRequestingPlacer"
 * title = "AU eRequesting Placer"
 * status = #draft
-* description = "The AU eRequesting Placer is a system that is responsible for initiating and creating diagnostic service requests. This system connects to enable requesters to provide the necessary information to create a request, ensuring that required data is accurately collected and provided to service providers with sufficient information for them to fulfil the request."
+* description = "The AU eRequesting Placer is a system that is responsible for creating diagnostic requests. This system connects to enable requesters to provide the necessary information to create a request, ensuring that required data is accurately collected and provided to service providers with sufficient information for them to fulfil the request."
 * type = #system
 * documentation = "AU eRequesting Placer (client):&#xa;&#xa;
 - **SHALL** implement the [mandatory](conformance.html#mandatory-elements) and/or [Must Support](conformance.html#must-support-and-obligation) requirements for the elements defined as such in the implemented AU eRequesting profiles.&#xa;&#xa;
@@ -19,7 +19,7 @@ Usage: #definition
 * name = "AUeRequestingFiller"
 * title = "AU eRequesting Filler"
 * status = #draft
-* description = "The AU eRequesting Filler is a system that is responsible for finding and retrieving diagnostic service requests so that service providers can fulfil them. It ensures that service providers have the necessary information to fulfil the requests and manages the requests through the fulfilment process."
+* description = "The AU eRequesting Filler is a system that is responsible for finding and retrieving diagnostic request fulfilments so that service providers can fulfil them. It ensures that service providers have the necessary information to fulfil the requests and manages the requests through the fulfilment process."
 * type = #system
 * documentation = "An AU eRequesting Filler (client):&#xa;&#xa;
 - **SHALL** implement the [mandatory](conformance.html#mandatory-elements) and/or [Must Support](conformance.html#must-support-and-obligation) requirements for the elements defined as such in the implemented AU eRequesting profiles.&#xa;&#xa;
