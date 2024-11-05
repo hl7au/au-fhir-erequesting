@@ -36,9 +36,9 @@ A system that is responsible for initiating and creating diagnostic service requ
 A system that is responsible for finding and retrieving diagnostic service requests so that service providers can fulfil them. It ensures that service providers have the necessary information to fulfil the requests and manages the requests through the fulfilment process.
 
 
-**AU eRequesting Patient Access**
+**AU eRequesting Patient**
 
-A system that is the digital interface that allows patients or their representatives to view and manage requests for diagnostic services. It provides access to request information, enabling patients to choose service providers and track the status of requests.
+A system that allows patients or their representatives to view diagnostic requests and fulfilment of diagnostic requests.
 
 **AU eRequesting Server**
 
