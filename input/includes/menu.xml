@@ -24,10 +24,7 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="general-guidance.html">General Guidance</a>
-      </li>
-      <li>
-        <a href="auereqdi.html">AU eRequesting Data for Interoperability</a>
+        <a href="auereqdi.html">AU eRequesting Data for Interoperability Mappings</a>
       </li>
       <li>
         <a href="relationship.html">Relationship with other IGs</a>

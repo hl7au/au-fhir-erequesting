@@ -1,4 +1,4 @@
-The use cases below are those in scope of the first release of AU eRequesting. They are scoped to pathology and medical imaging requesting in community-based care provision. The use cases for AU eRequesting include workflow and information needs for data exchange. These form a basis of cases to be considered and referred to as part of the development and definition of AU eRequesting.
+The use cases below are those in scope of the first release of AU eRequesting IG, as defined and agreed upon by the AU eRequesting Technical Design Group. They are scoped to pathology and medical imaging requesting in community-based care provision. The use cases for AU eRequesting include workflow and information needs for data exchange. These form a basis of cases to be considered and referred to as part of the development and definition of AU eRequesting.
 
 Community input is vital for updating AU eRequesting use cases. We encourage our audience to submit questions and feedback on the implementation guide by clicking on the Propose a change link in the footer of every page.
 
@@ -8,7 +8,7 @@ Column attribute descriptions are as follows:
 - **Actor(s)**: Represents the actors involved in the use case. 
 - **Data Group(s)**: Relevant AU eRequest Diagnostic Imaging (AUeReqDI) or the Australian Clinical Diagnostic Imaging (AUCDI) data group.
 
-See [AU eRequesting Data for Interoperability](auereqdi.html) for the relationship between the AUeReqDI or AUCDI data groups, elements, and AU eRequesting profiles.
+See [AU eRequesting Data for Interoperability Mappings](auereqdi.html) for the relationship between the AUeReqDI or AUCDI data groups, elements, and AU eRequesting profiles.
 
 ### Diagnostic imaging use cases
 
