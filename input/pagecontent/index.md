@@ -75,8 +75,6 @@ This sequence is shown in the diagram below:
 
 <br/>
 
-
-
 ### How to read this guide
 
 This guide is divided into several pages which are listed at the top of each page in the menu bar.

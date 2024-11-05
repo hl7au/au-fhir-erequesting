@@ -37,6 +37,7 @@ Many value sets used in this guide are defined in the base FHIR specification, [
 |[RequestIntent](https://hl7.org/fhir/R4/valueset-request-intent.html)|[AU eRequesting ServiceRequest](StructureDefinition-au-erequesting-servicerequest.html)|FHIR|
 |[RequestStatus](https://hl7.org/fhir/R4/valueset-request-status.html)|[AU eRequesting ServiceRequest](StructureDefinition-au-erequesting-servicerequest.html)|FHIR|
 |[AU eRequesting Task Status](ValueSet-au-erequesting-task-status.html)|[AU eRequesting Task](StructureDefinition-au-erequesting-task.html)|AU eRequesting|
+|[AU eRequesting Coverage Type Self-pay](ValueSet-au-erequesting-coverage-self-pay.html)||AU eRequesting|
 {:.grid}
 
 
@@ -68,7 +69,3 @@ The list below shows the code systems used in the value sets above.
 |[Tags for the Identification of Languages](https://terminology.hl7.org/CodeSystem-v3-ietf3066.html)|[Common Languages in Australia](https://healthterminologies.gov.au/fhir/ValueSet/common-languages-australia-2)|FHIR|
 |[TaskStatus](https://hl7.org/fhir/R4/codesystem-task-status.html)|[AU eRequesting Task Status](ValueSet-au-erequesting-task-status.html)|FHIR|
 {:.grid}
-
-
-
-
