@@ -119,7 +119,7 @@ Example: AU eRequesting ServiceRequest profile showing identifier labelled *Must
 {
     "resourceType" : "StructureDefinition",
     ...
-    "url" : "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest",
+    "url" : "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-diagnosticrequest",
     ...
     "type" : "ServiceRequest",
     "baseDefinition" : "http://hl7.org.au/fhir/StructureDefinition/au-diagnosticrequest",     
