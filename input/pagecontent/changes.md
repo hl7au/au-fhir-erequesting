@@ -12,4 +12,4 @@ This change log documents the significant updates and resolutions implemented fr
 - AU eRequesting ServiceRequest
   - Made AUeRequestingServiceRequest.encounter mandatory per [FHIR-47008](https://jira.hl7.org/browse/FHIR-47008)
 
-- Renamed AU eRequesting Patient Access actor to AU eRequesting Patient and updated the description text per [FHIR-46802](https://jira.hl7.org/browse/FHIR-46802)
+- Renamed AU eRequesting Patient Access actor and CapabilityStatement to be AU eRequesting Patient [FHIR-46802](https://jira.hl7.org/browse/FHIR-46802)
