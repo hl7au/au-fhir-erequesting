@@ -114,7 +114,7 @@ Implementers should take note that the full set of constraints (i.e. invariants)
 
 When viewing the raw representation (e.g. XML or JSON) of a profile, elements labelled *Must Support* are flagged as `mustSupport` set to "true". 
 
-Example: AU eRequesting ServiceRequest profile showing identifier labelled *Must Support*
+Example: AU eRequesting Diagnostic Request profile showing identifier labelled *Must Support*
 ~~~
 {
     "resourceType" : "StructureDefinition",
