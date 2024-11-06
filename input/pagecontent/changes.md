@@ -12,7 +12,7 @@ This change log documents the significant updates and resolutions implemented fr
   - AU eRequesting Coverage ([FHIR-46848](https://jira.hl7.org/browse/FHIR-46848))083](https://jira.hl7.org/browse/FHIR-47083), [FHIR-47084](https://jira.hl7.org/browse/FHIR-47084), [FHIR-47086](https://jira.hl7.org/browse/FHIR-47086), [FHIR-47102](https://jira.hl7.org/browse/FHIR-47102).
 
 - AU eRequesting ServiceRequest
-  - Made AUeRequestingServiceRequest.encounter mandatory per [FHIR-47008](https://jira.hl7.org/browse/FHIR-47008)
+  - Made AUeRequestingServiceRequest.encounter mandatory (1..1) [FHIR-47008](https://jira.hl7.org/browse/FHIR-47008)
 
   - Renamed AU eRequesting Patient Access actor and CapabilityStatement to be AU eRequesting Patient [FHIR-46802](https://jira.hl7.org/browse/FHIR-46802)
 
