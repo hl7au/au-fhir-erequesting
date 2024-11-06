@@ -10,7 +10,7 @@ The AU eRequesting Filler is a system that is responsible for finding and retrie
 
 - [AU eRequesting Patient actor](ActorDefinition-au-erequesting-actor-patient.html)
 
-A system that allows patients or their representatives to view diagnostic requests and fulfilment of diagnostic requests.
+The AU eRequesting Patient is a system that allows patients or their representatives to view diagnostic requests and fulfilment of diagnostic requests.
 
 - [AU eRequesting Server actor](ActorDefinition-au-erequesting-actor-server.html)
 
