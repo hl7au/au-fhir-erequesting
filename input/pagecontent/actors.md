@@ -2,11 +2,11 @@ The following ActorDefinitions define the systems that plays a role in data exch
 
 - [AU eRequesting Placer actor](ActorDefinition-au-erequesting-actor-placer.html)
 
-The AU eRequesting Placer is a system that is responsible for creating diagnostic requests. This system connects to enable requesters to provide the necessary information to create a request, ensuring that required data is accurately collected and provided to service providers with sufficient information for them to fulfil the request.  
+The AU eRequesting Placer is a system that is responsible for initiating and creating diagnostic service requests. This system connects to enable requesters to provide the necessary information to create a request, ensuring that required data is accurately collected and provided to service providers with sufficient information for them to fulfil the request.  
 
 - [AU eRequesting Filler actor](ActorDefinition-au-erequesting-actor-filler.html)
 
-The AU eRequesting Filler is a system that is responsible for finding and retrieving diagnostic request fulfilments so that service providers can fulfil them. It ensures that service providers have the necessary information to fulfil the requests and manages the requests through the fulfilment process.
+The AU eRequesting Filler is a system that is responsible for finding and retrieving diagnostic service requests so that service providers can fulfil them. It ensures that service providers have the necessary information to fulfil the requests and manages the requests through the fulfilment process.
 
 - [AU eRequesting Patient Access actor](ActorDefinition-au-erequesting-actor-patientaccess.html)
 
