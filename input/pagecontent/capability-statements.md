@@ -9,9 +9,9 @@ This CapabilityStatement describes the basic rules for the [AU eRequesting Place
 
 This CapabilityStatement describes the basic rules for the [AU eRequesting Filler actor](ActorDefinition-au-erequesting-actor-filler.html) that is responsible for finding and retrieving diagnostic service requests so that service providers can fulfil them. The complete list of FHIR profiles, RESTful operations, and search parameters supported by AU eRequesting fillers are defined in this CapabilityStatement.
 
-- [AU eRequesting Patient Access CapabilityStatement](CapabilityStatement-au-erequesting-patientaccess.html)
+- [AU eRequesting Patient CapabilityStatement](CapabilityStatement-au-erequesting-patient.html)
 
-This CapabilityStatement describes the basic rules for the [AU eRequesting Patient Access actor](ActorDefinition-au-erequesting-actor-patientaccess.html) that is the digital interface that allows patients or their representatives to view and manage requests for diagnostic services. The complete list of FHIR profiles, RESTful operations, and search parameters supported by AU eRequesting patient access clients are defined in this CapabilityStatement.
+This CapabilityStatement describes the basic rules for the [AU eRequesting Patient actor](ActorDefinition-au-erequesting-actor-patient.html) that is the digital interface that allows patients or their representatives to view diagnostic requests and fulfilment of diagnostic requests. The complete list of FHIR profiles, RESTful operations, and search parameters supported by AU eRequesting patient clients are defined in this CapabilityStatement.
 
 - [AU eRequesting Server CapabilityStatement](CapabilityStatement-au-erequesting-server.html)
 

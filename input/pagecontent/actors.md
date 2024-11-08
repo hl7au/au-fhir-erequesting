@@ -8,9 +8,9 @@ The AU eRequesting Placer is a system that is responsible for initiating and cre
 
 The AU eRequesting Filler is a system that is responsible for finding and retrieving diagnostic service requests so that service providers can fulfil them. It ensures that service providers have the necessary information to fulfil the requests and manages the requests through the fulfilment process.
 
-- [AU eRequesting Patient Access actor](ActorDefinition-au-erequesting-actor-patientaccess.html)
+- [AU eRequesting Patient actor](ActorDefinition-au-erequesting-actor-patient.html)
 
-The AU eRequesting Patient Access is a system that is the digital interface that allows patients or their representatives to view and manage requests for diagnostic services. It provides access to request information, enabling patients to choose service providers and track the status of requests.
+The AU eRequesting Patient is a system that allows patients or their representatives to view diagnostic requests and fulfilment of diagnostic requests.
 
 - [AU eRequesting Server actor](ActorDefinition-au-erequesting-actor-server.html)
 
