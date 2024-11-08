@@ -48,11 +48,6 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="ServiceRequest"/>
-      <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-diagnosticrequest">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
-        </extension>
-      </supportedProfile>
       <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest-path">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
