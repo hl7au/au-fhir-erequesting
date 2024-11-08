@@ -36,9 +36,9 @@ A system that is responsible for initiating and creating diagnostic service requ
 A system that is responsible for finding and retrieving diagnostic service requests so that service providers can fulfil them. It ensures that service providers have the necessary information to fulfil the requests and manages the requests through the fulfilment process.
 
 
-**AU eRequesting Patient Access**
+**AU eRequesting Patient**
 
-A system that is the digital interface that allows patients or their representatives to view and manage requests for diagnostic services. It provides access to request information, enabling patients to choose service providers and track the status of requests.
+A system that allows patients or their representatives to view diagnostic requests and fulfilment of diagnostic requests.
 
 **AU eRequesting Server**
 
@@ -60,7 +60,7 @@ The diagram below illustrates the interactions between the various actors:
 
 The AU eRequesting Placer actor can create and update ServiceRequest details by calling the AU eRequesting Server actor.
 
-The AU eRequesting Patient Access actor can search for ServiceRequest details by calling the AU eRequesting Server actor.
+The AU eRequesting Patient actor can search for ServiceRequest details by calling the AU eRequesting Server actor.
 
 The AU eRequesting Filler actor can retrieve ServiceRequest details by calling the AU eRequesting Server actor.
 
