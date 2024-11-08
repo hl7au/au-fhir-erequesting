@@ -26,19 +26,19 @@ Usage: #definition
 - **SHALL** implement the required REST API interactions and search parameters as defined in the AU eRequesting Filler Capability Statement."
 * capabilities = "http://hl7.org.au/fhir/ereq/CapabilityStatement/au-erequesting-filler"
 
-Instance: au-erequesting-actor-patientaccess
+Instance: au-erequesting-actor-patient
 InstanceOf: ActorDefinition
 Usage: #definition
-* url = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patientaccess"
-* name = "AUeRequestingPatientAccess"
-* title = "AU eRequesting Patient Access"
+* url = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
+* name = "AUeRequestingPatient"
+* title = "AU eRequesting Patient"
 * status = #draft
-* description = "The AU eRequesting Patient Access is a system that is the digital interface that allows patients or their representatives to view and manage requests for diagnostic services. It provides access to request information, enabling patients to choose service providers and track the status of requests."
+* description = "A system that allows patients or their representatives to view diagnostic requests and fulfilment of diagnostic requests."
 * type = #system
-* documentation = "An AU eRequesting Patient Access (client):&#xa;&#xa;
+* documentation = "An AU eRequesting Patient (client):&#xa;&#xa;
 - **SHALL** implement the [mandatory](conformance.html#mandatory-elements) and/or [Must Support](conformance.html#must-support-and-obligation) requirements for the elements defined as such in the implemented AU eRequesting profiles.&#xa;&#xa;
-- **SHALL** implement the required REST API interactions and search parameters as defined in the AU eRequesting Patient Access Capability Statement."
-* capabilities = "http://hl7.org.au/fhir/ereq/CapabilityStatement/au-erequesting-patientaccess"
+- **SHALL** implement the required REST API interactions and search parameters as defined in the AU eRequesting Patient Capability Statement."
+* capabilities = "http://hl7.org.au/fhir/ereq/CapabilityStatement/au-erequesting-patient"
 
 Instance: au-erequesting-actor-server
 InstanceOf: ActorDefinition
