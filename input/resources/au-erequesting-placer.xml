@@ -38,7 +38,7 @@
   </implementationGuide>
   <rest>
     <mode value="client"/>
-    <documentation value="The AU eRequesting Placer **SHALL**:&#xA;1. Support at least one AU eRequesting ServiceRequest profile, and the conformance expectations for the ServiceRequest resource. &#xA;1. Implement the RESTful behavior according to the FHIR specification."/>
+    <documentation value="The AU eRequesting Placer **SHALL**:&#xA;1. Support at least one AU eRequesting Diagnostic Request profile, and the conformance expectations for the ServiceRequest resource. &#xA;1. Implement the RESTful behavior according to the FHIR specification."/>
     <security>
       <description value="None defined."/>
     </security>
@@ -58,7 +58,7 @@
           <valueCode value="SHOULD"/>
         </extension>
       </supportedProfile>
-      <documentation value="Placers **SHALL** support the ServiceRequest resource, at least one AU eRequesting ServiceRequest profile, and the conformance expectations for the ServiceRequest resource."/>
+      <documentation value="Placers **SHALL** support the ServiceRequest resource, at least one AU eRequesting Diagnostic Request profile, and the conformance expectations for the ServiceRequest resource."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>

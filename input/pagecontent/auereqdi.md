@@ -33,37 +33,37 @@ Column attribute descriptions are as follows:
   <tr>
     <td rowspan="9">Service request</td>
     <td colspan="2">Service name</td>
-    <td><a href="StructureDefinition-au-erequesting-servicerequest.html">AU eRequesting ServiceRequest</a></td>
+    <td><a href="StructureDefinition-au-erequesting-diagnosticrequest.html">AU eRequesting Diagnostic Request</a></td>
     <td>ServiceRequest.code</td>
     <td></td>
   </tr>
   <tr>
     <td colspan="2">Clinical indication</td>
-    <td><a href="StructureDefinition-au-erequesting-servicerequest.html">AU eRequesting ServiceRequest</a></td>
+    <td><a href="StructureDefinition-au-erequesting-diagnosticrequest.html">AU eRequesting Diagnostic Request</a></td>
     <td>ServiceRequest.reasonCode</td>
     <td></td>
   </tr>
   <tr>
     <td colspan="2">Clinical context</td>
-    <td><a href="StructureDefinition-au-erequesting-servicerequest.html">AU eRequesting ServiceRequest</a></td>
+    <td><a href="StructureDefinition-au-erequesting-diagnosticrequest.html">AU eRequesting Diagnostic Request</a></td>
     <td>ServiceRequest.note</td>
     <td></td>
   </tr>
   <tr>
     <td colspan="2">Urgency</td>
-    <td><a href="StructureDefinition-au-erequesting-servicerequest.html">AU eRequesting ServiceRequest</a></td>
+    <td><a href="StructureDefinition-au-erequesting-diagnosticrequest.html">AU eRequesting Diagnostic Request</a></td>
     <td>ServiceRequest.priority</td>
     <td>This element is allowed but does not have a Must Support flag.</td>
   </tr>
    <tr>
     <td colspan="2">Service due</td>
-    <td><a href="StructureDefinition-au-erequesting-servicerequest.html">AU eRequesting ServiceRequest</a></td>
+    <td><a href="StructureDefinition-au-erequesting-diagnosticrequest.html">AU eRequesting Diagnostic Request</a></td>
     <td>ServiceRequest.occurrence[x]</td>
     <td>This element is allowed but does not have a Must Support flag.<br><br>This element is choice between occurrenceTiming | occurrenceDateTime | occurrencePeriod.</td>
   </tr>
    <tr>
     <td colspan="2">Comment</td>
-    <td><a href="StructureDefinition-au-erequesting-servicerequest.html">AU eRequesting ServiceRequest</a></td>
+    <td><a href="StructureDefinition-au-erequesting-diagnosticrequest.html">AU eRequesting Diagnostic Request</a></td>
     <td>ServiceRequest.note</td>
     <td></td>
   </tr>
@@ -81,7 +81,7 @@ Column attribute descriptions are as follows:
   </tr>
    <tr>
     <td colspan="2">Billing guidance</td>
-    <td><a href="StructureDefinition-au-erequesting-servicerequest.html">AU eRequesting ServiceRequest</a><br><br><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-coverage.html">AU Base Coverage</a></td>
+    <td><a href="StructureDefinition-au-erequesting-diagnosticrequest.html">AU eRequesting Diagnostic Request</a><br><br><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-coverage.html">AU Base Coverage</a></td>
     <td>ServiceRequest.insurance</td>
     <td>ServiceRequest.insurance references a Coverage resource.</td>
   </tr>

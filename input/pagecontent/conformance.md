@@ -114,12 +114,12 @@ Implementers should take note that the full set of constraints (i.e. invariants)
 
 When viewing the raw representation (e.g. XML or JSON) of a profile, elements labelled *Must Support* are flagged as `mustSupport` set to "true". 
 
-Example: AU eRequesting ServiceRequest profile showing identifier labelled *Must Support*
+Example: AU eRequesting Diagnostic Request profile showing identifier labelled *Must Support*
 ~~~
 {
     "resourceType" : "StructureDefinition",
     ...
-    "url" : "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest",
+    "url" : "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-diagnosticrequest",
     ...
     "type" : "ServiceRequest",
     "baseDefinition" : "http://hl7.org.au/fhir/StructureDefinition/au-diagnosticrequest",     
