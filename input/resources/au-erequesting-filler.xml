@@ -70,12 +70,33 @@
         </extension>
         <code value="read" />
       </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <code value="search-type" />
+      </interaction>
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
         </extension>
       </referencePolicy> -->
+      <searchInclude value="ServiceRequest:patient">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD" />
+        </extension>
+      </searchInclude>
+      <searchInclude value="ServiceRequest:requester">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD" />
+        </extension>
+      </searchInclude>
+      <searchInclude value="ServiceRequest:encounter">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD" />
+        </extension>
+      </searchInclude>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
@@ -105,7 +126,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <code value="search" />
+        <code value="search-type" />
       </interaction>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHOULD" />
@@ -145,7 +166,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <code value="search" />
+        <code value="search-type" />
       </interaction>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHOULD" />
@@ -185,7 +206,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <code value="search" />
+        <code value="search-type" />
       </interaction>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHOULD" />
@@ -216,8 +237,8 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <name value="identifier" />
-        <definition value="http://hl7.org/fhir/SearchParameter/ServiceRequest.identifier" />
+        <name value="_id" />
+        <definition value="http://hl7.org/fhir/SearchParameter/Organization.identifier" />
         <type value="token" />
       </searchParam>
     </resource>
@@ -233,7 +254,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <code value="search" />
+        <code value="search-type" />
       </interaction>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHOULD" />
@@ -264,8 +285,8 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <name value="identifier" />
-        <definition value="http://hl7.org/fhir/SearchParameter/ServiceRequest.identifier" />
+        <name value="_id" />
+        <definition value="http://hl7.org/fhir/SearchParameter/Patient.identifier" />
         <type value="token" />
       </searchParam>
     </resource>
@@ -281,7 +302,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <code value="search" />
+        <code value="search-type" />
       </interaction>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHOULD" />
@@ -312,8 +333,8 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <name value="identifier" />
-        <definition value="http://hl7.org/fhir/SearchParameter/ServiceRequest.identifier" />
+        <name value="_id" />
+        <definition value="http://hl7.org/fhir/SearchParameter/Practitioner.identifier" />
         <type value="token" />
       </searchParam>
     </resource>
@@ -329,7 +350,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <code value="search" />
+        <code value="search-type" />
       </interaction>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHOULD" />
@@ -363,8 +384,8 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <name value="identifier" />
-        <definition value="http://hl7.org/fhir/SearchParameter/ServiceRequest.identifier" />
+        <name value="_id" />
+        <definition value="http://hl7.org/fhir/SearchParameter/PractitionerRole.identifier" />
         <type value="token" />
       </searchParam>
     </resource>
@@ -380,7 +401,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <code value="search" />
+        <code value="search-type" />
       </interaction>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="MAY" />
@@ -420,7 +441,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <code value="search" />
+        <code value="search-type" />
       </interaction>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="MAY" />
@@ -459,7 +480,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <code value="search" />
+        <code value="search-type" />
       </interaction>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="MAY" />
@@ -499,7 +520,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <code value="search" />
+        <code value="search-type" />
       </interaction>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="MAY" />
@@ -538,7 +559,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <code value="search" />
+        <code value="search-type" />
       </interaction>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="MAY" />
@@ -578,7 +599,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <code value="search" />
+        <code value="search-type" />
       </interaction>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="MAY" />
