@@ -134,18 +134,6 @@
     </resource>
     <!-- COVERAGE -->
     <resource>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL" />
-        </extension>
-        <code value="read" />
-      </interaction>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL" />
-        </extension>
-        <code value="search-type" />
-      </interaction>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHOULD" />
       </extension>
@@ -155,25 +143,14 @@
           <valueCode value="SHALL" />
         </extension>
       </supportedProfile>
-      <searchParam>
+      <documentation
+        value="Servers **SHOULD** support the Coverage resource, the AU Base profile, and the conformance expectations for the Coverage resource." />
+      <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <name value="_id" />
-        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id" />
-        <type value="token" />
-      </searchParam>
-      <documentation
-        value="Servers **SHOULD** support the Coverage resource, the AU Base profile, and the conformance expectations for the Coverage resource." />
-      <!-- TBC 
-      <referencePolicy value="resolves">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
-        </extension>
-      </referencePolicy> -->
-    </resource>
-    <!-- ENCOUNTER -->
-    <resource>
+        <code value="create" />
+      </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
@@ -184,8 +161,31 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
+        <code value="update" />
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
         <code value="search-type" />
       </interaction>
+      <!-- TBC 
+      <referencePolicy value="resolves">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+      </referencePolicy> -->
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <name value="_id" />
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id" />
+        <type value="token" />
+      </searchParam>
+    </resource>
+    <!-- ENCOUNTER -->
+    <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHOULD" />
       </extension>
@@ -195,25 +195,14 @@
           <valueCode value="SHALL" />
         </extension>
       </supportedProfile>
-      <searchParam>
+      <documentation
+        value="Servers **SHOULD** support the Encounter resource, the AU Core profile, and the conformance expectations for the Encounter resource." />
+      <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <name value="_id" />
-        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id" />
-        <type value="token" />
-      </searchParam>
-      <documentation
-        value="Servers **SHOULD** support the Encounter resource, the AU Core profile, and the conformance expectations for the Encounter resource." />
-      <!-- TBC 
-      <referencePolicy value="resolves">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
-        </extension>
-      </referencePolicy> -->
-    </resource>
-    <!-- ORGANIZATION -->
-    <resource>
+        <code value="create" />
+      </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
@@ -224,8 +213,31 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
+        <code value="update" />
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
         <code value="search-type" />
       </interaction>
+      <!-- TBC 
+      <referencePolicy value="resolves">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+      </referencePolicy> -->
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <name value="_id" />
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id" />
+        <type value="token" />
+      </searchParam>
+    </resource>
+    <!-- ORGANIZATION -->
+    <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHOULD" />
       </extension>
@@ -235,6 +247,38 @@
           <valueCode value="SHALL" />
         </extension>
       </supportedProfile>
+      <documentation
+        value="Servers **SHOULD** support the Organization resource, the AU Core profile, and the conformance expectations for the Organization resource." />
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <code value="create" />
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <code value="read" />
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <code value="update" />
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <code value="search-type" />
+      </interaction>
+      <!-- TBC 
+      <referencePolicy value="resolves">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+      </referencePolicy> -->
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
@@ -247,33 +291,13 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <name value="_id" />
-        <definition value="http://hl7.org/fhir/SearchParameter/Organization.identifier" />
+        <name value="identifier" />
+        <definition value="http://hl7.org/fhir/SearchParameter/Organization-identifier" />
         <type value="token" />
       </searchParam>
-      <documentation
-        value="Servers **SHOULD** support the Organization resource, the AU Core profile, and the conformance expectations for the Organization resource." />
-      <!-- TBC 
-      <referencePolicy value="resolves">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
-        </extension>
-      </referencePolicy> -->
     </resource>
     <!-- PATIENT -->
     <resource>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL" />
-        </extension>
-        <code value="read" />
-      </interaction>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL" />
-        </extension>
-        <code value="search-type" />
-      </interaction>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHOULD" />
       </extension>
@@ -283,9 +307,32 @@
           <valueCode value="SHALL" />
         </extension>
       </supportedProfile>
-
       <documentation
         value="Servers **SHOULD** support the Patient resource, the AU Core profile, and the conformance expectations for the Patient resource." />
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <code value="create" />
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <code value="read" />
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <code value="update" />
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <code value="search-type" />
+      </interaction>
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -304,25 +351,13 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <name value="_id" />
-        <definition value="http://hl7.org/fhir/SearchParameter/Patient.identifier" />
+        <name value="identifier" />
+        <definition value="http://hl7.org/fhir/SearchParameter/Patient-identifier" />
         <type value="token" />
       </searchParam>
     </resource>
     <!-- PRACTITIONER -->
     <resource>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL" />
-        </extension>
-        <code value="read" />
-      </interaction>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL" />
-        </extension>
-        <code value="search-type" />
-      </interaction>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHOULD" />
       </extension>
@@ -332,9 +367,32 @@
           <valueCode value="SHALL" />
         </extension>
       </supportedProfile>
-
       <documentation
         value="Servers **SHOULD** support the Practitioner resource, the AU Core profile, and the conformance expectations for the Practitioner resource." />
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <code value="create" />
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <code value="read" />
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <code value="update" />
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <code value="search-type" />
+      </interaction>
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -353,25 +411,13 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <name value="_id" />
-        <definition value="http://hl7.org/fhir/SearchParameter/Practitioner.identifier" />
+        <name value="identifier" />
+        <definition value="http://hl7.org/fhir/SearchParameter/Practitioner-identifier" />
         <type value="token" />
       </searchParam>
     </resource>
     <!-- PRACTITIONERROLE -->
     <resource>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL" />
-        </extension>
-        <code value="read" />
-      </interaction>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL" />
-        </extension>
-        <code value="search-type" />
-      </interaction>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHOULD" />
       </extension>
@@ -382,15 +428,48 @@
           <valueCode value="SHALL" />
         </extension>
       </supportedProfile>
-
       <documentation
         value="Servers **SHOULD** support the PractitionerRole resource, the AU Core profile, and the conformance expectations for the PractitionerRole resource." />
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <code value="create" />
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <code value="read" />
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <code value="update" />
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <code value="search-type" />
+      </interaction>
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
         </extension>
       </referencePolicy> -->
+      <searchInclude value="PractitionerRole:practitioner">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+      </searchInclude>
+      <searchInclude value="PractitionerRole:organization">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD" />
+        </extension>
+      </searchInclude>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
@@ -403,25 +482,13 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <name value="_id" />
-        <definition value="http://hl7.org/fhir/SearchParameter/PractitionerRole.identifier" />
+        <name value="identifier" />
+        <definition value="http://hl7.org/fhir/SearchParameter/PractitionerRole-identifier" />
         <type value="token" />
       </searchParam>
     </resource>
     <!-- CONDITION -->
     <resource>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL" />
-        </extension>
-        <code value="read" />
-      </interaction>
-      <interaction>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL" />
-        </extension>
-        <code value="search-type" />
-      </interaction>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="MAY" />
       </extension>
@@ -431,25 +498,14 @@
           <valueCode value="SHALL" />
         </extension>
       </supportedProfile>
-      <searchParam>
+      <documentation
+        value="Servers **MAY** support the Condition resource, the AU Core profile, and the conformance expectations for the Condition resource." />
+      <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <name value="_id" />
-        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id" />
-        <type value="token" />
-      </searchParam>
-      <documentation
-        value="Servers **MAY** support the Condition resource, the AU Core profile, and the conformance expectations for the Condition resource." />
-      <!-- TBC 
-      <referencePolicy value="resolves">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
-        </extension>
-      </referencePolicy> -->
-    </resource>
-    <!-- DOCUMENTREFERENCE -->
-    <resource>
+        <code value="create" />
+      </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
@@ -460,8 +516,31 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
+        <code value="update" />
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
         <code value="search-type" />
       </interaction>
+      <!-- TBC 
+      <referencePolicy value="resolves">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+      </referencePolicy> -->
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <name value="_id" />
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id" />
+        <type value="token" />
+      </searchParam>
+    </resource>
+    <!-- DOCUMENTREFERENCE -->
+    <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="MAY" />
       </extension>
@@ -471,24 +550,13 @@
           <valueCode value="MAY" />
         </extension>
       </supportedProfile>
-      <searchParam>
+      <documentation value="Servers **MAY** support the DocumentReference resource." />
+      <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <name value="_id" />
-        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id" />
-        <type value="token" />
-      </searchParam>
-      <documentation value="Servers **MAY** support the DocumentReference resource." />
-      <!-- TBC 
-      <referencePolicy value="resolves">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
-        </extension>
-      </referencePolicy> -->
-    </resource>
-    <!-- LOCATION -->
-    <resource>
+        <code value="create" />
+      </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
@@ -499,8 +567,31 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
+        <code value="update" />
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
         <code value="search-type" />
       </interaction>
+      <!-- TBC 
+      <referencePolicy value="resolves">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+      </referencePolicy> -->
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <name value="_id" />
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id" />
+        <type value="token" />
+      </searchParam>
+    </resource>
+    <!-- LOCATION -->
+    <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="MAY" />
       </extension>
@@ -510,25 +601,14 @@
           <valueCode value="SHALL" />
         </extension>
       </supportedProfile>
-      <searchParam>
+      <documentation
+        value="Servers **MAY** support the Location resource, the AU Core profile, and the conformance expectations for the Location resource." />
+      <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <name value="_id" />
-        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id" />
-        <type value="token" />
-      </searchParam>
-      <documentation
-        value="Servers **MAY** support the Location resource, the AU Core profile, and the conformance expectations for the Location resource." />
-      <!-- TBC 
-      <referencePolicy value="resolves">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
-        </extension>
-      </referencePolicy> -->
-    </resource>
-    <!-- OBSERVATION -->
-    <resource>
+        <code value="create" />
+      </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
@@ -539,8 +619,31 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
+        <code value="update" />
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
         <code value="search-type" />
       </interaction>
+      <!-- TBC 
+      <referencePolicy value="resolves">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+      </referencePolicy> -->
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <name value="_id" />
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id" />
+        <type value="token" />
+      </searchParam>
+    </resource>
+    <!-- OBSERVATION -->
+    <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="MAY" />
       </extension>
@@ -550,24 +653,13 @@
           <valueCode value="MAY" />
         </extension>
       </supportedProfile>
-      <searchParam>
+      <documentation value="Servers **MAY** support the Observation resource." />
+      <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <name value="_id" />
-        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id" />
-        <type value="token" />
-      </searchParam>
-      <documentation value="Servers **MAY** support the Observation resource." />
-      <!-- TBC 
-      <referencePolicy value="resolves">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
-        </extension>
-      </referencePolicy> -->
-    </resource>
-    <!-- PROCEDURE -->
-    <resource>
+        <code value="create" />
+      </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
@@ -578,8 +670,31 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
+        <code value="update" />
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
         <code value="search-type" />
       </interaction>
+      <!-- TBC 
+      <referencePolicy value="resolves">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+      </referencePolicy> -->
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <name value="_id" />
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id" />
+        <type value="token" />
+      </searchParam>
+    </resource>
+    <!-- PROCEDURE -->
+    <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="MAY" />
       </extension>
@@ -589,25 +704,14 @@
           <valueCode value="SHALL" />
         </extension>
       </supportedProfile>
-      <searchParam>
+      <documentation
+        value="Servers **MAY** support the Procedure resource, the AU Core profile, and the conformance expectations for the Procedure resource." />
+      <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
-        <name value="_id" />
-        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id" />
-        <type value="token" />
-      </searchParam>
-      <documentation
-        value="Servers **MAY** support the Procedure resource, the AU Core profile, and the conformance expectations for the Procedure resource." />
-      <!-- TBC 
-      <referencePolicy value="resolves">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
-        </extension>
-      </referencePolicy> -->
-    </resource>
-    <!-- RELATEDPERSON -->
-    <resource>
+        <code value="create" />
+      </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
@@ -618,8 +722,31 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
         </extension>
+        <code value="update" />
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
         <code value="search-type" />
       </interaction>
+      <!-- TBC 
+      <referencePolicy value="resolves">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+      </referencePolicy> -->
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <name value="_id" />
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id" />
+        <type value="token" />
+      </searchParam>
+    </resource>
+    <!-- RELATEDPERSON -->
+    <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="MAY" />
       </extension>
@@ -629,6 +756,38 @@
           <valueCode value="SHALL" />
         </extension>
       </supportedProfile>
+      <documentation
+        value="Servers **MAY** support the RelatedPerson resource, the AU Base profile, and the conformance expectations for the RelatedPerson resource." />
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <code value="create" />
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <code value="read" />
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <code value="update" />
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL" />
+        </extension>
+        <code value="search-type" />
+      </interaction>
+      <!-- TBC 
+      <referencePolicy value="resolves">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+      </referencePolicy> -->
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
@@ -637,14 +796,6 @@
         <definition value="http://hl7.org/fhir/SearchParameter/Resource-id" />
         <type value="token" />
       </searchParam>
-      <documentation
-        value="Servers **MAY** support the RelatedPerson resource, the AU Base profile, and the conformance expectations for the RelatedPerson resource." />
-      <!-- TBC 
-      <referencePolicy value="resolves">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
-        </extension>
-      </referencePolicy> -->
     </resource>
   </rest>
 </CapabilityStatement>

@@ -100,7 +100,6 @@
     </resource>
     <!-- COVERAGE -->
     <resource>
-
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHOULD" />
       </extension>
@@ -198,7 +197,6 @@
     </resource>
     <!-- PATIENT -->
     <resource>
-
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHOULD" />
       </extension>
@@ -231,7 +229,6 @@
     </resource>
     <!-- PRACTITIONER -->
     <resource>
-
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHOULD" />
       </extension>
@@ -264,7 +261,6 @@
     </resource>
     <!-- PRACTITIONERROLE -->
     <resource>
-
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHOULD" />
       </extension>
@@ -298,7 +294,6 @@
     </resource>
     <!-- CONDITION -->
     <resource>
-
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="MAY" />
       </extension>
@@ -331,7 +326,6 @@
     </resource>
     <!-- DOCUMENTREFERENCE -->
     <resource>
-
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="MAY" />
       </extension>
@@ -363,7 +357,6 @@
     </resource>
     <!-- LOCATION -->
     <resource>
-
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="MAY" />
       </extension>
@@ -396,7 +389,6 @@
     </resource>
     <!-- OBSERVATION -->
     <resource>
-
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="MAY" />
       </extension>
@@ -428,7 +420,6 @@
     </resource>
     <!-- PROCEDURE -->
     <resource>
-
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="MAY" />
       </extension>
