@@ -8,7 +8,7 @@
   <name value="AUeRequestingFillerCapabilityStatement"/>
   <title value="AU eRequesting Filler CapabilityStatement"/>
   <status value="draft"/>
-  <description value="This CapabilityStatement describes the basic rules for the [AU eRequesting Filler actor](ActorDefinition-au-erequesting-actor-filler.html) that is responsible for finding and retrieving diagnostic service requests so that service providers can fulfil them. The complete list of FHIR profiles, RESTful operations, and search parameters supported by AU eRequesting fillers are defined in this CapabilityStatement."/>
+  <description value="This CapabilityStatement describes the basic rules for the [AU eRequesting Filler actor](ActorDefinition-au-erequesting-actor-filler.html) that is responsible for finding and retrieving diagnostic request fulfilments so that service providers can fulfil them. The complete list of FHIR profiles, RESTful operations, and search parameters supported by AU eRequesting fillers are defined in this CapabilityStatement."/>
   <kind value="requirements"/>
   <fhirVersion value="4.0.1"/>
   <format value="json">

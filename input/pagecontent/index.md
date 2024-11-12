@@ -22,31 +22,9 @@ The [Australian eRequesting Data for Interoperability (AUeReqDI)](https://sparke
 
 {% include dependency-table.xhtml %}
 
-### AU eRequesting Actors
-
-The following actors are part of AU eRequesting:
-
-**AU eRequesting Placer**
-
-A system that is responsible for initiating and creating diagnostic service requests. This system connects to enable requesters to provide the necessary information to create a request, ensuring that required data is accurately collected and provided to service providers with sufficient information for them to fulfil the request.  
-
-
-**AU eRequesting Filler**
-
-A system that is responsible for finding and retrieving diagnostic service requests so that service providers can fulfil them. It ensures that service providers have the necessary information to fulfil the requests and manages the requests through the fulfilment process.
-
-
-**AU eRequesting Patient**
-
-A system that allows patients or their representatives to view diagnostic requests and fulfilment of diagnostic requests.
-
-**AU eRequesting Server**
-
-A system that accepts diagnostic service requests and makes diagnostic service requests accessible.
-
 ### AU eRequesting FHIR RESTful interactions
 
-The RESTful interaction requirements for AU eRequesting actors, such as read and search operations, are outlined in the AU eRequesting [CapabilityStatements](capability-statements.html).
+The RESTful interaction requirements for AU eRequesting actors, such as read and search operations, are outlined in the AU eRequesting CapabilityStatements. AU eRequesting Actors and their respective CapabilityStatements are defined in [Actors and Capabilities](capability-statements.html).
 
 The diagram below illustrates the interactions between the various actors:
 
@@ -90,8 +68,7 @@ This guide is divided into several pages which are listed at the top of each pag
 - [FHIR Artefacts](artifacts.html): These pages provide detailed descriptions and formal definitions for all the FHIR artefacts defined in this guide.
   - [Profiles and Extensions](profiles-and-extensions.html): This page describes the profiles and extensions that are defined in this guide to support electronic requesting. Each profile page includes a narrative description and guidance, formal definition and a "Notes" section which summarises the supported search transactions for each profile. Although the guidance typically focuses on the profiled elements, it may also may focus on un-profiled elements to aid with implementation.
   - [Terminology](terminology.html): This page lists the value sets and code systems supported in this guide.
-  - [Capability Statements](capability-statements.html): This page defines the expected FHIR capabilities of AU eRequesting Server and AU eRequesting Placer.
-  - [Actor Definitions](actors.html): This page defines the AU aRequesting actors, AU eRequesting Placer, AU eRequesting Filler and AU eRequesting Patient Access.
+  - [Actors and Capabilities](capability-statements.html): This page defines the expected FHIR capabilities of AU eRequesting Server and AU eRequesting Placer.
 - [Examples](examples.html): This page lists all the examples used in this guide.
 - [Support](support.html): These pages provide supporting material for implementation of AU eRequesting.
   - [Downloads](downloads.html): This page provides links to downloadable artefacts.
