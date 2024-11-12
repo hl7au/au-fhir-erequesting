@@ -38,9 +38,14 @@
     </extension>
   </implementationGuide>
   <rest>
+<<<<<<< HEAD
     <mode value="client" />
     <documentation
       value="The AU eRequesting Filler **SHALL**:&#xA;1. Support at least one AU eRequesting ServiceRequest profile, and the conformance expectations for the ServiceRequest resource. &#xA;1. Implement the RESTful behavior according to the FHIR specification." />
+=======
+    <mode value="client"/>
+    <documentation value="The AU eRequesting Filler **SHALL**:&#xA;1. Support at least one AU eRequesting Diagnostic Request profile, and the conformance expectations for the ServiceRequest resource. &#xA;1. Implement the RESTful behavior according to the FHIR specification."/>
+>>>>>>> d693ea205df95bc260279adb24f560af0eeace24
     <security>
       <description value="None defined." />
     </security>
@@ -62,8 +67,12 @@
           <valueCode value="SHOULD" />
         </extension>
       </supportedProfile>
+<<<<<<< HEAD
       <documentation
         value="Fillers **SHALL** support the ServiceRequest resource, at least one AU eRequesting ServiceRequest profile, and the conformance expectations for the ServiceRequest resource." />
+=======
+      <documentation value="Fillers **SHALL** support the ServiceRequest resource, at least one AU eRequesting Diagnostic Request profile, and the conformance expectations for the ServiceRequest resource."/>
+>>>>>>> d693ea205df95bc260279adb24f560af0eeace24
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
