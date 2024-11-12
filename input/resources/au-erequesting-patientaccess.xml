@@ -39,8 +39,7 @@
   </implementationGuide>
   <rest>
     <mode value="client" />
-    <documentation
-      value="The AU eRequesting Patient Access **SHALL**:&#xA;1. Support at least one AU eRequesting ServiceRequest profile, and the conformance expectations for the ServiceRequest resource. &#xA;1. Implement the RESTful behavior according to the FHIR specification." />
+    <documentation value="The AU eRequesting Patient Access **SHALL**:&#xA;1. Support at least one AU eRequesting ServiceRequest profile, and the conformance expectations for the ServiceRequest resource. &#xA;1. Implement the RESTful behavior according to the FHIR specification." />
     <security>
       <description value="None defined." />
     </security>
@@ -62,8 +61,7 @@
           <valueCode value="SHOULD" />
         </extension>
       </supportedProfile>
-      <documentation
-        value="Patient Accesss **SHALL** support the ServiceRequest resource, at least one AU eRequesting ServiceRequest profile, and the conformance expectations for the ServiceRequest resource." />
+      <documentation value="Patient Accesss **SHALL** support the ServiceRequest resource, at least one AU eRequesting ServiceRequest profile, and the conformance expectations for the ServiceRequest resource." />
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
@@ -125,8 +123,7 @@
           <valueCode value="SHALL" />
         </extension>
       </supportedProfile>
-      <documentation
-        value="Patient Accesss clients **SHOULD** support the Coverage resource, the AU Base profile, and the conformance expectations for the Coverage resource." />
+      <documentation value="Patient Accesss clients **SHOULD** support the Coverage resource, the AU Base profile, and the conformance expectations for the Coverage resource." />
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
@@ -165,8 +162,7 @@
           <valueCode value="SHALL" />
         </extension>
       </supportedProfile>
-      <documentation
-        value="Patient Accesss clients **SHOULD** support the Encounter resource, the AU Core profile, and the conformance expectations for the Encounter resource." />
+      <documentation value="Patient Accesss clients **SHOULD** support the Encounter resource, the AU Core profile, and the conformance expectations for the Encounter resource." />
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
@@ -205,8 +201,7 @@
           <valueCode value="SHALL" />
         </extension>
       </supportedProfile>
-      <documentation
-        value="Patient Accesss clients **SHOULD** support the Organization resource, the AU Core profile, and the conformance expectations for the Organization resource." />
+      <documentation value="Patient Accesss clients **SHOULD** support the Organization resource, the AU Core profile, and the conformance expectations for the Organization resource." />
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
@@ -253,8 +248,7 @@
           <valueCode value="SHALL" />
         </extension>
       </supportedProfile>
-      <documentation
-        value="Patient Accesss clients **SHOULD** support the Patient resource, the AU Core profile, and the conformance expectations for the Patient resource." />
+      <documentation value="Patient Accesss clients **SHOULD** support the Patient resource, the AU Core profile, and the conformance expectations for the Patient resource." />
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
@@ -301,8 +295,7 @@
           <valueCode value="SHALL" />
         </extension>
       </supportedProfile>
-      <documentation
-        value="Patient Accesss clients **SHOULD** support the Practitioner resource, the AU Core profile, and the conformance expectations for the Practitioner resource." />
+      <documentation value="Patient Accesss clients **SHOULD** support the Practitioner resource, the AU Core profile, and the conformance expectations for the Practitioner resource." />
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
@@ -350,8 +343,7 @@
           <valueCode value="SHALL" />
         </extension>
       </supportedProfile>
-      <documentation
-        value="Patient Accesss clients **SHOULD** support the PractitionerRole resource, the AU Core profile, and the conformance expectations for the PractitionerRole resource." />
+      <documentation value="Patient Accesss clients **SHOULD** support the PractitionerRole resource, the AU Core profile, and the conformance expectations for the PractitionerRole resource." />
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
@@ -408,8 +400,7 @@
           <valueCode value="SHALL" />
         </extension>
       </supportedProfile>
-      <documentation
-        value="Patient Accesss **MAY** support the Condition resource, the AU Core profile, and the conformance expectations for the Condition resource." />
+      <documentation value="Patient Accesss **MAY** support the Condition resource, the AU Core profile, and the conformance expectations for the Condition resource." />
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
@@ -487,8 +478,7 @@
           <valueCode value="SHALL" />
         </extension>
       </supportedProfile>
-      <documentation
-        value="Patient Accesss **MAY** support the Location resource, the AU Core profile, and the conformance expectations for the Location resource." />
+      <documentation value="Patient Accesss **MAY** support the Location resource, the AU Core profile, and the conformance expectations for the Location resource." />
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
@@ -566,8 +556,7 @@
           <valueCode value="SHALL" />
         </extension>
       </supportedProfile>
-      <documentation
-        value="Patient Accesss **MAY** support the Procedure resource, the AU Core profile, and the conformance expectations for the Procedure resource." />
+      <documentation value="Patient Accesss **MAY** support the Procedure resource, the AU Core profile, and the conformance expectations for the Procedure resource." />
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
@@ -606,8 +595,7 @@
           <valueCode value="SHALL" />
         </extension>
       </supportedProfile>
-      <documentation
-        value="Patient Accesss **MAY** support the RelatedPerson resource, the AU Base profile, and the conformance expectations for the RelatedPerson resource." />
+      <documentation value="Patient Accesss **MAY** support the RelatedPerson resource, the AU Base profile, and the conformance expectations for the RelatedPerson resource." />
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL" />
