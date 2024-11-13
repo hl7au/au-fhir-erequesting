@@ -40,8 +40,7 @@
   <rest>
 <<<<<<< HEAD
     <mode value="client" />
-    <documentation
-      value="The AU eRequesting Filler **SHALL**:&#xA;1. Support at least one AU eRequesting ServiceRequest profile, and the conformance expectations for the ServiceRequest resource. &#xA;1. Implement the RESTful behavior according to the FHIR specification." />
+    <documentation value="The AU eRequesting Filler **SHALL**:&#xA;1. Support at least one AU eRequesting ServiceRequest profile, and the conformance expectations for the ServiceRequest resource. &#xA;1. Implement the RESTful behavior according to the FHIR specification." />
 =======
     <mode value="client"/>
     <documentation value="The AU eRequesting Filler **SHALL**:&#xA;1. Support at least one AU eRequesting Diagnostic Request profile, and the conformance expectations for the ServiceRequest resource. &#xA;1. Implement the RESTful behavior according to the FHIR specification."/>
