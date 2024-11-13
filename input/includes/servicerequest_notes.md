@@ -25,3 +25,17 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     *Implementation Notes:* Fetches a bundle containing ServiceRequest resources matching the requisition ([how to search by token](http://hl7.org/fhir/R4/search.html#token))
 
+1. Servers that conform to this Implementation Guide support the following `_include` search parameters:
+
+  - AU eRequesting Placer, AU eRequesting Filler, and AU eRequesting Patient **SHOULD** support the following `_include` search parameters:
+    - ServiceRequest:patient
+    - ServiceRequest:requester
+    - ServiceRequest:encounter
+    
+  - AU eRequesting Server **SHALL** support the following `_include` search parameters:
+    - ServiceRequest:patient
+    - ServiceRequest:requester
+
+  - AU eRequesting Server **SHOULD** support the following `_include` search parameters:
+   - ServiceRequest:encounter
+   
