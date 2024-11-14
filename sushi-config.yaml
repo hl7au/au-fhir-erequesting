@@ -48,8 +48,6 @@ pages:
     title: Home
   conformance.md:
   guidance.md:
-    general-guidance.md:
-      title: General Guidance
     future.md:
       title: Future of AU eRequesting
     relationship.md: 
@@ -57,7 +55,7 @@ pages:
     variance.md:
       title: AU Variance Statement
     auereqdi.md:
-      title: AU eRequesting Data for Interoperability
+      title: AU eRequesting Data for Interoperability Mappings
   use-cases.md:
     title: Use Cases
   profiles-and-extensions.md:

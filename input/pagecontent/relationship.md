@@ -1,11 +1,3 @@
-This guide is built on top of the FHIR standard and, where available, [AU Base](https://build.fhir.org/ig/hl7au/au-fhir-base/). It is compliant with the profile conformance requirements in [AU Core](https://build.fhir.org/ig/hl7au/au-fhir-core/).
-
-<div> 
-    <img src="relationship.png" alt="Relationship with HL7 AU Base" style="width:70%"/>
-  </div>
-*Figure 1: Relationship with HL7 AU Base and AU Core*
-<br/>
-
 The context of AU eRequesting within the set of HL7 AU standards is shown in the figure below:
 - the **FHIR standard** is the foundation, which creates a common platform or foundation on which a variety of different solutions are implemented. 
 - **AU Base** defines local concepts for use in an Australian context introducing relevant identifiers, terminology, extensions. 
@@ -17,7 +9,7 @@ This layering of IGs balances relative adoption and implementation maturity of F
   <div> 
     <img src="architecture.png" alt="Context of AU Core within the set of HL7 AU standards" style="width:70%"/>
   </div>
-*Figure 2: Context of AU eRequesting within the set of HL7 AU standards*
+*Figure 1: Context of AU eRequesting within the set of HL7 AU FHIR standards*
 <br/>
 
 ### Relationship to AUeReqDI and other IGs
