@@ -56,6 +56,8 @@ The diagram below illustrates the interactions between the various actors:
 *Figure 1: FHIR RESTful interactions*
 <br/>
 
+*Note*: AU eRequesting Actor interactions will transition with the introduction of the Task resource, which will become central to fulfilment.
+
 ### AU eRequesting typical sequence
 
 The AU eRequesting Placer actor can create and update ServiceRequest details by calling the AU eRequesting Server actor.
@@ -84,6 +86,8 @@ This guide is divided into several pages which are listed at the top of each pag
 - [Guidance](guidance.html): These pages list the guidance for this guide. 
   - [AU eRequesting Data for Interoperability](auereqdi.html): This page maps AUeReqDI data groups and elements to FHIR artefacts in AU eRequesting.
   - [Relationships to Other Specifications](relationship.html): This page provides guidance on the relationship between AU eRequesting, AUeReqDI, and other implementation guides.
+  - [AU eRequesting Data for Interoperability Mappings](auereqdi.html): This page maps AUeReqDI data groups and elements to FHIR artefacts in AU eRequesting.
+  - [Relationship with other IGs](relationship.html): This page provides guidance on the relationship between AU eRequesting, AUeReqDI, and other implementation guides.
   - [AU Variance Statement](variance.html): This page documents variance from AU Base and AU Core.
   - [Future of AU eRequesting](future.html): This page outlines the approach to developing AU eRequesting and yearly update cycle.
 - [Use Cases](use-cases.html): This page describes the use cases in scope of eRequesting R1. 
