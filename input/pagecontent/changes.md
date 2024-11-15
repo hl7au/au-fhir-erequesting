@@ -14,4 +14,7 @@ This change log documents the significant updates and resolutions implemented fr
   - made ServiceRequest.encounter mandatory (1..1) [FHIR-47008](https://jira.hl7.org/browse/FHIR-47008)
   - added Must Support to ServiceRequest.priority [FHIR-46939](https://jira.hl7.org/browse/FHIR-46939)
   - AU eRequesting ServiceRequest profile renamed to be AU eRequesting Diagnostic Request [FHIR-46842](https://jira.hl7.org/browse/FHIR-46842)
+  - updated profile-specific implementation guidance for `insurance` element ([FHIR-47007](https://jira.hl7.org/browse/FHIR-47007))
+  - updated identifier system in order examples ([FHIR-47147](https://jira.hl7.org/browse/FHIR-47147))
 - Renamed AU eRequesting Patient Access actor and CapabilityStatement to be AU eRequesting Patient [FHIR-46802](https://jira.hl7.org/browse/FHIR-46802)
+
