@@ -4,6 +4,7 @@ Alias: $taskstatus = http://hl7.org/fhir/task-status
 Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $coverageselfpay = http://terminology.hl7.org/CodeSystem/coverage-selfpay
 Alias: $v3-actcode = http://terminology.hl7.org/CodeSystem/v3-ActCode
+Alias: $requeststatus = http://hl7.org/fhir/ValueSet/request-status
 
 // AU Core profiles
 Alias: $AUCorePatient = http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient

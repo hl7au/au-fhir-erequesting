@@ -38,6 +38,7 @@ Many value sets used in this guide are defined in the base FHIR specification, [
 |[RequestStatus](https://hl7.org/fhir/R4/valueset-request-status.html)|[AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html)|FHIR|
 |[AU eRequesting Task Status](ValueSet-au-erequesting-task-status.html)|[AU eRequesting Task](StructureDefinition-au-erequesting-task.html)|AU eRequesting|
 |[AU eRequesting Coverage Type Self-Pay](ValueSet-au-erequesting-coverage-self-pay.html)||AU eRequesting|
+|[AU eRequesting Request Status](ValueSet-au-erequesting-request-status.html)|[AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html)|AU eRequesting|
 {:.grid}
 
 
@@ -65,7 +66,7 @@ The list below shows the code systems used in the value sets above.
 |[LOINC](https://www.healthterminologies.gov.au/access-clinical-terminology/access-fhir-terminology-resources/code-systems/?ui:filter=loinc)|[Australian Pronouns](https://healthterminologies.gov.au/fhir/ValueSet/australian-pronouns-1)|NCTS|
 |[NameUse](https://hl7.org/fhir/R4/codesystem-name-use.html)|[NameUse](https://hl7.org/fhir/R4/valueset-name-use.html)|FHIR|
 |[RequestIntent](https://hl7.org/fhir/R4/codesystem-request-intent.html)|[RequestIntent](https://hl7.org/fhir/R4/valueset-request-intent.html)|FHIR|
-|[RequestStatus](https://hl7.org/fhir/R4/codesystem-request-status.html)|[RequestStatus](https://hl7.org/fhir/R4/valueset-request-status.html)|FHIR|
+|[RequestStatus](https://hl7.org/fhir/R4/codesystem-request-status.html)|[AU eRequesting Request Status](ValueSet-au-erequesting-request-status.html)|FHIR|
 |[SNOMED CT (Australian extension)](https://www.healthterminologies.gov.au/access-clinical-terminology/access-fhir-terminology-resources/code-systems/?ui:filter=snomed)|[Gender Identity Response](https://healthterminologies.gov.au/fhir/ValueSet/gender-identity-response-1), [Reason for Request](https://healthterminologies.gov.au/fhir/ValueSet/reason-for-request-1),[RANZCR Radiology Referral](ValueSet-ranzcr-radiology-referral.html)|NCTS|
 |[Tags for the Identification of Languages](https://terminology.hl7.org/CodeSystem-v3-ietf3066.html)|[Common Languages in Australia](https://healthterminologies.gov.au/fhir/ValueSet/common-languages-australia-2)|FHIR|
 |[TaskStatus](https://hl7.org/fhir/R4/codesystem-task-status.html)|[AU eRequesting Task Status](ValueSet-au-erequesting-task-status.html)|FHIR|
