@@ -18,7 +18,7 @@
                 <display value="Placer Identifier"/>
             </coding>
         </type>
-        <system value="https://elimbahmedicalcentre.example.com.au/orders/order-identifier"/>
+        <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003621566684455"/>
         <value value="EMC4542244-5624-01"/>
         <assigner>
             <display value="Elimbah Medical Center"/>
@@ -32,7 +32,7 @@
                 <display value="Placer Group Number"/>
             </coding>
         </type>
-        <system value="https://elimbahmedicalcentre.example.com.au/orders/order-identifier"/>
+        <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003621566684455"/>
         <value value="EMC4542244-5624"/>
         <assigner>
             <display value="Elimbah Medical Center"/>
