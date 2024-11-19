@@ -23,7 +23,7 @@ The requirements of the FHIR standard and [FHIR Conformance Rules](http://hl7.or
 ### Conformance Artifacts
 
 #### AU eRequesting Profiles and Extensions
-The [Profiles and Extensions](profiles-and-extensions.html) page lists the AU eRequesting profiles and AU eRequesting extensions defined for this implementation guide. An AU eRequesting profile [StructureDefinition](http://hl7.org/fhir/R4/structuredefinition.html) defines the minimum elements, extensions, vocabularies and value sets that **SHALL** be present and constrains the way elements are used when conforming to the profile.
+The [Profiles and Extensions](profiles-and-extensions.html) page lists the AU eRequesting profiles defined for this implementation guide, and the AU eRequesting extensions marked with *Must Support* and referenced by this implementation guide. An AU eRequesting profile [StructureDefinition](http://hl7.org/fhir/R4/structuredefinition.html) defines the minimum elements, extensions, vocabularies and value sets that **SHALL** be present and constrains the way elements are used when conforming to the profile.
 
 AU eRequesting profile elements include mandatory and *Must Support* requirements. [Mandatory elements](#mandatory-elements) are required and have a minimum cardinality of 1 (min=1). [Must Support](#must-support-and-obligation) elements have defined conformance obligations in AU eRequesting based on actor roles.
 
