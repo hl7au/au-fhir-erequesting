@@ -73,13 +73,9 @@ In FHIR, resources are exchanged in the following formats: JSON, XML, and Turtle
 <p class="request-for-feedback">Input is requested on the appropriateness of mandating JSON or XML. Please comment by raising <a href="https://jira.hl7.org/projects/FHIR/issues">HL7 Jira Issues</a>.</p>
 
 ### Mandatory Elements
-Mandatory elements are elements with minimum cardinality > 0. When an element is mandatory, the data is expected to always be present. Very rarely, it may not be, and in this circumstance see the guidance in AU Core on [Missing Data](https://build.fhir.org/ig/hl7au/au-fhir-core/general-requirements.html#missing-data). 
-
-An element can be both *Must Support* and mandatory, in which case the guidance for mandatory's Missing Data apply as described in AU Core [Missing Must Support and Mandatory Data](https://build.fhir.org/ig/hl7au/au-fhir-core/general-requirements.html#missing-must-support-and-mandatory-data).
+Mandatory elements are elements with minimum cardinality > 0. When an element is mandatory, the data is expected to always be present. 
 
 The convention in this guide is to mark all mandatory elements as *Must Support* unless they are nested under an optional element.
-
-<p class="request-for-feedback">Input is requested on the appropriateness of allowing Missing Data or Suppressed Data for all elements. Please comment by raising <a href="https://jira.hl7.org/projects/FHIR/issues">HL7 Jira Issues</a>.</p>
 
 ### Must Support and Obligation
 Labelling an element *[Must Support](https://www.hl7.org/fhir/conformance-rules.html#mustSupport)* means that systems that produce or consume resources **SHALL** provide support for the element in some meaningful way. The FHIR standard does not define exactly what 'meaningful' support for an element means, but indicates that a profile **SHALL** make clear exactly what kind of support is required when an element is labelled as *Must Support*.
