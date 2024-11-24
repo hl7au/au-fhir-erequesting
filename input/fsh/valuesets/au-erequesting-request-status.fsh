@@ -1,6 +1,6 @@
 ValueSet: AUeRequestingRequestStatus
 Id: au-erequesting-request-status
-Title: "AU eRequesting Request Status"
+Title: "AU eRequesting RequestStatus"
 Description: "ServiceRequest status values used in the Australian eRequesting context."
 * ^meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^version = "1.0.0"
