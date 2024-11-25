@@ -2,21 +2,33 @@
 <tbody>
   <tr>
     <th>Parameter(s)</th>
-    <th>Conformance </th>
     <th>Type(s)</th>
-    <th>Requirements (when used alone or in combination)</th>
+    <th>Examples</th>
   </tr>
   <tr>
         <td>_id</td>
-        <td><b>SHALL</b></td>
         <td><code>token</code></td>
-        <td></td>
+        <td>2169591</td>
   </tr>
   <tr>
         <td>requisition</td>
-        <td><b>SHALL</b></td>
         <td><code>token</code></td>
-        <td></td>
+        <td>EMC4542244-5624</td>
+  </tr>
+    <tr>
+        <td>_include patient</td>
+        <td><code>_include</code></td>
+        <td>ServiceRequest:patient</td>
+  </tr>
+    <tr>
+        <td>_include requester</td>
+        <td><code>_include</code></td>
+        <td>ServiceRequest:requester</td>
+  </tr>
+    <tr>
+        <td>_include encounter</td>
+        <td><code>_include</code></td>
+        <td>ServiceRequest:encounter</td>
   </tr>
  </tbody>
 </table>
