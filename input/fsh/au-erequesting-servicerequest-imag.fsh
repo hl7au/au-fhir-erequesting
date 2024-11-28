@@ -20,4 +20,4 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 
 * code from https://ranzcr.com/fhir/ValueSet/radiology-referral (preferred)
 * code ^short = "Refer to the Profile Specific Implementation Guidance on ServiceRequest.code"
-* code ^comment = "Refer to the [Profile Specific Implementation Guidance](https://build.fhir.org/ig/hl7au/au-fhir-erequesting/StructureDefinition-au-erequesting-servicerequest-imag.html#profile-specific-implementation-guidance) on `ServiceRequest.code`"
+* code ^comment = "Refer to the [Profile Specific Implementation Guidance](StructureDefinition-au-erequesting-servicerequest-imag.html#profile-specific-implementation-guidance) on `ServiceRequest.code`"
