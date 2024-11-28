@@ -1,20 +1,10 @@
-An [AU eRequesting Placer](ActorDefinition-au-erequesting-actor-placer.html):
-- **SHALL** implement the [mandatory](#mandatory-elements) and/or [Must Support](#must-support-and-obligation) requirements for the elements defined as such in the implemented AU eRequesting profiles.
-- **SHALL** implement the required REST API interactions and search parameters as defined in the [AU eRequesting Placer Capability Statement](CapabilityStatement-au-erequesting-placer.html#resourcesSummary1).
+Each AU eRequesting actor as defined in [Actors and Capabilities](capability-statements.html):
+- **SHALL** implement the [mandatory](#mandatory-elements) and/or [Must Support](#must-support-and-obligation) elements in the AU eRequesting profiles. 
+- **SHALL** implement the required REST API interactions and search parameters as defined in their respective CapabilityStatement.
 
-An [AU eRequesting Filler](ActorDefinition-au-erequesting-actor-filler.html):
-- **SHALL** implement the [mandatory](#mandatory-elements) and/or [Must Support](#must-support-and-obligation) requirements for the elements defined as such in the implemented AU eRequesting profiles.
-- **SHALL** implement the required REST API interactions and search parameters as defined in the [AU eRequesting Filler Capability Statement](CapabilityStatement-au-erequesting-filler.html#resourcesSummary1).
-
-An [AU eRequesting Patient](ActorDefinition-au-erequesting-actor-patient.html):
-- **SHALL** implement the [mandatory](#mandatory-elements) and/or [Must Support](#must-support-and-obligation) requirements for the elements defined as such in the implemented AU eRequesting profiles.
-- **SHALL** implement the required REST API interactions and search parameters as defined in the [AU eRequesting Patient Capability Statement](CapabilityStatement-au-erequesting-patient.html#resourcesSummary1).
-
-An [AU eRequesting Server](ActorDefinition-au-erequesting-actor-server.html):
-- **SHALL** implement the [mandatory](#mandatory-elements) and/or [Must Support](#must-support-and-obligation) requirements for the elements defined as such in the implemented AU eRequesting profiles.
-- **SHALL** implement the required REST API interactions and search parameters as defined in the [AU eRequesting Server Capability Statement](CapabilityStatement-au-erequesting-server.html#resourcesSummary1).
-- **SHALL** specify the implemented resource types, associated AU eRequesting profiles, REST API interactions and search parameters in the server's CapabilityStatement.
-- **SHOULD** [declare conformance](#declaring-conformance) to the [AU eRequesting Server Capability Statement](CapabilityStatement-au-erequesting-server.html) in the server's CapabilityStatement.
+Additionally, the [AU eRequesting Server](ActorDefinition-au-erequesting-actor-server.html) Actor:
+- **SHALL** declare the implemented resource types, profiles, interactions, and parameters in the server’s CapabilityStatement.
+- **SHOULD** [declare conformance](#declaring-conformance) to the [AU eRequesting Server Capability Statement](CapabilityStatement-au-erequesting-server.html).
 
 Implementers are advised to be familiar with the requirements of the FHIR standard when implementing AU eRequesting, in particular:
 - [FHIR Terminology requirements](http://hl7.org/fhir/R4/terminologies.html)
@@ -33,14 +23,16 @@ The requirements of the FHIR standard and [FHIR Conformance Rules](http://hl7.or
 ### Conformance Artifacts
 
 #### AU eRequesting Profiles and Extensions
-The [Profiles and Extensions](profiles-and-extensions.html) page lists the AU eRequesting profiles and AU eRequesting extensions defined for this implementation guide. An AU eRequesting profile [StructureDefinition](http://hl7.org/fhir/R4/structuredefinition.html) defines the minimum elements, extensions, vocabularies and value sets that **SHALL** be present and constrains the way elements are used when conforming to the profile.
+The [Profiles and Extensions](profiles-and-extensions.html) page lists the AU eRequesting profiles defined for this implementation guide, and the AU eRequesting extensions marked with *Must Support* and referenced by this implementation guide. An AU eRequesting profile [StructureDefinition](http://hl7.org/fhir/R4/structuredefinition.html) defines the minimum elements, extensions, vocabularies and value sets that **SHALL** be present and constrains the way elements are used when conforming to the profile.
 
 AU eRequesting profile elements include mandatory and *Must Support* requirements. [Mandatory elements](#mandatory-elements) are required and have a minimum cardinality of 1 (min=1). [Must Support](#must-support-and-obligation) elements have defined conformance obligations in AU eRequesting based on actor roles.
 
-#### AU eRequesting Capability Statements
-The [AU eRequesting Placer CapabilityStatement](CapabilityStatement-au-erequesting-placer.html) defines the conformance requirements and expectations of an [AU eRequesting Placer](ActorDefinition-au-erequesting-actor-placer.html) actor responsible for initiating and creating diagnostic service requests. The complete list of FHIR profiles, REST API interactions, and search parameters that can be implemented by an AU eRequesting Placer are defined in this capability statement. AU eRequesting placers define their capabilities by choosing from this list based on the resource types they need to place requests. 
+The [Actors and Capabilities](capability-statements.html) page list the AU eRequesting Actor definitions and their CapabilityStatements.
 
-The [AU eRequesting Filler CapabilityStatement](CapabilityStatement-au-erequesting-filler.html) defines the conformance requirements and expectations of an [AU eRequesting Filler](ActorDefinition-au-erequesting-actor-filler.html) actor responsible for finding and retrieving diagnostic service requests so that service providers can fulfil them. The complete list of FHIR profiles, REST API interactions, and search parameters that can be implemented by an AU eRequesting Filler are defined in this capability statement. AU eRequesting fillers define their capabilities by choosing from this list based on the resource types they need to fulfill requests. 
+#### AU eRequesting Capability Statements
+The [AU eRequesting Placer CapabilityStatement](CapabilityStatement-au-erequesting-placer.html) defines the conformance requirements and expectations of an [AU eRequesting Placer](ActorDefinition-au-erequesting-actor-placer.html) actor responsible for creating diagnostic requests. The complete list of FHIR profiles, REST API interactions, and search parameters that can be implemented by an AU eRequesting Placer are defined in this capability statement. AU eRequesting placers define their capabilities by choosing from this list based on the resource types they need to place requests. 
+
+The [AU eRequesting Filler CapabilityStatement](CapabilityStatement-au-erequesting-filler.html) defines the conformance requirements and expectations of an [AU eRequesting Filler](ActorDefinition-au-erequesting-actor-filler.html) actor responsible for finding and retrieving diagnostic request fulfilments so that service providers can fulfil them. The complete list of FHIR profiles, REST API interactions, and search parameters that can be implemented by an AU eRequesting Filler are defined in this capability statement. AU eRequesting fillers define their capabilities by choosing from this list based on the resource types they need to fulfill requests. 
 
 The [AU eRequesting Patient CapabilityStatement](CapabilityStatement-au-erequesting-patient.html) defines the conformance requirements and expectations of an [AU eRequesting Patient](ActorDefinition-au-erequesting-actor-patient.html) actor as the digital interface that allows patients or their representatives to view diagnostic requests and fulfilment of diagnostic requests. The complete list of FHIR profiles, REST API interactions, and search parameters that can be implemented by an AU eRequesting Patient client are defined in this capability statement. AU eRequesting patient clients define their capabilities by choosing from this list based on the resource types they need to access requests. 
 
