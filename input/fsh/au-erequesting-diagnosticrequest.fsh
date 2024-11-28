@@ -21,7 +21,7 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 * extension[sexParameterForClinicalUse] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][3].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
 * extension[sexParameterForClinicalUse] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 * extension[sexParameterForClinicalUse] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
-* * extension[sexParameterForClinicalUse] ^comment = "Requesters can reliably provide this as the sex parameter to be used for the requested service and, when present, as the Placer's requested patient sex parameter for clinical use in the diagnostic request."
+* extension[sexParameterForClinicalUse] ^comment = "Requesters can reliably provide this as the sex parameter to be used for the requested service and, when present, as the Placer's requested patient sex parameter for clinical use in the diagnostic request."
 
 
 * identifier MS 
