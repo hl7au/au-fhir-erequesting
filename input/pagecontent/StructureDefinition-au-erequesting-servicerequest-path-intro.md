@@ -24,3 +24,5 @@ Placer systems **SHALL** adhere to the following order of preference when popula
 
 National registries or exchange networks may make additional conformance requirements around support for nationally agreed value sets, even if this specification does not require their use.
 
+
+- The provision of an insurance attribute describes a recommendation to be considered by the Filler and does not guarantee that this recommendation will be satisfied.
