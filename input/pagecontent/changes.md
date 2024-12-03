@@ -16,3 +16,4 @@ This change log documents the significant updates and resolutions implemented fr
   - AU eRequesting ServiceRequest profile renamed to be AU eRequesting Diagnostic Request [FHIR-46842](https://jira.hl7.org/browse/FHIR-46842)
 - Renamed AU eRequesting Patient Access actor and CapabilityStatement to be AU eRequesting Patient [FHIR-46802](https://jira.hl7.org/browse/FHIR-46802)
 - Changed requirements for population of ServiceRequest.code to specify an order of preference and removed AdditionalBinding in AU eRequesting Pathology Request and AU eRequesting Imaging Request [FHIR-46847](https://jira.hl7.org/browse/FHIR-46847)
+- Changed the conformance requirement for ServiceRequest create and update interactions from SHALL to SHOULD in AU eRequesting Server CapabilityStatement [FHIR-47141](https://jira.hl7.org/browse/FHIR-47141)
