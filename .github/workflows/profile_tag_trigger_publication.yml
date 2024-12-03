@@ -122,5 +122,7 @@ jobs:
     - name: Upload ereq Webroot to S3
       run: |
         aws s3 cp ./webroot/fhir/ereq s3://hl7au-fhir-ig/fhir/ereq --recursive --only-show-errors #ereq/${{ steps.get_tag.outputs.tag }}
-        aws s3 cp ./webroot/fhir/package-feed.xml s3://hl7au-fhir-ig/fhir/package-feed.ereq.xml
-        aws s3 cp ./webroot/fhir/publication-feed.xml s3://hl7au-fhir-ig/fhir/publication-feed.ereq.xml
+        aws s3 cp ./webroot/fhir/package-feed.bak.xml s3://hl7au-fhir-ig/fhir/package-feed.bak.xml
+        aws s3 cp ./webroot/fhir/publication-feed.bak.xml s3://hl7au-fhir-ig/fhir/publication-feed.bak.xml
+        aws s3 cp ./webroot/fhir/package-feed.xml s3://hl7au-fhir-ig/fhir/package-feed.xml
+        aws s3 cp ./webroot/fhir/publication-feed.xml s3://hl7au-fhir-ig/fhir/publication-feed.xml
