@@ -20,9 +20,7 @@ Placer systems **SHALL** adhere to the following order of preference when popula
 
 
   
->While the current RCPA - SPIA Requesting Pathology Reference Set binding is preferred, it is intended that this binding will move to extensible in the future to ensure the consistent coding of eRequests. Subject to discussion with the Technical Design Group this could commence with a progressive move to extensible through stronger binding of identified subsets of the RCPA - SPIA Requesting Pathology Terminology Reference Set.
-
-National registries or exchange networks may make additional conformance requirements around support for nationally agreed value sets, even if this specification does not require their use.
+>While the current RCPA - SPIA Requesting Pathology Reference Set binding is preferred, it is intended that this binding will move to extensible in the future to ensure the consistent coding of eRequests. Subject to discussion with the Technical Design Group this could commence with a progressive move to extensible through stronger binding of identified subsets of the RCPA - SPIA Requesting Pathology Terminology Reference Set.  National registries or exchange networks may make additional conformance requirements around support for nationally agreed value sets, even if this specification does not require their use.
 
 
 - The provision of an insurance attribute describes a recommendation to be considered by the Filler and does not guarantee that this recommendation will be satisfied.
