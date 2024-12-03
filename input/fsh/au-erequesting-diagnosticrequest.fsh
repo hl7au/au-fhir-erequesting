@@ -162,7 +162,7 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 
 
 * insurance MS
-* insurance only Reference(AUBaseCoverage)
+* insurance only Reference(AUeRequestingCoverage)
 * insurance ^comment = "The provision of an insurance attribute describes a recommendation to be considered by the Filler and does not guarantee that this recommendation will be satisfied."
 * insurance ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate-if-known
 * insurance ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
