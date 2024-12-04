@@ -360,7 +360,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Servers **SHALL** support the Task resource, the AU eRequesting profile, and the conformance expectations for the Task resource.&#xA;&#xA;The Server SHALL support the _include parameters for `Task:patient`, `Task:requester`, `Task:owner`, `Task:focus`."/>
+      <documentation value="Servers **SHALL** support the Task resource, the AU eRequesting profile, and the conformance expectations for the Task resource.&#xA;&#xA;The Server **SHALL** support the `_include` parameters for `Task:patient`, `Task:requester`, `Task:owner`, `Task:focus`."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
