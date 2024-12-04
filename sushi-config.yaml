@@ -14,7 +14,7 @@ extension:
     valueCode: draft
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm  #<<<<< the default FMM level for the artifacts in this IG
     valueInteger: 0
-version: 0.2.0-ci-build
+version: 0.2.0-preview
 fhirVersion: 4.0.1
 copyright: Used by permission of HL7 International, all rights reserved Creative Commons License. HL7 Australia© 2024+; Licensed Under Creative Commons No Rights Reserved.
 copyrightYear: 2024
@@ -30,9 +30,9 @@ jurisdiction: urn:iso:std:iso:3166#AU
 # use cases, the value can be an object with keys for id, uri, and version.
 dependencies:
   hl7.fhir.au.base:
-    version: current
+    version: 4.2.2-preview
   hl7.fhir.au.core: 
-    version: current
+    version: 1.0.0-preview
 # The pages property corresponds to IG.definition.page. SUSHI can
 # auto-generate the page list, but if the author includes pages in
 # this file, it is assumed that the author will fully manage the
@@ -111,7 +111,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - generate #generate: Log when producing an individual resource (troubleshooting only - leave off)
     - init #init: Messages describing the start up process (for debugging)
     - progress #progress: Overall progress messages
-  releaselabel: CI Build
+  releaselabel: Preview
   fmm-definition: https://build.fhir.org/ig/hl7au/au-fhir-base/generalguidance.html#maturity-levels
 #
 # The parameters property represents IG.definition.parameter. Rather
