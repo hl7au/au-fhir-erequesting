@@ -360,7 +360,31 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Servers **SHALL** support the AU eRequesting Task resource, and the conformance expectations for the Task resource.&#xA;&#xA;The Server SHALL support the _include parameters for `Task:patient`, `Task:requester`, `Task:owner`, `Task:focus`."/>
+      <documentation value="Servers **SHALL** support the Task resource, the AU eRequesting profile, and the conformance expectations for the Task resource.&#xA;&#xA;The Server SHALL support the _include parameters for `Task:patient`, `Task:requester`, `Task:owner`, `Task:focus`."/>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="create"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="update"/>
+      </interaction>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -418,7 +442,7 @@
         </extension>
         <name value="_lastUpdated"/>
         <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
-        <type value="reference"/>
+        <type value="date"/>
       </searchParam>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
