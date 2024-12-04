@@ -99,12 +99,12 @@
         <valueCode value="SHOULD"/>
       </extension>
       <type value="Coverage"/>
-      <supportedProfile value="http://hl7.org.au/fhir/StructureDefinition/au-coverage">
+      <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-coverage">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Placers **SHOULD** support the Coverage resource, the AU Base profile, and the conformance expectations for the Coverage resource."/>
+      <documentation value="Placers **SHOULD** support the Coverage resource, the AU eRequesting profile, and the conformance expectations for the Coverage resource."/>
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
