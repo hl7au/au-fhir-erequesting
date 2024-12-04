@@ -18,8 +18,6 @@ The Sparked AU FHIR Accelerator includes:
 
 The [Australian eRequesting Data for Interoperability (AUeReqDI)](https://sparked.csiro.au/index.php/sparked-products-resources/auereqdi/auereqdi-release-1/) is focused on an agreement of the minimum data required to support standardised eRequesting within the Australian health context, and forms a common language foundation that allows systems to exchange semantically accurate data for eRequests. AUeReqDI outputs form a set of data requirements to be considered and referred to as part of the development and definition of AU eRequesting. 
 
-{% include dev-note.md -%}
-
 ### Dependencies
 
 {% include dependency-table.xhtml %}
