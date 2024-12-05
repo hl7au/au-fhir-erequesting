@@ -15,4 +15,5 @@
 <br/>
 >While the current RCPA - SPIA Requesting Pathology Reference Set binding is preferred, it is intended that this binding will move to extensible in the future to ensure the consistent coding of eRequests. Subject to discussion with the Technical Design Group this could commence with a progressive move to extensible through stronger binding of identified subsets of the RCPA - SPIA Requesting Pathology Terminology Reference Set.  National registries or exchange networks may make additional conformance requirements around support for nationally agreed value sets, even if this specification does not require their use.
 
+- See guidance on the construction of identifiers in each Identifier profile and the section on [Business Identifiers](https://build.fhir.org/ig/hl7au/au-fhir-base/generalguidance.html#business-identifiers) in AU Base.
 - The provision of an insurance attribute describes a recommendation to be considered by the Filler and does not guarantee that this recommendation will be satisfied.
