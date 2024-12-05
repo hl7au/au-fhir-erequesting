@@ -18,7 +18,7 @@ version: 0.2.0-preview
 fhirVersion: 4.0.1
 copyright: Used by permission of HL7 International, all rights reserved Creative Commons License. HL7 Australia© 2024+; Licensed Under Creative Commons No Rights Reserved.
 copyrightYear: 2024
-releaseLabel: CI Build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: Preview # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 license: CC0-1.0 
 publisher:
   name: HL7 Australia
