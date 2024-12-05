@@ -20,3 +20,6 @@ This change log documents the significant updates and resolutions implemented fr
 - Added _include search parameters ServiceRequest:patient, ServiceRequest:requester and ServiceRequest:encounter to AU eRequesting Placer, Filler, Patient and Server CapabilityStatements [FHIR-46942](https://jira.hl7.org/browse/FHIR-46942)
 - Renamed AU eRequesting Patient Access actor and CapabilityStatement to be AU eRequesting Patient [FHIR-46802](https://jira.hl7.org/browse/FHIR-46802)
 - Changed the conformance requirement for ServiceRequest create and update interactions from SHALL to SHOULD in AU eRequesting Server CapabilityStatement [FHIR-47141](https://jira.hl7.org/browse/FHIR-47141)
+- Made the following changes to AU eRequesting Server CapabilityStatement:
+  - Added the following search parameters as SHALL: _id, group-identifier, owner, patient, requester, focus, status, _lastUpdated, patient+status, owner+status, requester+status, _lastUpdated+status+owner, patient.identifier, owner.identifier, requester.identifier, Task:patient, Task:requester, Task:owner and Task:focus [FHIR-48915](https://jira.hl7.org/browse/FHIR-48915)
+  - Added Task interactions read and search-type as SHALL, and create and update as SHOULD [FHIR-48915](https://jira.hl7.org/browse/FHIR-48915)
