@@ -8,10 +8,12 @@ Description: "Standard codes for use in requesting radiology tests in Australia,
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^status = #draft
 * ^experimental = false
-* ^date = "2024-09-17"
+* ^date = "2024-12-05"
 * ^publisher = "HL7 Australia"
-* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement\nThe SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/). For more information, see [SNOMED IPS Terminology](https://www.snomed.org/snomed-ct/Other-SNOMED-products/international-patient-summary-terminology)\n
-The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](http://www.snomed.org/snomed-ct/get-snomed-ct) or directly contact SNOMED International: info@snomed.org"
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement
+The SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/). For more information, see [SNOMED IPS Terminology](https://www.snomed.org/snomed-ct/Other-SNOMED-products/international-patient-summary-terminology)
+ The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](http://www.snomed.org/snomed-ct/get-snomed-ct) or directly contact SNOMED International: info@snomed.org"
+* $sct#717348008
 * $sct#718002008
 * $sct#241565008
 * $sct#431746002
@@ -82,6 +84,7 @@ The HL7 International IPS implementation guides incorporate SNOMED CT®, used by
 * $sct#765168005
 * $sct#418793009
 * $sct#425813003
+* $sct#431779002
 * $sct#432509002
 * $sct#765186008
 * $sct#417912007
@@ -124,6 +127,7 @@ The HL7 International IPS implementation guides incorporate SNOMED CT®, used by
 * $sct#431818005
 * $sct#14541000087102
 * $sct#14531000087108
+* $sct#431218003
 * $sct#6291000087101
 * $sct#6281000087103
 * $sct#6771000087108
@@ -209,7 +213,6 @@ The HL7 International IPS implementation guides incorporate SNOMED CT®, used by
 * $sct#1151000087109
 * $sct#1641000087102
 * $sct#1217397004
-* $sct#1220627000
 * $sct#241583000
 * $sct#709644003
 * $sct#440512006
@@ -231,6 +234,7 @@ The HL7 International IPS implementation guides incorporate SNOMED CT®, used by
 * $sct#419777006
 * $sct#717998003
 * $sct#703139003
+* $sct#788639001
 * $sct#715278003
 * $sct#431732002
 * $sct#433805008
@@ -306,16 +310,12 @@ The HL7 International IPS implementation guides incorporate SNOMED CT®, used by
 * $sct#443630007
 * $sct#718009004
 * $sct#420052009
-* $sct#241453007
 * $sct#432430009
 * $sct#715728004
 * $sct#446522006
 * $sct#446208007
-* $sct#21623001
 * $sct#785805004
 * $sct#433153009
-* $sct#169229007
-* $sct#169230002
 * $sct#418090003
 * $sct#432246004
 * $sct#427623005
@@ -362,7 +362,6 @@ The HL7 International IPS implementation guides incorporate SNOMED CT®, used by
 * $sct#1231000087105
 * $sct#1681000087107
 * $sct#432089005
-* $sct#169238009
 * $sct#241567000
 * $sct#4291000087109
 * $sct#4301000087108
@@ -398,7 +397,6 @@ The HL7 International IPS implementation guides incorporate SNOMED CT®, used by
 * $sct#432663006
 * $sct#21491000087101
 * $sct#21151000087104
-* $sct#105376000
 * $sct#241484009
 * $sct#430433001
 * $sct#241472007
@@ -481,6 +479,7 @@ The HL7 International IPS implementation guides incorporate SNOMED CT®, used by
 * $sct#241651003
 * $sct#20271000087105
 * $sct#19791000087102
+* $sct#168908004
 * $sct#20221000087106
 * $sct#19741000087109
 * $sct#241650002
@@ -548,7 +547,6 @@ The HL7 International IPS implementation guides incorporate SNOMED CT®, used by
 * $sct#2981000087107
 * $sct#277592004
 * $sct#699585001
-* $sct#241603006
 * $sct#241205006
 * $sct#58746000
 * $sct#241630001
@@ -585,8 +583,10 @@ The HL7 International IPS implementation guides incorporate SNOMED CT®, used by
 * $sct#432653003
 * $sct#432877007
 * $sct#430453002
+* $sct#432241009
 * $sct#431392001
 * $sct#431225005
+* $sct#449882002
 * $sct#431299007
 * $sct#432845009
 * $sct#432846005
@@ -602,7 +602,7 @@ The HL7 International IPS implementation guides incorporate SNOMED CT®, used by
 * $sct#241200001
 * $sct#717694003
 * $sct#433029000
-* $sct#432154005
+* $sct#81941004
 * $sct#241204005
 * $sct#434097004
 * $sct#2481000087101
@@ -612,6 +612,7 @@ The HL7 International IPS implementation guides incorporate SNOMED CT®, used by
 * $sct#431839003
 * $sct#433141005
 * $sct#433140006
+* $sct#430507007
 * $sct#429861004
 * $sct#16550051000119101
 * $sct#16550101000119101
@@ -725,7 +726,6 @@ The HL7 International IPS implementation guides incorporate SNOMED CT®, used by
 * $sct#448752005
 * $sct#449876000
 * $sct#449879007
-* $sct#449882002
 * $sct#449883007
 * $sct#449878004
 * $sct#449881009
@@ -748,7 +748,6 @@ The HL7 International IPS implementation guides incorporate SNOMED CT®, used by
 * $sct#699583008
 * $sct#699581005
 * $sct#431999000
-* $sct#709650008
 * $sct#175988004
 * $sct#440408002
 * $sct#241645008
@@ -763,7 +762,7 @@ The HL7 International IPS implementation guides incorporate SNOMED CT®, used by
 * $sct#3171000087104
 * $sct#931021000000101
 * $sct#609224000
-* $sct#1292009
+* $sct#419275004
 * $sct#830147001
 * $sct#711540006
 * $sct#698354004
@@ -884,7 +883,6 @@ The HL7 International IPS implementation guides incorporate SNOMED CT®, used by
 * $sct#3641000087103
 * $sct#3651000087100
 * $sct#4051000087106
-* $sct#1225002
 * $sct#3661000087102
 * $sct#3671000087106
 * $sct#4061000087109
