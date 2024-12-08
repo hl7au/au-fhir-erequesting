@@ -18,7 +18,5 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 * category[path] = $sct#108252007
 
 * code from https://www.rcpa.edu.au/fhir/ValueSet/spia-requesting-refset-3 (preferred)
-* code ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][0].extension[purpose].valueCode = #preferred
-* code ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][0].extension[valueSet].valueCanonical = "https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1"  
-* code ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][0].extension[documentation].valueMarkdown = "For use when a suitable code from the preferred RCPA - SPIA Requesting Pathology Terminology Reference Set is unavailable."  
-
+* code ^short = "Refer to the Profile Specific Implementation Guidance on ServiceRequest.code"
+* code ^comment = "Refer to the [Profile Specific Implementation Guidance](StructureDefinition-au-erequesting-servicerequest-path.html#profile-specific-implementation-guidance) on `ServiceRequest.code`"

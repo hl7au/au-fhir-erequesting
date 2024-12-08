@@ -1,7 +1,7 @@
-ValueSet: AUeRequestingCoverageSelfPay
-Id: au-erequesting-coverage-self-pay
-Title: "AU eRequesting Coverage Type and Self-Pay"
-Description: "Coverage type and self pay codes typically used in the Australian eRequesting context."
+ValueSet: AUeRequestingCoverageTypeAndSelf-PayCodes
+Id: au-erequesting-coverage-type
+Title: "AU eRequesting Coverage Type and Self-Pay Codes"
+Description: "Coverage type and self-pay codes typically used in the Australian eRequesting context."
 * ^meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^version = "1.0.0"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
