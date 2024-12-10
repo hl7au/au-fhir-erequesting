@@ -14,7 +14,7 @@ extension:
     valueCode: draft
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm  #<<<<< the default FMM level for the artifacts in this IG
     valueInteger: 0
-version: 0.2.0-ci-build
+version: 0.3.0-ci-build
 fhirVersion: 4.0.1
 copyright: Used by permission of HL7 International, all rights reserved Creative Commons License. HL7 Australia© 2024+; Licensed Under Creative Commons No Rights Reserved.
 copyrightYear: 2024
