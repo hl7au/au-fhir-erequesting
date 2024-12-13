@@ -14,7 +14,7 @@ extension:
     valueCode: draft
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm  #<<<<< the default FMM level for the artifacts in this IG
     valueInteger: 0
-version: 0.1.0-ci-build
+version: 0.3.0-ci-build
 fhirVersion: 4.0.1
 copyright: Used by permission of HL7 International, all rights reserved Creative Commons License. HL7 Australia© 2024+; Licensed Under Creative Commons No Rights Reserved.
 copyrightYear: 2024
@@ -48,30 +48,27 @@ pages:
     title: Home
   conformance.md:
   guidance.md:
-    general-guidance.md:
-      title: General Guidance
     future.md:
       title: Future of AU eRequesting
     relationship.md: 
-      title: Relationship with other IGs
+      title: Relationships to Other Specifications
     variance.md:
       title: AU Variance Statement
     auereqdi.md:
-      title: AU eRequesting Data for Interoperability
+      title: AU eRequesting Data for Interoperability Mappings
   use-cases.md:
     title: Use Cases
   profiles-and-extensions.md:
-  capability-statements.md:
+  capability-statements.md: 
+    title: Actors and Capabilities
   search-parameters-and-operations.md:
   terminology.md:
-  actors.md:
-    title: Actor Definitions
   examples.md:
   support.md:
     downloads.md:
     license.md:
-  # changes.md:
-    # title: Change Log
+  changes.md:
+    title: Change Log
   # ImplementationGuide-hl7.fhir.au.erequesting.md:
     # title: AU eRequesting ImplementationGuide Resource
 parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
@@ -137,9 +134,9 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
 # ContactDetail.
 #
 contact:
-  name: HL7 Australia FHIR Work Group
-  telecom:
-    system: url # phone | fax | email | pager | url | sms | other
-    value: https://confluence.hl7.org/display/HAFWG
-    use: work
+  - name: HL7 Australia FHIR Work Group
+    telecom:
+      - system: url # phone | fax | email | pager | url | sms | other
+        value: https://confluence.hl7.org/display/HAFWG
+        use: work
 

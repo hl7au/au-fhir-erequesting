@@ -24,13 +24,10 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="general-guidance.html">General Guidance</a>
+        <a href="auereqdi.html">AU eRequesting Data for Interoperability Mappings</a>
       </li>
       <li>
-        <a href="auereqdi.html">AU eRequesting Data for Interoperability</a>
-      </li>
-      <li>
-        <a href="relationship.html">Relationship with other IGs</a>
+        <a href="relationship.html">Relationships to Other Specifications</a>
       </li>
       <li>
         <a href="variance.html">AU Variance Statement</a>
@@ -55,11 +52,8 @@
         <a href="terminology.html">Terminology</a>
       </li>
       <li>
-        <a href="capability-statements.html">Capability Statements</a>
+        <a href="capability-statements.html">Actors and Capabilities</a>
       </li> 
-      <li>
-        <a href="actors.html">Actor Definitions</a>
-      </li>
     </ul>
   </li>
   <li>
@@ -79,7 +73,7 @@
 			</li>
 		</ul>
 	</li>
-  <!--<li>
+  <li>
     <a href="changes.html">Change Log</a>
-  </li>-->
+  </li>
 </ul>

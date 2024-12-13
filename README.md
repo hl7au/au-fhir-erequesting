@@ -39,8 +39,3 @@ To create a pull request:
 * Make your changes and push to your fork in GitHub
 * [Create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) from the branch in your forked repository to this repository's `master` branch 
 * Maintainers of this repository will then review and take appropriate action on your pull request
-
-
-
-
-

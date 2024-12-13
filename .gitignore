@@ -5,6 +5,7 @@
 /temp/
 /template/
 /.vs/
+/fsh-generated/
 
 
 # Don't commit this because it's so large #
@@ -24,6 +25,3 @@ Thumbs.db
 # backup files #
 ################
 *.bak
-
-
-AUbvase - what ges in terminkigy page - everythig in the diff and in the implemntation guidance
