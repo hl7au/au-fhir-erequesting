@@ -48,14 +48,14 @@ pages:
     title: Home
   conformance.md:
   guidance.md:
-    future.md:
-      title: Future of AU eRequesting
+    auereqdi.md:
+      title: AU eRequesting Data for Interoperability Mappings
     relationship.md: 
       title: Relationships to Other Specifications
     variance.md:
       title: AU Variance Statement
-    auereqdi.md:
-      title: AU eRequesting Data for Interoperability Mappings
+    future.md:
+      title: Future of AU eRequesting
   use-cases.md:
     title: Use Cases
   fhirartifacts.md:
@@ -63,14 +63,13 @@ pages:
     artifacts.html:
       title: Artefacts Summary
     profiles-and-extensions.md:
+    terminology.md:
     capability-statements.md: 
       title: Actors and Capabilities
-    search-parameters-and-operations.md:
-    terminology.md:
   examples.md:
   support.md:
     downloads.md:
-    license.md:
+    license.md: License and Legal
   changes.md:
     title: Change Log
   # ImplementationGuide-hl7.fhir.au.erequesting.md:
