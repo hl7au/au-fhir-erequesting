@@ -62,10 +62,8 @@ This guide is divided into several pages which are listed at the top of each pag
 - [Home](index.html): This page provides the introduction and scope for this guide.
 - [Conformance](conformance.html): This page describes the set of rules to claim conformance to this guide
 - [Guidance](guidance.html): These pages list the guidance for this guide. 
-  - [AU eRequesting Data for Interoperability](auereqdi.html): This page maps AUeReqDI data groups and elements to FHIR artefacts in AU eRequesting.
-  - [Relationships to Other Specifications](relationship.html): This page provides guidance on the relationship between AU eRequesting, AUeReqDI, and other implementation guides.
   - [AU eRequesting Data for Interoperability Mappings](auereqdi.html): This page maps AUeReqDI data groups and elements to FHIR artefacts in AU eRequesting.
-  - [Relationship with other IGs](relationship.html): This page provides guidance on the relationship between AU eRequesting, AUeReqDI, and other implementation guides.
+  - [Relationships to Other Specifications](relationship.html): This page provides guidance on the relationship between AU eRequesting, AUeReqDI, and other implementation guides.
   - [AU Variance Statement](variance.html): This page documents variance from AU Base and AU Core.
   - [Future of AU eRequesting](future.html): This page outlines the approach to developing AU eRequesting and yearly update cycle.
 - [Use Cases](use-cases.html): This page describes the use cases in scope of eRequesting R1. 
