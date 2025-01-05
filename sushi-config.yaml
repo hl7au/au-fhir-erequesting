@@ -69,7 +69,8 @@ pages:
   examples.md:
   support.md:
     downloads.md:
-    license.md: License and Legal
+    license.md: 
+      title: License and Legal
   changes.md:
     title: Change Log
   # ImplementationGuide-hl7.fhir.au.erequesting.md:
