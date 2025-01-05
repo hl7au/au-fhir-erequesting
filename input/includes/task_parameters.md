@@ -61,21 +61,15 @@
         <td></td>
   </tr>
   <tr>
-        <td>_lastUpdated</td>
-        <td><b>SHALL</b></td>
-        <td><code>date</code></td>
-        <td></td>
-  </tr>
-  <tr>
-        <td>owner+status</td>
-        <td><b>SHALL</b></td>
-        <td><code>reference</code>+<code>token</code></td>
-        <td></td>
-  </tr>
-  <tr>
         <td>status</td>
         <td><b>SHALL</b></td>
         <td><code>token</code></td>
+        <td></td>
+  </tr>
+  <tr>
+        <td>_lastUpdated</td>
+        <td><b>SHALL</b></td>
+        <td><code>date</code></td>
         <td></td>
   </tr>
   <tr>

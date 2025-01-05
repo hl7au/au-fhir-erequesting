@@ -19,7 +19,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     
-      1. GET [base]/Task?groupIdentifier=https://elimbahmedicalcentre.example.com.au/orders/task-identifier|EMC1234567-1234 
+      1. GET [base]/Task?groupIdentifier=https://elimbahmedicalcentre.example.com.au/orders/task-identifier\|EMC1234567-1234 
 
     *Implementation Notes:* Fetches a bundle containing Task resources matching the group identifier ([how to search by token](http://hl7.org/fhir/R4/search.html#token))
 
@@ -30,7 +30,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
     Example:
     
-      1. GET [base]/Task?owner=https://elimbahmedicalcentre.example.com.au/orders/practitioner-identifier|EMC1234567-1234 
+      1. GET [base]/Task?owner=https://elimbahmedicalcentre.example.com.au/orders/practitioner-identifier\|EMC1234567-1234 
 
     *Implementation Notes:* Fetches a bundle containing Task resources matching the owner ([how to search by reference](http://hl7.org/fhir/R4/search.html#reference))
 
