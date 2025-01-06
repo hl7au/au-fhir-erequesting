@@ -25,14 +25,22 @@ The following search parameters and search parameter combinations **SHALL** be s
 
 
 1. **SHALL** support searching using the **[`owner`](https://hl7.org/fhir/R4/task.html#search)** search parameter:
-
-    `GET [base]/Task?owner={system|}{value}`
+    - **SHALL** support chained searching of owner canonical identifier `owner.identifier` (e.g. `owner.identifier=[system|][code]`)
 
     Example:
     
       1. GET [base]/Task?owner=https://elimbahmedicalcentre.example.com.au/orders/practitioner-identifier\|EMC1234567-1234 
 
     *Implementation Notes:* Fetches a bundle containing Task resources matching the owner ([how to search by reference](http://hl7.org/fhir/R4/search.html#reference))
+
+
+1. **SHALL** support searching using the combination of the **[`owner`](https://hl7.org/fhir/R4/task.html#search)** and **[`status`](https://hl7.org/fhir/R4/task.html#search)** search parameters:   
+
+    Example:
+    
+      1. GET [base]/Task?owner=https://elimbahmedicalcentre.example.com.au/orders/practitioner-identifier\|EMC1234567-1234&status=completed
+
+    *Implementation Notes:* Fetches a bundle containing Task resources matching the owner and status ([how to search by reference](http://hl7.org/fhir/R4/search.html#reference))
 
 
 1. **SHALL** support searching using the **[`patient`](https://hl7.org/fhir/R4/task.html#search)** search parameter:
@@ -47,6 +55,15 @@ The following search parameters and search parameter combinations **SHALL** be s
       1. GET [base]/Task?patient.identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0\|8003608833357361 
 
 
+1. **SHALL** support searching using the combination of the **[`patient`](https://hl7.org/fhir/R4/task.html#search)** and **[`status`](https://hl7.org/fhir/R4/task.html#search)** search parameters:   
+
+    Example:
+    
+      1. GET [base]/Task?patient=5678&status=completed
+
+    *Implementation Notes:* Fetches a bundle containing Task resources matching the owner and status ([how to search by reference](http://hl7.org/fhir/R4/search.html#reference))
+
+
 1. **SHALL** support searching using the **[`requester`](https://hl7.org/fhir/R4/encounter.html#search)** search parameter:
     - **SHALL** support chained searching of requester canonical identifier `requester.identifier` (e.g. `requester.identifier=[system|][code]`)
 
@@ -58,6 +75,15 @@ The following search parameters and search parameter combinations **SHALL** be s
       1. GET [base]/Task?requester.identifier=identifier=http://ns.electronichealth.net.au/id/medicare-provider-number|553255
 
 
+   1. **SHALL** support searching using the combination of the **[`requester`](https://hl7.org/fhir/R4/task.html#search)** and **[`status`](https://hl7.org/fhir/R4/task.html#search)** search parameters:   
+
+    Example:
+    
+      1. GET [base]/Task?requester=5678&status=completed
+
+    *Implementation Notes:* Fetches a bundle containing Task resources matching the owner and status ([how to search by reference](http://hl7.org/fhir/R4/search.html#reference))
+   
+
 1. **SHALL** support searching using the **[`focus`](https://hl7.org/fhir/R4/encounter.html#search)** search parameter:
 
     `GET [base]/Task?reqfocusester={Type/}[id]` 
@@ -68,6 +94,13 @@ The following search parameters and search parameter combinations **SHALL** be s
       1. GET [base]/Task?requester.identifier=identifier=http://ns.electronichealth.net.au/id/medicare-provider-number|553255
 
 
+1. **SHALL** support searching using the combination of the **[`_lastUpdated_`](https://hl7.org/fhir/R4/task.html#search)** and **[`status`](https://hl7.org/fhir/R4/task.html#search)** and **[`owner`](https://hl7.org/fhir/R4/task.html#search)** search parameters:   
+
+    Example:
+    
+      1. GET [base]/Task?patient=5678&status=completed
+
+    *Implementation Notes:* Fetches a bundle containing Task resources matching the owner and status ([how to search by reference](http://hl7.org/fhir/R4/search.html#reference))
 
 
 
