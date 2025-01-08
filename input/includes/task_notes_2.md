@@ -73,10 +73,10 @@ The following search parameters and search parameter combinations are supported.
     
       1. GET [base]/Task?owner=5678
       1. GET [base]/Task?owner=5678&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
-      1. GET [base]/Task?owner.identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0|8003621566684455
-      1. GET [base]/Task?owner.identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0|8003621566684455&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
-      1. GET [base]/Task?owner.identifier=http://hl7.org.au/id/abn|23964200000
-      1. GET [base]/Task?owner.identifier=http://hl7.org.au/id/abn|23964200000&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
+      1. GET [base]/Task?owner.identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0\|8003621566684455
+      1. GET [base]/Task?owner.identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0\|8003621566684455&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
+      1. GET [base]/Task?owner.identifier=http://hl7.org.au/id/abn\|23964200000
+      1. GET [base]/Task?owner.identifier=http://hl7.org.au/id/abn\|23964200000&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
 
     *Implementation Notes:* Fetches a bundle containing Task resources matching the owner ([how to search by reference](http://hl7.org/fhir/R4/search.html#reference))
 
@@ -89,8 +89,8 @@ The following search parameters and search parameter combinations are supported.
     
       1. GET [base]/Task?owner=5678&status=completed
       1. GET [base]/Task?owner=5678&status=completed&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
-      1. GET [base]/Task?owner.identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0|8003621566684455&status=completed
-      1. GET [base]/Task?owner.identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0|8003621566684455&status=completed&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
+      1. GET [base]/Task?owner.identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0\|8003621566684455&status=completed
+      1. GET [base]/Task?owner.identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0\|8003621566684455&status=completed&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
 
     *Implementation Notes:* Fetches a bundle containing Task resources matching the owner and status ([how to search by reference](http://hl7.org/fhir/R4/search.html#reference), [how to search by token](http://hl7.org/fhir/R4/search.html#token))
 
@@ -135,8 +135,8 @@ The following search parameters and search parameter combinations are supported.
     
       1. GET [base]/Task?requester=5678
       1. GET [base]/Task?requester=5678&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
-      1. GET [base]/Task?requester.identifier=http://ns.electronichealth.net.au/id/medicare-provider-number|553255
-      1. GET [base]/Task?requester.identifier=http://ns.electronichealth.net.au/id/medicare-provider-number|553255&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
+      1. GET [base]/Task?requester.identifier=http://ns.electronichealth.net.au/id/medicare-provider-number\|553255
+      1. GET [base]/Task?requester.identifier=http://ns.electronichealth.net.au/id/medicare-provider-number\|553255&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
 
     *Implementation Notes:* Fetches a bundle containing Task resources matching the requester ([how to search by reference](http://hl7.org/fhir/R4/search.html#reference))
 
@@ -147,8 +147,8 @@ The following search parameters and search parameter combinations are supported.
     
       1. GET [base]/Task?requester=5678&status=completed
       1. GET [base]/Task?requester=5678&status=completed&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
-      1. GET [base]/Task?requester.identifier=http://ns.electronichealth.net.au/id/medicare-provider-number|553255&status=completed
-      1. GET [base]/Task?requester.identifier=http://ns.electronichealth.net.au/id/medicare-provider-number|553255&status=completed&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
+      1. GET [base]/Task?requester.identifier=http://ns.electronichealth.net.au/id/medicare-provider-number\|553255&status=completed
+      1. GET [base]/Task?requester.identifier=http://ns.electronichealth.net.au/id/medicare-provider-number\|553255&status=completed&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
 
     *Implementation Notes:* Fetches a bundle containing Task resources matching the requester and status ([how to search by reference](http://hl7.org/fhir/R4/search.html#reference), [how to search by token](http://hl7.org/fhir/R4/search.html#token))
    
@@ -164,7 +164,3 @@ The following search parameters and search parameter combinations are supported.
       1. GET [base]/Task?status=completed&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
 
     *Implementation Notes:* Fetches a bundle containing Task resources matching the status ([how to search by token](http://hl7.org/fhir/R4/search.html#token))
-
-
-
-

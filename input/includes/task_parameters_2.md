@@ -22,18 +22,18 @@
   <tr>
         <td>_lastUpdated</td>
         <td><b>SHALL</b></td>
-        <td><b></b></td>
+        <td><b>-</b></td>
         <td><b>SHOULD</b></td>
-        <td><b></b></td>
+        <td><b>-</b></td>
         <td><code>date</code></td>
         <td></td>
   </tr>
   <tr>
         <td>_lastUpdated+status+owner</td>
         <td><b>SHALL</b></td>
-        <td><b></b></td>
+        <td><b>-</b></td>
         <td><b>SHOULD</b></td>
-        <td><b></b></td>
+        <td><b>-</b></td>
         <td><code>date</code>+<code>token</code>+<code>reference</code></td>
         <td></td>
   </tr>
@@ -58,18 +58,18 @@
   <tr>
         <td>owner</td>
         <td><b>SHALL</b></td>
-        <td><b></b></td>
+        <td><b>-</b></td>
         <td><b>SHOULD</b></td>
-        <td><b></b></td>
+        <td><b>-</b></td>
         <td><code>reference</code></td>
         <td>The same conformance rules apply to the chained search owner.identifier using HPI-O and ABN identifiers as defined in the AU Core Organization profile.</td>
   </tr>
   <tr>
         <td>owner+status</td>
         <td><b>SHALL</b></td>
-        <td><b></b></td>
+        <td><b>-</b></td>
         <td><b>SHOULD</b></td>
-        <td><b></b></td>
+        <td><b>-</b></td>
         <td><code>reference</code>+<code>token</code></td>
         <td></td>
   </tr>
@@ -86,7 +86,7 @@
         <td>patient+status</td>
         <td><b>SHALL</b></td>
         <td><b>SHOULD</b></td>
-        <td><b></b></td>
+        <td><b>-</b></td>
         <td><b>SHOULD</b></td>
         <td><code>reference</code>+<code>token</code></td>
         <td></td>
@@ -95,8 +95,8 @@
         <td>requester</td>
         <td><b>SHALL</b></td>
         <td><b>SHOULD</b></td>
-        <td><b></b></td>
-        <td><b></b></td>
+        <td><b>-</b></td>
+        <td><b>-</b></td>
         <td><code>reference</code></td>
         <td>The same conformance rules apply to the chained search requester.identifier using Medicare Provider Number identifier as defined in the AU Core PractitionerRole profile.</td>
   </tr>
@@ -104,8 +104,8 @@
         <td>requester+status</td>
         <td><b>SHALL</b></td>
         <td><b>SHOULD</b></td>
-        <td><b></b></td>
-        <td><b></b></td>
+        <td><b>-</b></td>
+        <td><b>-</b></td>
         <td><code>reference</code>+<code>token</code></td>
         <td></td>
   </tr>
