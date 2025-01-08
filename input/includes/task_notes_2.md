@@ -110,6 +110,8 @@ The following search parameters and search parameter combinations are supported.
       1. GET [base]/Task?patient.identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0\|8003608833357361 
       1. GET [base]/Task?patient.identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0\|8003608833357361&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
 
+    *Implementation Notes:* Fetches a bundle containing Task resources matching the patient ([how to search by reference](http://hl7.org/fhir/R4/search.html#reference))
+
 
 1. Combined **[`patient`](https://hl7.org/fhir/R4/task.html#search)** and **[`status`](https://hl7.org/fhir/R4/task.html#search)** search parameters:   
     - including support for these _include parameters: `Task:requester`, `Task:owner`, and `Task:focus`
