@@ -39,7 +39,7 @@ The following search parameters and search parameter combinations are supported.
     *Implementation Notes:* Fetches a bundle containing Task resources matching the _lastUpdated, owner and status, instead of just the resource itself, and allows for the inclusion of additional search parameters such as _include, _revinclude, or _lastUpdated ([how to search by date](https://build.fhir.org/search.html#date), [how to search by token](http://hl7.org/fhir/R4/search.html#token), [how to search by reference](http://hl7.org/fhir/R4/search.html#reference))
 
 
-1. **[`focus`](https://hl7.org/fhir/R4/encounter.html#search)** search parameter:
+1. **[`focus`](https://hl7.org/fhir/R4/encounter.html#search)** search parameter
    - including support for these _include parameters: `Task:requester`, `Task:owner`, and `Task:focus`
 
     `GET [base]/Task?reqfocusester={Type/}[id]` 
@@ -52,7 +52,7 @@ The following search parameters and search parameter combinations are supported.
     *Implementation Notes:* Fetches a bundle containing Task resources matching the focus ([how to search by reference](http://hl7.org/fhir/R4/search.html#reference))
 
 
-1. **[`group-identifier`](https://hl7.org/fhir/R4/task.html#search)** search parameter:
+1. **[`group-identifier`](https://hl7.org/fhir/R4/task.html#search)** search parameter
    - including support for these _include parameters: `Task:requester`, `Task:owner`, and `Task:focus`
 
     `GET [base]/Task?groupIdentifier={system|}{value}`
@@ -65,7 +65,7 @@ The following search parameters and search parameter combinations are supported.
     *Implementation Notes:* Fetches a bundle containing Task resources matching the group identifier ([how to search by token](http://hl7.org/fhir/R4/search.html#token))
 
 
-1. **[`owner`](https://hl7.org/fhir/R4/task.html#search)** search parameter:
+1. **[`owner`](https://hl7.org/fhir/R4/task.html#search)** search parameter
    - including support for these _include parameters: `Task:requester`, `Task:owner`, and `Task:focus`
    - including support for chained searching of owner canonical identifier `owner.identifier` (e.g. `owner.identifier=[system|][code]`)
 
@@ -95,7 +95,7 @@ The following search parameters and search parameter combinations are supported.
     *Implementation Notes:* Fetches a bundle containing Task resources matching the owner and status ([how to search by reference](http://hl7.org/fhir/R4/search.html#reference), [how to search by token](http://hl7.org/fhir/R4/search.html#token))
 
 
-1. **[`patient`](https://hl7.org/fhir/R4/task.html#search)** search parameter:
+1. **[`patient`](https://hl7.org/fhir/R4/task.html#search)** search parameter
    - including support for these _include parameters: `Task:requester`, `Task:owner`, and `Task:focus`
    - including support for chained searching of patient canonical identifier `patient.identifier` (e.g. `patient.identifier=[system|][code]`)
 
@@ -113,7 +113,7 @@ The following search parameters and search parameter combinations are supported.
     *Implementation Notes:* Fetches a bundle containing Task resources matching the patient ([how to search by reference](http://hl7.org/fhir/R4/search.html#reference))
 
 
-1. Combined **[`patient`](https://hl7.org/fhir/R4/task.html#search)** and **[`status`](https://hl7.org/fhir/R4/task.html#search)** search parameters:   
+1. Combined **[`patient`](https://hl7.org/fhir/R4/task.html#search)** and **[`status`](https://hl7.org/fhir/R4/task.html#search)** search parameters
     - including support for these _include parameters: `Task:requester`, `Task:owner`, and `Task:focus`
     - including support for chained searching of patient canonical identifier `patient.identifier` (e.g. `patient.identifier=[system|][code]`)
 
@@ -127,7 +127,7 @@ The following search parameters and search parameter combinations are supported.
     *Implementation Notes:* Fetches a bundle containing Task resources matching the patient and status ([how to search by reference](http://hl7.org/fhir/R4/search.html#reference), [how to search by token](http://hl7.org/fhir/R4/search.html#token))
 
 
-1. **[`requester`](https://hl7.org/fhir/R4/encounter.html#search)** search parameter:
+1. **[`requester`](https://hl7.org/fhir/R4/encounter.html#search)** search parameter
    - including support for these _include parameters: `Task:requester`, `Task:owner`, and `Task:focus`
    - including support for chained searching of requester canonical identifier `requester.identifier` (e.g. `requester.identifier=[system|][code]`)
 
@@ -143,7 +143,7 @@ The following search parameters and search parameter combinations are supported.
     *Implementation Notes:* Fetches a bundle containing Task resources matching the requester ([how to search by reference](http://hl7.org/fhir/R4/search.html#reference))
 
 
-1. Combined **[`requester`](https://hl7.org/fhir/R4/task.html#search)** and **[`status`](https://hl7.org/fhir/R4/task.html#search)** search parameters:   
+1. Combined **[`requester`](https://hl7.org/fhir/R4/task.html#search)** and **[`status`](https://hl7.org/fhir/R4/task.html#search)** search parameters
    - including support for these _include parameters: `Task:requester`, `Task:owner`, and `Task:focus`
     Example:
     
@@ -155,7 +155,7 @@ The following search parameters and search parameter combinations are supported.
     *Implementation Notes:* Fetches a bundle containing Task resources matching the requester and status ([how to search by reference](http://hl7.org/fhir/R4/search.html#reference), [how to search by token](http://hl7.org/fhir/R4/search.html#token))
    
 
-1. **[`status`](https://hl7.org/fhir/R4/task.html#search)** search parameter:
+1. **[`status`](https://hl7.org/fhir/R4/task.html#search)** search parameter
    - including support for these _include parameters: `Task:requester`, `Task:owner`, and `Task:focus`
 
     `GET [base]/Task?status={system|}{value}`
