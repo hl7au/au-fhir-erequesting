@@ -105,7 +105,7 @@
         <td><b>SHALL</b></td>
         <td><b>SHOULD</b></td>
         <td style="text-align: center"><b>-</b></td>
-        <t style="text-align: center"d><b>-</b></td>
+        <td style="text-align: center"><b>-</b></td>
         <td><code>reference</code>+<code>token</code></td>
         <td></td>
   </tr>
