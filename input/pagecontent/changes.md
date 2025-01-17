@@ -5,6 +5,14 @@
 
 This change log documents the significant updates and resolutions implemented from version 0.1.0-ballot to TBD.
 
+{% include fsh-link-references.md %}
+
+#### Changes following 16 Jan 2025 eRequesting TDG meeting
+- A [AUeRequestingDiagnosticRequestDisplaySequence] extension added to [AUeRequestingDiagnosticRequest] to represent the sequence of test/procedures within an order as inherent in the paper order but otherwise not avaiable through the FHIR representation.
+  - This relates to a [jira issue FHIR-49377](https://jira.hl7.org/browse/FHIR-49377) that was agreed to at the TDG meeting.
+- A [AUeRequestingTaskFulfillmentGroup] has been added to represent the collection of [AUeRequestingDiagnosticRequestTaskFulfillment] in an order.  It has also resulted in a new [AUeRequestingTaskFulfillmentBase] base `Task` shared between individual `Task`s and groups of `Task`s.
+  - This relates to a [jira issue FHIR-49372](https://jira.hl7.org/browse/FHIR-49372) that was agreed to at the TDG meeting.
+
 #### Changes in this version
 - New profiles: 
   - AU eRequesting Task ([FHIR-46947](https://jira.hl7.org/browse/FHIR-46947), [FHIR-46950](https://jira.hl7.org/browse/FHIR-46950), [FHIR-46956](https://jira.hl7.org/browse/FHIR-46956), [FHIR-46958](https://jira.hl7.org/browse/FHIR-46958), [FHIR-46959](https://jira.hl7.org/browse/FHIR-46959), [FHIR-47081](https://jira.hl7.org/browse/FHIR-47081), [FHIR-47082](https://jira.hl7.org/browse/FHIR-47082), [FHIR-47083](https://jira.hl7.org/browse/FHIR-47083), [FHIR-47084](https://jira.hl7.org/browse/FHIR-47084), [FHIR-47086](https://jira.hl7.org/browse/FHIR-47086), [FHIR-47102](https://jira.hl7.org/browse/FHIR-47102).
