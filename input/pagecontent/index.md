@@ -1,9 +1,9 @@
 ### Introduction
 AU eRequesting is provided to support the use of HL7<sup>&reg;</sup> FHIR<sup>&reg;&copy;</sup> for diagnostic requesting in an Australian context. It sets the minimum expectations on FHIR resources to support conformance and implementation in systems.
 
-AU eRequesting defines the Data model and RESTful API interactions that set minimum expectations for placing and accessing electronic requests.
+AU eRequesting defines the data model and RESTful API interactions that set minimum expectations for placing and accessing electronic requests.
 
-The focus AU eRequesting Release 1 (R1) is support of pathology and medical imaging requests in community-based care provision, with consideration for future use beyond this scope. 
+The focus of AU eRequesting Release 1 (R1) is support of pathology and medical imaging requests in community-based care provision, with consideration for future use beyond this scope. 
 
 
 ### Project background
