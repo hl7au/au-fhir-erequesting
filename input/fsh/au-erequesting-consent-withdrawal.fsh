@@ -7,7 +7,6 @@ Description: "Withdraw consent to upload Diagnostic Requests to the My Health Re
 * ^status = #draft
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 
-* status MS
 * status = #active
 * scope
   * coding 
@@ -16,7 +15,7 @@ Description: "Withdraw consent to upload Diagnostic Requests to the My Health Re
     * ^slicing.discriminator[=].path = "system"
     * ^slicing.discriminator[+].type = #value
     * ^slicing.discriminator[=].path = "code"
-  * coding contains patientprivacy 0..1 MS
+  * coding contains patientprivacy 0..1
   * coding[patientprivacy]
     * system = "http://terminology.hl7.org/CodeSystem/consentscope"
     * code = #patient-privacy
@@ -27,16 +26,16 @@ Description: "Withdraw consent to upload Diagnostic Requests to the My Health Re
     * ^slicing.discriminator[=].path = "system"
     * ^slicing.discriminator[+].type = #value
     * ^slicing.discriminator[=].path = "code"
-  * coding contains idscl 0..1 MS
+  * coding contains idscl 0..1
   * coding[idscl]
     * system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
     * code = #IDSCL
-* patient 1.. MS 
+* patient 1.. 
 * patient only Reference(AUCorePatient)
-* dateTime 1.. MS
-* performer ..1 MS
+* dateTime 1..
+* performer ..1
 * performer only Reference (AUCorePatient)
-* organization 1..1 MS 
+* organization 1..1 
 * organization only Reference (AUCoreOrganization)
 * policyRule 
   * coding 
@@ -45,14 +44,14 @@ Description: "Withdraw consent to upload Diagnostic Requests to the My Health Re
     * ^slicing.discriminator[=].path = "system"
     * ^slicing.discriminator[+].type = #value
     * ^slicing.discriminator[=].path = "code"
-  * coding contains optin 0..1 MS
+  * coding contains optin 0..1
   * coding[optin]
     * system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
     * code = #OPTIN
-* provision 1.. MS
-  * type 1.. MS
+* provision 1..
+  * type 1..
   * type = #deny
-  * action 1..1 MS
+  * action 1..1
   * action 
     * coding 
       * ^slicing.rules = #open
@@ -60,23 +59,23 @@ Description: "Withdraw consent to upload Diagnostic Requests to the My Health Re
       * ^slicing.discriminator[=].path = "system"
       * ^slicing.discriminator[+].type = #value
       * ^slicing.discriminator[=].path = "code"
-    * coding contains disclose 0..1 MS
+    * coding contains disclose 0..1
     * coding[disclose]
       * system = "http://terminology.hl7.org/CodeSystem/consentaction"
       * code = #disclose
-  * class 1.. MS
+  * class 1.. 
     * ^slicing.rules = #open
     * ^slicing.discriminator[+].type = #value
     * ^slicing.discriminator[=].path = "system"
     * ^slicing.discriminator[+].type = #value
     * ^slicing.discriminator[=].path = "code"
-  * class contains diagnosticreport 1..1 MS
+  * class contains diagnosticreport 1..1
   * class[diagnosticreport]
     * system = "http://hl7.org/fhir/resource-types"
     * code = #DiagnosticReport
-  * data 1..* MS
-    * meaning MS
+  * data 1..
+    * meaning
     * meaning = #dependents
-    * reference MS
+    * reference
     * reference only Reference(AUeRequestingPathologyRequest or AUeRequestingImagingRequest)
     
