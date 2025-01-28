@@ -9,7 +9,7 @@ Description: "This profile sets minimum expectations for a Diagnostic Request Ta
 
 * meta.tag
   * code = #fulfillment-task
-  * system = Canonical(AUeRequestingTaskTagCodeSystem)
+  * system = Canonical(AUeRequestingTaskTag)
   * ^short = "fulfillment-task"
 
 * focus 1..1
