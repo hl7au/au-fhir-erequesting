@@ -9,7 +9,7 @@ Description: "This provides a grouping of tasks that are part of the same fulfil
 
 * meta.tag
   * code = #fulfillment-task-group
-  * system = Canonical(AUeRequestingTaskTagCodeSystem)
+  * system = Canonical(AUeRequestingTaskTag)
   * ^short = "fulfillment-task-group"
 
 * partOf 0..0

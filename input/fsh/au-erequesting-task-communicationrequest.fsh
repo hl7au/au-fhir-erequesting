@@ -9,6 +9,7 @@ Description: "AU eRequesting communication request task tracking fulfillment of 
 
 * meta.tag
   * code = #fulfillment-task
+  * system = Canonical(AUeRequestingTaskTag)
   * ^short = "fulfillment-task"
 * focus 1..1 MS
 * focus only Reference(CommunicationRequest)
