@@ -8,43 +8,31 @@ Description: "This base profile sets minimum expectations for derived Task resou
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^abstract = true
 
-* groupIdentifier 1..1 MS
+* meta
+  * tag ^slicing.rules = #open
+  * tag ^slicing.discriminator.type = #value
+  * tag ^slicing.discriminator.path = "$this"
+  * tag contains 
+      eRequestingFulfillmentTask 1..1 
+  * tag[eRequestingFulfillmentTask] from AUeRequestingTaskTagFulfillment (required)
+    * ^short = "fulfillment-task | fulfillment-task-group"
+
+* groupIdentifier 1..1
 * groupIdentifier ^type.profile = $AULocalOrderIdentifier
 * groupIdentifier.type 
   * coding 1..1    
   * coding = $v2-0203#PGN
 
-* status MS
 * status from http://hl7.org.au/fhir/ereq/ValueSet/au-erequesting-task-status (required)
 
-* statusReason MS
-
-* intent MS
 * intent = #order (exactly)
 
-* priority MS 
-
-* for 1..1 MS
+* for 1..1
 * for only Reference (AUCorePatient)
 
-* requester 1..1 MS
+* requester 1..1
 * requester only Reference(AUCorePractitionerRole)
 
-* authoredOn 1..1 MS
+* authoredOn 1..1
 
-* lastModified MS
-
-* owner MS
 * owner only Reference(AUCoreOrganization)
-
-CodeSystem: AUeRequestingTaskTagCodeSystem
-Id: au-erequesting-task-tag-codesystem
-Title: "Task Tag CodeSystem"
-Description: "Tag options for labelling tasks."
-* ^status = #draft
-* ^caseSensitive = true
-* ^experimental = true
- 
-* #fulfillment-task-group "fulfillment task group"
-* #fulfillment-task "fulfillment task"
- 
