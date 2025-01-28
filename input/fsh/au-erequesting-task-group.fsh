@@ -7,7 +7,7 @@ Description: "This provides a grouping of tasks that are part of the same fulfil
 * ^status = #draft
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 
-* meta.tag
+* meta.tag[eRequestingFulfillmentTask]
   * code = #fulfillment-task-group
   * system = Canonical(AUeRequestingTaskTag)
   * ^short = "fulfillment-task-group"

@@ -7,7 +7,7 @@ Description: "This profile sets minimum expectations for a Diagnostic Request Ta
 * ^status = #draft
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 
-* meta.tag
+* meta.tag[eRequestingFulfillmentTask]
   * code = #fulfillment-task
   * system = Canonical(AUeRequestingTaskTag)
   * ^short = "fulfillment-task"
