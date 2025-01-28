@@ -25,11 +25,7 @@ Description: "This base profile sets minimum expectations for derived Task resou
 
 * status from http://hl7.org.au/fhir/ereq/ValueSet/au-erequesting-task-status (required)
 
-* statusReason
-
 * intent = #order (exactly)
-
-* priority
 
 * for 1..1
 * for only Reference (AUCorePatient)
@@ -38,7 +34,5 @@ Description: "This base profile sets minimum expectations for derived Task resou
 * requester only Reference(AUCorePractitionerRole)
 
 * authoredOn 1..1
-
-* lastModified
 
 * owner only Reference(AUCoreOrganization)
