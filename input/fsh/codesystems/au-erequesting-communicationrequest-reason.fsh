@@ -18,6 +18,6 @@ Description: "Reason codes for a Communication Request used in the Australian eR
 * ^compositional = false
 * ^content = #complete
 * ^count = 3
-* #urgent "Urgent Request" "The request is urgent, the requester has requested the communication."
+* #urgent "Urgent Request" "The requester requires the results communicated urgently."
 * #patient "Patient Request" "The patient has requested the communication."
-* #copyto "Copy To" "The communication is a copy to another party."
+* #copyto "Copy To" "The communication request is for a copy to another party."
