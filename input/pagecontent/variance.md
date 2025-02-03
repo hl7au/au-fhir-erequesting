@@ -20,6 +20,8 @@ This implementation guide has no variance (i.e. fully compliant) from AU Core FH
 #### Additionally Profiled Resources
 This implementation guide profiles the following resources that are not profiled in AU Core:
 
+- Coverage
+  - [AU eRequesting Coverage](StructureDefinition-au-erequesting-coverage.html)
 - ServiceRequest
   - [AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html)
   - [AU eRequesting Imaging Request](StructureDefinition-au-erequesting-servicerequest-imag.html)
