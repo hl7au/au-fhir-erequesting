@@ -6,7 +6,7 @@ Alias: $coverageselfpay = http://terminology.hl7.org/CodeSystem/coverage-selfpay
 Alias: $v3-actcode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $requeststatus = http://hl7.org/fhir/request-status
 Alias: $tasktag = http://hl7.org.au/fhir/ereq/CodeSystem/au-erequesting-task-tag
-Alias: $communication-category = http://hl7.org/fhir/ValueSet/communication-category
+Alias: $communication-category = http://terminology.hl7.org/CodeSystem/communication-category
 Alias: $v3-ParticipationMode = http://terminology.hl7.org/CodeSystem/v3-ParticipationMode
 
 // AU Core profiles
