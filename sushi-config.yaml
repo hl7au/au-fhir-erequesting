@@ -48,6 +48,8 @@ pages:
     title: Home
   conformance.md:
   guidance.md:
+    sex-and-gender.md:
+      title: Sex and Gender
     auereqdi.md:
       title: AU eRequesting Data for Interoperability Mappings
     relationship.md: 

@@ -18,3 +18,4 @@ The following extensions are marked with Must Support and referenced by this imp
 * [Australian Indigenous Status](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-indigenous-status.html) in [AU Core Patient](http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient)
 * [Individual Pronouns](http://hl7.org/fhir/StructureDefinition/individual-pronouns) in [AU Core Patient](http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient)
 * [Individual Gender Identity](http://hl7.org/fhir/StructureDefinition/individual-genderIdentity) in [AU Core Patient](http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient)
+* [Patient Sex Parameter For Clinical Use](https://hl7.org/fhir/extensions/StructureDefinition-patient-sexParameterForClinicalUse.html) in [AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html)

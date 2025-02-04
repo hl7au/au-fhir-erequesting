@@ -1,5 +1,5 @@
 The context of AU eRequesting within the set of HL7 AU standards is shown in the figure below:
-- the **FHIR standard** is the foundation, which creates a common platform or foundation on which a variety of different solutions are implemented. 
+- the **FHIR standard** is the foundation, which creates a common platform or foundation on which a variety of different solutions are implemented. References to the FHIR standard on this page include the HL7 International Core FHIR Specification, HL7 International Core Extensions FHIR Implementation Guide (Extensions Pack) and HL7 International HL7 Terminology (THO).
 - **AU Base** defines local concepts for use in an Australian context introducing relevant identifiers, terminology, extensions. 
 - **AU Core** defines a set of conformance requirements that enforce a set of 'minimum requirements' on the local concepts from AU Base, specifying the elements, extensions, vocabularies, and value sets that SHALL be present and how they SHALL be used, along with the RESTful API interactions.
 - **Use case IGs** (AU eRequesting and AU Provider Directory) build on AU Core to address specific use cases, defining a set of conformance requirements on top of AU Core, using additional building blocks from AU Base as needed.
@@ -28,13 +28,13 @@ The relationship of AU eRequesting to AUeReqDI and other implementation guides i
  <div> 
     <img src="context-colour.png" alt="Relationship to AUeReqDI and Other IGs" style="width:70%"/>
   </div>
-*Figure 3: Relationship to AUeReqDI and Other IGs*
+*Figure 2: Relationship to AUeReqDI and Other IGs*
 <br/>
 
 Implementation Guide |Relationship
 ---|---
 [AU Base](https://build.fhir.org/ig/hl7au/au-fhir-base/)|This IG defines Australian realm concepts including terminology, identifiers, and extensions. AU Core uses AU Base, where available, as the basis for profiles that define the FHIR resources to be supported, and the elements, extensions, vocabularies, and value sets that SHALL be present are identified, and how they are used is defined.
-[AU Core](https://build.fhir.org/ig/hl7au/au-fhir-core/)|This IG defines a set of conformance requirements that enforce a set of 'minimum requirements' on the local concepts from AU Base, specifying the elements, extensions, vocabularies, and value sets that SHALL be present and how they SHALL be used, along with the RESTful API interactions. AU eRequesting is compliant with the profile conformance requirements in [AU Core](https://build.fhir.org/ig/hl7au/au-fhir-core/).
+[AU Core](https://build.fhir.org/ig/hl7au/au-fhir-core/)|This IG defines a set of conformance requirements that enforce a set of ‘minimum requirements’ on the local concepts from AU Base, specifying rules for the elements, extensions, vocabularies, and value sets, and the RESTful API interactions. AU eRequesting is compliant with the profile conformance requirements in [AU Core](https://build.fhir.org/ig/hl7au/au-fhir-core/).
 [HL7 Cross Paradigm Implementation Guide: Gender Harmony - Sex and Gender Representation](https://hl7.org/xprod/ig/uv/gender-harmony/informative1/)|This IG provides definitive guidance on how to exchange clinical sex and gender affirming information using HL7 models. Sex and gender concepts from this IG have been reviewed for the potential for adoption in Australia. Where adopted, these concepts are included by reference in AU Base and profiled in AU Core.
 {:.grid}
 
