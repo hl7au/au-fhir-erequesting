@@ -44,4 +44,4 @@ Description: "AU eRequesting communication request to define a copy-to clinician
     recipient 1..1
 * contained[recipient] only AUCorePractitionerRole
 
-* reasonCode = Canonical(AUeRequestingCommunicationRequestReason)#copyto
+* reasonCode = AUeRequestingCommunicationRequestReason#copyto

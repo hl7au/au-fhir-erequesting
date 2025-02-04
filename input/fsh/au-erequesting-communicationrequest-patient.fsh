@@ -35,4 +35,4 @@ Description: "Direct communication from a filler to the patient.  This supports 
   * ^short = "reminder | instruction"
 * groupIdentifier 1..1
 * groupIdentifier ^type.profile = $AULocalOrderIdentifier 
-* reasonCode = Canonical(AUeRequestingCommunicationRequestReason)#patient
+* reasonCode = AUeRequestingCommunicationRequestReason#patient
