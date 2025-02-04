@@ -43,3 +43,5 @@ Description: "AU eRequesting communication request to define a copy-to clinician
 * contained contains 
     recipient 1..1
 * contained[recipient] only AUCorePractitionerRole
+
+* reasonCode = Canonical(AUeRequestingCommunicationRequestReason)#copyto

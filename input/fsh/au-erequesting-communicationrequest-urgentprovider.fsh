@@ -35,3 +35,4 @@ Description: "Direct communication from a filler to a clinical provider for the 
   * ^short = "alert"
 * groupIdentifier 1..1
   * ^type.profile = $AULocalOrderIdentifier
+* reasonCode = Canonical(AUeRequestingCommunicationRequestReason)#urgent
