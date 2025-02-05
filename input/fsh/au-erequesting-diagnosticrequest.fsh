@@ -242,6 +242,27 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 * priority ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 * priority ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 
+* extension contains AUeRequestingDisplaySequence named displaySequence 1..1 MS
+* extension[displaySequence] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
+* extension[displaySequence] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
+* extension[displaySequence] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[code].valueCode = #SHALL:handle
+* extension[displaySequence] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
+* extension[displaySequence] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][2].extension[code].valueCode = #SHALL:handle
+* extension[displaySequence] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][2].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+* extension[displaySequence] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][3].extension[code].valueCode = #SHALL:able-to-populate
+* extension[displaySequence] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][3].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+* extension[displaySequence] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:handle
+* extension[displaySequence] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
+
+Extension: AUeRequestingDisplaySequence
+Parent: Extension
+Id: au-erequesting-displaysequence
+Title: "AU eRequesting Display Sequence"
+Description: "This extension applies to the AU eRequesting Diagnotic ServiceRequest profile and any dependant ServiceRequest profiles. The display sequence number is an integer assigned to an individual test or service in a ServiceRequest that matches the sequence as seen on a paper order form. The ability to sort on sequenceNumber more easily allows for reconciliation of paper and digital requesting data at the filler, especially for collection centre staff within a pathology collection centre."
+* ^status = #draft
+* ^context.type = #element
+* ^context.expression = "ServiceRequest"
+* valueInteger 1..1
 
 Invariant: au-ereq-srr-01
 Description: "Date must include at least year, month, and day"
