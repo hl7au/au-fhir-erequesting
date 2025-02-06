@@ -6,6 +6,8 @@ Alias: $coverageselfpay = http://terminology.hl7.org/CodeSystem/coverage-selfpay
 Alias: $v3-actcode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $requeststatus = http://hl7.org/fhir/request-status
 Alias: $tasktag = http://hl7.org.au/fhir/ereq/CodeSystem/au-erequesting-task-tag
+Alias: $communication-category = http://terminology.hl7.org/CodeSystem/communication-category
+Alias: $v3-ParticipationMode = http://terminology.hl7.org/CodeSystem/v3-ParticipationMode
 
 // AU Core profiles
 Alias: $AUCorePatient = http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient
@@ -21,6 +23,3 @@ Alias: $AUBaseCoverage = http://hl7.org.au/fhir/StructureDefinition/au-coverage
 Alias: $placer = http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer
 Alias: $filler = http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler
 Alias: $patient = http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient
-
-
-
