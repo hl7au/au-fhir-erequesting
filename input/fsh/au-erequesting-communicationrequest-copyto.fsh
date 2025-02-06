@@ -7,33 +7,41 @@ Description: "AU eRequesting communication request to define a copy-to clinician
 * ^status = #draft
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 
-* groupIdentifier 1..1
+* groupIdentifier 1..1 MS
 * groupIdentifier ^type.profile = $AULocalOrderIdentifier
 * groupIdentifier.type 
-  * coding 1..1    
-  * coding = $v2-0203#PGN
+  * coding 1..1 MS   
+    * system 1..1 MS
+    * system = $v2-0203
+    * code 1..1 MS
+    * code = #PGN
+* status MS
 * status = #active (exactly)
   * ^short = "active"
-* category 1..1
-* category = http://terminology.hl7.org/CodeSystem/communication-category#notification
+* category 1..1 MS 
+  * coding 1..1 MS   
+    * system 1..1 MS
+    * system = "http://terminology.hl7.org/CodeSystem/communication-category"
+    * code 1..1 MS
+    * code = #notification
   * ^short = "notification"
 * doNotPerform 0..0
-* subject 1..1
+* subject 1..1 MS
 * subject only Reference (AUCorePatient)
   * ^short = "Patient that is the subject of the Diagnostic Request"
-* about 1..
+* about 1.. MS
 * about only Reference (AUeRequestingPathologyRequest or AUeRequestingImagingRequest)
   * ^short = "Diagnostic request the copyto communication is about"
-* authoredOn 1..1
+* authoredOn 1..1 MS
 * authoredOn ^short = "Date/time when communication request direction obtained"
-* requester 1..
+* requester 1.. MS
 * requester only Reference (AUCorePractitionerRole)
   * ^short = "Individual provider requesting the communication"
-* recipient 1..1
+* recipient 1..1 MS
 * recipient only Reference (AUCorePractitionerRole)
-  * reference 1..
+  * reference 1.. MS
     * ^short = "Reference to contained PractitionerRole resource.  This likely to need constraint at some point." 
-* sender 1..
+* sender 1.. MS
 * sender only Reference (AUCoreOrganization)
   * ^short = "Diagnostic organization sending the communication"
 
@@ -41,7 +49,11 @@ Description: "AU eRequesting communication request to define a copy-to clinician
 * contained ^slicing.discriminator.type = #type
 * contained ^slicing.discriminator.path = "$this"
 * contained contains 
-    recipient 1..1
+    recipient 1..1 MS
 * contained[recipient] only AUCorePractitionerRole
-
-* reasonCode = AUeRequestingCommunicationRequestReason#copyto
+* reasonCode 
+  * coding 1..1 MS   
+    * system 1..1 MS
+    * system = "http://hl7.org.au/fhir/ereq/CodeSystem/au-erequesting-communicationrequest-reason"
+    * code 1..1 MS
+    * code = #copyto 

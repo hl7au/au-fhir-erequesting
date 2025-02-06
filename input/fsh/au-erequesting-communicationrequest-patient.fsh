@@ -7,32 +7,46 @@ Description: "Direct communication from a filler to the patient.  This supports 
 * ^status = #draft
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 
+* status MS
 * status = #active (exactly)
   * ^short = "active"
 * about 1.. MS
 * about only Reference (AUeRequestingTaskGroup or AUeRequestingDiagnosticRequest)
   * ^short = "Fulfillment task the communication is about"
-* authoredOn 1..1
+* authoredOn 1..1 MS
 * authoredOn ^short = "Date/time when communication request direction obtained"
-* doNotPerform 0..1
+* doNotPerform 0..1 MS
   * ^short = "True when SMS or email communication with patient is requested to not be performed"
-* sender 1..
+* sender 1.. MS
 * sender only Reference (AUCoreOrganization)
   * ^short = "Diagnostic organization sending the SMS or email"
-* requester 1..
+* requester 1.. MS
 * requester only Reference (AUCorePatient or AUCorePractitionerRole or AUCoreOrganization)
   * ^short = "Patient, provider or practice requesting the communication (or for it to not be performed)"
-* recipient 1..1
+* recipient 1..1 MS
 * recipient only Reference (AUCorePatient)
   * ^short = "Patient receiving the communication"
-  * reference 1..
+  * reference 1.. MS
     * ^short = "Relative reference"
-* medium 1..1
+* medium 1.. MS
+  * coding 1..1 MS
   * coding from AUeRequestingCommunicationRequestPatientMedium (required)
   * ^short = "SMS | email"
-* category 1..
+* category 1.. MS
+  * coding 1..1 MS
   * coding from AUeRequestingCommunicationRequestPatientCategory (required)
   * ^short = "reminder | instruction"
-* groupIdentifier 1..1
-* groupIdentifier ^type.profile = $AULocalOrderIdentifier 
-* reasonCode = AUeRequestingCommunicationRequestReason#patient
+* groupIdentifier 1..1 MS
+* groupIdentifier ^type.profile = $AULocalOrderIdentifier
+* groupIdentifier.type 
+  * coding 1..1 MS   
+    * system 1..1 MS
+    * system = $v2-0203
+    * code 1..1 MS
+    * code = #PGN
+* reasonCode 
+  * coding 1..1 MS   
+    * system 1..1 MS
+    * system = "http://hl7.org.au/fhir/ereq/CodeSystem/au-erequesting-communicationrequest-reason"
+    * code 1..1 MS
+    * code = #patient
