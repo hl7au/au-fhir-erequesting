@@ -2,10 +2,20 @@ Profile: AUeRequestingTask
 Parent: Task
 Id: au-erequesting-task
 Title: "AU eRequesting Task"
-Description: "This profile sets minimum expectations for a Task resource that is used to record, search, and fetch information about a task to be performed. It is based on the [Task](https://www.hl7.org/fhir/R4/task.html) and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the Task when conforming to this profile."
+Description: "This profile sets minimum expectations for derived Task resources that are used to record, search, and fetch information about a task to be performed. It is based on the [Task](https://www.hl7.org/fhir/R4/task.html) and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the Task when conforming to this profile."
 
 * ^status = #draft
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
+* ^abstract = true
+
+* meta
+  * tag ^slicing.rules = #open
+  * tag ^slicing.discriminator.type = #value
+  * tag ^slicing.discriminator.path = "$this"
+  * tag contains 
+      eRequestingFulfillmentTask 1..1 MS
+  * tag[eRequestingFulfillmentTask] from AUeRequestingTaskTagFulfillment (required)
+    * ^short = "fulfillment-task | fulfillment-task-group"
 
 * groupIdentifier 1..1 MS
 * groupIdentifier ^type.profile = $AULocalOrderIdentifier
@@ -24,11 +34,8 @@ Description: "This profile sets minimum expectations for a Task resource that is
 
 * priority MS 
 
-* focus 1..1 MS
-* focus only Reference(AUeRequestingPathologyRequest or AUeRequestingImagingRequest)
-
 * for 1..1 MS
-* for only Reference (AUCorePatient)
+* for only Reference(AUCorePatient)
 
 * requester 1..1 MS
 * requester only Reference(AUCorePractitionerRole)

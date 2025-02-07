@@ -39,6 +39,7 @@ Many value sets used in this guide are defined in the base FHIR specification, [
 |[AU eRequesting Task Status](ValueSet-au-erequesting-task-status.html)|[AU eRequesting Task](StructureDefinition-au-erequesting-task.html)|AU eRequesting|
 |[AU eRequesting Coverage Type and Self-Pay Codes](ValueSet-au-erequesting-coverage-type.html)|[AU eRequesting Coverage](StructureDefinition-au-erequesting-coverage.html)|AU eRequesting|
 |[AU eRequesting RequestStatus](ValueSet-au-erequesting-request-status.html)|[AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html)|AU eRequesting|
+|[AU eRequesting Task Tag Fulfillment](ValueSet-au-erequesting-task-tag-fulfillment.html)|[AU eRequesting Task](StructureDefinition-au-erequesting-task.html)|AU eRequesting|
 {:.grid}
 
 
@@ -72,4 +73,5 @@ The list below shows the code systems used in the value sets above.
 |[Tags for the Identification of Languages](https://terminology.hl7.org/CodeSystem-v3-ietf3066.html)|[Common Languages in Australia](https://healthterminologies.gov.au/fhir/ValueSet/common-languages-australia-2)|FHIR|
 |[TaskStatus](https://hl7.org/fhir/R4/codesystem-task-status.html)|[AU eRequesting Task Status](ValueSet-au-erequesting-task-status.html)|FHIR|
 |[v3 Code System ActCode](https://www.hl7.org/fhir/R4/v3/ActCode/cs.html)|[AU eRequesting Coverage Type and Self-Pay Codes](ValueSet-au-erequesting-coverage-type.html)|FHIR|
+|[AU eRequesting Task Tag Codes](CodeSystem-au-erequesting-task-tag.html)|[AU eRequesting Task Tag Fulfillment](ValueSet-au-erequesting-task-tag-fulfillment.html)|AU eRequesting|
 {:.grid}
