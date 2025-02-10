@@ -15,6 +15,6 @@ Description: "This profile sets minimum expectations for a Task resource that is
 * focus 1..1 MS
 * focus only Reference(AUeRequestingPathologyRequest or AUeRequestingImagingRequest)
 
-* partOf 1..1 MS
+* partOf 1..1
 * partOf only Reference(AUeRequestingTaskGroup)
   * ^short = "Task group of which this task is a part"

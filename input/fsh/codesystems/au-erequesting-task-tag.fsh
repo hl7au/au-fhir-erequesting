@@ -18,5 +18,5 @@ Description: "The AU eRequesting Task Tag CodeSystem provides tag values for lab
 * ^compositional = false
 * ^content = #complete
 * ^count = 2
-* #fulfilment-task "fulfilment of a task" "A tag value indicating fullfilment of a task"
-* #fulfilment-task-group "fulfilment of a group task" "A tag value indicating fullfilment of a group task"
+* #fulfilment-task "fulfilment of a task" "A tag value indicating fulfilment of a task"
+* #fulfilment-task-group "fulfilment of a group task" "A tag value indicating fulfilment of a group task"
