@@ -1,7 +1,7 @@
-ValueSet: AUeRequestingTaskTagFulfilment
-Id: au-erequesting-task-tag-fulfilment
-Title: "AU eRequesting Tags for Fulfilment of a Diagnostic Request Task or Group Task"
-Description: "Task tag values for labelling and differentiating fullfilment of tasks used in an Australian eRequesting context."
+ValueSet: AUeRequestingFulfilmentTaskTags
+Id: au-erequesting-fulfilment-task-tags
+Title: "AU eRequesting Fulfilment Task Tags"
+Description: "Task tag values for labelling and differentiating fulfilment of tasks used in an Australian eRequesting context."
 * ^meta.profile[+] = "https://healthterminologies.gov.au/fhir/StructureDefinition/composed-value-set-4"
 * ^version = "1.0.0"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
