@@ -13,9 +13,9 @@ Description: "This profile sets minimum expectations for derived Task resources 
   * tag ^slicing.discriminator.type = #value
   * tag ^slicing.discriminator.path = "$this"
   * tag contains 
-      eRequestingFulfillmentTask 1..1 MS
-  * tag[eRequestingFulfillmentTask] from AUeRequestingTaskTagFulfillment (required)
-    * ^short = "fulfillment-task | fulfillment-task-group"
+      eRequestingFulfilmentTask 1..1 MS
+  * tag[eRequestingFulfilmentTask] from AUeRequestingTaskTagFulfilment (required)
+    * ^short = "fulfilment-task | fulfilment-task-group"
 
 * groupIdentifier 1..1 MS
 * groupIdentifier ^type.profile = $AULocalOrderIdentifier
