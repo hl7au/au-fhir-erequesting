@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <Task xmlns="http://hl7.org/fhir">
-  <id value="taskgroup-imaging-1"/>
+  <id value="task-diagnosticrequest-imaging"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-name">
+      <valueString value="Diagnostic Request Task - Imaging"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
+      <valueMarkdown value="Shows an example of a diagnotic request task for fulfillment of an imaging request *AU eRequesting Task Diagnostic Request* profile. Patient: Fred Roberts."/>
+  </extension>
   <meta>
-    <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-task-group"/>
+    <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-task-diagnosticrequest"/>
     <tag>
       <system value="http://hl7.org.au/fhir/ereq/CodeSystem/au-erequesting-task-tag"/>
-      <code value="fulfillment-task-group"/>
+      <code value="fulfillment-task"/>
     </tag>
   </meta>
-  <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Task taskgroup-imaging-1</b></p><a name="taskgroup-imaging-1"> </a><a name="hctaskgroup-imaging-1"> </a><a name="taskgroup-imaging-1-en-AU"> </a><p><b>groupIdentifier</b>: Placer Group Number/EMC4542244-5624</p><p><b>status</b>: Requested</p><p><b>intent</b>: order</p><p><b>priority</b>: Routine</p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/CodeSystem/task-code fulfill}">Fulfill the focal request</span></p><p><b>for</b>: <a href="Patient-fred-roberts.html">Fred Roberts  Male, DoB: 1961-06-16 ( IHI: Austalian Healthcare Identifier - Individual#8003608500314661)</a></p><p><b>authoredOn</b>: 2024-05-11</p><p><b>requester</b>: <a href="PractitionerRole-guthridge-jarred-gp.html">PractitionerRole Family medicine specialist</a></p><p><b>owner</b>: <a href="Organization-mount-charlton-radiology.html">Organization Mount Charlton Radiology</a></p></div>
-  </text>
   <groupIdentifier>
     <type>
       <coding>
@@ -27,6 +29,9 @@
       <display value="Elimbah Medical Center"/>
     </assigner>
   </groupIdentifier>
+  <partOf>
+    <reference value="Task/task-group-imaging"/>
+  </partOf>
   <status value="requested"/>
   <intent value="order"/>
   <priority value="routine"/>
@@ -36,6 +41,9 @@
       <code value="fulfill"/>
     </coding>
   </code>
+  <focus>
+    <reference value="ServiceRequest/order-xray-1"/>
+  </focus>
   <for>
     <reference value="Patient/fred-roberts"/>
   </for>

@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <Task xmlns="http://hl7.org/fhir">
-  <id value="taskgroup-pathology-1"/>
+  <id value="task-group-pathology"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-name">
+      <valueString value="Group Task - Pathology"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
+      <valueMarkdown value="Shows an example of a group task for fulfillment of a pathology request *AU eRequesting Task Group* profile. Patient: Fred Roberts."/>
+  </extension>
   <meta>
     <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-task-group"/>
     <tag>
@@ -9,9 +14,6 @@
       <code value="fulfillment-task-group"/>
     </tag>
   </meta>
-  <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Task taskgroup-pathology-1</b></p><a name="taskgroup-pathology-1"> </a><a name="hctaskgroup-pathology-1"> </a><a name="taskgroup-pathology-1-en-AU"> </a><p><b>groupIdentifier</b>: Placer Group Number/EMC4542244-5624</p><p><b>status</b>: Requested</p><p><b>intent</b>: order</p><p><b>priority</b>: Routine</p><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/CodeSystem/task-code fulfill}">Fulfill the focal request</span></p><p><b>for</b>: <a href="Patient-fred-roberts.html">Fred Roberts  Male, DoB: 1961-06-16 ( IHI: Austalian Healthcare Identifier - Individual#8003608500314661)</a></p><p><b>authoredOn</b>: 2024-05-11</p><p><b>requester</b>: <a href="PractitionerRole-guthridge-jarred-gp.html">PractitionerRole Family medicine specialist</a></p><p><b>owner</b>: <a href="Organization-kioma-pathology.html">Organization Kioma Pathology</a></p></div>
-  </text>
   <groupIdentifier>
     <type>
       <coding>
