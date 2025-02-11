@@ -1,7 +1,7 @@
 CodeSystem: AUeRequestingTaskTag
 Id: au-erequesting-task-tag
-Title: "AU eRequesting Task Tag Codes"
-Description: "The AU eRequesting Task Tag CodeSystem provides tag values for labelling tasks in an Australian eRequesting context."
+Title: "AU eRequesting Task Tag"
+Description: "The AU eRequesting Task Tag code system provides concepts that represent tag values for labelling tasks in an Australian eRequesting context."
 * ^meta.profile[+] = "https://healthterminologies.gov.au/fhir/StructureDefinition/complete-code-system-4"
 * ^version = "1.0.0"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
