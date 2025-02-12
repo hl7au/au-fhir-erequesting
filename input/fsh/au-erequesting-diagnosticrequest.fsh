@@ -9,8 +9,8 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 * ^abstract = true
 
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
-* extension contains SRPrecondition named request-fasting 0..1 MS
-* extension[request-fasting]
+* extension contains SRPrecondition named fastingStatus 0..1 MS
+* extension[fastingStatus]
   * valueCodeableConcept 
     * coding
       * system = $sct
@@ -18,7 +18,8 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
       * display = "After fasting"
     * text = "Fasting"
 
-* quantityRatio 0..0
+* quantity[x] MS
+* quantity[x] only Quantity
 * quantityQuantity MS
   * ^short = "The quantity of the requested test (will default to 1).  For Rule 3 Exemption, this value may be > 1 but the server does not yet support tracking of multiple fulfilment from a single order.  The quantity information is purely informative."
 
