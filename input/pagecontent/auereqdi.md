@@ -81,7 +81,7 @@ Column attribute descriptions are as follows:
   </tr>
    <tr>
     <td colspan="2">Billing guidance</td>
-    <td><a href="StructureDefinition-au-erequesting-diagnosticrequest.html">AU eRequesting Diagnostic Request</a><br><br><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-coverage.html">AU Base Coverage</a></td>
+    <td><a href="StructureDefinition-au-erequesting-diagnosticrequest.html">AU eRequesting Diagnostic Request</a><br><br><a href="StructureDefinition-au-erequesting-coverage.html">AU eRequesting Coverage</a></td>
     <td>ServiceRequest.insurance</td>
     <td>ServiceRequest.insurance references a Coverage resource.</td>
   </tr>
@@ -154,7 +154,7 @@ Column attribute descriptions are as follows:
   </tr>
     <tr>
     <td colspan="2">Billing guidance</td>
-    <td><a href="StructureDefinition-au-erequesting-servicerequest-imag.html">AU eRequesting Imaging Request</a><br><br><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-coverage.html">AU Base Coverage</a></td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest-imag.html">AU eRequesting Imaging Request</a><br><br><a href="StructureDefinition-au-erequesting-coverage.html">AU eRequesting Coverage</a></td>
     <td>ServiceRequest.insurance</td>
     <td></td>
   </tr>
@@ -215,7 +215,7 @@ Column attribute descriptions are as follows:
   </tr>
     <tr>
     <td colspan="2">Billing guidance</td>
-    <td><a href="StructureDefinition-au-erequesting-servicerequest-path.html">AU eRequesting Pathology Request</a><br><br><a href="https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-coverage.html">AU Base Coverage</a></td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest-path.html">AU eRequesting Pathology Request</a><br><br><a href="StructureDefinition-au-erequesting-coverage.html">AU eRequesting Coverage</a></td>
     <td>ServiceRequest.insurance<br><br>Coverage</td>
     <td>ServiceRequest.insurance references a Coverage resource.</td>
   </tr>
