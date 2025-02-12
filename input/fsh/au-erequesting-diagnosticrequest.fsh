@@ -9,6 +9,21 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 * ^abstract = true
 
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
+* extension contains SRPrecondition named request-fasting 0..1 MS
+* extension[request-fasting]
+  * valueCodeableConcept 
+    * coding
+      * system = $sct
+      * code = #726054005 
+      * display = "After fasting"
+    * text = "Fasting"
+
+* quantityRatio 0..0
+* quantityQuantity MS
+  * ^short = "The quantity of the requested test (will default to 1).  For Rule 3 Exemption, this value may be > 1 but the server does not yet support tracking of multiple fulfilment from a single order.  The quantity information is purely informative."
+
+* occurrence[x] MS
+  * ^short = "This may be used to cover three needs: 1. A target date for the test to be performed. 2. A date range for the test to be performed (possible Rule 3 Exemption use). 3. A frequency for the test to be performed (more complex Rule 3 Exemption use).  The server will not process this information as it is informative only and there is no alignment to diagnostic service regulations or policy."
 
 * extension contains http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse named sexParameterForClinicalUse 0..1 MS
 * extension[sexParameterForClinicalUse] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate-if-known
