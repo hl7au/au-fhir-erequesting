@@ -7,13 +7,13 @@ Description: "AU eRequesting communication request task tracking fulfillment of 
 * ^status = #draft
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 
-* meta.tag
+* meta.tag 
   * code = #fulfillment-task
   * system = Canonical(AUeRequestingTaskTag)
   * ^short = "fulfillment-task"
-* focus 1..1
+* focus 1..1 MS
 * focus only Reference(CommunicationRequest)
   * ^short = "CommunicationRequest this task is the focus of"
-* partOf ..1
+* partOf 1..1 MS
 * partOf only Reference(AUeRequestingTaskGroup)
   * ^short = "Task group this task is a part of"
