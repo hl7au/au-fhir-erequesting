@@ -12,7 +12,7 @@ Description: "AU eRequesting communication request task tracking fulfillment of 
   * system = Canonical(AUeRequestingTaskTag)
   * ^short = "fulfillment-task"
 * focus 1..1 MS
-* focus only Reference(CommunicationRequest)
+* focus only Reference(AUeRequestingCommunicationRequestCopyTo or AUeRequestingCommunicationRequestPatient or AUeRequestingCommunicationRequestUrgentProvider)
   * ^short = "CommunicationRequest this task is the focus of"
 * partOf 1..1 MS
 * partOf only Reference(AUeRequestingTaskGroup)
