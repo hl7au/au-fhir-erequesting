@@ -9,8 +9,8 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 * ^abstract = true
 
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
-* extension contains SRPrecondition named fastingStatus 0..1 MS
-* extension[fastingStatus]
+* extension contains SRPrecondition named requestFasting 0..1 MS
+* extension[requestFasting]
   * valueCodeableConcept 
     * coding
       * system = $sct
