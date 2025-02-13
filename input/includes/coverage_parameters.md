@@ -12,9 +12,9 @@
     <tr>
       <td>_id</td>
       <td><b>SHALL</b></td>
-      <td><b>SHOULD</b></td>
-      <td><b>SHOULD</b></td>
-      <td><b>SHOULD</b></td>
+      <td><b>-</b></td>
+      <td><b>-</b></td>
+      <td><b>-</b></td>
       <td><code>token</code></td>
       <td></td>
     </tr>
