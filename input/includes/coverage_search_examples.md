@@ -10,4 +10,4 @@ The following search parameters and search parameter combinations are supported.
     
       1. GET [base]/Coverage?_id=10045786
 
-  *Implementation Notes:* Fetches a bundle containing all Coverage resources for the specified id
+  *Implementation Notes:* Fetches a bundle containing all Coverage resources for the specified id ([how to search by id of the resource](https://hl7.org/fhir/r4/search.html#id))
