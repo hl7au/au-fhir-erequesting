@@ -44,7 +44,7 @@ The AU eRequesting Patient actor can search for ServiceRequest details by callin
 
 The AU eRequesting Filler actor can retrieve ServiceRequest details by calling the AU eRequesting Server actor.
 
-Actors operate in a typical sequence where placers initiate a request by creating (and updating) service requests, patients may access details of their requests and fillers retrieve service request details to enable fulfillment of the requests. 
+Actors operate in a typical sequence where placers initiate a request by creating (and updating) service requests, patients may access details of their requests and fillers retrieve service request details to enable fulfilment of the requests. 
 
 This sequence is shown in the diagram below:
 
