@@ -258,7 +258,7 @@ Extension: AUeRequestingDisplaySequence
 Parent: Extension
 Id: au-erequesting-displaysequence
 Title: "AU eRequesting Display Sequence"
-Description: "This extension applies to the AU eRequesting Diagnostic ServiceRequest profile and any dependant ServiceRequest profiles. The display sequence number is an integer assigned to an individual test or service in a ServiceRequest that matches the sequence as seen on a paper order form. The ability to sort on sequenceNumber more easily allows for reconciliation of paper and digital requesting data at the filler, especially for collection centre staff within a pathology collection centre."
+Description: "This extension applies to the AU eRequesting Diagnostic Request profile and any derived ServiceRequest profiles. The display sequence is an integer assigned to an individual test or service in a ServiceRequest that matches the sequence as seen on a paper request form. The ability to sort on sequenceNumber more easily allows for reconciliation of paper and digital requesting data at the filler, especially for collection centre staff within a pathology collection centre."
 * ^status = #draft
 * ^context.type = #element
 * ^context.expression = "ServiceRequest"
