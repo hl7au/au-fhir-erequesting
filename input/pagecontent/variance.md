@@ -13,6 +13,8 @@ This implementation guide profiles the following resources that are not profiled
 
 - Task
   - [AU eRequesting Task](StructureDefinition-au-erequesting-task.html)
+  - [AU eRequesting Task Diagnostic Request](StructureDefinition-au-erequesting-task-diagnosticrequest.html)
+  - [AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html)
 
 ### Variance from AU Core
 This implementation guide has no variance (i.e. fully compliant) from AU Core FHIR Implementation Guide version 5.0.1-ci-build ([current](https://build.fhir.org/ig/hl7au/au-fhir-core/)).
@@ -28,3 +30,5 @@ This implementation guide profiles the following resources that are not profiled
   - [AU eRequesting Pathology Request](StructureDefinition-au-erequesting-servicerequest-path.html)
 - Task
   - [AU eRequesting Task](StructureDefinition-au-erequesting-task.html)
+  - [AU eRequesting Task Diagnostic Request](StructureDefinition-au-erequesting-task-diagnosticrequest.html)
+  - [AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html)
