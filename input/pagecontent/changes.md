@@ -17,6 +17,8 @@ This change log documents the significant updates and resolutions implemented fr
   - AU eRequesting Task Tag Fulfilment ([FHIR-49718](https://jira.hl7.org/browse/FHIR-49718), [FHIR-49719](https://jira.hl7.org/browse/FHIR-49719))
 - New code systems:
   - AU eRequesting Task Tag Codes ([FHIR-49718](https://jira.hl7.org/browse/FHIR-49718), [FHIR-49719](https://jira.hl7.org/browse/FHIR-49719))
+- New extensions:  
+  - AU eRequesting Display Sequence [FHIR-49715](https://jira.hl7.org/browse/FHIR-49715)
 - Added [Sex and Gender](sex-and-gender.html) page to consolidate implementation guidance on sex and gender concepts in AU eRequesting, with references to guidance in AU Core and AU Base [FHIR-47176](https://jira.hl7.org/browse/FHIR-47176), [FHIR-47178](https://jira.hl7.org/browse/FHIR-47178), [FHIR-47182](https://jira.hl7.org/browse/FHIR-47182), [FHIR-47183](https://jira.hl7.org/browse/FHIR-47183), [FHIR-46892](https://jira.hl7.org/browse/FHIR-46892), [FHIR-46896](https://jira.hl7.org/browse/FHIR-46896).
 - Made the following changes to AU eRequesting ServiceRequest:
   - made the profile abstract ([FHIR-46813](https://jira.hl7.org/browse/FHIR-46813))
