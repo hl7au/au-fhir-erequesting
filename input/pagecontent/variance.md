@@ -11,6 +11,8 @@ This implementation guide has no variance (i.e. fully compliant) from AU Base FH
 #### Additionally Profiled Resources
 This implementation guide profiles the following resources that are not profiled in AU Base:
 
+- Consent
+  - [AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhr-consent-withdrawal.html)
 - Task
   - [AU eRequesting Task](StructureDefinition-au-erequesting-task.html)
   - [AU eRequesting Task Diagnostic Request](StructureDefinition-au-erequesting-task-diagnosticrequest.html)

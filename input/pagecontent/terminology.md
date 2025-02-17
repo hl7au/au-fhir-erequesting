@@ -48,7 +48,7 @@ Many value sets used in this guide are defined in the base FHIR specification, [
 
 This implementation guide does not define any unique code systems. The code systems used in this guide are defined in the base FHIR specification, [AU Base](https://build.fhir.org/ig/hl7au/au-fhir-base/terminology.html), or [NCTS](https://www.healthterminologies.gov.au/integration/R4/fhir/metadata).  
 
-The list below shows the code systems used in the value sets above.
+The list below shows the code systems used in the value sets above or are the code system for a fixed value in an AU eRequesting profile.
 
 |CodeSystem|ValueSet where used|Published|
 |---|---|---|---|
@@ -58,8 +58,12 @@ The list below shows the code systems used in the value sets above.
 |[AU eRequesting Task Tag](CodeSystem-au-erequesting-task-tag.html)|[AU eRequesting Fulfilment Task Tags](ValueSet-au-erequesting-fulfilment-task-tags.html)|AU eRequesting|
 |[Australian Indigenous Status](https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1)|[Australian Indigenous Status](https://healthterminologies.gov.au/fhir/ValueSet/australian-indigenous-status-1)|NCTS|
 |[Australian States and Territories](https://healthterminologies.gov.au/fhir/CodeSystem/australian-states-territories-1)|[Australian States and Territories](https://healthterminologies.gov.au/fhir/ValueSet/australian-states-territories-2)|NCTS|
-|[ContactPointSystem](http://hl7.org/fhir/contact-point-system)|[ContactPointSystem](http://hl7.org/fhir/ValueSet/contact-point-system)|FHIR|
-|[ContactPointUse](http://hl7.org/fhir/contact-point-use)|[ContactPointUse](http://hl7.org/fhir/ValueSet/contact-point-use)|FHIR|
+|[Consent Action Codes](http://terminology.hl7.org/CodeSystem/consentaction)|[AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhr-consent-withdrawal.html)|FHIR|
+|[Consent Category Codes](http://terminology.hl7.org/CodeSystem/consentcategorycodes)|[AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhr-consent-withdrawal.html)|FHIR|
+|[Consent Scope Codes](http://terminology.hl7.org/CodeSystem/consentscope)|[AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhr-consent-withdrawal.html)|FHIR|
+|[Consent State Codes](http://hl7.org/fhir/consent-state-codes)|[AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhr-consent-withdrawal.html)|FHIR|
+|[ContactPointSystem](http://hl7.org/fhir/contact-point-system)|[AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhr-consent-withdrawal.html)|FHIR|
+|[ContactPointUse](http://hl7.org/fhir/contact-point-use)|[AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhr-consent-withdrawal.html)|FHIR|
 |[Coverage SelfPay Codes](http://terminology.hl7.org/CodeSystem/coverage-selfpay)|[AU eRequesting Coverage Type and Self-Pay Codes](ValueSet-au-erequesting-coverage-type.html)|FHIR|
 |[DataAbsentReason](https://terminology.hl7.org/CodeSystem-data-absent-reason.html)|[Australian Pronouns](https://www.healthterminologies.gov.au/integration/R4/fhir/ValueSet/australian-pronouns-1), [Gender Identity Response](https://healthterminologies.gov.au/fhir/ValueSet/gender-identity-response-1), [Sex Parameter For Clinical Use](http://terminology.hl7.org/ValueSet/sex-parameter-for-clinical-use)|FHIR|
 |[IdentifierType AU](https://build.fhir.org/ig/hl7au/au-fhir-base//CodeSystem-au-v2-0203.html)|[DVA Entitlement](https://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-dva-entitlement.html), [hl7VS-identifierType - AU Extended](https://build.fhir.org/ig/hl7au/au-fhir-base/ValueSet-au-v2-0203-extended.html)|AU Base|
@@ -69,9 +73,10 @@ The list below shows the code systems used in the value sets above.
 |[NameUse](https://hl7.org/fhir/R4/codesystem-name-use.html)|[NameUse](https://hl7.org/fhir/R4/valueset-name-use.html)|FHIR|
 |[RequestIntent](https://hl7.org/fhir/R4/codesystem-request-intent.html)|[RequestIntent](https://hl7.org/fhir/R4/valueset-request-intent.html)|FHIR|
 |[RequestStatus](https://hl7.org/fhir/R4/codesystem-request-status.html)|[AU eRequesting RequestStatus](ValueSet-au-erequesting-request-status.html)|FHIR|
+|[ResourceType](http://hl7.org/fhir/resource-types)|[AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhr-consent-withdrawal.html)|FHIR|
 |[Sex Parameter For Clinical Use](http://terminology.hl7.org/CodeSystem/sex-parameter-for-clinical-use)|[Sex Parameter For Clinical Use](http://terminology.hl7.org/ValueSet/sex-parameter-for-clinical-use)|HL7 Terminology|
 |[SNOMED CT (Australian extension)](https://www.healthterminologies.gov.au/access-clinical-terminology/access-fhir-terminology-resources/code-systems/?ui:filter=snomed)|[Gender Identity Response](https://healthterminologies.gov.au/fhir/ValueSet/gender-identity-response-1), [Reason for Request](https://healthterminologies.gov.au/fhir/ValueSet/reason-for-request-1),[RANZCR Radiology Referral](ValueSet-ranzcr-radiology-referral.html)|NCTS|
 |[Tags for the Identification of Languages](https://terminology.hl7.org/CodeSystem-v3-ietf3066.html)|[Common Languages in Australia](https://healthterminologies.gov.au/fhir/ValueSet/common-languages-australia-2)|FHIR|
 |[TaskStatus](https://hl7.org/fhir/R4/codesystem-task-status.html)|[AU eRequesting Task Status](ValueSet-au-erequesting-task-status.html)|FHIR|
-|[v3 Code System ActCode](https://www.hl7.org/fhir/R4/v3/ActCode/cs.html)|[AU eRequesting Coverage Type and Self-Pay Codes](ValueSet-au-erequesting-coverage-type.html)|FHIR|
+|[v3 Code System ActCode](https://www.hl7.org/fhir/R4/v3/ActCode/cs.html)|[AU eRequesting Coverage Type and Self-Pay Codes](ValueSet-au-erequesting-coverage-type.html), [AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhr-consent-withdrawal.html)|FHIR|
 {:.grid}
