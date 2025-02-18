@@ -11,7 +11,7 @@ The following is the full list of profiles that have been defined for this imple
 
 ### Extensions
 
-All [extensions]({{site.data.fhir.path}}extensibility.html) used in this guide are defined in the FHIR Extensions Pack or [AU Base](https://build.fhir.org/ig/hl7au/au-fhir-base/profiles-and-extensions.html#extensions).
+All [extensions]({{site.data.fhir.path}}extensibility.html) used in this guide are defined as part of this guide, in the FHIR Extensions Pack or [AU Base](https://build.fhir.org/ig/hl7au/au-fhir-base/profiles-and-extensions.html#extensions).
 
 The following extensions are marked with Must Support and referenced by this implementation guide:
 
