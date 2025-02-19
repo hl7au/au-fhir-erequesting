@@ -2,7 +2,7 @@ Profile: AUeRequestingMHRConsentWithdrawal
 Parent: Consent
 Id: au-erequesting-mhr-consent-withdrawal
 Title: "AU eRequesting MHR Consent Withdrawal"
-Description: "This profile sets minimum expectations for a Consent resource that is used to Withdraw consent to upload Diagnostic Requests to the My Health Record."
+Description: "This profile sets minimum expectations for a Consent resource to record, search, and fetch a My Health Record (MHR) consent withdrawal. It is based on the [Consent](https://hl7.org/fhir/R4/consent.html) and identifies the additional mandatory core elements, extensions, vocabularies and value sets that SHALL be present in the Consent when conforming to this profile."
 
 * ^status = #draft
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
@@ -112,7 +112,7 @@ Description: "This profile sets minimum expectations for a Consent resource that
     * code 1..1 MS
     * code = #OPTIN
 * policyRule ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
-* policyRule ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
+* policyRule ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate-if-known
 * policyRule ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
 * policyRule ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[code].valueCode = #SHALL:handle
 * policyRule ^extension[http://hl7.org/fhir/StructureDefinition/obligation][2].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
