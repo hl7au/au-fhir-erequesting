@@ -17,6 +17,8 @@ This change log documents the significant updates and resolutions implemented fr
   - AU eRequesting Task Tag Fulfilment ([FHIR-49718](https://jira.hl7.org/browse/FHIR-49718), [FHIR-49719](https://jira.hl7.org/browse/FHIR-49719))
 - New code systems:
   - AU eRequesting Task Tag Codes ([FHIR-49718](https://jira.hl7.org/browse/FHIR-49718), [FHIR-49719](https://jira.hl7.org/browse/FHIR-49719))
+- New extensions:  
+  - AU eRequesting Display Sequence [FHIR-49715](https://jira.hl7.org/browse/FHIR-49715)
 - Added [Sex and Gender](sex-and-gender.html) page to consolidate implementation guidance on sex and gender concepts in AU eRequesting, with references to guidance in AU Core and AU Base [FHIR-47176](https://jira.hl7.org/browse/FHIR-47176), [FHIR-47178](https://jira.hl7.org/browse/FHIR-47178), [FHIR-47182](https://jira.hl7.org/browse/FHIR-47182), [FHIR-47183](https://jira.hl7.org/browse/FHIR-47183), [FHIR-46892](https://jira.hl7.org/browse/FHIR-46892), [FHIR-46896](https://jira.hl7.org/browse/FHIR-46896).
 - Made the following changes to AU eRequesting ServiceRequest:
   - made the profile abstract ([FHIR-46813](https://jira.hl7.org/browse/FHIR-46813))
@@ -27,6 +29,7 @@ This change log documents the significant updates and resolutions implemented fr
   - Removed draft and unknown from ServiceRequest.status [FHIR-47097](https://jira.hl7.org/browse/FHIR-47097)
   - added Request status reason extension as a Must Support element with cardinality 0..1 [FHIR-47098](https://jira.hl7.org/browse/FHIR-47098)
   - added Patient Sex Parameter for Clinical Use extension [FHIR-46997](https://jira.hl7.org/browse/FHIR-46997)
+  - added AU eRequesting Display Sequence extension as Must Support element with cardinality 1..1 [FHIR-49715](https://jira.hl7.org/browse/FHIR-49715), [FHIR-49716](https://jira.hl7.org/browse/FHIR-49716)
 - Added _include search parameters ServiceRequest:patient, ServiceRequest:requester and ServiceRequest:encounter to AU eRequesting Placer, Filler, Patient and Server CapabilityStatements [FHIR-46942](https://jira.hl7.org/browse/FHIR-46942)
 - Renamed AU eRequesting Patient Access actor and CapabilityStatement to be AU eRequesting Patient [FHIR-46802](https://jira.hl7.org/browse/FHIR-46802)
 - Clarified profile-specific implementation guidance on populating ServiceRequest.code and removed additional binding in AU eRequesting Pathology Request and AU eRequesting Imaging Request [FHIR-46847](https://jira.hl7.org/browse/FHIR-46847)
