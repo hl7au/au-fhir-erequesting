@@ -12,7 +12,7 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 * extension contains SRPrecondition named requestFasting 0..1 MS
 * extension[requestFasting].value[x] MS
 * extension[requestFasting].value[x] only CodeableConcept
-* extension[requestFasting].valueCodeableConcept from http://terminology.hl7.org.au/ValueSet/au-erequesting-fasting-status (required)
+* extension[requestFasting].valueCodeableConcept from https://healthterminologies.gov.au/fhir/ValueSet/pathology-fasting-status-1 (required)
 * extension[requestFasting].valueCodeableConcept ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate-if-known
 * extension[requestFasting].valueCodeableConcept ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * extension[requestFasting].valueCodeableConcept ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[code].valueCode = #SHALL:handle
