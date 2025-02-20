@@ -1,9 +1,9 @@
 ### Introduction
 AU eRequesting is provided to support the use of HL7<sup>&reg;</sup> FHIR<sup>&reg;&copy;</sup> for diagnostic requesting in an Australian context. It sets the minimum expectations on FHIR resources to support conformance and implementation in systems.
 
-AU eRequesting defines the Data model and RESTful API interactions that set minimum expectations for placing and accessing electronic requests.
+AU eRequesting defines the data model and RESTful API interactions that set minimum expectations for placing and accessing electronic requests.
 
-The focus AU eRequesting Release 1 (R1) is support of pathology and medical imaging requests in community-based care provision, with consideration for future use beyond this scope. 
+The focus of AU eRequesting Release 1 (R1) is support of pathology and medical imaging requests in community-based care provision, with consideration for future use beyond this scope. 
 
 
 ### Project background
@@ -44,7 +44,7 @@ The AU eRequesting Patient actor can search for ServiceRequest details by callin
 
 The AU eRequesting Filler actor can retrieve ServiceRequest details by calling the AU eRequesting Server actor.
 
-Actors operate in a typical sequence where placers initiate a request by creating (and updating) service requests, patients may access details of their requests and fillers retrieve service request details to enable fulfillment of the requests. 
+Actors operate in a typical sequence where placers initiate a request by creating (and updating) service requests, patients may access details of their requests and fillers retrieve service request details to enable fulfilment of the requests. 
 
 This sequence is shown in the diagram below:
 
@@ -62,6 +62,7 @@ This guide is divided into several pages which are listed at the top of each pag
 - [Home](index.html): This page provides the introduction and scope for this guide.
 - [Conformance](conformance.html): This page describes the set of rules to claim conformance to this guide
 - [Guidance](guidance.html): These pages list the guidance for this guide. 
+  - [Sex and Gender](sex-and-gender.html): This page provides guidance on the representation of sex, gender, and related concepts.
   - [AU eRequesting Data for Interoperability Mappings](auereqdi.html): This page maps AUeReqDI data groups and elements to FHIR artefacts in AU eRequesting.
   - [Relationships to Other Specifications](relationship.html): This page provides guidance on the relationship between AU eRequesting, AUeReqDI, and other implementation guides.
   - [AU Variance Statement](variance.html): This page documents variance from AU Base and AU Core.
