@@ -26,6 +26,6 @@ The following search parameters and search parameter combinations are supported.
       1. GET [base]/ServiceRequest?requisition=https://elimbahmedicalcentre.example.com.au/orders/order-identifier\|EMC4542244-5624 
       1. GET [base]/ServiceRequest?requisition=EMC4542244-5624&_include=ServiceRequest:patient&_include=ServiceRequest:requester&_include=ServiceRequest:encounter
 
-    *Implementation Notes:* Fetches a bundle of all ServiceRequest resources for the specified requisition identifier ([how to search by token](https://hl7.org/fhir/R4/search.html#token)), instead of just the resource itself, and allows for the inclusion of additional search parameters such as _include, _revinclude, or _lastUpdated
+    *Implementation Notes:* Fetches a bundle of all ServiceRequest resources for the specified requisition identifier ([how to search by token](https://hl7.org/fhir/R4/search.html#token))
 
     
