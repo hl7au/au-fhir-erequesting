@@ -957,7 +957,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="Consent"/>
-      <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-mhr-consent-withdrawal">
+      <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-mhrconsentwithdrawal">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
         </extension>

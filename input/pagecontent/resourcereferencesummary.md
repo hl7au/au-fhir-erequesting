@@ -1,6 +1,6 @@
 |Resource Type|Profile|Supported Target Reference|
 |---|---|---|---|
-|Consent|[AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhr-consent-withdrawal.html)|-|
+|Consent|[AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhrconsentwithdrawal.html)|-|
 |Coverage|[AU eRequesting Coverage](StructureDefinition-au-erequesting-coverage.html)|-|
 |Condition|[AU Core Condition](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-condition.html)|[AU Core Patient](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-patient.html)|
 |DocumentReference|[DocumentReference](http://hl7.org/fhir/R4/documentreference.html)|-|

@@ -1,6 +1,6 @@
 Profile: AUeRequestingMHRConsentWithdrawal
 Parent: Consent
-Id: au-erequesting-mhr-consent-withdrawal
+Id: au-erequesting-mhrconsentwithdrawal
 Title: "AU eRequesting MHR Consent Withdrawal"
 Description: "This profile sets minimum expectations for a Consent resource to record, search, and fetch a My Health Record (MHR) consent withdrawal. It is based on the [Consent](https://hl7.org/fhir/R4/consent.html) and identifies the additional mandatory core elements, extensions, vocabularies and value sets that SHALL be present in the Consent when conforming to this profile."
 
