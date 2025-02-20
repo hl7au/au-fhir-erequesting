@@ -24,7 +24,7 @@ Description: "This profile sets minimum expectations for a CommunicationRequest 
     * system 1..1 MS
     * system = $v2-0203
     * code 1..1 MS
-    * code = #PGN
+    * code = #PGN (exactly)
 * status MS
 * status = #active (exactly)
   * ^short = "active"
@@ -43,7 +43,7 @@ Description: "This profile sets minimum expectations for a CommunicationRequest 
     * system 1..1 MS
     * system = "http://terminology.hl7.org/CodeSystem/communication-category"
     * code 1..1 MS
-    * code = #notification
+    * code = #notification (exactly)
   * ^short = "notification"
 * category ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * category ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
@@ -138,7 +138,7 @@ Description: "This profile sets minimum expectations for a CommunicationRequest 
     * system 1..1 MS
     * system = "http://hl7.org.au/fhir/ereq/CodeSystem/au-erequesting-communicationrequest-reason"
     * code 1..1 MS
-    * code = #copyto
+    * code = #copyto (exactly)
 * reasonCode ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * reasonCode ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
 * reasonCode ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
