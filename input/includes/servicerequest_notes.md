@@ -3,7 +3,7 @@
 The following search parameters and search parameter combinations are supported. Conformance obligations are detailed in the table above.
 
 1. **[`_id`](https://hl7.org/fhir/R4/servicerequest.html#search)** search parameter
-   - including support for these **[_include](http://hl7.org/fhir/R4/search.html#include)** parameters: `ServiceRequest:patient`,`ServiceRequest:requester`,`ServiceRequest:encounter`
+   - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `ServiceRequest:patient`,`ServiceRequest:requester`,`ServiceRequest:encounter`
  
     `GET [base]/ServiceRequest?_id=[id]`
 
@@ -16,7 +16,7 @@ The following search parameters and search parameter combinations are supported.
 
 
 1. **[`requisition`](https://hl7.org/fhir/R4/servicerequest.html#search)** search parameter
-   - including support for these **[_include](http://hl7.org/fhir/R4/search.html#include)** parameters: `ServiceRequest:patient`,`ServiceRequest:requester`,`ServiceRequest:encounter`
+   - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `ServiceRequest:patient`,`ServiceRequest:requester`,`ServiceRequest:encounter`
 
     `GET [base]/ServiceRequest?requisition={system|}{code}`
 
