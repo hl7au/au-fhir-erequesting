@@ -133,7 +133,7 @@ The following search parameters and search parameter combinations are supported.
    - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `Task:focus`, `Task:owner`, `Task:patient`, and `Task:requester`
    - including support for chained searching of requester canonical identifier `requester.identifier` (e.g. `requester.identifier=[system|][code]`)
 
-    `GET [base]/Task?requester={Type/}[id]` or optionally `GET [base]/Task?parequestertient.identifier=[system|][code]`
+    `GET [base]/Task?requester={Type/}[id]` or optionally `GET [base]/Task?requester.identifier=[system|][code]`
 
     Example:
     
@@ -146,9 +146,9 @@ The following search parameters and search parameter combinations are supported.
 
 1. Combined **[`requester`](https://hl7.org/fhir/R4/task.html#search)** and **[`status`](https://hl7.org/fhir/R4/task.html#search)** search parameters
    - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `Task:focus`, `Task:owner`, `Task:patient`, and `Task:requester`
-  - including support for chained searching of requester canonical identifier `requester.identifier` (e.g. `requester.identifier=[system|][code]`)
+   - including support for chained searching of requester canonical identifier `requester.identifier` (e.g. `requester.identifier=[system|][code]`)
 
-    `GET [base]/Task?requester={Type/}[id]&status={system|}{value}` or optionally `GET [base]/Task?parequestertient.identifier=[system|][code]&status={system|}{value}`
+    `GET [base]/Task?requester={Type/}[id]&status={system|}{value}` or optionally `GET [base]/Task?requester.identifier=[system|][code]&status={system|}{value}`
 
     Example:
     
