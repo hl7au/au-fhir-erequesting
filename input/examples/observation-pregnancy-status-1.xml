@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-pregnancy-status-1"/>  
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="82810-3"/>
+      <display value="Pregnancy status"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/fred-roberts"/>
+  </subject>
+  <effectiveDateTime value="2025-01-10"/> 
+  <performer>
+  <reference value="PractitionerRole/guthridge-jarred-gp"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="77386006"/>
+      <display value="Pregnant"/>
+    </coding>
+  </valueCodeableConcept>  
+</Observation>
