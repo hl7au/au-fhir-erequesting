@@ -2,7 +2,7 @@ Profile: AUeRequestingCommunicationRequestCopyTo
 Parent: CommunicationRequest
 Id: au-erequesting-communicationrequest-copyto
 Title: "AU eRequesting Communication Request CopyTo"
-Description: "This profile sets minimum expectations for a CommunicationRequest resource that is used to define a copy-to clinician as a report recipient.  This is differentiated from an urgent practitioner communication as priority may not be urgent and the requester will not be the recipient. It is based on the CommunicationRequest and identifies the additional constraints, extensions, vocabularies and value sets that SHALL be present in the CommunicationRequest when conforming to this profile."
+Description: "This profile sets minimum expectations for a CommunicationRequest resource that is used to define a copy-to clinician or copy-to patient as a report recipient.  This is differentiated from an urgent practitioner communication as priority may not be urgent and the requester will not be the recipient. It is based on the CommunicationRequest and identifies the additional constraints, extensions, vocabularies and value sets that SHALL be present in the CommunicationRequest when conforming to this profile."
 
 * ^status = #draft
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
@@ -21,10 +21,7 @@ Description: "This profile sets minimum expectations for a CommunicationRequest 
 * groupIdentifier ^type.profile = $AULocalOrderIdentifier
 * groupIdentifier.type 
   * coding 1..1 MS   
-    * system 1..1 MS
-    * system = $v2-0203
-    * code 1..1 MS
-    * code = #PGN (exactly)
+  * coding = $v2-0203#PGN (exactly)
 * status MS
 * status = #active (exactly)
   * ^short = "active"
@@ -39,11 +36,9 @@ Description: "This profile sets minimum expectations for a CommunicationRequest 
 * status ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 * status ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error  
 * category 1..1 MS 
-  * coding 1..1 MS   
-    * system 1..1 MS
-    * system = "http://terminology.hl7.org/CodeSystem/communication-category"
-    * code 1..1 MS
-    * code = #notification (exactly)
+  * coding 1..1 MS
+  * coding = $communication-category#notification (exactly)   
+
 * category ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * category ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
 * category ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
@@ -133,11 +128,8 @@ Description: "This profile sets minimum expectations for a CommunicationRequest 
 * sender ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 * sender ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 * reasonCode 
-  * coding 1..1 MS   
-    * system 1..1 MS
-    * system = "http://hl7.org.au/fhir/ereq/CodeSystem/au-erequesting-communicationrequest-reason"
-    * code 1..1 MS
-    * code = #copyto (exactly)
+  * coding 1..1 MS
+  * coding = $comm-req-reason#copyto (exactly)   
 * reasonCode ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * reasonCode ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
 * reasonCode ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
