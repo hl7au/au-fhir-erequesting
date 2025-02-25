@@ -1,5 +1,6 @@
 |Resource Type|Profile|Supported Target Reference|
 |---|---|---|---|
+|CommunicationRequest|[AU eRequesting Communication Request CopyTo](StructureDefinition-au-erequesting-communicationrequest-copyto.html)|-|
 |Coverage|[AU eRequesting Coverage](StructureDefinition-au-erequesting-coverage.html)|-|
 |Condition|[AU Core Condition](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-condition.html)|[AU Core Patient](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-patient.html)|
 |DocumentReference|[DocumentReference](http://hl7.org/fhir/R4/documentreference.html)|-|
