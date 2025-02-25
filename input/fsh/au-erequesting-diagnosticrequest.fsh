@@ -242,6 +242,12 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 * priority ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 * priority ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 
+* supportingInfo ^slicing.rules = #open
+* supportingInfo ^slicing.discriminator.type = #profile
+* supportingInfo ^slicing.discriminator.path = "$this.resolve()"
+* supportingInfo contains
+    pregnancystatus 0..1 MS     
+* supportingInfo[pregnancystatus] only Reference(AUeRequestingObservationPregnancyStatus)
 
 * extension contains AUeRequestingDisplaySequence named displaySequence 1..1 MS
 * extension[displaySequence] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
