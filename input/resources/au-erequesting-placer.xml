@@ -332,6 +332,30 @@
          </extension>
        </supportedProfile>
        <documentation value="Placers **SHALL** support the CommunicationRequest resource, the AU eRequesting profile, and the conformance expectations for the CommunicationRequest resource."/>      
+       <interaction>
+          <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+            <valueCode value="SHOULD"/>
+          </extension>
+          <code value="read"/>
+        </interaction>
+        <interaction>
+          <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+            <valueCode value="SHOULD"/>
+          </extension>
+          <code value="search-type"/>
+        </interaction>
+        <interaction>
+          <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+            <valueCode value="SHOULD"/>
+          </extension>
+          <code value="create"/>
+        </interaction>
+        <interaction>
+          <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+            <valueCode value="SHOULD"/>
+          </extension>
+          <code value="update"/>
+        </interaction> 
      </resource>
   </rest>
 </CapabilityStatement>
