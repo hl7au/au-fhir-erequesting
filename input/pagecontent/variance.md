@@ -22,7 +22,8 @@ This implementation guide has no variance (i.e. fully compliant) from AU Core FH
 
 #### Additionally Profiled Resources
 This implementation guide profiles the following resources that are not profiled in AU Core:
-
+- CommunicationRequest
+  - [AU eRequesting Communication Request CopyTo](StructureDefinition-au-erequesting-communicationrequest-copyto.html)
 - Coverage
   - [AU eRequesting Coverage](StructureDefinition-au-erequesting-coverage.html)
 - ServiceRequest
