@@ -11,7 +11,7 @@ This implementation guide has no variance (i.e. fully compliant) from AU Base FH
 #### Additionally Profiled Resources
 This implementation guide profiles the following resources that are not profiled in AU Base:
 - Observation
-  - [AU eRequesting Observation Pregnancy Status](StructureDefinition-au-erequesting-observation-pregnancystatus.html)
+  - [Observation Pregnancy - Status (IPS)] (http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips)
 - Task
   - [AU eRequesting Task](StructureDefinition-au-erequesting-task.html)
   - [AU eRequesting Task Diagnostic Request](StructureDefinition-au-erequesting-task-diagnosticrequest.html)
@@ -26,7 +26,7 @@ This implementation guide profiles the following resources that are not profiled
 - Coverage
   - [AU eRequesting Coverage](StructureDefinition-au-erequesting-coverage.html)
 - Observation
-  - [AU eRequesting Observation Pregnancy Status](StructureDefinition-au-erequesting-observation-pregnancystatus.html)
+  - [Observation Pregnancy - Status (IPS)] (http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips)
 - ServiceRequest
   - [AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html)
   - [AU eRequesting Imaging Request](StructureDefinition-au-erequesting-servicerequest-imag.html)

@@ -33,10 +33,10 @@ Many value sets used in this guide are defined in the base FHIR specification, [
 |[Imaging Procedure](https://healthterminologies.gov.au/fhir/ValueSet/imaging-procedure-1)|[AU eRequesting Imaging Request](StructureDefinition-au-erequesting-servicerequest-imag.html)|NCTS|
 |[Individual Healthcare Identifier Status](https://healthterminologies.gov.au/fhir/ValueSet/ihi-status-1)|[AU Core Patient](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-patient.html)|NCTS|
 |[NameUse](https://hl7.org/fhir/R4/valueset-name-use.html)|[AU Core Patient](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-patient.html)|FHIR|
-|[ObservationStatus](http://hl7.org/fhir/ValueSet/observation-status)|[AU eRequesting Observation Pregnancy Status](StructureDefinition-au-erequesting-observation-pregnancystatus.html)|FHIR|
+|[ObservationStatus](http://hl7.org/fhir/ValueSet/observation-status)|[Observation Pregnancy - Status (IPS)](http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips)|FHIR|
 |[Order Identifier Type](https://build.fhir.org/ig/hl7au/au-fhir-base//ValueSet-order-identifier-type.html)|[AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html)|AU Base|
 |[Pathology Procedure](https://healthterminologies.gov.au/fhir/ValueSet/pathology-procedure-1)|[AU eRequesting Pathology Request](StructureDefinition-au-erequesting-servicerequest-path.html)|NCTS|
-|[PregnancyStatusUvIps](http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips)|[AU eRequesting Observation Pregnancy Status](StructureDefinition-au-erequesting-observation-pregnancystatus.html)|FHIR
+|[PregnancyStatusUvIps](http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips)|[Observation Pregnancy - Status (IPS)] (http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips)|FHIR
 |[RCPA - SPIA Requesting Pathology Terminology Reference Set](https://www.healthterminologies.gov.au/integration/R4/fhir/ValueSet/spia-requesting-refset-3)|[AU eRequesting Pathology Request](StructureDefinition-au-erequesting-servicerequest-path.html)|NCTS|
 |[RANZCR Radiology Referral](ValueSet-ranzcr-radiology-referral.html)|[AU eRequesting Imaging Request](StructureDefinition-au-erequesting-servicerequest-imag.html)|AU eRequesting|
 |[Reason for Request](https://healthterminologies.gov.au/fhir/ValueSet/reason-for-request-1)|[AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html)|NCTS|
