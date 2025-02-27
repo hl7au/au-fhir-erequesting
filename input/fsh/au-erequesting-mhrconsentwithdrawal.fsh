@@ -20,12 +20,9 @@ Description: "This profile sets minimum expectations for a Consent resource to r
 * status ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 * status ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 
-* scope
-  * coding 1..1 MS
-    * system 1..1 MS
-    * system = "http://terminology.hl7.org/CodeSystem/consentscope"
-    * code 1..1 MS
-    * code = #patient-privacy (exactly)
+* scope MS
+  * coding 1..1
+  * coding = $consentscope#patient-privacy
 * scope ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * scope ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
 * scope ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
@@ -37,12 +34,9 @@ Description: "This profile sets minimum expectations for a Consent resource to r
 * scope ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 * scope ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error 
 
-* category
-  * coding 1..1 MS
-    * system 1..1 MS
-    * system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
-    * code 1..1 MS
-    * code = #IDSCL (exactly)
+* category MS
+  * coding 1..1
+  * coding = $v3-actcode#IDSCL
 * category ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * category ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
 * category ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
@@ -105,12 +99,9 @@ Description: "This profile sets minimum expectations for a Consent resource to r
 * organization ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 * organization ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 
-* policyRule 
-  * coding 1..1 MS
-    * system 1..1 MS
-    * system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
-    * code 1..1 MS
-    * code = #OPTIN (exactly)
+* policyRule MS
+  * coding 1..1 
+  * coding = $v3-actcode#OPTIN
 * policyRule ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * policyRule ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate-if-known
 * policyRule ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
@@ -145,8 +136,9 @@ Description: "This profile sets minimum expectations for a Consent resource to r
   * type ^extension[http://hl7.org/fhir/StructureDefinition/obligation][3].extension[code].valueCode = #SHALL:able-to-populate
   * type ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
   * type ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
-  * action 1..1
-  * action
+  * action 1..1 MS
+    * coding 1..1 
+    * coding = $consentaction#disclose
   * action ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
   * action ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
   * action ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
@@ -157,11 +149,7 @@ Description: "This profile sets minimum expectations for a Consent resource to r
   * action ^extension[http://hl7.org/fhir/StructureDefinition/obligation][3].extension[code].valueCode = #SHALL:able-to-populate
   * action ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
   * action ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
-    * coding 1..1 MS
-      * system 1..1 MS
-      * system = "http://terminology.hl7.org/CodeSystem/consentaction"
-      * code 1..1 MS
-      * code = #disclose (exactly)
+   
   * class 1.. MS
   * class ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
   * class ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
@@ -179,11 +167,9 @@ Description: "This profile sets minimum expectations for a Consent resource to r
     * ^slicing.discriminator[+].type = #value
     * ^slicing.discriminator[=].path = "code"
   * class contains diagnosticreport 1..1 MS
-  * class[diagnosticreport]
-    * system MS
+  * class[diagnosticreport] MS
     * system = "http://hl7.org/fhir/resource-types"
-    * code MS
-    * code = #DiagnosticReport (exactly)
+    * code = #DiagnosticReport
   * data 1.. MS
   * data ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
   * data ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
