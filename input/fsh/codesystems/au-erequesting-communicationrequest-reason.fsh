@@ -1,7 +1,7 @@
 CodeSystem: AUeRequestingCommunicationRequestReason
 Id: au-erequesting-communicationrequest-reason
 Title: "AU eRequesting CommunicationRequest Reason"
-Description: "Reason codes for a CommunicationRequest used in the Australian eRequesting context."
+Description: "Reason codes for a communication request used in the Australian eRequesting context."
 * ^meta.profile[+] = "https://healthterminologies.gov.au/fhir/StructureDefinition/complete-code-system-4"
 * ^version = "1.0.0"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
@@ -20,4 +20,4 @@ Description: "Reason codes for a CommunicationRequest used in the Australian eRe
 * ^count = 3
 * #urgent "Urgent Request" "The requester requires the results communicated urgently."
 * #patient "Patient Request" "The patient has requested the communication."
-* #copyto "Copy To" "The communication request is for a copy to another party."
+* #copyto "Copy To" "Another party has requested a copy of the results."
