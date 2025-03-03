@@ -327,7 +327,19 @@
         </extension>
       </supportedProfile>
       <documentation value="Fillers **SHALL** support the Consent resource, the AU eRequesting MHR Consent Withdrawal profile, and the conformance expectations for the Consent resource."/>
-       <searchParam>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+	    <interaction>
+	      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+	        <valueCode value="SHOULD"/>
+	      </extension>
+	      <code value="search-type"/>
+	    </interaction> 
+      <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="MAY"/>
         </extension>

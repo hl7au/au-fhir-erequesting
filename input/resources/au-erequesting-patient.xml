@@ -342,7 +342,19 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Patient **SHOULD** support the Consent resource, the AU eRequesting MHR Consent Withdrawal profile, and the conformance expectations for the Consent resource."/>
+      <documentation value="If the Patient supports the Consent resource, the Patient **SHALL** support the AU eRequesting profiles and the conformance expectations for the Consent resource."/>
+       <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="MAY"/>
