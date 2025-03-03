@@ -356,6 +356,14 @@
           </extension>
           <code value="update"/>
         </interaction> 
+        <searchParam>
+          <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+            <valueCode value="MAY"/>
+          </extension>
+          <name value="_id"/>
+          <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+          <type value="token"/>
+        </searchParam>
      </resource>
   </rest>
 </CapabilityStatement>

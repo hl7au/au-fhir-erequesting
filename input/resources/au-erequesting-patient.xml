@@ -341,7 +341,7 @@
            <valueCode value="SHALL"/>
          </extension>
        </supportedProfile>
-       <documentation value="Patient **SHOULD** support the CommunicationRequest resource, the AU eRequesting profile, and the conformance expectations for the CommunicationRequest resource."/>      
+       <documentation value="If the Patient supports the CommunicationRequest resource, the Patient SHALL support the AU eRequesting profiles and the conformance expectations for the CommunicationRequest resource."/>      
        <interaction>
           <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
             <valueCode value="SHOULD"/>
@@ -354,6 +354,14 @@
           </extension>
           <code value="search-type"/>
        </interaction>
-     </resource>
+       <searchParam>
+          <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+            <valueCode value="MAY"/>
+          </extension>
+          <name value="_id"/>
+          <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+          <type value="token"/>
+        </searchParam>
+      </resource>
   </rest>
 </CapabilityStatement>
