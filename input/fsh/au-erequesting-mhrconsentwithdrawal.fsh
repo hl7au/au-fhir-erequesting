@@ -168,8 +168,7 @@ Description: "This profile sets minimum expectations for a Consent resource to r
     * ^slicing.discriminator[=].path = "code"
   * class contains diagnosticreport 1..1 MS
   * class[diagnosticreport] MS
-    * system = "http://hl7.org/fhir/resource-types"
-    * code = #DiagnosticReport
+  * class[diagnosticreport] = $resourcetypes#DiagnosticReport
   * data 1.. MS
   * data ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
   * data ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
