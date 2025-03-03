@@ -56,7 +56,7 @@ The list below shows the code systems used in the value sets above or are the co
 |[AdministrativeGender](https://hl7.org/fhir/R4/codesystem-administrative-gender.html)|[AdministrativeGender](https://hl7.org/fhir/R4/valueset-administrative-gender.html)|FHIR|
 |[AddressUse](http://hl7.org/fhir/address-use)|[AddressUse](http://hl7.org/fhir/ValueSet/address-use)|FHIR|
 |[AddressType](http://hl7.org/fhir/address-type)|[AddressType](http://hl7.org/fhir/ValueSet/address-type)|FHIR|
-|[AU eRequesting Communication Request Reason](CodeSystem-au-erequesting-communicationrequest-reason.html)|[AU eRequesting Communication Request CopyTo](StructureDefinition-au-erequesting-communicationrequest-copyto.html)|AU eRequesting|
+|[AU eRequesting Communication Request Reason](CodeSystem-au-erequesting-communication-request-reason.html)|[AU eRequesting Communication Request CopyTo](StructureDefinition-au-erequesting-communicationrequest-copyto.html)|AU eRequesting|
 |[AU eRequesting Task Tag](CodeSystem-au-erequesting-task-tag.html)|[AU eRequesting Fulfilment Task Tags](ValueSet-au-erequesting-fulfilment-task-tags.html)|AU eRequesting|
 |[Australian Indigenous Status](https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1)|[Australian Indigenous Status](https://healthterminologies.gov.au/fhir/ValueSet/australian-indigenous-status-1)|NCTS|
 |[Australian States and Territories](https://healthterminologies.gov.au/fhir/CodeSystem/australian-states-territories-1)|[Australian States and Territories](https://healthterminologies.gov.au/fhir/ValueSet/australian-states-territories-2)|NCTS|

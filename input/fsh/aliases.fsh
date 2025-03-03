@@ -10,7 +10,7 @@ Alias: $taskcode = http://hl7.org/fhir/CodeSystem/task-code
 Alias: $tasktag = http://hl7.org.au/fhir/ereq/CodeSystem/au-erequesting-task-tag
 Alias: $communication-category = http://terminology.hl7.org/CodeSystem/communication-category
 //Alias: $v3-ParticipationMode = http://terminology.hl7.org/CodeSystem/v3-ParticipationMode
-Alias: $comm-req-reason = http://hl7.org.au/fhir/ereq/CodeSystem/au-erequesting-communicationrequest-reason
+Alias: $comm-req-reason = http://hl7.org.au/fhir/ereq/CodeSystem/au-erequesting-communication-request-reason
 
 // AU Core profiles
 Alias: $AUCorePatient = http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient
