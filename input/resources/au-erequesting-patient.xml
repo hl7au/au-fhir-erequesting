@@ -341,7 +341,7 @@
            <valueCode value="SHALL"/>
          </extension>
        </supportedProfile>
-       <documentation value="If the Patient supports the CommunicationRequest resource, the Patient SHALL support the AU eRequesting profiles and the conformance expectations for the CommunicationRequest resource."/>      
+       <documentation value="If the Patient supports the CommunicationRequest resource, the Patient **SHALL** support the AU eRequesting profiles and the conformance expectations for the CommunicationRequest resource."/>      
        <interaction>
           <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
             <valueCode value="SHOULD"/>
