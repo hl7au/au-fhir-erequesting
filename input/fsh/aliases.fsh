@@ -8,7 +8,7 @@ Alias: $requeststatus = http://hl7.org/fhir/request-status
 Alias: $oid = urn:ietf:rfc:3986
 Alias: $taskcode = http://hl7.org/fhir/CodeSystem/task-code
 Alias: $tasktag = http://hl7.org.au/fhir/ereq/CodeSystem/au-erequesting-task-tag
-
+Alias: $fastingPrecondition = https://healthterminologies.gov.au/fhir/ValueSet/pathology-fasting-status-1
 // AU Core profiles
 Alias: $AUCorePatient = http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient
 Alias: $AUCoreEncounter = http://hl7.org.au/fhir/core/StructureDefinition/au-core-encounter
