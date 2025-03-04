@@ -10,6 +10,8 @@ This implementation guide has no variance (i.e. fully compliant) from AU Base FH
 
 #### Additionally Profiled Resources
 This implementation guide profiles the following resources that are not profiled in AU Base:
+- CommunicationRequest
+  - [AU eRequesting Communication Request CopyTo](StructureDefinition-au-erequesting-communicationrequest-copyto.html)
 
 - Consent
   - [AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhrconsentwithdrawal.html)
@@ -23,6 +25,8 @@ This implementation guide has no variance (i.e. fully compliant) from AU Core FH
 
 #### Additionally Profiled Resources
 This implementation guide profiles the following resources that are not profiled in AU Core:
+- CommunicationRequest
+  - [AU eRequesting Communication Request CopyTo](StructureDefinition-au-erequesting-communicationrequest-copyto.html)
 
 - Consent
   - [AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhrconsentwithdrawal.html)
