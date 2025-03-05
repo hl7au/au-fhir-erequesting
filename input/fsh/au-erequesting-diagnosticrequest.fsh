@@ -91,7 +91,8 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 
 
 * quantity[x] 0..1 MS
-  * ^short = "An informative value indicating the number of fulfilments requested. If not provided the quantity is 1. For Rule 3 Exemption, this value may be greater that 1; however, the server does not currently support tracking multiple fulfilments from a single order."
+* quantity[x] only Quantity or Range 
+  * ^short = "An informative value indicating the number of fulfilments requested. If not provided the quantity is 1. For Rule 3 Exemption, this value may be greater than 1; however, the server does not currently support tracking multiple fulfilments from a single order."
 * quantity[x] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate-if-known
 * quantity[x] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * quantity[x] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[code].valueCode = #SHALL:handle
@@ -309,7 +310,7 @@ Extension: AUeRequestingFastingPrecondition
 Parent: Extension
 Id: au-erequesting-fastingprecondition
 Title: "AU eRequesting Fasting Precondition"
-Description: "This extension applies to the AU eRequesting Diagnostic Request profile and any derived ServiceRequest profiles. The fasting precondition is a code that indicates the recommendation related to the fasting status of the patient as a precondition to specimen collection or a radiology procedure. This information is important for the laboratory to ensure that the correct reference intervals are selected for some test results. The information is also important for some imaging studies to ensure accurate results."
+Description: "This extension applies to the AU eRequesting Diagnostic Request profile and any derived ServiceRequest profiles. The fasting precondition is a code that indicates the recommendation related to the fasting status of the patient as a precondition to the diagnostic procedure or test being requested."
 * ^status = #draft
 * ^context.type = #element
 * ^context.expression = "ServiceRequest"
