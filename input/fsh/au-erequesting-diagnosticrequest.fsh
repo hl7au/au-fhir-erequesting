@@ -309,7 +309,7 @@ Extension: AUeRequestingFastingPrecondition
 Parent: Extension
 Id: au-erequesting-fastingprecondition
 Title: "AU eRequesting Fasting Precondition"
-Description: "This extension applies to the AU eRequesting Diagnostic Request profile and any derived ServiceRequest profiles. The fasting precondition is a code that indicates the recommendation related to the fasting status of the patient as a precondition to specimen collection. This information is important for the laboratory to ensure that the correct reference intervals are selected for some test results."
+Description: "This extension applies to the AU eRequesting Diagnostic Request profile and any derived ServiceRequest profiles. The fasting precondition is a code that indicates the recommendation related to the fasting status of the patient as a precondition to specimen collection or a radiology procedure. This information is important for the laboratory to ensure that the correct reference intervals are selected for some test results. The information is also important for some imaging studies to ensure accurate results."
 * ^status = #draft
 * ^context.type = #element
 * ^context.expression = "ServiceRequest"
