@@ -1007,13 +1007,7 @@ The SNOMED International IPS Terminology is distributed by International Health 
 * $sct#81618005
 * $sct#32265006
 * $sct#31911002
-* $sct#74016001
-* $sct#427019001
-* $sct#427407003
-* $sct#426860004
-* $sct#58011003
 * $sct#449617002
-* $sct#5433008
 * $sct#9241000087103
 * $sct#9251000087100
 * $sct#9771000087103
