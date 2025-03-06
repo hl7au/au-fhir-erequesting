@@ -7,7 +7,11 @@ The following is the full list of profiles that have been defined for this imple
 {% include sd-list-generator.md %}
 <!-- ================================================ -->
 
-<br />
+<div> 
+  <img src="au-erequesting-profiles.svg" alt="AU eRequesting Profiles" style="width:100%"/>
+</div>
+*Figure 1: AU eRequesting Profiles*
+<br/>
 
 ### Extensions
 
