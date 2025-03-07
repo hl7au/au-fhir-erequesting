@@ -193,7 +193,7 @@
         </interaction>        
         <searchParam>
           <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-            <valueCode value="SHOULD"/>
+            <valueCode value="MAY"/>
           </extension>
           <name value="_id"/>
           <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
@@ -304,15 +304,52 @@
     <!-- OBSERVATION -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="MAY"/>
+        <valueCode value="SHALL"/>
       </extension>
       <type value="Observation"/>
-      <supportedProfile value="http://hl7.org/fhir/StructureDefinition/Observation">
+       <supportedProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+       <supportedProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-edd-uv-ips">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <documentation value="Placers **SHALL** support the Observation resource, the IPS profiles, and the conformance expectations for the Observation resource."/>
+       <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+          <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+            <valueCode value="SHOULD"/>
+          </extension>
+          <code value="update"/>
+      </interaction>
+      <interaction>
+          <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+            <valueCode value="SHOULD"/>
+          </extension>
+          <code value="create"/>
+      </interaction>            
+      <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="MAY"/>
         </extension>
-      </supportedProfile>
-      <documentation value="Placers **MAY** support the Observation resource."/>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+      </searchParam>
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
