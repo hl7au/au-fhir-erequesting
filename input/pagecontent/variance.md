@@ -12,6 +12,9 @@ This implementation guide has no variance (i.e. fully compliant) from AU Base FH
 This implementation guide profiles the following resources that are not profiled in AU Base:
 - CommunicationRequest
   - [AU eRequesting Communication Request CopyTo](StructureDefinition-au-erequesting-communicationrequest-copyto.html)
+
+- Consent
+  - [AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhrconsentwithdrawal.html)
 - Task
   - [AU eRequesting Task](StructureDefinition-au-erequesting-task.html)
   - [AU eRequesting Task Diagnostic Request](StructureDefinition-au-erequesting-task-diagnosticrequest.html)
@@ -24,6 +27,9 @@ This implementation guide has no variance (i.e. fully compliant) from AU Core FH
 This implementation guide profiles the following resources that are not profiled in AU Core:
 - CommunicationRequest
   - [AU eRequesting Communication Request CopyTo](StructureDefinition-au-erequesting-communicationrequest-copyto.html)
+
+- Consent
+  - [AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhrconsentwithdrawal.html)
 - Coverage
   - [AU eRequesting Coverage](StructureDefinition-au-erequesting-coverage.html)
 - ServiceRequest
