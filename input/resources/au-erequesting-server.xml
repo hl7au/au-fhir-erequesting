@@ -298,7 +298,7 @@
           <valueCode value="SHALL"/>
         </extension>
 	    </supportedProfile>
-      <documentation value="Servers **SHALL** support the Patient resource, the AU Core profile, and the conformance expectations for the Patient resource."/>
+      <documentation value="Servers **SHALL** support the Patient resource, the AU Core Patient and Patient (IPS) profiles, and the conformance expectations for the Patient resource."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -643,7 +643,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Servers **SHALL** support the Observation resource, the IPS profiles, and the conformance expectations for the Observation resource."/>
+      <documentation value="Servers **SHALL** support the Observation resource, the Observation Pregnancy - Status (IPS) and the Observation Pregnancy - Expected Delivery Date (IPS) profiles, and the conformance expectations for the Observation resource."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
