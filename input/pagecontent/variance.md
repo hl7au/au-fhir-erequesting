@@ -6,7 +6,7 @@ HL7 Australia published FHIR implementation guides are required to follow specif
 - **SHALL** include an AU Variance Statement page
 
 ### Variance from AU Base
-This implementation guide has no variance (i.e. fully compliant) from AU Base FHIR Implementation Guide version 5.0.1-ci-build ([current](https://build.fhir.org/ig/hl7au/au-fhir-base/)).
+This implementation guide has no variance (i.e. fully compliant) from AU Base FHIR Implementation Guide version 5.1.0-preview ([5.1.0-preview](https://hl7.org.au/fhir/5.1.0-preview/)).
 
 #### Additionally Profiled Resources
 This implementation guide profiles the following resources that are not profiled in AU Base:
@@ -21,7 +21,7 @@ This implementation guide profiles the following resources that are not profiled
   - [AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html)
 
 ### Variance from AU Core
-This implementation guide has no variance (i.e. fully compliant) from AU Core FHIR Implementation Guide version 5.0.1-ci-build ([current](https://build.fhir.org/ig/hl7au/au-fhir-core/)).
+This implementation guide has no variance (i.e. fully compliant) from AU Core FHIR Implementation Guide version 1.1.0-preview ([1.1.0-preview](http://hl7.org.au/fhir/core/1.1.0-preview)).
 
 #### Additionally Profiled Resources
 This implementation guide profiles the following resources that are not profiled in AU Core:
