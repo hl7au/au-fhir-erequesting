@@ -2,9 +2,11 @@ ValueSet: RANZCRRadiologyReferral
 Id: ranzcr-radiology-referral
 Title: "RANZCR Radiology Referral"
 Description: "Standard codes for use in requesting radiology tests in Australia, derived from the RANZCR Radiology Referral Set (RRS)."
-* ^meta.profile[+] = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+* ^meta.profile[+] = "https://healthterminologies.gov.au/fhir/StructureDefinition/composed-value-set-4"
 * ^url = "https://ranzcr.com/fhir/ValueSet/radiology-referral"
 * ^version = "1.0.0"
+* ^identifier.value = "urn:oid:1.2.36.1.2001.1004.300.100.1014"
+* ^identifier.system = $oid
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^status = #draft
 * ^experimental = false
