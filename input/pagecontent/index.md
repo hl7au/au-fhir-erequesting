@@ -1,3 +1,5 @@
+{% include stu_note.md -%}
+
 ### Introduction
 AU eRequesting is provided to support the use of HL7<sup>&reg;</sup> FHIR<sup>&reg;&copy;</sup> for diagnostic requesting in an Australian context. It sets the minimum expectations on FHIR resources to support conformance and implementation in systems.
 
