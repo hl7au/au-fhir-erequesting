@@ -174,7 +174,6 @@ The SNOMED International IPS Terminology is distributed by International Health 
 * $sct#439015006
 * $sct#432849003
 * $sct#171229005
-* $sct#28367004
 * $sct#169010007
 * $sct#717342009
 * $sct#241588009
@@ -212,10 +211,7 @@ The SNOMED International IPS Terminology is distributed by International Health 
 * $sct#84200003
 * $sct#765041007
 * $sct#765042000
-* $sct#419827000
 * $sct#331000087101
-* $sct#341000087107
-* $sct#751000087109
 * $sct#447393003
 * $sct#6451000087105
 * $sct#6461000087108
@@ -238,7 +234,6 @@ The SNOMED International IPS Terminology is distributed by International Health 
 * $sct#431845006
 * $sct#702728001
 * $sct#241232001
-* $sct#85895003
 * $sct#736276004
 * $sct#431243009
 * $sct#241586008
@@ -1004,9 +999,7 @@ The SNOMED International IPS Terminology is distributed by International Health 
 * $sct#55501000
 * $sct#765476000
 * $sct#765477009
-* $sct#81618005
 * $sct#32265006
-* $sct#31911002
 * $sct#449617002
 * $sct#9241000087103
 * $sct#9251000087100
@@ -1014,7 +1007,6 @@ The SNOMED International IPS Terminology is distributed by International Health 
 * $sct#840361000
 * $sct#431892005
 * $sct#418618007
-* $sct#419942003
 * $sct#712729003
 * $sct#15311000087107
 * $sct#15301000087105
