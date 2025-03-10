@@ -171,7 +171,32 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Patient clients **SHOULD** support the Patient resource, the AU Core profile, and the conformance expectations for the Patient resource."/>
+      <supportedProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+	    </supportedProfile>
+      <documentation value="If Patient supports the Patient resource, the AU Core Patient and Patient (IPS) profiles and the conformance expectations for the Patient resource **SHALL** be supported."/>
+      <interaction>
+	      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+	        <valueCode value="SHOULD"/>
+	      </extension>
+	      <code value="read"/>
+	    </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+      </searchParam>     
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -277,15 +302,40 @@
     <!-- OBSERVATION -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="MAY"/>
+        <valueCode value="SHOULD"/>
       </extension>
       <type value="Observation"/>
-      <supportedProfile value="http://hl7.org/fhir/StructureDefinition/Observation">
+      <supportedProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+       <supportedProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-edd-uv-ips">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <documentation value="If Patient supports the Observation resource, the Observation Pregnancy - Status (IPS), the Observation Pregnancy - Expected Delivery Date (IPS) profiles and the conformance expectations for the Observation resource **SHALL** be supported."/>
+       <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="MAY"/>
         </extension>
-      </supportedProfile>
-      <documentation value="Patient **MAY** support the Observation resource."/>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+      </searchParam>
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -324,6 +374,77 @@
         </extension>
       </supportedProfile>
       <documentation value="Patient **MAY** support the RelatedPerson resource, the AU Base profile, and the conformance expectations for the RelatedPerson resource."/>
+      <!-- TBC 
+      <referencePolicy value="resolves">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+      </referencePolicy> -->
+    </resource>
+     <resource>
+       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+         <valueCode value="SHOULD"/>
+       </extension>
+       <type value="CommunicationRequest"/>
+       <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-communicationrequest-copyto">
+         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+           <valueCode value="SHALL"/>
+         </extension>
+       </supportedProfile>
+       <documentation value="If the Patient supports the CommunicationRequest resource, the Patient **SHALL** support the AU eRequesting profiles and the conformance expectations for the CommunicationRequest resource."/>      
+       <interaction>
+          <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+            <valueCode value="SHOULD"/>
+          </extension>
+          <code value="read"/>
+       </interaction>
+       <interaction>
+          <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+            <valueCode value="SHOULD"/>
+          </extension>
+          <code value="search-type"/>
+       </interaction>
+       <searchParam>
+          <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+            <valueCode value="MAY"/>
+          </extension>
+          <name value="_id"/>
+          <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+          <type value="token"/>
+        </searchParam>
+      </resource>
+    <!-- CONSENT -->
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD"/>
+      </extension>
+      <type value="Consent"/>
+      <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-mhrconsentwithdrawal">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <documentation value="If the Patient supports the Consent resource, the Patient **SHALL** support the AU eRequesting profiles and the conformance expectations for the Consent resource."/>
+       <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+      </searchParam>
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">

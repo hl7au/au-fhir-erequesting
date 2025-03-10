@@ -16,6 +16,7 @@ extension:
     valueInteger: 0
 version: 0.3.0-ci-build
 fhirVersion: 4.0.1
+language: en
 copyright: Used by permission of HL7 International, all rights reserved Creative Commons License. HL7 Australia© 2024+; Licensed Under Creative Commons No Rights Reserved.
 copyrightYear: 2024
 releaseLabel: CI Build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -32,6 +33,8 @@ dependencies:
   hl7.fhir.au.base:
     version: current
   hl7.fhir.au.core: 
+    version: current
+  hl7.fhir.uv.ips: 
     version: current
 # The pages property corresponds to IG.definition.page. SUSHI can
 # auto-generate the page list, but if the author includes pages in
