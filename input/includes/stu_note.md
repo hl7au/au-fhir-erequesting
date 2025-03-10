@@ -1,10 +1,12 @@
 <div class="stu-note" markdown="1">
 
-#### Preview of AU eRequesting 0.3.0 for Connectathon
-This March 2025 preview snapshot is published to support the HL7 Australia Connectathon in March 2025.
+#### AU eRequesting 0.3.0-preview for Connectathon 
 
-This snapshot incorporates changes from AU eRequesting 0.2.0-preview. Priority has been given to including normative content required for testing at the Connectathon. Further updates to address remaining normative and informative changes are planned.
+This preview snapshot supports the HL7 Australia March 2025 Connectathon.
 
-Key changes between this version and the 0.2.0-preview version are available in the [Change Log](changes.html).
+Connectathon testing plays a crucial role in the development of standards and helps ensure content that is fit for purpose. 
+
+The primary items for testing in this event include:
+TBD
 
 </div><!-- stu-note -->
