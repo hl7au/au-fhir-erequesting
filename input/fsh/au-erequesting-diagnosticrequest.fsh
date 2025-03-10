@@ -271,6 +271,23 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 * priority ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 * priority ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 
+* supportingInfo ^slicing.rules = #open
+* supportingInfo ^slicing.discriminator.type = #profile
+* supportingInfo ^slicing.discriminator.path = "$this.resolve()"
+* supportingInfo contains
+    pregnancyStatus 0..1 MS     
+* supportingInfo[pregnancyStatus] only Reference(Observation-pregnancy-status-uv-ips)
+* supportingInfo[pregnancyStatus] obeys au-ereq-srr-02
+* supportingInfo[pregnancyStatus] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate-if-known
+* supportingInfo[pregnancyStatus] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
+* supportingInfo[pregnancyStatus] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[code].valueCode = #SHALL:handle
+* supportingInfo[pregnancyStatus] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
+* supportingInfo[pregnancyStatus] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][2].extension[code].valueCode = #SHALL:handle
+* supportingInfo[pregnancyStatus] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][2].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+* supportingInfo[pregnancyStatus] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][3].extension[code].valueCode = #SHALL:able-to-populate
+* supportingInfo[pregnancyStatus] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][3].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+* supportingInfo[pregnancyStatus] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
+* supportingInfo[pregnancyStatus] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 
 * extension contains AUeRequestingDisplaySequence named displaySequence 1..1 MS
 * extension[displaySequence] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
@@ -323,3 +340,8 @@ Invariant: au-ereq-srr-01
 Description: "Date must include at least year, month, and day"
 Severity: #error
 Expression: "$this.toString().length() >= 10"
+
+Invariant: au-ereq-srr-02
+Description: "Pregnancy status must only be Pregnant"
+Severity: #error
+Expression: "$this.resolve().value.coding.where(system='http://snomed.info/sct').code = '77386006'"
