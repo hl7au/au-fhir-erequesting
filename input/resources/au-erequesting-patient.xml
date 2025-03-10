@@ -176,7 +176,7 @@
           <valueCode value="SHALL"/>
         </extension>
 	    </supportedProfile>
-      <documentation value="If Patient supports the Patient resource, the AU Core Patient and Patient (IPS) profiles and the conformance expectations for the Patient resource SHALL be supported."/>
+      <documentation value="If Patient supports the Patient resource, the AU Core Patient and Patient (IPS) profiles and the conformance expectations for the Patient resource **SHALL** be supported."/>
       <interaction>
 	      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 	        <valueCode value="SHOULD"/>
