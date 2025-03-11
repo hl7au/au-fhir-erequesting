@@ -85,7 +85,7 @@
     <reference value="PractitionerRole/guthridge-jarred-gp"/>
   </requester>
   <supportingInfo>
-      <reference value="Observation/pregnancy-status-pregnant"/>
+      <reference value="Observation/observation-pregnancy-status"/>
       <display value="Pregnancy status"/>
   </supportingInfo>
 </ServiceRequest>
