@@ -1,6 +1,6 @@
 ### Release 0.3.0-preview
-- Expected Publication date: TBD
-- Expected Publication status: Preview
+- Publication date: 2025-03-12
+- Publication status: Preview
 - Based on FHIR version: 4.0.1
 
 This change log documents the significant updates and resolutions implemented from version 0.1.0-ballot to 0.3.0-preview.
