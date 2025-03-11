@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="obsgynaeclinic"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-name">
+      <valueString value="Encounter - OBGYN Outpatient Clinic"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
+      <valueMarkdown value="Shows an example for the *AU Core Encounter* profile. Patient: Mia Leanne Banks."/>
+  </extension>
+  <meta>
+    <profile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-encounter"/>
+  </meta> 
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="AMB"/>
+    <display value="ambulatory"/>
+  </class>
+  <subject>
+    <reference value="Patient/banks-mia-leanne"/>
+  </subject>
+  <period>
+    <start value="2025-01-10T09:15:00+10:00"/>
+    <end value="2025-01-10T09:25:00+10:00"/>
+  </period>
+  <location>
+    <location>
+      <reference value="Location/location-murrabit-hospital"/>
+    </location>
+  </location>
+  <serviceProvider>
+    <reference value="Organization/organization-murrabit-hospital"/>
+  </serviceProvider>
+</Encounter>

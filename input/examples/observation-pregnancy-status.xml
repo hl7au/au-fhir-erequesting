@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-pregnancy-status"/>  
+   <meta>
+        <profile
+                 value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-name">
+    <valueString value="Observation - Pregnancy Status"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
+    <valueMarkdown value="Shows an example of the *AU eRequesting Observation Pregnancy Status* profile. Patient: Mia Leanne Banks."/>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="82810-3"/>      
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/banks-mia-leanne"/>
+  </subject>
+  <effectiveDateTime value="2025-01-10"/> 
+  <performer>
+  <reference value="PractitionerRole/guthridge-jarred-gp"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="77386006"/>      
+    </coding>
+  </valueCodeableConcept>  
+</Observation>

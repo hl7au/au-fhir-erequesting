@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Consent xmlns="http://hl7.org/fhir">
+    <id value="mhr-consent-withdrawal-max"/>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-name">
+        <valueString value="Consent Min"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
+        <valueMarkdown value="Shows an example for of min constrains for MHRWC"/>
+    </extension>
+    <meta>
+        <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-mhrconsentwithdrawal"/>
+    </meta>
+    <status value="active"/>
+    <scope>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+            <version value="1"/>
+            <code value="patient-privacy"/>
+            <display value="Privacy Consent"/>
+        </coding>
+        <text value="Patient Privacy"/>
+    </scope>
+    <category>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <version value="1"/>
+            <code value="IDSCL"/>
+            <display value="information disclosure"/>
+        </coding>
+        <text value="IDCSCL code text"/>
+    </category>
+    <patient>
+         <reference value="Patient/fred-roberts"/>
+    </patient>
+    <dateTime value="2024-05-11"/>
+    <performer>
+        <reference value="Patient/fred-roberts"/>
+    </performer>
+    <organization>
+        <reference value="Organization/mount-charlton-radiology"/>
+    </organization>
+    <policyRule>
+        <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <version value="1"/>
+            <code value="OPTIN"/>
+        </coding>
+        <text value="Opt in"/>
+    </policyRule>
+    <provision>
+        <type value="deny"/>
+        <action>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/consentaction"/>
+                <code value="disclose"/>
+                <display value="Disclose"/>
+            </coding>
+        </action>
+        <class>
+                <system value="http://hl7.org/fhir/resource-types"/>
+                <code value="DiagnosticReport"/>
+        </class>
+        <data>
+            <meaning value="dependents"/>
+            <reference>
+                <reference value="ServiceRequest/order-xray-1"/>
+            </reference>
+        </data>
+    </provision>
+</Consent>
