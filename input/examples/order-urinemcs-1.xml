@@ -63,10 +63,10 @@
   <code>
     <coding>
       <system value="http://snomed.info/sct"/>
-      <code value="271062006"/>
-      <display value="Fasting blood glucose"/>
+      <code value="401324008"/>
+      <display value="Urine microscopy, culture and sensitivities"/>
     </coding>
-    <text value="Glucose, Fasting"/>
+    <text value="Urine MCS"/>
   </code>
   <quantityQuantity>
     <value value="1"/>
