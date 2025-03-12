@@ -10,7 +10,7 @@
     <valueString value="Observation - Pregnancy Status"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
-    <valueMarkdown value="Shows an example of the *AU eRequesting Observation Pregnancy Status* profile. Patient: Mia Leanne Banks."/>
+    <valueMarkdown value="Shows an example of the *AU eRequesting Observation Pregnancy Status* profile, with a result of Pregnant. Patient: Mia Leanne Banks."/>
   </extension>
   <status value="final"/>
   <code>
