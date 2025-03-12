@@ -6,6 +6,16 @@ Description: "This profile sets minimum expectations for a Task resource that is
 
 * ^status = #draft
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
+* ^abstract = true
+
+* meta
+  * tag ^slicing.rules = #open
+  * tag ^slicing.discriminator.type = #value
+  * tag ^slicing.discriminator.path = "$this"
+  * tag contains 
+      eRequestingFulfilmentTask 1..1
+  * tag[eRequestingFulfilmentTask] from AUeRequestingFulfilmentTaskTags (required)
+    * ^short = "fulfilment-task | fulfilment-task-group"
 
 * groupIdentifier 1..1 MS
 * groupIdentifier ^type.profile = $AULocalOrderIdentifier
@@ -15,7 +25,7 @@ Description: "This profile sets minimum expectations for a Task resource that is
 
 
 * status MS
-* status from http://hl7.org.au/fhir/ereq/ValueSet/au-erequesting-task-status (required)
+* status from http://terminology.hl7.org.au/ValueSet/au-erequesting-task-status (required)
 
 * statusReason MS
 
@@ -24,11 +34,8 @@ Description: "This profile sets minimum expectations for a Task resource that is
 
 * priority MS 
 
-* focus 1..1 MS
-* focus only Reference(AUeRequestingPathologyRequest or AUeRequestingImagingRequest)
-
 * for 1..1 MS
-* for only Reference (AUCorePatient)
+* for only Reference(AUCorePatient)
 
 * requester 1..1 MS
 * requester only Reference(AUCorePractitionerRole)

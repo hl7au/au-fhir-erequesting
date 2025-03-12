@@ -5,7 +5,16 @@ Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias: $coverageselfpay = http://terminology.hl7.org/CodeSystem/coverage-selfpay
 Alias: $v3-actcode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $requeststatus = http://hl7.org/fhir/request-status
-
+Alias: $oid = urn:ietf:rfc:3986
+Alias: $taskcode = http://hl7.org/fhir/CodeSystem/task-code
+Alias: $tasktag = http://hl7.org.au/fhir/ereq/CodeSystem/au-erequesting-task-tag
+Alias: $consentscope = http://terminology.hl7.org/CodeSystem/consentscope
+Alias: $consentaction = http://terminology.hl7.org/CodeSystem/consentaction
+Alias: $resourcetypes = http://hl7.org/fhir/resource-types
+Alias: $communication-category = http://terminology.hl7.org/CodeSystem/communication-category
+//Alias: $v3-ParticipationMode = http://terminology.hl7.org/CodeSystem/v3-ParticipationMode
+Alias: $comm-req-reason = http://hl7.org.au/fhir/ereq/CodeSystem/au-erequesting-communication-request-reason
+Alias: $fastingPrecondition = https://healthterminologies.gov.au/fhir/ValueSet/pathology-fasting-status-1
 // AU Core profiles
 Alias: $AUCorePatient = http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient
 Alias: $AUCoreEncounter = http://hl7.org.au/fhir/core/StructureDefinition/au-core-encounter

@@ -10,6 +10,9 @@
     <meta>
         <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest-path"/>
     </meta>
+    <extension url="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-displaysequence">
+        <valueInteger value="1"/>
+    </extension>
     <identifier>
         <type>
             <coding>
