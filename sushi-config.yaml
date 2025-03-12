@@ -35,7 +35,7 @@ dependencies:
   hl7.fhir.au.core: 
     version: 1.1.0-preview
   hl7.fhir.uv.ips: 
-    version: current
+    version: 2.0.0-ballot
 # The pages property corresponds to IG.definition.page. SUSHI can
 # auto-generate the page list, but if the author includes pages in
 # this file, it is assumed that the author will fully manage the
