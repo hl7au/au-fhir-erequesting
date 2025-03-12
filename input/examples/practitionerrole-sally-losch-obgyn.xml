@@ -7,7 +7,7 @@
         <valueString value="PractitionerRole - Obstetrician and gynaecologist"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
-        <valueMarkdown value="Shows an example of an obstetrician, Sally Losch, for the *AU Core Practitioner* profile, including her Medicare Provider Number, associated organisation, role, and contact details."/>
+        <valueMarkdown value="Shows an example of an obstetrician, Sally Losch, for the *AU Core Practitioner* profile, including Medicare Provider Number, associated organisation, role, and contact details."/>
     </extension>
     <identifier>
         <type>
@@ -23,6 +23,9 @@
     <practitioner>
         <reference value="Practitioner/sally-losch"/>
     </practitioner>
+     <organization>
+        <reference value="Organization/organization-murrabit-hospital"/>
+    </organization>
     <code>
         <coding>
             <system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0"/>

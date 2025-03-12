@@ -5,7 +5,7 @@
         <valueString value="Practitioner - Kimberlee McLaughlin"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
-        <valueMarkdown value="Shows an example of a practitioner, Kimberlee McLaughlin, for the *AU Core Practitioner* profile, including her HPI-I and her name information."/>
+        <valueMarkdown value="Shows an example of a practitioner, Kimberlee McLaughlin, for the *AU Core Practitioner* profile, including HPI-I and name information."/>
     </extension>
     <meta>
         <profile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-practitioner"/>
@@ -27,4 +27,3 @@
         <given value="Kimberlee" />
     </name>
 </Practitioner>
-
