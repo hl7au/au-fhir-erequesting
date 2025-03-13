@@ -106,38 +106,35 @@ Implementers need to refer to the "Key Elements Table" to see the full set of el
 
 When viewing the raw representation (e.g. XML or JSON) of a profile, elements labelled *Must Support* are flagged as `mustSupport` set to "true", and obligations are defined in the [Obligation Extension](https://hl7.org/fhir/extensions/StructureDefinition-obligation.html) as shown in the example below.
 
-Example: AU eRequesting Pathology Request profile with *Must Support* and obligations on ServiceRequest.code
+Example: AU eRequesting Pathology Request profile with *Must Support* and obligations on ServiceRequest.code.
 
 ~~~
 {
-    "resourceType" : "StructureDefinition",
-    ...
-    "url" : "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest-path",
-    ...
-    "type" : "ServiceRequest",
-    "baseDefinition" : "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-diagnosticrequest",   
-    ...
-           {             
-              "id" : "ServiceRequest.code",
-		          "extension" : [
-		            {
-		              "extension" : [
-		                {
-		                  "url" : "code",
-		                  "valueCode" : "SHALL:populate"
-		                },
-		                {
-		                  "url" : "actor",
-		                  "valueCanonical" : "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
-		                }
-		              ],
-		              "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-		            },
-                ...
-              ]
-              ...
-              "mustSupport" : true
-           },
+  "resourceType" : "StructureDefinition",
+  "id" : "au-erequesting-communicationrequest-copyto",
+  ...
+  "url" : "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-communicationrequest-copyto",   
+  ...
+  "type" : "CommunicationRequest",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/CommunicationRequest",
+  ...
+        {             
+          "id" : "CommunicationRequest.groupIdentifier",
+          {
+            "extension" : [{
+              "url" : "actor",
+              "valueCanonical" : "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
+            },
+            ...
+            {
+              "url" : "code",
+              "valueCode" : "SHALL:populate"
+            }],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          },
+          ...
+          "mustSupport" : true
+        },
     ...
 }
 ~~~
