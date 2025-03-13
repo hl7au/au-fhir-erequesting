@@ -20,7 +20,7 @@
       </coding>
       <text value="Placer Group Number"/>
     </type>
-    <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003622500032165"/>
+    <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
     <value value="EMC4551244-6241"/>
     <assigner>
       <reference value="Organization/elimbah-medical-center"/>
@@ -42,12 +42,12 @@
   <about>
     <reference value="ServiceRequest/order-glu-1"/>
   </about>
-  <authoredOn value="2024-05-11T16:50:11+10:00"/>
+  <authoredOn value="2022-03-21T08:00:00+10:00"/>
   <requester>
-    <reference value="PractitionerRole/sally-losch-obgyn"/>
+    <reference value="PractitionerRole/obstetrician-losch-sallie"/>
   </requester>
   <recipient>
-    <reference value="PractitionerRole/guthridge-jarred-gp"/>
+    <reference value="PractitionerRole/generalpractitioner-guthridge-jarred"/>
   </recipient>
   <sender>
     <reference value="Organization/kioma-pathology"/>

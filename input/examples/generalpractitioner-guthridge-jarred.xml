@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Compliant with Services Australia Test Data -->
 <PractitionerRole xmlns="http://hl7.org/fhir">
-    <id value="guthridge-jarred-gp"/>
+    <id value="generalpractitioner-guthridge-jarred"/>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-name">
         <valueString value="PractitionerRole - General practitioner"/>
     </extension>

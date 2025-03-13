@@ -34,7 +34,7 @@
             </coding>
         </type>
         <individual>
-            <reference value="PractitionerRole/guthridge-jarred-gp"/>
+            <reference value="PractitionerRole/generalpractitioner-guthridge-jarred"/>
         </individual>
     </participant>
     <period>
