@@ -77,7 +77,7 @@
     <reference value="Patient/belger-remedios"/>
   </subject>
   <encounter>
-    <reference value="Encounter/consultation"/>
+    <reference value="Encounter/obsgynaeclinic"/>
   </encounter>
   <occurrenceDateTime value="2022-03-21T08:00:00+10:00"/>
   <authoredOn value="2022-03-21"/>
