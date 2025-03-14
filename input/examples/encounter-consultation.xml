@@ -23,7 +23,7 @@
         </coding>
     </serviceType>
     <subject>
-        <reference value="Patient/fred-roberts"/>
+        <reference value="Patient/roberts-fred"/>
     </subject>
     <participant>
         <type>

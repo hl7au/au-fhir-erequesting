@@ -59,13 +59,13 @@
         <text value="FBC"/>
     </code>
     <subject>
-        <reference value="Patient/fred-roberts"/>
+        <reference value="Patient/roberts-fred"/>
     </subject>
     <encounter>
         <reference value="Encounter/consultation"/>
     </encounter>
     <authoredOn value="2024-05-11"/>
     <requester>
-        <reference value="PractitionerRole/guthridge-jarred-gp"/>
+        <reference value="PractitionerRole/generalpractitioner-guthridge-jarred"/>
     </requester>
 </ServiceRequest>

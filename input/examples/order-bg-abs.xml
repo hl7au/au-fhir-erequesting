@@ -59,14 +59,14 @@
         <text value="Group and Ab Screen"/>
     </code>
     <subject>
-        <reference value="Patient/banks-mia-leanne"/>
+        <reference value="Patient/belger-remedios"/>
     </subject>
     <encounter>
         <reference value="Encounter/obsgynaeclinic"/>
     </encounter>
-    <authoredOn value="2025-01-10"/>
+    <authoredOn value="2022-03-21"/>
     <requester>
-        <reference value="PractitionerRole/sally-losch-obgyn"/>
+        <reference value="PractitionerRole/obstetrician-losch-sallie"/>
     </requester>
     <supportingInfo>
         <reference value="Observation/observation-pregnancy-status"/>

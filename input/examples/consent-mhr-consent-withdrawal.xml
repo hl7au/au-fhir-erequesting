@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Consent xmlns="http://hl7.org/fhir">
-    <id value="mhr-consent-withdrawal-max"/>
+    <id value="mhr-consent-withdrawal"/>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-name">
-        <valueString value="Consent: My Health Record Consent Withdrawal"/>
+        <valueString value="Consent - My Health Record Consent Withdrawal"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
         <valueMarkdown value="Shows an example of the *AU eRequesting MHR Consent Withdrawal* profile. Consent to upload the X-Ray results to MHR has been withdrawn by patient Fred Roberts."/>
@@ -30,11 +30,11 @@
         <text value="IDCSCL code text"/>
     </category>
     <patient>
-         <reference value="Patient/fred-roberts"/>
+         <reference value="Patient/roberts-fred"/>
     </patient>
     <dateTime value="2024-05-11"/>
     <performer>
-        <reference value="Patient/fred-roberts"/>
+        <reference value="Patient/roberts-fred"/>
     </performer>
     <organization>
         <reference value="Organization/mount-charlton-radiology"/>

@@ -18,18 +18,18 @@
     <display value="ambulatory"/>
   </class>
   <subject>
-    <reference value="Patient/banks-mia-leanne"/>
+    <reference value="Patient/belger-remedios"/>
   </subject>
   <period>
-    <start value="2025-01-10T09:15:00+10:00"/>
-    <end value="2025-01-10T09:25:00+10:00"/>
+    <start value="2022-03-21T07:50:00+10:00"/>
+    <end value="2022-03-21T08:20:00+10:00"/>
   </period>
   <location>
     <location>
-      <reference value="Location/location-murrabit-hospital"/>
+      <reference value="Location/barney-view-private-hospital"/>
     </location>
   </location>
   <serviceProvider>
-    <reference value="Organization/organization-murrabit-hospital"/>
+    <reference value="Organization/barney-view-private-hospital"/>
   </serviceProvider>
 </Encounter>

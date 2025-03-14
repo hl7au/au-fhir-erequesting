@@ -21,11 +21,8 @@
         <value value="2448931H"/>
     </identifier>
     <practitioner>
-        <reference value="Practitioner/sally-losch"/>
-    </practitioner>
-     <organization>
-        <reference value="Organization/organization-murrabit-hospital"/>
-    </organization>
+        <reference value="Practitioner/losch-sallie"/>
+    </practitioner>   
     <code>
         <coding>
             <system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0"/>

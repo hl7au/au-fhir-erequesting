@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Practitioner xmlns="http://hl7.org/fhir">
-    <id value="kimberlee-mclaughlin"/>
+    <id value="mclaughlin-kimberlee"/>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-name">
         <valueString value="Practitioner - Kimberlee McLaughlin"/>
     </extension>
