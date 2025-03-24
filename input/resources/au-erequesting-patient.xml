@@ -340,7 +340,7 @@
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
-        </extension>
+        </extension> 
       </referencePolicy> -->
     </resource>
     <!-- PROCEDURE -->
