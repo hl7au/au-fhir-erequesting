@@ -1,4 +1,3 @@
-<!-- communicationrequest -->
 <table class="list" width="100%">
   <tbody>
     <tr>
