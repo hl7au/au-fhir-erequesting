@@ -78,15 +78,7 @@
         <name value="_id"/>
         <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
         <type value="token"/>
-      </searchParam>
-      <searchParam>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="MAY"/>
-        </extension>
-        <name value="requisition"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/ServiceRequest-requisition"/>
-        <type value="token"/>
-      </searchParam>
+      </searchParam>      
       <searchInclude value="ServiceRequest:patient">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHOULD"/>
