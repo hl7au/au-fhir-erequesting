@@ -106,7 +106,7 @@ Implementers need to refer to the "Key Elements Table" to see the full set of el
 
 When viewing the raw representation (e.g. XML or JSON) of a profile, elements labelled *Must Support* are flagged as `mustSupport` set to "true", and obligations are defined in the [Obligation Extension](https://hl7.org/fhir/extensions/StructureDefinition-obligation.html) as shown in the example below.
 
-Example: AU eRequesting Pathology Request profile with *Must Support* and obligations on ServiceRequest.code.
+Example: AU eRequesting Communication Request CopyTo profile with *Must Support* and obligations on CommunicationRequest.code.
 
 ~~~
 {
