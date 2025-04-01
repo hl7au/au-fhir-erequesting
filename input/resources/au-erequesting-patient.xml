@@ -391,6 +391,16 @@
            <valueCode value="SHALL"/>
          </extension>
        </supportedProfile>
+       <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-communicationrequest-patient">
+         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+           <valueCode value="SHALL"/>
+         </extension>
+       </supportedProfile>
+       <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-communicationrequest-urgentprovider">
+         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+           <valueCode value="SHALL"/>
+         </extension>
+       </supportedProfile>
        <documentation value="If the Patient supports the CommunicationRequest resource, the Patient **SHALL** support the AU eRequesting profiles and the conformance expectations for the CommunicationRequest resource."/>      
        <interaction>
           <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">

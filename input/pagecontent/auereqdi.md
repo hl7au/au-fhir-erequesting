@@ -69,15 +69,15 @@ Column attribute descriptions are as follows:
   </tr>
    <tr>
     <td colspan="2">Distribution list</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td>Work is underway in AU eRequesting to map this element. Feedback is requested on the appropriateness of using either CommunicationRequest or an extension to support distribution list. Please comment by raising <a href="https://jira.hl7.org/projects/FHIR/issues">HL7 Jira Issues</a>.</td>
+    <td><a href="StructureDefinition-au-erequesting-communicationrequest-copyto.html">AU eRequesting Communication Request CopyTo</a></td>
+    <td>CommunicationRequest.recipient</td>
+    <td></td>
   </tr>
    <tr>
     <td colspan="2">Urgent contact</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td>Work is underway in AU eRequesting to map this element. Feedback is requested on the appropriateness of using either CommunicationRequest or an extension to support urgent contact. Please comment by raising <a href="https://jira.hl7.org/projects/FHIR/issues">HL7 Jira Issues</a>.</td>
+    <td><a href="StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html">AU eRequesting Communication Request Urgent Provider</a></td>
+    <td>CommunicationRequest.recipient</td>
+    <td></td>
   </tr>
    <tr>
     <td colspan="2">Billing guidance</td>
@@ -142,15 +142,15 @@ Column attribute descriptions are as follows:
   </tr>
     <tr>
     <td colspan="2">Distribution list</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td>Work is underway in AU eRequesting to map this element. Feedback is requested on the appropriateness of using either CommunicationRequest or an extension to support distribution list. Please comment by raising <a href="https://jira.hl7.org/projects/FHIR/issues">HL7 Jira Issues</a>.</td>
+    <td><a href="StructureDefinition-au-erequesting-communicationrequest-copyto.html">AU eRequesting Communication Request CopyTo</a></td>
+    <td>CommunicationRequest.recipient</td>
+    <td></td>
   </tr>
     <tr>
     <td colspan="2">Urgent contact</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td>Work is underway in AU eRequesting to map this element. Feedback is requested on the appropriateness of using either CommunicationRequest or an extension to support urgent contact. Please comment by raising <a href="https://jira.hl7.org/projects/FHIR/issues">HL7 Jira Issues</a>.</td>
+    <td><a href="StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html">AU eRequesting Communication Request Urgent Provider</a></td>
+    <td>CommunicationRequest.recipient</td>
+    <td></td>
   </tr>
     <tr>
     <td colspan="2">Billing guidance</td>
@@ -203,15 +203,15 @@ Column attribute descriptions are as follows:
   </tr>
     <tr>
     <td colspan="2">Distribution list</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td>Work is underway in AU eRequesting to map this element. Feedback is requested on the appropriateness of using either CommunicationRequest or an extension to support distribution list. Please comment by raising <a href="https://jira.hl7.org/projects/FHIR/issues">HL7 Jira Issues</a>.</td>
+    <td><a href="StructureDefinition-au-erequesting-communicationrequest-copyto.html">AU eRequesting Communication Request CopyTo</a></td>
+    <td>CommunicationRequest.recipient</td>
+    <td></td>
   </tr>
     <tr>
     <td colspan="2">Urgent contact</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td>Work is underway in AU eRequesting to map this element. Feedback is requested on the appropriateness of using either CommunicationRequest or an extension to support urgent contact. Please comment by raising <a href="https://jira.hl7.org/projects/FHIR/issues">HL7 Jira Issues</a>.</td>
+    <td><a href="StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html">AU eRequesting Communication Request Urgent Provider</a></td>
+    <td>CommunicationRequest.recipient</td>
+    <td></td>
   </tr>
     <tr>
     <td colspan="2">Billing guidance</td>
