@@ -106,7 +106,7 @@ Implementers need to refer to the "Key Elements Table" to see the full set of el
 
 When viewing the raw representation (e.g. XML or JSON) of a profile, elements labelled *Must Support* are flagged as `mustSupport` set to "true", and obligations are defined in the [Obligation Extension](https://hl7.org/fhir/extensions/StructureDefinition-obligation.html) as shown in the example below.
 
-Example: AU eRequesting Communication Request CopyTo profile with *Must Support* and obligations on CommunicationRequest.code.
+Example: AU eRequesting Communication Request CopyTo profile with *Must Support* and obligations on CommunicationRequest.groupIdentifier.
 
 ~~~
 {
@@ -115,26 +115,20 @@ Example: AU eRequesting Communication Request CopyTo profile with *Must Support*
   ...
   "url" : "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-communicationrequest-copyto",   
   ...
-  "type" : "CommunicationRequest",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/CommunicationRequest",
-  ...
-        {             
-          "id" : "CommunicationRequest.groupIdentifier",
-          {
-            "extension" : [{
-              "url" : "actor",
-              "valueCanonical" : "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
-            },
-            ...
-            {
-              "url" : "code",
-              "valueCode" : "SHALL:populate"
-            }],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-          },
-          ...
-          "mustSupport" : true
+      {             
+        "id" : "CommunicationRequest.groupIdentifier",  
+          "extension" : [{  
+            "url" : "actor",  
+            "valueCanonical" : "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"  
+          },  
+          {  
+            "url" : "code",  
+            "valueCode" : "SHALL:populate"  
+          }],  
+          "url" : "http://hl7.org/fhir/StructureDefinition/obligation"  
         },
-    ...
-}
+        ...
+        "mustSupport" : true
+      },
+  ...
 ~~~
