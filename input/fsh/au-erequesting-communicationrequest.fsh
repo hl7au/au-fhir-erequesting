@@ -47,8 +47,5 @@ Description: "This profile sets minimum expectations for derived CommunicationRe
 * sender only Reference(AUCoreOrganization)
 * sender ^short = "Organization sending the communication"
 
-* reasonCode 
-  * coding 1..1 MS
-    * system 1..1 MS
-    * system = "http://hl7.org.au/fhir/ereq/CodeSystem/au-erequesting-communicationrequest-reason"
-    * code 1..1 MS
+* reasonCode 1.. MS
+* reasonCode from http://hl7.org.au/fhir/ereq/ValueSet/au-erequesting-communicationrequest-reason (required)

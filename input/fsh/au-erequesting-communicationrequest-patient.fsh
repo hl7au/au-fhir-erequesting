@@ -1,5 +1,5 @@
 Profile: AUeRequestingCommunicationRequestPatient
-Parent: CommunicationRequest
+Parent: AUeRequestingCommunicationRequest
 Id: au-erequesting-communicationrequest-patient
 Title: "AU eRequesting Communication Request Patient"
 Description: "Direct communication from a filler to a patient. This supports the use case where a diagnostic provider sends a message to a patient, such as a suggestion to book an appointment or provide instructions for a diagnostic test. Sometimes the communication is not to be performed, for example when a patient has requested that they not be contacted by SMS. Currently, the supported communication mediums are SMS and email."
@@ -39,8 +39,7 @@ Description: "Direct communication from a filler to a patient. This supports the
 * status ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error  
 
 * category 1.. MS
-  * category from AUeRequestingCommunicationRequestPatientCategory (required)
-  * coding 1..1 MS
+* category from AUeRequestingCommunicationRequestPatientCategory (required)
   * ^short = "reminder | instruction"
 
 * category ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
@@ -69,8 +68,7 @@ Description: "Direct communication from a filler to a patient. This supports the
 * doNotPerform ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 
 * medium 1.. MS
-  * medium from AUeRequestingCommunicationRequestPatientMedium (required)  
-  * coding 1..1 MS
+* medium from AUeRequestingCommunicationRequestPatientMedium (required)  
   * ^short = "SMS | email"
   
 * medium ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
