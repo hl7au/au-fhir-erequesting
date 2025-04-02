@@ -103,17 +103,17 @@
       -->
       <searchInclude value="ServiceRequest:patient">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="MAY"/>
+        <valueCode value="SHOULD"/>
         </extension>
       </searchInclude>
       <searchInclude value="ServiceRequest:requester">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="MAY"/>
+        <valueCode value="SHOULD"/>
         </extension>
       </searchInclude>
       <searchInclude value="ServiceRequest:encounter">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="MAY"/>
+        <valueCode value="SHOULD"/>
         </extension>
       </searchInclude>
       <!-- TBC 
