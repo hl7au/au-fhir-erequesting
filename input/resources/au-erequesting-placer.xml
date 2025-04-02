@@ -103,17 +103,17 @@
       -->
       <searchInclude value="ServiceRequest:patient">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHOULD"/>
+        <valueCode value="MAY"/>
         </extension>
       </searchInclude>
       <searchInclude value="ServiceRequest:requester">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHOULD"/>
+        <valueCode value="MAY"/>
         </extension>
       </searchInclude>
       <searchInclude value="ServiceRequest:encounter">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHOULD"/>
+        <valueCode value="MAY"/>
         </extension>
       </searchInclude>
       <!-- TBC 
@@ -126,7 +126,7 @@
     <!-- COVERAGE -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHOULD"/>
+        <valueCode value="SHALL"/>
       </extension>
       <type value="Coverage"/>
       <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-coverage">
@@ -134,7 +134,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Placers **SHOULD** support the Coverage resource, the AU eRequesting profile, and the conformance expectations for the Coverage resource."/>
+      <documentation value="Placers **SHALL** support the Coverage resource, the AU eRequesting profile, and the conformance expectations for the Coverage resource."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
@@ -177,7 +177,7 @@
     <!-- ENCOUNTER -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHOULD"/>
+        <valueCode value="SHALL"/>
       </extension>
       <type value="Encounter"/>
       <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-encounter">
@@ -185,7 +185,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Placers **SHOULD** support the Encounter resource, the AU Core profile, and the conformance expectations for the Encounter resource."/>
+      <documentation value="Placers **SHALL** support the Encounter resource, the AU Core profile, and the conformance expectations for the Encounter resource."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
@@ -228,7 +228,7 @@
     <!-- ORGANIZATION -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHOULD"/>
+        <valueCode value="SHALL"/>
       </extension>
       <type value="Organization"/>
       <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-organization">
@@ -236,7 +236,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Placers **SHOULD** support the Organization resource, the AU Core profile, and the conformance expectations for the Organization resource."/>
+      <documentation value="Placers **SHALL** support the Organization resource, the AU Core profile, and the conformance expectations for the Organization resource."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
@@ -334,7 +334,7 @@
     <!-- PRACTITIONER -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHOULD"/>
+        <valueCode value="SHALL"/>
       </extension>
       <type value="Practitioner"/>
       <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-practitioner">
@@ -342,7 +342,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Placers **SHOULD** support the Practitioner resource, the AU Core profile, and the conformance expectations for the Practitioner resource."/>
+      <documentation value="Placers **SHALL** support the Practitioner resource, the AU Core profile, and the conformance expectations for the Practitioner resource."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
@@ -385,7 +385,7 @@
     <!-- PRACTITIONERROLE -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHOULD"/>
+        <valueCode value="SHALL"/>
       </extension>
       <type value="PractitionerRole"/>
       <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-practitionerrole">
@@ -436,7 +436,7 @@
     <!-- CONDITION -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="MAY"/>
+        <valueCode value="SHALL"/>
       </extension>
       <type value="Condition"/>
       <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-condition">
@@ -487,15 +487,15 @@
     <!-- DOCUMENTREFERENCE -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="MAY"/>
+        <valueCode value="SHALL"/>
       </extension>
       <type value="DocumentReference"/>
       <supportedProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="MAY"/>
+          <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Placers **MAY** support the DocumentReference resource."/>
+      <documentation value="Placers **SHALL** support the DocumentReference resource and the conformance expectations for the DocumentReference resource."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
@@ -538,7 +538,7 @@
     <!-- LOCATION -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="MAY"/>
+        <valueCode value="SHALL"/>
       </extension>
       <type value="Location"/>
       <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-location">
@@ -546,7 +546,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Placers **MAY** support the Location resource, the AU Core profile, and the conformance expectations for the Location resource."/>
+      <documentation value="Placers **SHALL** support the Location resource, the AU Core profile, and the conformance expectations for the Location resource."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
@@ -645,7 +645,7 @@
     <!-- PROCEDURE -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="MAY"/>
+        <valueCode value="SHALL"/>
       </extension>
       <type value="Procedure"/>
       <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-procedure">
@@ -696,7 +696,7 @@
     <!-- RELATEDPERSON -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="MAY"/>
+        <valueCode value="SHALL"/>
       </extension>
       <type value="RelatedPerson"/>
       <supportedProfile value="http://hl7.org.au/fhir/StructureDefinition/au-relatedperson">
