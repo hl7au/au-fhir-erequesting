@@ -77,7 +77,6 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 
 
 * code 1..1 MS
-* code from https://healthterminologies.gov.au/fhir/ValueSet/evaluation-procedure-1 (example)
 * code.text 1..1
 * code ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
 * code ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
@@ -136,7 +135,6 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 
 * requester 1..1 MS
 * requester only Reference(AUCorePractitionerRole)
-  * ^short = "Authorising individual, organisation or program (e.g. National Bowel Cancer Screening Program)"
 * requester ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
 * requester ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * requester ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[code].valueCode = #SHALL:handle
@@ -148,7 +146,6 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 * requester ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 * requester ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 
-* performerType from https://healthterminologies.gov.au/fhir/ValueSet/practitioner-role-1 (preferred)
 
 * requisition 1..1 MS
 * requisition.type 
@@ -273,7 +270,6 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 * priority ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 * priority ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 
-* specimen only Reference(AUBaseSpecimen)
 
 * supportingInfo ^slicing.rules = #open
 * supportingInfo ^slicing.discriminator.type = #profile
