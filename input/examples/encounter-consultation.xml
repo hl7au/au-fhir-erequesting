@@ -4,7 +4,7 @@
         <valueString value="Encounter - Consultation"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
-        <valueMarkdown value="Shows an example for the *AU Core Encounter* profile. Patient: Fred Roberts."/>
+        <valueMarkdown value="Shows an example of an encounter for the *AU Core Encounter* profile, representing a general practice consultation. Patient: Fred Roberts."/>
     </extension>
     <meta>
         <profile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-encounter"/>
@@ -23,7 +23,7 @@
         </coding>
     </serviceType>
     <subject>
-        <reference value="Patient/fred-roberts"/>
+        <reference value="Patient/roberts-fred"/>
     </subject>
     <participant>
         <type>
@@ -34,7 +34,7 @@
             </coding>
         </type>
         <individual>
-            <reference value="PractitionerRole/guthridge-jarred-gp"/>
+            <reference value="PractitionerRole/generalpractitioner-guthridge-jarred"/>
         </individual>
     </participant>
     <period>
