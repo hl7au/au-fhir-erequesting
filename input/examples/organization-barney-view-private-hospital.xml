@@ -7,7 +7,7 @@
         <valueString value="Organization - Barney View Private Hospital"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
-        <valueMarkdown value="Shows an example of Barney View Private Hospital Organisation for the *AU Core Organization* profile, including its HPI-O, type as a hospital, contact information and physical address."/>
+        <valueMarkdown value="Shows an example of an organisation, Barney View Private Hospital, for the *AU Core Organization* profile, with HPI-O and ABN, type as hospital, contact information and physical address."/>
     </extension>
     <identifier>
         <type>

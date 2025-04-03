@@ -5,7 +5,7 @@
         <valueString value="Consent - My Health Record Consent Withdrawal"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
-        <valueMarkdown value="Shows an example of the *AU eRequesting MHR Consent Withdrawal* profile. Consent to upload the X-Ray results to MHR has been withdrawn by patient Fred Roberts."/>
+        <valueMarkdown value="Shows an example of consent to upload X-ray results to the My Health Record withdrawn by patient for the *AU eRequesting MHR Consent Withdrawal* profile. Patient: Fred Roberts."/>
     </extension>
     <meta>
         <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-mhrconsentwithdrawal"/>
@@ -27,7 +27,7 @@
             <code value="IDSCL"/>
             <display value="information disclosure"/>
         </coding>
-        <text value="IDCSCL code text"/>
+        <text value="information disclosure"/>
     </category>
     <patient>
          <reference value="Patient/roberts-fred"/>
