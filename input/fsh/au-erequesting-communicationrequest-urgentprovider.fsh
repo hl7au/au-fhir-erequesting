@@ -7,12 +7,6 @@ Description: "Direct communication from a filler to a clinical provider for the 
 * ^status = #draft
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 
-* groupIdentifier 1.. MS
-* groupIdentifier ^type.profile = $AULocalOrderIdentifier
-* groupIdentifier.type 
-  * coding 1..1
-  * coding = $v2-0203#PGN
-
 * groupIdentifier ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * groupIdentifier ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
 * groupIdentifier ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
@@ -24,7 +18,6 @@ Description: "Direct communication from a filler to a clinical provider for the 
 * groupIdentifier ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 * groupIdentifier ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 
-* status MS
 * status = #active (exactly)
 
 * status ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
@@ -38,7 +31,7 @@ Description: "Direct communication from a filler to a clinical provider for the 
 * status ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 * status ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error  
 
-* category 1..1 MS
+* category 1..1
   * coding 1..1
   * coding = $communication-category#alert
 
@@ -82,7 +75,7 @@ Description: "Direct communication from a filler to a clinical provider for the 
 * medium ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 * medium ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 
-* subject 1.. MS
+* subject 1..
 * subject only Reference (AUCorePatient)
   * ^short = "Patient that is the subject of the diagnostic request"
 
@@ -97,7 +90,6 @@ Description: "Direct communication from a filler to a clinical provider for the 
 * subject ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 * subject ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error 
 
-* about 1.. MS
 * about only Reference (AUeRequestingPathologyRequest or AUeRequestingImagingRequest)
   * ^short = "Diagnostic request the urgent communication is about"
 
@@ -112,9 +104,6 @@ Description: "Direct communication from a filler to a clinical provider for the 
 * about ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 * about ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 
-* authoredOn 1.. MS
-  * ^short = "Date/time when communication request direction obtained"
-
 * authoredOn ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * authoredOn ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
 * authoredOn ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
@@ -126,7 +115,6 @@ Description: "Direct communication from a filler to a clinical provider for the 
 * authoredOn ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 * authoredOn ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 
-* requester 1.. MS
 * requester only Reference (AUCorePractitionerRole)
   * ^short = "Individual provider requesting the communication"
 
@@ -141,7 +129,6 @@ Description: "Direct communication from a filler to a clinical provider for the 
 * requester ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 * requester ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 
-* recipient 1..1 MS
 * recipient only Reference (AUCorePractitionerRole)
   * ^short = "Individual provider receiving the communication"
 
@@ -156,10 +143,6 @@ Description: "Direct communication from a filler to a clinical provider for the 
 * recipient ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 * recipient ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 
-* sender 1.. MS
-* sender only Reference (AUCoreOrganization)
-  * ^short = "Diagnostic organization sending the communication"
-
 * sender ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * sender ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
 * sender ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
@@ -171,9 +154,7 @@ Description: "Direct communication from a filler to a clinical provider for the 
 * sender ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 * sender ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 
-* reasonCode 1..1 MS
-  * coding 1..1  
-  * coding = $comm-req-reason#urgent
+* reasonCode.coding = $comm-req-reason#urgent
 
 * reasonCode ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * reasonCode ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
