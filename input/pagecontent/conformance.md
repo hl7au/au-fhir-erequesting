@@ -110,25 +110,44 @@ Example: AU eRequesting Communication Request CopyTo profile with *Must Support*
 
 ~~~
 {
-  "resourceType" : "StructureDefinition",
-  "id" : "au-erequesting-communicationrequest-copyto",
+  "resourceType" : "StructureDefinition",  
   ...
   "url" : "http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-communicationrequest-copyto",   
   ...
-      {             
-        "id" : "CommunicationRequest.groupIdentifier",  
-          "extension" : [{  
-            "url" : "actor",  
-            "valueCanonical" : "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"  
-          },  
-          {  
-            "url" : "code",  
-            "valueCode" : "SHALL:populate"  
-          }],  
-          "url" : "http://hl7.org/fhir/StructureDefinition/obligation"  
+      {
+        "id" : "CommunicationRequest.groupIdentifier",
+        "extension" : [
+            ...
+            {
+              "extension" : [
+                {
+                  "url" : "actor",
+                  "valueCanonical" : "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
+                },
+                {
+                  "url" : "code",
+                  "valueCode" : "SHALL:populate"
+                }
+              ],
+              "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+            },
+            {
+            "extension" : [
+              {
+                "url" : "actor",
+                "valueCanonical" : "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
+              },
+              {
+                "url" : "code",
+                "valueCode" : "SHALL:handle"
+              }
+            ],
+            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+          }],
+          "path" : "CommunicationRequest.groupIdentifier",
+          ...
+          "mustSupport" : true
         },
-        ...
-        "mustSupport" : true
-      },
-  ...
+    ...
+}
 ~~~
