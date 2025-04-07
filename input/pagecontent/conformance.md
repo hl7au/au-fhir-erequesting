@@ -129,21 +129,10 @@ Example: AU eRequesting Communication Request CopyTo profile with *Must Support*
                   "valueCode" : "SHALL:populate"
                 }
               ],
-              "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-            },
-            {
-            "extension" : [
-              {
-                "url" : "actor",
-                "valueCanonical" : "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
-              },
-              {
-                "url" : "code",
-                "valueCode" : "SHALL:handle"
-              }
-            ],
-            "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
-          }],
+              "url" : "http://hl7.org/fhir/StructureDefinition/obligation"            
+          }
+          ...
+          ],
           "path" : "CommunicationRequest.groupIdentifier",
           ...
           "mustSupport" : true
