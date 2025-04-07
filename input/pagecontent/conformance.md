@@ -116,8 +116,7 @@ Example: AU eRequesting Communication Request CopyTo profile with *Must Support*
   ...
       {
         "id" : "CommunicationRequest.groupIdentifier",
-        "extension" : [
-            ...
+        "extension" : [            
             {
               "extension" : [
                 {
