@@ -495,7 +495,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Placers **MAY** support the DocumentReference resource and the conformance expectations for the DocumentReference resource."/>
+      <documentation value="If the Placer supports the DocumentReference resource, Placers **SHALL** support the conformance expectations for the DocumentReference resource."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
