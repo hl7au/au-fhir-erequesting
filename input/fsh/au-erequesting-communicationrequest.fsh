@@ -83,6 +83,7 @@ Description: "This profile sets minimum expectations for derived CommunicationRe
 * subject ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error 
 
 * about 1.. MS
+* about only Reference(AUeRequestingPathologyRequest or AUeRequestingImagingRequest or AUeRequestingTaskGroup)
 
 * about ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * about ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
@@ -141,7 +142,7 @@ Description: "This profile sets minimum expectations for derived CommunicationRe
 
 * sender 1.. MS
 * sender only Reference(AUCoreOrganization)
-  * ^short = "Organization sending the communication"
+  * ^short = "Organisation sending the communication"
 
 * sender ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * sender ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
