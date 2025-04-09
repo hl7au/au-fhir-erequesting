@@ -129,7 +129,7 @@ Example: AU eRequesting Communication Request CopyTo profile with *Must Support*
                 }
               ],
               "url" : "http://hl7.org/fhir/StructureDefinition/obligation"            
-          }
+          },
           ...
           ],
           "path" : "CommunicationRequest.groupIdentifier",
