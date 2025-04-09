@@ -148,6 +148,7 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 
 
 * requisition 1..1 MS
+* requisition only $AULocalOrderIdentifier
 * requisition.type 
   * coding 1..1    
   * coding = $v2-0203#PGN
