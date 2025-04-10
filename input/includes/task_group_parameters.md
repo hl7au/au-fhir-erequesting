@@ -1,0 +1,140 @@
+<table class="list" width="100%">
+<tbody>
+  <tr>
+    <th>Parameter(s)</th>
+    <th>Server Conformance</th>
+    <th>Placer Conformance</th>
+    <th>Filler Conformance</th>
+    <th>Patient Conformance</th>
+
+    <th>Type(s)</th>
+    <th>Requirements (when used alone or in combination)</th>
+  </tr>
+  <tr>
+        <td>_id</td>
+        <td><b>SHALL</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><code>token</code></td>
+        <td></td>
+  </tr>
+  <tr>
+        <td>_lastUpdated</td>
+        <td><b>SHALL</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><code>date</code></td>
+        <td></td>
+  </tr>
+  <tr>
+        <td>_lastUpdated+status+owner</td>
+        <td><b>SHALL</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><code>date</code>+<code>token</code>+<code>reference</code></td>
+        <td></td>
+  </tr>
+  <tr>
+        <td>group-identifier</td>
+        <td><b>SHALL</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><code>token</code></td>
+        <td></td>
+  </tr>
+  <tr>
+        <td>owner</td>
+        <td><b>SHALL</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><code>reference</code></td>
+        <td>The same conformance rules apply to the chained search owner.identifier using HPI-O and ABN identifiers as defined in the AU Core Organization profile.</td>
+  </tr>
+  <tr>
+        <td>owner+status</td>
+        <td><b>SHALL</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><code>reference</code>+<code>token</code></td>
+        <td></td>
+  </tr>
+  <tr>
+        <td>patient</td>
+        <td><b>SHALL</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><code>reference</code></td>
+        <td>The same conformance rules apply to the chained search patient.identifier using IHI, Medicare Number, and DVA Number identifiers as defined in the AU Core Patient profile.</td>
+  </tr>
+  <tr>
+        <td>patient+status</td>
+        <td><b>SHALL</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><code>reference</code>+<code>token</code></td>
+        <td></td>
+  </tr>
+  <tr>
+        <td>requester</td>
+        <td><b>SHALL</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><code>reference</code></td>
+        <td>The same conformance rules apply to the chained search requester.identifier using Medicare Provider Number identifier as defined in the AU Core PractitionerRole profile.</td>
+  </tr>
+  <tr>
+        <td>requester+status</td>
+        <td><b>SHALL</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><code>reference</code>+<code>token</code></td>
+        <td></td>
+  </tr>
+  <tr>
+        <td>status</td>
+        <td><b>SHALL</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><code>token</code></td>
+        <td></td>
+  </tr>
+  <tr>
+        <td>_include=Task:owner</td>
+        <td><b>SHALL</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><code>reference</code></td>
+        <td>Modifies search results from a query using other search parameters by including the referenced focus resource</td>
+  </tr>
+  <tr>
+        <td>_include=Task:patient</td>
+        <td><b>SHALL</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><code>reference</code></td>
+        <td>Modifies search results from a query using other search parameters by including the referenced focus resource</td>
+  </tr>
+  <tr>
+        <td>_include=Task:requester</td>
+        <td><b>SHALL</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><code>reference</code></td>
+        <td>Modifies search results from a query using other search parameters by including the referenced focus resource</td>
+  </tr>
+ </tbody>
+</table>
