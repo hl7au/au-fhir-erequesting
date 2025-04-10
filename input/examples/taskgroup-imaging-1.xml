@@ -40,11 +40,11 @@
     </coding>
   </code>
   <for>
-    <reference value="Patient/fred-roberts"/>
+    <reference value="Patient/roberts-fred"/>
   </for>
   <authoredOn value="2024-05-11"/>
   <requester>
-    <reference value="PractitionerRole/guthridge-jarred-gp"/>
+    <reference value="PractitionerRole/generalpractitioner-guthridge-jarred"/>
   </requester>
   <owner>
     <reference value="Organization/mount-charlton-radiology"/>
