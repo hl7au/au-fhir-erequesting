@@ -1,6 +1,6 @@
 CodeSystem: AUeRequestingCommunicationRequestReason
 Id: au-erequesting-communicationrequest-reason
-Title: "AU eRequesting Communication Request Reason"
+Title: "AU eRequesting CommunicationRequest Reason"
 Description: "Reason codes for a communication request used in the Australian eRequesting context."
 * ^meta.profile[+] = "https://healthterminologies.gov.au/fhir/StructureDefinition/complete-code-system-4"
 * ^version = "1.0.0"
