@@ -7,7 +7,7 @@ This change log documents the significant updates and resolutions implemented fr
 
 #### Changes in this version
 - New profiles: 
-  - AU eRequesting Communication Request ([FHIR-50232](https://jira.hl7.org/browse/FHIR-50232))
+  - AU eRequesting Communication Request ([FHIR-49807](https://jira.hl7.org/browse/FHIR-49807), [FHIR-50230](https://jira.hl7.org/browse/FHIR-50230), [FHIR-50229](https://jira.hl7.org/browse/FHIR-50229))
   - AU eRequesting Communication Request CopyTo ([FHIR-49807](https://jira.hl7.org/browse/FHIR-49807))
   - AU eRequesting Communication Request Patient ([FHIR-50230](https://jira.hl7.org/browse/FHIR-50230))
   - AU eRequesting Communication Request Urgent Provider ([FHIR-50229](https://jira.hl7.org/browse/FHIR-50229))
@@ -22,7 +22,7 @@ This change log documents the significant updates and resolutions implemented fr
   - AU eRequesting RequestStatus ([FHIR-47097](https://jira.hl7.org/browse/FHIR-47097))
   - AU eRequesting CommunicationRequest Patient Category ([FHIR-50230](https://jira.hl7.org/browse/FHIR-50230))
   - AU eRequesting CommunicationRequest Patient Medium ([FHIR-50230](https://jira.hl7.org/browse/FHIR-50230))
-  - AU eRequesting CommunicationRequest Reason ([FHIR-50232](https://jira.hl7.org/browse/FHIR-50232))
+  - AU eRequesting CommunicationRequest Reason ([FHIR-49807](https://jira.hl7.org/browse/FHIR-49807), [FHIR-50230](https://jira.hl7.org/browse/FHIR-50230), [FHIR-50229](https://jira.hl7.org/browse/FHIR-50229))
   - AU eRequesting Task Tag Fulfilment ([FHIR-49718](https://jira.hl7.org/browse/FHIR-49718), [FHIR-49719](https://jira.hl7.org/browse/FHIR-49719))
 - New code systems:
   - AU eRequesting Communication Request Reason ([FHIR-49807](https://jira.hl7.org/browse/FHIR-49807))
