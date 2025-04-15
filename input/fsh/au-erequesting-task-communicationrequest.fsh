@@ -10,8 +10,7 @@ This profile sets minimum expectations for a Task resource that is used to recor
 * ^status = #draft
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 
-* meta.tag[eRequestingFulfilmentTask]
-  * coding = $tasktag#fulfilment-task
+* meta.tag[eRequestingFulfilmentTask] = $tasktag#fulfilment-task
   * ^short = "fulfilment-task"
 
 * partOf 1..1 MS
