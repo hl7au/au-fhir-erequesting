@@ -79,7 +79,7 @@ Column attribute descriptions are as follows:
 |[AdministrativeGender](https://hl7.org/fhir/R4/codesystem-administrative-gender.html)|[AdministrativeGender](https://hl7.org/fhir/R4/valueset-administrative-gender.html)|FHIR|Health Level Seven International|
 |[AddressUse](http://hl7.org/fhir/address-use)|[AddressUse](http://hl7.org/fhir/ValueSet/address-use)|FHIR|Health Level Seven International|
 |[AddressType](http://hl7.org/fhir/address-type)|[AddressType](http://hl7.org/fhir/ValueSet/address-type)|FHIR|Health Level Seven International|
-|[AU eRequesting CommunicationRequest Reason](CodeSystem-au-erequesting-communication-request-reason.html)|[AU eRequesting CommunicationRequest Reason](ValueSet-au-erequesting-communicationrequest-reason.html)|AU eRequesting|AU eRequesting|
+|[AU eRequesting CommunicationRequest Reason](CodeSystem-au-erequesting-communicationrequest-reason.html)|[AU eRequesting CommunicationRequest Reason](ValueSet-au-erequesting-communicationrequest-reason.html)|AU eRequesting|AU eRequesting|
 |[AU eRequesting Task Tag](CodeSystem-au-erequesting-task-tag.html)|[AU eRequesting Fulfilment Task Tags](ValueSet-au-erequesting-fulfilment-task-tags.html)|AU eRequesting|AU eRequesting|
 |[Australian Indigenous Status](https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1)|[Australian Indigenous Status](https://healthterminologies.gov.au/fhir/ValueSet/australian-indigenous-status-1)|NCTS|Australian Digital Health Agency|
 |[Australian States and Territories](https://healthterminologies.gov.au/fhir/CodeSystem/australian-states-territories-1)|[Australian States and Territories](https://healthterminologies.gov.au/fhir/ValueSet/australian-states-territories-2)|NCTS|Australian Digital Health Agency|
