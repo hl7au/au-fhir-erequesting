@@ -838,6 +838,22 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
+        <name value="_lastUpdated"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+        <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="focus"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Task-focus"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
         <name value="group-identifier"/>
         <definition value="http://hl7.org/fhir/SearchParameter/Task-group-identifier"/>
         <type value="token"/>
@@ -873,26 +889,35 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
-        <name value="focus"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/Task-focus"/>
-        <type value="reference"/>
-      </searchParam>
-        <searchParam>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <name value="_lastUpdated"/>
-        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
-        <type value="date"/>
-      </searchParam>
-      <searchParam>
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
         <name value="status"/>
         <definition value="http://hl7.org/fhir/SearchParameter/Task-status"/>
         <type value="token"/>
       </searchParam>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <extension url="required">
+          <valueString value="_lastUpdated"/>
+        </extension>
+        <extension url="required">
+          <valueString value="status"/>
+        </extension>
+        <extension url="required">
+          <valueString value="owner"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <extension url="required">
+          <valueString value="owner"/>
+        </extension>
+        <extension url="required">
+          <valueString value="status"/>
+        </extension>
+      </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -909,43 +934,13 @@
           <valueCode value="SHALL"/>
         </extension>
         <extension url="required">
-          <valueString value="owner"/>
-        </extension>
-        <extension url="required">
-          <valueString value="status"/>
-        </extension>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <extension url="required">
           <valueString value="requester"/>
         </extension>
         <extension url="required">
           <valueString value="status"/>
         </extension>
-      </extension>
-            <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-        <extension url="required">
-          <valueString value="_lastUpdated"/>
-        </extension>
-        <extension url="required">
-          <valueString value="status"/>
-        </extension>
-        <extension url="required">
-          <valueString value="owner"/>
-        </extension>
-      </extension>
-      <searchInclude value="Task:patient">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHOULD"/>
-        </extension>
-      </searchInclude>
-      <searchInclude value="Task:requester">
+      </extension>      
+      <searchInclude value="Task:focus">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHOULD"/>
         </extension>
@@ -955,7 +950,12 @@
         <valueCode value="SHOULD"/>
         </extension>
       </searchInclude>
-      <searchInclude value="Task:focus">
+      <searchInclude value="Task:patient">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD"/>
+        </extension>
+      </searchInclude>
+      <searchInclude value="Task:requester">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHOULD"/>
         </extension>
