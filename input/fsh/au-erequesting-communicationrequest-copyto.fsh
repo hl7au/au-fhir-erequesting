@@ -1,7 +1,7 @@
 Profile: AUeRequestingCommunicationRequestCopyTo
 Parent: AUeRequestingCommunicationRequest
 Id: au-erequesting-communicationrequest-copyto
-Title: "AU eRequesting Communication Request CopyTo"
+Title: "AU eRequesting CommunicationRequest CopyTo"
 Description: "This profile sets minimum expectations for a CommunicationRequest resource that is used to define a copy-to clinician or copy-to patient as a report recipient.  This is differentiated from an urgent practitioner communication as priority may not be urgent and the requester will not be the recipient. It is based on the [CommunicationRequest](https://hl7.org/fhir/R4/communicationrequest.html) and identifies the additional constraints, extensions, vocabularies and value sets that SHALL be present in the CommunicationRequest when conforming to this profile."
 
 * ^status = #draft
@@ -21,4 +21,4 @@ Description: "This profile sets minimum expectations for a CommunicationRequest 
 
 * recipient ^short = "Individual provider or patient who is the intended recipient of the copy" 
 
-* reasonCode.coding = $comm-req-reason#copyto
+* reasonCode.coding = $commreq-reason#copyto

@@ -1,7 +1,7 @@
 Profile: AUeRequestingTaskCommunicationRequest
 Parent: AUeRequestingTask
 Id: au-erequesting-task-communicationrequest
-Title: "AU eRequesting Communication Request Task"
+Title: "AU eRequesting Task CommunicationRequest"
 Description: """
 AU eRequesting communication request task used to track the fulfilment of a communication request. For example, whether fulfilment was attempted, successful, or failed. 
 This profile sets minimum expectations for a Task resource that is used to record, search, and fetch information about an AU eRequesting communication request task to be fulfilled. It is based on the [AU eRequesting Task](StructureDefinition-au-erequesting-task.html) and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present when conforming to this profile.

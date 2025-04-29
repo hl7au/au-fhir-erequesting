@@ -1,17 +1,30 @@
 Profile: AUeRequestingCommunicationRequestPatient
 Parent: AUeRequestingCommunicationRequest
 Id: au-erequesting-communicationrequest-patient
-Title: "AU eRequesting Communication Request Patient"
+Title: "AU eRequesting CommunicationRequest Patient"
 Description: "Direct communication from a filler to a patient. This supports the use case where a diagnostic provider sends a message to a patient, such as a suggestion to book an appointment or provide instructions for a diagnostic test. Sometimes the communication is not to be performed, for example when a patient has requested that they not be contacted by SMS. Currently, the supported communication mediums are SMS and email."
 
 * ^status = #draft
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 
+* category
+  * coding 1..
 * category from AUeRequestingCommunicationRequestPatientCategory (required)
   * ^short = "reminder | instruction"
 
-* doNotPerform 0..1
+* doNotPerform 0..1 MS
   * ^short = "True when SMS or email communication with patient is requested to not be performed"
+
+* doNotPerform ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
+* doNotPerform ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate-if-known
+* doNotPerform ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
+* doNotPerform ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[code].valueCode = #SHALL:handle
+* doNotPerform ^extension[http://hl7.org/fhir/StructureDefinition/obligation][2].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+* doNotPerform ^extension[http://hl7.org/fhir/StructureDefinition/obligation][2].extension[code].valueCode = #SHALL:handle
+* doNotPerform ^extension[http://hl7.org/fhir/StructureDefinition/obligation][3].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
+* doNotPerform ^extension[http://hl7.org/fhir/StructureDefinition/obligation][3].extension[code].valueCode = #SHALL:able-to-populate
+* doNotPerform ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
+* doNotPerform ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 
 * medium 1.. MS
 * medium from AUeRequestingCommunicationRequestPatientMedium (required)  
@@ -37,4 +50,4 @@ Description: "Direct communication from a filler to a patient. This supports the
   * reference 1..
     * ^short = "Relative reference"
 
-* reasonCode.coding = $comm-req-reason#patient
+* reasonCode.coding = $commreq-reason#patient

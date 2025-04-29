@@ -11,17 +11,17 @@ This implementation guide has no variance (i.e. fully compliant) from AU Base FH
 #### Additionally Profiled Resources
 This implementation guide profiles the following resources that are not profiled in AU Base:
 - CommunicationRequest
-  - [AU eRequesting Communication Request](StructureDefinition-au-erequesting-communicationrequest.html)
-  - [AU eRequesting Communication Request CopyTo](StructureDefinition-au-erequesting-communicationrequest-copyto.html)
-  - [AU eRequesting Communication Request Patient](StructureDefinition-au-erequesting-communicationrequest-patient.html)
-  - [AU eRequesting Communication Request Urgent Provider](StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html)
+  - [AU eRequesting CommunicationRequest](StructureDefinition-au-erequesting-communicationrequest.html)
+  - [AU eRequesting CommunicationRequest CopyTo](StructureDefinition-au-erequesting-communicationrequest-copyto.html)
+  - [AU eRequesting CommunicationRequest Patient](StructureDefinition-au-erequesting-communicationrequest-patient.html)
+  - [AU eRequesting CommunicationRequest Urgent Provider](StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html)
 - Consent
   - [AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhrconsentwithdrawal.html)
 - Task
   - [AU eRequesting Task](StructureDefinition-au-erequesting-task.html)
   - [AU eRequesting Task Diagnostic Request](StructureDefinition-au-erequesting-task-diagnosticrequest.html)
   - [AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html)
-  - [AU eRequesting Communication Request Task](StructureDefinition-au-erequesting-task-communicationrequest.html)
+  - [AU eRequesting Task CommunicationRequest](StructureDefinition-au-erequesting-task-communicationrequest.html)
 
 ### Variance from AU Core
 This implementation guide has no variance (i.e. fully compliant) from AU Core FHIR Implementation Guide version 5.0.1-ci-build ([current](https://build.fhir.org/ig/hl7au/au-fhir-core/)).
@@ -29,10 +29,10 @@ This implementation guide has no variance (i.e. fully compliant) from AU Core FH
 #### Additionally Profiled Resources
 This implementation guide profiles the following resources that are not profiled in AU Core:
 - CommunicationRequest
-  - [AU eRequesting Communication Request](StructureDefinition-au-erequesting-communicationrequest.html)
-  - [AU eRequesting Communication Request CopyTo](StructureDefinition-au-erequesting-communicationrequest-copyto.html)
-  - [AU eRequesting Communication Request Patient](StructureDefinition-au-erequesting-communicationrequest-patient.html)
-  - [AU eRequesting Communication Request Urgent Provider](StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html)
+  - [AU eRequesting CommunicationRequest](StructureDefinition-au-erequesting-communicationrequest.html)
+  - [AU eRequesting CommunicationRequest CopyTo](StructureDefinition-au-erequesting-communicationrequest-copyto.html)
+  - [AU eRequesting CommunicationRequest Patient](StructureDefinition-au-erequesting-communicationrequest-patient.html)
+  - [AU eRequesting CommunicationRequest Urgent Provider](StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html)
 - Consent
   - [AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhrconsentwithdrawal.html)
 - Coverage
@@ -45,4 +45,4 @@ This implementation guide profiles the following resources that are not profiled
   - [AU eRequesting Task](StructureDefinition-au-erequesting-task.html)
   - [AU eRequesting Task Diagnostic Request](StructureDefinition-au-erequesting-task-diagnosticrequest.html)
   - [AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html)
-  - [AU eRequesting Communication Request Task](StructureDefinition-au-erequesting-task-communicationrequest.html)
+  - [AU eRequesting Task CommunicationRequest](StructureDefinition-au-erequesting-task-communicationrequest.html)

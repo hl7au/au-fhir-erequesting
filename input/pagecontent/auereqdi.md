@@ -69,13 +69,13 @@ Column attribute descriptions are as follows:
   </tr>
    <tr>
     <td colspan="2">Distribution list</td>
-    <td><a href="StructureDefinition-au-erequesting-communicationrequest-copyto.html">AU eRequesting Communication Request CopyTo</a></td>
+    <td><a href="StructureDefinition-au-erequesting-communicationrequest-copyto.html">AU eRequesting CommunicationRequest CopyTo</a></td>
     <td>CommunicationRequest.recipient</td>
     <td></td>
   </tr>
    <tr>
     <td colspan="2">Urgent contact</td>
-    <td><a href="StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html">AU eRequesting Communication Request Urgent Provider</a></td>
+    <td><a href="StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html">AU eRequesting CommunicationRequest Urgent Provider</a></td>
     <td>CommunicationRequest.recipient</td>
     <td></td>
   </tr>
@@ -142,13 +142,13 @@ Column attribute descriptions are as follows:
   </tr>
     <tr>
     <td colspan="2">Distribution list</td>
-    <td><a href="StructureDefinition-au-erequesting-communicationrequest-copyto.html">AU eRequesting Communication Request CopyTo</a></td>
+    <td><a href="StructureDefinition-au-erequesting-communicationrequest-copyto.html">AU eRequesting CommunicationRequest CopyTo</a></td>
     <td>CommunicationRequest.recipient</td>
     <td></td>
   </tr>
     <tr>
     <td colspan="2">Urgent contact</td>
-    <td><a href="StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html">AU eRequesting Communication Request Urgent Provider</a></td>
+    <td><a href="StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html">AU eRequesting CommunicationRequest Urgent Provider</a></td>
     <td>CommunicationRequest.recipient</td>
     <td></td>
   </tr>
@@ -203,13 +203,13 @@ Column attribute descriptions are as follows:
   </tr>
     <tr>
     <td colspan="2">Distribution list</td>
-    <td><a href="StructureDefinition-au-erequesting-communicationrequest-copyto.html">AU eRequesting Communication Request CopyTo</a></td>
+    <td><a href="StructureDefinition-au-erequesting-communicationrequest-copyto.html">AU eRequesting CommunicationRequest CopyTo</a></td>
     <td>CommunicationRequest.recipient</td>
     <td></td>
   </tr>
     <tr>
     <td colspan="2">Urgent contact</td>
-    <td><a href="StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html">AU eRequesting Communication Request Urgent Provider</a></td>
+    <td><a href="StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html">AU eRequesting CommunicationRequest Urgent Provider</a></td>
     <td>CommunicationRequest.recipient</td>
     <td></td>
   </tr>

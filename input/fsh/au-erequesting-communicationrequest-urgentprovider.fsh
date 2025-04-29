@@ -1,7 +1,7 @@
 Profile: AUeRequestingCommunicationRequestUrgentProvider
 Parent: AUeRequestingCommunicationRequest
 Id: au-erequesting-communicationrequest-urgentprovider
-Title: "AU eRequesting Communication Request Urgent Provider"
+Title: "AU eRequesting CommunicationRequest Urgent Provider"
 Description: "Direct communication from a filler to a clinical provider for the purpose of providing urgent results.  This is not a replacement for a formal report, but is intended to provide a timely notification of a critical result. The communication is sent to a specific provider, and the medium is normally phone."
 
 * ^status = #draft
@@ -49,4 +49,4 @@ Description: "Direct communication from a filler to a clinical provider for the 
 * recipient only Reference (AUCorePractitionerRole)
   * ^short = "Individual provider receiving the communication"
 
-* reasonCode.coding = $comm-req-reason#urgent
+* reasonCode.coding = $commreq-reason#urgent
