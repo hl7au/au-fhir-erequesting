@@ -740,12 +740,12 @@
         <valueCode value="MAY"/>
       </extension>
       <type value="RelatedPerson"/>
-      <supportedProfile value="http://hl7.org.au/fhir/StructureDefinition/au-relatedperson">
+      <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-relatedperson">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Servers **MAY** support the RelatedPerson resource, the AU Base profile, and the conformance expectations for the RelatedPerson resource."/>
+      <documentation value="If the Server supports the RelatedPerson resource, Server **SHALL** support the AU Core profile, and the conformance expectations for the RelatedPerson resource."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>

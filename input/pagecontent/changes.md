@@ -44,6 +44,7 @@ This change log documents the significant updates and resolutions implemented fr
   - added Must Support to ServiceRequest.occurrence [FHIR-49918](https://jira.hl7.org/browse/FHIR-49918)
   - added Must Support to ServiceRequest.quantity [FHIR-49919](https://jira.hl7.org/browse/FHIR-49919)
   - added pregnancy status slice to ServiceRequest.supportingInfo referencing [Observation Pregnancy - Status (IPS)](https://build.fhir.org/ig/HL7/fhir-ips/StructureDefinition-Observation-pregnancy-status-uv-ips.html) [FHIR-47006](https://jira.hl7.org/browse/FHIR-47006)
+  - changed base profile from AU Base Diagnostic Request (deprecated) to AU Base Service Request [FHIR-50147](https://jira.hl7.org/browse/FHIR-50147)
 - Added _include search parameters ServiceRequest:patient, ServiceRequest:requester and ServiceRequest:encounter to AU eRequesting Placer, Filler, Patient and Server CapabilityStatements [FHIR-46942](https://jira.hl7.org/browse/FHIR-46942)
 - Renamed AU eRequesting Patient Access actor and CapabilityStatement to be AU eRequesting Patient [FHIR-46802](https://jira.hl7.org/browse/FHIR-46802)
 - Clarified profile-specific implementation guidance on populating ServiceRequest.code and removed additional binding in AU eRequesting Pathology Request and AU eRequesting Imaging Request [FHIR-46847](https://jira.hl7.org/browse/FHIR-46847)
