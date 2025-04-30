@@ -45,4 +45,4 @@ This implementation guide profiles the following resources that are not profiled
   - [AU eRequesting Task](StructureDefinition-au-erequesting-task.html)
   - [AU eRequesting Task Diagnostic Request](StructureDefinition-au-erequesting-task-diagnosticrequest.html)
   - [AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html)
-  - [AU eRequesting Task CommunicationRequest](StructureDefinition-au-erequesting-task-communicationrequest.html)
+  - [AU eRequesting Task Communication Request](StructureDefinition-au-erequesting-task-communicationrequest.html)

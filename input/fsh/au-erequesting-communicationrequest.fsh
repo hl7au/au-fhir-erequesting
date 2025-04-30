@@ -2,7 +2,8 @@ Profile: AUeRequestingCommunicationRequest
 Parent: CommunicationRequest
 Id: au-erequesting-communicationrequest
 Title: "AU eRequesting CommunicationRequest"
-Description: "This profile sets minimum expectations for derived CommunicationRequest resources that are used to record, search, and fetch information about a communication request to be performed. It is based on the [CommunicationRequest](https://hl7.org/fhir/R4/communicationrequest.html) and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the CommunicationRequest when conforming to this profile."
+Description: "This profile sets minimum expectations for derived CommunicationRequest resources that are used to record, search, and fetch information about a communication request to be performed. 
+It is based on the [CommunicationRequest](https://hl7.org/fhir/R4/communicationrequest.html) and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the CommunicationRequest when conforming to this profile."
 
 * ^status = #draft
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
@@ -56,7 +57,7 @@ Description: "This profile sets minimum expectations for derived CommunicationRe
 
 * subject 1.. MS
 * subject only Reference (AUCorePatient)
-  * ^short = "Patient that is the subject of the diagnostic request"
+  * ^short = "Patient that is the subject of the communication request"
 
 * subject ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * subject ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
@@ -84,7 +85,7 @@ Description: "This profile sets minimum expectations for derived CommunicationRe
 * about ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 
 * authoredOn 1.. MS
-  * ^short = "Date/time when communication request direction obtained"
+  * ^short = "Date/time communication request direction obtained"
 
 * authoredOn ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * authoredOn ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
@@ -114,7 +115,6 @@ Description: "This profile sets minimum expectations for derived CommunicationRe
 
 * recipient 1..1 MS
 * recipient only Reference(AUCorePractitionerRole or AUCorePatient)
-  * ^short = "Intended recipient of the communication"
 
 * recipient ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * recipient ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
@@ -143,7 +143,6 @@ Description: "This profile sets minimum expectations for derived CommunicationRe
 * sender ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 
 * reasonCode 1..1 MS
-  * coding 1..1
 * reasonCode from http://hl7.org.au/fhir/ereq/ValueSet/au-erequesting-communicationrequest-reason (required)
 
 * reasonCode ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"

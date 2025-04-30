@@ -1,7 +1,7 @@
 ValueSet: AUeRequestingCommunicationRequestPatientCategory
 Id: au-erequesting-communicationrequest-patient-category
 Title: "AU eRequesting CommunicationRequest Patient Category"
-Description: "Category code options for patient communication. Limited to reminder and instruction."
+Description: "Category values for patient communication, limited to 'reminder' and 'instruction' in the Australian eRequesting context."
 
 * ^meta.profile[+] = "https://healthterminologies.gov.au/fhir/StructureDefinition/composed-value-set-4"
 * ^version = "1.0.0"

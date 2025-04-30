@@ -2,7 +2,8 @@ Profile: AUeRequestingCommunicationRequestUrgentProvider
 Parent: AUeRequestingCommunicationRequest
 Id: au-erequesting-communicationrequest-urgentprovider
 Title: "AU eRequesting CommunicationRequest Urgent Provider"
-Description: "Direct communication from a filler to a clinical provider for the purpose of providing urgent results.  This is not a replacement for a formal report, but is intended to provide a timely notification of a critical result. The communication is sent to a specific provider, and the medium is normally phone."
+Description: "This profile sets minimum expectations for a CommunicationRequest resource used to define direct communication from a filler to a clinical provider for the purpose of providing urgent results. This is not a replacement for a formal report, but is intended to provide a timely notification of a critical result. The communication is sent to a specific provider, and the medium is normally phone. 
+It is based on the [AU eRequesting CommunicationRequest](StructureDefinition-au-erequesting-communicationrequest.html) and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the CommunicationRequest when conforming to this profile."
 
 * ^status = #draft
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
@@ -12,7 +13,8 @@ Description: "Direct communication from a filler to a clinical provider for the 
   * coding = $communication-category#alert
 
 * priority 1.. MS
-* priority = http://hl7.org/fhir/request-priority#urgent
+  * coding 1..1
+  * coding = http://hl7.org/fhir/request-priority#urgent
 
 * priority ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * priority ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
@@ -49,4 +51,6 @@ Description: "Direct communication from a filler to a clinical provider for the 
 * recipient only Reference (AUCorePractitionerRole)
   * ^short = "Individual provider receiving the communication"
 
-* reasonCode.coding = $commreq-reason#urgent
+* reasonCode
+  * coding 1..1
+  * coding = $commreq-reason#urgent
