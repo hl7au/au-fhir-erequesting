@@ -7,9 +7,6 @@ Description: "This profile sets minimum expectations for a Task resource that is
 * ^status = #draft
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 
-* meta.tag[eRequestingFulfilmentTask]
-  * code = #fulfilment-task-group
-  * system = $tasktag
-  * ^short = "fulfilment-task-group"
+* meta.tag[eRequestingFulfilmentTask] = $tasktag#fulfilment-task-group
 
 * focus 0..0
