@@ -11,7 +11,6 @@ It is based on the [AU eRequesting CommunicationRequest](StructureDefinition-au-
 * category
   * coding 1..
 * category from AUeRequestingCommunicationRequestPatientCategory (required)
-  * ^short = "reminder | instruction"
 
 * doNotPerform 0..1 MS
   * ^short = "Set to true when SMS or email communication with the patient is not to be performed."
@@ -28,8 +27,7 @@ It is based on the [AU eRequesting CommunicationRequest](StructureDefinition-au-
 * doNotPerform ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 
 * medium 1.. MS
-* medium from AUeRequestingCommunicationRequestPatientMedium (required)  
-  * ^short = "SMS | email"
+* medium from AUeRequestingCommunicationRequestPatientMedium (required)
   
 * medium ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * medium ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
