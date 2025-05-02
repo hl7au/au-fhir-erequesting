@@ -46,8 +46,6 @@ It is based on the [AU eRequesting CommunicationRequest](StructureDefinition-au-
 
 * recipient only Reference (AUCorePatient)
   * ^short = "Patient receiving the communication"
-  * reference 1..
-    * ^short = "Relative reference"
 
 * reasonCode
   * coding 1..1
