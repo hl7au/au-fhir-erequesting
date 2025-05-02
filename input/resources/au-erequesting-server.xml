@@ -841,7 +841,7 @@
         <name value="_lastUpdated"/>
         <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
         <type value="date"/>
-        <documentation value="The Server **SHALL** support `multipleAnd` and search comparators `le`, `lt`, `gt`, `ge`."/>
+        <documentation value="The Server **SHALL** support `multipleAnd`. The Server **SHALL** search comparators `gt`, `lt`, `ge`, `le`."/>
       </searchParam>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -893,7 +893,7 @@
         <name value="status"/>
         <definition value="http://hl7.org/fhir/SearchParameter/Task-status"/>
         <type value="token"/>
-        <documentation value="The Server **SHALL** support `multipleOr`"/>
+        <documentation value="The Server **SHALL** support `multipleOr`."/>
       </searchParam>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -944,22 +944,22 @@
       </extension>      
       <searchInclude value="Task:focus">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHOULD"/>
+        <valueCode value="SHALL"/>
         </extension>
       </searchInclude>
       <searchInclude value="Task:owner">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHOULD"/>
+        <valueCode value="SHALL"/>
         </extension>
       </searchInclude>
       <searchInclude value="Task:patient">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHOULD"/>
+        <valueCode value="SHALL"/>
         </extension>
       </searchInclude>
       <searchInclude value="Task:requester">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHOULD"/>
+        <valueCode value="SHALL"/>
         </extension>
       </searchInclude>
     </resource>

@@ -26,7 +26,7 @@
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
         <td><code>date</code></td>
-        <td></td>
+        <td>The Server <b>SHALL</b> support <code>multipleAnd</code>. The Server <b>SHALL</b> support search comparators <code>gt</code>, <code>lt</code>, <code>ge</code>, <code>le</code>.<br/> The Placer, Filler and AU eRequesting Patient actors <b>MAY</b> support <code>multipleAnd</code>.<br/> The Placer, Filler and AU eRequesting Patient actors <b>MAY</b> support search comparators <code>gt</code>, <code>lt</code>, <code>ge</code>, <code>le</code>.</td>
   </tr>
   <tr>
         <td>_lastUpdated+status+owner</td>

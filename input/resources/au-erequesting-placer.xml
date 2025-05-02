@@ -839,7 +839,7 @@
         </extension>
       </referencePolicy> -->
     </resource>
-    <!-- Task -->
+    <!-- TASK -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="SHALL"/>
@@ -895,7 +895,7 @@
         <name value="_lastUpdated"/>
         <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
         <type value="date"/>
-        <documentation value="The Placer **MAY** support `multipleAnd` and search comparators `le`, `lt`, `gt`, `ge`."/>
+        <documentation value="The Placer **MAY** support `multipleAnd`. The Placer **MAY** support search comparators `gt`, `lt`, `ge`, `le`."/>
       </searchParam>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -947,7 +947,7 @@
         <name value="status"/>
         <definition value="http://hl7.org/fhir/SearchParameter/Task-status"/>
         <type value="token"/>
-        <documentation value="The Placer **MAY** support `multipleOr`"/>
+        <documentation value="The Placer **MAY** support `multipleOr`."/>
       </searchParam>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">

@@ -23,6 +23,7 @@ The following search parameters and search parameter combinations are supported.
     Example:
     
       1. GET [base]/Task?_lastUpdated=gt2010-10-01
+      1. GET [base]/Task?_lastUpdated=lt2024-10-31&_lastUpdated=gt2024-10-01
       1. GET [base]/Task?_lastUpdated=gt2010-10-01&_include=Task:patient&_include=Task:requester&_include=Task:owner
 
     *Implementation Notes:* Fetches a bundle with the requested Task, instead of just the resource itself, and allows for the inclusion of additional search parameters such as _include, _revinclude, or _lastUpdated ([how to search by date](https://build.fhir.org/search.html#date))
