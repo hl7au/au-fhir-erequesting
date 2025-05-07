@@ -116,7 +116,7 @@
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
         <td><code>token</code></td>
- 	 <td>The Server <b>SHALL</b> support <code>multipleOr</code> for status.<br/> The Placer, Filler and AU eRequesting Patient actors <b>MAY</b> support <code>multipleOr</code> for status.</td>
+ 	 <td>The Server <b>SHALL</b> support <code>multipleOr</code>.<br/> The Placer, Filler and AU eRequesting Patient actors <b>MAY</b> support <code>multipleOr</code>.</td>
   </tr>
   <tr>
         <td>_include=Task:focus</td>

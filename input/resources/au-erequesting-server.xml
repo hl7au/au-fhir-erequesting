@@ -841,7 +841,7 @@
         <name value="_lastUpdated"/>
         <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
         <type value="date"/>
-        <documentation value="The Server **SHALL** support `multipleAnd`. The Server **SHALL** search comparators `gt`, `lt`, `ge`, `le`."/>
+        <documentation value="The Server **SHALL** support `multipleAnd`. The Server **SHALL** support search comparators `gt`, `lt`, `ge`, `le`."/>
       </searchParam>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
