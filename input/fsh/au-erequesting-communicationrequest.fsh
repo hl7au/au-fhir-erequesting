@@ -9,8 +9,6 @@ It is based on the [CommunicationRequest](https://hl7.org/fhir/R4/communicationr
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^abstract = true
 
-//Common Elements
-
 * groupIdentifier 1.. MS
 * groupIdentifier ^type.profile = $AULocalOrderIdentifier
 * groupIdentifier.type 
