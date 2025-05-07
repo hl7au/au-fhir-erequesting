@@ -15,7 +15,7 @@ Description: "This profile sets minimum expectations for a Task resource that is
   * tag contains 
       eRequestingFulfilmentTask 1..1
   * tag[eRequestingFulfilmentTask] from AUeRequestingFulfilmentTaskTags (required)
-    * ^short = "fulfilment-task | fulfilment-task-group"
+
 
 * groupIdentifier 1..1 MS
 * groupIdentifier ^type.profile = $AULocalOrderIdentifier

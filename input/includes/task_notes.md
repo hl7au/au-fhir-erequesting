@@ -17,8 +17,8 @@ The following search parameters and search parameter combinations are supported.
 
 1. **[`_lastUpdated`](https://hl7.org/fhir/R4/task.html#search)** search parameter
    - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `Task:focus`, `Task:owner`, `Task:patient`, and `Task:requester`
-   - including support for **[`multipleAnd`](http://hl7.org/fhir/R4/searchparameter-definitions.html#SearchParameter.multipleAnd)**.
-   - including support for search comparators `gt`, `lt`, `ge`, `le`.
+   - including support for **[`multipleAnd`](http://hl7.org/fhir/R4/searchparameter-definitions.html#SearchParameter.multipleAnd)**
+   - including support for search comparators `gt`, `lt`, `ge`, `le`
  
     `GET [base]/Task?_lastUpdated={gt|lt|ge|le}[date]{&_lastUpdated={gt|lt|ge|le}[date]&...}`
 
@@ -28,14 +28,14 @@ The following search parameters and search parameter combinations are supported.
       1. GET [base]/Task?_lastUpdated=lt2010-10-31&_lastUpdated=gt2010-10-01
       1. GET [base]/Task?_lastUpdated=gt2010-10-01&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
 
-    *Implementation Notes:* Fetches a bundle with the requested Task, instead of just the resource itself, and allows for the inclusion of additional search parameters such as _include, _revinclude, or _lastUpdated ([how to search by date](https://build.fhir.org/search.html#date))
+    *Implementation Notes:* Fetches a bundle matching the _lastUpdated date or date range. ([how to search by date](https://build.fhir.org/search.html#date))
 
 
 1. Combined **[`_lastUpdated_`](https://hl7.org/fhir/R4/task.html#search)** and **[`status`](https://hl7.org/fhir/R4/task.html#search)** and **[`owner`](https://hl7.org/fhir/R4/task.html#search)** search parameters
    - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `Task:focus`, `Task:owner`, `Task:patient`, and `Task:requester`
    - including support for chained searching of owner canonical identifier `owner.identifier` (e.g. `owner.identifier=[system|][code]`)
    - including support for **[`multipleOr`](http://hl7.org/fhir/R4/searchparameter-definitions.html#SearchParameter.multipleOr)** search on `status`
-   - including support for **[`multipleAnd`](http://hl7.org/fhir/R4/searchparameter-definitions.html#SearchParameter.multipleAnd)** search on `_lastUpdated`.
+   - including support for **[`multipleAnd`](http://hl7.org/fhir/R4/searchparameter-definitions.html#SearchParameter.multipleAnd)** search on `_lastUpdated`
    - including support for search comparators `gt`, `lt`, `ge`, `le` on `_lastUpdated`.
 
     `GET [base]/Task?_lastUpdated={gt|lt|ge|le}[date]&status={system|}[code]&owner={Type/}[id]` or optionally `GET [base]/Task?_lastUpdated={gt|lt|ge|le}[date]&status={system|}[code]&owner.identifier=[system|][code]`
@@ -46,7 +46,7 @@ The following search parameters and search parameter combinations are supported.
       1. GET [base]/Task?_lastUpdated=gt2010-10-01&status=completed&owner.identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0\|8003621566684455
       1. GET [base]/Task?_lastUpdated=gt2010-10-01&status=accepted,in-progress&owner=https://elimbahmedicalcentre.example.com.au/orders/practitioner-identifier\|EMC1234567-1234&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
 
-    *Implementation Notes:* Fetches a bundle containing Task resources matching the _lastUpdated, owner and status, instead of just the resource itself, and allows for the inclusion of additional search parameters such as _include, _revinclude, or _lastUpdated ([how to search by date](https://build.fhir.org/search.html#date), [how to search by token](http://hl7.org/fhir/R4/search.html#token), [how to search by reference](http://hl7.org/fhir/R4/search.html#reference))
+    *Implementation Notes:* Fetches a bundle containing Task resources matching the _lastUpdated date, owner and status ([how to search by date](https://build.fhir.org/search.html#date), [how to search by token](http://hl7.org/fhir/R4/search.html#token), [how to search by reference](http://hl7.org/fhir/R4/search.html#reference))
 
 
 1. **[`focus`](https://hl7.org/fhir/R4/task.html#search)** search parameter
