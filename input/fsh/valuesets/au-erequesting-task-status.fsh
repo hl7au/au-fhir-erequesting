@@ -1,6 +1,6 @@
 ValueSet: AUeRequestingTaskStatus
 Id: au-erequesting-task-status
-Title: "AU eRequesting Task Status"
+Title: "AU eRequesting TaskStatus"
 Description: "Task status values used in the Australian eRequesting context."
 * ^meta.profile[+] = "https://healthterminologies.gov.au/fhir/StructureDefinition/composed-value-set-4"
 * ^url = "http://terminology.hl7.org.au/ValueSet/au-erequesting-task-status"
