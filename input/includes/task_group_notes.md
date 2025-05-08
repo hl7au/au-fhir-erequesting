@@ -28,7 +28,7 @@ The following search parameters and search parameter combinations are supported.
       1. GET [base]/Task?_lastUpdated=lt2010-10-31&_lastUpdated=gt2010-10-01
       1. GET [base]/Task?_lastUpdated=gt2010-10-01&_include=Task:patient&_include=Task:requester&_include=Task:owner
 
-    *Implementation Notes:* Fetches a bundle matching the _lastUpdated date or date range. ([how to search by date](https://build.fhir.org/search.html#date))
+    *Implementation Notes:* Fetches a bundle matching the _lastUpdated date ([how to search by date](https://build.fhir.org/search.html#date))
 
 
 1. Combined **[`_lastUpdated_`](https://hl7.org/fhir/R4/task.html#search)** and **[`status`](https://hl7.org/fhir/R4/task.html#search)** and **[`owner`](https://hl7.org/fhir/R4/task.html#search)** search parameters
