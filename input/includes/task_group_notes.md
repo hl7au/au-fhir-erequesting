@@ -46,7 +46,7 @@ The following search parameters and search parameter combinations are supported.
       1. GET [base]/Task?_lastUpdated=gt2010-10-01&status=completed&owner.identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0\|8003621566684455
       1. GET [base]/Task?_lastUpdated=gt2010-10-01&status=accepted,in-progress&owner=https://elimbahmedicalcentre.example.com.au/orders/practitioner-identifier\|EMC1234567-1234&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
 
-    *Implementation Notes:* Fetches a bundle containing Task resources matching the _lastUpdated date, owner and status, instead of just the resource itself, and allows for the inclusion of additional search parameters such as _include, _revinclude, or _lastUpdated ([how to search by date](https://build.fhir.org/search.html#date), [how to search by token](http://hl7.org/fhir/R4/search.html#token), [how to search by reference](http://hl7.org/fhir/R4/search.html#reference))
+    *Implementation Notes:* Fetches a bundle containing Task resources matching the _lastUpdated date, owner and status ([how to search by date](https://build.fhir.org/search.html#date), [how to search by token](http://hl7.org/fhir/R4/search.html#token), [how to search by reference](http://hl7.org/fhir/R4/search.html#reference))
 
 
 1. **[`group-identifier`](https://hl7.org/fhir/R4/task.html#search)** search parameter
