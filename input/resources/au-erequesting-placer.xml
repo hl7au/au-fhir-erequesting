@@ -850,5 +850,183 @@
         </extension>
       </referencePolicy> -->
     </resource>
+    <!-- TASK -->
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL"/>
+      </extension>
+      <type value="Task"/>
+      <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-task-group">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-task-diagnosticrequest">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <documentation value="Placers **SHALL** support the Task resource, the AU eRequesting profiles, and the conformance expectations for the Task resource.&#xA;&#xA;The Placer **MAY** support the `_include` parameter for `Task:patient`, `Task:requester`, `Task:owner`, `Task:focus`."/>      
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="create"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="update"/>
+      </interaction> 
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="_id"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="_lastUpdated"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
+        <type value="date"/>
+        <documentation value="The Placer **MAY** support `multipleAnd`. The Placer **MAY** support search comparators `gt`, `lt`, `ge`, `le`."/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="focus"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Task-focus"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="group-identifier"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Task-group-identifier"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="owner"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Task-owner"/>
+        <type value="reference"/>
+        <documentation value="The Placer **MAY** support chained search owner.identifier using HPI-O and ABN identifiers as defined in the AU Core Organization profile."/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="patient"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/clinical-patient"/>
+        <type value="reference"/>
+        <documentation value="The Placer **MAY** support chained search patient.identifier using IHI, Medicare Number, and DVA Number identifiers as defined in the AU Core Patient profile."/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="requester"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Task-requester"/>
+        <type value="reference"/>
+        <documentation value="The Placer **MAY** support chained search requester.identifier using Medicare Provider Number identifier as defined in the AU Core PractitionerRole profile."/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="status"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Task-status"/>
+        <type value="token"/>
+        <documentation value="The Placer **MAY** support `multipleOr`."/>
+      </searchParam>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <extension url="required">
+          <valueString value="_lastUpdated"/>
+        </extension>
+        <extension url="required">
+          <valueString value="status"/>
+        </extension>
+        <extension url="required">
+          <valueString value="owner"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <extension url="required">
+          <valueString value="owner"/>
+        </extension>
+        <extension url="required">
+          <valueString value="status"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <extension url="required">
+          <valueString value="patient"/>
+        </extension>
+        <extension url="required">
+          <valueString value="status"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <extension url="required">
+          <valueString value="requester"/>
+        </extension>
+        <extension url="required">
+          <valueString value="status"/>
+        </extension>
+      </extension>
+      <searchInclude value="Task:patient">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="MAY"/>
+        </extension>
+      </searchInclude>
+      <searchInclude value="Task:requester">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="MAY"/>
+        </extension>
+      </searchInclude>
+      <searchInclude value="Task:owner">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="MAY"/>
+        </extension>
+      </searchInclude>
+      <searchInclude value="Task:focus">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="MAY"/>
+        </extension>
+      </searchInclude>
+    </resource>
   </rest>
 </CapabilityStatement>
