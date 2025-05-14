@@ -1,5 +1,5 @@
 ValueSet: AUeRequestingCommunicationRequestPatientCategory
-Id: au-erequesting-communicationrequest-patient-category
+Id: au-erequesting-communicationrequest-patientcategory
 Title: "AU eRequesting CommunicationRequest Patient Category"
 Description: "Category values for patient communication, limited to 'reminder' and 'instruction' in the Australian eRequesting context."
 

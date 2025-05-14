@@ -1,5 +1,5 @@
 ValueSet: AUeRequestingCommunicationRequestPatientMedium
-Id: au-erequesting-communicationrequest-patient-medium
+Id: au-erequesting-communicationrequest-patientmedium
 Title: "AU eRequesting CommunicationRequest Patient Medium"
 Description: "Medium values for patient communication, limited to 'SMS' and 'email' in the Australian eRequesting context."
 
