@@ -322,7 +322,7 @@ Description: "This extension applies to the AU eRequesting Diagnostic Request pr
 * ^status = #draft
 * ^context.type = #element
 * ^context.expression = "ServiceRequest"
-* . ^short = "AU eRequesting display sequence"
+* . ^short = "Display sequence"
 * value[x] only integer
 * valueInteger 1..1
 
@@ -334,7 +334,7 @@ Description: "This extension applies to the AU eRequesting Diagnostic Request pr
 * ^status = #draft
 * ^context.type = #element
 * ^context.expression = "ServiceRequest"
-* . ^short = "AU eRequesting fasting precondition"
+* . ^short = "Fasting precondition"
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1
 * valueCodeableConcept from $fastingPrecondition (required) 
