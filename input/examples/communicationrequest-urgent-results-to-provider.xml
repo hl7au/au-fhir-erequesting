@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <CommunicationRequest xmlns="http://hl7.org/fhir">
-  <id value="communicationrequest-donotperform"/>
+  <id value="communicationrequest-urgent-results-to-provider"/>
   <meta>
-    <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-communicationrequest-patient"/>
+    <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-communicationrequest-urgentprovider"/>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-name">
-    <valueString value="CommunicationRequest - Patient communication - do not perform"/>
+    <valueString value="CommunicationRequest - Urgent results communication to provider"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
-      <valueMarkdown value="Shows an example CommunicationRequest for the *AU eRequesting CommunicationRequest Patient* profile, requesting no email communication from the diagnostic provider regarding reminders or instructions to the patient. Patient: Remedios Belger."/>
+      <valueMarkdown value="Shows an example CommunicationRequest for the *AU eRequesting CommunicationRequest Urgent Provider* profile, requesting a provider receive communication about urgent results. Patient: Remedios Belger."/>
   </extension>
   <groupIdentifier>
     <type>
@@ -21,56 +21,51 @@
       <text value="Placer Group Number"/>
     </type>
     <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
-    <value value="EMC1552642-1111"/>
+    <value value="EMC1552642-1110"/>
     <assigner>
       <reference value="Organization/elimbah-medical-center"/>
       <display value="Elimbah Medical Center"/>
     </assigner>
   </groupIdentifier>
   <status value="active"/>
-  <doNotPerform value= "true"/>
   <category>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/communication-category"/>
-      <code value="reminder"/>
+      <code value="alert"/>
+      <display value="Alert"/>
     </coding>
-    <text value="reminder"/>
+    <text value="alert"/>
   </category>
-  <category>
-    <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/communication-category"/>
-      <code value="instruction"/>
-    </coding>
-    <text value="instruction"/>
-  </category>
+  <priority value="urgent"/>
   <medium>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationMode"/>
-      <code value="EMAILWRIT"/>
+      <code value="PHONE"/>
+      <display value="telephone"/>
     </coding>
-    <text value="email"/>
+    <text value="phone"/>
   </medium>
   <subject>
     <reference value="Patient/belger-remedios"/>
   </subject>
   <about>
-    <reference value="ServiceRequest/order-obsus-1"/>
+    <reference value="ServiceRequest/order-urinemcs-1"/>
   </about>
-  <authoredOn value="2025-03-15T10:30:00+10:00"/>
+  <authoredOn value="2025-02-21T08:00:00+10:00"/>
   <requester>
-    <reference value="Patient/belger-remedios"/>
+    <reference value="PractitionerRole/obstetrician-losch-sallie"/>
   </requester>
   <recipient>
-    <reference value="Patient/belger-remedios"/>
+    <reference value="PractitionerRole/obstetrician-losch-sallie"/>
   </recipient>
   <sender>
-    <reference value="Organization/mount-charlton-radiology"/>
+    <reference value="Organization/kioma-pathology"/>
   </sender>
   <reasonCode>
     <coding>
       <system value="http://terminology.hl7.org.au/CodeSystem/communicationrequest-reason"/>
-      <code value="patient"/>
-      <display value="Patient Request"/>
+      <code value="urgent"/>
+      <display value="Urgent Request"/>
     </coding>
   </reasonCode>
 </CommunicationRequest>
