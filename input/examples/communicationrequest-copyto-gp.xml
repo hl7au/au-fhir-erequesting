@@ -9,7 +9,7 @@
     <valueString value="CommunicationRequest - Copy To GP"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
-      <valueMarkdown value="Shows an example CommunicationRequest for the *AU eRequesting Communication Request CopyTo* profile, requesting a GP as a report copy-to recipient. Patient: Remedios Belger."/>
+      <valueMarkdown value="Shows an example CommunicationRequest for the *AU eRequesting CommunicationRequest CopyTo* profile, requesting a GP as a report copy-to recipient. Patient: Remedios Belger."/>
   </extension>
   <groupIdentifier>
     <type>
@@ -41,7 +41,15 @@
   </subject>
   <about>
     <reference value="ServiceRequest/order-glu-1"/>
+  </about>
+  <about>
+    <reference value="ServiceRequest/order-bg-abs.xml"/>
+  </about>
+  <about>
     <reference value="ServiceRequest/order-urinemcs-1"/>
+  </about>
+  <about>
+    <reference value="ServiceRequest/order-ironstudies"/>
   </about>
   <authoredOn value="2025-02-21T08:00:00+10:00"/>
   <requester>
