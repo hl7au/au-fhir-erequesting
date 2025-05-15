@@ -28,7 +28,6 @@
     </assigner>
   </groupIdentifier>
   <status value="active"/>
-  <doNotPerform value= "true"/>
   <category>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/communication-category"/>
@@ -43,6 +42,7 @@
     </coding>
     <text value="instruction"/>
   </category>
+  <doNotPerform value= "true"/>  
   <medium>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationMode"/>
