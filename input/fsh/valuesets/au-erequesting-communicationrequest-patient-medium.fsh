@@ -1,7 +1,7 @@
 ValueSet: AUeRequestingCommunicationRequestPatientMedium
 Id: au-erequesting-communicationrequest-patientmedium
 Title: "AU eRequesting CommunicationRequest Patient Medium"
-Description: "Medium values for patient communication, limited to 'SMS' and 'email' in the Australian eRequesting context."
+Description: "Medium values for patient communication, limited to SMS message and email in the Australian eRequesting context."
 
 * ^meta.profile[+] = "https://healthterminologies.gov.au/fhir/StructureDefinition/composed-value-set-4"
 * ^version = "1.0.0"

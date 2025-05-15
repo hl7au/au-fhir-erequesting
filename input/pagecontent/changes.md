@@ -15,7 +15,7 @@ This change log documents the significant updates and resolutions implemented fr
   - AU eRequesting MHR Consent Withdrawal ([FHIR-49806](https://jira.hl7.org/browse/FHIR-49806))
   - AU eRequesting Task Diagnostic Request ([FHIR-49718](https://jira.hl7.org/browse/FHIR-49718))
   - AU eRequesting Task Group ([FHIR-49719](https://jira.hl7.org/browse/FHIR-49719))
-  - AU eRequesting Task CommunicationRequest ([FHIR-50231](https://jira.hl7.org/browse/FHIR-50231))  
+  - AU eRequesting Task Communication Request ([FHIR-50231](https://jira.hl7.org/browse/FHIR-50231))  
   - AU eRequesting Coverage ([FHIR-46848](https://jira.hl7.org/browse/FHIR-46848))
 - New value sets:
   - AU eRequesting Task Status ([FHIR-47081](https://jira.hl7.org/browse/FHIR-47081))
