@@ -791,12 +791,17 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="Task"/>
+      <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-task-group">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>      
       <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-task-diagnosticrequest">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-       <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-task-group">
+      <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-task-communicationrequest">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -963,6 +968,7 @@
         </extension>
       </searchInclude>
     </resource>
+    <!-- COMMUNICATIONREQUEST -->
     <resource>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -973,7 +979,17 @@
             <valueCode value="SHALL"/>
           </extension>
         </supportedProfile>
-        <documentation value="Servers **SHALL** support the CommunicationRequest resource, and the conformance expectations for the CommunicationRequest resource."/>
+        <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-communicationrequest-patient">
+          <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+            <valueCode value="SHALL"/>
+          </extension>
+        </supportedProfile>
+        <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-communicationrequest-urgentprovider">
+          <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+            <valueCode value="SHALL"/>
+          </extension>
+        </supportedProfile>
+        <documentation value="Servers **SHALL** support the CommunicationRequest resource, the AU eRequesting profiles, and the conformance expectations for the CommunicationRequest resource."/>
         <interaction>
           <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
             <valueCode value="SHALL"/>
