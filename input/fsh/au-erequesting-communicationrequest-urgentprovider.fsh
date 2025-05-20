@@ -2,7 +2,7 @@ Profile: AUeRequestingCommunicationRequestUrgentProvider
 Parent: AUeRequestingCommunicationRequest
 Id: au-erequesting-communicationrequest-urgentprovider
 Title: "AU eRequesting CommunicationRequest Urgent Provider"
-Description: "This profile sets minimum expectations for a CommunicationRequest resource used to define direct communication from a filler to a clinical provider for the purpose of providing urgent results. This is not a replacement for a formal report, but is intended to provide a timely notification of a critical result. The communication is sent to a specific provider, and the medium is normally phone. 
+Description: "This profile sets minimum expectations for a CommunicationRequest resource used to define direct communication from a filler to a clinical provider for the purpose of providing urgent results. This is not a replacement for a formal report, but is intended to provide a timely notification of a result. The communication is sent to a specific provider, and the medium is normally phone. 
 It is based on the [AU eRequesting CommunicationRequest](StructureDefinition-au-erequesting-communicationrequest.html) and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the CommunicationRequest when conforming to this profile."
 
 * ^status = #draft
