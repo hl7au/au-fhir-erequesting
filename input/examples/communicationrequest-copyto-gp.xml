@@ -63,7 +63,7 @@
   </sender>
   <reasonCode>
     <coding>
-      <system value="http://hl7.org.au/fhir/ereq/CodeSystem/au-erequesting-communicationrequest-reason"/>
+      <system value="http://terminology.hl7.org.au/CodeSystem/communicationrequest-reason"/>
       <code value="copyto"/>
       <display value="Copy To"/>
     </coding>
