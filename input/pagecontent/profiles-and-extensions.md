@@ -8,7 +8,9 @@ The following is the full list of profiles that have been defined for this imple
 <!-- ================================================ -->
 
 <div> 
-  <img src="au-erequesting-profiles.svg" alt="AU eRequesting Profiles" style="width:100%"/>
+  <img src="au-erequesting-profiles-part1.svg" alt="AU eRequesting Profiles - Part 1" style="width:1200px"/>
+  <br/><br/>
+  <img src="au-erequesting-profiles-part2.svg" alt="AU eRequesting Profiles - Part 2" style="width:1200px"/>
 </div>
 *Figure 1: AU eRequesting Profiles*
 <br/>
