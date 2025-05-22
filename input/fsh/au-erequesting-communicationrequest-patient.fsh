@@ -9,7 +9,7 @@ It is based on the [AU eRequesting CommunicationRequest](StructureDefinition-au-
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 
 * category
-  * coding 1..
+  * coding 1..1
 * category from AUeRequestingCommunicationRequestPatientCategory (required)
 
 * doNotPerform 0..1 MS
