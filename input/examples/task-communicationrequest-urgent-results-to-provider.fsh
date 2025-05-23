@@ -12,7 +12,7 @@ Usage: #example
 * groupIdentifier.system = "http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"
 * groupIdentifier.value = "EMC4542244-5624"
 * groupIdentifier.assigner = Reference(elimbah-medical-center) "Elimbah Medical Center"
-* partOf = Reference(taskgroup-imaging-1)
+* partOf = Reference(taskfulfilment-imaging-1)
 * status = #requested
 * intent = #order
 * priority = #urgent

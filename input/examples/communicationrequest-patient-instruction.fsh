@@ -18,6 +18,8 @@ Usage: #example
 * medium.text = "SMS"
 * subject = Reference(belger-remedios)
 * about = Reference(order-obsus-1)
+* about[+] = Reference(taskgroup-pathology-1)
+* about[+] = Reference(taskfulfilment-pathology-1)
 * authoredOn = "2025-03-15T10:30:00+10:00"
 * requester = Reference(belger-remedios)
 * recipient = Reference(belger-remedios)
