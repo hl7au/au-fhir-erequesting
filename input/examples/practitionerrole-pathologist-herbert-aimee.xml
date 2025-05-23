@@ -23,7 +23,7 @@
         <value value="2448391X" />
     </identifier>
     <practitioner>
-        <reference value="Practitioner/aimee-herbert"/>
+        <reference value="Practitioner/herbert-aimee"/>
     </practitioner>
     <organization>
         <reference value="Organization/kioma-pathology"/>
