@@ -32,7 +32,7 @@
   </groupIdentifier>
   <status value="requested"/>
   <intent value="order"/>
-  <priority value="routine"/>
+  <priority value="urgent"/>
   <code>
     <coding>
       <system value="http://hl7.org/fhir/CodeSystem/task-code"/>
