@@ -15,7 +15,7 @@ The following search parameters and search parameter combinations are supported.
     *Implementation Notes:* Fetches a bundle with the requested Task, instead of just the resource itself, and allows for the inclusion of additional search parameters such as _include, _revinclude, or _lastUpdated ([how to search by id of the resource](https://hl7.org/fhir/r4/search.html#id))
 
 
-1. **[`_lastUpdated`](https://hl7.org/fhir/R4/task.html#search)** search parameter
+1. **[`_lastUpdated`](https://hl7.org/fhir/R4/resource.html#search)** search parameter
    - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `Task:focus`, `Task:owner`, `Task:patient`, and `Task:requester`
    - including support for **[`multipleAnd`](http://hl7.org/fhir/R4/searchparameter-definitions.html#SearchParameter.multipleAnd)**
    - including support for search comparators `gt`, `lt`, `ge`, `le`
@@ -31,7 +31,7 @@ The following search parameters and search parameter combinations are supported.
     *Implementation Notes:* Fetches a bundle matching the _lastUpdated date ([how to search by date](https://build.fhir.org/search.html#date))
 
 
-1. Combined **[`_lastUpdated_`](https://hl7.org/fhir/R4/task.html#search)** and **[`status`](https://hl7.org/fhir/R4/task.html#search)** and **[`owner`](https://hl7.org/fhir/R4/task.html#search)** search parameters
+1. Combined **[`_lastUpdated`](https://hl7.org/fhir/R4/resource.html#search)** and **[`status`](https://hl7.org/fhir/R4/task.html#search)** and **[`owner`](https://hl7.org/fhir/R4/task.html#search)** search parameters
    - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `Task:focus`, `Task:owner`, `Task:patient`, and `Task:requester`
    - including support for chained searching of owner canonical identifier `owner.identifier` (e.g. `owner.identifier=[system|][code]`)
    - including support for **[`multipleOr`](http://hl7.org/fhir/R4/searchparameter-definitions.html#SearchParameter.multipleOr)** search on `status`
