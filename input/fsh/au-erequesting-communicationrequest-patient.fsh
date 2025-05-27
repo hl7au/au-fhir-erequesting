@@ -49,4 +49,4 @@ It is based on the [AU eRequesting CommunicationRequest](StructureDefinition-au-
 
 * reasonCode
   * coding 1..1
-  * coding = $commreq-reason#patient
+  * coding = $comm-req-reason#patient

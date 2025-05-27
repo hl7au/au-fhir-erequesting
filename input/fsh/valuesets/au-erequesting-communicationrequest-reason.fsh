@@ -9,4 +9,4 @@ Description: "Reason codes for a communication request used in the Australian eR
 * ^publisher = "HL7 Australia"
 * ^status = #draft 
 * ^experimental = false
-* include codes from system http://hl7.org.au/fhir/ereq/CodeSystem/au-erequesting-communicationrequest-reason
+* include codes from system http://terminology.hl7.org.au/CodeSystem/communicationrequest-reason
