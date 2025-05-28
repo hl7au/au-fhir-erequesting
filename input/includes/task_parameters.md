@@ -26,7 +26,7 @@
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
         <td><code>date</code></td>
-        <td></td>
+        <td>The Server <b>SHALL</b> support <code>multipleAnd</code>. The Server <b>SHALL</b> support search comparators <code>gt</code>, <code>lt</code>, <code>ge</code>, <code>le</code>.<br/> The Placer, Filler and AU eRequesting Patient actors <b>MAY</b> support <code>multipleAnd</code>.<br/> The Placer, Filler and AU eRequesting Patient actors <b>MAY</b> support search comparators <code>gt</code>, <code>lt</code>, <code>ge</code>, <code>le</code>.</td>
   </tr>
   <tr>
         <td>_lastUpdated+status+owner</td>
@@ -35,7 +35,7 @@
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
         <td><code>date</code>+<code>token</code>+<code>reference</code></td>
-        <td></td>
+	 <td></td>
   </tr>
   <tr>
         <td>focus</td>
@@ -71,7 +71,7 @@
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
         <td><code>reference</code>+<code>token</code></td>
-        <td></td>
+	 <td></td>
   </tr>
   <tr>
         <td>patient</td>
@@ -89,7 +89,7 @@
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
         <td><code>reference</code>+<code>token</code></td>
-        <td></td>
+	  <td></td>
   </tr>
   <tr>
         <td>requester</td>
@@ -116,7 +116,7 @@
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
         <td><code>token</code></td>
-        <td></td>
+ 	 <td>The Server <b>SHALL</b> support <code>multipleOr</code>.<br/> The Placer, Filler and AU eRequesting Patient actors <b>MAY</b> support <code>multipleOr</code>.</td>
   </tr>
   <tr>
         <td>_include=Task:focus</td>
