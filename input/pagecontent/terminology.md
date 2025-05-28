@@ -80,10 +80,10 @@ Column attribute descriptions are as follows:
 |[Australian States and Territories](https://healthterminologies.gov.au/fhir/CodeSystem/australian-states-territories-1)|[Australian States and Territories](https://healthterminologies.gov.au/fhir/ValueSet/australian-states-territories-2)|NCTS|Australian Digital Health Agency|
 |[CommunicationCategory](https://hl7.org/fhir/R4/codesystem-communication-category.html)|[AU eRequesting Communication Request CopyTo](StructureDefinition-au-erequesting-communicationrequest-copyto.html)|FHIR|Health Level Seven International|
 |[CommunicationRequest Reason](CodeSystem-communicationrequest-reason.html)|[AU eRequesting Communication Request CopyTo](StructureDefinition-au-erequesting-communicationrequest-copyto.html)|AU eRequesting|AU eRequesting|
-|[Consent Action Codes](http://terminology.hl7.org/CodeSystem/consentaction)|[AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhrconsentwithdrawal.html)|FHIR|HL7 Terminology (THO)|
+|[Consent Action Codes](http://terminology.hl7.org/CodeSystem/consentaction)|[AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhrconsentwithdrawal.html)|HL7 Terminology (THO)|Health Level Seven International|
 |[Consent Data Meaning](http://hl7.org/fhir/consent-data-meaning)|[Consent Data Meaning](http://hl7.org/fhir/ValueSet/consent-data-meaning)|FHIR|Health Level Seven International|
 |[Consent Provision Type](http://hl7.org/fhir/consent-provision-type)|[Consent Provision Type](http://hl7.org/fhir/ValueSet/consent-provision-type)|FHIR|Health Level Seven International|
-|[Consent Scope Codes](http://terminology.hl7.org/CodeSystem/consentscope)|[Consent Scope Codes](http://terminology.hl7.org/ValueSet/consent-scope)|FHIR|HL7 Terminology (THO)|
+|[Consent Scope Codes](http://terminology.hl7.org/CodeSystem/consentscope)|[Consent Scope Codes](http://terminology.hl7.org/ValueSet/consent-scope)|HL7 Terminology (THO)|Health Level Seven International|
 |[Consent State](http://hl7.org/fhir/consent-state-codes)|[Consent State](http://hl7.org/fhir/ValueSet/consent-state-codes)|FHIR|Health Level Seven International|
 |[ContactPointSystem](http://hl7.org/fhir/contact-point-system)|[ContactPointSystem](http://hl7.org/fhir/ValueSet/contact-point-system)|FHIR|Health Level Seven International|
 |[ContactPointUse](http://hl7.org/fhir/contact-point-use)|[ContactPointUse](http://hl7.org/fhir/ValueSet/contact-point-use)|FHIR|Health Level Seven International|
