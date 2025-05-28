@@ -19,7 +19,8 @@ Description: "This profile sets minimum expectations for a Task resource that is
 
 
 * identifier MS
-* identifier only Identifier or $AULocalOrderIdentifier
+* identifier ^type.profile[0] = Canonical(Identifier)
+* identifier ^type.profile[+] = Canonical($AULocalOrderIdentifier)
 * identifier ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:no-error
 * identifier ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * identifier ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[code].valueCode = #SHALL:no-error
