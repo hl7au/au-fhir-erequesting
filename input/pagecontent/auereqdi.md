@@ -2,7 +2,7 @@
 
 The primary intent of AUeReqDI is to design and govern a collection of coherent, reusable building blocks known as ‘data groups’. These data groups specify “what” the clinical requirements of the clinical information that should be included for eRequests. However, it does not specify “how” the data is exchanged; this is the role fulfilled by the FHIR standard. AUeReqDI is not required to be implemented as a whole single product.  AUeReqDI builds upon and complements the foundational [Australian Core Data for Interoperability (AUCDI)](https://sparked.csiro.au/index.php/sparked-products-resources/australian-core-data-for-interoperability/aucdi-release-1/) and focuses on the specific use case of eRequesting.
 
-AUeReqDI Release 1 (R1) is focused on an agreement of the minimum data required to support standardised eRequesting within the Australian health context, and forms a common language foundation that allows systems to exchange semantically accurate data for eRequests. It incorporates and builds upon prior work from national and international programs and initiatives, including the Royal College of Pathologists of Australiasia (RCPA)'s Pathology information, Terminology and Units Standardisation (PITUS) framework and the Royal Australian New Zealand College of Radiology (RANZCR's) Radiology Referral Set.
+AUeReqDI Release 1 (R1) is focused on an agreement of the minimum data required to support standardised eRequesting within the Australian health context, and forms a common language foundation that allows systems to exchange semantically accurate data for eRequests. It incorporates and builds upon prior work from national and international programs and initiatives, including the Royal College of Pathologists of Australasia (RCPA)'s Pathology information, Terminology and Units Standardisation (PITUS) framework and the Royal Australian New Zealand College of Radiology (RANZCR's) Radiology Referral Set.
 
 With AUeReqDI defining clinical data requirements and FHIR AU eRequesting providing the Implementation Guide for FHIR-based electronic requesting of diagnostic imaging and pathology services, an interpretation of AUeReqDI is necessary which is undertaken through the community.
 
@@ -69,15 +69,15 @@ Column attribute descriptions are as follows:
   </tr>
    <tr>
     <td colspan="2">Distribution list</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td>Work is underway in AU eRequesting to map this element. Feedback is requested on the appropriateness of using either CommunicationRequest or an extension to support distribution list. Please comment by raising <a href="https://jira.hl7.org/projects/FHIR/issues">HL7 Jira Issues</a>.</td>
+    <td><a href="StructureDefinition-au-erequesting-communicationrequest-copyto.html">AU eRequesting CommunicationRequest CopyTo</a></td>
+    <td>CommunicationRequest.recipient</td>
+    <td></td>
   </tr>
    <tr>
     <td colspan="2">Urgent contact</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td>Work is underway in AU eRequesting to map this element. Feedback is requested on the appropriateness of using either CommunicationRequest or an extension to support urgent contact. Please comment by raising <a href="https://jira.hl7.org/projects/FHIR/issues">HL7 Jira Issues</a>.</td>
+    <td><a href="StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html">AU eRequesting CommunicationRequest Urgent Provider</a></td>
+    <td>CommunicationRequest.recipient</td>
+    <td></td>
   </tr>
    <tr>
     <td colspan="2">Billing guidance</td>
@@ -142,15 +142,15 @@ Column attribute descriptions are as follows:
   </tr>
     <tr>
     <td colspan="2">Distribution list</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td>Work is underway in AU eRequesting to map this element. Feedback is requested on the appropriateness of using either CommunicationRequest or an extension to support distribution list. Please comment by raising <a href="https://jira.hl7.org/projects/FHIR/issues">HL7 Jira Issues</a>.</td>
+    <td><a href="StructureDefinition-au-erequesting-communicationrequest-copyto.html">AU eRequesting CommunicationRequest CopyTo</a></td>
+    <td>CommunicationRequest.recipient</td>
+    <td></td>
   </tr>
     <tr>
     <td colspan="2">Urgent contact</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td>Work is underway in AU eRequesting to map this element. Feedback is requested on the appropriateness of using either CommunicationRequest or an extension to support urgent contact. Please comment by raising <a href="https://jira.hl7.org/projects/FHIR/issues">HL7 Jira Issues</a>.</td>
+    <td><a href="StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html">AU eRequesting CommunicationRequest Urgent Provider</a></td>
+    <td>CommunicationRequest.recipient</td>
+    <td></td>
   </tr>
     <tr>
     <td colspan="2">Billing guidance</td>
@@ -203,15 +203,15 @@ Column attribute descriptions are as follows:
   </tr>
     <tr>
     <td colspan="2">Distribution list</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td>Work is underway in AU eRequesting to map this element. Feedback is requested on the appropriateness of using either CommunicationRequest or an extension to support distribution list. Please comment by raising <a href="https://jira.hl7.org/projects/FHIR/issues">HL7 Jira Issues</a>.</td>
+    <td><a href="StructureDefinition-au-erequesting-communicationrequest-copyto.html">AU eRequesting CommunicationRequest CopyTo</a></td>
+    <td>CommunicationRequest.recipient</td>
+    <td></td>
   </tr>
     <tr>
     <td colspan="2">Urgent contact</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td>Work is underway in AU eRequesting to map this element. Feedback is requested on the appropriateness of using either CommunicationRequest or an extension to support urgent contact. Please comment by raising <a href="https://jira.hl7.org/projects/FHIR/issues">HL7 Jira Issues</a>.</td>
+    <td><a href="StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html">AU eRequesting CommunicationRequest Urgent Provider</a></td>
+    <td>CommunicationRequest.recipient</td>
+    <td></td>
   </tr>
     <tr>
     <td colspan="2">Billing guidance</td>
