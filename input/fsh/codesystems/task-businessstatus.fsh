@@ -21,9 +21,9 @@ Description: "Business status codes for a Task used in the Australian context."
 * ^compositional = false
 * ^content = #complete
 * ^count = 9
-* #booked "Booked" "The service has been booked."
-* #claimed "Claimed" "The diagnostic request has been claimed by an alternative filler."
-* #user-cancelled "User cancelled" "The diagnostic request had been cancelled by the placer."
+* #booked "Booked" "Service has been booked."
+* #claimed "Claimed" "Service request has been claimed by an alternative filler."
+* #user-cancelled "User cancelled" "Service request had been cancelled by the placer."
 * #data-issue "Data issue" "Rejected fulfilment due to an issue with the request data."
 * #preliminary "Preliminary" "Preliminary result completed."
 * #addendum  "Addendum" "Addendum created for reporting."
