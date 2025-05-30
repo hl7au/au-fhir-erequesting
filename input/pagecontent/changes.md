@@ -24,7 +24,7 @@ This change log documents the significant updates and resolutions implemented fr
   - AU eRequesting CommunicationRequest Patient Medium ([FHIR-50229](https://jira.hl7.org/browse/FHIR-50229), [FHIR-50230](https://jira.hl7.org/browse/FHIR-50230))
   - AU eRequesting CommunicationRequest Reason ([FHIR-49807](https://jira.hl7.org/browse/FHIR-49807), [FHIR-50230](https://jira.hl7.org/browse/FHIR-50230), [FHIR-50229](https://jira.hl7.org/browse/FHIR-50229))
   - AU eRequesting Task Tag Fulfilment ([FHIR-49718](https://jira.hl7.org/browse/FHIR-49718), [FHIR-49719](https://jira.hl7.org/browse/FHIR-49719))
-  - AU eRequesting Task Business Status ([FHIR-50973](https://jira.hl7.org/browse/FHIR-50973))
+  - AU eRequesting Task Business Status ([FHIR-50973](https://jira.hl7.org/browse/FHIR-50973), [FHIR-51006](https://jira.hl7.org/browse/FHIR-51006))
 - New code systems:
   - AU eRequesting CommunicationRequest Reason ([FHIR-49807](https://jira.hl7.org/browse/FHIR-49807))
   - AU eRequesting Task Tag Codes ([FHIR-49718](https://jira.hl7.org/browse/FHIR-49718), [FHIR-49719](https://jira.hl7.org/browse/FHIR-49719))
