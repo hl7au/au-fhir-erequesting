@@ -22,7 +22,7 @@
             </coding>
         </type>
         <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
-        <value value="EMC4552642-5624-01"/>
+        <value value="EMC1552642-1110-02"/>
         <assigner>
             <display value="Elimbah Medical Center"/>
         </assigner>
@@ -36,7 +36,7 @@
             </coding>
         </type>
         <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
-        <value value="EMC4552642-5624"/>
+        <value value="EMC1552642-1110"/>
         <assigner>
             <display value="Elimbah Medical Center"/>
         </assigner>
@@ -64,7 +64,7 @@
     <encounter>
         <reference value="Encounter/obsgynaeclinic"/>
     </encounter>
-    <authoredOn value="2022-03-21"/>
+    <authoredOn value="2025-02-21"/>
     <requester>
         <reference value="PractitionerRole/obstetrician-losch-sallie"/>
     </requester>
