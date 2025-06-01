@@ -2,7 +2,7 @@ Profile: AUeRequestingDiagnosticRequest
 Parent: AUBaseServiceRequest
 Id: au-erequesting-diagnosticrequest
 Title: "AU eRequesting Diagnostic Request"
-Description: "This profile sets minimum expectations for a ServiceRequest resource that is used to record, search, and fetch information about diagnostic requests for a patient. It is based on the [AU Base Service Request](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-servicerequest.html) and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the ServiceRequest when conforming to this profile."
+Description: "This profile sets minimum expectations for a ServiceRequest resource that is used to record, search, and fetch information about diagnostic requests for a patient. It is based on the [AU Base ServiceRequest](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-servicerequest.html) and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the ServiceRequest when conforming to this profile."
 
 * ^status = #draft
 
@@ -322,6 +322,8 @@ Description: "This extension applies to the AU eRequesting Diagnostic Request pr
 * ^status = #draft
 * ^context.type = #element
 * ^context.expression = "ServiceRequest"
+* . ^short = "Display sequence"
+* value[x] only integer
 * valueInteger 1..1
 
 Extension: AUeRequestingFastingPrecondition
@@ -332,8 +334,9 @@ Description: "This extension applies to the AU eRequesting Diagnostic Request pr
 * ^status = #draft
 * ^context.type = #element
 * ^context.expression = "ServiceRequest"
-
-* valueCodeableConcept
+* . ^short = "Fasting precondition"
+* value[x] only CodeableConcept
+* valueCodeableConcept 1..1
 * valueCodeableConcept from $fastingPrecondition (required) 
 
 
