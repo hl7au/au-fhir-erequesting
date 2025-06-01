@@ -5,7 +5,7 @@
     <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-coverage"/>
   </meta> 
    <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-name">
-        <valueString value="Coverage - Private Concession"/>
+        <valueString value="Coverage - Concession"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
         <valueMarkdown value="Shows an example of coverage for the *AU eRequesting Coverage* profile, demonstrating a self funded beneficiary type with a concession. Beneficiary: Fred Roberts."/>
