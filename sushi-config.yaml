@@ -61,6 +61,8 @@ pages:
       title: AU Variance Statement
     future.md:
       title: Future of AU eRequesting
+  security.md:
+    title: Security and Privacy
   use-cases.md:
     title: Use Cases
   fhirartifacts.md:

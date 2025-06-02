@@ -67,6 +67,7 @@ This guide is divided into several pages which are listed at the top of each pag
   - [Relationships to Other Specifications](relationship.html): This page provides guidance on the relationship between AU eRequesting, AUeReqDI, and other implementation guides.
   - [AU Variance Statement](variance.html): This page documents variance from AU Base and AU Core.
   - [Future of AU eRequesting](future.html): This page outlines the approach to developing AU eRequesting and yearly update cycle.
+- [Security and Privacy](security.html): This page documents the AU eRequesting general security and privacy  recommendations. 
 - [Use Cases](use-cases.html): This page describes the use cases in scope of eRequesting R1. 
 - [FHIR Artefacts](artifacts.html): These pages provide detailed descriptions and formal definitions for all the FHIR artefacts defined in this guide.
   - [Artefacts Summary](artifacts.html): This page lists the FHIR artefacts defined in this guide.
