@@ -8,7 +8,7 @@
         <valueString value="Coverage - DVA"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
-        <valueMarkdown value="Shows an example of coverage for the *AU eRequesting Coverage* profile, demonstrating the Department of Veterans’ Affairs coverage type. Beneficiary: Ronnie Irvine."/>
+        <valueMarkdown value="Shows an example of coverage for the *AU eRequesting Coverage* profile, demonstrating the Department of Veterans’ Affairs coverage type. Beneficiary: Ronny Lawrence Irvine."/>
     </extension>
   <identifier>
     <type>
