@@ -1,6 +1,10 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.3" pages="4">
   <diagram name="entity relationship diagram (conceptual)" id="zSz5ryw0gYtFKRbAEgpM">
+<<<<<<< HEAD
     <mxGraphModel dx="6408" dy="1525" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+=======
+    <mxGraphModel dx="6201" dy="1145" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+>>>>>>> origin/ft-profile-diagram-update
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -313,11 +317,19 @@
             <mxPoint x="75" y="-10" as="offset" />
           </mxGeometry>
         </mxCell>
+<<<<<<< HEAD
         <mxCell id="Uu4nCIGKgs7-dvn3uN_N-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="yGCP7z0HYe0u3_ygDTZ9-4" source="xnjvwpOuNNGBMPm4kxbK-13" target="Uu4nCIGKgs7-dvn3uN_N-1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="1520" y="245" />
               <mxPoint x="1520" y="385" />
+=======
+        <mxCell id="Uu4nCIGKgs7-dvn3uN_N-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="yGCP7z0HYe0u3_ygDTZ9-4" source="xnjvwpOuNNGBMPm4kxbK-13" target="Uu4nCIGKgs7-dvn3uN_N-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1520" y="245" />
+              <mxPoint x="1520" y="353" />
+>>>>>>> origin/ft-profile-diagram-update
             </Array>
           </mxGeometry>
         </mxCell>
@@ -360,7 +372,11 @@
         </mxCell>
         <mxCell id="xnjvwpOuNNGBMPm4kxbK-21" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;subject&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="xnjvwpOuNNGBMPm4kxbK-20" vertex="1" connectable="0">
           <mxGeometry x="-0.5724" y="-2" relative="1" as="geometry">
+<<<<<<< HEAD
             <mxPoint x="-15" y="-17" as="offset" />
+=======
+            <mxPoint x="-31" y="-12" as="offset" />
+>>>>>>> origin/ft-profile-diagram-update
           </mxGeometry>
         </mxCell>
         <mxCell id="xnjvwpOuNNGBMPm4kxbK-22" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;edgeStyle=elbowEdgeStyle;elbow=vertical;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jumpStyle=arc;" parent="yGCP7z0HYe0u3_ygDTZ9-4" target="xnjvwpOuNNGBMPm4kxbK-19" edge="1">
@@ -503,6 +519,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="au-erequesting-profiles-part1" id="dxuBvduRbsAZzvvmciNf">
+<<<<<<< HEAD
     <mxGraphModel dx="2273" dy="1525" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="YkNnkI9yOY_mI5KoKBkJ-0" />
@@ -520,10 +537,30 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5xgf8QPPs_S_MWa4PRd_-4" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;partOf&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5xgf8QPPs_S_MWa4PRd_-3">
+=======
+    <mxGraphModel dx="2066" dy="1145" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="YkNnkI9yOY_mI5KoKBkJ-0" />
+        <mxCell id="YkNnkI9yOY_mI5KoKBkJ-1" parent="YkNnkI9yOY_mI5KoKBkJ-0" />
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-0" value="&lt;i&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;AU eRequesting Task&lt;/font&gt;&lt;/i&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#00B0F0;fontColor=#FFFFFF;dashed=1;" vertex="1" parent="YkNnkI9yOY_mI5KoKBkJ-1">
+          <mxGeometry x="860" y="447" width="580" height="243" as="geometry" />
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-1" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Task Group&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#00B0F0;fontColor=#FFFFFF;" vertex="1" parent="rvV_qARsPsxfEzCpUQFM-0">
+          <mxGeometry x="30" y="60" width="210" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-2" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Task Diagnostic Request&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#00B0F0;fontColor=#FFFFFF;" vertex="1" parent="rvV_qARsPsxfEzCpUQFM-0">
+          <mxGeometry x="340" y="60" width="210" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="rvV_qARsPsxfEzCpUQFM-0" source="rvV_qARsPsxfEzCpUQFM-2" target="rvV_qARsPsxfEzCpUQFM-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-4" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;partOf&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rvV_qARsPsxfEzCpUQFM-3">
+>>>>>>> origin/ft-profile-diagram-update
           <mxGeometry x="0.125" relative="1" as="geometry">
             <mxPoint x="7" y="-13" as="offset" />
           </mxGeometry>
         </mxCell>
+<<<<<<< HEAD
         <mxCell id="5xgf8QPPs_S_MWa4PRd_-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="YkNnkI9yOY_mI5KoKBkJ-1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1450" y="110" as="sourcePoint" />
@@ -535,20 +572,43 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5xgf8QPPs_S_MWa4PRd_-6" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;insurance&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5xgf8QPPs_S_MWa4PRd_-5">
+=======
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="YkNnkI9yOY_mI5KoKBkJ-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1560" y="120" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="1580" y="120" />
+              <mxPoint x="1580" y="120" />
+            </Array>
+            <mxPoint x="1720" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-6" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;insurance&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rvV_qARsPsxfEzCpUQFM-5">
+>>>>>>> origin/ft-profile-diagram-update
           <mxGeometry x="-0.3013" y="-2" relative="1" as="geometry">
             <mxPoint x="-3" y="-19" as="offset" />
           </mxGeometry>
         </mxCell>
+<<<<<<< HEAD
         <mxCell id="5xgf8QPPs_S_MWa4PRd_-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="YkNnkI9yOY_mI5KoKBkJ-1" target="5xgf8QPPs_S_MWa4PRd_-34">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="890" y="125" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="5xgf8QPPs_S_MWa4PRd_-8" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;encounter&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5xgf8QPPs_S_MWa4PRd_-7">
+=======
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="YkNnkI9yOY_mI5KoKBkJ-1" target="rvV_qARsPsxfEzCpUQFM-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1000" y="135" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-8" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;encounter&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rvV_qARsPsxfEzCpUQFM-7">
+>>>>>>> origin/ft-profile-diagram-update
           <mxGeometry x="-0.0111" y="-1" relative="1" as="geometry">
             <mxPoint x="38" y="-14" as="offset" />
           </mxGeometry>
         </mxCell>
+<<<<<<< HEAD
         <mxCell id="5xgf8QPPs_S_MWa4PRd_-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="YkNnkI9yOY_mI5KoKBkJ-1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1450" y="213" as="sourcePoint" />
@@ -559,10 +619,23 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5xgf8QPPs_S_MWa4PRd_-10" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;supportingInfo:pregnancyStatus&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5xgf8QPPs_S_MWa4PRd_-9">
+=======
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="YkNnkI9yOY_mI5KoKBkJ-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1560" y="223" as="sourcePoint" />
+            <mxPoint x="1810" y="223" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1590" y="223" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-10" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;supportingInfo:pregnancyStatus&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rvV_qARsPsxfEzCpUQFM-9">
+>>>>>>> origin/ft-profile-diagram-update
           <mxGeometry x="-0.7204" y="3" relative="1" as="geometry">
             <mxPoint x="75" y="-10" as="offset" />
           </mxGeometry>
         </mxCell>
+<<<<<<< HEAD
         <mxCell id="5xgf8QPPs_S_MWa4PRd_-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="YkNnkI9yOY_mI5KoKBkJ-1" source="5xgf8QPPs_S_MWa4PRd_-13" target="5xgf8QPPs_S_MWa4PRd_-38">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -592,10 +665,42 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5xgf8QPPs_S_MWa4PRd_-18" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;practitioner&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5xgf8QPPs_S_MWa4PRd_-17">
+=======
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="YkNnkI9yOY_mI5KoKBkJ-1" source="rvV_qARsPsxfEzCpUQFM-13" target="rvV_qARsPsxfEzCpUQFM-38">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1750" y="275" />
+              <mxPoint x="1750" y="383" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-12" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;supportingInfo:clinicalContext&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rvV_qARsPsxfEzCpUQFM-11">
+          <mxGeometry x="-0.7091" y="4" relative="1" as="geometry">
+            <mxPoint x="48" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-13" value="&lt;i&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;AU eRequesting Diagnostic Request&lt;/font&gt;&lt;/i&gt;" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#00B0F0;fontColor=#FFFFFF;strokeColor=#000000;dashed=1;" vertex="1" parent="YkNnkI9yOY_mI5KoKBkJ-1">
+          <mxGeometry x="1000" y="80" width="560" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-14" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Pathology Request&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#00B0F0;fontColor=#FFFFFF;startSize=25;verticalAlign=middle;" vertex="1" parent="rvV_qARsPsxfEzCpUQFM-13">
+          <mxGeometry x="320" y="45" width="210" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-15" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Imaging Request&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#00B0F0;fontColor=#FFFFFF;startSize=25;" vertex="1" parent="rvV_qARsPsxfEzCpUQFM-13">
+          <mxGeometry x="50" y="45" width="210" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-16" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;AUCorePatient&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#00b050;fontColor=#FFFFFF;" vertex="1" parent="YkNnkI9yOY_mI5KoKBkJ-1">
+          <mxGeometry x="1580" y="497" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="YkNnkI9yOY_mI5KoKBkJ-1" source="rvV_qARsPsxfEzCpUQFM-19" target="rvV_qARsPsxfEzCpUQFM-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-18" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;practitioner&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rvV_qARsPsxfEzCpUQFM-17">
+>>>>>>> origin/ft-profile-diagram-update
           <mxGeometry x="-0.1441" y="-1" relative="1" as="geometry">
             <mxPoint x="4" y="-14" as="offset" />
           </mxGeometry>
         </mxCell>
+<<<<<<< HEAD
         <mxCell id="5xgf8QPPs_S_MWa4PRd_-19" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;AUCorePractitionerRole&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#00b050;fontColor=#FFFFFF;" vertex="1" parent="YkNnkI9yOY_mI5KoKBkJ-1">
           <mxGeometry x="435" y="380" width="180" height="130" as="geometry" />
         </mxCell>
@@ -624,10 +729,41 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5xgf8QPPs_S_MWa4PRd_-23" value="&lt;span style=&quot;text-wrap: wrap; background-color: rgb(251, 251, 251);&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;requester&lt;/font&gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5xgf8QPPs_S_MWa4PRd_-22">
+=======
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-19" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;AUCorePractitionerRole&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#00b050;fontColor=#FFFFFF;" vertex="1" parent="YkNnkI9yOY_mI5KoKBkJ-1">
+          <mxGeometry x="545" y="390" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-20" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;edgeStyle=elbowEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;elbow=vertical;jumpStyle=arc;" edge="1" parent="YkNnkI9yOY_mI5KoKBkJ-1" target="rvV_qARsPsxfEzCpUQFM-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1560" y="320" as="sourcePoint" />
+            <mxPoint x="1710" y="497" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1610" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-21" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;subject&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rvV_qARsPsxfEzCpUQFM-20">
+          <mxGeometry x="-0.5724" y="-2" relative="1" as="geometry">
+            <mxPoint x="-31" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-22" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;edgeStyle=elbowEdgeStyle;elbow=vertical;entryX=0.5;entryY=0;entryDx=0;entryDy=0;jumpStyle=arc;" edge="1" parent="YkNnkI9yOY_mI5KoKBkJ-1" target="rvV_qARsPsxfEzCpUQFM-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1000" y="240" as="sourcePoint" />
+            <mxPoint x="892" y="840" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="770" y="240" />
+              <mxPoint x="830" y="245" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-23" value="&lt;span style=&quot;text-wrap: wrap; background-color: rgb(251, 251, 251);&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;requester&lt;/font&gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rvV_qARsPsxfEzCpUQFM-22">
+>>>>>>> origin/ft-profile-diagram-update
           <mxGeometry x="-0.8057" y="2" relative="1" as="geometry">
             <mxPoint x="12" y="-18" as="offset" />
           </mxGeometry>
         </mxCell>
+<<<<<<< HEAD
         <mxCell id="5xgf8QPPs_S_MWa4PRd_-24" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;edgeStyle=elbowEdgeStyle;elbow=vertical;jumpStyle=arc;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="YkNnkI9yOY_mI5KoKBkJ-1" source="5xgf8QPPs_S_MWa4PRd_-2" target="5xgf8QPPs_S_MWa4PRd_-14">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1112" y="470" as="sourcePoint" />
@@ -644,10 +780,29 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5xgf8QPPs_S_MWa4PRd_-26" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;for&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5xgf8QPPs_S_MWa4PRd_-25">
+=======
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-24" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;edgeStyle=elbowEdgeStyle;elbow=vertical;jumpStyle=arc;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="YkNnkI9yOY_mI5KoKBkJ-1" source="rvV_qARsPsxfEzCpUQFM-2" target="rvV_qARsPsxfEzCpUQFM-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1222" y="480" as="sourcePoint" />
+            <mxPoint x="1280" y="430" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1360" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-25" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;edgeStyle=elbowEdgeStyle;flowAnimation=0;jumpStyle=arc;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="YkNnkI9yOY_mI5KoKBkJ-1" target="rvV_qARsPsxfEzCpUQFM-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1440" y="562" as="sourcePoint" />
+            <mxPoint x="1560" y="701" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-26" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;for&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rvV_qARsPsxfEzCpUQFM-25">
+>>>>>>> origin/ft-profile-diagram-update
           <mxGeometry x="-0.4734" y="2" relative="1" as="geometry">
             <mxPoint x="-16" y="-13" as="offset" />
           </mxGeometry>
         </mxCell>
+<<<<<<< HEAD
         <mxCell id="5xgf8QPPs_S_MWa4PRd_-27" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;edgeStyle=elbowEdgeStyle;entryX=1;entryY=0.75;entryDx=0;entryDy=0;jumpStyle=arc;" edge="1" parent="YkNnkI9yOY_mI5KoKBkJ-1" target="5xgf8QPPs_S_MWa4PRd_-19">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="750" y="478" as="sourcePoint" />
@@ -658,10 +813,23 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5xgf8QPPs_S_MWa4PRd_-28" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;requester&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5xgf8QPPs_S_MWa4PRd_-27">
+=======
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-27" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;edgeStyle=elbowEdgeStyle;entryX=1;entryY=0.75;entryDx=0;entryDy=0;jumpStyle=arc;" edge="1" parent="YkNnkI9yOY_mI5KoKBkJ-1" target="rvV_qARsPsxfEzCpUQFM-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="860" y="488" as="sourcePoint" />
+            <mxPoint x="1022" y="890" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="820" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-28" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;requester&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rvV_qARsPsxfEzCpUQFM-27">
+>>>>>>> origin/ft-profile-diagram-update
           <mxGeometry x="-0.2207" y="2" relative="1" as="geometry">
             <mxPoint x="13" y="-17" as="offset" />
           </mxGeometry>
         </mxCell>
+<<<<<<< HEAD
         <mxCell id="5xgf8QPPs_S_MWa4PRd_-29" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;AUCoreOrganization&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#00b050;fontColor=#FFFFFF;direction=east;startSize=23;" vertex="1" parent="YkNnkI9yOY_mI5KoKBkJ-1">
           <mxGeometry x="435" y="540" width="180" height="130" as="geometry" />
         </mxCell>
@@ -675,10 +843,26 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5xgf8QPPs_S_MWa4PRd_-31" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;owner&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5xgf8QPPs_S_MWa4PRd_-30">
+=======
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-29" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;AUCoreOrganization&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#00b050;fontColor=#FFFFFF;direction=east;startSize=23;" vertex="1" parent="YkNnkI9yOY_mI5KoKBkJ-1">
+          <mxGeometry x="545" y="550" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-30" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;edgeStyle=elbowEdgeStyle;entryX=1;entryY=0.5;entryDx=0;entryDy=0;elbow=vertical;jumpStyle=arc;" edge="1" parent="YkNnkI9yOY_mI5KoKBkJ-1" target="rvV_qARsPsxfEzCpUQFM-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="860" y="615" as="sourcePoint" />
+            <mxPoint x="1233" y="911" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="780" y="615" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-31" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;owner&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rvV_qARsPsxfEzCpUQFM-30">
+>>>>>>> origin/ft-profile-diagram-update
           <mxGeometry x="-0.2388" y="1" relative="1" as="geometry">
             <mxPoint x="24" y="-12" as="offset" />
           </mxGeometry>
         </mxCell>
+<<<<<<< HEAD
         <mxCell id="5xgf8QPPs_S_MWa4PRd_-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="YkNnkI9yOY_mI5KoKBkJ-1" source="5xgf8QPPs_S_MWa4PRd_-2" target="5xgf8QPPs_S_MWa4PRd_-15">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="970" y="370" as="targetPoint" />
@@ -689,10 +873,23 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="5xgf8QPPs_S_MWa4PRd_-33" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;focus&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5xgf8QPPs_S_MWa4PRd_-32">
+=======
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="YkNnkI9yOY_mI5KoKBkJ-1" source="rvV_qARsPsxfEzCpUQFM-2" target="rvV_qARsPsxfEzCpUQFM-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1080" y="380" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1305" y="380" />
+              <mxPoint x="1155" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-33" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;focus&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rvV_qARsPsxfEzCpUQFM-32">
+>>>>>>> origin/ft-profile-diagram-update
           <mxGeometry x="0.2296" relative="1" as="geometry">
             <mxPoint x="137" y="110" as="offset" />
           </mxGeometry>
         </mxCell>
+<<<<<<< HEAD
         <mxCell id="5xgf8QPPs_S_MWa4PRd_-34" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;AUCoreEncounter&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#00b050;fontColor=#FFFFFF;snapToPoint=0;" vertex="1" parent="YkNnkI9yOY_mI5KoKBkJ-1">
           <mxGeometry x="550" y="60" width="180" height="130" as="geometry" />
         </mxCell>
@@ -707,6 +904,22 @@
         </mxCell>
         <mxCell id="5xgf8QPPs_S_MWa4PRd_-38" value="&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Clinical Context DocumentReference&lt;/font&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#00B0F0;fontColor=#FFFFFF;startSize=40;verticalAlign=middle;" vertex="1" parent="YkNnkI9yOY_mI5KoKBkJ-1">
           <mxGeometry x="1700" y="340" width="190" height="130" as="geometry" />
+=======
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-34" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;AUCoreEncounter&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#00b050;fontColor=#FFFFFF;snapToPoint=0;" vertex="1" parent="YkNnkI9yOY_mI5KoKBkJ-1">
+          <mxGeometry x="660" y="70" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-35" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Observation Pregnancy -&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Status (IPS)&lt;/font&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=light-dark(#ff9900, #9a5800);strokeColor=light-dark(#000000, #c17f1f);startSize=40;fontSize=12;verticalAlign=bottom;horizontal=1;fontColor=#FFFFFF;snapToPoint=0;" vertex="1" parent="YkNnkI9yOY_mI5KoKBkJ-1">
+          <mxGeometry x="1810" y="180" width="190" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-36" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;AU eRequesting Coverage&amp;nbsp;&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#00B0F0;fontColor=#FFFFFF;startSize=25;verticalAlign=middle;" vertex="1" parent="YkNnkI9yOY_mI5KoKBkJ-1">
+          <mxGeometry x="1720" y="30" width="190" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-37" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;AUCorePractitioner&lt;/font&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#00b050;fontColor=#FFFFFF;" vertex="1" parent="YkNnkI9yOY_mI5KoKBkJ-1">
+          <mxGeometry x="250" y="390" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="rvV_qARsPsxfEzCpUQFM-38" value="&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Clinical Context DocumentReference&lt;/font&gt;&lt;/div&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#00B0F0;fontColor=#FFFFFF;startSize=40;verticalAlign=middle;" vertex="1" parent="YkNnkI9yOY_mI5KoKBkJ-1">
+          <mxGeometry x="1810" y="350" width="190" height="130" as="geometry" />
+>>>>>>> origin/ft-profile-diagram-update
         </mxCell>
       </root>
     </mxGraphModel>
