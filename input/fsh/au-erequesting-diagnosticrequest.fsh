@@ -298,7 +298,7 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 * supportingInfo contains
     clinicalContext 0..* MS     
 * supportingInfo[clinicalContext] only Reference(au-erequesting-clinicalcontext-documentreference)
-  * ^short = "Information about the patient's current clinical situation"
+  * ^short = "Clinical context narrative information providing an overview of the patient's current clinical situation"
 * supportingInfo[clinicalContext] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate-if-known
 * supportingInfo[clinicalContext] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * supportingInfo[clinicalContext] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[code].valueCode = #SHALL:handle

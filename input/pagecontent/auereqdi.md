@@ -46,7 +46,7 @@ Column attribute descriptions are as follows:
   <tr>
     <td colspan="2">Clinical context</td>
     <td><a href="StructureDefinition-au-erequesting-diagnosticrequest.html">AU eRequesting Diagnostic Request</a></td>
-    <td>ServiceRequest.note</td>
+    <td>ServiceRequest.supportingInfo:clinicalContext</td>
     <td></td>
   </tr>
   <tr>
@@ -119,7 +119,7 @@ Column attribute descriptions are as follows:
     <tr>
     <td colspan="2">Clinical context</td>
     <td><a href="StructureDefinition-au-erequesting-servicerequest-imag.html">AU eRequesting Imaging Request</a></td>
-    <td>ServiceRequest.note</td>
+    <td>ServiceRequest.supportingInfo:clinicalContext</td>
     <td></td>
   </tr>
     <tr>
@@ -180,7 +180,7 @@ Column attribute descriptions are as follows:
     <tr>
     <td colspan="2">Clinical context</td>
     <td><a href="StructureDefinition-au-erequesting-servicerequest-path.html">AU eRequesting Pathology Request</a></td>
-    <td>ServiceRequest.note</td>
+    <td>ServiceRequest.supportingInfo.clinicalContext</td>
     <td></td>
   </tr>
     <tr>
