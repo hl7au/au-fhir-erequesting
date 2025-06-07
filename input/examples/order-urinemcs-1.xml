@@ -85,6 +85,10 @@
     <reference value="PractitionerRole/obstetrician-losch-sallie"/>
   </requester>
   <supportingInfo>
+      <reference value="DocumentReference/documentreference-clinical-context"/>
+      <display value="Clinical context"/>
+  </supportingInfo>
+  <supportingInfo>
       <reference value="Observation/observation-pregnancy-status"/>
       <display value="Pregnancy status"/>
   </supportingInfo>
