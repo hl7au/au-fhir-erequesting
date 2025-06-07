@@ -32,7 +32,7 @@
       </coding>
     </type>
     <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
-    <value value="EMC4551244-6241-02"/>
+    <value value="EMC1552642-1110-03"/>
     <assigner>
       <display value="Elimbah Medical Center"/>
     </assigner>
@@ -46,7 +46,7 @@
       </coding>
     </type>
     <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
-    <value value="EMC4551244-6241"/>
+    <value value="EMC1552642-1110"/>
     <assigner>
       <display value="Elimbah Medical Center"/>
     </assigner>
@@ -60,6 +60,7 @@
       <display value="Laboratory procedure"/>
     </coding>
   </category>
+  <priority value="urgent"/>
   <code>
     <coding>
       <system value="http://snomed.info/sct"/>
@@ -79,8 +80,8 @@
   <encounter>
     <reference value="Encounter/obsgynaeclinic"/>
   </encounter>
-  <occurrenceDateTime value="2022-03-21T08:00:00+10:00"/>
-  <authoredOn value="2022-03-21"/>
+  <occurrenceDateTime value="2025-02-21T08:10:00+10:00"/>
+  <authoredOn value="2025-02-21"/>
   <requester>
     <reference value="PractitionerRole/obstetrician-losch-sallie"/>
   </requester>
