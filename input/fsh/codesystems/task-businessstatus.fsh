@@ -20,10 +20,11 @@ Description: "Business status codes for a Task used in the Australian context."
 * ^versionNeeded = true
 * ^compositional = false
 * ^content = #complete
-* ^count = 9
+* ^count = 10
 * #booked "Booked" "Service has been booked."
 * #claimed "Claimed" "Service request has been claimed by an alternative filler."
 * #user-cancelled "User cancelled" "Service request has been cancelled by the placer."
+* #cancel-handled "Cancel handled" "Cancellation has been handled by the filler."
 * #data-issue "Data issue" "Rejected fulfilment due to an issue with the request data."
 * #preliminary "Preliminary" "Preliminary result completed."
 * #addendum  "Addendum" "Addendum created for reporting."
