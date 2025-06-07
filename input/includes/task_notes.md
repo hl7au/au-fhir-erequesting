@@ -49,6 +49,21 @@ The following search parameters and search parameter combinations are supported.
     *Implementation Notes:* Fetches a bundle containing Task resources matching the _lastUpdated date, owner and status ([how to search by date](https://build.fhir.org/search.html#date), [how to search by token](http://hl7.org/fhir/R4/search.html#token), [how to search by reference](http://hl7.org/fhir/R4/search.html#reference))
 
 
+1. **[`_tag`](https://hl7.org/fhir/R4/resource.html#search)** search parameter
+   - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `Task:focus`, `Task:owner`, `Task:patient`, and `Task:requester`
+
+    `GET [base]/Task?_tag=[system|][code]`
+
+    Example:
+    
+      1. GET [base]/Task?_tag=fulfilment-task
+      1. GET [base]/Task?_tag=http://terminology.hl7.org.au/CodeSystem/task-tag\|fulfilment-task-group
+      1. GET [base]/Task?_tag=fulfilment-task&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
+
+
+    *Implementation Notes:* Fetches a bundle containing Task resources matching the tag ([how to search by token](http://hl7.org/fhir/R4/search.html#token))
+
+
 1. **[`focus`](https://hl7.org/fhir/R4/task.html#search)** search parameter
    - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `Task:focus`, `Task:owner`, `Task:patient`, and `Task:requester`
 

@@ -4,6 +4,8 @@ Id: au-erequesting-task-diagnosticrequest
 Title: "AU eRequesting Task Diagnostic Request"
 Description: "This profile sets minimum expectations for a Task resource that is used to record, search, and fetch information about a diagnostic request task to be fulfilled. It is based on the [AU eRequesting Task](StructureDefinition-au-erequesting-task.html) and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present when conforming to this profile."
 
+* obeys au-ereq-taskdr-01
+
 * ^status = #draft
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 
@@ -35,3 +37,8 @@ Description: "This profile sets minimum expectations for a Task resource that is
 * partOf ^extension[http://hl7.org/fhir/StructureDefinition/obligation][3].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
 * partOf ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 * partOf ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
+
+Invariant: au-ereq-taskdr-01
+Description: "eRequesting Fulfilment Task tag must be 'fulfilment-task' from http://terminology.hl7.org.au/CodeSystem/task-tag only"
+Severity: #error
+Expression: "meta.tag.where(system = 'http://terminology.hl7.org.au/CodeSystem/task-tag' and code = 'fulfilment-task-group').empty()"

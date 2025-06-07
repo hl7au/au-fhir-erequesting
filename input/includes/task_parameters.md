@@ -38,6 +38,15 @@
 	 <td></td>
   </tr>
   <tr>
+        <td>_tag</td>
+        <td><b>SHALL</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><code>token</code></td>
+        <td></td>
+  </tr>
+  <tr>
         <td>focus</td>
         <td><b>SHALL</b></td>
         <td><b>MAY</b></td>
