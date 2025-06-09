@@ -9,7 +9,7 @@
     <valueString value="CommunicationRequest - Copy To GP"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
-      <valueMarkdown value="Shows an example CommunicationRequest for the *AU eRequesting CommunicationRequest CopyTo* profile, requesting a GP as a report copy-to recipient. Patient: Remedios Belger."/>
+      <valueMarkdown value="Shows an example communication request for the *AU eRequesting CommunicationRequest CopyTo* profile, requesting a GP as a report copy-to recipient. Patient: Remedios Belger."/>
   </extension>
   <groupIdentifier>
     <type>

@@ -69,6 +69,6 @@
     <reference value="PractitionerRole/generalpractitioner-guthridge-jarred"/>
   </requester>
   <insurance>
-    <reference value="Coverage/coverage-privateconcession"/>
+    <reference value="Coverage/coverage-concession"/>
   </insurance>
 </ServiceRequest>
