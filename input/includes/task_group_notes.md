@@ -56,9 +56,9 @@ The following search parameters and search parameter combinations are supported.
 
     Example:
     
-      1. GET [base]/Task?_tag=fulfilment-task
+      1. GET [base]/Task?_tag=fulfilment-task-group
       1. GET [base]/Task?_tag=http://terminology.hl7.org.au/CodeSystem/task-tag\|fulfilment-task-group
-      1. GET [base]/Task?_tag=fulfilment-task&_include=Task:patient&_include=Task:requester&_include=Task:owner
+      1. GET [base]/Task?_tag=fulfilment-task-group&_include=Task:patient&_include=Task:requester&_include=Task:owner
 
 
     *Implementation Notes:* Fetches a bundle containing Task resources matching the tag ([how to search by token](http://hl7.org/fhir/R4/search.html#token))
