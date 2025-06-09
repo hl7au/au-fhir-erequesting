@@ -21,6 +21,6 @@ Description: "Reason codes for a communication request used in the Australian co
 * ^compositional = false
 * ^content = #complete
 * ^count = 3
-* #urgent "Urgent Request" "The requester requires the results communicated urgently."
-* #patient "Patient Request" "The patient has requested the communication."
-* #copyto "Copy To" "Another party has requested a copy of the results."
+* #urgent "Urgent Results" "A request for results to be communicated urgently to the nominated recipient."
+* #patient "Patient Request" "A patient's request about receiving communication from a service provider."
+* #copyto "Copy To" "A request for results to be copied to an additional recipient."
