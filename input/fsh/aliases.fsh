@@ -12,8 +12,9 @@ Alias: $consentscope = http://terminology.hl7.org/CodeSystem/consentscope
 Alias: $consentaction = http://terminology.hl7.org/CodeSystem/consentaction
 Alias: $resourcetypes = http://hl7.org/fhir/resource-types
 Alias: $communication-category = http://terminology.hl7.org/CodeSystem/communication-category
-//Alias: $v3-ParticipationMode = http://terminology.hl7.org/CodeSystem/v3-ParticipationMode
+Alias: $v3-ParticipationMode = http://terminology.hl7.org/CodeSystem/v3-ParticipationMode
 Alias: $comm-req-reason = http://terminology.hl7.org.au/CodeSystem/communicationrequest-reason
+Alias: $taskbusinessstatus = http://terminology.hl7.org.au/CodeSystem/task-businessstatus
 Alias: $fastingPrecondition = https://healthterminologies.gov.au/fhir/ValueSet/pathology-fasting-status-1
 // AU Core profiles
 Alias: $AUCorePatient = http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient
