@@ -52,7 +52,7 @@ This change log documents the significant updates and resolutions implemented fr
 - Renamed AU eRequesting Patient Access actor and CapabilityStatement to be AU eRequesting Patient [FHIR-46802](https://jira.hl7.org/browse/FHIR-46802)
 - Clarified profile-specific implementation guidance on populating ServiceRequest.code and removed additional binding in AU eRequesting Pathology Request and AU eRequesting Imaging Request [FHIR-46847](https://jira.hl7.org/browse/FHIR-46847)
 - Remove RANZCR Radiology Referral ValueSet (RRV) from AU eRequesting [FHIR-51017](https://jira.hl7.org/browse/FHIR-51017)
-- Change RANZCR Radiology Referral ValueSet binding for ServiceRequest.code in AU eRequesting Imaging Request from AU eRequesting defined ValueSet to the NCTS defined ValueSet.
+- Change RANZCR Radiology Referral ValueSet binding for ServiceRequest.code in AU eRequesting Imaging Request from AU eRequesting defined ValueSet to the NCTS defined ValueSet [FHIR-51017](https://jira.hl7.org/browse/FHIR-51017)
 - Made the following changes in AU eRequesting Server CapabilityStatement:
   - changed the conformance requirement for ServiceRequest create and update interactions from SHALL to SHOULD [FHIR-47141](https://jira.hl7.org/browse/FHIR-47141)
   - added read and search-type interactions as SHALL, and create and update interactions as SHOULD for all currently supported resource types [FHIR-48934](https://jira.hl7.org/browse/FHIR-48934), [FHIR-47145](https://jira.hl7.org/browse/FHIR-47145), [FHIR-47143](https://jira.hl7.org/browse/FHIR-47143) [FHIR-48915](https://jira.hl7.org/browse/FHIR-48915)
