@@ -9,7 +9,7 @@
     <valueString value="CommunicationRequest - Urgent results communication to provider"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
-      <valueMarkdown value="Shows an example CommunicationRequest for the *AU eRequesting CommunicationRequest Urgent Provider* profile, requesting a provider receive communication about urgent results. Patient: Fred Roberts."/>
+      <valueMarkdown value="Shows an example communication request for the *AU eRequesting CommunicationRequest Urgent Provider* profile, requesting a provider receive communication about urgent results. Patient: Fred Roberts."/>
   </extension>
   <groupIdentifier>
     <type>
