@@ -58,7 +58,7 @@
           <valueCode value="SHOULD"/>
         </extension>
       </supportedProfile>
-      <documentation value="Fillers **SHALL** support the ServiceRequest resource, at least one AU eRequesting Diagnostic Request profile, and the conformance expectations for the ServiceRequest resource.&#xa;&#xa;The Filler **MAY** support the `_include` parameter for `ServiceRequest:patient`, `ServiceRequest:requester` and `ServiceRequest:encounter`."/>
+      <documentation value="Fillers **SHALL** support the ServiceRequest resource, at least one AU eRequesting Diagnostic Request profile, and the conformance expectations for the ServiceRequest resource.&#xa;&#xa;The Filler **MAY** support the `_include` parameter for `ServiceRequest:patient`, `ServiceRequest:requester`, `ServiceRequest:encounter` and `ServiceRequest:supportinginfo`."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
@@ -87,6 +87,14 @@
         <definition value="http://hl7.org/fhir/SearchParameter/ServiceRequest-requisition"/>
         <type value="token"/>
       </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="supportinginfo"/>
+        <definition value="http://hl7.org.au/fhir/ereq/SearchParameter/servicerequest-supportinginfo"/>
+        <type value="reference"/>
+      </searchParam>
       <searchInclude value="ServiceRequest:patient">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="MAY"/>
@@ -98,6 +106,11 @@
         </extension>
       </searchInclude>
       <searchInclude value="ServiceRequest:encounter">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+      </searchInclude>
+      <searchInclude value="ServiceRequest:supportinginfo">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="MAY"/>
         </extension>

@@ -10,7 +10,7 @@ Usage: #definition
 * status = #active
 * date = "2025-06-10"
 * publisher = "HL7 Australia"
-* description = "This SearchParameter returns service requests referencing a specified resource in ServiceRequest.supportingInfo."
+* description = "This SearchParameter returns ServiceRequest resources where supportingInfo matches the specified resource."
 * code = #supportinginfo
 * base = #ServiceRequest
 * type = #reference

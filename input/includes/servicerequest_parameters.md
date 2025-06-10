@@ -28,6 +28,15 @@
         <td></td>
   </tr>
   <tr>
+        <td>supportinginfo</td>
+        <td><b>SHOULD</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><code>reference</code></td>
+        <td></td>
+  </tr>
+  <tr>
         <td>_include=ServiceRequest:patient</td>
         <td><b>SHALL</b></td>
         <td><b>MAY</b></td>
@@ -47,6 +56,15 @@
   </tr>
   <tr>
         <td>_include=ServiceRequest:encounter</td>
+        <td><b>SHOULD</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><code>reference</code></td>
+        <td>Modifies search results from a query using other search parameters by including the referenced focus resource</td>
+  </tr>
+  <tr>
+        <td>_include=ServiceRequest:supportinginfo</td>
         <td><b>SHOULD</b></td>
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>

@@ -58,7 +58,7 @@
           <valueCode value="SHOULD"/>
         </extension>
       </supportedProfile>
-      <documentation value="The AU eRequesting Patient actor **SHALL** support the ServiceRequest resource, at least one AU eRequesting ServiceRequest profile, and the conformance expectations for the ServiceRequest resource.&#xa;&#xa;AU eRequesting Patient actor **MAY** support the `_include` parameter for `ServiceRequest:patient`, `ServiceRequest:requester` and `ServiceRequest:encounter`."/>
+      <documentation value="The AU eRequesting Patient actor **SHALL** support the ServiceRequest resource, at least one AU eRequesting ServiceRequest profile, and the conformance expectations for the ServiceRequest resource.&#xa;&#xa;AU eRequesting Patient actor **MAY** support the `_include` parameter for `ServiceRequest:patient`, `ServiceRequest:requester`, `ServiceRequest:encounter` and `ServiceRequest:supportinginfo`."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
@@ -86,6 +86,11 @@
         <valueCode value="MAY"/>
         </extension>
       </searchInclude>       
+      <searchInclude value="ServiceRequest:supportinginfo">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="MAY"/>
+        </extension>
+      </searchInclude> 
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -107,6 +112,14 @@
         <name value="requisition"/>
         <definition value="http://hl7.org/fhir/SearchParameter/ServiceRequest-requisition"/>
         <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="supportinginfo"/>
+        <definition value="http://hl7.org.au/fhir/ereq/SearchParameter/servicerequest-supportinginfo"/>
+        <type value="reference"/>
       </searchParam>
     </resource>
     <!-- COVERAGE -->
