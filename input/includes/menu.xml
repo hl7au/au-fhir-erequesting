@@ -41,10 +41,10 @@
     </ul>
   </li>
   <li>
-    <a href="security.html">Security and Privacy</a>
+    <a href="use-cases.html">Use Cases</a>
   </li>
   <li>
-    <a href="use-cases.html">Use Cases</a>
+    <a href="security.html">Security and Privacy</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artefacts
