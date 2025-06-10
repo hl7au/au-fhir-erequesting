@@ -16,7 +16,6 @@ This change log documents the significant updates and resolutions implemented fr
   - AU eRequesting Task Diagnostic Request ([FHIR-49718](https://jira.hl7.org/browse/FHIR-49718))
   - AU eRequesting Task Group ([FHIR-49719](https://jira.hl7.org/browse/FHIR-49719))
   - AU eRequesting Task Communication Request ([FHIR-50231](https://jira.hl7.org/browse/FHIR-50231))  
-  - AU eRequesting Coverage ([FHIR-46848](https://jira.hl7.org/browse/FHIR-46848))
   - AU eRequesting Clinical Context DocumentReference ([FHIR-50954](https://jira.hl7.org/browse/FHIR-50954), [FHIR-50955](https://jira.hl7.org/browse/FHIR-50955))
   - AU eRequesting Coverage ([FHIR-46848](https://jira.hl7.org/browse/FHIR-46848), [FHIR-50899](https://jira.hl7.org/browse/FHIR-50899))
 - New value sets:
