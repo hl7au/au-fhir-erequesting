@@ -32,6 +32,8 @@ This change log documents the significant updates and resolutions implemented fr
 - New extensions:  
   - AU eRequesting Display Sequence ([FHIR-49715](https://jira.hl7.org/browse/FHIR-49715), [FHIR-50540](https://jira.hl7.org/browse/FHIR-50540))
   - AU eRequesting Fasting Precondition ([FHIR-49917](https://jira.hl7.org/browse/FHIR-49917), [FHIR-50540](https://jira.hl7.org/browse/FHIR-50540))
+- New search parameters:
+  - ServiceRequest Supporting Information ([FHIR-51005](https://jira.hl7.org/browse/FHIR-51005))
 - Added [Sex and Gender](sex-and-gender.html) page to consolidate implementation guidance on sex and gender concepts in AU eRequesting, with references to guidance in AU Core and AU Base [FHIR-47176](https://jira.hl7.org/browse/FHIR-47176), [FHIR-47178](https://jira.hl7.org/browse/FHIR-47178), [FHIR-47182](https://jira.hl7.org/browse/FHIR-47182), [FHIR-47183](https://jira.hl7.org/browse/FHIR-47183), [FHIR-46892](https://jira.hl7.org/browse/FHIR-46892), [FHIR-46896](https://jira.hl7.org/browse/FHIR-46896).
 - Made the following changes to AU eRequesting ServiceRequest:
   - made the profile abstract ([FHIR-46813](https://jira.hl7.org/browse/FHIR-46813))
@@ -58,4 +60,11 @@ This change log documents the significant updates and resolutions implemented fr
   - added identifier search parameter support for Organization, Patient, Practitioner, and PractitionerRole as SHALL [FHIR-48934](https://jira.hl7.org/browse/FHIR-48934), [FHIR-47145](https://jira.hl7.org/browse/FHIR-47145)
   - added _include support for PractitionerRole:practitioner and PractitionerRole:organization as SHALL for the PractitionerRole resource type [FHIR-48934](https://jira.hl7.org/browse/FHIR-48934), [FHIR-47145](https://jira.hl7.org/browse/FHIR-47145)
   - added the following Task search parameters as SHALL: group-identifier, owner, patient, requester, focus, status, _lastUpdated, patient+status, owner+status, requester+status, _lastUpdated+status+owner, patient.identifier, owner.identifier, requester.identifier, Task:patient, Task:requester, Task:owner and Task:focus [FHIR-48915](https://jira.hl7.org/browse/FHIR-48915)
+  - added supportinginfo search parameter and _include support for ServiceRequest:supportinginfo as SHOULD for the ServiceRequest resource type [FHIR-51005](https://jira.hl7.org/browse/FHIR-51005)
+- Made the following changes in AU eRequesting Placer CapabilityStatement:
+  - added supportinginfo search parameter and _include support for ServiceRequest:supportinginfo as MAY for the ServiceRequest resource type [FHIR-51005](https://jira.hl7.org/browse/FHIR-51005)
+- Made the following changes in AU eRequesting Filler CapabilityStatement:
+  - added supportinginfo search parameter and _include support for ServiceRequest:supportinginfo as MAY for the ServiceRequest resource type [FHIR-51005](https://jira.hl7.org/browse/FHIR-51005)
+- Made the following changes in AU eRequesting Patient CapabilityStatement:
+  - added supportinginfo search parameter and _include support for ServiceRequest:supportinginfo as MAY for the ServiceRequest resource type [FHIR-51005](https://jira.hl7.org/browse/FHIR-51005)
 - Updated AU eRequesting ValueSet resources to remove conformance to HL7 International <a href="http://hl7.org/fhir/StructureDefinition/shareablevalueset">ShareableValueSet</a> and instead claim conformance to <a href="https://healthterminologies.gov.au/fhir/StructureDefinition/composed-value-set-4"> NCTS Composed ValueSet</a> (<a href="https://jira.hl7.org/browse/FHIR-47149">FHIR-47149</a>).

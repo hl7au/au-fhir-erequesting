@@ -68,6 +68,8 @@ pages:
     artifacts.html:
       title: Artefacts Summary
     profiles-and-extensions.md:
+    search-parameters.md: 
+      title: Search Parameters
     terminology.md:
     capability-statements.md: 
       title: Actors and Capabilities

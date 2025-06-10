@@ -71,6 +71,7 @@ This guide is divided into several pages which are listed at the top of each pag
 - [FHIR Artefacts](artifacts.html): These pages provide detailed descriptions and formal definitions for all the FHIR artefacts defined in this guide.
   - [Artefacts Summary](artifacts.html): This page lists the FHIR artefacts defined in this guide.
   - [Profiles and Extensions](profiles-and-extensions.html): This page describes the profiles and extensions that are defined in this guide to support electronic requesting. Each profile page includes a narrative description and guidance, formal definition and a "Notes" section which summarises the supported search transactions for each profile. Although the guidance typically focuses on the profiled elements, it may also may focus on un-profiled elements to aid with implementation.
+  - [Search Parameters](search-parameters.html): This page lists the search parameters defined in this guide for use in AU eRequesting operations.
   - [Terminology](terminology.html): This page lists the value sets and code systems supported in this guide.
   - [Actors and Capabilities](capability-statements.html): This page defines the AU eRequesting actors and their respective CapabilityStatements.
 - [Examples](examples.html): This page lists all the examples used in this guide.
