@@ -11,13 +11,14 @@ This change log documents the significant updates and resolutions implemented fr
   - AU eRequesting CommunicationRequest CopyTo ([FHIR-49807](https://jira.hl7.org/browse/FHIR-49807))
   - AU eRequesting CommunicationRequest Patient ([FHIR-50230](https://jira.hl7.org/browse/FHIR-50230), [FHIR-50948](https://jira.hl7.org/browse/FHIR-50948))
   - AU eRequesting CommunicationRequest Urgent Provider ([FHIR-50229](https://jira.hl7.org/browse/FHIR-50229))
-  - AU eRequesting Task ([FHIR-46947](https://jira.hl7.org/browse/FHIR-46947), [FHIR-46950](https://jira.hl7.org/browse/FHIR-46950), [FHIR-46956](https://jira.hl7.org/browse/FHIR-46956), [FHIR-46958](https://jira.hl7.org/browse/FHIR-46958), [FHIR-46959](https://jira.hl7.org/browse/FHIR-46959), [FHIR-47081](https://jira.hl7.org/browse/FHIR-47081), [FHIR-47082](https://jira.hl7.org/browse/FHIR-47082), [FHIR-47083](https://jira.hl7.org/browse/FHIR-47083), [FHIR-47084](https://jira.hl7.org/browse/FHIR-47084), [FHIR-47086](https://jira.hl7.org/browse/FHIR-47086), [FHIR-47102](https://jira.hl7.org/browse/FHIR-47102), [FHIR-49717](https://jira.hl7.org/browse/FHIR-49717))
+  - AU eRequesting Task ([FHIR-46947](https://jira.hl7.org/browse/FHIR-46947), [FHIR-46950](https://jira.hl7.org/browse/FHIR-46950), [FHIR-46956](https://jira.hl7.org/browse/FHIR-46956), [FHIR-46958](https://jira.hl7.org/browse/FHIR-46958), [FHIR-46959](https://jira.hl7.org/browse/FHIR-46959), [FHIR-47081](https://jira.hl7.org/browse/FHIR-47081), [FHIR-47082](https://jira.hl7.org/browse/FHIR-47082), [FHIR-47083](https://jira.hl7.org/browse/FHIR-47083), [FHIR-47084](https://jira.hl7.org/browse/FHIR-47084), [FHIR-47086](https://jira.hl7.org/browse/FHIR-47086), [FHIR-47102](https://jira.hl7.org/browse/FHIR-47102), [FHIR-49717](https://jira.hl7.org/browse/FHIR-49717)), [FHIR-50899](https://jira.hl7.org/browse/FHIR-50899))
   - AU eRequesting MHR Consent Withdrawal ([FHIR-49806](https://jira.hl7.org/browse/FHIR-49806))
   - AU eRequesting Task Diagnostic Request ([FHIR-49718](https://jira.hl7.org/browse/FHIR-49718))
   - AU eRequesting Task Group ([FHIR-49719](https://jira.hl7.org/browse/FHIR-49719))
   - AU eRequesting Task Communication Request ([FHIR-50231](https://jira.hl7.org/browse/FHIR-50231))  
   - AU eRequesting Coverage ([FHIR-46848](https://jira.hl7.org/browse/FHIR-46848))
   - AU eRequesting Clinical Context DocumentReference ([FHIR-50954](https://jira.hl7.org/browse/FHIR-50954), [FHIR-50955](https://jira.hl7.org/browse/FHIR-50955))
+  - AU eRequesting Coverage ([FHIR-46848](https://jira.hl7.org/browse/FHIR-46848), [FHIR-50899](https://jira.hl7.org/browse/FHIR-50899))
 - New value sets:
   - AU eRequesting Task Status ([FHIR-47081](https://jira.hl7.org/browse/FHIR-47081))
   - AU eRequesting RequestStatus ([FHIR-47097](https://jira.hl7.org/browse/FHIR-47097))
@@ -27,7 +28,7 @@ This change log documents the significant updates and resolutions implemented fr
   - AU eRequesting Task Tag Fulfilment ([FHIR-49718](https://jira.hl7.org/browse/FHIR-49718), [FHIR-49719](https://jira.hl7.org/browse/FHIR-49719))
   - AU eRequesting Task Business Status ([FHIR-50973](https://jira.hl7.org/browse/FHIR-50973), [FHIR-51006](https://jira.hl7.org/browse/FHIR-51006))
 - New code systems:
-  - AU eRequesting CommunicationRequest Reason ([FHIR-49807](https://jira.hl7.org/browse/FHIR-49807))
+  - AU eRequesting CommunicationRequest Reason ([FHIR-49807](https://jira.hl7.org/browse/FHIR-49807), [FHIR-50979](https://jira.hl7.org/browse/FHIR-50979))
   - AU eRequesting Task Tag Codes ([FHIR-49718](https://jira.hl7.org/browse/FHIR-49718), [FHIR-49719](https://jira.hl7.org/browse/FHIR-49719))
   - Task Business Status ([FHIR-50973](https://jira.hl7.org/browse/FHIR-50973))
 - New extensions:  
@@ -50,6 +51,7 @@ This change log documents the significant updates and resolutions implemented fr
   - added pregnancy status slice to ServiceRequest.supportingInfo referencing [Observation Pregnancy - Status (IPS)](https://build.fhir.org/ig/HL7/fhir-ips/StructureDefinition-Observation-pregnancy-status-uv-ips.html) [FHIR-47006](https://jira.hl7.org/browse/FHIR-47006)
   - added clinical context slice to ServiceRequest.supportingInfo referencing [AU eRequesting Clinical Context DocumentReference](StructureDefinition-au-erequesting-clinicalcontext-documentreference.html) [FHIR-50956](https://jira.hl7.org/browse/FHIR-50956), [FHIR-50957](https://jira.hl7.org/browse/FHIR-50957)
   - changed base profile from AU Base Diagnostic Request (deprecated) to AU Base Service Request [FHIR-50147](https://jira.hl7.org/browse/FHIR-50147)
+  - changed the obligation requirement for AU eRequesting Filler from SHALL:no-error to SHALL:handle for the following Must Support elements: ServiceRequest.identifier, ServiceRequest.intent, ServiceRequest.insurance, ServiceRequest.encounter and ServiceRequest.reasonCode [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976)
 - Added _include search parameters ServiceRequest:patient, ServiceRequest:requester and ServiceRequest:encounter to AU eRequesting Placer, Filler, Patient and Server CapabilityStatements [FHIR-46942](https://jira.hl7.org/browse/FHIR-46942)
 - Renamed AU eRequesting Patient Access actor and CapabilityStatement to be AU eRequesting Patient [FHIR-46802](https://jira.hl7.org/browse/FHIR-46802)
 - Clarified profile-specific implementation guidance on populating ServiceRequest.code and removed additional binding in AU eRequesting Pathology Request and AU eRequesting Imaging Request [FHIR-46847](https://jira.hl7.org/browse/FHIR-46847)
@@ -60,4 +62,11 @@ This change log documents the significant updates and resolutions implemented fr
   - added identifier search parameter support for Organization, Patient, Practitioner, and PractitionerRole as SHALL [FHIR-48934](https://jira.hl7.org/browse/FHIR-48934), [FHIR-47145](https://jira.hl7.org/browse/FHIR-47145)
   - added _include support for PractitionerRole:practitioner and PractitionerRole:organization as SHALL for the PractitionerRole resource type [FHIR-48934](https://jira.hl7.org/browse/FHIR-48934), [FHIR-47145](https://jira.hl7.org/browse/FHIR-47145)
   - added the following Task search parameters as SHALL: group-identifier, owner, patient, requester, focus, status, _lastUpdated, patient+status, owner+status, requester+status, _lastUpdated+status+owner, patient.identifier, owner.identifier, requester.identifier, Task:patient, Task:requester, Task:owner and Task:focus [FHIR-48915](https://jira.hl7.org/browse/FHIR-48915)
+  - changed the resource conformance requirement from SHOULD to SHALL for the following resource types: Coverage, Encounter, Organization, Practitioner and PractitionerRole [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976)
+- Made the following changes in AU eRequesting Placer CapabilityStatement:
+  - changed the conformance requirement from SHOULD to MAY for _include search parameters ServiceRequest:patient, ServiceRequest:requester and ServiceRequest:encounter [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976)
+- Made the following changes in AU eRequesting Filler CapabilityStatement:
+  - changed the conformance requirement from SHOULD to MAY for _include search parameters ServiceRequest:patient, ServiceRequest:requester and ServiceRequest:encounter [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976)
+- Made the following changes in AU eRequesting Patient CapabilityStatement:
+  - changed the conformance requirement from SHOULD to MAY for _include search parameters ServiceRequest:patient, ServiceRequest:requester and ServiceRequest:encounter [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976)
 - Updated AU eRequesting ValueSet resources to remove conformance to HL7 International <a href="http://hl7.org/fhir/StructureDefinition/shareablevalueset">ShareableValueSet</a> and instead claim conformance to <a href="https://healthterminologies.gov.au/fhir/StructureDefinition/composed-value-set-4"> NCTS Composed ValueSet</a> (<a href="https://jira.hl7.org/browse/FHIR-47149">FHIR-47149</a>).
