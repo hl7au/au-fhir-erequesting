@@ -6,7 +6,7 @@ Usage: #definition
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * extension[=].valueCode = #trial-use
 * url = "http://hl7.org.au/fhir/ereq/SearchParameter/servicerequest-supportinginfo"
-* name = "ServiceRequestSupportingInformation"
+* name = "ServiceRequestSupportingInfo"
 * status = #draft
 * date = "2025-06-10"
 * publisher = "HL7 Australia"
