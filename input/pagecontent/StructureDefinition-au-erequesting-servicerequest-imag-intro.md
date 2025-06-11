@@ -4,7 +4,7 @@
 - `ServiceRequest.code`
   - The use of coding for the requested exam can vary significantly across systems, filler systems need to understand that they may encounter codes they do not recognise and be prepared to handle those resources appropriately. Placer systems **SHALL** populate `ServiceRequest.code.text` so that fillers can at least display the service requested, even if they do not recognise the code supplied.
   - Placer systems **SHALL** adhere to the following order of preference when populating the `ServiceRequest.code`:
-     1. A code selected from the [RANZCR Radiology Referral](https://api.healthterminologies.gov.au/integration/R4/fhir/ValueSet/ranzcr-radiology-referral-1) value set is the preferred option
+     1. A code selected from the [RANZCR Radiology Referral](https://www.healthterminologies.gov.au/integration/R4/fhir/ValueSet/ranzcr-radiology-referral-1) value set is the preferred option
      2. A code selected from the SNOMED CT [Imaging Procedure](https://www.healthterminologies.gov.au/integration/R4/fhir/ValueSet/imaging-procedure-1) value set is the second most preferred option
      3. A local code is preferred over free text, preferably from a published and accessible FHIR code system​
      4. Free text is the least preferred option which should not be used if a local code is known
