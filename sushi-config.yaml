@@ -63,6 +63,8 @@ pages:
       title: Future of AU eRequesting
   use-cases.md:
     title: Use Cases
+  security.md:
+    title: Security and Privacy
   fhirartifacts.md:
     title: FHIR Artefacts
     artifacts.html:
