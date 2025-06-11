@@ -16,6 +16,7 @@ This change log documents the significant updates and resolutions implemented fr
   - AU eRequesting Task Diagnostic Request ([FHIR-49718](https://jira.hl7.org/browse/FHIR-49718))
   - AU eRequesting Task Group ([FHIR-49719](https://jira.hl7.org/browse/FHIR-49719))
   - AU eRequesting Task Communication Request ([FHIR-50231](https://jira.hl7.org/browse/FHIR-50231))  
+  - AU eRequesting Clinical Context DocumentReference ([FHIR-50954](https://jira.hl7.org/browse/FHIR-50954), [FHIR-50955](https://jira.hl7.org/browse/FHIR-50955))
   - AU eRequesting Coverage ([FHIR-46848](https://jira.hl7.org/browse/FHIR-46848), [FHIR-50899](https://jira.hl7.org/browse/FHIR-50899))
 - New value sets:
   - AU eRequesting Task Status ([FHIR-47081](https://jira.hl7.org/browse/FHIR-47081))
@@ -48,6 +49,7 @@ This change log documents the significant updates and resolutions implemented fr
   - added Must Support to ServiceRequest.occurrence [FHIR-49918](https://jira.hl7.org/browse/FHIR-49918)
   - added Must Support to ServiceRequest.quantity [FHIR-49919](https://jira.hl7.org/browse/FHIR-49919)
   - added pregnancy status slice to ServiceRequest.supportingInfo referencing [Observation Pregnancy - Status (IPS)](https://build.fhir.org/ig/HL7/fhir-ips/StructureDefinition-Observation-pregnancy-status-uv-ips.html) [FHIR-47006](https://jira.hl7.org/browse/FHIR-47006)
+  - added clinical context slice to ServiceRequest.supportingInfo referencing [AU eRequesting Clinical Context DocumentReference](StructureDefinition-au-erequesting-clinicalcontext-documentreference.html) [FHIR-50956](https://jira.hl7.org/browse/FHIR-50956), [FHIR-50957](https://jira.hl7.org/browse/FHIR-50957)
   - changed base profile from AU Base Diagnostic Request (deprecated) to AU Base Service Request [FHIR-50147](https://jira.hl7.org/browse/FHIR-50147)
   - changed the obligation requirement for AU eRequesting Filler from SHALL:no-error to SHALL:handle for the following Must Support elements: ServiceRequest.identifier, ServiceRequest.intent, ServiceRequest.insurance, ServiceRequest.encounter and ServiceRequest.reasonCode [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976)
 - Added _include search parameters ServiceRequest:patient, ServiceRequest:requester and ServiceRequest:encounter to AU eRequesting Placer, Filler, Patient and Server CapabilityStatements [FHIR-46942](https://jira.hl7.org/browse/FHIR-46942)
