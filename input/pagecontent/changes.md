@@ -34,7 +34,7 @@ This change log documents the significant updates and resolutions implemented fr
   - AU eRequesting Display Sequence ([FHIR-49715](https://jira.hl7.org/browse/FHIR-49715), [FHIR-50540](https://jira.hl7.org/browse/FHIR-50540))
   - AU eRequesting Fasting Precondition ([FHIR-49917](https://jira.hl7.org/browse/FHIR-49917), [FHIR-50540](https://jira.hl7.org/browse/FHIR-50540))
 - New search parameters:
-  - ServiceRequest Supporting Information ([FHIR-51005](https://jira.hl7.org/browse/FHIR-51005))
+  - AU eRequesting ServiceRequest SupportingInfo ([FHIR-51005](https://jira.hl7.org/browse/FHIR-51005))
 - Added [Sex and Gender](sex-and-gender.html) page to consolidate implementation guidance on sex and gender concepts in AU eRequesting, with references to guidance in AU Core and AU Base [FHIR-47176](https://jira.hl7.org/browse/FHIR-47176), [FHIR-47178](https://jira.hl7.org/browse/FHIR-47178), [FHIR-47182](https://jira.hl7.org/browse/FHIR-47182), [FHIR-47183](https://jira.hl7.org/browse/FHIR-47183), [FHIR-46892](https://jira.hl7.org/browse/FHIR-46892), [FHIR-46896](https://jira.hl7.org/browse/FHIR-46896).
 - Added [Security and Privacy](security.html) page [FHIR-50880](https://jira.hl7.org/browse/FHIR-50880)
 - Made the following changes to AU eRequesting ServiceRequest:
