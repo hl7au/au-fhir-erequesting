@@ -21,8 +21,8 @@
     <reference value="Patient/belger-remedios"/>
   </subject>
   <period>
-    <start value="2022-03-21T07:50:00+10:00"/>
-    <end value="2022-03-21T08:20:00+10:00"/>
+    <start value="2025-02-21T07:50:00+10:00"/>
+    <end value="2025-02-21T08:20:00+10:00"/>
   </period>
   <location>
     <location>

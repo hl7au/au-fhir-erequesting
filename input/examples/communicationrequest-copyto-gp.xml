@@ -9,7 +9,7 @@
     <valueString value="CommunicationRequest - Copy To GP"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
-      <valueMarkdown value="Shows an example CommunicationRequest for the *AU eRequesting Communication Request CopyTo* profile, requesting a GP as a report copy-to recipient. Patient: Remedios Belger."/>
+      <valueMarkdown value="Shows an example communication request for the *AU eRequesting CommunicationRequest CopyTo* profile, requesting a GP as a report copy-to recipient. Patient: Remedios Belger."/>
   </extension>
   <groupIdentifier>
     <type>
@@ -21,7 +21,7 @@
       <text value="Placer Group Number"/>
     </type>
     <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
-    <value value="EMC4551244-6241"/>
+    <value value="EMC1552642-1110"/>
     <assigner>
       <reference value="Organization/elimbah-medical-center"/>
       <display value="Elimbah Medical Center"/>
@@ -42,7 +42,16 @@
   <about>
     <reference value="ServiceRequest/order-glu-1"/>
   </about>
-  <authoredOn value="2022-03-21T08:00:00+10:00"/>
+  <about>
+    <reference value="ServiceRequest/order-bg-abs"/>
+  </about>
+  <about>
+    <reference value="ServiceRequest/order-urinemcs-1"/>
+  </about>
+  <about>
+    <reference value="ServiceRequest/order-ironstudies"/>
+  </about>
+  <authoredOn value="2025-02-21T08:00:00+10:00"/>
   <requester>
     <reference value="PractitionerRole/obstetrician-losch-sallie"/>
   </requester>
