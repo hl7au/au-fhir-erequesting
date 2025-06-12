@@ -4,4 +4,4 @@ The FHIR specification provides more information on the use of search parameters
 
 ### ServiceRequest search parameters
 
-- [supportinginfo](SearchParameter-servicerequest-supportinginfo.html)
+- [supporting-info](SearchParameter-servicerequest-supporting-info.html)

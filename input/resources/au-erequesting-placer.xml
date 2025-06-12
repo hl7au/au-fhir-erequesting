@@ -58,7 +58,7 @@
           <valueCode value="SHOULD"/>
         </extension>
       </supportedProfile>
-      <documentation value="Placers **SHALL** support the ServiceRequest resource, at least one AU eRequesting Diagnostic Request profile, and the conformance expectations for the ServiceRequest resource.&#xa;&#xa;The Placer **MAY** support the `_include` parameter for `ServiceRequest:patient`, `ServiceRequest:requester`, `ServiceRequest:encounter` and `ServiceRequest:supportinginfo`."/>
+      <documentation value="Placers **SHALL** support the ServiceRequest resource, at least one AU eRequesting Diagnostic Request profile, and the conformance expectations for the ServiceRequest resource.&#xa;&#xa;The Placer **MAY** support the `_include` parameter for `ServiceRequest:patient`, `ServiceRequest:requester`, `ServiceRequest:encounter` and `ServiceRequest:supporting-info`."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -95,8 +95,8 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="MAY"/>
         </extension>
-        <name value="supportinginfo"/>
-        <definition value="http://hl7.org.au/fhir/ereq/SearchParameter/servicerequest-supportinginfo"/>
+        <name value="supporting-info"/>
+        <definition value="http://hl7.org.au/fhir/ereq/SearchParameter/servicerequest-supporting-info"/>
         <type value="reference"/>
       </searchParam>
       <!--
@@ -124,7 +124,7 @@
         <valueCode value="MAY"/>
         </extension>
       </searchInclude>
-      <searchInclude value="ServiceRequest:supportinginfo">
+      <searchInclude value="ServiceRequest:supporting-info">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
         <valueCode value="MAY"/>
         </extension>
