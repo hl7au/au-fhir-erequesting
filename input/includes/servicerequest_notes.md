@@ -37,7 +37,7 @@ The following search parameters and search parameter combinations are supported.
     Example:
     
       1. GET [base]/ServiceRequest?supporting-info=9876
-      1. GET [base]/ServiceRequest?supporting-info=ObservationPregnancyStatusUvIps/9876
+      1. GET [base]/ServiceRequest?supporting-info=Observation/9876
       1. GET [base]/ServiceRequest?supporting-info=9876&_include=ServiceRequest:patient&_include=ServiceRequest:requester&_include=ServiceRequest:encounter
 
     *Implementation Notes:* Fetches a bundle of all ServiceRequest matching the supporting-info ([how to search by reference](http://hl7.org/fhir/R4/search.html#reference))

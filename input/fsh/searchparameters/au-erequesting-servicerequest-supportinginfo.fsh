@@ -10,7 +10,7 @@ Usage: #definition
 * status = #draft
 * date = "2025-06-10"
 * publisher = "HL7 Australia"
-* description = "The AU eRequesting ServiceRequest SupportingInfo SearchParameter returns resources referenced by ServiceRequest.supportingInfo. It is intended to support `_include` of supportingInfo resources, such as pregnancyStatus and clinicalContext, for use in the Australian eRequesting context."
+* description = "This SearchParameter returns resources referenced by ServiceRequest.supportingInfo. It is intended to support `_include` of supportingInfo resources, such as pregnancyStatus and clinicalContext, for use in the Australian eRequesting context."
 * code = #supporting-info
 * base = #ServiceRequest
 * type = #reference
