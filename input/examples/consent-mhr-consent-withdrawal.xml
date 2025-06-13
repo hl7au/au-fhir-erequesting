@@ -39,6 +39,10 @@
     <organization>
         <reference value="Organization/mount-charlton-radiology"/>
     </organization>
+    <policy>
+        <authority value="https://www.health.gov.au"/>
+        <uri value="https://www.legislation.gov.au/C2012A00063"/>
+    </policy>
     <policyRule>
         <coding>
             <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
