@@ -18,6 +18,6 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 * category contains imaging 1..1
 * category[imaging] = $sct#363679005
 
-* code from https://ranzcr.com/fhir/ValueSet/radiology-referral (preferred)
+* code from https://ranzcr.com/fhir/ValueSet/radiology-referral-1 (preferred)
 * code ^short = "Refer to the Profile Specific Implementation Guidance on ServiceRequest.code"
 * code ^comment = "Refer to the [Profile Specific Implementation Guidance](StructureDefinition-au-erequesting-servicerequest-imag.html#profile-specific-implementation-guidance) on `ServiceRequest.code`"

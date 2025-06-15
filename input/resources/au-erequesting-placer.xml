@@ -58,7 +58,7 @@
           <valueCode value="SHOULD"/>
         </extension>
       </supportedProfile>
-      <documentation value="Placers **SHALL** support the ServiceRequest resource, at least one AU eRequesting Diagnostic Request profile, and the conformance expectations for the ServiceRequest resource.&#xa;&#xa;The Placer **SHOULD** support the `_include` parameter for `ServiceRequest:patient`, `ServiceRequest:requester` and `ServiceRequest:encounter`."/>
+      <documentation value="Placers **SHALL** support the ServiceRequest resource, at least one AU eRequesting Diagnostic Request profile, and the conformance expectations for the ServiceRequest resource.&#xa;&#xa;The Placer **MAY** support the `_include` parameter for `ServiceRequest:patient`, `ServiceRequest:requester` and `ServiceRequest:encounter`."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -103,17 +103,17 @@
       -->
       <searchInclude value="ServiceRequest:patient">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHOULD"/>
+        <valueCode value="MAY"/>
         </extension>
       </searchInclude>
       <searchInclude value="ServiceRequest:requester">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHOULD"/>
+        <valueCode value="MAY"/>
         </extension>
       </searchInclude>
       <searchInclude value="ServiceRequest:encounter">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHOULD"/>
+        <valueCode value="MAY"/>
         </extension>
       </searchInclude>
       <!-- TBC 
@@ -487,15 +487,15 @@
     <!-- DOCUMENTREFERENCE -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="MAY"/>
+        <valueCode value="SHALL"/>
       </extension>
       <type value="DocumentReference"/>
-      <supportedProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference">
+      <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-clinicalcontext-documentreference">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="If the Placer supports the DocumentReference resource, Placers **SHALL** support the conformance expectations for the DocumentReference resource."/>
+      <documentation value="Placers **SHALL** support the DocumentReference resource, the AU eRequesting profile, and the conformance expectations for the DocumentReference resource."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
@@ -912,6 +912,14 @@
         <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
         <type value="date"/>
         <documentation value="The Placer **MAY** support `multipleAnd`. The Placer **MAY** support search comparators `gt`, `lt`, `ge`, `le`."/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="_tag"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-tag"/>
+        <type value="token"/>
       </searchParam>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">

@@ -124,7 +124,7 @@
     <!-- COVERAGE -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHOULD"/>
+        <valueCode value="SHALL"/>
       </extension>
       <type value="Coverage"/>
       <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-coverage">
@@ -175,7 +175,7 @@
     <!-- ENCOUNTER -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHOULD"/>
+        <valueCode value="SHALL"/>
       </extension>
       <type value="Encounter"/>
       <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-encounter">
@@ -226,7 +226,7 @@
     <!-- ORGANIZATION -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHOULD"/>
+        <valueCode value="SHALL"/>
       </extension>
       <type value="Organization"/>
       <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-organization">
@@ -349,7 +349,7 @@
     <!-- PRACTITIONER -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHOULD"/>
+        <valueCode value="SHALL"/>
       </extension>
       <type value="Practitioner"/>
       <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-practitioner">
@@ -408,7 +408,7 @@
     <!-- PRACTITIONERROLE -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="SHOULD"/>
+        <valueCode value="SHALL"/>
       </extension>
       <type value="PractitionerRole"/>
       <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-practitionerrole">
@@ -528,15 +528,15 @@
     <!-- DOCUMENTREFERENCE -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-        <valueCode value="MAY"/>
+        <valueCode value="SHALL"/>
       </extension>
       <type value="DocumentReference"/>
-      <supportedProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference">
+      <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-clinicalcontext-documentreference">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="MAY"/>
+          <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="Servers **MAY** support the DocumentReference resource."/>
+      <documentation value="Servers **SHALL** support the DocumentReference resource, the AU eRequesting profile, and the conformance expectations for the DocumentReference resource."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -847,6 +847,14 @@
         <definition value="http://hl7.org/fhir/SearchParameter/Resource-lastUpdated"/>
         <type value="date"/>
         <documentation value="The Server **SHALL** support `multipleAnd`. The Server **SHALL** support search comparators `gt`, `lt`, `ge`, `le`."/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="_tag"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Resource-tag"/>
+        <type value="token"/>
       </searchParam>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
