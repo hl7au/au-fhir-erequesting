@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DocumentReference xmlns="http://hl7.org/fhir">
+  <id value="documentreference-clinical-context"/>  
+   <meta>
+        <profile
+                 value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-clinicalcontext-documentreference"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-name">
+    <valueString value="DocumentReference - Clinical Context"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
+    <valueMarkdown value="Shows an example DocumentReference for the *AU eRequesting Clinical Context DocumentReference* profile, associated with a diagnostic request. Patient: Remedios Belger."/>
+  </extension>
+  <status value="current"/>
+  <subject>
+    <reference value="Patient/belger-remedios"/>
+  </subject>
+  <date value="2022-03-21T08:00:00+10:00"/> 
+  <author>
+    <reference value="PractitionerRole/generalpractitioner-guthridge-jarred"/>
+  </author>
+  <content>
+    <attachment>
+      <contentType value="text/plain"/>
+      <!-- plain text narrative: 33-year-old female presenting with 4 hours of lower abdominal pain and urine dipstick positive for leucocytes. -->
+      <data value="MzMteWVhci1vbGQgZmVtYWxlIHByZXNlbnRpbmcgd2l0aCA0IGhvdXJzIG9mIGxvd2VyIGFiZG9taW5hbCBwYWluIGFuZCB1cmluZSBkaXBzdGljayBwb3NpdGl2ZSBmb3IgbGV1Y29jeXRlcy4="/>
+    </attachment>
+  </content>
+</DocumentReference>
+
+
+
