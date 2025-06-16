@@ -1,9 +1,9 @@
-### Release TBD
-- Expected Publication date: TBD
-- Expected Publication status: TBD
+### Release 0.4.0-preview
+- Expected Publication date: 2025-06-17
+- Expected Publication status: Preview
 - Based on FHIR version: 4.0.1
 
-This change log documents the significant updates and resolutions implemented from version 0.1.0-ballot to TBD.
+This change log documents the significant updates and resolutions implemented from version 0.1.0-ballot to 0.4.0-preview.
 
 #### Changes in this version
 - New profiles: 
