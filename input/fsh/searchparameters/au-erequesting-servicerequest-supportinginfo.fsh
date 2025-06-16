@@ -7,7 +7,7 @@ Usage: #definition
 * extension[=].valueCode = #trial-use
 * url = "http://hl7.org.au/fhir/ereq/SearchParameter/au-erequesting-servicerequest-supporting-info"
 * name = "AUeRequestingServiceRequestSupportingInfo"
-* status = #draft
+* status = #active
 * date = "2025-06-10"
 * publisher = "HL7 Australia"
 * description = "This SearchParameter returns resources referenced by ServiceRequest.supportingInfo. It is intended to support `_include` of supportingInfo resources, such as pregnancyStatus and clinicalContext, for use in the Australian eRequesting context."
