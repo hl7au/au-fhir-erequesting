@@ -53,13 +53,13 @@ Column attribute descriptions are as follows:
     <td colspan="2">Urgency</td>
     <td><a href="StructureDefinition-au-erequesting-diagnosticrequest.html">AU eRequesting Diagnostic Request</a></td>
     <td>ServiceRequest.priority</td>
-    <td>This element is allowed but does not have a Must Support flag.</td>
+    <td></td>
   </tr>
    <tr>
     <td colspan="2">Service due</td>
     <td><a href="StructureDefinition-au-erequesting-diagnosticrequest.html">AU eRequesting Diagnostic Request</a></td>
     <td>ServiceRequest.occurrence[x]</td>
-    <td>This element is allowed but does not have a Must Support flag.<br><br>This element is choice between occurrenceTiming | occurrenceDateTime | occurrencePeriod.</td>
+    <td>This element is choice between occurrenceTiming | occurrenceDateTime | occurrencePeriod.</td>
   </tr>
    <tr>
     <td colspan="2">Comment</td>
@@ -126,13 +126,13 @@ Column attribute descriptions are as follows:
     <td colspan="2">Urgency</td>
     <td><a href="StructureDefinition-au-erequesting-servicerequest-imag.html">AU eRequesting Imaging Request</a></td>
     <td>ServiceRequest.priority</td>
-    <td>This element is allowed but does not have a Must Support flag.</td>
+    <td></td>
   </tr>
     <tr>
     <td colspan="2">Service due</td>
     <td><a href="StructureDefinition-au-erequesting-servicerequest-imag.html">AU eRequesting Imaging Request</a></td>
     <td>ServiceRequest.occurrence[x]</td>
-    <td>This element is allowed but does not have a Must Support flag.<br><br>This element is choice between occurrenceTiming | occurrenceDateTime | occurrencePeriod.</td>
+    <td>This element is choice between occurrenceTiming | occurrenceDateTime | occurrencePeriod.</td>
   </tr>
     <tr>
     <td colspan="2">Comment</td>
@@ -167,9 +167,9 @@ Column attribute descriptions are as follows:
   </tr>
   <tr>
     <td colspan="2">Fasting status</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td>Work is underway in AU eRequesting to map this element. Feedback is requested on the appropriateness of using ServiceRequest.note or an extension to support fasting status. Please comment by raising <a href="https://jira.hl7.org/projects/FHIR/issues">HL7 Jira Issues</a>.</td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest-path.html">AU eRequesting Pathology Request</a></td>
+    <td>ServiceRequest.extension:fastingPrecondition</td>
+    <td></td>
   </tr>
     <tr>
     <td colspan="2">Clinical indication</td>
@@ -187,13 +187,13 @@ Column attribute descriptions are as follows:
     <td colspan="2">Urgency</td>
     <td><a href="StructureDefinition-au-erequesting-servicerequest-path.html">AU eRequesting Pathology Request</a></td>
     <td>ServiceRequest.priority</td>
-    <td>This element is allowed but does not have a Must Support flag.</td>
+    <td></td>
   </tr>
     <tr>
     <td colspan="2">Service due</td>
     <td><a href="StructureDefinition-au-erequesting-servicerequest-path.html">AU eRequesting Pathology Request</a></td>
     <td>ServiceRequest.occurrence[x]</td>
-    <td>This element is allowed but does not have a Must Support flag.<br><br>This element is choice between occurrenceTiming | occurrenceDateTime | occurrencePeriod.</td>
+    <td>This element is choice between occurrenceTiming | occurrenceDateTime | occurrencePeriod.</td>
   </tr>
     <tr>
     <td colspan="2">Comment</td>
