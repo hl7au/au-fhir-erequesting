@@ -167,9 +167,9 @@ Column attribute descriptions are as follows:
   </tr>
   <tr>
     <td colspan="2">Fasting status</td>
-    <td>TBD</td>
-    <td>TBD</td>
-    <td>Work is underway in AU eRequesting to map this element. Feedback is requested on the appropriateness of using ServiceRequest.note or an extension to support fasting status. Please comment by raising <a href="https://jira.hl7.org/projects/FHIR/issues">HL7 Jira Issues</a>.</td>
+    <td><a href="StructureDefinition-au-erequesting-servicerequest-path.html">AU eRequesting Pathology Request</a></td>
+    <td>ServiceRequest.extension:fastingPrecondition</td>
+    <td></td>
   </tr>
     <tr>
     <td colspan="2">Clinical indication</td>
