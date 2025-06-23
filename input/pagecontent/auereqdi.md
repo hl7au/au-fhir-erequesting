@@ -156,7 +156,7 @@ Column attribute descriptions are as follows:
     <td colspan="2">Billing guidance</td>
     <td><a href="StructureDefinition-au-erequesting-servicerequest-imag.html">AU eRequesting Imaging Request</a><br><br><a href="StructureDefinition-au-erequesting-coverage.html">AU eRequesting Coverage</a></td>
     <td>ServiceRequest.insurance</td>
-    <td></td>
+    <td>ServiceRequest.insurance references a Coverage resource.</td>
   </tr>
  <tr>
     <td rowspan="10">Pathology test request</td>
