@@ -82,7 +82,7 @@ Column attribute descriptions are as follows:
    <tr>
     <td colspan="2">Billing guidance</td>
     <td><a href="StructureDefinition-au-erequesting-diagnosticrequest.html">AU eRequesting Diagnostic Request</a><br><br><a href="StructureDefinition-au-erequesting-coverage.html">AU eRequesting Coverage</a></td>
-    <td>ServiceRequest.insurance</td>
+    <td>ServiceRequest.insurance<br><br>Coverage</td>
     <td>ServiceRequest.insurance references a Coverage resource.</td>
   </tr>
   <tr>
@@ -155,7 +155,7 @@ Column attribute descriptions are as follows:
     <tr>
     <td colspan="2">Billing guidance</td>
     <td><a href="StructureDefinition-au-erequesting-servicerequest-imag.html">AU eRequesting Imaging Request</a><br><br><a href="StructureDefinition-au-erequesting-coverage.html">AU eRequesting Coverage</a></td>
-    <td>ServiceRequest.insurance</td>
+    <td>ServiceRequest.insurance<br><br>Coverage</td>
     <td>ServiceRequest.insurance references a Coverage resource.</td>
   </tr>
  <tr>
