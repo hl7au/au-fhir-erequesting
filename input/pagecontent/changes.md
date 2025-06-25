@@ -78,6 +78,3 @@ This change log documents the significant updates and resolutions implemented fr
   - added supporting-info search parameter and _include support for ServiceRequest:supporting-info as MAY for the ServiceRequest resource type [FHIR-51005](https://jira.hl7.org/browse/FHIR-51005)
   - changed the conformance requirement from SHOULD to MAY for _include search parameters ServiceRequest:patient, ServiceRequest:requester and ServiceRequest:encounter [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976)
 - Updated AU eRequesting ValueSet resources to remove conformance to HL7 International <a href="http://hl7.org/fhir/StructureDefinition/shareablevalueset">ShareableValueSet</a> and instead claim conformance to <a href="https://healthterminologies.gov.au/fhir/StructureDefinition/composed-value-set-4"> NCTS Composed ValueSet</a> (<a href="https://jira.hl7.org/browse/FHIR-47149">FHIR-47149</a>).
-- Made the following changes in AU Variance Statement:
-  - added supporting-info search parameter to variance from AU Base
-  - added AU eRequesting Display Sequence and AU eRequesting Diagnostic Request extensions to variance from AU Base
