@@ -24,11 +24,11 @@ This implementation guide profiles the following resources that are not profiled
   - [AU eRequesting Task Diagnostic Request](StructureDefinition-au-erequesting-task-diagnosticrequest.html)
   - [AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html)
   - [AU eRequesting Task Communication Request](StructureDefinition-au-erequesting-task-communicationrequest.html)
-- Search Parameters
-  - [supporting-info](SearchParameter-au-erequesting-servicerequest-supporting-info.html) in [AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html)
-- Extensions
-  - [AU eRequesting Display Sequence](StructureDefinition-au-erequesting-displaysequence.html) in [AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html)
-  - [AU eRequesting Fasting Precondition](StructureDefinition-au-erequesting-fastingprecondition.html) in [AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html)
+- Extension
+  - [AU eRequesting Display Sequence](StructureDefinition-au-erequesting-displaysequence.html)
+  - [AU eRequesting Fasting Precondition](StructureDefinition-au-erequesting-fastingprecondition.html)
+- SearchParameter
+  - [supporting-info](SearchParameter-au-erequesting-servicerequest-supporting-info.html)
 
 ### Variance from AU Core
 This implementation guide has no variance (i.e. fully compliant) from AU Core FHIR Implementation Guide version 5.0.1-ci-build ([current](https://build.fhir.org/ig/hl7au/au-fhir-core/)).
