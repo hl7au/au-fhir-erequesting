@@ -1,6 +1,6 @@
 <div class="note-to-contributors" markdown="1">
 
-AU eRequesting R1 is in currently in development. We are working towards a Ballot for Comment August 2024.
+AU eRequesting R1 is in currently in development. We are working towards a Ballot for Working Standard August 2025.
 
 #### Join the AU eRequesting Technical Design Group
 
