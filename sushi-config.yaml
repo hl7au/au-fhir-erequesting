@@ -51,6 +51,8 @@ pages:
     title: Home
   conformance.md:
   guidance.md:
+    workflow-state.md:
+      title: AU eRequesting Workflow State Guidance
     sex-and-gender.md:
       title: Sex and Gender
     auereqdi.md:
