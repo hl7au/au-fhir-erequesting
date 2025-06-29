@@ -55,3 +55,8 @@ This implementation guide profiles the following resources that are not profiled
   - [AU eRequesting Task Diagnostic Request](StructureDefinition-au-erequesting-task-diagnosticrequest.html)
   - [AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html)
   - [AU eRequesting Task Communication Request](StructureDefinition-au-erequesting-task-communicationrequest.html)
+- Extension
+  - [AU eRequesting Display Sequence](StructureDefinition-au-erequesting-displaysequence.html)
+  - [AU eRequesting Fasting Precondition](StructureDefinition-au-erequesting-fastingprecondition.html)
+- SearchParameter
+  - [supporting-info](SearchParameter-au-erequesting-servicerequest-supporting-info.html)
