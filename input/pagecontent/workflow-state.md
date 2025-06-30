@@ -1,28 +1,31 @@
+In AU eRequesting, the ServiceRequest/Task pattern is used to separate the diagnostic request details from its fulfilment. The ServiceRequest represents the request initiated by the Placer, while the associated Task is used by the Filler to manage and communicate progress through the fulfilment workflow. The ServiceRequest.status reflects the Placer’s overall view of the diagnostic request's status, whereas the Task.status tracks and conveys the Filler’s fulfilment status, that is, the progress of fulfilling the diagnostic request.
+
+This page provides guidance on managing workflow states in AU eRequesting designed to promote interoperability, covering Task state transitions, the use of supporting elements statusReason and businessStatus to provide additional workflow context, and the relationship between Task and ServiceRequest status values.
+
 ### AU eRequesting Task Status Workflow
 
-AU eRequesting uses a ServiceRequest/Task pattern, where the Task tracks the fulfilment workflow of the ServiceRequest. This section describes how the AU eRequesting Task Diagnostic Request profile is used to track the fulfilment of pathology or imaging diagnostic requests in the context of community-based care in Australia. This guidance builds on the [Task state machine](https://hl7.org/fhir/R4/task.html#statemachine).
-
-#### Task State Transitions Overview
-
-The state (status) transitions described here reflect the lifecycle of a Task within AU eRequesting workflows for community-based pathology and imaging.<br>
-Not all states (specifically "received", "rejected", and "on-hold"), and not all transitions will be supported in all workflows. Implementers must determine which states and transitions are relevant to their clinical and administrative workflows.<br>
-Business rules that define which actors or system roles are permitted to modify a Task’s status, or to trigger such modifications, are outside the scope of this IG. However, guidance on the coordination between `ServiceRequest.status` and `Task.status` are discussed in the section [ServiceRequest.status Relationship to Task.status](#servicerequeststatus-relationship-to-taskstatus).
+This section describes how the AU eRequesting Task Diagnostic Request profile is used to track the fulfilment of pathology or imaging diagnostic requests in the context of community-based care in Australia. This guidance builds on the [Task state machine](https://hl7.org/fhir/R4/task.html#statemachine).
 
 #### Task Status Definitions
 
-The [AU eRequesting Task Status](https://build.fhir.org/ig/hl7au/au-fhir-erequesting/ValueSet-au-erequesting-task-status.html) value set specifies a constrained subset of Task status values used in the Australian eRequesting context, drawn from the required [TaskStatus](https://hl7.org/fhir/R4/valueset-task-status.html) value set.
+The [AU eRequesting Task Status](https://build.fhir.org/ig/hl7au/au-fhir-erequesting/ValueSet-au-erequesting-task-status.html) value set specifies a constrained subset of Task status values used in the Australian eRequesting context.
 
-#### Task State Transitions Diagram
+#### Task State Transitions
 
-<div style="background:white"> 
-  <img src="task-state-machine.svg" alt="AU eRequesting Task State Transitions Diagram" style="max-width:100%"/>
-</div>
-*Figure 1: AU eRequesting Task State Transitions Diagram*
-<br/>
+The Task state (status) transitions described here reflect the lifecycle of a Task within AU eRequesting workflows for community-based pathology and imaging. These transition states are intended to guide implementers in supporting consistent and coordinated workflow behaviour. While flexibility exists, supporting the suggested states and transitions will help promote interoperability and alignment across systems.
 
-#### Task State Transitions Table
+The business rules that define which actors or system roles may modify or trigger changes to a Task’s status are not currently considered within the scope of AU eRequesting Release 1. However, guidance on aligning ServiceRequest.status and Task.status is provided in [ServiceRequest.status Relationship to Task.status](#servicerequeststatus-relationship-to-taskstatus).
+
+
+<figure style="background:white;">
+  <img src="task-state-machine.svg" alt="AU eRequesting Task State Transitions Diagram" style="max-width:100%;"/>
+  <br/>
+  <figcaption><em>Figure 1: AU eRequesting Task State Transitions Diagram</em></figcaption>
+</figure>
+
 
 The Task State Transitions table below supplements the diagrammatic view above by providing code definitions, implementation guidance for AU eRequesting workflows, and lists the allowed state transitions.
+
 
 <table border="1">
   <thead>
@@ -32,10 +35,10 @@ The Task State Transitions table below supplements the diagrammatic view above b
       </th>
     </tr>
     <tr>
-      <th style="width:15%"; padding:6px;>From State</th>
-      <th style="width:25%"; padding:6px;>Code Definition</th>
-      <th style="width:45%"; padding:6px;>Implementation Guidance for AU eRequesting Workflows</th>
-      <th style="width:15%"; padding:6px;>Allowed Transitions To State(s)</th>
+      <th style="width:15%; padding:6px;">State</th>
+      <th style="width:25%; padding:6px;">Code Definition</th>
+      <th style="width:45%; padding:6px;">Implementation Guidance for AU eRequesting Workflows</th>
+      <th style="width:15%; padding:6px;">Allowed Transitions To State(s)</th>
     </tr>
   </thead>
   <tbody>
@@ -157,6 +160,7 @@ The Task State Transitions table below supplements the diagrammatic view above b
 #### Boundaries and Relationships of `Task.status` to `Task.statusReason` and `Task.businessStatus`
 
 - Use `Task.status` to represent the current state of the Task.
+- Use `Task.statusReason` to provide the reason for the current status of the Task, such as why it is "cancelled", "failed", or "rejected". Use `Task.businessStatus` to convey business-specific substates within a broader `Task.status` value to provide additional workflow context when appropriate.
 - When a `Task.status` is updated, the associated `Task.statusReason` and `Task.businessStatus` should also be reviewed and updated as appropriate to maintain alignment with the new status. If these elements are no longer relevant, they should be cleared to avoid propagating outdated or misleading information beyond the context in which they were originally set.
 
 ##### `Task.statusReason`
@@ -240,17 +244,17 @@ The Task State Transitions table below supplements the diagrammatic view above b
 
 #### AU eRequesting Task Group `Task.status` Relationship to AU eRequesting Task Diagnostic Request `Task.status`
 
-- The status of an AU eRequesting Task Group should reflect the lowest (most incomplete) status among its individual AU eRequesting Task Diagnostic Request(s); however, at present, there are no enforced rules.
+- The status of an AU eRequesting Task Group should reflect the most incomplete status among its individual AU eRequesting Task Diagnostic Request(s); however, at present, there are no enforced rules.
 
 ### AU eRequesting Diagnostic Request Status
 
-#### Request States Overview
+#### Request Status Definitions
+
+The [AU eRequesting RequestStatus](https://build.fhir.org/ig/hl7au/au-fhir-erequesting/ValueSet-au-erequesting-request-status.html) value set specifies a constrained subset of ServiceRequest status values used in the Australian eRequesting context.
+
+#### Request States
 
 In AU eRequesting workflows for community-based pathology and imaging, the state (status) of a AU eRequesting Diagnostic Request is managed by the Placer.
-
-#### Request States Table
-
-The [AU eRequesting RequestStatus](https://build.fhir.org/ig/hl7au/au-fhir-erequesting/ValueSet-au-erequesting-request-status.html) value set specifies a constrained subset of ServiceRequest status values used in the Australian eRequesting context, drawn from the required [RequestStatus](https://hl7.org/fhir/R4/valueset-request-status.html) value set.
 
 The AU eRequesting Diagnostic Request State table below provides code definitions, and implementation guidance for AU eRequesting workflows.
 
@@ -338,4 +342,4 @@ The AU eRequesting Diagnostic Request State table below provides code definition
 #### `ServiceRequest.status` Relationship to `Task.status`
 
 - While AU eRequesting Diagnostic Request and AU eRequesting Task Diagnostic Request are loosely coupled, in practice, any transition in `ServiceRequest.status` should be reflected in the corresponding `Task.status` to maintain alignment across resources involved in the workflow, where appropriate. Placer systems are responsible for managing this alignment, as status changes in the Diagnostic Request often imply a shift in the expectations on fulfilment of the Task. This coordination is a key aspect of closed-loop eRequesting. Failure to maintain it can result in workflow inconsistencies, such as orphaned tasks or misaligned expectations between Placers and Fillers.
-- Some typical business rules on these status relationships are outlined in the [Request States Table](#request-states-table) above under *"Implementation Guidance for AU eRequesting Workflows"*.
+- Some typical business rules on these status relationships are outlined in the [Request States](#request-states-table) table above.
