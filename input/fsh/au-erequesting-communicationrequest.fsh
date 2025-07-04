@@ -125,7 +125,7 @@ It is based on the [CommunicationRequest](https://hl7.org/fhir/R4/communicationr
 * recipient ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 * recipient ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 
-* sender 1.. MS
+* sender MS
 * sender only Reference(AUCoreOrganization)
   * ^short = "Organisation sending the communication"
 
