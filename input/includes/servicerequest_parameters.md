@@ -29,7 +29,7 @@
   </tr>
   <tr>
         <td>supporting-info</td>
-        <td><b>SHOULD</b></td>
+        <td><b>SHALL</b></td>
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
@@ -55,8 +55,8 @@
         <td>Modifies search results from a query using other search parameters by including the referenced focus resource</td>
   </tr>
   <tr>
-        <td>_include=ServiceRequest:encounter</td>
-        <td><b>SHOULD</b></td>
+        <td>_include=ServiceRequest:supporting-info</td>
+        <td><b>SHALL</b></td>
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
@@ -64,7 +64,7 @@
         <td>Modifies search results from a query using other search parameters by including the referenced focus resource</td>
   </tr>
   <tr>
-        <td>_include=ServiceRequest:supporting-info</td>
+        <td>_include=ServiceRequest:encounter</td>
         <td><b>SHOULD</b></td>
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
