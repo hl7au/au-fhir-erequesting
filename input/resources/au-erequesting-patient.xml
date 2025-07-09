@@ -520,7 +520,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="If the AU eRequesting Patient actor supports the PractitionerRole resource, the AU eRequesting Patient actor **SHALL** support the AU Core PractitionerRole profile, and the conformance expectations for the PractitionerRole resource.&#xa;&#xa;the AU eRequesting Patient actor **MAY** support the `_include` parameter for `PractitionerRole:practitioner` and `PractitionerRole:organization`"/>
+      <documentation value="If the AU eRequesting Patient actor supports the PractitionerRole resource, the AU eRequesting Patient actor **SHALL** support the AU Core PractitionerRole profile, and the conformance expectations for the PractitionerRole resource.&#xa;&#xa;The AU eRequesting Patient actor **MAY** support the `_include` parameter for `PractitionerRole:practitioner` and `PractitionerRole:organization`"/>
       <interaction>
 	      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 	        <valueCode value="SHOULD"/>
@@ -660,7 +660,7 @@
           <valueCode value="SHOULD"/>
         </extension>
       </supportedProfile>
-      <documentation value="The AU eRequesting Patient actor **SHALL** support the ServiceRequest resource, at least one AU eRequesting ServiceRequest profile, and the conformance expectations for the ServiceRequest resource.&#xa;&#xa;AU eRequesting Patient actor **MAY** support the `_include` parameter for `ServiceRequest:patient`, `ServiceRequest:requester`, `ServiceRequest:encounter` and `ServiceRequest:supporting-info`."/>
+      <documentation value="The AU eRequesting Patient actor **SHALL** support the ServiceRequest resource, at least one AU eRequesting ServiceRequest profile, and the conformance expectations for the ServiceRequest resource.&#xa;&#xa;The AU eRequesting Patient actor **MAY** support the `_include` parameter for `ServiceRequest:patient`, `ServiceRequest:requester`, `ServiceRequest:encounter` and `ServiceRequest:supporting-info`."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
