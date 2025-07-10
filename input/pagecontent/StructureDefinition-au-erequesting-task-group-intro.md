@@ -1,0 +1,2 @@
+### Profile specific implementation guidance
+- See the [AU eRequesting Workflow State Guidance](workflow-state.html) page for guidance on managing workflow states in AU eRequesting, where Tasks track the fulfilment of ServiceRequests. It covers Task state transitions, the use of supporting elements such as `Task.statusReason` and `Task.businessStatus` to provide additional workflow context, the relationship between Task and ServiceRequest statuses, and the role of AU eRequesting Task Group. This guidance is intended to promote interoperability within AU eRequesting.
