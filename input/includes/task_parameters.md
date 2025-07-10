@@ -134,7 +134,7 @@
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
         <td><code>reference</code></td>
-        <td>Modifies search results from a query using other search parameters by including the referenced focus resource</td>
+        <td></td>
   </tr>
   <tr>
         <td>_include=Task:owner</td>
@@ -143,7 +143,7 @@
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
         <td><code>reference</code></td>
-        <td>Modifies search results from a query using other search parameters by including the referenced focus resource</td>
+        <td></td>
   </tr>
   <tr>
         <td>_include=Task:patient</td>
@@ -152,7 +152,7 @@
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
         <td><code>reference</code></td>
-        <td>Modifies search results from a query using other search parameters by including the referenced focus resource</td>
+        <td></td>
   </tr>
   <tr>
         <td>_include=Task:requester</td>
@@ -161,7 +161,7 @@
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
         <td><code>reference</code></td>
-        <td>Modifies search results from a query using other search parameters by including the referenced focus resource</td>
+        <td></td>
   </tr>
  </tbody>
 </table>

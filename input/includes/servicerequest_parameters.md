@@ -43,7 +43,7 @@
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
         <td><code>reference</code></td>
-        <td>Modifies search results from a query using other search parameters by including the referenced focus resource</td>
+        <td></td>
   </tr>
   <tr>
         <td>_include=ServiceRequest:requester</td>
@@ -52,7 +52,7 @@
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
         <td><code>reference</code></td>
-        <td>Modifies search results from a query using other search parameters by including the referenced focus resource</td>
+        <td></td>
   </tr>
   <tr>
         <td>_include=ServiceRequest:encounter</td>
@@ -61,7 +61,7 @@
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
         <td><code>reference</code></td>
-        <td>Modifies search results from a query using other search parameters by including the referenced focus resource</td>
+        <td></td>
   </tr>
   <tr>
         <td>_include=ServiceRequest:supporting-info</td>
@@ -70,7 +70,7 @@
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
         <td><code>reference</code></td>
-        <td>Modifies search results from a query using other search parameters by including the referenced focus resource</td>
+        <td></td>
   </tr>
  </tbody>
 </table>
