@@ -1,4 +1,4 @@
-ValueSet: AUeRequestingCoverageTypeAndSelf-PayCodes
+ValueSet: AUeRequestingCoverageTypeAndSelfPayCodes
 Id: au-erequesting-coverage-type
 Title: "AU eRequesting Coverage Type and Self-Pay Codes"
 Description: "Coverage type and self-pay codes typically used in the Australian eRequesting context."

@@ -7,12 +7,12 @@ This change log documents the significant updates and resolutions implemented fr
 
 #### Changes in this version
 - New profiles: 
-  - AU eRequesting CommunicationRequest ([FHIR-49807](https://jira.hl7.org/browse/FHIR-49807), [FHIR-50230](https://jira.hl7.org/browse/FHIR-50230), [FHIR-50229](https://jira.hl7.org/browse/FHIR-50229))
+  - AU eRequesting CommunicationRequest ([FHIR-49807](https://jira.hl7.org/browse/FHIR-49807), [FHIR-50230](https://jira.hl7.org/browse/FHIR-50230), [FHIR-50229](https://jira.hl7.org/browse/FHIR-50229), [FHIR-51145](https://jira.hl7.org/browse/FHIR-51145))
   - AU eRequesting CommunicationRequest CopyTo ([FHIR-49807](https://jira.hl7.org/browse/FHIR-49807))
   - AU eRequesting CommunicationRequest Patient ([FHIR-50230](https://jira.hl7.org/browse/FHIR-50230), [FHIR-50948](https://jira.hl7.org/browse/FHIR-50948))
   - AU eRequesting CommunicationRequest Urgent Provider ([FHIR-50229](https://jira.hl7.org/browse/FHIR-50229))
   - AU eRequesting Task ([FHIR-46947](https://jira.hl7.org/browse/FHIR-46947), [FHIR-46950](https://jira.hl7.org/browse/FHIR-46950), [FHIR-46956](https://jira.hl7.org/browse/FHIR-46956), [FHIR-46958](https://jira.hl7.org/browse/FHIR-46958), [FHIR-46959](https://jira.hl7.org/browse/FHIR-46959), [FHIR-47081](https://jira.hl7.org/browse/FHIR-47081), [FHIR-47082](https://jira.hl7.org/browse/FHIR-47082), [FHIR-47083](https://jira.hl7.org/browse/FHIR-47083), [FHIR-47084](https://jira.hl7.org/browse/FHIR-47084), [FHIR-47086](https://jira.hl7.org/browse/FHIR-47086), [FHIR-47102](https://jira.hl7.org/browse/FHIR-47102), [FHIR-49717](https://jira.hl7.org/browse/FHIR-49717)), [FHIR-50899](https://jira.hl7.org/browse/FHIR-50899))
-  - AU eRequesting MHR Consent Withdrawal ([FHIR-49806](https://jira.hl7.org/browse/FHIR-49806))
+  - AU eRequesting MHR Consent Withdrawal ([FHIR-49806](https://jira.hl7.org/browse/FHIR-49806), [FHIR-51096](https://jira.hl7.org/browse/FHIR-51096), [FHIR-50978](https://jira.hl7.org/browse/FHIR-50978))
   - AU eRequesting Task Diagnostic Request ([FHIR-49718](https://jira.hl7.org/browse/FHIR-49718))
   - AU eRequesting Task Group ([FHIR-49719](https://jira.hl7.org/browse/FHIR-49719))
   - AU eRequesting Task Communication Request ([FHIR-50231](https://jira.hl7.org/browse/FHIR-50231))  
@@ -50,7 +50,7 @@ This change log documents the significant updates and resolutions implemented fr
   - added AU eRequesting Fasting Precondition extension as Must Support element with cardinality 0..1 [FHIR-49917](https://jira.hl7.org/browse/FHIR-49917)
   - added Must Support to ServiceRequest.occurrence [FHIR-49918](https://jira.hl7.org/browse/FHIR-49918)
   - added Must Support to ServiceRequest.quantity [FHIR-49919](https://jira.hl7.org/browse/FHIR-49919)
-  - added pregnancy status slice to ServiceRequest.supportingInfo referencing [Observation Pregnancy - Status (IPS)](https://build.fhir.org/ig/HL7/fhir-ips/StructureDefinition-Observation-pregnancy-status-uv-ips.html) [FHIR-47006](https://jira.hl7.org/browse/FHIR-47006)
+  - added pregnancy status slice to ServiceRequest.supportingInfo referencing [Observation Pregnancy - Status (IPS)](https://build.fhir.org/ig/HL7/fhir-ips/StructureDefinition-Observation-pregnancy-status-uv-ips.html) [FHIR-47006](https://jira.hl7.org/browse/FHIR-47006), [FHIR-51252](https://jira.hl7.org/browse/FHIR-51252)
   - added clinical context slice to ServiceRequest.supportingInfo referencing [AU eRequesting Clinical Context DocumentReference](StructureDefinition-au-erequesting-clinicalcontext-documentreference.html) [FHIR-50956](https://jira.hl7.org/browse/FHIR-50956), [FHIR-50957](https://jira.hl7.org/browse/FHIR-50957)
   - changed base profile from AU Base Diagnostic Request (deprecated) to AU Base Service Request [FHIR-50147](https://jira.hl7.org/browse/FHIR-50147)
   - changed the obligation requirement for AU eRequesting Filler from SHALL:no-error to SHALL:handle for the following Must Support elements: ServiceRequest.identifier, ServiceRequest.intent, ServiceRequest.insurance, ServiceRequest.encounter and ServiceRequest.reasonCode [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976)
