@@ -168,14 +168,14 @@ The AU eRequesting Task State Transitions table below supplements the diagrammat
 - When updating the `Task.status`, the `Task.statusReason` and `Task.businessStatus` should also be reviewed and updated as appropriate to ensure alignment with the new status. If previously set values are no longer relevant, they should be cleared to avoid propagating outdated or misleading information beyond the context in which they were originally set.
 - At present, there are no enforced rules linking `Task.businessStatus` code values to `Task.status` code values. However, the expected relationships are outlined in the table below to guide implementation. Implementers are encouraged to adopt these patterns to support interoperability, although conformance is not currently enforced. This mapping may be formalised through invariants in future releases of this IG.
 
-##### Table: AU eRequesting Task Business Status Codes and Their Relationship to Task Status Codes
+The following table outlines the AU eRequesting Task Business Status codes and their relationship to Task Status codes.
 
 <table border="1">
   <thead>
     <tr>
       <th style="width:10%; padding:6px;">Context</th>
       <th style="width:25%; padding:6px;">AU eRequesting Task Business Status Codes for <code>Task.businessStatus</code></th>
-      <th style="width:40%; padding:6px;">Definition</th>
+      <th style="width:40%; padding:6px;">AU eRequesting Task Business Status Code Definitions</th>
       <th style="width:25%; padding:6px;">Relationship to Task Status Codes for <code>Task.status</code></th>
     </tr>
   </thead>
