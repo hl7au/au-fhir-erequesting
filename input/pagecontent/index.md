@@ -45,7 +45,7 @@ Full use case descriptions are available in [AU eRequesting Use Cases](https://b
 #### Out-of-Scope Scenarios
 
 The following diagnostic request scenarios are outside the scope of this release:
-- Handling of diagnostic results
+- Handling of diagnostic reports
 - Inpatient and inter-hospital workflows
 - Sendaway workflows where specimens are referred to another laboratory
 - Specimen collection processes
