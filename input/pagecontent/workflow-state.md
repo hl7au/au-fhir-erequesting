@@ -16,8 +16,8 @@ The [AU eRequesting Task Status](ValueSet-au-erequesting-task-status.html) value
 
 The Task state (status) transitions described here reflect the lifecycle of a Task within AU eRequesting workflows for community-based pathology and imaging. These transition states are intended to guide implementers in supporting consistent and coordinated workflow behaviour. While implementation flexibility can exist to meet business needs and constraints, supporting the suggested states and transitions will help promote interoperability and alignment across systems.
 
-The business rules that define which actors or system roles may modify or trigger changes to a Task’s status are not currently considered within the scope of AU eRequesting Release 1. However, guidance on aligning ServiceRequest.status and Task.status is provided in [ServiceRequest.status Relationship to Task.status](#servicerequeststatus-relationship-to-taskstatus).
-
+The business rules that define which actors or system roles may modify or trigger changes to a Task’s status are not currently considered within the scope of AU eRequesting Release 1. However, guidance on aligning `ServiceRequest.status` and `Task.status` is provided in [Relationship between `ServiceRequest.status` and `Task.status`](#relationship-between-servicerequeststatus-and-taskstatus).
+<br/>
 
 <figure style="background:white;">
   <img src="task-state-machine.svg" alt="AU eRequesting Task State Transitions Diagram" style="max-width:100%;"/>
@@ -25,6 +25,7 @@ The business rules that define which actors or system roles may modify or trigge
   <figcaption><em>Figure 1: AU eRequesting Task State Transitions Diagram</em></figcaption>
 </figure>
 <br/>
+
 
 The AU eRequesting Task State Transitions table below supplements the diagrammatic view above by providing code definitions, implementation guidance for AU eRequesting workflows, and lists the allowed state transitions.
 
@@ -155,6 +156,7 @@ The AU eRequesting Task State Transitions table below supplements the diagrammat
     </tr>
   </tbody>
 </table>
+<br/> 
 
 
 #### Use and relationship between `Task.status`, `Task.statusReason` and `Task.businessStatus`
@@ -236,9 +238,11 @@ The following table outlines the AU eRequesting Task Business Status codes and t
     </tr>
   </tbody>
 </table>
+<br/> 
+
 
 #### Relationship between AU eRequesting Task Group `Task.status` and AU eRequesting Task Diagnostic Request `Task.status`
-- The group task serves as the entry point for Fillers to discover and manage fulfilment task(s) for the same order, enabling retrieval of their focus diagnostic request and related resources. For this reason, the status of the group task is particularly important — changes to other resources, such as ServiceRequest.status, cannot be reliably acted on by the Filler unless those changes are also reflected in the status of the group task.
+- The group task is considered a central component of the AU eRequesting data architecture for Fillers to discover and manage fulfilment Task(s) for the same order, and to retrieve their focus diagnostic request and related resources. For this reason, the status of the group task is particularly important — changes to other resources, such as ServiceRequest.status, cannot be reliably acted on by the Filler unless those changes are also reflected in the status of the group task.
 - Hence, the status of an AU eRequesting Task Group should reflect the most appropriate status among its individual AU eRequesting Task Diagnostic Request(s); however, at present, there are no enforced rules.
 
 ### AU eRequesting Diagnostic Request Status
@@ -339,6 +343,8 @@ The AU eRequesting Request States for ServiceRequest.status table below provides
     </tr>
   </tbody>
 </table>
+<br/> 
+
 
 #### Use and relationship between `ServiceRequest.status` and `ServiceRequest.extension:statusReason`
 
