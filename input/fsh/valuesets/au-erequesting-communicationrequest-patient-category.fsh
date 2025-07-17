@@ -5,10 +5,10 @@ Description: "Category values for patient communication used in the Australian e
 
 * ^meta.profile[+] = "https://healthterminologies.gov.au/fhir/StructureDefinition/composed-value-set-4"
 * ^version = "1.0.0"
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * ^date = "2025-02-04"
 * ^publisher = "HL7 Australia"
-* ^status = #draft 
+* ^status = #active 
 * ^experimental = false
 * $communication-category#reminder
 * $communication-category#instruction

@@ -4,9 +4,9 @@ Id: au-erequesting-coverage
 Title: "AU eRequesting Coverage"
 Description: "This profile sets minimum expectations for a Coverage resource that is used to record, search, and fetch information about insurance or medical plan or a payment agreement for a patient. It is based on the [AU Base Coverage](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-coverage.html) and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the Coverage when conforming to this profile."
 
-* ^status = #draft
+* ^status = #active
 
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 
 * type 1..1 MS
 * type ^binding.extension[http://hl7.org/fhir/tools/StructureDefinition/additional-binding][0].extension[key].valueId = "adb-cov-type-min"
