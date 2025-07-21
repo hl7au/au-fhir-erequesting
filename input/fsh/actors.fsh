@@ -4,7 +4,8 @@ Usage: #definition
 * url = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * name = "AUeRequestingPlacer"
 * title = "AU eRequesting Placer"
-* status = #draft
+* status = #active
+* extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * description = "The AU eRequesting Placer is a system that is responsible for creating diagnostic requests."
 * type = #system
 * documentation = "AU eRequesting Placer (client):&#xa;&#xa;
@@ -18,7 +19,8 @@ Usage: #definition
 * url = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
 * name = "AUeRequestingFiller"
 * title = "AU eRequesting Filler"
-* status = #draft
+* status = #active
+* extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * description = "The AU eRequesting Filler is a system that is responsible for finding and retrieving diagnostic request fulfilments so that service providers can fulfil them."
 * type = #system
 * documentation = "An AU eRequesting Filler (client):&#xa;&#xa;
@@ -32,7 +34,8 @@ Usage: #definition
 * url = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 * name = "AUeRequestingPatient"
 * title = "AU eRequesting Patient"
-* status = #draft
+* status = #active
+* extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * description = "A system that allows patients or their representatives to view diagnostic requests and fulfilment of diagnostic requests."
 * type = #system
 * documentation = "An AU eRequesting Patient (client):&#xa;&#xa;
@@ -46,7 +49,8 @@ Usage: #definition
 * url = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
 * name = "AUeRequestingServer"
 * title = "AU eRequesting Server"
-* status = #draft
+* status = #active
+* extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * description = "The eRequesting Server is a system that accepts diagnostic service requests and makes diagnostic service requests accessible."
 * type = #system
 * documentation = "An AU eRequesting Server (server):&#xa;&#xa;

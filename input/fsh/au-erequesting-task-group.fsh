@@ -6,8 +6,8 @@ Description: "This profile sets minimum expectations for a Task resource that is
 
 * obeys au-ereq-taskgr-01
 
-* ^status = #draft
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
+* ^status = #active
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 
 * meta.tag[eRequestingFulfilmentTask] = $tasktag#fulfilment-task-group
 

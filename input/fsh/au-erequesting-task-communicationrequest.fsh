@@ -7,8 +7,8 @@ It is based on the [AU eRequesting Task](StructureDefinition-au-erequesting-task
 
 * obeys au-ereq-taskcr-01
 
-* ^status = #draft
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
+* ^status = #active
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 
 * meta.tag[eRequestingFulfilmentTask] = $tasktag#fulfilment-task
 

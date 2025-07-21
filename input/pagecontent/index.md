@@ -87,6 +87,6 @@ This guide is the product of collaborative work undertaken with participants fro
 * [HL7 Australia FHIR Working Group](https://confluence.hl7.org/display/HAFWG/HL7+Australia+FHIR+Work+Group+Home)
 * Australian FHIR Implementers Community
 
-Primary Editors: Brett Esler, Danielle Tavares-Rixon, Dusica Bojicic.
+Primary Editors: Brett Esler, Jaymee Murdoch, Michael Osborne.
 
 
