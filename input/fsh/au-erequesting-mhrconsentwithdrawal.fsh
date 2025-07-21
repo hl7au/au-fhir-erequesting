@@ -4,8 +4,8 @@ Id: au-erequesting-mhrconsentwithdrawal
 Title: "AU eRequesting MHR Consent Withdrawal"
 Description: "This profile sets minimum expectations for a Consent resource to record, search, and fetch a My Health Record (MHR) consent withdrawal. It represents a patient's withdrawal of consent to upload to MHR in accordance with paragraph 45(d) of the [My Health Records Act 2012](https://www.legislation.gov.au/C2012A00063). It is based on the [Consent](https://hl7.org/fhir/R4/consent.html) and identifies the additional mandatory core elements, extensions, vocabularies and value sets that SHALL be present in the Consent when conforming to this profile."
 
-* ^status = #draft
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
+* ^status = #active
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 
 * status MS
 * status = #active (exactly)

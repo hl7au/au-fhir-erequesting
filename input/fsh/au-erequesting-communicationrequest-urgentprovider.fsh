@@ -5,8 +5,8 @@ Title: "AU eRequesting CommunicationRequest Urgent Provider"
 Description: "This profile sets the minimum expectations for a CommunicationRequest resource used to represent a request for direct communication from a diagnostic provider (Filler) to a clinical provider for the purpose of providing urgent results. This communication is not a substitute for the formal diagnostic report, but is intended to provide timely notification of a result, usually by phone.  
 It is based on the [AU eRequesting CommunicationRequest](StructureDefinition-au-erequesting-communicationrequest.html) and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the CommunicationRequest when conforming to this profile."
 
-* ^status = #draft
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
+* ^status = #active
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 
 * category 1..1
   * coding 1..1

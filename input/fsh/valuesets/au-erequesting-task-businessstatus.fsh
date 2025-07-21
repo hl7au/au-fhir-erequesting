@@ -7,8 +7,8 @@ Description: "Task business status values used in the Australian eRequesting con
 * ^version = "1.0.0"
 * ^identifier.value = "urn:oid:2.16.840.1.113883.2.3.4.2.4.39"
 * ^identifier.system = $oid
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
-* ^status = #draft
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
+* ^status = #active
 * ^experimental = false
 * ^date = "2025-05-28"
 * ^publisher = "HL7 Australia"
