@@ -260,7 +260,7 @@ Column attribute descriptions are as follows:
   </tr>
   <tr>
     <td>Pregnancy summary (AUCDI R3+ backlog)</td>
-    <td colspan="2">TBD</td>
+    <td>TBD</td>
     <td><a href="StructureDefinition-au-erequesting-diagnosticrequest.html">AU eRequesting Diagnostic Request</a></td>
     <td>ServiceRequest.supportingInfo:pregnancyStatus</td>
     <td>Proposed to correspond to a future AUCDI pregnancy summary concept (in the AUCDI R3+ backlog), which is expected to describe pregnancy status within a single pregnancy and potentially include more granular states to encompass a continuum of pregnancy states. In AU eRequesting R1, the pregnancy status is constrained to Pregnant only, as advised by AUCDI authors, to ensure future compatibility.</td>
