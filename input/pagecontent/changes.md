@@ -67,6 +67,7 @@ This change log documents the significant updates and resolutions implemented fr
   - added _include support for PractitionerRole:practitioner and PractitionerRole:organization as SHALL for the PractitionerRole resource type [FHIR-48934](https://jira.hl7.org/browse/FHIR-48934), [FHIR-47145](https://jira.hl7.org/browse/FHIR-47145)
   - added the following Task search parameters as SHALL: group-identifier, owner, patient, requester, focus, status, _lastUpdated, patient+status, owner+status, requester+status, _lastUpdated+status+owner, patient.identifier, owner.identifier, requester.identifier, Task:patient, Task:requester, Task:owner and Task:focus [FHIR-48915](https://jira.hl7.org/browse/FHIR-48915)
   - added supporting-info search parameter and _include support for ServiceRequest:supporting-info as SHOULD for the ServiceRequest resource type [FHIR-51005](https://jira.hl7.org/browse/FHIR-51005)
+  - changed supporting-info search parameter and _include support for ServiceRequest:supporting-info from SHOULD to SHALL for the ServiceRequest resource type [FHIR-51253](https://jira.hl7.org/browse/FHIR-51253)
   - changed the resource conformance requirement from SHOULD to SHALL for the following resource types: Coverage, Encounter, Organization, Practitioner and PractitionerRole [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976)
 - Made the following changes in AU eRequesting Placer CapabilityStatement:
   - added supporting-info search parameter and _include support for ServiceRequest:supporting-info as MAY for the ServiceRequest resource type [FHIR-51005](https://jira.hl7.org/browse/FHIR-51005)
@@ -74,6 +75,7 @@ This change log documents the significant updates and resolutions implemented fr
 - Made the following changes in AU eRequesting Filler CapabilityStatement:
   - added supporting-info search parameter and _include support for ServiceRequest:supporting-info as MAY for the ServiceRequest resource type [FHIR-51005](https://jira.hl7.org/browse/FHIR-51005)
   - changed the conformance requirement from SHOULD to MAY for _include search parameters ServiceRequest:patient, ServiceRequest:requester and ServiceRequest:encounter [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976)
+  - added update interaction as SHALL for Task resource type [FHIR-51406](https://jira.hl7.org/browse/FHIR-51406)
 - Made the following changes in AU eRequesting Patient CapabilityStatement:
   - added supporting-info search parameter and _include support for ServiceRequest:supporting-info as MAY for the ServiceRequest resource type [FHIR-51005](https://jira.hl7.org/browse/FHIR-51005)
   - changed the conformance requirement from SHOULD to MAY for _include search parameters ServiceRequest:patient, ServiceRequest:requester and ServiceRequest:encounter [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976)
