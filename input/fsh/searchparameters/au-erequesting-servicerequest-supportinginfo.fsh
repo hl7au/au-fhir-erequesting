@@ -3,8 +3,6 @@ InstanceOf: SearchParameter
 Usage: #definition
 * extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * extension[=].valueInteger = 1
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
-* extension[=].valueCode = #trial-use
 * url = "http://hl7.org.au/fhir/ereq/SearchParameter/au-erequesting-servicerequest-supporting-info"
 * name = "AUeRequestingServiceRequestSupportingInfo"
 * status = #active
