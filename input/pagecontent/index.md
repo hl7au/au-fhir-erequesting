@@ -23,7 +23,7 @@ The [Australian eRequesting Data for Interoperability (AUeReqDI)](https://sparke
 
 The scope of AU eRequesting Release 1 is the support of pathology and medical imaging requests in community-based care provision.
 
-#### In-Scope Scenarios
+#### In-scope scenarios
 
 The following diagnostic request scenarios are in scope for Release 1:
 
@@ -42,7 +42,7 @@ The following diagnostic request scenarios are in scope for Release 1:
 
 Full use case descriptions are available in [AU eRequesting Use Cases](https://build.fhir.org/ig/hl7au/au-fhir-erequesting/use-cases.html)
 
-#### Out-of-Scope Scenarios
+#### Out-of-scope scenarios
 
 The following diagnostic request scenarios are outside the scope of this release:
 - Handling of diagnostic reports
@@ -51,7 +51,7 @@ The following diagnostic request scenarios are outside the scope of this release
 - Specimen collection processes
 - Appointment scheduling and booking
 
-#### Technical Scope
+#### Technical scope
 
 AU eRequesting Release 1 defines the foundational FHIR data model and RESTful API interactions for exchanging diagnostic service requests.
 
@@ -60,7 +60,7 @@ This includes:
 - System actors that represent key system roles within diagnostic requesting workflows  
 - Capability statements that specify expected FHIR interactions, supported profiles, and search capabilities for each actor  
 
-#### Aspects Not Included in This Release
+#### Aspects not included in this release
 
 As Release 1 focuses on defining a foundational FHIR data model and RESTful API interactions, several aspects are intentionally out of scope. This approach supports alignment and adoption by emerging diagnostic requesting solutions, while maintaining flexibility to respond to evolving national policy directions and infrastructure considerations in future releases or downstream implementation guides.
 
