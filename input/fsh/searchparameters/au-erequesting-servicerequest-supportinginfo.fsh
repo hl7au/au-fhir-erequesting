@@ -2,9 +2,7 @@ Instance: au-erequesting-servicerequest-supporting-info
 InstanceOf: SearchParameter
 Usage: #definition
 * extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
-* extension[=].valueInteger = 0
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
-* extension[=].valueCode = #trial-use
+* extension[=].valueInteger = 1
 * url = "http://hl7.org.au/fhir/ereq/SearchParameter/au-erequesting-servicerequest-supporting-info"
 * name = "AUeRequestingServiceRequestSupportingInfo"
 * status = #active

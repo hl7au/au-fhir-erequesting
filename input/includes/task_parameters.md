@@ -26,7 +26,7 @@
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
         <td><code>date</code></td>
-        <td>The Server <b>SHALL</b> support <code>multipleAnd</code>. The Server <b>SHALL</b> support search comparators <code>gt</code>, <code>lt</code>, <code>ge</code>, <code>le</code>.<br/> The Placer, Filler and AU eRequesting Patient actors <b>MAY</b> support <code>multipleAnd</code>.<br/> The Placer, Filler and AU eRequesting Patient actors <b>MAY</b> support search comparators <code>gt</code>, <code>lt</code>, <code>ge</code>, <code>le</code>.</td>
+        <td>The Server <b>SHALL</b> support <code>multipleAnd</code>. The Server <b>SHALL</b> support search comparators <code>gt</code>, <code>lt</code>, <code>ge</code>, <code>le</code>.<br/> The AU eRequesting Placer, Filler and Patient actors <b>MAY</b> support <code>multipleAnd</code>.<br/> The AU eRequesting Placer, Filler and Patient actors <b>MAY</b> support search comparators <code>gt</code>, <code>lt</code>, <code>ge</code>, <code>le</code>.</td>
   </tr>
   <tr>
         <td>_lastUpdated+status+owner</td>
@@ -125,7 +125,7 @@
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
         <td><code>token</code></td>
- 	 <td>The Server <b>SHALL</b> support <code>multipleOr</code>.<br/> The Placer, Filler and AU eRequesting Patient actors <b>MAY</b> support <code>multipleOr</code>.</td>
+ 	 <td>The Server <b>SHALL</b> support <code>multipleOr</code>.<br/> The AU eRequesting Placer, Filler and Patient actors <b>MAY</b> support <code>multipleOr</code>.</td>
   </tr>
   <tr>
         <td>_include=Task:focus</td>
@@ -134,7 +134,7 @@
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
         <td><code>reference</code></td>
-        <td>Modifies search results from a query using other search parameters by including the referenced focus resource</td>
+        <td></td>
   </tr>
   <tr>
         <td>_include=Task:owner</td>
@@ -143,7 +143,7 @@
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
         <td><code>reference</code></td>
-        <td>Modifies search results from a query using other search parameters by including the referenced focus resource</td>
+        <td></td>
   </tr>
   <tr>
         <td>_include=Task:patient</td>
@@ -152,7 +152,7 @@
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
         <td><code>reference</code></td>
-        <td>Modifies search results from a query using other search parameters by including the referenced focus resource</td>
+        <td></td>
   </tr>
   <tr>
         <td>_include=Task:requester</td>
@@ -161,7 +161,7 @@
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
         <td><code>reference</code></td>
-        <td>Modifies search results from a query using other search parameters by including the referenced focus resource</td>
+        <td></td>
   </tr>
  </tbody>
 </table>
