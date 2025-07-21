@@ -7,14 +7,14 @@ Description: "Business status codes for a Task used in the Australian context."
 * ^version = "1.0.0"
 * ^identifier.value = "urn:oid:2.16.840.1.113883.2.3.4.1.4.34"
 * ^identifier.system = $oid
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * ^publisher = "HL7 Australia"
 * ^contact.name = "HL7 Australia eRequesting Technical Design Group"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://confluence.hl7.org/display/HAFWG/HL7+Australia+-+AU+eRequesting+Technical+Design+Group+Home"
 * ^contact.telecom.use = #work
 * ^date = "2025-05-28"
-* ^status = #draft
+* ^status = #active
 * ^caseSensitive = true
 * ^experimental = false
 * ^versionNeeded = true
