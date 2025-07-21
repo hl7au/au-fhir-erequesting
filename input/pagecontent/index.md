@@ -24,19 +24,19 @@ The [Australian eRequesting Data for Interoperability (AUeReqDI)](https://sparke
 
 ### AU eRequesting FHIR RESTful interactions
 
-The RESTful interaction requirements for AU eRequesting actors, such as read and search operations, are outlined in the AU eRequesting CapabilityStatements. AU eRequesting Actors and their respective CapabilityStatements are defined in [Actors and Capabilities](capability-statements.html).
+AU eRequesting defines four system actors involved in the exchange of diagnostic requests: the AU eRequesting Placer, Filler, Patient and Server actors. The [Actors and Capabilities](capability-statements.html) page provides a summary of these actors and includes links to their definitions and CapabilityStatements. Each CapabilityStatement outlines the RESTful interactions supported by that actor, including operations such as `create`, `update`, `read` and `search`.
 
-The diagram below illustrates the interactions between the various actors:
+The diagram below shows typical FHIR RESTful interactions between these AU eRequesting actors:
 
 <div> 
-  <img src="au-erequesting-actor-interactions.svg" alt="FHIR RESTful read interactions" style="width:80%"/>
+  <img src="au-erequesting-actor-interactions.png" alt="FHIR RESTful read interactions" style="width:80%"/>
 </div>
 *Figure 1: FHIR RESTful interactions*
 <br/>
 
-*Note*: AU eRequesting Actor interactions will transition with the introduction of the Task resource, which will become central to fulfilment.
+*Note*: Diagnostic Request refers to the ServiceRequest and related FHIR resources that provide context. Providing the Diagnostic Request's fulfilment context is the FHIR Task resource.
 
-### AU eRequesting typical sequence
+### AU eRequesting typical sequence - DIAGRAM TO BE UPDATED. TEXT?
 
 The AU eRequesting Placer actor can create and update ServiceRequest details by calling the AU eRequesting Server actor.
 
@@ -62,6 +62,8 @@ This guide is divided into several pages which are listed at the top of each pag
 - [Home](index.html): This page provides the introduction and scope for this guide.
 - [Conformance](conformance.html): This page describes the set of rules to claim conformance to this guide
 - [Guidance](guidance.html): These pages list the guidance for this guide. 
+  - [General Guidance](general-guidance.html): This page provides guidance on using the profiles defined in this guide.
+  - [AU eRequesting Workflow State Guidance](workflow-state.html): This page provides guidance on managing workflow states in AU eRequesting, where Tasks track the fulfilment of ServiceRequests, including the relationship between their respective status values.
   - [Sex and Gender](sex-and-gender.html): This page provides guidance on the representation of sex, gender, and related concepts.
   - [AU eRequesting Data for Interoperability Mappings](auereqdi.html): This page maps AUeReqDI data groups and elements to FHIR artefacts in AU eRequesting.
   - [Relationships to Other Specifications](relationship.html): This page provides guidance on the relationship between AU eRequesting, AUeReqDI, and other implementation guides.

@@ -8,6 +8,20 @@ With AUeReqDI defining clinical data requirements and FHIR AU eRequesting provid
 
 Updates to AU eRequesting and AU Core depend upon community input and we encourage our audience to submit questions and feedback on implementation guides by clicking on the Propose a change link in the footer of every page.  We encourage requesting any necessary clarifications to AUeReqDI or AUCDI through through the respective process that helps inform future updates to FHIR AU eRequesting and AU Core. 
 
+### AU eRequesting, AUeReqDI and AUCDI versions
+
+AU eRequesting, AUeReqDI and AUCDI are updated periodically. AUeReqDI R1 contains data groups required to facilitate the exchange of a pathology test and medical imaging request, and reuses data groups from AUCDI where relevant.
+
+AUeReqDI R1 is aligned with AUCDI R1.
+
+AUCDI R2 was published after AUeReqDI R1, introducing additional and expanded data groups to support different use cases. These are not reflected in AUeReqDI R1.
+
+The following table shows the version alignment between AU eRequesting, AUeReqDI and AUCDI:
+|AU eRequesting Version|AUeReqDI Version|AUCDI Version|
+|--|--|--|
+|1.0.0|R1|R1|
+
+
 
 ### AUeReqDI mappings into AU eRequesting
 
@@ -243,6 +257,13 @@ Column attribute descriptions are as follows:
     <td>TBD</td>
     <td>TBD</td>
     <td>Work is underway in AU eRequesting to map this element. Feedback is requested on the appropriateness of using Provenance or an extension to support last updated. Please comment by raising <a href="https://jira.hl7.org/projects/FHIR/issues">HL7 Jira Issues</a>.</td>
+  </tr>
+  <tr>
+    <td>Pregnancy summary (AUCDI R3+ backlog)</td>
+    <td colspan="2">TBD</td>
+    <td><a href="StructureDefinition-au-erequesting-diagnosticrequest.html">AU eRequesting Diagnostic Request</a></td>
+    <td>ServiceRequest.supportingInfo:pregnancyStatus</td>
+    <td>Proposed to correspond to a future AUCDI pregnancy summary concept (in the AUCDI R3+ backlog), which is expected to describe pregnancy status within a single pregnancy and potentially include more granular states to encompass a continuum of pregnancy states. In AU eRequesting R1, the pregnancy status is constrained to Pregnant only, as advised by AUCDI authors, to ensure future compatibility.</td>
   </tr>
 </tbody>
 <thead>
