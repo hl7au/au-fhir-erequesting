@@ -4,11 +4,11 @@ Id: au-erequesting-diagnosticrequest
 Title: "AU eRequesting Diagnostic Request"
 Description: "This profile sets minimum expectations for a ServiceRequest resource that is used to record, search, and fetch information about diagnostic requests for a patient. It is based on the [AU Base ServiceRequest](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-servicerequest.html) and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the ServiceRequest when conforming to this profile."
 
-* ^status = #draft
+* ^status = #active
 
 * ^abstract = true
 
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 
 * extension contains http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse named sexParameterForClinicalUse 0..1 MS
 * extension[sexParameterForClinicalUse] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate-if-known
@@ -341,6 +341,9 @@ Id: au-erequesting-displaysequence
 Title: "AU eRequesting Display Sequence"
 Description: "This profile defines the minimum expectations for representing display sequence in the AU eRequesting context.  The display sequence is an integer assigned to an individual test or service in a ServiceRequest that matches the sequence as seen on a paper request form. The ability to sort based on display sequence more easily allows for reconciliation of paper and digital requesting data by the filler, especially for collection centre staff within a pathology collection centre."
 * ^status = #draft
+Description: "This extension applies to the AU eRequesting Diagnostic Request profile and any derived ServiceRequest profiles. The display sequence is an integer assigned to an individual test or service in a ServiceRequest that matches the sequence as seen on a paper request form. The ability to sort on sequenceNumber more easily allows for reconciliation of paper and digital requesting data by the filler, especially for collection centre staff within a pathology collection centre."
+* ^status = #active
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * ^context.type = #element
 * ^context.expression = "ServiceRequest"
 * . ^short = "Display sequence"
@@ -353,6 +356,9 @@ Id: au-erequesting-fastingprecondition
 Title: "AU eRequesting Fasting Precondition"
 Description: "This profile defines the minimum expectations for representing fasting precondition in the AU eRequesting context. The fasting precondition is a code that indicates the recommendation related to the fasting status of the patient as a precondition to the diagnostic procedure or test being requested."
 * ^status = #draft
+Description: "This extension applies to the AU eRequesting Diagnostic Request profile and any derived ServiceRequest profiles. The fasting precondition is a code that indicates the recommendation related to the fasting status of the patient as a precondition to the diagnostic procedure or test being requested."
+* ^status = #active
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * ^context.type = #element
 * ^context.expression = "ServiceRequest"
 * . ^short = "Fasting precondition"

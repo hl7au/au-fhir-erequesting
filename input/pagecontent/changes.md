@@ -33,8 +33,6 @@ This change log documents the significant updates and resolutions implemented fr
 - New extensions:  
   - AU eRequesting Display Sequence ([FHIR-49715](https://jira.hl7.org/browse/FHIR-49715), [FHIR-50540](https://jira.hl7.org/browse/FHIR-50540))
   - AU eRequesting Fasting Precondition ([FHIR-49917](https://jira.hl7.org/browse/FHIR-49917), [FHIR-50540](https://jira.hl7.org/browse/FHIR-50540))
-- New search parameters:
-  - AU eRequesting ServiceRequest SupportingInfo ([FHIR-51005](https://jira.hl7.org/browse/FHIR-51005))
 - Added [Sex and Gender](sex-and-gender.html) page to consolidate implementation guidance on sex and gender concepts in AU eRequesting, with references to guidance in AU Core and AU Base [FHIR-47176](https://jira.hl7.org/browse/FHIR-47176), [FHIR-47178](https://jira.hl7.org/browse/FHIR-47178), [FHIR-47182](https://jira.hl7.org/browse/FHIR-47182), [FHIR-47183](https://jira.hl7.org/browse/FHIR-47183), [FHIR-46892](https://jira.hl7.org/browse/FHIR-46892), [FHIR-46896](https://jira.hl7.org/browse/FHIR-46896).
 - Added [Security and Privacy](security.html) page [FHIR-50880](https://jira.hl7.org/browse/FHIR-50880)
 - Made the following changes to AU eRequesting ServiceRequest:
@@ -59,6 +57,7 @@ This change log documents the significant updates and resolutions implemented fr
 - Clarified profile-specific implementation guidance on populating ServiceRequest.code and removed additional binding in AU eRequesting Pathology Request and AU eRequesting Imaging Request [FHIR-46847](https://jira.hl7.org/browse/FHIR-46847)
 - Remove RANZCR Radiology Referral ValueSet (RRV) from AU eRequesting [FHIR-51017](https://jira.hl7.org/browse/FHIR-51017)
 - Change RANZCR Radiology Referral ValueSet binding for ServiceRequest.code in AU eRequesting Imaging Request from AU eRequesting defined ValueSet to the NCTS defined ValueSet [FHIR-51017](https://jira.hl7.org/browse/FHIR-51017)
+- Moved supporting-info search parameter, added in [FHIR-51005](https://jira.hl7.org/browse/FHIR-51005), to AU Base to support use beyond eRequesting [FHIR-51251](https://jira.hl7.org/browse/FHIR-51251)
 - Made the following changes in AU eRequesting Server CapabilityStatement:
   - changed the conformance requirement for ServiceRequest create and update interactions from SHALL to SHOULD [FHIR-47141](https://jira.hl7.org/browse/FHIR-47141)
   - added read and search-type interactions as SHALL, and create and update interactions as SHOULD for all currently supported resource types [FHIR-48934](https://jira.hl7.org/browse/FHIR-48934), [FHIR-47145](https://jira.hl7.org/browse/FHIR-47145), [FHIR-47143](https://jira.hl7.org/browse/FHIR-47143) [FHIR-48915](https://jira.hl7.org/browse/FHIR-48915)

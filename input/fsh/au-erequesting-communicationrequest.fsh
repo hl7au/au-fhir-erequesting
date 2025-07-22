@@ -5,8 +5,8 @@ Title: "AU eRequesting CommunicationRequest"
 Description: "This profile sets the minimum expectations for derived CommunicationRequest resources that are used to record, search, and fetch information about a communication request to be performed.  
 It is based on the [CommunicationRequest](https://hl7.org/fhir/R4/communicationrequest.html) and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the CommunicationRequest when conforming to this profile."
 
-* ^status = #draft
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
+* ^status = #active
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * ^abstract = true
 
 * groupIdentifier 1.. MS
