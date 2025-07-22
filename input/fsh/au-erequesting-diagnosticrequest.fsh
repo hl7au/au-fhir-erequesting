@@ -340,8 +340,6 @@ Parent: Extension
 Id: au-erequesting-displaysequence
 Title: "AU eRequesting Display Sequence"
 Description: "This profile defines the minimum expectations for representing display sequence in the AU eRequesting context.  The display sequence is an integer assigned to an individual test or service in a ServiceRequest that matches the sequence as seen on a paper request form. The ability to sort based on display sequence more easily allows for reconciliation of paper and digital requesting data by the filler, especially for collection centre staff within a pathology collection centre."
-* ^status = #draft
-Description: "This extension applies to the AU eRequesting Diagnostic Request profile and any derived ServiceRequest profiles. The display sequence is an integer assigned to an individual test or service in a ServiceRequest that matches the sequence as seen on a paper request form. The ability to sort on sequenceNumber more easily allows for reconciliation of paper and digital requesting data by the filler, especially for collection centre staff within a pathology collection centre."
 * ^status = #active
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * ^context.type = #element
@@ -355,8 +353,6 @@ Parent: Extension
 Id: au-erequesting-fastingprecondition
 Title: "AU eRequesting Fasting Precondition"
 Description: "This profile defines the minimum expectations for representing fasting precondition in the AU eRequesting context. The fasting precondition is a code that indicates the recommendation related to the fasting status of the patient as a precondition to the diagnostic procedure or test being requested."
-* ^status = #draft
-Description: "This extension applies to the AU eRequesting Diagnostic Request profile and any derived ServiceRequest profiles. The fasting precondition is a code that indicates the recommendation related to the fasting status of the patient as a precondition to the diagnostic procedure or test being requested."
 * ^status = #active
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * ^context.type = #element
