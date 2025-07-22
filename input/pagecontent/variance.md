@@ -27,8 +27,6 @@ This implementation guide profiles the following resources that are not profiled
 - Extension
   - [AU eRequesting Display Sequence](StructureDefinition-au-erequesting-displaysequence.html)
   - [AU eRequesting Fasting Precondition](StructureDefinition-au-erequesting-fastingprecondition.html)
-- SearchParameter
-  - [supporting-info](SearchParameter-au-erequesting-servicerequest-supporting-info.html)
 
 ### Variance from AU Core
 This implementation guide has no variance (i.e. fully compliant) from AU Core FHIR Implementation Guide version 2.0.0-ci-build ([current](https://build.fhir.org/ig/hl7au/au-fhir-core/)).
@@ -58,5 +56,3 @@ This implementation guide profiles the following resources that are not profiled
 - Extension
   - [AU eRequesting Display Sequence](StructureDefinition-au-erequesting-displaysequence.html)
   - [AU eRequesting Fasting Precondition](StructureDefinition-au-erequesting-fastingprecondition.html)
-- SearchParameter
-  - [supporting-info](SearchParameter-au-erequesting-servicerequest-supporting-info.html)

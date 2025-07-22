@@ -29,7 +29,7 @@ The following search parameters and search parameter combinations are supported.
     *Implementation Notes:* Fetches a bundle of all ServiceRequest resources for the specified requisition identifier ([how to search by token](https://hl7.org/fhir/R4/search.html#token))
 
 
-1. **[`supporting-info`](SearchParameter-au-erequesting-servicerequest-supporting-info.html)** search parameter
+1. **[`supporting-info`](https://build.fhir.org/ig/hl7au/au-fhir-base/SearchParameter-servicerequest-supporting-info.html)** search parameter
    - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `ServiceRequest:patient`,`ServiceRequest:requester`,`ServiceRequest:encounter`
 
     `GET [base]/ServiceRequest?supporting-info={Type/}[id]`
