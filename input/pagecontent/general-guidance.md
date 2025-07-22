@@ -1,14 +1,14 @@
 ### Diagnostic request grouping
 
-In AU eRequesting, grouping is applied to diagnostic requests created by an AU eRequesting Placer actor. This reflects common patterns in Australia, where multiple related pathology tests or imaging exams are ordered in a single request.
+**check page for updates**
 
-AU eRequesting follows the [shared requisition id pattern](https://hl7.org/fhir/request.html#requisitionid) from the [FHIR Request pattern](https://hl7.org/fhir/request.html), where multiple request resources created as part of the same ordering event share a common requisition id. In this context, the Placer Group Number (PGN) is used as the shared identifier, assigned by the AU eRequesting Placer actor at the time of request creation.
+In AU eRequesting, grouping is applied to diagnostic requests created by an AU eRequesting Placer actor. This reflects common patterns in Australia, where multiple related pathology tests or imaging exams are ordered in a single event.
 
-**ADD to intro information about Task and Task Group**
-
-Each diagnostic request is represented as a ServiceRequest and is paired with a corresponding Diagnostic Request Task, which allows the AU eRequesting Filler actor to manage and track fulfilment of that individual request.
+AU eRequesting follows the [shared requisition id pattern](https://hl7.org/fhir/request.html#requisitionid) from the [FHIR Request pattern](https://hl7.org/fhir/request.html), where multiple request resources created as part of the same ordering event share a common requisition id/group identifier. In this context, the Placer Group Number (PGN) is used as the shared identifier, assigned by the AU eRequesting Placer actor at the time of request creation.
 
 A Task Group is always included to represent and coordinate the overall diagnostic order. It allows the AU eRequesting Filler actor to manage the group as a single order, supporting fulfilment, progress tracking and status updates across the group.
+
+Each diagnostic request is represented as a ServiceRequest and is paired with a corresponding Diagnostic Request Task, which allows the AU eRequesting Filler actor to manage and track fulfilment of that individual request.
 
  <div> 
     <img src="erequesting-group.png" alt="AU eRequesting Diagnostic Request Grouping" style="width:90%"/>
@@ -16,6 +16,9 @@ A Task Group is always included to represent and coordinate the overall diagnost
 *Figure 1: AU eRequesting Diagnostic Request Grouping*
 
 #### Diagnostic request grouping features
+
+**check page for updates**
+
 - A group **SHALL** always be established, even when the order contains only a single diagnostic request. This ensures implementation consistency and enables uniform fulfilment processing
 - Each diagnostic request is represented as a ServiceRequest, one for each test or exam, and is paired with a corresponding Task for fulfilment tracking
 - A single group FHIR Task resource  is the root of the entire request structure, or web of resources 
@@ -28,10 +31,7 @@ A Task Group is always included to represent and coordinate the overall diagnost
 - Placer Group Number (PGN) identifier is used to logically associate all related requests and tasks that were created as part of the same request order:
     - `ServiceRequest.requisition` = Placer Group Number (PGN) identifier
     - `Task.groupIdentifier` = Placer Group Number (PGN) identifier
-- The `displaySequence` element on ServiceRequest reflects the visual order or sequence of requests as they appear on a paper request form
-- The `supportingInfo` element on ServiceRequest can include references to other resources that contain clinical information relevant to the request. These resources can be referenced by all ServiceRequests in a group, when the information applies to the entire order, or by individual ServiceRequests, when the information is specific to particular requests. Referenced resources includes:
-    - PregnancyStatus - an Observation representing the patient's pregnancy status
-    - ClinicalContext - a DocumentReference containing clinical context narrative information providing
+- The `displaySequence` element on ServiceRequest reflects the visual order or sequence of requests within the group as they appear on a paper request form
 
 ### Implementation considerations
 

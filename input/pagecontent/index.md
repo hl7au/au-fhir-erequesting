@@ -34,9 +34,9 @@ The diagram below shows typical FHIR RESTful interactions between these AU eRequ
 *Figure 1: FHIR RESTful interactions*
 <br/>
 
-*Note*: Diagnostic Request refers to the ServiceRequest and related FHIR resources that provide context. Providing the Diagnostic Request's fulfilment context is the FHIR Task resource.
-
 ### AU eRequesting typical sequence - DIAGRAM TO BE UPDATED. TEXT?
+**New diagram**
+**Add to text something that indicates that the diagram is the primary/key resources involved, others are also involved eg Patient, PractitionerRole etc**
 
 The AU eRequesting Placer actor can create and update ServiceRequest details by calling the AU eRequesting Server actor.
 
