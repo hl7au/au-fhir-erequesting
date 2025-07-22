@@ -12,5 +12,5 @@ Description: "Task tag values for labelling and differentiating fulfilment of ta
 * ^publisher = "HL7 Australia"
 * ^status = #active 
 * ^experimental = false
-* $tasktag#fulfilment-task
-* $tasktag#fulfilment-task-group
+* $resourcetag#fulfilment-task
+* $resourcetag#fulfilment-task-group

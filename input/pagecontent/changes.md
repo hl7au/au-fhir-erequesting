@@ -58,6 +58,9 @@ This change log documents the significant updates and resolutions implemented fr
 - Remove RANZCR Radiology Referral ValueSet (RRV) from AU eRequesting [FHIR-51017](https://jira.hl7.org/browse/FHIR-51017)
 - Change RANZCR Radiology Referral ValueSet binding for ServiceRequest.code in AU eRequesting Imaging Request from AU eRequesting defined ValueSet to the NCTS defined ValueSet [FHIR-51017](https://jira.hl7.org/browse/FHIR-51017)
 - Moved supporting-info search parameter, added in [FHIR-51005](https://jira.hl7.org/browse/FHIR-51005), to AU Base to support use beyond eRequesting [FHIR-51251](https://jira.hl7.org/browse/FHIR-51251)
+- Moved CommunicationRequest Reason code system, added in [FHIR-49807](https://jira.hl7.org/browse/FHIR-49807), to AU Base to support use beyond eRequesting [FHIR-51348](https://jira.hl7.org/browse/FHIR-51348)
+- Moved Task Tag code system, added in [FHIR-49718](https://jira.hl7.org/browse/FHIR-49718) to AU Base and renamed to Resource Tag to support use beyond eRequesting [FHIR-51350](https://jira.hl7.org/browse/FHIR-51350)
+- Moved Task Business Status code system, added in [FHIR-50973](https://jira.hl7.org/browse/FHIR-50973) to AU Base to support use beyond eRequesting [FHIR-51349](https://jira.hl7.org/browse/FHIR-51349)
 - Made the following changes in AU eRequesting Server CapabilityStatement:
   - changed the conformance requirement for ServiceRequest create and update interactions from SHALL to SHOULD [FHIR-47141](https://jira.hl7.org/browse/FHIR-47141)
   - added read and search-type interactions as SHALL, and create and update interactions as SHOULD for all currently supported resource types [FHIR-48934](https://jira.hl7.org/browse/FHIR-48934), [FHIR-47145](https://jira.hl7.org/browse/FHIR-47145), [FHIR-47143](https://jira.hl7.org/browse/FHIR-47143) [FHIR-48915](https://jira.hl7.org/browse/FHIR-48915)
