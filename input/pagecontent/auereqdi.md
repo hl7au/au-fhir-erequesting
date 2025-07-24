@@ -17,8 +17,8 @@ AUeReqDI R1 is aligned with AUCDI R1.
 AUCDI R2 was published after AUeReqDI R1, introducing additional and expanded data groups to support different use cases. These are not reflected in AUeReqDI R1.
 
 The following table shows the version alignment between AU eRequesting, AUeReqDI and AUCDI:
-<table>
-  <tr>
+<table border="1" cellspacing="0" cellpadding="0" width="100%">
+  <tr style="background-color: #f2f2f2;">
     <th>AU eRequesting Version</th>
     <th>AUeReqDI Version</th>
     <th>AUCDI Version</th>
