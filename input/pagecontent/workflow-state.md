@@ -1,6 +1,6 @@
-In AU eRequesting, a [workflow](https://hl7.org/fhir/R4/workflow.html) pattern using the ServiceRequest and Task resources are used to separate the diagnostic request details from its fulfilment. The ServiceRequest represents the request initiated by AU eRequesting Placers (hereinafter referred to as Placers), while the associated Task is used by AU eRequesting Fillers (hereinafter referred to as a Fillers) for tracking and communicating the progress of the request through the fulfilment workflow. 
+In AU eRequesting, a [workflow](https://hl7.org/fhir/R4/workflow.html) pattern using the ServiceRequest and Task resources are used to separate the diagnostic request details from its fulfilment. The ServiceRequest represents the request initiated by placers, while the associated Task is used by fillers for tracking and communicating the progress of the request through the fulfilment workflow. 
 
-The current state of a ServiceRequest or Task resource within its defined lifecycle or state machine is represented by the code assigned to the status element of the resource. The `ServiceRequest.status` reflects the Placer’s overall view of the diagnostic request's status, whereas the `Task.status` tracks and conveys the Filler’s fulfilment status, that is, the progress of fulfilling the diagnostic request.
+The current state of a ServiceRequest or Task resource within its defined lifecycle or state machine is represented by the code assigned to the status element of the resource. The `ServiceRequest.status` reflects the placer’s overall view of the diagnostic request's status, whereas the `Task.status` tracks and conveys the filler’s fulfilment status, that is, the progress of fulfilling the diagnostic request.
 
 This page provides guidance on managing workflow states in AU eRequesting designed to promote interoperability. It covers Task state transitions, the use of supporting elements `Task.statusReason`, `Task.businessStatus`, and `ServiceRequest.extension:statusReason` to provide additional workflow context, and the relationship between Task and ServiceRequest status codes.
 
@@ -22,7 +22,7 @@ The business rules that define which actors or system roles can modify or trigge
 <figure style="background:white;">
   <img src="task-state-machine.svg" alt="AU eRequesting Task State Transitions Diagram" style="max-width:100%;"/>
   <br/>
-  <figcaption><em>Figure 1: AU eRequesting Task State Transitions Diagram</em></figcaption>
+  <figcaption><em>Figure 1: AU eRequesting Task State Transitions</em></figcaption>
 </figure>
 <br/>
 
@@ -39,7 +39,6 @@ The AU eRequesting Task State Transitions table below supplements the diagrammat
     </tr>
     <tr>
       <th style="width:15%; padding:6px;">State</th>
-      <th style="width:25%; padding:6px;">Task Status Code Definitions</th>
       <th style="width:45%; padding:6px;">Implementation Guidance for AU eRequesting Workflows</th>
       <th style="width:15%; padding:6px;">Allowed Transitions To State(s)</th>
     </tr>
@@ -47,20 +46,18 @@ The AU eRequesting Task State Transitions table below supplements the diagrammat
   <tbody>
     <tr>
       <td>requested</td>
-      <td>The task is ready to be acted upon and action is sought.</td>
       <td>
         <ul>
-          <li>Tasks start in a "requested" state, indicating a formal request for a diagnostic service that is ready to be fulfilled by a Filler.</li>
+          <li>Tasks start in a "requested" state, indicating a formal request for a diagnostic service that is ready to be fulfilled by a filler.</li>
         </ul>
       </td>
       <td>received<br> accepted<br> rejected<br> cancelled</td>
     </tr>
     <tr>
       <td>received</td>
-      <td>A potential performer has claimed ownership of the task and is evaluating whether to perform it.</td>
       <td>
         <ul>
-          <li>Indicates that the task has been acknowledged and claimed by a Filler.</li>
+          <li>Indicates that the task has been acknowledged and claimed by a filler.</li>
           <li>Some workflows may not distinguish between "received" and "accepted". In such cases, implementations may transition directly from "requested" to "accepted".</li>
         </ul>
       </td>
@@ -68,20 +65,18 @@ The AU eRequesting Task State Transitions table below supplements the diagrammat
     </tr>
     <tr>
       <td>accepted</td>
-      <td>The potential performer has agreed to execute the task but has not yet started work.</td>
       <td>
         <ul>
-          <li>Indicates that a Filler has agreed to perform the task.</li>
+          <li>Indicates that a filler has agreed to perform the task.</li>
         </ul>
       </td>
       <td>in-progress<br> cancelled</td>
     </tr>
     <tr>
       <td>rejected</td>
-      <td>The potential performer who claimed ownership of the task has decided not to execute it prior to performing any action.</td>
       <td>
         <ul>
-          <li>Indicates that the Filler has declined to perform the task before beginning any work.</li>
+          <li>Indicates that the filler has declined to perform the task before beginning any work.</li>
           <li>Use the optional <code>Task.statusReason</code> to provide explanatory context for "rejected".</li>
         </ul>
       </td>
@@ -89,14 +84,13 @@ The AU eRequesting Task State Transitions table below supplements the diagrammat
     </tr>
     <tr>
       <td>cancelled</td>
-      <td>The task was not completed.</td>
       <td>
         <ul>
           <li>Indicates termination of the task before completion, usually due to an external decision or changed circumstances, rather than an error condition.</li>
           <li>Example scenarios for transitioning to "cancelled":
             <ul>
-              <li>The Placer cancels the task.</li>
-              <li>The task is cancelled because it has been claimed by an alternative Filler.</li>
+              <li>The placer cancels the task.</li>
+              <li>The task is cancelled because it has been claimed by an alternative filler.</li>
             </ul>
           </li>
           <li>A task cannot be "cancelled" once it is "in-progress".</li>
@@ -108,10 +102,9 @@ The AU eRequesting Task State Transitions table below supplements the diagrammat
     </tr>
     <tr>
       <td>in-progress</td>
-      <td>The task has been started but is not yet complete.</td>
       <td>
         <ul>
-          <li>Once the Filler initiates activity on the task, the task transitions to the "in-progress" state, indicating that work is being performed.</li>
+          <li>Once the filler initiates activity on the task, the task transitions to the "in-progress" state, indicating that work is being performed.</li>
           <li>A task cannot be cancelled once it is "in-progress".</li>
         </ul>
       </td>
@@ -119,7 +112,6 @@ The AU eRequesting Task State Transitions table below supplements the diagrammat
     </tr>
     <tr>
       <td>on-hold</td>
-      <td>The task has been started but work has been paused.</td>
       <td>
         <ul>
           <li>Use the optional <code>Task.statusReason</code> to provide explanatory context for "on-hold".</li>
@@ -129,7 +121,6 @@ The AU eRequesting Task State Transitions table below supplements the diagrammat
     </tr>
     <tr>
       <td>completed</td>
-      <td>The task has been completed.</td>
       <td>
         <ul>
           <li>Once the task has been executed, it transitions to "completed".</li>
@@ -139,7 +130,6 @@ The AU eRequesting Task State Transitions table below supplements the diagrammat
     </tr>
     <tr>
       <td>failed</td>
-      <td>The task was attempted but could not be completed due to some error.</td>
       <td>
         <ul>
           <li>Indicates that task execution was attempted but could not be completed due to an error or issue.</li>
@@ -176,64 +166,64 @@ The following table outlines the AU eRequesting Task Business Status codes and t
   <thead>
     <tr>
       <th style="width:10%; padding:6px;">Context</th>
-      <th style="width:25%; padding:6px;">AU eRequesting Task Business Status Codes for <code>Task.businessStatus</code></th>
-      <th style="width:40%; padding:6px;">AU eRequesting Task Business Status Code Definitions</th>
-      <th style="width:25%; padding:6px;">Relationship / Mapping to Task Status Codes for <code>Task.status</code></th>
+      <th style="width:25%; padding:6px;">AU eRequesting Task Business Status codes for <code>Task.businessStatus</code></th>
+      <th style="width:40%; padding:6px;">AU eRequesting Task Business Status code description</th>
+      <th style="width:25%; padding:6px;">Relationship to Task Status codes for <code>Task.status</code></th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td rowspan="7" style="vertical-align: top;">Shared (Pathology and Radiology)</td>
       <td>booked</td>
-      <td>Service has been booked.</td>
+      <td>The service has been booked.</td>
       <td>accepted</td>
     </tr>
     <tr>
       <td>claimed</td>
-      <td>Service request has been claimed by an alternative filler.</td>
+      <td>The service request has been claimed by an alternative filler.</td>
       <td>cancelled</td>
     </tr>
     <tr>
       <td>user-cancelled</td>
-      <td>Service request has been cancelled by the placer.</td>
+      <td>The service request has been cancelled by the placer.</td>
       <td>cancelled</td>
     </tr>
     <tr>
       <td>cancel-handled</td>
-      <td>Cancellation has been handled by the filler.</td>
+      <td>The cancellation has been handled by the filler.</td>
       <td>cancelled</td>
     </tr>
     <tr>
       <td>data-issue</td>
-      <td>Rejected fulfilment due to an issue with the request data.</td>
+      <td>A rejected fulfilment due to an issue with the request data.</td>
       <td>rejected</td>
     </tr>
     <tr>
       <td>preliminary</td>
-      <td>Preliminary result completed.</td>
+      <td>A preliminary result has been completed.</td>
       <td>in-progress</td>
     </tr>
     <tr>
       <td>addendum</td>
-      <td>Addendum created for reporting.</td>
+      <td>An addendum created for reporting.</td>
       <td>completed</td>
     </tr>
     <tr>
       <td>Pathology</td>
       <td>collected</td>
-      <td>Specimen has been collected in lab collection centre.</td>
+      <td>The specimen has been collected in lab collection centre.</td>
       <td>in-progress</td>
     </tr>
     <tr>
       <td>Pathology</td>
       <td>in-lab</td>
-      <td>Specimen is being processed in the pathology lab.</td>
+      <td>The specimen is being processed in the pathology lab.</td>
       <td>in-progress</td>
     </tr>
     <tr>
       <td>Radiology</td>
       <td>acquired</td>
-      <td>Image has been acquired at radiology service.</td>
+      <td>The image has been acquired at radiology service.</td>
       <td>in-progress</td>
     </tr>
   </tbody>
@@ -242,8 +232,9 @@ The following table outlines the AU eRequesting Task Business Status codes and t
 
 
 #### Relationship between AU eRequesting Task Group `Task.status` and AU eRequesting Task Diagnostic Request `Task.status`
-- The group task is considered a central component of the AU eRequesting data architecture for Fillers to discover and manage fulfilment Task(s) for the same order, and to retrieve their focus diagnostic request and related resources. For this reason, the status of the group task is particularly important — changes to other resources, such as ServiceRequest.status, cannot be reliably acted on by the Filler unless those changes are also reflected in the status of the group task.
-- Hence, the status of an AU eRequesting Task Group is expected to reflect the most appropriate status among its individual AU eRequesting Task Diagnostic Request(s); however, at present, there are no enforced rules.
+The group task is considered a central component of the AU eRequesting data architecture for fillers to discover and manage fulfilment Task(s) for the same order, and to retrieve their focus diagnostic request and related resources. For this reason, the status of the group task is particularly important — changes to other resources, such as ServiceRequest.status, cannot be reliably acted on by the filler unless those changes are also reflected in the status of the group task.
+
+Hence, the status of an AU eRequesting Task Group is expected to reflect the most appropriate status among its individual AU eRequesting Task Diagnostic Request(s); however, at present, there are no enforced rules.
 
 ### AU eRequesting Diagnostic Request Status
 
@@ -253,7 +244,7 @@ The [AU eRequesting RequestStatus](ValueSet-au-erequesting-request-status.html) 
 
 #### Request States
 
-In AU eRequesting workflows for community-based pathology and imaging, the state (status) of an AU eRequesting Diagnostic Request is managed by the Placer.
+In AU eRequesting workflows for community-based pathology and imaging, the state (status) of an AU eRequesting Diagnostic Request is managed by the placer.
 
 The AU eRequesting Request States for ServiceRequest.status table below provides Request status code definitions, and implementation guidance for AU eRequesting workflows.
 
@@ -266,14 +257,12 @@ The AU eRequesting Request States for ServiceRequest.status table below provides
     </tr>
     <tr>
       <th style="width:15%; padding:6px;">State</th>
-      <th style="width:30%; padding:6px;">Request Status Code Definitions</th>
       <th style="width:55%; padding:6px;">Implementation Guidance for AU eRequesting Workflows</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>active</td>
-      <td>The request is in force and ready to be acted upon.</td>
       <td>
         <ul>
           <li>Diagnostic requests start in an "active" state.</li>
@@ -283,7 +272,6 @@ The AU eRequesting Request States for ServiceRequest.status table below provides
     </tr>
     <tr>
       <td>on-hold</td>
-      <td>The request (and any implicit authorization to act) has been temporarily withdrawn but is expected to resume in the future.</td>
       <td>
         <ul>
           <li>Use the optional <code>ServiceRequest.extension:statusReason</code> to provide explanatory context.
@@ -296,33 +284,30 @@ The AU eRequesting Request States for ServiceRequest.status table below provides
     </tr>
     <tr>
       <td>revoked</td>
-      <td>The request (and any implicit authorization to act) has been terminated prior to the known full completion of the intended actions. No further activity should occur.</td>
       <td>
         <ul>
-          <li>Indicates the diagnostic request was withdrawn or cancelled by the Placer before it was fulfilled.</li>
+          <li>Indicates the diagnostic request was withdrawn or cancelled by the placer before it was fulfilled.</li>
           <li>Use the optional <code>ServiceRequest.extension:statusReason</code> to provide explanatory context.
             <ul>
               <li>Given there is no defined value set for `ServiceRequest.extension:statusReason`, when used, include meaningful data with a human-readable description in `ServiceRequest.extension:statusReason.text`.</li>
             </ul>
           </li>
-          <li>The Placer is expected to transition the corresponding task to "cancelled".</li>
+          <li>The placer is expected to transition the corresponding task to "cancelled".</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td>completed</td>
-      <td>The activity described by the request has been fully performed. No further activity will occur.</td>
       <td>
         <ul>
           <li>Indicates the diagnostic service has been performed and task output provided.</li>
-          <li>When the Filler sets <code>Task.status</code> to "completed", the Placer may update <code>ServiceRequest.status</code> accordingly.</li>
+          <li>When the filler sets <code>Task.status</code> to "completed", the placer may update <code>ServiceRequest.status</code> accordingly.</li>
           <li>Alternatively, the update may occur when the expected output (e.g., results or reports) is received.</li>
         </ul>
       </td>
     </tr>
     <tr>
       <td>entered-in-error</td>
-      <td>This request should never have existed and should be considered 'void'. (It is possible that real-world decisions were based on it. If real-world activity has occurred, the status should be "revoked" rather than "entered-in-error".).</td>
       <td>
         <ul>
           <li>Use is recommended only if no activity based on the request has occurred.</li>
@@ -337,7 +322,7 @@ The AU eRequesting Request States for ServiceRequest.status table below provides
               <li>Given there is no defined value set for `ServiceRequest.extension:statusReason`, when used, include meaningful data with a human-readable description in `ServiceRequest.extension:statusReason.text`.</li>
             </ul>
           </li>
-          <li>The Placer is expected to transition the corresponding task to "cancelled".</li>
+          <li>The placer is expected to transition the corresponding task to "cancelled".</li>
         </ul>
       </td>
     </tr>
@@ -354,5 +339,5 @@ The AU eRequesting Request States for ServiceRequest.status table below provides
 
 #### Relationship between `ServiceRequest.status` and `Task.status`
 
-- While the AU eRequesting Diagnostic Request and AU eRequesting Task Diagnostic Request are loosely coupled, in practice, changes in `ServiceRequest.status` are expected, where appropriate, to be reflected in the corresponding `Task.status` to maintain alignment across resources involved in the workflow. Placers are responsible for managing this alignment, as changes in the diagnostic request status often require corresponding updates in fulfilment management. Failure to maintain this alignment can lead to workflow inconsistencies, such as orphaned tasks or misaligned expectations between Placers and Fillers.
+- While the AU eRequesting Diagnostic Request and AU eRequesting Task Diagnostic Request are loosely coupled, in practice, changes in `ServiceRequest.status` are expected, where appropriate, to be reflected in the corresponding `Task.status` to maintain alignment across resources involved in the workflow. Placers are responsible for managing this alignment, as changes in the diagnostic request status often require corresponding updates in fulfilment management. Failure to maintain this alignment can lead to workflow inconsistencies, such as orphaned tasks or misaligned expectations between placers and fillers.
 - Some typical business rules on these status relationships are outlined in the [Request States](#request-states) table above.

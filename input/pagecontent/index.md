@@ -24,7 +24,7 @@ The [Australian eRequesting Data for Interoperability (AUeReqDI)](https://sparke
 
 ### AU eRequesting FHIR RESTful interactions
 
-AU eRequesting defines four system actors involved in the exchange of diagnostic requests: the AU eRequesting Placer, Filler, Patient and Server actors. The [Actors and Capabilities](capability-statements.html) page provides a summary of these actors and includes links to their definitions and CapabilityStatements. Each CapabilityStatement outlines the RESTful interactions supported by that actor, including operations such as `create`, `update`, `read` and `search`.
+AU eRequesting defines four system actors involved in the exchange of diagnostic requests: the AU eRequesting Placer, Filler, Patient and Server actors. The [Actors and Capabilities](capability-statements.html) page provides a summary of these actors and includes links to their definitions and CapabilityStatements. Each CapabilityStatement outlines the RESTful interactions supported by that actor, including operations such as `create`, `update`,`read` and `search`.
 
 The diagram below shows typical FHIR RESTful interactions between these AU eRequesting actors:
 
@@ -34,26 +34,23 @@ The diagram below shows typical FHIR RESTful interactions between these AU eRequ
 *Figure 1: FHIR RESTful interactions*
 <br/>
 
-### AU eRequesting typical sequence - DIAGRAM TO BE UPDATED. TEXT?
-**New diagram**
-**Add to text something that indicates that the diagram is the primary/key resources involved, others are also involved eg Patient, PractitionerRole etc**
+### Example AU eRequesting interaction flow
+The diagram below shows an example of FHIR interactions between AU eRequesting actors.
 
-The AU eRequesting Placer actor can create and update ServiceRequest details by calling the AU eRequesting Server actor.
-
-The AU eRequesting Patient actor can search for ServiceRequest details by calling the AU eRequesting Server actor.
-
-The AU eRequesting Filler actor can retrieve ServiceRequest details by calling the AU eRequesting Server actor.
-
-Actors operate in a typical sequence where placers initiate a request by creating (and updating) service requests, patients may access details of their requests and fillers retrieve service request details to enable fulfilment of the requests. 
-
-This sequence is shown in the diagram below:
+It demonstrates the use of ServiceRequest and Task to support the placement and tracking of pathology and imaging requests. While the diagram focuses on these coordinating resources, the associated exchange also includes other FHIR resources that provide clinical, administrative and contextual information. The full set of profiles used to support the requests is provided on the [Profiles and Extensions](profiles-and-extensions.html) page.
 
 <div> 
-    <img src="actors-sequence.svg" alt="Actors Typical Sequence" style="width:80%"/>
+    <img src="actors-sequence.png" alt="Actors Typical Sequence" style="width:80%"/>
 </div>
-*Figure 2: Actors Typical Sequence*
-
+*Figure 2: Example interaction flow*
 <br/>
+
+The steps illustrated in Figure 2 are summarised below:
+- The AU eRequesting Placer actor creates a new ServiceRequest and Task on the Server, along with associated resources that collectively represent the request.
+- The AU eRequesting Filler actor searches for available Task resources and uses them to retrieve the associated ServiceRequest and other resources that make up the request.
+- The AU eRequesting Filler actor updates the Task to reflect acceptance, progress or completion.
+- The AU eRequesting Placer actor searches the Server to monitor their requests.
+- The AU eRequesting Patient actor searches the Server to view their own request details.
 
 ### How to read this guide
 

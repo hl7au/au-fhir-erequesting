@@ -1,14 +1,14 @@
 ### Diagnostic request grouping
 
-**check page for updates**
-
-In AU eRequesting, grouping is applied to diagnostic requests created by an AU eRequesting Placer actor. This reflects common patterns in Australia, where multiple related pathology tests or imaging exams are ordered in a single event.
-
-AU eRequesting follows the [shared requisition id pattern](https://hl7.org/fhir/request.html#requisitionid) from the [FHIR Request pattern](https://hl7.org/fhir/request.html), where multiple request resources created as part of the same ordering event share a common requisition id/group identifier. In this context, the Placer Group Number (PGN) is used as the shared identifier, assigned by the AU eRequesting Placer actor at the time of request creation.
-
-A Task Group is always included to represent and coordinate the overall diagnostic order. It allows the AU eRequesting Filler actor to manage the group as a single order, supporting fulfilment, progress tracking and status updates across the group.
-
-Each diagnostic request is represented as a ServiceRequest and is paired with a corresponding Diagnostic Request Task, which allows the AU eRequesting Filler actor to manage and track fulfilment of that individual request.
+In AU eRequesting, grouping is applied to requests created by an AU eRequesting Placer actor. This reflects common patterns in Australia where multiple related pathology tests or imaging exams are ordered in a single event.
+ 
+AU eRequesting follows the [shared requisition id](https://hl7.org/fhir/request.html#requisitionid) approach from the [FHIR Request pattern](https://hl7.org/fhir/request.html), where multiple request resources created as part of the same ordering event share a common group identifier. The Placer Group Number (PGN) is the shared identifier assigned by the AU eRequesting Placer actor at the time of request creation and is recorded in both the `ServiceRequest.requisition` and `Task.groupIdentifier` elements.
+ 
+A single AU eRequesting Task Group is always included to represent and coordinate the overall order. It allows the AU eRequesting Filler actor to manage the group as a single coordinated order, supporting fulfilment, progress tracking and status updates across the group.
+ 
+Each test or exam is represented using an AU eRequesting Diagnostic Request ServiceRequest and is paired with a corresponding AU eRequesting Task Diagnostic Request. The Task is the resource used by the AU eRequesting Filler actor to manage and track the progress and fulfilment of that individual request.
+ 
+In addition to the ServiceRequest and Task resources, each request includes supporting clinical, administrative and contextual information represented using other FHIR resources. These resources form part of the overall request and may be shared across the group or be specific to individual requests. The full set of AU eRequesting profiles used to support this representation is listed on the [Profiles and Extensions](profiles-and-extensions.html) page. 
 
  <div> 
     <img src="erequesting-group.png" alt="AU eRequesting Diagnostic Request Grouping" style="width:90%"/>
@@ -16,22 +16,19 @@ Each diagnostic request is represented as a ServiceRequest and is paired with a 
 *Figure 1: AU eRequesting Diagnostic Request Grouping*
 
 #### Diagnostic request grouping features
-
-**check page for updates**
-
-- A group **SHALL** always be established, even when the order contains only a single diagnostic request. This ensures implementation consistency and enables uniform fulfilment processing
-- Each diagnostic request is represented as a ServiceRequest, one for each test or exam, and is paired with a corresponding Task for fulfilment tracking
-- A single group FHIR Task resource  is the root of the entire request structure, or web of resources 
-- A single group FHIR Task resource has one or several children FHIR Task resources
-- Each child Task references a single FHIR ServiceRequest resource
-- Implementers can distinguish between group and child Task resources based on their 'Task.meta.tag' codes 
-- Tasks for diagnostic requests:
-    - Uses `Task.focus` to reference its associated ServiceRequest
-    - Uses `Task.partOf` to reference the Task Group, which represents the overall diagnostic order and is used by the AU eRequesting Filler actor for managing fulfilment tasks for the same order.
-- Placer Group Number (PGN) identifier is used to logically associate all related requests and tasks that were created as part of the same request order:
-    - `ServiceRequest.requisition` = Placer Group Number (PGN) identifier
-    - `Task.groupIdentifier` = Placer Group Number (PGN) identifier
-- The `displaySequence` element on ServiceRequest reflects the visual order or sequence of requests within the group as they appear on a paper request form
+- A AU eRequesting Task Group is used to represent and coordinate the overall diagnostic order
+- An AU eRequesting Task Group **SHALL** always be created, even when the order includes only a single test or exam. This ensures consistent implementation and uniform processing by the AU eRequesting Filler
+- The AU eRequesting Task Group is assigned a Placer Group Number (PGN) by the AU eRequesting Placer to logically associate all requests in the order, and recorded in `Task.groupIdentifier`
+- Each individual test or exam is:
+  - Represented using a request profile derived from AU eRequesting Diagnostic Request (AU eRequesting Pathology Request or AU eRequesting Imaging Request)
+  - `ServiceRequest.requisition` is populated with the Placer Group Number (PGN)
+  - Optionally, assigned a `ServiceRequest.displaySequence` that reflects the visual order or sequence of requests within the group as they appear on a paper request form
+  - Paired with an AU eRequesting Task Diagnostic Request to support fulfilment identification and actioning by the AU eRequesting Filler
+- Each AU eRequesting Task Diagnostic Request:
+  - Uses `Task.focus` to reference the specific test or exam request (AU eRequesting Pathology Request or AU eRequesting Imaging Request)
+  - Uses `Task.partOf` to reference the AU eRequesting Task Group, linking it to the overall coordinated order
+  - Is assigned the Placer Group Number (PGN) in `Task.groupIdentifier`
+- Implementers can distinguish between eRequesting Task Group and AU eRequesting Task Diagnostic Request resources using `Task.meta.tag` code
 
 ### Implementation considerations
 
@@ -45,17 +42,17 @@ When a resource lacks narrative, only systems that fully understand the structur
 
 #### Transaction bundles
 
-In AU eRequesting, an order typically involves multiple related FHIR resources. To help ensure consistent linkage and referential integrity across these related resources, AU eRequesting Placers could consider using a FHIR [Bundle](https://hl7.org/fhir/R4/bundle.html) of type transaction to create the resources on the server as part of a single atomic transaction. This means all resources in the order are either created successfully or rejected together which aligns with [FHIR transaction processing rules](https://hl7.org/fhir/R4/http.html#trules) and the [FHIR Request pattern](https://hl7.org/fhir/R4/request.html).
+In AU eRequesting, an order typically involves multiple related FHIR resources. To help ensure consistent linkage and referential integrity across these related resources, AU eRequesting Placers could consider using a FHIR [Bundle](https://hl7.org/fhir/R4/bundle.html) of type `transaction` to create the resources on the server as part of a single atomic transaction. This means all resources in the order are either created successfully or rejected together which aligns with [FHIR transaction processing rules](https://hl7.org/fhir/R4/http.html#trules) and the [FHIR Request pattern](https://hl7.org/fhir/R4/request.html).
 
 If a transaction Bundle is not used, the sequence in which resources are created to satisfy dependencies and uphold referential integrity needs to be carefully considered. This consideration is particularly important for the Task Group, which serves as the entry point for AU eRequesting Fillers to find and manage fulfilment tasks for the same order.
 
 #### Workflow event tracking
-AU eRequesting Placers, Fillers, and Patients (referred to here as clients) are likely to need to discover and monitor changes to key resources throughout the diagnostic requesting and fulfilment lifecycle. Specifically, tracking changes to the Task Group resource, which serves as the primary workflow and event resource, can support the following scenarios:
+AU eRequesting Placers, Fillers, and Patients (referred to here as clients) are likely to need to discover and monitor changes to key resources throughout the diagnostic requesting and fulfilment lifecycle. Specifically, tracking changes to the AU eRequesting Task Group, which serves as the primary workflow and event resource, can support the following scenarios:
 - The `Task.status` changes to "requested" or "cancelled".
 - The `Task.meta.tag` contains a coding that designates the Task as a "fulfilment-task-group", identifying it as an AU eRequesting Task Group resource.
 - A Task directed to a specific Organization via `Task.owner`, typically identified by its HPI-O identifier.
 
-Clients can then perform Search requests, including referenced resources, to retrieve the entire details of the order (alt: full set of related resources that make up the order). FHIR provides mechanisms that enable clients to monitor resource changes and track the status and progression of requests through the fulfilment workflow. These include:
+Clients can then perform search requests, including referenced resources, to retrieve the entire details of the order (or the full set of related resources that make up the order). FHIR provides mechanisms that enable clients to monitor resource changes and track the status and progression of requests through the fulfilment workflow. These include:
 - Polling: clients periodically query the Server using search parameters to find and track updates.
 - Subscriptions: clients register a Subscription to receive notifications when resources matching specific criteria are created or updated, using the [FHIR Subscriptions](https://hl7.org/fhir/R4/subscription.html) framework. 
 

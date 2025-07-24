@@ -17,11 +17,18 @@ AUeReqDI R1 is aligned with AUCDI R1.
 AUCDI R2 was published after AUeReqDI R1, introducing additional and expanded data groups to support different use cases. These are not reflected in AUeReqDI R1.
 
 The following table shows the version alignment between AU eRequesting, AUeReqDI and AUCDI:
-|AU eRequesting Version|AUeReqDI Version|AUCDI Version|
-|--|--|--|
-|1.0.0|R1|R1|
-
-
+<table>
+  <tr>
+    <th>AU eRequesting Version</th>
+    <th>AUeReqDI Version</th>
+    <th>AUCDI Version</th>
+  </tr>
+  <tr>
+    <td>1.0.0</td>
+    <td>R1</td>
+    <td>R1</td>
+  </tr>
+</table>
 
 ### AUeReqDI mappings into AU eRequesting
 
@@ -234,7 +241,7 @@ Column attribute descriptions are as follows:
     <td>ServiceRequest.insurance references a Coverage resource.</td>
   </tr>
   <tr>
-    <td rowspan="10">Implanted medical device summary</td>
+    <td rowspan="4">Implanted medical device summary</td>
     <td colspan="2">Device type name</td>
     <td>Device</td>
     <td>Device.type</td>
@@ -260,7 +267,7 @@ Column attribute descriptions are as follows:
   </tr>
   <tr>
     <td>Pregnancy summary (AUCDI R3+ backlog)</td>
-    <td>TBD</td>
+    <td colspan="2">TBD</td>
     <td><a href="StructureDefinition-au-erequesting-diagnosticrequest.html">AU eRequesting Diagnostic Request</a></td>
     <td>ServiceRequest.supportingInfo:pregnancyStatus</td>
     <td>Proposed to correspond to a future AUCDI pregnancy summary concept (in the AUCDI R3+ backlog), which is expected to describe pregnancy status within a single pregnancy and potentially include more granular states to encompass a continuum of pregnancy states. In AU eRequesting R1, the pregnancy status is constrained to Pregnant only, as advised by AUCDI authors, to ensure future compatibility.</td>
