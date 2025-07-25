@@ -27,46 +27,32 @@ The scope of AU eRequesting Release 1 is the support of pathology and medical im
 
 The following diagnostic request scenarios are in scope for Release 1:
 
-- Electronic requests for pathology and medical imaging services, with support for patient choice:
+- Electronic requests for pathology and medical imaging services, with support for patient choice via assigned or unassigned requests:
   * From community-based clinicians to:
     + Private diagnostic service providers  
     + Public hospital-based diagnostic service providers  
     + Interstate diagnostic service providers  
   * From hospital outpatient services to community-based diagnostic providers  
-  * Patient choice is supported through:
-    + Unassigned requests, where a request is made for diagnostic services and no provider is specified. The patient chooses their preferred provider to receive the service.
-    + Assigned requests, where the request is assigned to a preferred diagnostic provider at the time of the request. The patient may still elect to receive the service elsewhere.
-
+  
 - Request fulfilment tracking:
   * Systems can monitor the status and progression of requests throughout the fulfilment process  
 
-Full use case descriptions are available in [AU eRequesting Use Cases](https://build.fhir.org/ig/hl7au/au-fhir-erequesting/use-cases.html)
+See [AU eRequesting Use Cases](use-cases.html) for complete use case descriptions. 
 
-#### Out-of-scope scenarios
+#### Out of scope
 
-The following diagnostic request scenarios are outside the scope of this release:
+The following diagnostic request scenarios are outside the scope of Release 1:
 - Handling of diagnostic reports
 - Inpatient and inter-hospital workflows
 - Sendaway workflows where specimens are referred to another laboratory
 - Specimen collection processes
 - Appointment scheduling and booking
 
-#### Technical scope
+As Release 1 focuses on defining a foundational FHIR data model and RESTful API interactions, several technical aspects are intentionally out of scope. This approach supports alignment and adoption by emerging diagnostic requesting solutions, while maintaining flexibility to respond to evolving national policy directions and infrastructure considerations in future releases or downstream implementation guides.
 
-AU eRequesting Release 1 defines the foundational FHIR data model and RESTful API interactions for exchanging diagnostic service requests.
-
-This includes:
-- FHIR profiles that specify the structure and content of diagnostic requests, fulfilment tracking, and associated clinical and administrative information  
-- System actors that represent key system roles within diagnostic requesting workflows  
-- Capability statements that specify expected FHIR interactions, supported profiles, and search capabilities for each actor  
-
-#### Aspects not included in this release
-
-As Release 1 focuses on defining a foundational FHIR data model and RESTful API interactions, several aspects are intentionally out of scope. This approach supports alignment and adoption by emerging diagnostic requesting solutions, while maintaining flexibility to respond to evolving national policy directions and infrastructure considerations in future releases or downstream implementation guides.
-
-The following aspects were not considered priorities for the scope of Release 1:
+The following technical aspects were not considered priority for the scope of Release 1:
 - Authentication, authorisation, and auditing  
-- Barcodes or QR codes definition and format  
+- Barcode or QR code definition and format  
 - Provider discovery and federated resource location patterns  
 - Claiming of diagnostic requests by fillers  
 - Supporting information for ServiceRequests not yet defined, for example, Adverse Reaction Risk Summary or Problem/Diagnosis Summary  
