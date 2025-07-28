@@ -18,6 +18,45 @@ The [Australian eRequesting Data for Interoperability (AUeReqDI)](https://sparke
 
 {% include dev-note.md -%}
 
+
+### Scope of AU eRequesting Release 1
+
+The scope of AU eRequesting Release 1 is the support of pathology and medical imaging requests in community-based care provision.
+
+#### In-scope scenarios
+
+The following diagnostic request scenarios are in scope for Release 1:
+
+- Electronic requests for pathology and medical imaging services, with support for patient choice via assigned or unassigned requests:
+  * From community-based clinicians to:
+    + Private diagnostic service providers  
+    + Public hospital-based diagnostic service providers  
+    + Interstate diagnostic service providers  
+  * From hospital outpatient services to community-based diagnostic providers  
+  
+- Request fulfilment tracking:
+  * Systems can monitor the status and progression of requests throughout the fulfilment process  
+
+See [AU eRequesting Use Cases](use-cases.html) for complete use case descriptions. 
+
+#### Out of scope
+
+The following diagnostic request scenarios are outside the scope of Release 1:
+- Handling of diagnostic reports
+- Inpatient and inter-hospital workflows
+- Sendaway workflows where specimens are referred to another laboratory
+- Specimen collection processes
+- Appointment scheduling and booking
+
+As Release 1 focuses on defining a foundational FHIR data model and RESTful API interactions, several technical aspects are intentionally out of scope. This approach supports alignment and adoption by emerging diagnostic requesting solutions, while maintaining flexibility to respond to evolving national policy directions and infrastructure considerations in future releases or downstream implementation guides.
+
+The following technical aspects were not considered priority for the scope of Release 1:
+- Authentication, authorisation, and auditing  
+- Barcode or QR code definition and format  
+- Provider discovery and federated resource location patterns  
+- Claiming of diagnostic requests by fillers  
+- Supporting information for ServiceRequests not yet defined, for example, Adverse Reaction Risk Summary or Problem/Diagnosis Summary  
+
 ### Dependencies
 
 {% include dependency-table.xhtml %}
