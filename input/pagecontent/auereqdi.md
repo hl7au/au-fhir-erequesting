@@ -1,12 +1,15 @@
-[Australian eRequesting Data for Interoperability (AUeReqDI)](https://sparked.csiro.au/index.php/sparked-products-resources/auereqdi/auereqdi-release-1/) is the product of a national clinician focussed requirements gathering project operating as part of the [Sparked AU FHIR Accelerator](https://sparked.csiro.au/).  AUeReqDI outputs form a set of data requirements to be considered and referred to as part of the development and definition of AU eRequesting. 
+[Australian eRequesting Data for Interoperability (AUeReqDI)](https://sparked.csiro.au/index.php/products-resources/auereqdi/) is the product of a national clinician focussed requirements gathering project operating as part of the [Sparked AU FHIR Accelerator](https://sparked.csiro.au/).  AUeReqDI outputs form a set of data requirements to be considered and referred to as part of the development and definition of AU eRequesting. 
 
-The primary intent of AUeReqDI is to design and govern a collection of coherent, reusable building blocks known as ‘data groups’. These data groups specify “what” the clinical requirements of the clinical information that should be included for eRequests. However, it does not specify “how” the data is exchanged; this is the role fulfilled by the FHIR standard. AUeReqDI is not required to be implemented as a whole single product.  AUeReqDI builds upon and complements the foundational [Australian Core Data for Interoperability (AUCDI)](https://sparked.csiro.au/index.php/sparked-products-resources/australian-core-data-for-interoperability/aucdi-release-1/) and focuses on the specific use case of eRequesting.
+The primary intent of AUeReqDI is to design and govern a collection of coherent, reusable building blocks known as ‘data groups’. These data groups specify “what” the clinical requirements of the clinical information that should be included for eRequests. However, it does not specify “how” the data is exchanged; this is the role fulfilled by the FHIR standard. AUeReqDI is not required to be implemented as a whole single product.  AUeReqDI builds upon and complements the foundational [Australian Clinical Data for Interoperability (AUCDI)](https://sparked.csiro.au/index.php/products-resources/aucdi/) and focuses on the specific use case of eRequesting.
 
 AUeReqDI Release 1 (R1) is focused on an agreement of the minimum data required to support standardised eRequesting within the Australian health context, and forms a common language foundation that allows systems to exchange semantically accurate data for eRequests. It incorporates and builds upon prior work from national and international programs and initiatives, including the Royal College of Pathologists of Australasia (RCPA)'s Pathology information, Terminology and Units Standardisation (PITUS) framework and the Royal Australian New Zealand College of Radiology (RANZCR's) Radiology Referral Set.
 
-With AUeReqDI defining clinical data requirements and FHIR AU eRequesting providing the Implementation Guide for FHIR-based electronic requesting of diagnostic imaging and pathology services, an interpretation of AUeReqDI is necessary which is undertaken through the community.
+AU eRequesting is intended to provide an implementable standard for FHIR based interfaces for diagnostic requesting in Australia, providing:
+- an exchange standard for AUeReqDI (the underpinning clinical data model)
+- data model and RESTful API interactions that set minimum expectations for a system to create, update, search, and retrieve electronic diagnostic requests
+- a foundation focused on pathology and medical imaging requests in community-based care provision, with consideration for future eRequesting use cases beyond this scope 
 
-Updates to AU eRequesting and AU Core depend upon community input and we encourage our audience to submit questions and feedback on implementation guides by clicking on the Propose a change link in the footer of every page.  We encourage requesting any necessary clarifications to AUeReqDI or AUCDI through through the respective process that helps inform future updates to FHIR AU eRequesting and AU Core. 
+With AUeReqDI defining clinical data requirements and FHIR AU eRequesting providing the Implementation Guide for FHIR-based electronic requesting of diagnostic imaging and pathology services, an interpretation of AUeReqDI is necessary which is undertaken through the community.
 
 ### AU eRequesting, AUeReqDI and AUCDI versions
 
@@ -17,7 +20,7 @@ AUeReqDI R1 is aligned with AUCDI R1.
 AUCDI R2 was published after AUeReqDI R1, introducing additional and expanded data groups to support different use cases. These are not reflected in AUeReqDI R1.
 
 The following table shows the version alignment between AU eRequesting, AUeReqDI and AUCDI:
-<table border="1" cellspacing="0" cellpadding="0" width="100%">
+<table border="1" cellspacing="0" cellpadding="0" width="50%">
   <tr style="background-color: #f2f2f2;">
     <th>AU eRequesting Version</th>
     <th>AUeReqDI Version</th>
@@ -77,7 +80,7 @@ Column attribute descriptions are as follows:
     <td></td>
   </tr>
    <tr>
-    <td colspan="2">Service due</td>
+    <td colspan="2">Service timing</td>
     <td><a href="StructureDefinition-au-erequesting-diagnosticrequest.html">AU eRequesting Diagnostic Request</a></td>
     <td>ServiceRequest.occurrence[x]</td>
     <td>This element is choice between occurrenceTiming | occurrenceDateTime | occurrencePeriod.</td>
@@ -150,7 +153,7 @@ Column attribute descriptions are as follows:
     <td></td>
   </tr>
     <tr>
-    <td colspan="2">Service due</td>
+    <td colspan="2">Service timing</td>
     <td><a href="StructureDefinition-au-erequesting-servicerequest-imag.html">AU eRequesting Imaging Request</a></td>
     <td>ServiceRequest.occurrence[x]</td>
     <td>This element is choice between occurrenceTiming | occurrenceDateTime | occurrencePeriod.</td>
@@ -211,7 +214,7 @@ Column attribute descriptions are as follows:
     <td></td>
   </tr>
     <tr>
-    <td colspan="2">Service due</td>
+    <td colspan="2">Service timing</td>
     <td><a href="StructureDefinition-au-erequesting-servicerequest-path.html">AU eRequesting Pathology Request</a></td>
     <td>ServiceRequest.occurrence[x]</td>
     <td>This element is choice between occurrenceTiming | occurrenceDateTime | occurrencePeriod.</td>
@@ -248,7 +251,7 @@ Column attribute descriptions are as follows:
     <td>The Device resource has not yet been profiled for use in AU eRequesting.</td>
   </tr>
   <tr>
-    <td colspan="2">Overall status</td>
+    <td colspan="2">Current status</td>
     <td>Device</td>
     <td>Device.status</td>
     <td>The Device resource has not yet been profiled for use in AU eRequesting.</td>
