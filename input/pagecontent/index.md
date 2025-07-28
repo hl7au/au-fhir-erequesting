@@ -22,7 +22,7 @@ The [Australian eRequesting Data for Interoperability (AUeReqDI)](https://sparke
 
 {% include dependency-table.xhtml %}
 
-### AU eRequesting FHIR RESTful interactions
+### AU eRequesting FHIR RESTful Interactions
 
 AU eRequesting defines four system actors involved in the exchange of diagnostic requests: the AU eRequesting Placer, Filler, Patient and Server actors. The [Actors and Capabilities](capability-statements.html) page provides a summary of these actors and includes links to their definitions and CapabilityStatements. Each CapabilityStatement outlines the RESTful interactions supported by that actor, including operations such as `create`, `update`,`read` and `search`.
 
@@ -34,10 +34,10 @@ The diagram below shows typical FHIR RESTful interactions between these AU eRequ
 *Figure 1: FHIR RESTful interactions*
 <br/>
 
-### Example AU eRequesting interaction flow
+### Example AU eRequesting Interaction Flow
 The diagram below shows an example of FHIR interactions between AU eRequesting actors.
 
-It demonstrates the use of ServiceRequest and Task to support the placement and tracking of pathology and imaging requests. While the diagram focuses on these coordinating resources, the associated exchange also includes other FHIR resources that provide clinical, administrative and contextual information. The full set of profiles used to support the requests is provided on the [Profiles and Extensions](profiles-and-extensions.html) page.
+It demonstrates the use of `ServiceRequest` and `Task` to support the placement and tracking of pathology and imaging requests. While the diagram focuses on these coordinating resources, the associated exchange also includes other FHIR resources (e.g. `Patient`) that provide clinical, administrative and contextual information. The full set of profiles used to support the requests is provided on the [Profiles and Extensions](profiles-and-extensions.html) page.
 
 <div> 
     <img src="actors-sequence.png" alt="Actors Typical Sequence" style="width:80%"/>
@@ -46,13 +46,13 @@ It demonstrates the use of ServiceRequest and Task to support the placement and 
 <br/>
 
 The steps illustrated in Figure 2 are summarised below:
-- The AU eRequesting Placer actor creates a new ServiceRequest and Task on the Server, along with associated resources that collectively represent the request.
-- The AU eRequesting Filler actor searches for available Task resources and uses them to retrieve the associated ServiceRequest and other resources that make up the request.
-- The AU eRequesting Filler actor updates the Task to reflect acceptance, progress or completion.
-- The AU eRequesting Placer actor searches the Server to monitor their requests.
-- The AU eRequesting Patient actor searches the Server to view their own request details.
+- The AU eRequesting Placer actor creates `ServiceRequest` and `Task` resources on the AU eRequesting Server, along with associated resources that collectively represent the request.
+- The AU eRequesting Filler actor searches for available `Task` resources to fulfil, and retrieves the associated resources that form the request.
+- The AU eRequesting Filler actor updates the `Task` resources to reflect the fulfilment status.
+- The AU eRequesting Placer actor queries the AU eRequesting Server to monitor request fulfilment status.
+- The AU eRequesting Patient actor queries the AU eRequesting Server to view the details of their own requests.
 
-### How to read this guide
+### How To Read This Guide
 
 This guide is divided into several pages which are listed at the top of each page in the menu bar.
 
@@ -60,7 +60,7 @@ This guide is divided into several pages which are listed at the top of each pag
 - [Conformance](conformance.html): This page describes the set of rules to claim conformance to this guide
 - [Guidance](guidance.html): These pages list the guidance for this guide. 
   - [General Guidance](general-guidance.html): This page provides guidance on using the profiles defined in this guide.
-  - [AU eRequesting Workflow State Guidance](workflow-state.html): This page provides guidance on managing workflow states in AU eRequesting, where Tasks track the fulfilment of ServiceRequests, including the relationship between their respective status values.
+  - [AU eRequesting Workflow Guidance](workflow.html): This page provides guidance on managing workflow states in AU eRequesting, where Tasks track the fulfilment of ServiceRequests, including the relationship between their respective status values.
   - [Sex and Gender](sex-and-gender.html): This page provides guidance on the representation of sex, gender, and related concepts.
   - [AU eRequesting Data for Interoperability Mappings](auereqdi.html): This page maps AUeReqDI data groups and elements to FHIR artefacts in AU eRequesting.
   - [Relationships to Other Specifications](relationship.html): This page provides guidance on the relationship between AU eRequesting, AUeReqDI, and other implementation guides.
