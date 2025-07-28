@@ -56,7 +56,7 @@ In AU eRequesting, an order typically involves multiple related FHIR resources. 
 If a transaction `Bundle` is not used, the sequence in which resources are created to satisfy dependencies and uphold referential integrity needs to be carefully considered. This consideration is particularly important for the [AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html), which serves as the entry point for AU eRequesting Filler actors to find and manage fulfilment tasks for the same request.
 
 #### Workflow Event Tracking
-AU eRequesting Placer, Filler, and Patient actors are likely to need to discover and monitor changes to key resources throughout the diagnostic request and fulfilment lifecycle. See the [AU eRequesting Workflow Guidance](workflow.md) page.
+AU eRequesting Placer, Filler, and Patient actors are likely to need to discover and monitor changes to key resources throughout the diagnostic request and fulfilment lifecycle. See the [AU eRequesting Workflow Guidance](workflow.html) page.
 
 FHIR provides mechanisms that enable client systems to monitor resource changes and can be used track the status and progression of requests through the fulfilment workflow. These include:
 - [Polling](https://build.fhir.org/exchanging-polling.html): clients periodically query the server using search parameters to find and track updates.
@@ -64,7 +64,7 @@ FHIR provides mechanisms that enable client systems to monitor resource changes 
 
 #### References
 
-FHIR supports multiple reference types when referencing other resources. See FHIR guidance on [References](https://hl7.org/fhir/references.html).
+FHIR supports multiple [Reference](https://hl7.org/fhir/references.html) types when referencing other resources. 
 
 Each reference type has implications for interoperability, resolution, and system behaviour. When referencing demographic resources such as `Patient`, `PractitionerRole`, `Practitioner` and `Organization`, additional considerations also apply:
 - Ownership: which system is responsible for creating and maintaining the resource

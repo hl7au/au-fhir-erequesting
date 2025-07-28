@@ -53,7 +53,7 @@ pages:
   guidance.md:
     general-guidance.md:
       title: General Guidance
-    workflow-state.md:
+    workflow.md:
       title: AU eRequesting Workflow Guidance
     sex-and-gender.md:
       title: Sex and Gender
