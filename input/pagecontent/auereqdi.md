@@ -11,7 +11,7 @@ AU eRequesting is intended to provide an implementable standard for FHIR based i
 
 With AUeReqDI defining clinical data requirements and FHIR AU eRequesting providing the Implementation Guide for FHIR-based electronic requesting of diagnostic imaging and pathology services, an interpretation of AUeReqDI is necessary which is undertaken through the community.
 
-### AU eRequesting, AUeReqDI and AUCDI versions
+### AU eRequesting, AUeReqDI and AUCDI Versions
 
 AU eRequesting, AUeReqDI and AUCDI are updated periodically. AUeReqDI R1 contains data groups required to facilitate the exchange of a pathology test and medical imaging request, and reuses data groups from AUCDI where relevant.
 
@@ -33,7 +33,7 @@ The following table shows the version alignment between AU eRequesting, AUeReqDI
   </tr>
 </table>
 
-### AUeReqDI mappings into AU eRequesting
+### AUeReqDI Mappings Into AU eRequesting
 
 The table below shows the relationship between AUeReqDI and AUCDI Data Groups and Elements and AU eRequesting and AU Core profiles.<br/>
 Column attribute descriptions are as follows:
