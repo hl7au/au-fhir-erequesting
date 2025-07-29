@@ -9,12 +9,12 @@ Description: "This profile sets minimum expectations for a Task resource that is
 * ^status = #active
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 
-* meta.tag[eRequestingFulfilmentTask] = $tasktag#fulfilment-task-group
+* meta.tag[eRequestingFulfilmentTask] = $resourcetag#fulfilment-task-group
 
 
 * focus 0..0
 
 Invariant: au-ereq-taskgr-01
-Description: "eRequesting Fulfilment Task tag must be 'fulfilment-task-group' from http://terminology.hl7.org.au/CodeSystem/task-tag only."
+Description: "eRequesting Fulfilment Task tag must be 'fulfilment-task-group' from http://terminology.hl7.org.au/CodeSystem/resource-tag only."
 Severity: #error
-Expression: "meta.tag.where(system = 'http://terminology.hl7.org.au/CodeSystem/task-tag' and code = 'fulfilment-task').empty()"
+Expression: "meta.tag.where(system = 'http://terminology.hl7.org.au/CodeSystem/resource-tag' and code = 'fulfilment-task').empty()"
