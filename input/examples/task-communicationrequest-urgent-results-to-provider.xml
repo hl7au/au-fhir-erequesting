@@ -5,7 +5,7 @@
   <meta>
     <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-task-communicationrequest"/>
     <tag>
-      <system value="http://terminology.hl7.org.au/CodeSystem/task-tag"/>
+      <system value="http://terminology.hl7.org.au/CodeSystem/resource-tag"/>
       <code value="fulfilment-task"/>
     </tag>
   </meta>
