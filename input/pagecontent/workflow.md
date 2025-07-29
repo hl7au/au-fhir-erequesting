@@ -2,7 +2,7 @@ In AU eRequesting, a [workflow](https://hl7.org/fhir/R4/workflow.html) pattern u
 
 The current state of a `ServiceRequest` or `Task` resource within its defined lifecycle is represented by the code assigned to the status element of the resource. The `ServiceRequest.status` reflects the placer’s overall view of the diagnostic request's status, whereas the `Task.status` tracks and conveys the filler’s fulfilment status and the progress in fulfilling the diagnostic request.
 
-This page provides guidance on managing workflow states in AU eRequesting designed to promote interoperability. It covers `Task` state transitions, the use of supporting elements `Task.statusReason`, `Task.businessStatus`, and `ServiceRequest.extension:statusReason` to provide additional workflow context, and the relationship between `Task` and `ServiceRequest` status codes.
+This page provides guidance on managing workflow states in AU eRequesting. It covers `Task` state transitions, the use of supporting elements `Task.statusReason`, `Task.businessStatus`, and `ServiceRequest.extension:statusReason` to provide additional workflow context, and the relationship between `Task` and `ServiceRequest` status codes.
 
 ### AU eRequesting Task Status Workflow
 
@@ -22,7 +22,7 @@ The business rules that define which actors or system roles can modify or trigge
 <figure style="background:white;">
   <img src="task-state-machine.svg" alt="AU eRequesting Task State Transitions Diagram" style="max-width:100%;"/>
   <br/>
-  <figcaption><em>Figure 1: AU eRequesting Task State Transitions</em></figcaption>
+  <figcaption><em>Figure 1: AU eRequesting task state transitions</em></figcaption>
 </figure>
 <br/>
 
@@ -148,31 +148,30 @@ The AU eRequesting Task State Transitions table below supplements the diagram ab
 <br/> 
 
 
-#### Use and Relationship Between `Task.status`, `Task.statusReason` and `Task.businessStatus`
+#### `Task.status` and relationship with `Task.statusReason` and `Task.businessStatus`
 
-- Use `Task.status` to represent the current state of the Task. These states are encoded using codes from the [AU eRequesting Task Status](ValueSet-au-erequesting-task-status.html) value set ([required](https://hl7.org/fhir/R4/terminologies.html#required) binding).
-- Use the optional `Task.statusReason` to explain why the Task transitioned to states such as "rejected", "cancelled", "on-hold", or "failed", providing context for deviations from the expected workflow (or "happy path").
-  - There is no defined value set for `Task.statusReason`. When used, this element is expected to carry meaningful data suitable for sharing with other ecosystem participants, including a human-readable description in `Task.statusReason.text`.
-- Use the optional `Task.businessStatus` to convey business-specific substates that provide additional workflow context within a broader `Task.status` code. 
-  - For example, values assigned to `Task.businessStatus` such as "collected", "acquired", or "preliminary" from the [AU eRequesting Task Business Status](ValueSet-au-erequesting-task-businessstatus.html) value set ([extensible](https://hl7.org/fhir/R4/terminologies.html#extensible) binding) can indicate important workflow milestones while the `Task.status` remains "in-progress". 
+- Use `Task.status` to represent the current state of the `Task`. These states are encoded with values from the [AU eRequesting Task Status](ValueSet-au-erequesting-task-status.html) value set.
+- Use the optional `Task.statusReason` to explain why the `Task` transitioned to states such as "rejected", "cancelled", "on-hold", or "failed", providing context for deviations from the expected workflow.
+  - There is no defined value set for `Task.statusReason`. When used, this element is expected to carry meaningful data including a human-readable description in `Task.statusReason.text`.
+- Use the optional `Task.businessStatus` to convey business-specific substates that provide additional workflow context within a `Task.status`. 
+  - For example, values assigned to `Task.businessStatus` such as "collected", "acquired", or "preliminary" from the [AU eRequesting Task Business Status](ValueSet-au-erequesting-task-businessstatus.html) value set can indicate important workflow milestones while the `Task.status` remains "in-progress". 
   - Since `Task.businessStatus` serves to augment `Task.status` when further categorisation is useful, `Task.businessStatus` may be omitted if no further categorisation is needed.
-  - The table in this section outlines the recommended mapping between `Task.businessStatus` and `Task.status`, indicating the relationship by which a Task business status can convey a business-specific substate that provides additional workflow context within a broader Task status. Implementers are encouraged to adopt these mappings to support interoperability, although conformance is not currently enforced. These mappings may be formalised in a future release of this IG.
-- When updating the `Task.status`, it is recommended to review and update the `Task.statusReason` and `Task.businessStatus` as appropriate to maintain alignment with the new status. If previously set values are no longer relevant, they are expected to be cleared to avoid propagating outdated or misleading information beyond the context in which they were originally set.
+- When updating the `Task.status`, it is recommended to review and update the `Task.statusReason` and `Task.businessStatus` to maintain alignment. If previously set values are no longer relevant, they are expected to be cleared to avoid propagating outdated or misleading information beyond the context in which they were originally set.
 
-The following table outlines the AU eRequesting Task Business Status codes and their relationship to Task Status codes.
+The following table outlines the recommended mapping between [AU eRequesting Task Business Status](ValueSet-au-erequesting-task-businessstatus.html) codes and [AU eRequesting Task Status](ValueSet-au-erequesting-task-status.html) codes, indicating the relationship by which a task business status can convey a business-specific substate providing workflow context to task status. Implementers are encouraged to adopt these mappings to support interoperability, although conformance is not currently enforced. This  mapping may be formalised in a future release of this IG.
 
 <table border="1">
   <thead>
     <tr>
       <th style="width:10%; padding:6px;">Context</th>
       <th style="width:25%; padding:6px;">AU eRequesting Task Business Status codes for <code>Task.businessStatus</code></th>
-      <th style="width:40%; padding:6px;">AU eRequesting Task Business Status code description</th>
-      <th style="width:25%; padding:6px;">Relationship to Task Status codes for <code>Task.status</code></th>
+      <th style="width:40%; padding:6px;">Description</th>
+      <th style="width:25%; padding:6px;">Relationship to AU eRequesting Task Status codes for <code>Task.status</code></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="7" style="vertical-align: top;">Shared (Pathology and Radiology)</td>
+      <td rowspan="7" style="vertical-align: top;">Shared (pathology and radiology)</td>
       <td>booked</td>
       <td>The service has been booked.</td>
       <td>accepted</td>
@@ -231,21 +230,21 @@ The following table outlines the AU eRequesting Task Business Status codes and t
 
 
 #### Relationship Between AU eRequesting Task Group `Task.status` and AU eRequesting Task Diagnostic Request `Task.status`
-The group task is considered a central component of the AU eRequesting data architecture for fillers to discover and manage fulfilment Task(s) for the same order, and to retrieve their focus diagnostic request and related resources. For this reason, the status of the group task is particularly important — changes to other resources, such as ServiceRequest.status, cannot be reliably acted on by the filler unless those changes are also reflected in the status of the group task.
+The [AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html) is used to represent and coordinate the overall group of requests. It allows the AU eRequesting Filler actor to manage the group as a single coordinated request, supporting fulfilment, progress tracking and status updates across the group. See [Diagnostic Request Grouping](general-guidance.html#diagnostic-request-grouping.html) guidance for more information. 
 
-Hence, the status of an AU eRequesting Task Group is expected to reflect the most appropriate status among its individual AU eRequesting Task Diagnostic Request(s); however, at present, there are no enforced rules.
+It is expected that the status of the task group will reflect the most appropriate status among the individual [AU eRequesting Task Diagnostic Request(s)](StructureDefinition-au-erequesting-task-diagnosticrequest.html), however this is not enforced. Changes to other resources, such as `ServiceRequest.status`, cannot be reliably acted on by the filler unless those changes are also reflected in the status of the task group.
 
 ### AU eRequesting Diagnostic Request Status
 
 #### Request Status Definitions
 
-The [AU eRequesting RequestStatus](ValueSet-au-erequesting-request-status.html) value set specifies a constrained subset of ServiceRequest status codes used in the Australian eRequesting context.
+The [AU eRequesting RequestStatus](ValueSet-au-erequesting-request-status.html) value set specifies a constrained subset of `ServiceRequest` status codes used in the Australian eRequesting context.
 
 #### Request States
 
-In AU eRequesting workflows for community-based pathology and imaging, the state (status) of an AU eRequesting Diagnostic Request is managed by the placer.
+In AU eRequesting workflows for community-based pathology and imaging, the state (status) of an [AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html) is managed by the AU eRequesting Placer actor.
 
-The AU eRequesting Request States for ServiceRequest.status table below provides Request status code definitions, and implementation guidance for AU eRequesting workflows.
+The AU eRequesting Request States for `ServiceRequest.status` table below provides implementation guidance for AU eRequesting workflows.
 
 <table border="1">
   <thead>
@@ -275,7 +274,7 @@ The AU eRequesting Request States for ServiceRequest.status table below provides
         <ul>
           <li>Use the optional <code>ServiceRequest.extension:statusReason</code> to provide explanatory context.
             <ul>
-              <li>Given there is no defined value set for `ServiceRequest.extension:statusReason`, when used, include meaningful data with a human-readable description in `ServiceRequest.extension:statusReason.text`.</li>
+              <li>Given there is no defined value set for <code>ServiceRequest.extension:statusReason</code>, when used, include meaningful data with a human-readable description in <code>ServiceRequest.extension:statusReason.text</code>.</li>
             </ul>
           </li>
         </ul>
@@ -288,7 +287,7 @@ The AU eRequesting Request States for ServiceRequest.status table below provides
           <li>Indicates the diagnostic request was withdrawn or cancelled by the placer before it was fulfilled.</li>
           <li>Use the optional <code>ServiceRequest.extension:statusReason</code> to provide explanatory context.
             <ul>
-              <li>Given there is no defined value set for `ServiceRequest.extension:statusReason`, when used, include meaningful data with a human-readable description in `ServiceRequest.extension:statusReason.text`.</li>
+              <li>Given there is no defined value set for <code>ServiceRequest.extension:statusReason</code>, when used, include meaningful data with a human-readable description in <code>ServiceRequest.extension:statusReason.text</code>.</li>
             </ul>
           </li>
           <li>The placer is expected to transition the corresponding task to "cancelled".</li>
@@ -318,7 +317,7 @@ The AU eRequesting Request States for ServiceRequest.status table below provides
           </li>
           <li>Use the optional <code>ServiceRequest.extension:statusReason</code> to provide explanatory context.
             <ul>
-              <li>Given there is no defined value set for `ServiceRequest.extension:statusReason`, when used, include meaningful data with a human-readable description in `ServiceRequest.extension:statusReason.text`.</li>
+              <li>Given there is no defined value set for <code>ServiceRequest.extension:statusReason</code>, when used, include meaningful data with a human-readable description in <code>ServiceRequest.extension:statusReason.text</code>.</li>
             </ul>
           </li>
           <li>The placer is expected to transition the corresponding task to "cancelled".</li>
@@ -330,13 +329,13 @@ The AU eRequesting Request States for ServiceRequest.status table below provides
 <br/> 
 
 
-#### Use and Relationship Between `ServiceRequest.status` and `ServiceRequest.extension:statusReason`
+#### Relationship Between `ServiceRequest.status` and `ServiceRequest.extension:statusReason`
 
-- Use `ServiceRequest.status` to represent the current state of the AU eRequesting Diagnostic Request. These states are encoded using codes from the [AU eRequesting RequestStatus](ValueSet-au-erequesting-request-status.html) value set ([required](https://hl7.org/fhir/R4/terminologies.html#required) binding).
-- `ServiceRequest.extension:statusReason` provides optional explanatory context about why the request is in that particular state. It is not typically required for normal progression through the workflow (e.g., from "active" to "completed"). Instead, it is intended to provide business-relevant context in exception scenarios, such as when a request is placed "on-hold", "revoked", or marked "entered-in-error".
-  - There is no defined value set for `ServiceRequest.extension:statusReason`. When used, this element is expected to carry meaningful data suitable for sharing with other ecosystem participants, including a human-readable description in `ServiceRequest.extension:statusReason.text`.
+- Use `ServiceRequest.status` to represent the current state of the [AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html). These states are encoded using codes from the [AU eRequesting RequestStatus](ValueSet-au-erequesting-request-status.html) value set.
+- `ServiceRequest.extension:statusReason` provides optional explanatory context about why the request is in that particular state. It is not typically required for normal progression through the workflow (e.g. from "active" to "completed"), however it is intended to provide business-relevant context in exception scenarios, such as when a request is placed "on-hold", "revoked", or marked "entered-in-error".
+  - There is no defined value set for `ServiceRequest.extension:statusReason`. When used, this element is expected to carry meaningful data including a human-readable description in `ServiceRequest.extension:statusReason.text`.
 
 #### Relationship Between `ServiceRequest.status` and `Task.status`
 
-- While the AU eRequesting Diagnostic Request and AU eRequesting Task Diagnostic Request are loosely coupled, in practice, changes in `ServiceRequest.status` are expected, where appropriate, to be reflected in the corresponding `Task.status` to maintain alignment across resources involved in the workflow. Placers are responsible for managing this alignment, as changes in the diagnostic request status often require corresponding updates in fulfilment management. Failure to maintain this alignment can lead to workflow inconsistencies, such as orphaned tasks or misaligned expectations between placers and fillers.
+- While the [AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html) and [AU eRequesting Task Diagnostic Request](StructureDefinition-au-erequesting-task-diagnosticrequest.html) are loosely coupled, in practice, changes in `ServiceRequest.status` are expected to be reflected in the corresponding `Task.status` to maintain alignment across resources involved in the workflow. Placers are responsible for managing this alignment, as changes in the diagnostic request status often require corresponding updates in fulfilment management. Failure to maintain this alignment can lead to workflow inconsistencies, such as orphaned tasks or misaligned expectations between placers and fillers.
 - Some typical business rules on these status relationships are outlined in the [Request States](#request-states) table above.

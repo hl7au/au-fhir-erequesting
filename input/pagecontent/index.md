@@ -63,23 +63,21 @@ The following technical aspects were not considered priority for the scope of Re
 
 ### AU eRequesting FHIR RESTful Interactions
 
-AU eRequesting defines four system actors involved in the exchange of diagnostic requests: the AU eRequesting Placer, Filler, Patient and Server actors. The [Actors and Capabilities](capability-statements.html) page provides a summary of these actors and includes links to their definitions and CapabilityStatements. Each CapabilityStatement outlines the RESTful interactions supported by that actor, including operations such as `create`, `update`,`read` and `search`.
+AU eRequesting defines four system actors involved in the exchange of diagnostic requests: the AU eRequesting Placer, Filler, Patient and Server actors. The [Actors and Capabilities](capability-statements.html) page provides a summary of these actors and includes links to their definitions and CapabilityStatements. Each capability statement outlines the RESTful interactions supported by that actor, including operations such as `create`, `update`, `read` and `search`.
 
 The diagram below shows typical FHIR RESTful interactions between these AU eRequesting actors:
 
 <div> 
-  <img src="au-erequesting-actor-interactions.png" alt="FHIR RESTful read interactions" style="width:80%"/>
+  <img src="au-erequesting-actor-interactions.svg" alt="FHIR RESTful read interactions" style="width:100%"/>
 </div>
 *Figure 1: FHIR RESTful interactions*
 <br/>
 
 ### Example AU eRequesting Interaction Flow
-The diagram below shows an example of FHIR interactions between AU eRequesting actors.
-
-It demonstrates the use of `ServiceRequest` and `Task` to support the placement and tracking of pathology and imaging requests. While the diagram focuses on these coordinating resources, the associated exchange also includes other FHIR resources (e.g. `Patient`) that provide clinical, administrative and contextual information. The full set of profiles used to support the requests is provided on the [Profiles and Extensions](profiles-and-extensions.html) page.
+The diagram below shows an example of FHIR interactions between AU eRequesting actors, and demonstrates the use of `ServiceRequest` and `Task` to support the placement and tracking of pathology and imaging requests. While the diagram focuses on these coordinating resources, the associated exchange also includes other FHIR resources (e.g. `Patient`) that provide clinical, administrative and contextual information. The full set of profiles used to support the requests is provided on the [Profiles and Extensions](profiles-and-extensions.html) page.
 
 <div> 
-    <img src="actors-sequence.png" alt="Actors Typical Sequence" style="width:80%"/>
+    <img src="actors-sequence.svg" alt="Actors Typical Sequence" style="width:100%"/>
 </div>
 *Figure 2: Example interaction flow*
 <br/>
