@@ -131,7 +131,7 @@ The table below provides an overview of the sex and gender concepts that are inc
         </tr>
         <tr>
             <td style=" text-align: center; vertical-align: middle;">
-                <a href="StructureDefinition-au-core-patient.html">AU Core<br/>Patient</a>
+                <a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-patient.html">AU Core<br/>Patient</a>
             </td>
             <td style=" text-align: center; vertical-align: middle;">
                 <img src="green_checkmark.png" width="20"/>
@@ -157,7 +157,7 @@ The table below provides an overview of the sex and gender concepts that are inc
         </tr>
         <tr>
             <td style=" text-align: center; vertical-align: middle;">
-                <a href="StructureDefinition-au-core-practitioner.html">AU Core <br/>Practitioner</a>
+                <a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-practitioner.html">AU Core <br/>Practitioner</a>
             </td>
             <td style=" text-align: center; vertical-align: middle;">
                 <img src="blue_checkmark.png" width="20"/>
@@ -183,7 +183,7 @@ The table below provides an overview of the sex and gender concepts that are inc
         </tr>
         <tr>
             <td style=" text-align: center; vertical-align: middle;">
-                <a href="StructureDefinition-au-core-relatedperson.html">AU Core<br/> RelatedPerson</a>
+                <a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-relatedperson.html">AU Core<br/> RelatedPerson</a>
             </td>
             <td style=" text-align: center; vertical-align: middle;">
                 <img src="blue_checkmark.png" width="20"/>
