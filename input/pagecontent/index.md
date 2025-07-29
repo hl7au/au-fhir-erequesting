@@ -6,7 +6,7 @@ AU eRequesting defines the data model and RESTful API interactions that set mini
 The focus of AU eRequesting Release 1 (R1) is to support pathology and medical imaging requests in community-based care, while also considering future applications beyond this scope.
 
 
-### Project background
+### Project Background
 
 This implementation guide is under development through the AU eRequesting project as part of the [Sparked AU FHIR Accelerator](https://sparked.csiro.au). The Sparked AU FHIR Accelerator is a collaborative community of government, technology vendors, provider organisations, peak bodies, practitioners, and domain experts, working together to accelerate the creation and use of national FHIR standards for health information exchange.
 
@@ -23,7 +23,7 @@ The [Australian eRequesting Data for Interoperability (AUeReqDI)](https://sparke
 
 The scope of AU eRequesting Release 1 is the support of pathology and medical imaging requests in community-based care provision.
 
-#### In-scope scenarios
+#### In-Scope Scenarios
 
 The following diagnostic request scenarios are in scope for Release 1:
 
@@ -39,7 +39,7 @@ The following diagnostic request scenarios are in scope for Release 1:
 
 See [AU eRequesting Use Cases](use-cases.html) for complete use case descriptions. 
 
-#### Out of scope
+#### Out of Scope
 
 The following diagnostic request scenarios are outside the scope of Release 1:
 - Handling of diagnostic reports
@@ -61,7 +61,7 @@ The following technical aspects were not considered priority for the scope of Re
 
 {% include dependency-table.xhtml %}
 
-### AU eRequesting FHIR RESTful interactions
+### AU eRequesting FHIR RESTful Interactions
 
 The RESTful interaction requirements for AU eRequesting actors, such as read and search operations, are outlined in the AU eRequesting CapabilityStatements. AU eRequesting Actors and their respective CapabilityStatements are defined in [Actors and Capabilities](capability-statements.html).
 
@@ -75,7 +75,7 @@ The diagram below illustrates the interactions between the various actors:
 
 *Note*: AU eRequesting Actor interactions will transition with the introduction of the Task resource, which will become central to fulfilment.
 
-### AU eRequesting typical sequence
+### AU eRequesting Typical Sequence
 
 The AU eRequesting Placer actor can create and update ServiceRequest details by calling the AU eRequesting Server actor.
 
@@ -94,7 +94,7 @@ This sequence is shown in the diagram below:
 
 <br/>
 
-### How to read this guide
+### How to Read this Guide
 
 This guide is divided into several pages which are listed at the top of each page in the menu bar.
 

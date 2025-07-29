@@ -12,7 +12,7 @@ This layering of IGs balances relative adoption and implementation maturity of F
 *Figure 1: Context of AU eRequesting within the set of HL7 AU FHIR standards*
 <br/>
 
-### Relationship to AUeReqDI and other IGs
+### Relationship to AUeReqDI and Other IGs
 [Australian eRequesting Data for Interoperability (AUeReqDI)](https://sparked.csiro.au/index.php/sparked-products-resources/auereqdi/auereqdi-release-1/) builds upon and complements the foundational Australian Clinical Data for Interoperability (AUCDI) and focuses on the specific use case of eRequesting. The first release of AUeReqDI is focused on electronic pathology and medical imaging requests in primary and community-based care provision.
 
 AUeReqDI defines the clinical data requirements for eRequesting, incorporating relevant data groups from AUCDI and contains additional data groups and elements that facilitate the exchange of a pathology test or medical imaging request.

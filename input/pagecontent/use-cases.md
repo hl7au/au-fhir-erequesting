@@ -10,7 +10,7 @@ Column attribute descriptions are as follows:
 
 See [AU eRequesting Data for Interoperability Mappings](auereqdi.html) for the relationship between the AUeReqDI or AUCDI data groups, elements, and AU eRequesting profiles.
 
-### Diagnostic imaging use cases
+### Diagnostic Imaging Use Cases
 
 <table border="1">
 <thead>
@@ -49,7 +49,7 @@ See [AU eRequesting Data for Interoperability Mappings](auereqdi.html) for the r
 </tbody>
 </table>
 
-### Pathology use cases
+### Pathology Use Cases
 
 <table border="1">
 <thead>
@@ -95,7 +95,7 @@ See [AU eRequesting Data for Interoperability Mappings](auereqdi.html) for the r
 </tbody>
 </table>
 
-### General use cases
+### General Use Cases
 
 <table border="1">
 <thead>

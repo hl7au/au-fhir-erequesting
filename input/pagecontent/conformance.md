@@ -86,7 +86,7 @@ Actor | Code | Display | Definition | Notes
 
 How the system processes the resource depends on local requirements that could align with obligation terms such as [reject invalid](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-reject-invalid), [correctly handle](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-handle), [persist](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-persist), [display](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-display), or [ignore](https://hl7.org/fhir/extensions/CodeSystem-obligation.html#obligation-ignore).
 
-#### Presentation of Must Support and obligation in profiles
+#### Presentation of Must Support and Obligation in Profiles
 
 All elements with *Must Support* in AU eRequesting are accompanied by an explicit obligation that identifies the expectations for one or more actors. When rendered in an implementation guide, each profile is presented in different formal views under tabs labelled "Differential Table", "Key Elements Table", and "Snapshot Table". Elements flagged with *Must Support* and stated obligations in these views are represented by <span style="padding-left: 3px; padding-right: 1px; color: white; background-color: red" title="This element must be supported">S</span><span style="padding-left: 0px; padding-right: 3px; color: white; background-color: red" title="This element has obligations">O</span> as shown below. 
 
@@ -98,7 +98,7 @@ All elements with *Must Support* in AU eRequesting are accompanied by an explici
 
 Implementers need to refer to the "Key Elements Table" to see the full set of elements that are mandatory or *Must Support* with obligations, and the full set of terminology requirements.  Implementers need to be aware that the full set of constraints (i.e. invariants) are only presented in the "Detailed Descriptions" tab or the raw representation (e.g. XML or JSON) of the profile.
 
-##### Presentation of Must Support and obligation in raw representations
+##### Presentation of Must Support and Obligation in Raw Representations
 
 When viewing the raw representation (e.g. XML or JSON) of a profile, elements labelled *Must Support* are flagged as `mustSupport` set to "true", and obligations are defined in the [Obligation Extension](https://hl7.org/fhir/extensions/StructureDefinition-obligation.html) as shown in the example below.
 
