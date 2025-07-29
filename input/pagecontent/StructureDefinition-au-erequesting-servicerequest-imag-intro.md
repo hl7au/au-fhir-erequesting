@@ -1,6 +1,8 @@
 {% include rrv-dev-note.md %}
 
 ### Profile specific implementation guidance
+- This profile supports the sex and gender related concept of Sex Parameter for Clinical Use:
+   - When exchanging concepts of sex or gender, refer to the guidance in [Sex and Gender](sex-and-gender.html) and the [Gender Harmony Implementation Guide](http://hl7.org/xprod/ig/uv/gender-harmony/).
 - `ServiceRequest.code`
   - The use of coding for the requested exam can vary significantly across systems, filler systems need to understand that they may encounter codes they do not recognise and be prepared to handle those resources appropriately. Placer systems **SHALL** populate `ServiceRequest.code.text` so that fillers can at least display the service requested, even if they do not recognise the code supplied.
   - Placer systems **SHALL** adhere to the following order of preference when populating the `ServiceRequest.code`:

@@ -30,6 +30,7 @@ This change log documents the significant updates and resolutions implemented fr
   - AU eRequesting Display Sequence ([FHIR-49715](https://jira.hl7.org/browse/FHIR-49715), [FHIR-50540](https://jira.hl7.org/browse/FHIR-50540))
   - AU eRequesting Fasting Precondition ([FHIR-49917](https://jira.hl7.org/browse/FHIR-49917), [FHIR-50540](https://jira.hl7.org/browse/FHIR-50540))
 - Added [Sex and Gender](sex-and-gender.html) page to consolidate implementation guidance on sex and gender concepts in AU eRequesting, with references to guidance in AU Core and AU Base [FHIR-47176](https://jira.hl7.org/browse/FHIR-47176), [FHIR-47178](https://jira.hl7.org/browse/FHIR-47178), [FHIR-47182](https://jira.hl7.org/browse/FHIR-47182), [FHIR-47183](https://jira.hl7.org/browse/FHIR-47183), [FHIR-46892](https://jira.hl7.org/browse/FHIR-46892), [FHIR-46896](https://jira.hl7.org/browse/FHIR-46896).
+- added Recorded Sex or Gender and Sex Parameter for Clinical Use to the [Sex and Gender](sex-and-gender.html) page [AU Base: 51408](https://jira.hl7.org/browse/FHIR-51408).
 - Added [Security and Privacy](security.html) page [FHIR-50880](https://jira.hl7.org/browse/FHIR-50880)
 - Made the following changes to AU eRequesting ServiceRequest:
   - made the profile abstract ([FHIR-46813](https://jira.hl7.org/browse/FHIR-46813))
@@ -39,7 +40,7 @@ This change log documents the significant updates and resolutions implemented fr
   - AU eRequesting ServiceRequest profile renamed to be AU eRequesting Diagnostic Request [FHIR-46842](https://jira.hl7.org/browse/FHIR-46842)
   - Removed draft and unknown from ServiceRequest.status [FHIR-47097](https://jira.hl7.org/browse/FHIR-47097)
   - added Request status reason extension as a Must Support element with cardinality 0..1 [FHIR-47098](https://jira.hl7.org/browse/FHIR-47098)
-  - added Patient Sex Parameter for Clinical Use extension [FHIR-46997](https://jira.hl7.org/browse/FHIR-46997)
+  - added Patient Sex Parameter for Clinical Use extension as Must Support element with cardinality 0..1 [FHIR-46997](https://jira.hl7.org/browse/FHIR-46997)
   - added AU eRequesting Display Sequence extension as Must Support element with cardinality 1..1 [FHIR-49715](https://jira.hl7.org/browse/FHIR-49715), [FHIR-49716](https://jira.hl7.org/browse/FHIR-49716)
   - added AU eRequesting Fasting Precondition extension as Must Support element with cardinality 0..1 [FHIR-49917](https://jira.hl7.org/browse/FHIR-49917)
   - added Must Support to ServiceRequest.occurrence [FHIR-49918](https://jira.hl7.org/browse/FHIR-49918)
