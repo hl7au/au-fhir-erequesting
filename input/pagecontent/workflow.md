@@ -1,4 +1,4 @@
-In AU eRequesting, a [workflow](https://hl7.org/fhir/R4/workflow.html) pattern using the ServiceRequest and Task resources are used to separate the diagnostic request details from its fulfilment. The ServiceRequest represents the request initiated by placers, while the associated Task is used by fillers for tracking and communicating the progress of the request through the fulfilment workflow. 
+In AU eRequesting, a [workflow](https://hl7.org/fhir/R4/workflow.html) pattern using the ServiceRequest and Task resources is used to separate the diagnostic request details from its fulfilment. The ServiceRequest represents the request initiated by placers, while the associated Task is used by fillers for tracking and communicating the progress of the request through the fulfilment workflow. 
 
 The current state of a ServiceRequest or Task resource within its defined lifecycle is represented by the code assigned to the status element of the resource. The `ServiceRequest.status` reflects the placer’s overall view of the diagnostic request status, whereas the `Task.status` tracks and conveys the filler’s fulfilment status and the progress in fulfilling the diagnostic request.
 
@@ -20,13 +20,13 @@ The business rules that define which actors or system roles can modify or trigge
 <br/>
 
 <figure style="background:white;">
-  <img src="task-state-machine.svg" alt="AU eRequesting Task State Transitions Diagram" style="max-width:100%;"/>
+  <img src="au-erequesting-task-state-transition.svg" alt="AU eRequesting Task State Transitions Diagram" style="max-width:100%;"/>
   <br/>
   <figcaption><em>Figure 1: AU eRequesting task state transitions</em></figcaption>
 </figure>
 <br/>
 
-The table below supplements the AU eRequesting task state transitions diagram above by providing implementation guidance for AU eRequesting workflows and listing the allowed state transitions.
+The table below supplements Figure 1 by providing implementation guidance for AU eRequesting workflows and listing the allowed state transitions.
 
 
 <table border="1">

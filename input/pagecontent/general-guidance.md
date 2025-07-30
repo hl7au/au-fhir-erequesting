@@ -2,22 +2,23 @@
 
 In AU eRequesting, grouping is applied to requests created by an AU eRequesting Placer actor. This reflects common patterns in Australia where multiple related pathology tests or imaging exams are requested in a single event.
 
+AU eRequesting follows the [shared requisition id](https://hl7.org/fhir/request.html#requisitionid) approach from the [FHIR Request pattern](https://hl7.org/fhir/request.html), where multiple request resources created as part of the same ordering event share a common identifier. The Placer Group Number (PGN) is the common identifier assigned by the AU eRequesting Placer actor at the time of request creation and is recorded in either the `requisition` or `groupIdentifier` elements of resources in the group.
+
 A single [AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html) is used to represent and coordinate the overall group of requests. It allows the AU eRequesting Filler actor to manage the group as a single coordinated request, supporting fulfilment, progress tracking and status updates across the group.
  
 Each individual requested test or exam in the group is represented using an [AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html), and each individual commmunication request is represented using an [AU eRequesting CommunicationRequest](StructureDefinition-au-erequesting-communicationrequest.html). These individual requests are paired with a corresponding Task to track the fulfilment of that request.
-
-AU eRequesting follows the [shared requisition id](https://hl7.org/fhir/request.html#requisitionid) approach from the [FHIR Request pattern](https://hl7.org/fhir/request.html), where multiple request resources created as part of the same ordering event share a common identifier. The Placer Group Number (PGN) is the common identifier assigned by the AU eRequesting Placer actor at the time of request creation and is recorded in either the `requisition` or `groupIdentifier` elements of resources in the group.
  
 Each request will also include supporting clinical, administrative and contextual information represented using other FHIR resources (e.g. Patient). These resources form part of the overall request and may be shared across the group or be specific to individual requests. The full set of AU eRequesting profiles used to support the request is listed on the [Profiles and Extensions](profiles-and-extensions.html) page. 
 
  <div> 
-    <img src="erequesting-group.svg" alt="AU eRequesting Diagnostic Request Grouping" style="width:90%"/>
+    <img src="au-erequesting-example-request-group.svg" alt="AU eRequesting example request group" style="width:90%"/>
   </div>
-*Figure 1: AU eRequesting diagnostic request grouping*
+*Figure 1: AU eRequesting example request group*
 
 #### Request Group Guidance
-- An [AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html) **SHALL** always be created, including when there is only a single request for a test or exam. This ensures consistent implementation and uniform processing by the AU eRequesting Filler actor. A task group:
-  - Is used to manage the group as a single coordinated request
+- A task group:
+  - Is used to manage the group as a single coordinated request and is implemented using [AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html) 
+  - **SHALL** always be created, including when there is only a single request for a test or exam. This ensures consistent implementation and uniform processing by the AU eRequesting Filler actor.
   - Is assigned the Placer Group Number (PGN) in `Task.groupIdentifier` by the AU eRequesting Placer actor to logically associate all requests in the order 
   - Is identified by the `Task.meta.tag` of "fulfilment-task-group"
 - Each task request in the group:
@@ -51,7 +52,7 @@ It is recommended that FHIR resources exchanged as part of AU eRequesting includ
 
 #### Transaction Bundles
 
-In AU eRequesting, an order typically involves multiple related FHIR resources. To help ensure consistent linkage and referential integrity across these related resources, AU eRequesting Placer actors could consider using a FHIR [Bundle](https://hl7.org/fhir/R4/bundle.html) of type `transaction` to create the resources on the server as part of a single atomic transaction. This means all resources in the request are either created successfully or rejected together which aligns with [FHIR transaction processing rules](https://hl7.org/fhir/R4/http.html#trules) and the [FHIR Request pattern](https://hl7.org/fhir/R4/request.html).
+In AU eRequesting, an order typically involves multiple related FHIR resources. To help ensure consistent linkage and referential integrity across these related resources, AU eRequesting Placer actors could consider using a FHIR [Bundle](https://hl7.org/fhir/R4/bundle.html) of type `transaction` to create the resources on the server as part of a single atomic transaction. This means all resources in the request are either created successfully or rejected together, which aligns with [FHIR transaction processing rules](https://hl7.org/fhir/R4/http.html#trules) and the [FHIR Request pattern](https://hl7.org/fhir/R4/request.html).
 
 If a transaction Bundle is not used, the sequence in which resources are created to satisfy dependencies and uphold referential integrity needs to be carefully considered. This consideration is particularly important for the [AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html), which serves as the entry point for AU eRequesting Filler actors to find and manage fulfilment tasks for the same request.
 
