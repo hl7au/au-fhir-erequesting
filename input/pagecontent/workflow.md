@@ -230,7 +230,7 @@ The following table outlines the recommended mapping between [AU eRequesting Tas
 
 
 #### Relationship Between AU eRequesting Task Group `Task.status` and AU eRequesting Task Diagnostic Request `Task.status`
-The [AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html) is used to represent and coordinate the overall group of requests. It allows the AU eRequesting Filler actor to manage the group as a single coordinated request, supporting fulfilment, progress tracking and status updates across the group. See [Diagnostic Request Grouping](general-guidance.html#diagnostic-request-grouping.html) guidance for more information. 
+The [AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html) is used to represent and coordinate the overall group of requests. It allows the AU eRequesting Filler actor to manage the group as a single coordinated request, supporting fulfilment, progress tracking and status updates across the group. See [Diagnostic Request Grouping](general-guidance.html#diagnostic-request-grouping) guidance for more information. 
 
 It is expected that the status of the task group will reflect the most appropriate status among the individual [AU eRequesting Task Diagnostic Request(s)](StructureDefinition-au-erequesting-task-diagnosticrequest.html), however this is not enforced. Changes to other resources, such as `ServiceRequest.status`, cannot be reliably acted on by the filler unless those changes are also reflected in the status of the task group.
 
