@@ -17,9 +17,12 @@
         <coding>
           <system value="http://terminology.hl7.org/CodeSystem/sex-parameter-for-clinical-use"/>
           <code value="female-typical"/>
+          <display value="Apply female-typical setting or reference range"/>
         </coding>
-        <text value="Apply female-typical setting or reference range"/>
       </valueCodeableConcept>
+    </extension>
+    <extension url="comment">
+      <valueString value="Use female reference intervals when interpreting results"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/request-statusReason">

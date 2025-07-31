@@ -10,7 +10,7 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 
-* extension contains http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse named sexParameterForClinicalUse 0..1 MS
+* extension[sexParameterForClinicalUse] 0..1 MS
 * extension[sexParameterForClinicalUse] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate-if-known
 * extension[sexParameterForClinicalUse] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * extension[sexParameterForClinicalUse] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[code].valueCode = #SHALL:handle
