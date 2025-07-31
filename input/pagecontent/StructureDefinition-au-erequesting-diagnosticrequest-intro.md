@@ -2,4 +2,17 @@
 - This abstract profile provides a shared base that is common across requests for specific domains. It is not intended for direct implementation. Where a profile is defined for a specific domain that profile **SHALL** be used:
   - pathology requests **SHALL** use [AU eRequesting Pathology Request](StructureDefinition-au-erequesting-servicerequest-path.html) profile
   - imaging requests **SHALL** use [AU eRequesting Imaging Request](StructureDefinition-au-erequesting-servicerequest-imag.html) profile 
+- This profile supports the sex and gender related concept of Sex Parameter for Clinical Use:
+   - When exchanging concepts of sex or gender, refer to the guidance in [Sex and Gender](sex-and-gender.html) and the [Gender Harmony Implementation Guide](http://hl7.org/xprod/ig/uv/gender-harmony/).
 - The provision of an insurance attribute describes a recommendation to be considered by the Filler and does not guarantee that this recommendation will be satisfied.
+- See the [AU eRequesting Workflow Guidance](workflow.html) page for guidance on managing workflow states in AU eRequesting.
+- Resources referenced by `ServiceRequest.supportingInfo` can be referenced by all ServiceRequests in a group when the information applies across the group, or by individual ServiceRequests when the information is specific to particular requests. `ServiceRequest.supportingInfo` is used to represent the following additional clinical information accompanying the request:
+  - Pregnancy Status:
+    - Represented using `ServiceRequest.supportingInfo:pregnancyStatus` referencing an [Observation Pregnancy - Status (IPS)](https://build.fhir.org/ig/HL7/fhir-ips/StructureDefinition-Observation-pregnancy-status-uv-ips.html).
+    - Only the pregnancy status of 77386006 \|Pregnant\| is permitted.
+  - Clinical context:
+    -  Provides a narrative overview of the patient's current clinical situation and is represented using `ServiceRequest.supportingInfo:clinicalContext` referencing an [AU eRequesting Clinical Context DocumentReference](StructureDefinition-au-erequesting-clinicalcontext-documentreference.html).
+    - The [AU eRequesting Clinical Context DocumentReference](StructureDefinition-au-erequesting-clinicalcontext-documentreference.html) **SHALL** be implemented as a plain text string (`text/plain`) embedded inline using `DocumentReference.content.attachment.data` (base64-encoded).
+    - Although `ServiceRequest.note` can be used for clinical notes, it is limited to notes bound to a single ServiceRequest. `ServiceRequest.supportingInfo:clinicalContext` allows the same clinical context to be referenced across multiple related ServiceRequests. 
+      - To support clear presentation by fillers and avoid duplication, clinical notes common across multiple ServiceRequests in a group **SHOULD** be captured using a single referenced [AU eRequesting Clinical Context DocumentReference](StructureDefinition-au-erequesting-clinicalcontext-documentreference.html), rather than repeated in each instance of `ServiceRequest.note`. 
+      - The information contained in `ServiceRequest.supportingInfo` and `ServiceRequest.note` **SHALL** be unique and not overlap.

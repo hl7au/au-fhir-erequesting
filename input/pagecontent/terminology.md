@@ -58,7 +58,7 @@ Column attribute descriptions are as follows:
 |[Reason for Request](https://healthterminologies.gov.au/fhir/ValueSet/reason-for-request-1)|[AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html)|NCTS|
 |[RequestIntent](https://hl7.org/fhir/R4/valueset-request-intent.html)|[AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html)|FHIR|
 |[RequestStatus](http://hl7.org/fhir/ValueSet/request-status)|[AU eRequesting CommunicationRequest](StructureDefinition-au-erequesting-communicationrequest.html), [AU eRequesting CommunicationRequest CopyTo](StructureDefinition-au-erequesting-communicationrequest-copyto.html), [AU eRequesting CommunicationRequest Patient](StructureDefinition-au-erequesting-communicationrequest-patient.html), [AU eRequesting CommunicationRequest Urgent Provider](StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html)|FHIR|
-|[Sex Parameter For Clinical Use](http://terminology.hl7.org/ValueSet/sex-parameter-for-clinical-use)|[AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html)|HL7 Terminology (THO)|
+|[Sex Parameter For Clinical Use](http://terminology.hl7.org/ValueSet/sex-parameter-for-clinical-use)|[Patient Sex Parameter for Clinical Use](https://hl7.org/fhir/extensions/StructureDefinition-patient-sexParameterForClinicalUse.html)|HL7 Terminology (THO)|
 {:.grid}
 
 

@@ -63,44 +63,41 @@ The following technical aspects were not considered priority for the scope of Re
 
 ### AU eRequesting FHIR RESTful Interactions
 
-The RESTful interaction requirements for AU eRequesting actors, such as read and search operations, are outlined in the AU eRequesting CapabilityStatements. AU eRequesting Actors and their respective CapabilityStatements are defined in [Actors and Capabilities](capability-statements.html).
+AU eRequesting defines four system actors involved in the exchange of diagnostic requests: the AU eRequesting Placer, Filler, Patient and Server actors. The [Actors and Capabilities](capability-statements.html) page provides a summary of these actors and includes links to their definitions and CapabilityStatements. Each capability statement outlines the RESTful interactions supported by that actor, including `create`, `update`, `read` and `search` operations.
 
-The diagram below illustrates the interactions between the various actors:
-
-<div> 
-  <img src="au-erequesting-actor-interactions.svg" alt="FHIR RESTful read interactions" style="width:80%"/>
-</div>
-*Figure 1: FHIR RESTful interactions*
-<br/>
-
-*Note*: AU eRequesting Actor interactions will transition with the introduction of the Task resource, which will become central to fulfilment.
-
-### AU eRequesting Typical Sequence
-
-The AU eRequesting Placer actor can create and update ServiceRequest details by calling the AU eRequesting Server actor.
-
-The AU eRequesting Patient actor can search for ServiceRequest details by calling the AU eRequesting Server actor.
-
-The AU eRequesting Filler actor can retrieve ServiceRequest details by calling the AU eRequesting Server actor.
-
-Actors operate in a typical sequence where placers initiate a request by creating (and updating) service requests, patients may access details of their requests and fillers retrieve service request details to enable fulfilment of the requests. 
-
-This sequence is shown in the diagram below:
+Figure 1 shows typical FHIR RESTful interactions between these AU eRequesting actors:
 
 <div> 
-    <img src="actors-sequence.svg" alt="Actors Typical Sequence" style="width:80%"/>
+  <img src="au-erequesting-actor-interactions.svg" alt="Typical FHIR RESTful interactions between AU eRequesting actors" style="width:100%"/>
 </div>
-*Figure 2: Actors Typical Sequence*
-
+*Figure 1: Typical FHIR RESTful interactions between AU eRequesting actors*
 <br/>
 
-### How to Read this Guide
+### Example AU eRequesting Interaction Flow
+Figure 2 shows an example of FHIR interactions between AU eRequesting actors, and demonstrates the use of ServiceRequest and Task to support the placement and tracking of pathology and imaging requests. While the diagram focuses on these coordinating resources, the associated exchange also includes other FHIR resources (e.g. Patient) that provide clinical, administrative and contextual information. The full set of profiles used to support the requests is provided on the [Profiles and Extensions](profiles-and-extensions.html) page.
+
+<div> 
+    <img src="au-erequesting-example-interaction-flow.svg" alt="Example AU eRequesting interaction flow" style="width:100%"/>
+</div>
+*Figure 2: Example AU eRequesting interaction flow*
+<br/>
+
+The steps illustrated in Figure 2 are summarised below:
+- The AU eRequesting Placer actor creates ServiceRequest and Task resources on the AU eRequesting Server, along with associated resources that collectively represent the request.
+- The AU eRequesting Filler actor searches for available Task resources to fulfil, and retrieves the associated resources that form the request.
+- The AU eRequesting Filler actor updates the Task resources to reflect the fulfilment status.
+- The AU eRequesting Placer actor queries the AU eRequesting Server to monitor request fulfilment status.
+- The AU eRequesting Patient actor queries the AU eRequesting Server to view the details of their own requests.
+
+### How To Read This Guide
 
 This guide is divided into several pages which are listed at the top of each page in the menu bar.
 
 - [Home](index.html): This page provides the introduction and scope for this guide.
 - [Conformance](conformance.html): This page describes the set of rules to claim conformance to this guide
 - [Guidance](guidance.html): These pages list the guidance for this guide. 
+  - [General Guidance](general-guidance.html): This page provides guidance on using the profiles defined in this guide.
+  - [AU eRequesting Workflow Guidance](workflow.html): This page provides guidance on managing workflow states in AU eRequesting, where Tasks track the fulfilment of ServiceRequests, including the relationship between their respective status values.
   - [Sex and Gender](sex-and-gender.html): This page provides guidance on the representation of sex, gender, and related concepts.
   - [AU eRequesting Data for Interoperability Mappings](auereqdi.html): This page maps AUeReqDI data groups and elements to FHIR artefacts in AU eRequesting.
   - [Relationships to Other Specifications](relationship.html): This page provides guidance on the relationship between AU eRequesting, AUeReqDI, and other implementation guides.
@@ -122,7 +119,7 @@ This guide is divided into several pages which are listed at the top of each pag
 ### Collaboration
 This guide is the product of collaborative work undertaken with participants from:
 
-* [Sparked HL7 AU Technical Design Group](https://confluence.hl7.org/display/HAFWG/HL7+Australia+-+AU+eRequesting+Technical+Design+Group+Home)
+* [Sparked HL7 Australia AU eRequesting Technical Design Group](https://confluence.hl7.org/display/HAFWG/HL7+Australia+-+AU+eRequesting+Technical+Design+Group+Home)
 * [HL7 Australia FHIR Working Group](https://confluence.hl7.org/display/HAFWG/HL7+Australia+FHIR+Work+Group+Home)
 * Australian FHIR Implementers Community
 
