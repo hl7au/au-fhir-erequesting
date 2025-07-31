@@ -33,6 +33,7 @@ This change log documents the significant updates and resolutions implemented fr
 - Added [Security and Privacy](security.html) page [FHIR-50880](https://jira.hl7.org/browse/FHIR-50880)
 - Added [General Guidance](general-guidance.html) page [FHIR-51565](https://jira.hl7.org/browse/FHIR-51565)
 - Added [AU eRequesting Workflow Guidance](workflow.html) page [FHIR-51565](https://jira.hl7.org/browse/FHIR-51565)
+- Added reference to AU Base guidance on SNOMED CT Australian Edition to General Guidance page [FHIR-51474](https://jira.hl7.org/browse/FHIR-51474).
 - Made the following changes to AU eRequesting ServiceRequest:
   - made the profile abstract ([FHIR-46813](https://jira.hl7.org/browse/FHIR-46813))
   - made ServiceRequest.encounter mandatory (1..1) [FHIR-47008](https://jira.hl7.org/browse/FHIR-47008)
