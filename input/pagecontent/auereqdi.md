@@ -1,6 +1,7 @@
 [Australian eRequesting Data for Interoperability (AUeReqDI)](https://sparked.csiro.au/index.php/products-resources/auereqdi/) is the product of a national clinician focussed requirements gathering project operating as part of the [Sparked AU FHIR Accelerator](https://sparked.csiro.au/).  AUeReqDI outputs form a set of data requirements to be considered and referred to as part of the development and definition of AU eRequesting. 
 
-The primary intent of AUeReqDI is to design and govern a collection of coherent, reusable building blocks known as ‘data groups’. These data groups specify “what” the clinical requirements of the clinical information that should be included for eRequests. However, it does not specify “how” the data is exchanged; this is the role fulfilled by the FHIR standard. AUeReqDI is not required to be implemented as a whole single product.  AUeReqDI builds upon and complements the foundational [Australian Clinical Data for Interoperability (AUCDI)](https://sparked.csiro.au/index.php/products-resources/aucdi/) and focuses on the specific use case of eRequesting.
+The primary intent of AUeReqDI is to design and govern a collection of coherent, reusable building blocks known as ‘data groups’. These data groups define what clinical information is required to support eRequests. However, they do not specify how the data is exchanged; this is the role of the FHIR standard. AUeReqDI is not required to be implemented as a whole single product.  AUeReqDI builds upon and complements the foundational [Australian Clinical Data for Interoperability (AUCDI)](https://sparked.csiro.au/index.php/products-resources/aucdi/) and focuses on the specific use case of eRequesting.
+
 
 AUeReqDI Release 1 (R1) is focused on an agreement of the minimum data required to support standardised eRequesting within the Australian health context, and forms a common language foundation that allows systems to exchange semantically accurate data for eRequests. It incorporates and builds upon prior work from national and international programs and initiatives, including the Royal College of Pathologists of Australasia (RCPA)'s Pathology information, Terminology and Units Standardisation (PITUS) framework and the Royal Australian New Zealand College of Radiology (RANZCR's) Radiology Referral Set.
 
@@ -38,7 +39,7 @@ The following table shows the version alignment between AU eRequesting, AUeReqDI
 The table below shows the relationship between AUeReqDI and AUCDI Data Groups and Elements and AU eRequesting and AU Core profiles.<br/>
 Column attribute descriptions are as follows:
 - <b>AUeReqDI/AUCDI Data Group</b>: Represents a grouping of one or more AUeReqDI or AUCDI Data Elements.
-- <b>AUeReqDI/AUCDI Data Element</b>: Represents a single, discreet clinical concept defined by AUeReqDI or AUCDI.
+- <b>AUeReqDI/AUCDI Data Element</b>: Represents a single, discrete clinical concept defined by AUeReqDI or AUCDI.
 - <b>AU eRequesting Profile(s)/AU Core Profile(s)</b>: Represents the mapping of AUeReqDI or AUCDI Data Groups and Data Elements to AU eRequesting or AU Core FHIR artefacts.
 - <b>FHIR Path</b>: The specific path in the FHIR standards for each AUeReqDI or AUCDI Data Element within, showing where and how to implement these elements in FHIR-based systems. 
 - <b>Comment</b>: Additional information about the mapping including an explanation of where an element or group is not yet mapped.

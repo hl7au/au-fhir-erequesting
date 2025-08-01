@@ -9,7 +9,7 @@ The timeline for development of AU eRequesting R1 is shown in the figure below.
 <br/>
 
 #### Maturing the Baseline
-The approach to develop and mature AU eRequesting making reference to the [Australian FHIR Maturity Model (AFMM) levels](https://build.fhir.org/ig/hl7au/au-fhir-base/generalguidance.html#maturity-levels) is shown in the figure below.
+The figure below illustrates the approach taken to develop and mature AU eRequesting, with reference to the [Australian FHIR Maturity Model (AFMM) levels](https://build.fhir.org/ig/hl7au/au-fhir-base/generalguidance.html#maturity-levels).
 
  <div> 
     <img src="maturing.png" alt="Maturing the AU eRequesting baseline" style="width:80%"/>

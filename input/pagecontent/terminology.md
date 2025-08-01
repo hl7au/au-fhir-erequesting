@@ -76,7 +76,7 @@ Column attribute descriptions are as follows:
 
 
 
-### Code systems
+### Code Systems
 
 See the [FHIR terminology section]({{site.data.fhir.path}}terminologies-systems.html) for a complete discussion on code systems and a list of code system names used in FHIR.
 

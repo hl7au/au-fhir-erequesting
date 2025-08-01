@@ -1,4 +1,4 @@
-### Profile specific implementation guidance
+### Profile Specific Implementation Guidance
 - Clinical Context is defined as narrative information providing an overview of the individual's current clinical situation associated with a requested service.
 - This profile constrains `DocumentReference.content.attachment` to support narrative text only, ensuring consistency with the definition of Clinical Context from [AUeReqDI](auereqdi.html). To support this, the following constraints apply:
     - `DocumentReference.content.attachment` is mandatory to ensure that Clinical Context is always provided.
