@@ -364,7 +364,7 @@ Description: "This profile defines the minimum expectations for representing fas
 
 
 Invariant: au-ereq-srr-01
-Description: "Date must include at least year, month, and day"
+Description: "Date shall include at least year, month, and day"
 Severity: #error
 Expression: "$this.toString().length() >= 10"
 

@@ -70,8 +70,7 @@ Column attribute descriptions are as follows:
 |[RequestStatus](http://hl7.org/fhir/ValueSet/request-status)|[AU eRequesting CommunicationRequest](StructureDefinition-au-erequesting-communicationrequest.html), [AU eRequesting CommunicationRequest CopyTo](StructureDefinition-au-erequesting-communicationrequest-copyto.html), [AU eRequesting CommunicationRequest Patient](StructureDefinition-au-erequesting-communicationrequest-patient.html), [AU eRequesting CommunicationRequest Urgent Provider](StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html)|FHIR|
 |[Service Type](https://healthterminologies.gov.au/fhir/ValueSet/service-type-1)|[AU Core Encounter](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-encounter.html)|NCTS|
 |[Sex Parameter For Clinical Use](http://terminology.hl7.org/ValueSet/sex-parameter-for-clinical-use)|[Patient Sex Parameter for Clinical Use](https://hl7.org/fhir/extensions/StructureDefinition-patient-sexParameterForClinicalUse.html)|HL7 Terminology (THO)|
-|[TaskIntent](http://hl7.org/fhir/R4/valueset-task-intent.html)|[AU eRequesting Task](StructureDefinition-au-erequesting-task.html), [AU eRequesting Task Communication Request](StructureDefinition-au-erequesting-task-communicationrequest.html), [AU eRequesting Task Diagnostic Request](StructureDefinition-au-erequesting-task-diagnosticrequest.html), 
-[AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html)|FHIR|
+|[TaskIntent](http://hl7.org/fhir/R4/valueset-task-intent.html)|[AU eRequesting Task](StructureDefinition-au-erequesting-task.html), [AU eRequesting Task Communication Request](StructureDefinition-au-erequesting-task-communicationrequest.html), [AU eRequesting Task Diagnostic Request](StructureDefinition-au-erequesting-task-diagnosticrequest.html), [AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html)|FHIR|
 {:.grid}
 
 

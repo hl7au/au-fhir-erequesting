@@ -39,6 +39,6 @@ Description: "This profile sets minimum expectations for a Task resource that is
 * partOf ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 
 Invariant: au-ereq-taskdr-01
-Description: "eRequesting Fulfilment Task tag must be 'fulfilment-task' from http://terminology.hl7.org.au/CodeSystem/resource-tag only"
+Description: "eRequesting Fulfilment Task tag shall be 'fulfilment-task' from http://terminology.hl7.org.au/CodeSystem/resource-tag only"
 Severity: #error
 Expression: "meta.tag.where(system = 'http://terminology.hl7.org.au/CodeSystem/resource-tag' and code = 'fulfilment-task-group').empty()"

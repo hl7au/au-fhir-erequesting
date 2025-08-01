@@ -40,6 +40,6 @@ It is based on the [AU eRequesting Task](StructureDefinition-au-erequesting-task
 * focus ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 
 Invariant: au-ereq-taskcr-01
-Description: "eRequesting Fulfilment Task tag must be 'fulfilment-task' from http://terminology.hl7.org.au/CodeSystem/resource-tag only"
+Description: "eRequesting Fulfilment Task tag shall be 'fulfilment-task' from http://terminology.hl7.org.au/CodeSystem/resource-tag only"
 Severity: #error
 Expression: "meta.tag.where(system = 'http://terminology.hl7.org.au/CodeSystem/resource-tag' and code = 'fulfilment-task-group').empty()"
