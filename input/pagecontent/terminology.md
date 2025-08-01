@@ -4,7 +4,7 @@ Terminology supported in AU eRequesting is published in AU eRequesting, AU Base,
 
 ### Value Sets
 
-The following value sets are supported in AU eRequesting, i.e bound as [preferred](https://hl7.org/fhir/R4/terminologies.html#preferred) or stronger to a supported element, element slice, or extension in an AU Core profile.
+The following value sets are supported in AU eRequesting, i.e bound as [preferred](https://hl7.org/fhir/R4/terminologies.html#preferred) or stronger to a supported element, element slice, or extension in an AU eRequesting profile.
 
 
 {% include rrv-dev-note.md %}
