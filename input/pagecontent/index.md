@@ -3,18 +3,18 @@ AU eRequesting is provided to support the use of HL7<sup>&reg;</sup> FHIR<sup>&r
 
 AU eRequesting defines the data model and RESTful API interactions that set minimum expectations for placing and accessing electronic requests.
 
-The focus of AU eRequesting Release 1 (R1) is support of pathology and medical imaging requests in community-based care provision, with consideration for future use beyond this scope. 
+The focus of AU eRequesting Release 1 (R1) is to support pathology and medical imaging requests in community-based care, while also considering future applications beyond this scope.
 
 
-### Project background
+### Project Background
 
-This implementation guide is under development through the AU eRequesting project as part of the [Sparked AU FHIR Accelerator](https://sparked.csiro.au). The Sparked AU FHIR Accelerator is a community comprising government, technology vendors, provider organisations, peak bodies, practitioners, and domain experts, to accelerate the creation and use of national FHIR standards in health care information exchange.
+This implementation guide is under development through the AU eRequesting project as part of the [Sparked AU FHIR Accelerator](https://sparked.csiro.au). The Sparked AU FHIR Accelerator is a collaborative community of government, technology vendors, provider organisations, peak bodies, practitioners, and domain experts, working together to accelerate the creation and use of national FHIR standards for health information exchange.
 
 The Sparked AU FHIR Accelerator includes:
 - AU eRequesting Data for Interoperability - clinician focussed data requirements
 - AU eRequesting FHIR Implementation Guide - HL7 Australia technical data access and exchange specification
 
-The [Australian eRequesting Data for Interoperability (AUeReqDI)](https://sparked.csiro.au/index.php/sparked-products-resources/auereqdi/auereqdi-release-1/) is focused on an agreement of the minimum data required to support standardised eRequesting within the Australian health context, and forms a common language foundation that allows systems to exchange semantically accurate data for eRequests. AUeReqDI outputs form a set of data requirements to be considered and referred to as part of the development and definition of AU eRequesting. 
+The [Australian eRequesting Data for Interoperability (AUeReqDI)](https://sparked.csiro.au/index.php/products-resources/auereqdi/) is focused on an agreement of the minimum data required to support standardised eRequesting within the Australian health context, and forms a common language foundation that allows systems to exchange semantically accurate data for eRequests. AUeReqDI outputs form a set of data requirements to be considered and referred to as part of the development and definition of AU eRequesting. 
 
 {% include dev-note.md -%}
 
@@ -23,7 +23,7 @@ The [Australian eRequesting Data for Interoperability (AUeReqDI)](https://sparke
 
 The scope of AU eRequesting Release 1 is the support of pathology and medical imaging requests in community-based care provision.
 
-#### In-scope scenarios
+#### In-Scope Scenarios
 
 The following diagnostic request scenarios are in scope for Release 1:
 
@@ -39,7 +39,7 @@ The following diagnostic request scenarios are in scope for Release 1:
 
 See [AU eRequesting Use Cases](use-cases.html) for complete use case descriptions. 
 
-#### Out of scope
+#### Out of Scope
 
 The following diagnostic request scenarios are outside the scope of Release 1:
 - Handling of diagnostic reports

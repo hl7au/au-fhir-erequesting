@@ -5,7 +5,7 @@
 
 This change log documents the significant updates and resolutions implemented from version 0.1.0-ballot to TBD.
 
-#### Changes in this version
+#### Changes in this Version
 - New profiles: 
   - AU eRequesting CommunicationRequest ([FHIR-49807](https://jira.hl7.org/browse/FHIR-49807), [FHIR-50230](https://jira.hl7.org/browse/FHIR-50230), [FHIR-50229](https://jira.hl7.org/browse/FHIR-50229), [FHIR-51145](https://jira.hl7.org/browse/FHIR-51145))
   - AU eRequesting CommunicationRequest CopyTo ([FHIR-49807](https://jira.hl7.org/browse/FHIR-49807))

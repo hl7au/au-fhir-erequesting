@@ -1,4 +1,4 @@
-The use cases below are those in scope of the first release of AU eRequesting IG, as defined and agreed upon by the AU eRequesting Technical Design Group. They are scoped to pathology and medical imaging requesting in community-based care provision. The use cases for AU eRequesting include workflow and information needs for data exchange. These form a basis of cases to be considered and referred to as part of the development and definition of AU eRequesting.
+The use cases below are those in scope of the first release of AU eRequesting IG, as defined and agreed upon by the AU eRequesting Technical Design Group. They are scoped to pathology and medical imaging requesting in community-based care provision. The use cases for AU eRequesting include workflow and information needs for data exchange. These use cases provide a foundational reference for the development and definition of AU eRequesting.
 
 Community input is vital for updating AU eRequesting use cases. We encourage our audience to submit questions and feedback on the implementation guide by clicking on the Propose a change link in the footer of every page.
 
@@ -10,7 +10,7 @@ Column attribute descriptions are as follows:
 
 See [AU eRequesting Data for Interoperability Mappings](auereqdi.html) for the relationship between the AUeReqDI or AUCDI data groups, elements, and AU eRequesting profiles.
 
-### Diagnostic imaging use cases
+### Diagnostic Imaging Use Cases
 
 <table border="1">
 <thead>
@@ -49,7 +49,7 @@ See [AU eRequesting Data for Interoperability Mappings](auereqdi.html) for the r
 </tbody>
 </table>
 
-### Pathology use cases
+### Pathology Use Cases
 
 <table border="1">
 <thead>
@@ -95,7 +95,7 @@ See [AU eRequesting Data for Interoperability Mappings](auereqdi.html) for the r
 </tbody>
 </table>
 
-### General use cases
+### General Use Cases
 
 <table border="1">
 <thead>
