@@ -13,7 +13,7 @@ This layering of IGs balances relative adoption and implementation maturity of F
 <br/>
 
 ### Relationship to AUeReqDI and Other IGs
-[Australian eRequesting Data for Interoperability (AUeReqDI)](https://sparked.csiro.au/index.php/sparked-products-resources/auereqdi/auereqdi-release-1/) builds upon and complements the foundational Australian Clinical Data for Interoperability (AUCDI) and focuses on the specific use case of eRequesting. The first release of AUeReqDI is focused on electronic pathology and medical imaging requests in primary and community-based care provision.
+[Australian eRequesting Data for Interoperability (AUeReqDI)](https://sparked.csiro.au/index.php/sparked-products-resources/auereqdi/) builds upon and complements the foundational Australian Clinical Data for Interoperability (AUCDI) and focuses on the specific use case of eRequesting. The first release of AUeReqDI is focused on electronic pathology and medical imaging requests in primary and community-based care provision.
 
 AUeReqDI defines the clinical data requirements for eRequesting, incorporating relevant data groups from AUCDI and contains additional data groups and elements that facilitate the exchange of a pathology test or medical imaging request.
 
@@ -33,8 +33,8 @@ The relationship of AU eRequesting to AUeReqDI and other implementation guides i
 
 Implementation Guide |Relationship
 ---|---
-[AU Base](https://build.fhir.org/ig/hl7au/au-fhir-base/)|This IG defines Australian realm concepts such as terminology, identifiers, and extensions. AU Core builds on AU Base (where available) to create profiles that define the required FHIR resources, along with the elements, extensions, vocabularies, and value sets that SHALL be supported, and how they are to be used.
-[AU Core](https://build.fhir.org/ig/hl7au/au-fhir-core/)|This IG defines a set of conformance requirements that enforce a set of ‘minimum requirements’ on the local concepts from AU Base, specifying rules for the elements, extensions, vocabularies, and value sets, and the RESTful API interactions. AU eRequesting is compliant with the profile conformance requirements in [AU Core](https://build.fhir.org/ig/hl7au/au-fhir-core/).
+[AU Base](https://build.fhir.org/ig/hl7au/au-fhir-base/)|This IG defines Australian realm concepts including terminology, identifiers, and extensions. AU eRequesting uses AU Base, where available, as the basis for profiles that define the FHIR resources to be supported, and the elements, extensions, vocabularies, and value sets that SHALL be present are identified, and how they are used is defined. Where adopted, these concepts are included by reference in AU Base and profiled in AU Core and AU eRequesting.
+[AU Core](https://build.fhir.org/ig/hl7au/au-fhir-core/)|This IG defines a set of conformance requirements that enforce a set of ‘minimum requirements’ on the local concepts from AU Base, specifying the elements, extensions, vocabularies, and value sets that SHALL be present and how they SHALL be used. AU Core also defines a data access API, specifying the conformance requirements for RESTful interactions.
 [HL7 Cross Paradigm Implementation Guide: Gender Harmony - Sex and Gender Representation](https://hl7.org/xprod/ig/uv/gender-harmony/informative1/)|This IG provides definitive guidance on how to exchange clinical sex and gender affirming information using HL7 models. Sex and gender concepts from this IG have been reviewed for the potential for adoption in Australia. Where adopted, these concepts are included by reference in AU Base and profiled in AU Core.
 {:.grid}
 
