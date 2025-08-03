@@ -2,12 +2,12 @@ The context of AU eRequesting within the set of HL7 AU standards is shown in the
 - the **FHIR standard** is the foundation, which creates a common platform or foundation on which a variety of different solutions are implemented. References to the FHIR standard on this page include the HL7 International Core FHIR Specification, HL7 International Core Extensions FHIR Implementation Guide (Extensions Pack) and HL7 International HL7 Terminology (THO).
 - **AU Base** defines local concepts for use in an Australian context introducing relevant identifiers, terminology, extensions. 
 - **AU Core** defines a set of conformance requirements that enforce a set of 'minimum requirements' on the local concepts from AU Base, specifying the elements, extensions, vocabularies, and value sets that SHALL be present and how they SHALL be used, along with the RESTful API interactions.
-- **Use case IGs** (AU eRequesting and AU Provider Directory) build on AU Core to address specific use cases, defining a set of conformance requirements on top of AU Core, using additional building blocks from AU Base as needed.
+- **Use case IGs** (AU Provider Directory, AU eRequesting and AU Patient Summary) build on AU Core to address specific use cases, defining a set of conformance requirements on top of AU Core, using additional building blocks from AU Base as needed.
 
 This layering of IGs balances relative adoption and implementation maturity of FHIR and requirements of the use cases involved.
 
   <div> 
-    <img src="architecture.png" alt="Context of AU Core within the set of HL7 AU standards" style="width:70%"/>
+    <img src="architecture.png" alt="Context of AU eRequesting within the set of HL7 AU standards" style="width:70%"/>
   </div>
 *Figure 1: Context of AU eRequesting within the set of HL7 AU FHIR standards*
 <br/>
@@ -21,7 +21,7 @@ With AUeReqDI defining clinical data requirements and FHIR AU eRequesting provid
 
 Updates to AU eRequesting depend upon community input and we encourage our audience to submit questions and feedback to AU eRequesting specifications by clicking on the Propose a change link in the footer of every page. In addition, we encourage requesting any necessary clarifications to AUeReqDI through the <a href="https://sparked.csiro.au/index.php/products-resources/auereqdi/">AUeReqDI process</a> that helps inform future updates to AU eRequesting.
 
-See [AU eRequesting data for interoperability](auereqdi.html) for the relationship between AUeReqDI data groups, elements, and AU eRequesting profiles.
+See [AU eRequesting Data for Interoperability Mappings](auereqdi.html) for the relationship between AUeReqDI data groups, elements, and AU eRequesting profiles.
 
 The relationship of AU eRequesting to AUeReqDI and other implementation guides is shown in the figure below.
 
@@ -35,7 +35,7 @@ Implementation Guide |Relationship
 ---|---
 [AU Base](https://build.fhir.org/ig/hl7au/au-fhir-base/)|This IG defines Australian realm concepts including terminology, identifiers, and extensions. AU eRequesting uses AU Base, where available, as the basis for profiles that define the FHIR resources to be supported, and the elements, extensions, vocabularies, and value sets that SHALL be present are identified, and how they are used is defined. Where adopted, these concepts are included by reference in AU Base and profiled in AU Core and AU eRequesting.
 [AU Core](https://build.fhir.org/ig/hl7au/au-fhir-core/)|This IG defines a set of conformance requirements that enforce a set of ‘minimum requirements’ on the local concepts from AU Base, specifying the elements, extensions, vocabularies, and value sets that SHALL be present and how they SHALL be used. AU Core also defines a data access API, specifying the conformance requirements for RESTful interactions.
-[HL7 Cross Paradigm Implementation Guide: Gender Harmony - Sex and Gender Representation](https://hl7.org/xprod/ig/uv/gender-harmony/informative1/)|This IG provides definitive guidance on how to exchange clinical sex and gender affirming information using HL7 models. Sex and gender concepts from this IG have been reviewed for the potential for adoption in Australia. Where adopted, these concepts are included by reference in AU Base and profiled in AU Core.
+[HL7 Cross Paradigm Implementation Guide: Gender Harmony - Sex and Gender Representation](https://hl7.org/xprod/ig/uv/gender-harmony/informative1/)|This IG provides definitive guidance on how to exchange clinical sex and gender affirming information using HL7 models. Sex and gender concepts from this IG have been reviewed for the potential for adoption in Australia. Where adopted, these concepts are included by reference in AU Base and are available for use in AU Core and AU eRequesting via inheritance from AU Base.
 {:.grid}
 
 
