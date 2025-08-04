@@ -3,7 +3,7 @@
 - Expected Publication status: Ballot for Working Standard
 - Based on FHIR version: 4.0.1
 
-This change log documents the significant updates and resolutions implemented from version [0.1.0-ballot](https://hl7.org.au/fhir/ereq/0.1.0-ballot/index.html) to 0.5.0-ballot.
+This change log documents the significant updates and resolutions implemented from version [0.1.0-ballot](https://hl7.org.au/fhir/ereq/0.1.0-ballot/index.html) to [0.5.0-ballot](https://hl7.org.au/fhir/ereq/0.5.0-ballot/index.html). The changes in this update are for ballot.
 
 #### Changes in this Version
 - added [Sex and Gender](sex-and-gender.html) page to consolidate implementation guidance on sex and gender concepts in AU eRequesting, with references to guidance in AU Core and AU Base [FHIR-47176](https://jira.hl7.org/browse/FHIR-47176), [FHIR-47178](https://jira.hl7.org/browse/FHIR-47178), [FHIR-47182](https://jira.hl7.org/browse/FHIR-47182), [FHIR-47183](https://jira.hl7.org/browse/FHIR-47183), [FHIR-46892](https://jira.hl7.org/browse/FHIR-46892), [FHIR-46896](https://jira.hl7.org/browse/FHIR-46896).
