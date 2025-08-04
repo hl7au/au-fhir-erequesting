@@ -1,6 +1,6 @@
 <div class="note-to-balloters" markdown="1">
 
-#### AU eRequesting 0.5.0 Ballot for Working Standard August 2025
+#### AU eRequesting 1.0.0 Ballot for Working Standard August 2025
 
 This ballot is opened during this cycle to solicit feedback and approval from the wider community. Feedback provided during the balloting process will be reconciled by the [AU eRequesting Technical Design Group](https://confluence.hl7.org/display/HAFWG/HL7+Australia+-+AU+eRequesting+Technical+Design+Group+Home).
 
