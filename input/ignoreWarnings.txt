@@ -5,13 +5,13 @@ The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced
 An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 
-# === WARNING: This occurs because the resource is actively used while the overall IG is still in draft status. ===
+# === WARNING: This warning occurs because the profiles are marked as 'active' while the overall IG is still in 'draft' status. ===
 The resource status 'active' and the standards status 'draft' are not consistent
 
 # === WARNING: IPS version 2.0.0-ballot is intentionally referenced. This warning can be ignored, the reference will be updated to 2.0.0 when it is published. ===
 The ImplementationGuide uses package hl7.fhir.uv.ips#2.0.0-ballot released on 2024-08-12, but the most recent appropriate version is 1.1.0. This reference is getting old and the more recent version should be considered
 
-# === WARNING: These ValueSets are pending change to active status in NCTS. Se related NCTS Jira: TOOL-61  ===
+# === WARNING: These ValueSets are pending a change to active status in NCTS. Se related NCTS Jira: TOOL-61  ===
 WARNING: StructureDefinition/au-erequesting-servicerequest-path: StructureDefinition.differential.element[3].binding: The definition for the element 'ServiceRequest.code' binds to the value set 'https://www.rcpa.edu.au/fhir/ValueSet/spia-requesting-refset-3' which is experimental, but this structure is not labeled as experimental
 WARNING: StructureDefinition/au-erequesting-servicerequest-path: StructureDefinition.snapshot.element[44].binding: The definition for the element 'ServiceRequest.code' binds to the value set 'https://www.rcpa.edu.au/fhir/ValueSet/spia-requesting-refset-3' which is experimental, but this structure is not labeled as experimental
 
@@ -44,8 +44,6 @@ No definition could be found for URL value 'http://ns.electronichealth.net.au/id
 No definition could be found for URL value 'http://ns.electronichealth.net.au/id/medicare-provider-number' (validating against http://hl7.org.au/fhir/StructureDefinition/au-medicareprovidernumber|6.0.0-ballot [AUMedicareProviderNumber])
 No definition could be found for URL value 'http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003622500032165'
 
-
-
 # === WARNING: These warnings are present as the IG Publisher is unable to resolve National Clinical Terminology Service (NCTS) profiles. At this time no npm package for the NCTS IG is available and there is no timeline for resolution. These warnings were accepted by the FHIR WG. ===
 A definition could not be found for Canonical URL 'https://healthterminologies.gov.au/fhir/StructureDefinition/composed-value-set-4'
 Profile reference 'https://healthterminologies.gov.au/fhir/StructureDefinition/composed-value-set-4' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
@@ -60,7 +58,6 @@ Found multiple matching profiles among 2 choices: http://hl7.org.au/fhir/Structu
 Found multiple matching profiles among 2 choices: http://hl7.org.au/fhir/StructureDefinition/au-medicarecardnumber, http://hl7.org/fhir/StructureDefinition/Identifier
 Found multiple matching profiles among 2 choices: http://hl7.org.au/fhir/StructureDefinition/au-hpii, http://hl7.org/fhir/StructureDefinition/Identifier
 Found multiple matching profiles among 2 choices: http://hl7.org.au/fhir/StructureDefinition/au-medicareprovidernumber, http://hl7.org/fhir/StructureDefinition/Identifier
-
 
 # === WARNING: This warning is related to canonical version pinning and is expected for HL7 AU IGs. Accepted by AU Core TDG and FHIR WG, see FHIR WG meeting minutes July 2025. ===
 WARNING: StructureDefinition/au-erequesting-diagnosticrequest: StructureDefinition.snapshot.element[8].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 1.0.0, 5.1.0, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse' to 'http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse|5.2.0'
@@ -110,7 +107,6 @@ The discriminator type 'pattern' is deprecated in R5+. For future compatibility,
 
 # === INFORMATION: This is AU Base managed content. IG Publisher generated a message when it detects artefacts with a status of 'draft' or 'deprecated'. This is known, accepted behaviour for IG Publisher. ===
 Reference to draft CodeSystem http://terminology.hl7.org.au/CodeSystem/communicationrequest-reason|0.5.0-ci-build
-
 
 # === This message has been acknowledged for this release.===
 INFORMATION: StructureDefinition/au-erequesting-clinicalcontext-documentreference: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
