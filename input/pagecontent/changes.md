@@ -1,6 +1,6 @@
 ### 0.5.0-ballot
-- Expected Publication date: 2025-08-4
-- Expected Publication status: Ballot for Working Standard
+- Publication date: 2025-08-4
+- Publication status: Ballot for Working Standard
 - Based on FHIR version: 4.0.1
 
 This change log documents the significant updates and resolutions implemented from version [0.1.0-ballot](https://hl7.org.au/fhir/ereq/0.1.0-ballot/index.html) to [0.5.0-ballot](https://hl7.org.au/fhir/ereq/0.5.0-ballot/index.html). The changes in this update are for ballot.
