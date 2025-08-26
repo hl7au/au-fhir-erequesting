@@ -5,7 +5,7 @@
 
 This change log documents the significant updates and resolutions implemented from version [1.0.0-ballot](https://hl7.org.au/fhir/ereq/1.0.0-ballot/index.html) to TBD.
 
-### Release TBD
+### 1.0.0-ballot
 - Publication date: 2025-08-04
 - Publication status: Ballot for Working Standard
 - Based on FHIR version: 4.0.1
@@ -61,12 +61,12 @@ This change log documents the significant updates and resolutions implemented fr
   - changed the obligation requirement for AU eRequesting Filler from SHALL:no-error to SHALL:handle for the following Must Support elements: ServiceRequest.identifier, ServiceRequest.intent, ServiceRequest.insurance, ServiceRequest.encounter and ServiceRequest.reasonCode [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976), [FHIR-51636](https://jira.hl7.org/browse/FHIR-51636), [FHIR-51637](https://jira.hl7.org/browse/FHIR-51637)
   - added [Request status reason](http://hl7.org/fhir/StructureDefinition/request-statusReason) extension as a Must Support element with cardinality 0..1 [FHIR-47098](https://jira.hl7.org/browse/FHIR-47098)
   - added [Patient Sex Parameter for Clinical Use](http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse) extension as Must Support element with cardinality 0..1 [FHIR-46997](https://jira.hl7.org/browse/FHIR-46997)
-  - added [AU eRequesting Display Sequence](StructureDefinition-au-erequesting-displaysequence.html) extension as Must Support element with cardinality 1..1 [FHIR-49715](https://jira.hl7.org/browse/FHIR-49715), [FHIR-49716](https://jira.hl7.org/browse/FHIR-49716)
-  - added [AU eRequesting Fasting Precondition](StructureDefinition-au-erequesting-fastingprecondition.html) extension as Must Support element with cardinality 0..1 [FHIR-49917](https://jira.hl7.org/browse/FHIR-49917).
+  - added [AU eRequesting Display Sequence](https://hl7.org.au/fhir/ereq/1.0.0-ballot/StructureDefinition-au-erequesting-displaysequence.html) extension as Must Support element with cardinality 1..1 [FHIR-49715](https://jira.hl7.org/browse/FHIR-49715), [FHIR-49716](https://jira.hl7.org/browse/FHIR-49716)
+  - added [AU eRequesting Fasting Precondition](https://hl7.org.au/fhir/ereq/1.0.0-ballot/StructureDefinition-au-erequesting-fastingprecondition.html) extension as Must Support element with cardinality 0..1 [FHIR-49917](https://jira.hl7.org/browse/FHIR-49917).
   - added Must Support to ServiceRequest.occurrence [FHIR-49918](https://jira.hl7.org/browse/FHIR-49918).
   - added Must Support to ServiceRequest.quantity and constrain to type Quantity and Range [FHIR-49919](https://jira.hl7.org/browse/FHIR-49919)
   - added pregnancyStatus slice to ServiceRequest.supportingInfo as Must Support with cardinality 0..1 referencing [Observation Pregnancy - Status (IPS)](https://build.fhir.org/ig/HL7/fhir-ips/StructureDefinition-Observation-pregnancy-status-uv-ips.html) [FHIR-47006](https://jira.hl7.org/browse/FHIR-47006)
-  - added clinicalContext slice to ServiceRequest.supportingInfo as Must Support referencing [AU eRequesting Clinical Context DocumentReference](StructureDefinition-au-erequesting-clinicalcontext-documentreference.html) [FHIR-50956](https://jira.hl7.org/browse/FHIR-50956), [FHIR-50957](https://jira.hl7.org/browse/FHIR-50957)
+  - added clinicalContext slice to ServiceRequest.supportingInfo as Must Support referencing [AU eRequesting Clinical Context DocumentReference](https://hl7.org.au/fhir/ereq/1.0.0-ballot/StructureDefinition-au-erequesting-clinicalcontext-documentreference.html) [FHIR-50956](https://jira.hl7.org/browse/FHIR-50956), [FHIR-50957](https://jira.hl7.org/browse/FHIR-50957)
   - added Must Support to ServiceRequest.priority [FHIR-46939](https://jira.hl7.org/browse/FHIR-46939)
   - added profile specific implementation guidance on the use of ServiceRequest.supportingInfo for pregnancy status and clinical context [FHIR-51565](https://jira.hl7.org/browse/FHIR-51565)
 - [AU eRequesting Imaging Request](https://hl7.org.au/fhir/ereq/1.0.0-ballot/StructureDefinition-au-erequesting-servicerequest-imag.html):
