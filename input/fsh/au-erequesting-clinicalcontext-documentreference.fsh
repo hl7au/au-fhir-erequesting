@@ -2,7 +2,7 @@ Profile: AUeRequestingClinicalContextDocumentReference
 Parent: DocumentReference
 Id: au-erequesting-clinicalcontext-documentreference
 Title: "AU eRequesting Clinical Context DocumentReference"
-Description: "This profile sets minimum expectations for representing Clinical Context using a DocumentReference resource to record, search, and fetch clinical context narrative information that provides an overview of the individual's current clinical situation assocated with a requested service. Clinical context is intended to describe the broader clinical background or circumstances relating to the request, supporting the service provider in making informed decisions about service delivery.  It is based on the [DocumentReference](https://hl7.org/fhir/R4/documentreference.html) and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the DocumentReference when conforming to this profile."
+Description: "This profile sets minimum expectations for representing clinical context using a DocumentReference resource to record, search, and fetch clinical context narrative information that provides an overview of the individual's current clinical situation assocated with a requested service. Clinical context is intended to describe the broader clinical background or circumstances relating to the request, supporting the service provider in making informed decisions about service delivery.  It is based on the [DocumentReference](https://hl7.org/fhir/R4/documentreference.html) resource and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the DocumentReference when conforming to this profile."
 
 * ^status = #active
 
