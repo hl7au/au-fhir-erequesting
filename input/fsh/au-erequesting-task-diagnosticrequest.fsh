@@ -2,7 +2,7 @@ Profile: AUeRequestingTaskDiagnosticRequest
 Parent: AUeRequestingTask
 Id: au-erequesting-task-diagnosticrequest
 Title: "AU eRequesting Task Diagnostic Request"
-Description: "This profile sets minimum expectations for a Task resource that is used to record, search, and fetch information about a diagnostic request task to be fulfilled. It is based on the [AU eRequesting Task](StructureDefinition-au-erequesting-task.html) and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present when conforming to this profile."
+Description: "This profile sets minimum expectations for a Task resource that is used to record, search, and fetch information about a diagnostic request task to be fulfilled. It is based on the [AU eRequesting Task](StructureDefinition-au-erequesting-task.html) profile and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the Task resource when conforming to this profile."
 
 * obeys au-ereq-taskdr-01
 

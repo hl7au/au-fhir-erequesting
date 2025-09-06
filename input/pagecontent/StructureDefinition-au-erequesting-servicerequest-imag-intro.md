@@ -1,6 +1,6 @@
 {% include rrv-dev-note.md %}
 
-### Profile specific implementation guidance
+### Profile Specific Implementation Guidance
 - This profile supports the sex and gender related concept of Sex Parameter for Clinical Use:
    - When exchanging concepts of sex or gender, refer to the guidance in [Sex and Gender](sex-and-gender.html) and the [Gender Harmony Implementation Guide](http://hl7.org/xprod/ig/uv/gender-harmony/).
 - `ServiceRequest.code`

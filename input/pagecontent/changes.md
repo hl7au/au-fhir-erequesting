@@ -5,7 +5,7 @@
 
 This change log documents the significant updates and resolutions implemented from version [1.0.0-ballot](https://hl7.org.au/fhir/ereq/1.0.0-ballot/index.html) to TBD.
 
-### 1.0.0-ballot
+### Release 1.0.0-ballot
 - Publication date: 2025-08-04
 - Publication status: Ballot for Working Standard
 - Based on FHIR version: 4.0.1

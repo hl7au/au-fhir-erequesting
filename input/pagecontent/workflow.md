@@ -148,7 +148,7 @@ The table below supplements Figure 1 by providing implementation guidance for AU
 <br/> 
 
 
-#### `Task.status` and relationship with `Task.statusReason` and `Task.businessStatus`
+#### `Task.status` and Relationship with `Task.statusReason` and `Task.businessStatus`
 
 - Use `Task.status` to represent the current state of the Task. These states are encoded with values from the [AU eRequesting Task Status](ValueSet-au-erequesting-task-status.html) value set.
 - Use the optional `Task.statusReason` to explain why the Task transitioned to states such as "rejected", "cancelled", "on-hold", or "failed", providing context for deviations from the expected workflow.

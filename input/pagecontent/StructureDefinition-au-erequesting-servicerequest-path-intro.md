@@ -1,6 +1,6 @@
 <div class="stu-note">It is intended that this profile will always support the latest version of the SPIA Requesting Pathology Terminology Reference Set available. At this time the latest version of the SPIA Requesting Pathology Terminology Reference Set is v4.2. Implementers are advised to take note that the current binding <a href="https://www.healthterminologies.gov.au/integration/R4/fhir/ValueSet/spia-requesting-refset-3">RCPA - SPIA Requesting Pathology Terminology Reference Set</a> currently supports v3.1 and will be replaced with a version that support v4.2 as soon as it is available in the National Clinical Terminology Service.</div>
 
-### Profile specific implementation guidance
+### Profile Specific Implementation Guidance
 - This profile supports the sex and gender related concept of Sex Parameter for Clinical Use:
    - When exchanging concepts of sex or gender, refer to the guidance in [Sex and Gender](sex-and-gender.html) and the [Gender Harmony Implementation Guide](http://hl7.org/xprod/ig/uv/gender-harmony/).
 - `ServiceRequest.code`
