@@ -34,7 +34,7 @@ The following diagnostic request scenarios are in scope for Release 1:
 - Request fulfilment tracking:
   * Systems can monitor the status and progression of requests throughout the fulfilment process  
 
-See [AU eRequesting Use Cases](use-cases.html) for complete use case descriptions. 
+See AU eRequesting [Use Cases](use-cases.html) for complete use case descriptions. 
 
 #### Out of Scope
 
