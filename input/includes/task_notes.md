@@ -80,12 +80,12 @@ The following search parameters and search parameter combinations are supported.
 1. **[`group-identifier`](https://hl7.org/fhir/R4/task.html#search)** search parameter
    - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `Task:focus`, `Task:owner`, `Task:patient`, and `Task:requester`
 
-    `GET [base]/Task?groupIdentifier={system|}{value}`
+    `GET [base]/Task?group-identifier={system|}{value}`
 
     Example:
     
-      1. GET [base]/Task?groupIdentifier=https://elimbahmedicalcentre.example.com.au/orders/task-identifier\|EMC1234567-1234 
-      1. GET [base]/Task?groupIdentifier=https://elimbahmedicalcentre.example.com.au/orders/task-identifier\|EMC1234567-1234&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
+      1. GET [base]/Task?group-identifier=https://elimbahmedicalcentre.example.com.au/orders/task-identifier\|EMC1234567-1234 
+      1. GET [base]/Task?group-identifier=https://elimbahmedicalcentre.example.com.au/orders/task-identifier\|EMC1234567-1234&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
 
     *Implementation Notes:* Fetches a bundle containing Task resources matching the group identifier ([how to search by token](http://hl7.org/fhir/R4/search.html#token))
 
