@@ -352,7 +352,7 @@ Extension: AUeRequestingFastingPrecondition
 Parent: Extension
 Id: au-erequesting-fastingprecondition
 Title: "AU eRequesting Fasting Precondition"
-Description: "This profile defines the minimum expectations for representing fasting precondition in the AU eRequesting context. The fasting precondition is a code that indicates the recommendation related to the fasting status of the patient as a precondition to the diagnostic procedure or test being requested."
+Description: "This extension applies to the ServiceRequest resource and is used to represent whether fasting is a recommended precondition for the diagnostic request. It conveys the requester's recommendation regarding fasting at the time of ordering, not the actual fasting status of the patient."
 * ^status = #active
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * ^context.type = #element
