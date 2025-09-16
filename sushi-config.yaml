@@ -107,7 +107,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://terminology.hl7.org.au/CodeSystem/task-business-status
     #- input/summaries
   path-expansion-params: '../../input/_resources/exp-params.json' 
-  active-tables: false
+  active-tables: true
   apply-contact: true
   apply-jurisdiction: true
   apply-publisher: true
