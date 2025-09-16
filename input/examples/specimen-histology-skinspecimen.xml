@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Specimen xmlns="http://hl7.org/fhir">
+  <id value="histology-skinspecimen"/>
+  <meta>
+    <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-specimen"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-name">
+    <valueString value="Specimen - Skin for Histology Testing" />
+  </extension>  
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
+    <valueMarkdown value="Shows an example of a skin specimen for a Pathology Request for the *AU eRequesting Specimen* profile. Patient: Fred Roberts." /> 
+  </extension>
+  <status value="available"/>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="119325001"/>
+      <display value="Tissue specimen from skin"/>
+    </coding>
+    <text value="Tissue specimen from skin"/>
+  </type>
+  <subject>
+    <reference value="Patient/roberts-fred"/>
+  </subject>
+  <collection>
+    <collectedDateTime value="2025-09-15T13:00:00.000000+10:00"/>
+    <method>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="72342005"/>
+        <display value="Shave biopsy"/>
+      </coding>
+      <text value="Shave biopsy"/>
+    </method>
+    <bodySite>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="61719002"/>
+        <display value="Skin of vertex"/>
+      </coding>
+      <text value="Skin - crown of the head"/>
+    </bodySite>
+  </collection>
+</Specimen>
