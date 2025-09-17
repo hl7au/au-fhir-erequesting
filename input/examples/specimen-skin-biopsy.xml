@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Specimen xmlns="http://hl7.org/fhir">
-  <id value="histology-skinspecimen"/>
+  <id value="skin-biopsy"/>
   <meta>
     <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-specimen"/>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-name">
-    <valueString value="Specimen - Skin for Histology Testing" />
+    <valueString value="Specimen - Skin biopsy" />
   </extension>  
   <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
-    <valueMarkdown value="Shows an example of a skin specimen for a Pathology Request for the *AU eRequesting Specimen* profile. Patient: Fred Roberts." /> 
+    <valueMarkdown value="Shows an example of a skin biopsy specimen for the *AU eRequesting Specimen* profile. Patient: Fred Roberts." /> 
   </extension>
   <status value="available"/>
   <type>
