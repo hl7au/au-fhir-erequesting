@@ -113,12 +113,12 @@ The following search parameters and search parameter combinations are supported.
    - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `Task:owner`, `Task:patient`, and `Task:requester`
    - including support for chained searching of patient canonical identifier `patient.identifier` (e.g. `patient.identifier=[system|][value]`)
 
-    `GET [base]/Task?patient={Type/}[id]` or optionally `GET [base]/Task?patient:Patient.identifier=[system|][value]`
+    `GET [base]/Task?patient={Type/}[id]` or optionally `GET [base]/Task?patient.identifier=[system|][value]`
 
     Example:
     
       1. GET [base]/Task?patient=5678
-      1. GET [base]/Task?patient:Patient.identifier=http://ns.electronichealth.net.au/id/medicare-number\|32788511952
+      1. GET [base]/Task?patient.identifier=http://ns.electronichealth.net.au/id/medicare-number\|32788511952
       1. GET [base]/Task?patient=5678&_include=Task:patient&_include=Task:requester&_include=Task:owner
 
     *Implementation Notes:* Fetches a bundle containing Task resources matching the patient ([how to search by reference](http://hl7.org/fhir/R4/search.html#reference))
@@ -129,12 +129,12 @@ The following search parameters and search parameter combinations are supported.
    - including support for chained searching of patient canonical identifier `patient.identifier` (e.g. `patient.identifier=[system|][value]`)
    - including support for **[`multipleOr`](http://hl7.org/fhir/R4/searchparameter-definitions.html#SearchParameter.multipleOr)** search on `status`
 
-   `GET [base]/Task?patient={Type/}[id]&status={system|}[code]{,{system|}[code],...}` or optionally `GET [base]/Task?patient:Patient.identifier=[system|][value]&status={system|}[code]{,{system|}[code],...}`
+   `GET [base]/Task?patient={Type/}[id]&status={system|}[code]{,{system|}[code],...}` or optionally `GET [base]/Task?patient.identifier=[system|][value]&status={system|}[code]{,{system|}[code],...}`
 
     Example:
     
       1. GET [base]/Task?patient=5678&status=completed
-      1. GET [base]/Task?patient:Patient.identifier=http://ns.electronichealth.net.au/id/medicare-number\|32788511952&status=completed
+      1. GET [base]/Task?patient.identifier=http://ns.electronichealth.net.au/id/medicare-number\|32788511952&status=completed
       1. GET [base]/Task?patient=5678&status=completed&_include=Task:patient&_include=Task:requester&_include=Task:owner
       1. GET [base]/Task?patient=5678&status=accepted,in-progress
 
