@@ -8,7 +8,7 @@
 - Refer to the [AU eRequesting Workflow Guidance](workflow.html) page for guidance on managing workflow states in AU eRequesting.
 - Resources referenced by `ServiceRequest.supportingInfo` can be referenced by all ServiceRequests in a group when the information applies across the group, or by individual ServiceRequests when the information is specific to particular requests. `ServiceRequest.supportingInfo` is used to represent the following additional clinical information accompanying the request:
   - Pregnancy Status:
-    - Represented using `ServiceRequest.supportingInfo:pregnancyStatus` referencing an [Observation Pregnancy - Status (IPS)](https://build.fhir.org/ig/HL7/fhir-ips/StructureDefinition-Observation-pregnancy-status-uv-ips.html).
+    - Represented using `ServiceRequest.supportingInfo:pregnancyStatus` referencing an [AU eRequesting Pregnancy Status](StructureDefinition-au-erequesting-pregnancystatus.html).
     - Only the pregnancy status of 77386006 \|Pregnant\| is permitted.
   - Clinical context:
     -  Provides a narrative overview of the patient's current clinical situation and is represented using `ServiceRequest.supportingInfo:clinicalContext` referencing an [AU eRequesting Clinical Context DocumentReference](StructureDefinition-au-erequesting-clinicalcontext-documentreference.html).

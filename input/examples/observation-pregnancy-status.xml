@@ -4,13 +4,13 @@
   <id value="observation-pregnancy-status"/>  
    <meta>
         <profile
-                 value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips"/>
+                 value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-pregnancystatus"/>
   </meta>
   <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-name">
     <valueString value="Observation - Pregnancy Status"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
-    <valueMarkdown value="Shows an example of the *Pregnancy - Status (IPS)* profile, with a result of Pregnant. Patient: Remedios Belger."/>
+    <valueMarkdown value="Shows an example of the *AU eRequesting Pregnancy Status* profile, with a pregnancy status of Pregnant. Patient: Remedios Belger."/>
   </extension>
   <status value="final"/>
   <code>
@@ -22,10 +22,7 @@
   <subject>
     <reference value="Patient/belger-remedios"/>
   </subject>
-  <effectiveDateTime value="2025-02-21"/> 
-  <performer>
-  <reference value="PractitionerRole/generalpractitioner-guthridge-jarred"/>
-  </performer>
+  <effectiveDateTime value="2025-02-21"/>
   <valueCodeableConcept>
     <coding>
       <system value="http://snomed.info/sct"/>

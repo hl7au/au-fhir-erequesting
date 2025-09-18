@@ -278,9 +278,8 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 * supportingInfo ^slicing.discriminator.path = "$this.resolve()"
 * supportingInfo contains
     pregnancyStatus 0..1 MS     
-* supportingInfo[pregnancyStatus] only Reference(Observation-pregnancy-status-uv-ips)
+* supportingInfo[pregnancyStatus] only Reference(au-erequesting-pregnancystatus)
   * ^short = "The patient's pregnancy status"
-* supportingInfo[pregnancyStatus] obeys au-ereq-srr-02
 * supportingInfo[pregnancyStatus] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate-if-known
 * supportingInfo[pregnancyStatus] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * supportingInfo[pregnancyStatus] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[code].valueCode = #SHALL:handle
@@ -367,8 +366,3 @@ Invariant: au-ereq-srr-01
 Description: "Date shall include at least year, month, and day"
 Severity: #error
 Expression: "$this.toString().length() >= 10"
-
-Invariant: au-ereq-srr-02
-Description: "Pregnancy status shall be pregnant (SNOMED CT code 77386006)"
-Severity: #error
-Expression: "$this.resolve().value.coding.where(system = 'http://snomed.info/sct' and code = '77386006').exists()"
