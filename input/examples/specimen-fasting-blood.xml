@@ -1,0 +1,52 @@
+
+<Specimen xmlns="http://hl7.org/fhir">
+  <id value="73ff54fd-f51f-4dfa-8aab-0db4bbac4f93"/>
+  <meta>
+    <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-specimen"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-name">
+    <valueString value="Specimen - Fasting Blood" />
+  </extension>  
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
+    <valueMarkdown value="Shows an example of a fasting blood specimen for the *AU eRequesting Specimen* profile. Patient: Remedios Belger." /> 
+  </extension>  
+  <status value="available"/>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="119297000"/>
+      <display value="Blood specimen"/>
+    </coding>
+    <text value="Blood specimen"/>
+  </type>
+  <subject>
+    <reference value="Patient/belger-remedios"/>
+  </subject>
+  <collection>
+    <collectedDateTime value="2025-02-21T08:00:00+10:00"/>
+    <method>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="22778000"/>
+        <display value="Venipuncture"/>
+      </coding>
+      <text value="Venipuncture"/>
+    </method>
+    <bodySite>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="1255295007"/>
+        <display value="Structure of blood vessel of left upper arm"/>
+      </coding>
+      <text value="Vein of left upper arm"/>
+    </bodySite>
+    <fastingStatusCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0916"/>
+        <code value="F"/>
+        <display value="Patient was fasting prior to the procedure."/>
+      </coding>
+      <text value="Fasting"/>
+    </fastingStatusCodeableConcept>
+  </collection>
+</Specimen>

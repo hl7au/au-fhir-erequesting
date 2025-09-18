@@ -4,7 +4,7 @@ Id: au-erequesting-specimen
 Title: "AU eRequesting Specimen"
 Description: "This profile sets minimum expectations for a Specimen resource that is used to record, search, and fetch information about a specimen collected for analysis in a pathology laboratory. It is based on the [AU Base Specimen](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-Specimen.html) profile and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the Specimen when conforming to this profile."
 
-* ^status = #active
+* ^status = #draft
 
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 
@@ -33,6 +33,7 @@ Description: "This profile sets minimum expectations for a Specimen resource tha
 * type ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 
 * subject 1..1 MS
+* subject only Reference(AUCorePatient)
 * subject ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
 * subject ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * subject ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[code].valueCode = #SHALL:handle
@@ -91,12 +92,6 @@ Description: "This profile sets minimum expectations for a Specimen resource tha
 * collection.fastingStatus[x] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][3].extension[code].valueCode = #SHALL:able-to-populate
 * collection.fastingStatus[x] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 * collection.fastingStatus[x] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
-* collection.fastingStatusCodeableConcept
-* collection.fastingStatusCodeableConcept from $v2-0916 (extensible)
-  * ^short = "fasting status of the patient at the time of collection"
-
-* collection.fastingStatusDuration
-  * ^short = "duration of the patient fast at the time of collection"
 
 * collection.collected[x] MS
 * collection.collected[x] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
