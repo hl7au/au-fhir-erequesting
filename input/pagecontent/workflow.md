@@ -274,7 +274,7 @@ The table below provides request state implementation guidance for AU eRequestin
         <ul>
           <li>Use the optional <code>ServiceRequest.extension:statusReason</code> to provide explanatory context.
             <ul>
-              <li>Given there is no defined value set for <code>ServiceRequest.extension:statusReason</code>, when used, include meaningful data with a human-readable description in <code>ServiceRequest.extension:statusReason.text</code>.</li>
+              <li>Given there is no defined value set for <code>ServiceRequest.extension:statusReason</code>, when used, include meaningful data with a human-readable description in <code>ServiceRequest.extension:statusReason.valueCodeableConcept.text</code>.</li>
             </ul>
           </li>
         </ul>
@@ -287,7 +287,7 @@ The table below provides request state implementation guidance for AU eRequestin
           <li>Indicates the diagnostic request was withdrawn or cancelled by the placer before it was fulfilled.</li>
           <li>Use the optional <code>ServiceRequest.extension:statusReason</code> to provide explanatory context.
             <ul>
-              <li>Given there is no defined value set for <code>ServiceRequest.extension:statusReason</code>, when used, include meaningful data with a human-readable description in <code>ServiceRequest.extension:statusReason.text</code>.</li>
+              <li>Given there is no defined value set for <code>ServiceRequest.extension:statusReason</code>, when used, include meaningful data with a human-readable description in <code>ServiceRequest.extension:statusReason.valueCodeableConcept.text</code>.</li>
             </ul>
           </li>
           <li>The placer is expected to transition the corresponding task to "cancelled".</li>
@@ -317,7 +317,7 @@ The table below provides request state implementation guidance for AU eRequestin
           </li>
           <li>Use the optional <code>ServiceRequest.extension:statusReason</code> to provide explanatory context.
             <ul>
-              <li>Given there is no defined value set for <code>ServiceRequest.extension:statusReason</code>, when used, include meaningful data with a human-readable description in <code>ServiceRequest.extension:statusReason.text</code>.</li>
+              <li>Given there is no defined value set for <code>ServiceRequest.extension:statusReason</code>, when used, include meaningful data with a human-readable description in <code>ServiceRequest.extension:statusReason.valueCodeableConcept.text</code>.</li>
             </ul>
           </li>
           <li>The placer is expected to transition the corresponding task to "cancelled".</li>
@@ -333,7 +333,7 @@ The table below provides request state implementation guidance for AU eRequestin
 
 - Use `ServiceRequest.status` to represent the current state of the [AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html). These states are encoded using codes from the [AU eRequesting RequestStatus](ValueSet-au-erequesting-request-status.html) value set.
 - `ServiceRequest.extension:statusReason` provides optional explanatory context about why the request is in that particular state. It is not typically required for normal progression through the workflow (e.g. from "active" to "completed"), however it is intended to provide business-relevant context in exception scenarios, such as when a request is placed "on-hold", "revoked", or marked "entered-in-error".
-  - There is no defined value set for `ServiceRequest.extension:statusReason`. When used, this element is expected to carry meaningful data including a human-readable description in `ServiceRequest.extension:statusReason.text`.
+  - There is no defined value set for `ServiceRequest.extension:statusReason`. When used, this element is expected to carry meaningful data including a human-readable description in `ServiceRequest.extension:statusReason.valueCodeableConcept.text`.
 
 #### Relationship Between ServiceRequest.status and Task.status
 
