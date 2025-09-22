@@ -19,4 +19,4 @@
 
 - See guidance on the construction of identifiers in each Identifier profile and the section on [Business Identifiers](https://build.fhir.org/ig/hl7au/au-fhir-base/generalguidance.html#business-identifiers) in AU Base.
 - The provision of an insurance attribute describes a recommendation to be considered by the Filler and does not guarantee that this recommendation will be satisfied.
-- In the scenario where specimens are collected by the requesting organisation, [AU eRequesting Specimen](StructureDefinition-au-erequesting-specimen.html) can be used to capture data about the specimens and referenced in the ServiceRequest.
+- In the scenario where specimens are collected by the requesting organisation, [AU eRequesting Specimen](StructureDefinition-au-erequesting-specimen.html) can be used to capture data about the specimens and referenced in the ServiceRequest using `ServiceRequest.specimen`.
