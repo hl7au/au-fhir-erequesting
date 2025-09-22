@@ -28,7 +28,6 @@ Description: "This profile sets minimum expectations for an Observation resource
 * category[socialHistory] = $obs-category#social-history
 
 * code MS
-* code = $loinc#82810-3
 * code ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate-if-known
 * code ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * code ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[code].valueCode = #SHALL:handle
@@ -39,6 +38,25 @@ Description: "This profile sets minimum expectations for an Observation resource
 * code ^extension[http://hl7.org/fhir/StructureDefinition/obligation][3].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
 * code ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 * code ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
+* code.coding ^slicing.discriminator[0].type = #value
+* code.coding ^slicing.discriminator[0].path = "code"
+* code.coding ^slicing.discriminator[1].type = #value
+* code.coding ^slicing.discriminator[1].path = "system"
+* code.coding ^slicing.rules = #open
+ 
+* code.coding contains
+    snomedPregnancyStatus 1..1 and
+    loincPregnancyStatus 0..1
+
+* code.coding[snomedPregnancyStatus].system = $sct
+* code.coding[snomedPregnancyStatus].code = #289908002
+* code.coding[snomedPregnancyStatus].system 1..1
+* code.coding[snomedPregnancyStatus].code 1..1
+
+* code.coding[loincPregnancyStatus].system = $loinc
+* code.coding[loincPregnancyStatus].code = #82810-3
+* code.coding[loincPregnancyStatus].system 1..1
+* code.coding[loincPregnancyStatus].code 1..1
 
 * subject 1..1 MS 
 * subject only Reference(AUCorePatient)
