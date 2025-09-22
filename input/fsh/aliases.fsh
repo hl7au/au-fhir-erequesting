@@ -16,7 +16,6 @@ Alias: $v3-ParticipationMode = http://terminology.hl7.org/CodeSystem/v3-Particip
 Alias: $comm-req-reason = http://terminology.hl7.org.au/CodeSystem/communicationrequest-reason
 Alias: $taskbusinessstatus = http://terminology.hl7.org.au/CodeSystem/task-business-status
 Alias: $fastingPrecondition = https://healthterminologies.gov.au/fhir/ValueSet/pathology-fasting-status-1
-Alias: $v2-0916 = http://terminology.hl7.org/ValueSet/v2-0916
 // AU Core profiles
 Alias: $AUCorePatient = http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient
 Alias: $AUCoreEncounter = http://hl7.org.au/fhir/core/StructureDefinition/au-core-encounter
