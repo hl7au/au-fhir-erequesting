@@ -2,7 +2,7 @@ Profile: AUeRequestingSpecimen
 Parent: AUBaseSpecimen
 Id: au-erequesting-specimen
 Title: "AU eRequesting Specimen"
-Description: "This profile sets minimum expectations for a Specimen resource that is used to record, search, and fetch information about a specimen collected for analysis in a pathology laboratory. It is based on the [AU Base Specimen](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-Specimen.html) profile and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the Specimen when conforming to this profile."
+Description: "This profile sets minimum expectations for a Specimen resource that is used to record, search, and fetch information about a specimen collected for analysis. It is based on the [AU Base Specimen](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-Specimen.html) profile and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the Specimen when conforming to this profile."
 
 * ^status = #draft
 
