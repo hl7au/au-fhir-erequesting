@@ -64,7 +64,7 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 * extension[statusReason] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 
 * intent 1..1 MS
-* intent = #order
+* intent = #order (exactly)
 * intent ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
 * intent ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * intent ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[code].valueCode = #SHALL:handle
@@ -339,7 +339,9 @@ Extension: AUeRequestingDisplaySequence
 Parent: Extension
 Id: au-erequesting-displaysequence
 Title: "AU eRequesting Display Sequence"
-Description: "This profile defines the minimum expectations for representing display sequence in the AU eRequesting context.  The display sequence is an integer assigned to an individual test or service in a ServiceRequest that matches the sequence as seen on a paper request form. The ability to sort based on display sequence more easily allows for reconciliation of paper and digital requesting data by the filler, especially for collection centre staff within a pathology collection centre."
+Description: """This extension applies to the ServiceRequest resource and is used to represent the integer assigned to an individual test or service in a ServiceRequest that corresponds with the sequential position in which a test or service appears on a paper request form.
+
+Sorting by display sequence enables more efficient reconciliation of paper and digital request data at the point of service provision."""
 * ^status = #active
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * ^context.type = #element
