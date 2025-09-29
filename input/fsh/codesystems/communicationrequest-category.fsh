@@ -20,5 +20,5 @@ Description: "Category codes for a communication request used in the Australian 
 * ^content = #complete
 * ^count = 3
 * #urgent-results "Urgent Results" "A request for results to be communicated urgently to nominated recipient(s)."
-* #patient-preference "Patient Preference" "A patient's preferences on communication to them from a service provider."
+* #patient-preference "Patient Preference" "A patient's preference for receiving communication from a service provider."
 * #copyto-reports "Copy To Reports" "A request for reports to be copied to additional recipient(s)."
