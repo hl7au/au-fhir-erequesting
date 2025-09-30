@@ -71,4 +71,11 @@
   <insurance>
     <reference value="Coverage/coverage-concession"/>
   </insurance>
+  <bodySite>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="51185008"/>
+      <display value="Structure of thorax"/>
+      </coding>
+  </bodySite>
 </ServiceRequest>
