@@ -10,7 +10,6 @@
         <valueMarkdown value="Shows an example of a location, Barney View Private Hospital, for the *AU Core Location* profile."/>
     </extension>
     <name value="Barney View Private Hospital"/>
-    <mode value="instance"/>
     <address>
         <line value="195 Maple Cct"/>
         <city value="Barney View"/>

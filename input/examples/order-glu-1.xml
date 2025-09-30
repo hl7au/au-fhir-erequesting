@@ -88,4 +88,7 @@
     <reference value="Observation/observation-pregnancy-status"/>
     <display value="Pregnancy status"/>
   </supportingInfo>
+  <specimen>
+    <reference value="Specimen/fasting-blood"/>
+  </specimen>
 </ServiceRequest>
