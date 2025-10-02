@@ -1,4 +1,4 @@
-The use cases below are those in scope of the first release of AU eRequesting IG, as defined and agreed upon by the AU eRequesting Technical Design Group. They are scoped to pathology and medical imaging requesting in community-based care provision. The use cases for AU eRequesting include workflow and information needs for data exchange. These use cases provide a foundational reference for the development and definition of AU eRequesting.
+The use cases described below set out the target state for AU eRequesting, with an initial focus on pathology and medical imaging requests in community-based care provision. They may be delivered over multiple releases of the Implementation Guide and will be expanded and refined over time as the Implementation Guide evolves.
 
 Community input is vital for updating AU eRequesting use cases. We encourage our audience to submit questions and feedback on the implementation guide by clicking on the Propose a change link in the footer of every page.
 
