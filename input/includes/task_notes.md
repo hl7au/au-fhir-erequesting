@@ -4,6 +4,7 @@ The following search parameters and search parameter combinations are supported.
 
 1. **[`_id`](https://hl7.org/fhir/R4/task.html#search)** search parameter
    - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `Task:focus`, `Task:owner`, `Task:patient`, and `Task:requester`
+   - including support for these **[`_revinclude`](http://hl7.org/fhir/R4/search.html#revinclude)** parameters: `Task:part-of`
  
     `GET [base]/Task?_id=[id]`
 

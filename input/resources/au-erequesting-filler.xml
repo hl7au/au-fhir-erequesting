@@ -745,7 +745,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="The AU eRequesting Filler actor **SHALL** support the Task resource, the AU eRequesting profiles, and the conformance expectations for the Task resource.&#xA;&#xA;The AU eRequesting Filler actor **MAY** support the `_include` parameter for `Task:patient`, `Task:requester`, `Task:owner`, `Task:focus`."/>
+      <documentation value="The AU eRequesting Filler actor **SHALL** support the Task resource, the AU eRequesting profiles, and the conformance expectations for the Task resource.&#xA;&#xA;The AU eRequesting Filler actor **MAY** support the `_include` parameter for `Task:patient`, `Task:requester`, `Task:owner`, `Task:focus`.&#xA;&#xA;The AU eRequesting Filler actor **MAY** support the `_revinclude` parameter for `Task:part-of`."/ >
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -908,6 +908,11 @@
         <valueCode value="MAY"/>
         </extension>
       </searchInclude>
+      <searchRevInclude value="Task:part-of">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="MAY"/>
+        </extension>
+      </searchRevInclude>
     </resource>
 
   </rest>

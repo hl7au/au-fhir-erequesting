@@ -163,5 +163,14 @@
         <td><code>reference</code></td>
         <td></td>
   </tr>
+  <tr>
+        <td>_revinclude=Task:partOf</td>
+        <td><b>SHALL</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><code>reference</code></td>
+        <td></td>
+  </tr>
  </tbody>
 </table>
