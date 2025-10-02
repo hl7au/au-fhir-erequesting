@@ -42,7 +42,7 @@ This change log documents the significant updates and resolutions implemented fr
 - [AU eRequesting CommunicationRequest Urgent Provider](https://hl7.org.au/fhir/ereq/1.0.0-ballot/StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html):
   - added new profile, including interaction support [FHIR-50229](https://jira.hl7.org/browse/FHIR-50229), [FHIR-51636](https://jira.hl7.org/browse/FHIR-51636), [FHIR-51637](https://jira.hl7.org/browse/FHIR-51637)
 - [AU eRequesting Clinical Context DocumentReference](https://hl7.org.au/fhir/ereq/1.0.0-ballot/StructureDefinition-au-erequesting-clinicalcontext-documentreference.html):
-  - added new profile, including interaction support [FHIR-50954](https://jira.hl7.org/browse/FHIR-50954), [FHIR-50955](https://jira.hl7.org/browse/FHIR-50955), [FHIR-51636](https://jira.hl7.org/browse/FHIR-51636), [FHIR-51637](https://jira.hl7.org/browse/FHIR-51637)
+  - added new profile, including interaction support [FHIR-50954](https://jira.hl7.org/browse/FHIR-50954), [FHIR-50955](https://jira.hl7.org/browse/FHIR-50955), [FHIR-51636](https://jira.hl7.org/browse/FHIR-51636), [FHIR-51637](https://jira.hl7.org/browse/FHIR-51637), [FHIR-51765](https://jira.hl7.org/browse/FHIR-51765)
 - [AU eRequesting Coverage](https://hl7.org.au/fhir/ereq/1.0.0-ballot/StructureDefinition-au-erequesting-coverage.html):
   - added new profile [FHIR-46848](https://jira.hl7.org/browse/FHIR-46848)
   - added Must Support and cardinality constraint to Coverage.type, changing from 0..1 to 1..1 [FHIR-50899](https://jira.hl7.org/browse/FHIR-50899)
