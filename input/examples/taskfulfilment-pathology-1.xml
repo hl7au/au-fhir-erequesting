@@ -33,7 +33,10 @@
   <partOf>
     <reference value="Task/taskgroup-pathology-1"/>
   </partOf>
-  <status value="requested"/>
+  <status value="cancelled"/>
+  <statusReason>
+    <text value="Request associated with incorrect patient"/>
+  </statusReason>
   <intent value="order"/>
   <priority value="routine"/>
   <code>
@@ -43,12 +46,13 @@
     </coding>
   </code>
   <focus>
-    <reference value="ServiceRequest/order-fbc-1"/>
+    <reference value="ServiceRequest/order-ironstudies"/>
   </focus>
   <for>
-    <reference value="Patient/roberts-fred"/>
+    <reference value="Patient/belger-remedios"/>
   </for>
   <authoredOn value="2024-05-11"/>
+  <lastModified value="2024-05-12"/>
   <requester>
     <reference value="PractitionerRole/generalpractitioner-guthridge-jarred"/>
   </requester>
