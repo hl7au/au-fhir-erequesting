@@ -85,13 +85,6 @@
   <requester>
     <reference value="PractitionerRole/obstetrician-losch-sallie"/>
   </requester>
-  <reasonCode>
-    <coding>
-      <system value="http://snomed.info/sct"/>
-      <code value="314940005"/>
-      <display value="Urinary tract infection suspected"/>
-    </coding>
-  </reasonCode>
   <supportingInfo>
       <reference value="DocumentReference/documentreference-clinical-context"/>
       <display value="Clinical context"/>
