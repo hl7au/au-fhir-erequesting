@@ -109,6 +109,7 @@ This change log documents the significant updates and resolutions implemented fr
   - changed the conformance requirement for ServiceRequest create and update interactions from SHALL to SHOULD [FHIR-47141](https://jira.hl7.org/browse/FHIR-47141)
   - changed support for supporting-info search parameter and _include support for ServiceRequest:supporting-info from SHOULD to SHALL for the ServiceRequest resource type [FHIR-51005](https://jira.hl7.org/browse/FHIR-51005), [FHIR-51253](https://jira.hl7.org/browse/FHIR-51253)
   - changed the resource conformance requirement from SHOULD to SHALL for the following resource types: Coverage, Encounter, Organization, Practitioner and PractitionerRole [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976)
+  - added part-of search parameter as SHALL for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
 - [AU eRequesting Placer CapabilityStatement](https://hl7.org.au/fhir/ereq/1.0.0-ballot/CapabilityStatement-au-erequesting-placer.html):
   - added create and update interactions as SHOULD for all currently supported resource types [FHIR-47144](https://jira.hl7.org/browse/FHIR-47144)
   - added supporting-info search parameter and _include support for ServiceRequest:supporting-info as MAY for  ServiceRequest resource type [FHIR-51005](https://jira.hl7.org/browse/FHIR-51005)
@@ -116,6 +117,7 @@ This change log documents the significant updates and resolutions implemented fr
   - added default conformance requirements where no prior conformance agreement existed, including resource implementation and supported profile conformance as SHALL, agreed search parameters as MAY, and read, search-type, update and create interactions as SHOULD [FHIR-51636](https://jira.hl7.org/browse/FHIR-51636), [FHIR-51637](https://jira.hl7.org/browse/FHIR-51637)
   - changed _include support for ServiceRequest:patient, ServiceRequest:requester and ServiceRequest:encounter from SHOULD to MAY [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976)
   - changed the resource conformance requirement from SHOULD to SHALL for the following resource types: Coverage, Encounter, Organization, Practitioner and PractitionerRole [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976)
+  - added part-of search parameter as MAY for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
 - [AU eRequesting Filler CapabilityStatement](https://hl7.org.au/fhir/ereq/1.0.0-ballot/CapabilityStatement-au-erequesting-filler.html):
   - added read and search-type interactions as MAY for all currently supported resource types [FHIR-47144](https://jira.hl7.org/browse/FHIR-47144)
   - added _id search parameter as MAY for all currently supported resource types [FHIR-47144](https://jira.hl7.org/browse/FHIR-47144)
@@ -127,6 +129,7 @@ This change log documents the significant updates and resolutions implemented fr
   - added default conformance requirements where no prior conformance agreement existed, including resource implementation and supported profile conformance as SHALL, agreed search parameters as MAY, and read and search-type interactions as SHOULD [FHIR-51636](https://jira.hl7.org/browse/FHIR-51636), [FHIR-51637](https://jira.hl7.org/browse/FHIR-51637)
   - changed _include support for ServiceRequest:patient, ServiceRequest:requester and ServiceRequest:encounter from SHOULD to MAY [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976)
   - changed the resource conformance requirement from SHOULD to SHALL for the following resource types: Coverage, Encounter, Organization, Practitioner and PractitionerRole [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976)
+  - added part-of search parameter as MAY for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
 - [AU eRequesting Patient CapabilityStatement](https://hl7.org.au/fhir/ereq/1.0.0-ballot/CapabilityStatement-au-erequesting-patient.html):
   - renamed AU eRequesting Patient Access CapabilityStatement to be AU eRequesting Patient [FHIR-46802](https://jira.hl7.org/browse/FHIR-46802)
   - added read and search-type interactions as MAY for all currently supported resource types [FHIR-47146](https://jira.hl7.org/browse/FHIR-47146)
@@ -139,4 +142,5 @@ This change log documents the significant updates and resolutions implemented fr
   - changed _include support for ServiceRequest:patient, ServiceRequest:requester and ServiceRequest:encounter from SHOULD to MAY [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976).
   - added default conformance requirements where no prior conformance agreement existed, including resource implementation as SHOULD, supported profile conformance as SHALL, agreed search parameters as MAY, and read and search-type interactions as SHOULD [FHIR-51636](https://jira.hl7.org/browse/FHIR-51636), [FHIR-51637](https://jira.hl7.org/browse/FHIR-51637)
   - changed the resource conformance requirement from SHOULD to SHALL for the following resource types: Coverage, Encounter, Organization, Practitioner and PractitionerRole [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976)
+  - added part-of search parameter as MAY for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
 
