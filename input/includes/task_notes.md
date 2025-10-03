@@ -123,6 +123,19 @@ The following search parameters and search parameter combinations are supported.
     *Implementation Notes:* Fetches a bundle containing Task resources matching the owner and status ([how to search by reference](http://hl7.org/fhir/R4/search.html#reference), [how to search by token](http://hl7.org/fhir/R4/search.html#token))
 
 
+1. **[`part-of`](https://hl7.org/fhir/R4/task.html#search)** search parameter
+   - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `Task:owner`, `Task:patient`, and `Task:requester`
+
+    `GET [base]/Task?part-of={Type/}[id]`
+
+    Example:
+    
+      1. GET [base]/Task?part-of=Task/678
+      1. GET [base]/Task?part-of=Task/678&_include=Task:patient&_include=Task:requester&_include=Task:owner
+
+    *Implementation Notes:* Fetches a bundle containing Task resources matching the task group ([how to search by reference](http://hl7.org/fhir/R4/search.html#reference))
+
+
 1. **[`patient`](https://hl7.org/fhir/R4/task.html#search)** search parameter
    - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `Task:focus`, `Task:owner`, `Task:patient`, and `Task:requester`
    - including support for chained searching of patient canonical identifier `patient.identifier` (e.g. `patient.identifier=[system|][value]`)

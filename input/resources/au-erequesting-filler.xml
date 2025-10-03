@@ -818,6 +818,14 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="MAY"/>
         </extension>
+        <name value="part-of"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Task-part-of"/>
+        <type value="reference"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
         <name value="patient"/>
         <definition value="http://hl7.org/fhir/SearchParameter/clinical-patient"/>
         <type value="reference"/>

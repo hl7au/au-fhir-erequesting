@@ -9,6 +9,7 @@
 
     <th>Type(s)</th>
     <th>Requirements (when used alone or in combination)</th>
+
   </tr>
   <tr>
         <td>_id</td>
@@ -81,6 +82,15 @@
         <td><b>MAY</b></td>
         <td><code>reference</code>+<code>token</code></td>
 	 <td></td>
+  </tr>
+  <tr>
+        <td>part-of</td>
+        <td><b>SHALL</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><code>reference</code></td>
+        <td></td>
   </tr>
   <tr>
         <td>patient</td>
@@ -164,7 +174,7 @@
         <td></td>
   </tr>
   <tr>
-        <td>_revinclude=Task:partOf</td>
+        <td>_revinclude=Task:part-of</td>
         <td><b>SHALL</b></td>
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>
