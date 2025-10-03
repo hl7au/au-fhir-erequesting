@@ -68,7 +68,7 @@ FHIR provides mechanisms that enable client systems to monitor resource changes 
 
 #### References
 
-FHIR defines several types of reference, including literal, logical, and contained references. The characteristics and implications of these reference types are described in the FHIR [Resource References](https://hl7.org/fhir/references.html) page.
+FHIR defines several types of references, including literal, logical, and contained references. The characteristics and implications of these reference types are described in the FHIR [Resource References](https://hl7.org/fhir/references.html) page.
 
 AU eRequesting Release 1 does not constrain the choice of reference type, and implementers should be aware of the implications of the different approaches within their implementation context.
 
