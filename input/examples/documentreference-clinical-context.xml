@@ -17,7 +17,6 @@
     <coding>
       <system value="http://loinc.org"/>
       <code value="107903-7"/>
-      <display value="Clinical note"/> 
     </coding>
   </type>
   <subject>
