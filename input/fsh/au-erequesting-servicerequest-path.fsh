@@ -18,4 +18,4 @@ Description: "This profile sets minimum expectations for a ServiceRequest resour
 * category[path] = $sct#108252007
 
 * code from https://www.rcpa.edu.au/fhir/ValueSet/spia-requesting-refset-3 (preferred)
-* code ^comment = "Refer to the AU eRequesting Pathology Request profile specific implementation guidance for `ServiceRequest.code` usage"
+* code ^comment = "Refer to the AU eRequesting Pathology Request Profile Specific Implementation Guidance for `ServiceRequest.code` usage."
