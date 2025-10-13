@@ -1,5 +1,5 @@
 Each AU eRequesting actor as defined in [Actors and Capabilities](capability-statements.html):
-- **SHALL** implement the [mandatory](#mandatory-elements) and/or [Must Support](#must-support-and-obligation) elements in the AU eRequesting profiles. 
+- **SHALL** implement [Must Support](#must-support-and-obligation) elements in accordance with the specified [obligations](#must-support-and-obligation) for the relevant actors. 
 - **SHALL** implement the required REST API interactions and search parameters as defined in their respective CapabilityStatement.
 
 Additionally, the [AU eRequesting Server](ActorDefinition-au-erequesting-actor-server.html) actor:
