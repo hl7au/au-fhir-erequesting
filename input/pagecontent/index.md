@@ -8,7 +8,7 @@ The focus of AU eRequesting Release 1 (R1) is to support pathology and medical i
 
 ### Project Background
 
-This implementation guide is under development through the AU eRequesting project as part of the [Sparked AU FHIR Accelerator](https://sparked.csiro.au). The Sparked AU FHIR Accelerator is a collaborative community of government, technology vendors, provider organisations, peak bodies, practitioners, and domain experts, working together to accelerate the creation and use of national FHIR standards for health information exchange.
+This implementation guide is under development through the AU eRequesting project as part of the [Sparked AU FHIR Accelerator](https://sparked.csiro.au). The Sparked AU FHIR Accelerator is a collaborative community of government, technology vendors, provider organisations, peak bodies, practitioners, and domain experts, working together to accelerate the creation and use of national FHIR standards for health information exchange and workflow.
 
 The Sparked AU FHIR Accelerator includes:
 - AU eRequesting Data for Interoperability - clinician focussed data requirements

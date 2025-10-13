@@ -22,6 +22,7 @@ This change log documents the significant updates and resolutions implemented fr
 - added to [General Guidance](https://hl7.org.au/fhir/ereq/1.0.0-ballot/general-guidance.html), Diagnostic Request Grouping guidance and general implementation considerations [FHIR-51565](https://jira.hl7.org/browse/FHIR-51565).
 - added [AU eRequesting Workflow Guidance](https://hl7.org.au/fhir/ereq/1.0.0-ballot/workflow.html) page [FHIR-51565](https://jira.hl7.org/browse/FHIR-51565)
 - added to [General Guidance](https://hl7.org.au/fhir/ereq/1.0.0-ballot/general-guidance.html), reference to AU Base guidance on SNOMED CT Australian Edition [FHIR-51474](https://jira.hl7.org/browse/FHIR-51474).
+- added to [General Guidance](https://hl7.org.au/fhir/ereq/1.0.0-ballot/general-guidance.html), re-use of referenced resources [FHIR-52167](https://jira.hl7.org/browse/FHIR-52167).
 - added [Security and Privacy](https://hl7.org.au/fhir/ereq/1.0.0-ballot/security.html) page [FHIR-50880](https://jira.hl7.org/browse/FHIR-50880).
 - removed RANZCR Radiology Referral ValueSet (RRV) from AU eRequesting (defined in NCTS) [FHIR-51017](https://jira.hl7.org/browse/FHIR-51017).
 - moved supporting-info search parameter, added in [FHIR-51005](https://jira.hl7.org/browse/FHIR-51005), to AU Base to support broad implementation [FHIR-51251](https://jira.hl7.org/browse/FHIR-51251).

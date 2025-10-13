@@ -51,7 +51,7 @@ This section highlights aspects for implementers to consider when designing and 
 
 #### Human-Readable Narrative
 
-It is recommended that FHIR resources exchanged as part of AU eRequesting include a human-readable narrative in the text element, in line with the best practice guidelines provided in the [FHIR DomainResource specification](https://hl7.org/fhir/R4/domainresource.html).  When a resource lacks narrative, only systems that fully understand the structured content can safely display it to a user. Including a human-readable narrative strengthens the ecosystem and supports more flexible use of the data across different systems.
+It is recommended that FHIR resources exchanged as part of AU eRequesting include a human-readable narrative in the text element, consistent with the [FHIR DomainResource specification](https://hl7.org/fhir/R4/domainresource.html). When narrative is absent, a system that cannot fully interpret the structured content may misrepresent or omit the clinical intent, creating clinical safety risks. Narrative ensures that the clinical meaning is available to receiving systems, regardless of whether they process the structured content, supporting the safe and progressive adoption of structured data.
 
 #### Transaction Bundles
 
@@ -68,12 +68,15 @@ FHIR provides mechanisms that enable client systems to monitor resource changes 
 
 #### References
 
-FHIR supports multiple [Reference](https://hl7.org/fhir/references.html) types when referencing other resources. 
+FHIR defines several types of references, including literal, logical, and contained references. The characteristics and implications of these reference types are described in the FHIR [Resource References](https://hl7.org/fhir/references.html) page.
 
-Each reference type has implications for interoperability, resolution, and system behaviour. When referencing demographic resources such as Patient, PractitionerRole, Practitioner and Organization, additional considerations also apply:
+AU eRequesting Release 1 does not constrain the choice of reference type, and implementers should be aware of the implications of the different approaches within their implementation context.
+
+#### Re-use of Referenced Resources
+
+Some referenced resources, such as Patient, PractitionerRole, Practitioner, and Organization, may be used more broadly than the context of a single ordering event. They may be created for the context of a request, managed for reuse within an organisation, or shared across systems. The way these resources are created or reused has implications for how they are used across implementations. Key aspects to consider are:
 - Ownership: which system is responsible for creating and maintaining the resource
-- Scope: whether resources are unique per request, per organisation, or across systems
-- Updates: implications of updating referenced resources in relation to existing requests
+- Scope: whether the resource is managed for a request, within an organisation, or across systems
+- Updates: how changes to the resource are managed and how those changes affect requests that already reference it
 
-These considerations affect how references are used and handled within and across systems. AU eRequesting Release 1 does not constrain how references are used. Implementers need to be aware of the implications of how references are used within their implementation context.
 
