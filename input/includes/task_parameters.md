@@ -9,7 +9,6 @@
 
     <th>Type(s)</th>
     <th>Requirements (when used alone or in combination)</th>
-
   </tr>
   <tr>
         <td>_id</td>
