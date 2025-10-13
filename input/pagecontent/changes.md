@@ -7,7 +7,7 @@ This change log documents the significant updates and resolutions implemented fr
 
 #### Changes in this version
 - [AU eRequesting Clinical Context DocumentReference](https://hl7.org.au/fhir/ereq/1.0.0-ballot/StructureDefinition-au-erequesting-clinicalcontext-documentreference.html):
-  - added fixed LOINC code "107903-7", MustSupport and cardinality 1..1 to DocumentReference.type [FHIR-51765](https://jira.hl7.org/browse/FHIR-51765)
+  - added fixed LOINC code "107903-7", Must Support and cardinality constraint 1..1 to DocumentReference.type [FHIR-51765](https://jira.hl7.org/browse/FHIR-51765)
  
 
 ### Release 1.0.0-ballot
