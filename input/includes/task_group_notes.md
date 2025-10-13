@@ -38,16 +38,16 @@ The following search parameters and search parameter combinations are supported.
 1. Combined **[`_lastUpdated`](https://hl7.org/fhir/R4/resource.html#search)** and **[`status`](https://hl7.org/fhir/R4/task.html#search)** and **[`owner`](https://hl7.org/fhir/R4/task.html#search)** search parameters
    - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `Task:owner`, `Task:patient`, and `Task:requester`
    - including support for **[`_revinclude`](https://hl7.org/fhir/R4/search.html#revinclude)** parameter: `Task:part-of`
-   - including support for chained searching of owner canonical identifier `owner.identifier` (e.g. `owner.identifier=[system|][value]`)
+   - including support for chained searching of owner canonical identifier `owner.identifier` (e.g. `owner.identifier=[system|][code]`)
    - including support for **[`multipleOr`](http://hl7.org/fhir/R4/searchparameter-definitions.html#SearchParameter.multipleOr)** search on `status`
    - including support for **[`multipleAnd`](http://hl7.org/fhir/R4/searchparameter-definitions.html#SearchParameter.multipleAnd)** search on `_lastUpdated`
    - including support for search comparators `gt`, `lt`, `ge`, `le` on `_lastUpdated`
 
-    `GET [base]/Task?_lastUpdated={gt|lt|ge|le}[date]&status={system|}[code]&owner={Type/}[id]` or optionally `GET [base]/Task?_lastUpdated={gt|lt|ge|le}[date]&status={system|}[code]&owner.identifier=[system|][value]`
+    `GET [base]/Task?_lastUpdated={gt|lt|ge|le}[date]&status={system|}[code]&owner={Type/}[id]` or optionally `GET [base]/Task?_lastUpdated={gt|lt|ge|le}[date]&status={system|}[code]&owner.identifier=[system|][code]`
 
     Example:
     
-      1. GET [base]/Task?_lastUpdated=gt2010-10-01&status=completed&owner=https://elimbahmedicalcentre.example.com.au/orders/practitioner-identifier\|EMC1234567-1234
+      1. GET [base]/Task?_lastUpdated=gt2010-10-01&status=completed&owner=Organization/1234
       1. GET [base]/Task?_lastUpdated=gt2010-10-01&status=completed&owner:Organization.identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0\|8003621566684455
       1. GET [base]/Task?_lastUpdated=gt2010-10-01&status=accepted,in-progress&owner=https://elimbahmedicalcentre.example.com.au/orders/practitioner-identifier\|EMC1234567-1234&_include=Task:patient&_include=Task:requester&_include=Task:owner
       1. GET [base]/Task?_lastUpdated=gt2010-10-01&status=completed&owner=https://elimbahmedicalcentre.example.com.au/orders/practitioner-identifier\|EMC1234567-1234&_revinclude=Task:part-of
@@ -59,7 +59,7 @@ The following search parameters and search parameter combinations are supported.
    - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `Task:owner`, `Task:patient`, and `Task:requester`
    - including support for **[`_revinclude`](https://hl7.org/fhir/R4/search.html#revinclude)** parameter: `Task:part-of`
 
-    `GET [base]/Task?_tag=[system|][code]`
+    `GET [base]/Task?_tag={system|}[code]`
 
     Example:
     
@@ -76,7 +76,7 @@ The following search parameters and search parameter combinations are supported.
    - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `Task:owner`, `Task:patient`, and `Task:requester`
    - including support for **[`_revinclude`](https://hl7.org/fhir/R4/search.html#revinclude)** parameter: `Task:part-of`
 
-    `GET [base]/Task?group-identifier={system|}{value}`
+    `GET [base]/Task?group-identifier={system|}[code]`
 
     Example:
     
@@ -89,8 +89,8 @@ The following search parameters and search parameter combinations are supported.
 
 1. **[`owner`](https://hl7.org/fhir/R4/task.html#search)** search parameter
    - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `Task:owner`, `Task:patient`, and `Task:requester`
-   - including support for chained searching of owner canonical identifier `owner.identifier` (e.g. `owner.identifier=[system|][code]`)
-   - including support for **[`_revinclude`](https://hl7.org/fhir/R4/search.html#revinclude)** parameter: `Task:part-of`   
+   - including support for **[`_revinclude`](https://hl7.org/fhir/R4/search.html#revinclude)** parameter: `Task:part-of` 
+   - including support for chained searching of owner canonical identifier `owner.identifier` (e.g. `owner.identifier=[system|][code]`)  
 
     `GET [base]/Task?owner={Type/}[id]` or optionally `GET [base]/Task?owner.identifier=[system|][code]`
 
@@ -107,10 +107,10 @@ The following search parameters and search parameter combinations are supported.
 1. Combined **[`owner`](https://hl7.org/fhir/R4/task.html#search)** and **[`status`](https://hl7.org/fhir/R4/task.html#search)** search parameters:   
    - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `Task:owner`, `Task:patient`, and `Task:requester`
    - including support for **[`_revinclude`](https://hl7.org/fhir/R4/search.html#revinclude)** parameter: `Task:part-of`
-   - including support for chained searching of owner canonical identifier `owner.identifier` (e.g. `owner.identifier=[system|][value]`)
+   - including support for chained searching of owner canonical identifier `owner.identifier` (e.g. `owner.identifier=[system|][code]`)
    - including support for **[`multipleOr`](http://hl7.org/fhir/R4/searchparameter-definitions.html#SearchParameter.multipleOr)** search on `status`
 
-    `GET [base]/Task?owner={Type/}[id]&status={system|}[code]{,{system|}[code],...}` or optionally `GET [base]/Task?owner.identifier=[system|][value]&status={system|}[code]{,{system|}[code],...}`
+    `GET [base]/Task?owner={Type/}[id]&status={system|}[code]{,{system|}[code],...}` or optionally `GET [base]/Task?owner.identifier=[system|][code]&status={system|}[code]{,{system|}[code],...}`
 
     Example:
     
@@ -140,9 +140,9 @@ The following search parameters and search parameter combinations are supported.
 1. **[`patient`](https://hl7.org/fhir/R4/task.html#search)** search parameter
    - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `Task:owner`, `Task:patient`, and `Task:requester`
    - including support for **[`_revinclude`](https://hl7.org/fhir/R4/search.html#revinclude)** parameter: `Task:part-of`
-   - including support for chained searching of patient canonical identifier `patient.identifier` (e.g. `patient.identifier=[system|][value]`)
+   - including support for chained searching of patient canonical identifier `patient.identifier` (e.g. `patient.identifier=[system|][code]`)
 
-    `GET [base]/Task?patient={Type/}[id]` or optionally `GET [base]/Task?patient.identifier=[system|][value]`
+    `GET [base]/Task?patient={Type/}[id]` or optionally `GET [base]/Task?patient.identifier=[system|][code]`
 
     Example:
     
@@ -157,10 +157,10 @@ The following search parameters and search parameter combinations are supported.
 1. Combined **[`patient`](https://hl7.org/fhir/R4/task.html#search)** and **[`status`](https://hl7.org/fhir/R4/task.html#search)** search parameters
    - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `Task:owner`, `Task:patient`, and `Task:requester`
    - including support for **[`_revinclude`](https://hl7.org/fhir/R4/search.html#revinclude)** parameter: `Task:part-of`
-   - including support for chained searching of patient canonical identifier `patient.identifier` (e.g. `patient.identifier=[system|][value]`)
+   - including support for chained searching of patient canonical identifier `patient.identifier` (e.g. `patient.identifier=[system|][code]`)
    - including support for **[`multipleOr`](http://hl7.org/fhir/R4/searchparameter-definitions.html#SearchParameter.multipleOr)** search on `status`
 
-   `GET [base]/Task?patient={Type/}[id]&status={system|}[code]{,{system|}[code],...}` or optionally `GET [base]/Task?patient.identifier=[system|][value]&status={system|}[code]{,{system|}[code],...}`
+   `GET [base]/Task?patient={Type/}[id]&status={system|}[code]{,{system|}[code],...}` or optionally `GET [base]/Task?patient.identifier=[system|][code]&status={system|}[code]{,{system|}[code],...}`
 
     Example:
     
@@ -176,9 +176,9 @@ The following search parameters and search parameter combinations are supported.
 1. **[`requester`](https://hl7.org/fhir/R4/task.html#search)** search parameter
    - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `Task:owner`, `Task:patient`, and `Task:requester`
    - including support for **[`_revinclude`](https://hl7.org/fhir/R4/search.html#revinclude)** parameter: `Task:part-of`
-   - including support for chained searching of requester canonical identifier `requester.identifier` (e.g. `requester.identifier=[system|][value]`)
+   - including support for chained searching of requester canonical identifier `requester.identifier` (e.g. `requester.identifier=[system|][code]`)
 
-    `GET [base]/Task?requester={Type/}[id]` or optionally `GET [base]/Task?requester.identifier=[system|][value]`
+    `GET [base]/Task?requester={Type/}[id]` or optionally `GET [base]/Task?requester.identifier=[system|][code]`
 
     Example:
     
@@ -193,10 +193,10 @@ The following search parameters and search parameter combinations are supported.
 1. Combined **[`requester`](https://hl7.org/fhir/R4/task.html#search)** and **[`status`](https://hl7.org/fhir/R4/task.html#search)** search parameters
    - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `Task:owner`, `Task:patient`, and `Task:requester`
    - including support for **[`_revinclude`](https://hl7.org/fhir/R4/search.html#revinclude)** parameter: `Task:part-of`
-   - including support for chained searching of requester canonical identifier `requester.identifier` (e.g. `requester.identifier=[system|][value]`)
+   - including support for chained searching of requester canonical identifier `requester.identifier` (e.g. `requester.identifier=[system|][code]`)
    - including support for **[`multipleOr`](http://hl7.org/fhir/R4/searchparameter-definitions.html#SearchParameter.multipleOr)** search on `status`
 
-    `GET [base]/Task?requester={Type/}[id]&status={system|}[code]{,{system|}[code],...}` or optionally `GET [base]/Task?requester.identifier=[system|][value]&status={system|}[code]{,{system|}[code],...}`
+    `GET [base]/Task?requester={Type/}[id]&status={system|}[code]{,{system|}[code],...}` or optionally `GET [base]/Task?requester.identifier=[system|][code]&status={system|}[code]{,{system|}[code],...}`
 
     Example:
     
