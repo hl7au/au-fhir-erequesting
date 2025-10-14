@@ -7,7 +7,7 @@ This change log documents the significant updates and resolutions implemented fr
 
 #### Changes in this Version
 - [AU eRequesting Patient](StructureDefinition-au-erequesting-patient.html):
-  - added new profile, including interaction support [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - added new profile, including interaction support, and changed AU Core Patient references to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 
 ### Release 1.0.0-ballot
 - Publication date: 2025-08-04
