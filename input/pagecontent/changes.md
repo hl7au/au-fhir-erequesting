@@ -6,7 +6,14 @@
 This change log documents the significant updates and resolutions implemented from version [1.0.0-ballot](https://hl7.org.au/fhir/ereq/1.0.0-ballot/index.html) to TBD.
 
 #### Changes in this Version
-- added part-of search parameter as SHALL for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
+- [AU eRequesting Placer CapabilityStatement](CapabilityStatement-au-erequesting-placer.html):
+  - added part-of search parameter as MAY for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
+- [AU eRequesting Filler CapabilityStatement](CapabilityStatement-au-erequesting-filler.html):
+  - added part-of search parameter as MAY for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
+- [AU eRequesting Patient CapabilityStatement](CapabilityStatement-au-erequesting-patient.html):
+  - added part-of search parameter as MAY for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
+- [AU eRequesting Server CapabilityStatement](CapabilityStatement-au-erequesting-server.html):
+  - added part-of search parameter as SHALL for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
 
 ### Release 1.0.0-ballot
 - Publication date: 2025-08-04
