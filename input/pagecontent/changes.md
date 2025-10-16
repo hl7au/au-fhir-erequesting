@@ -9,13 +9,13 @@ This change log documents the significant updates and resolutions implemented fr
 - [AU eRequesting Clinical Context DocumentReference](StructureDefinition-au-erequesting-clinicalcontext-documentreference.html):
   - added Must Support and LOINC code "107903-7" as fixed value to DocumentReference.type, and changed cardinality from 0..1 to 1..1 [FHIR-51765](https://jira.hl7.org/browse/FHIR-51765) 
 - [AU eRequesting Placer CapabilityStatement](CapabilityStatement-au-erequesting-placer.html):
-  - added part-of search parameter as MAY for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
+  - added part-of search parameter and _revinclude support for Task:part-of as MAY for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
 - [AU eRequesting Filler CapabilityStatement](CapabilityStatement-au-erequesting-filler.html):
-  - added part-of search parameter as MAY for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
+  - added part-of search parameter and _revinclude support for Task:part-of as MAY for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
 - [AU eRequesting Patient CapabilityStatement](CapabilityStatement-au-erequesting-patient.html):
-  - added part-of search parameter as MAY for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
+  - added part-of search parameter and _revinclude support for Task:part-of as MAY for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
 - [AU eRequesting Server CapabilityStatement](CapabilityStatement-au-erequesting-server.html):
-  - added part-of search parameter as SHALL for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
+  - added part-of search parameter and _revinclude support for Task:part-of as SHALL for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
 
 ### Release 1.0.0-ballot
 - Publication date: 2025-08-04
