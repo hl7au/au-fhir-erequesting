@@ -30,7 +30,7 @@ The following search parameters and search parameter combinations are supported.
 
 
 1. **[`supporting-info`](https://build.fhir.org/ig/hl7au/au-fhir-base/SearchParameter-servicerequest-supporting-info.html)** search parameter
-   - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `ServiceRequest:patient`, `ServiceRequest:requester`, `ServiceRequest:encounter`
+   - including support for these **[`_include`](http://hl7.org/fhir/R4/search.html#include)** parameters: `ServiceRequest:patient`, `ServiceRequest:requester`, `ServiceRequest:encounter`, `ServiceRequest:supporting-info`
 
     `GET [base]/ServiceRequest?supporting-info={Type/}[id]`
 
@@ -38,6 +38,6 @@ The following search parameters and search parameter combinations are supported.
     
       1. GET [base]/ServiceRequest?supporting-info=9876
       1. GET [base]/ServiceRequest?supporting-info=Observation/9876
-      1. GET [base]/ServiceRequest?supporting-info=9876&_include=ServiceRequest:patient&_include=ServiceRequest:requester&_include=ServiceRequest:encounter
+      1. GET [base]/ServiceRequest?supporting-info=9876&_include=ServiceRequest:patient&_include=ServiceRequest:requester&_include=ServiceRequest:encounter&_include=ServiceRequest:supporting-info
 
     *Implementation Notes:* Fetches a bundle of all ServiceRequest resources matching the supporting-info ([how to search by reference](http://hl7.org/fhir/R4/search.html#reference))
