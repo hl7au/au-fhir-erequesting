@@ -9,7 +9,7 @@ AU eRequesting follows the [shared requisition id](https://hl7.org/fhir/request.
 
 A single [AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html) is used to represent and coordinate the overall group of requests. It allows the AU eRequesting Filler actor to manage the group as a single coordinated request, supporting fulfilment, progress tracking and status updates across the group.
  
-Each individual requested test or exam in the group is represented using an [AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html), and each individual commmunication request is represented using an [AU eRequesting CommunicationRequest](StructureDefinition-au-erequesting-communicationrequest.html). These individual requests are paired with a corresponding Task to track the fulfilment of that request.
+Each individual requested test or exam in the group is represented using an [AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html), and each individual communication request is represented using an [AU eRequesting CommunicationRequest](StructureDefinition-au-erequesting-communicationrequest.html). These individual requests are paired with a corresponding Task to track the fulfilment of that request.
  
 Each request will also include supporting clinical, administrative and contextual information represented using other FHIR resources (e.g. Patient). These resources form part of the overall request and may be shared across the group or be specific to individual requests. The full set of AU eRequesting profiles used to support the request is listed on the [Profiles and Extensions](profiles-and-extensions.html) page. 
 
