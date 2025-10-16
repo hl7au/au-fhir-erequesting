@@ -6,10 +6,21 @@
 This change log documents the significant updates and resolutions implemented from version [1.0.0-ballot](https://hl7.org.au/fhir/ereq/1.0.0-ballot/index.html) to TBD.
 
 #### Changes in this version
+- [AU eRequesting CommunicationRequest](StructureDefinition-au-erequesting-communicationrequest.html):
+  - changed CommunicationRequest.subject, CommunicationRequest.requester and CommunicationRequest.recipient type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+- [AU eRequesting CommunicationRequest Patient](StructureDefinition-au-erequesting-communicationrequest-patient.html):
+  - changed CommunicationRequest.recipient type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 - [AU eRequesting Clinical Context DocumentReference](StructureDefinition-au-erequesting-clinicalcontext-documentreference.html):
-  - added Must Support and LOINC code "107903-7" as fixed value to DocumentReference.type, and changed cardinality from 0..1 to 1..1 [FHIR-51765](https://jira.hl7.org/browse/FHIR-51765) 
+  - added Must Support and LOINC code "107903-7" as fixed value to DocumentReference.type, and changed cardinality from 0..1 to 1..1 [FHIR-51765](https://jira.hl7.org/browse/FHIR-51765)
+  - changed DocumentReference.subject type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+- [AU eRequesting DiagnosticRequest](StructureDefinition-au-erequesting-diagnosticrequest.html):
+  - changed ServiceRequest.subject type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+- [AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhrconsentwithdrawal.html):
+  - changed Consent.patient and Consent.performer type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 - [AU eRequesting Patient](StructureDefinition-au-erequesting-patient.html):
-  - added new profile, including interaction support, and changed AU Core Patient references to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - added new profile, including interaction support [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+- [AU eRequesting Task](StructureDefinition-au-erequesting-task.html):
+  - changed Task.for type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 
 ### Release 1.0.0-ballot
 - Publication date: 2025-08-04
