@@ -7,6 +7,7 @@
 - The provision of an insurance attribute describes a recommendation to be considered by the filler and does not guarantee that this recommendation will be satisfied.
 - See guidance on the construction of identifiers in each Identifier profile and the section on [Business Identifiers](https://build.fhir.org/ig/hl7au/au-fhir-base/generalguidance.html#business-identifiers) in AU Base.
 - Refer to the [AU eRequesting Workflow Guidance](workflow.html) page for guidance on managing workflow states in AU eRequesting.
+- `ServiceRequest.occurenceTiming.repeat.count` can be used to specify the number of diagnostic requests to be performed.
 - Resources referenced by `ServiceRequest.supportingInfo` can be referenced by all ServiceRequests in a group when the information applies across the group, or by individual ServiceRequests when the information is specific to particular requests. `ServiceRequest.supportingInfo` is used to represent the following additional clinical information accompanying the request:
   - Pregnancy Status:
     - Represented using `ServiceRequest.supportingInfo:pregnancyStatus` referencing an [Observation Pregnancy - Status (IPS)](https://build.fhir.org/ig/HL7/fhir-ips/StructureDefinition-Observation-pregnancy-status-uv-ips.html).
