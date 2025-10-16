@@ -43,7 +43,7 @@ Description: "This profile sets the minimum expectations for a CommunicationRequ
 
 * requester ^short = "Patient, provider or practice requesting the communication (or requesting it not be performed)"
 
-* recipient only Reference (AUCorePatient)
+* recipient only Reference (AUeRequestingPatient)
   * ^short = "Patient receiving the communication"
 
 * reasonCode

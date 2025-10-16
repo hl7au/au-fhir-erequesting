@@ -281,7 +281,7 @@ Column attribute descriptions are as follows:
   <tr style="background-color: #f2f2f2;">
     <th>AUCDI Data Group</th>
     <th colspan="2">AUCDI Data Element</th>
-    <th>AU Core Profile(s)</th>
+    <th>AU Core/AU eRequesting Profile(s)</th>
     <th>FHIR Path</th>
     <th>Comment</th>
   </tr>
@@ -346,19 +346,19 @@ Column attribute descriptions are as follows:
     <tr>
     <td rowspan="4">Sex and gender summary</td>
     <td colspan="2">Sex assigned at birth</td>
-    <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-patient.html">AU Core Patient</a></td>
+    <td><a href="StructureDefinition-au-erequesting-patient.html">AU eRequesting Patient</a></td>
     <td><code>Patient.extension.where(url='http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender')</code></td>
     <td>The <a href="http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender">Person Recorded Sex or Gender extension</a> is profiled by <a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-rsg-sexassignedab.html">AU Core Sex Assigned At Birth (RSG)</a> to represent the concept of Sex assigned at birth.</td>
   </tr>
   <tr>
     <td colspan="2">Gender identity</td>
-    <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-patient.html">AU Core Patient</a></td>
+    <td><a href="StructureDefinition-au-erequesting-patient.html">AU eRequesting Patient</a></td>
     <td><code>Patient.extension.where(url='http://hl7.org/fhir/StructureDefinition/individual-genderIdentity')</code></td>
     <td></td>
   </tr>
   <tr>
     <td colspan="2">Pronoun/s</td>
-    <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-patient.html">AU Core Patient</a></td>
+    <td><a href="StructureDefinition-au-erequesting-patient.html">AU eRequesting Patient</a></td>
     <td><code>Patient.extension.where(url='http://hl7.org/fhir/StructureDefinition/individual-pronouns')</code></td>
     <td></td>
   </tr>

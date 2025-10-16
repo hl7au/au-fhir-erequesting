@@ -1,13 +1,13 @@
 <Patient xmlns="http://hl7.org/fhir">
     <id value="belger-remedios"/>
     <meta>        
-        <profile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient"/>
+        <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-patient"/>
     </meta>
      <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-name">
       <valueString value="Patient - Remedios Belger"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
-        <valueMarkdown value="Shows an example of a patient, Remedios Belger, for the *AU Core Patient* profile with IHI, medicare number, contact details, gender, birth date, address, and Indigenous status."/>
+        <valueMarkdown value="Shows an example of a patient, Remedios Belger, for the *AU eRequesting Patient* profile with IHI, medicare number, contact details, gender, birth date, address, and Indigenous status."/>
     </extension>
     <extension url="http://hl7.org.au/fhir/StructureDefinition/indigenous-status">
         <valueCoding>
