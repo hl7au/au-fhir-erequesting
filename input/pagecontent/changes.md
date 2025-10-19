@@ -7,7 +7,7 @@ This change log documents the significant updates and resolutions implemented fr
 
 #### Changes in this version
 - [AU eRequesting Clinical Context DocumentReference](StructureDefinition-au-erequesting-clinicalcontext-documentreference.html):
-  - added Must Support and LOINC code "107903-7" as patternCodeableConcept value to DocumentReference.type, and changed cardinality from 0..1 to 1..1 [FHIR-51765](https://jira.hl7.org/browse/FHIR-51765) 
+  - added Must Support and LOINC code "107903-7" as patternCodeableConcept to DocumentReference.type, and changed cardinality from 0..1 to 1..1 [FHIR-51765](https://jira.hl7.org/browse/FHIR-51765) 
 
 ### Release 1.0.0-ballot
 - Publication date: 2025-08-04
