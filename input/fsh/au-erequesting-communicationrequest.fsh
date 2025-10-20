@@ -96,7 +96,7 @@ Description: "This profile sets minimum expectations for CommunicationRequest re
 * authoredOn ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 
 * requester 1.. MS
-* requester only Reference(AUCorePractitionerRole or AUCorePatient or AUCoreOrganization)
+* requester only Reference(AUCorePractitionerRole or AUCorePatient or AUeRequestingOrganization)
   * ^short = "Provider, Patient, or Organisation requesting the communication"
 
 * requester ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
@@ -125,7 +125,7 @@ Description: "This profile sets minimum expectations for CommunicationRequest re
 * recipient ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 
 * sender MS
-* sender only Reference(AUCoreOrganization)
+* sender only Reference(AUeRequestingOrganization)
   * ^short = "Organisation sending the communication"
 
 * sender ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
