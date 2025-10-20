@@ -40,7 +40,7 @@ This change log documents the significant updates and resolutions implemented fr
   - added new profile, including interaction support [FHIR-49807](https://jira.hl7.org/browse/FHIR-49807), [FHIR-51636](https://jira.hl7.org/browse/FHIR-51636), [FHIR-51637](https://jira.hl7.org/browse/FHIR-51637)
 - [AU eRequesting CommunicationRequest Patient](https://hl7.org.au/fhir/ereq/1.0.0-ballot/StructureDefinition-au-erequesting-communicationrequest-patient.html):
   - added new profile, including interaction support [FHIR-50230](https://jira.hl7.org/browse/FHIR-50230), [FHIR-51636](https://jira.hl7.org/browse/FHIR-51636), [FHIR-51637](https://jira.hl7.org/browse/FHIR-51637)
-  - added Must Support and cardinality constraint to CommunicationRequest.subject, changing it from 0..1 to 1..1, and type reference AU Core Patient [FHIR-50948](https://jira.hl7.org/browse/FHIR-50948) 
+  - added Must Support and cardinality constraint to CommunicationRequest.subject, changing it from 0..1 to 1..1, and type reference AU Core Patient [FHIR-50948](https://jira.hl7.org/browse/FHIR-50948)
 - [AU eRequesting CommunicationRequest Patient Category](https://hl7.org.au/fhir/ereq/1.0.0-ballot/ValueSet-au-erequesting-communicationrequest-patientcategory.html):
   - added new value set [FHIR-50230](https://jira.hl7.org/browse/FHIR-50230)
 - [AU eRequesting CommunicationRequest Patient Medium](https://hl7.org.au/fhir/ereq/1.0.0-ballot/ValueSet-au-erequesting-communicationrequest-patientmedium.html):
