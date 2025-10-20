@@ -9,10 +9,8 @@ This change log documents the significant updates and resolutions implemented fr
 - [AU eRequesting Clinical Context DocumentReference](StructureDefinition-au-erequesting-clinicalcontext-documentreference.html):
   - added Must Support and LOINC code "107903-7" as fixed value to DocumentReference.type, and changed cardinality from 0..1 to 1..1 [FHIR-51765](https://jira.hl7.org/browse/FHIR-51765) 
 - [AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html):
-  - removed Must Support obligations and interaction support from bodySite [FHIR-52356](https://jira.hl7.org/browse/FHIR-52356)
+  - removed Must Support obligations from ServiceRequest.bodySite [FHIR-52356](https://jira.hl7.org/browse/FHIR-52356)
   - added Must Support to ServiceRequest.code.text and ServiceRequest.encounter.reference [FHIR-52362](https://jira.hl7.org/browse/FHIR-52362)
-- [AU eRequesting Imaging Request](StructureDefinition-au-erequesting-servicerequest-imag.html):
-  - added Must Support obligations and interaction support to bodySite [FHIR-52356](https://jira.hl7.org/browse/FHIR-52356)
 - [AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhrconsentwithdrawal.html):
   - changed cardinality of Consent.category from 1..* to 1..1 [FHIR-51918](https://jira.hl7.org/browse/FHIR-51918)
 
