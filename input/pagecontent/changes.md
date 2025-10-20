@@ -8,6 +8,9 @@ This change log documents the significant updates and resolutions implemented fr
 #### Changes in this version
 - [AU eRequesting Clinical Context DocumentReference](StructureDefinition-au-erequesting-clinicalcontext-documentreference.html):
   - added Must Support and LOINC code "107903-7" as fixed value to DocumentReference.type, and changed cardinality from 0..1 to 1..1 [FHIR-51765](https://jira.hl7.org/browse/FHIR-51765) 
+- [AU eRequesting DiagnosticRequest](StructureDefinition-au-erequesting-diagnosticrequest.html):
+  - added profile specific implementation guidance on the use of ServiceRequest.occurrenceTiming.repeat.count to represent the number of diagnostic requests to be performed [FHIR-51854](https://jira.hl7.org/browse/FHIR-51854)
+  
 - [AU eRequesting Placer CapabilityStatement](CapabilityStatement-au-erequesting-placer.html):
   - added part-of search parameter and _revinclude support for Task:part-of as MAY for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
 - [AU eRequesting Filler CapabilityStatement](CapabilityStatement-au-erequesting-filler.html):
