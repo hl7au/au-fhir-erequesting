@@ -523,17 +523,12 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient">
-        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHALL"/>
-        </extension>
-      </supportedProfile>
       <supportedProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
 	    </supportedProfile>
-      <documentation value="The AU eRequesting Server actor **SHALL** support the Patient resource, the AU eRequesting profile, the AU Core profile, the Patient (IPS) profile, and the conformance expectations for the Patient resource."/>
+      <documentation value="The AU eRequesting Server actor **SHALL** support the Patient resource, the AU eRequesting profile, the Patient (IPS) profile, and the conformance expectations for the Patient resource."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
