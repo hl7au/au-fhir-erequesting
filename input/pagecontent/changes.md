@@ -15,7 +15,7 @@ This change log documents the significant updates and resolutions implemented fr
 - [AU eRequesting Organization](StructureDefinition-au-erequesting-organization.html):
   - added new profile, including interaction support [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 - [AU eRequesting Task](StructureDefinition-au-erequesting-task.html):
-  - changed Tas.owner type from AU Core Organization to AU eRequesting Organization [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - changed Task.owner type from AU Core Organization to AU eRequesting Organization [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 
 ### Release 1.0.0-ballot
 - Publication date: 2025-08-04
