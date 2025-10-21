@@ -157,7 +157,7 @@ The table below provides an overview of the sex and gender concepts that are inc
         </tr>
         <tr>
             <td style=" text-align: center; vertical-align: middle;">
-                <a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-practitioner.html">AU Core <br/>Practitioner</a>
+                <a href="StructureDefinition-au-erequesting-practitioner.html">AU eRequesting <br/>Practitioner</a>
             </td>
             <td style=" text-align: center; vertical-align: middle;">
                 <img src="blue_checkmark.png" width="20"/>
