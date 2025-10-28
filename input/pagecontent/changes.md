@@ -12,6 +12,7 @@ This change log documents the significant updates and resolutions implemented fr
   - removed usage guidance from profile description and added Usage Scenario section to profile [FHIR-51855](https://jira.hl7.org/browse/FHIR-51855)
 - [AU eRequesting DiagnosticRequest](StructureDefinition-au-erequesting-diagnosticrequest.html):
   - added profile specific implementation guidance on the use of ServiceRequest.occurrenceTiming.repeat.count to represent the number of diagnostic requests to be performed [FHIR-51854](https://jira.hl7.org/browse/FHIR-51854)
+  - removed Must Support and obligations on ServiceRequest.quantity[x] [FHIR-52071](https://jira.hl7.org/browse/FHIR-52071)
   
 ### Release 1.0.0-ballot
 - Publication date: 2025-08-04

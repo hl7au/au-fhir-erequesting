@@ -68,11 +68,6 @@
     </coding>
     <text value="Glucose, Fasting"/>
   </code>
-  <quantityQuantity>
-    <value value="1"/>
-    <system value="http://unitsofmeasure.org"/>
-    <code value="1"/>
-  </quantityQuantity>
   <subject>
     <reference value="Patient/belger-remedios"/>
   </subject>
