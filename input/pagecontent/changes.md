@@ -17,9 +17,14 @@ This change log documents the significant updates and resolutions implemented fr
   - removed usage guidance from profile description and added Usage Scenario section to profile [FHIR-51855](https://jira.hl7.org/browse/FHIR-51855)
 - [AU eRequesting DiagnosticRequest](StructureDefinition-au-erequesting-diagnosticrequest.html):
   - added profile specific implementation guidance on the use of ServiceRequest.occurrenceTiming.repeat.count to represent the number of diagnostic requests to be performed [FHIR-51854](https://jira.hl7.org/browse/FHIR-51854)
+  - removed Must Support and obligations from ServiceRequest.bodySite [FHIR-52356](https://jira.hl7.org/browse/FHIR-52356)
+  - added Must Support and obligations to ServiceRequest.code.text and ServiceRequest.encounter.reference [FHIR-52362](https://jira.hl7.org/browse/FHIR-52362)
   - changed ServiceRequest.subject type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 - [AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhrconsentwithdrawal.html):
+  - changed cardinality of Consent.category from 1..* to 1..1 [FHIR-51918](https://jira.hl7.org/browse/FHIR-51918)
   - changed Consent.patient and Consent.performer type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+- [AU eRequesting Pathology Request](StructureDefinition-au-erequesting-servicerequest-path.html):
+  - removed Must Support and obligations from ServiceRequest.bodySite [FHIR-52356](https://jira.hl7.org/browse/FHIR-52356)
 - [AU eRequesting Patient](StructureDefinition-au-erequesting-patient.html):
   - added new profile, including interaction support [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 - [AU eRequesting Task](StructureDefinition-au-erequesting-task.html):
