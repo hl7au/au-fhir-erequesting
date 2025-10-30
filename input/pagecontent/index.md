@@ -57,6 +57,7 @@ The following technical aspects were not considered priority for the scope of Re
 ### Dependencies
 
 {% include dependency-table.xhtml %}
+{% include expansion-params.xhtml %}
 
 ### AU eRequesting FHIR RESTful Interactions
 
