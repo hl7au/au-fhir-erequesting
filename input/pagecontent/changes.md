@@ -6,6 +6,7 @@
 This change log documents the significant updates and resolutions implemented from version [1.0.0-ballot](https://hl7.org.au/fhir/ereq/1.0.0-ballot/index.html) to TBD.
 
 #### Changes in this version
+- removed Exchange Format Support section from conformance page [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
 - [AU eRequesting Clinical Context DocumentReference](StructureDefinition-au-erequesting-clinicalcontext-documentreference.html):
   - added Must Support and LOINC code "107903-7" as patternCodeableConcept to DocumentReference.type, and changed cardinality from 0..1 to 1..1 [FHIR-51765](https://jira.hl7.org/browse/FHIR-51765) 
 - [AU eRequesting CommunicationRequest Patient](StructureDefinition-au-erequesting-communicationrequest-patient.html):
@@ -19,17 +20,16 @@ This change log documents the significant updates and resolutions implemented fr
 - [AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhrconsentwithdrawal.html):
   - changed cardinality of Consent.category from 1..* to 1..1 [FHIR-51918](https://jira.hl7.org/browse/FHIR-51918)
 - [AU eRequesting Placer CapabilityStatement](CapabilityStatement-au-erequesting-placer.html):
-  - added system interaction support for transactions as SHOULD [FHIR-52519](https://jira.hl7.org/browse/FHIR-52519)
+  - added support for transaction interaction as SHOULD [FHIR-52519](https://jira.hl7.org/browse/FHIR-52519)
   - added format support for json as SHOULD and format support for xml as MAY [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
 - [AU eRequesting Filler CapabilityStatement](CapabilityStatement-au-erequesting-filler.html):
-  - added system interaction support for transactions as SHOULD [FHIR-52519](https://jira.hl7.org/browse/FHIR-52519)
+  - added support for transaction interaction as SHOULD [FHIR-52519](https://jira.hl7.org/browse/FHIR-52519)
   - added format support for json as SHOULD and format support for xml as MAY [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
 - [AU eRequesting Patient CapabilityStatement](CapabilityStatement-au-erequesting-patient.html):
   - added format support for json as SHOULD and format support for xml as MAY [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
 - [AU eRequesting Server CapabilityStatement](CapabilityStatement-au-erequesting-server.html):
-  - added system interaction support for transactions as SHOULD [FHIR-52519](https://jira.hl7.org/browse/FHIR-52519)
+  - added support for transaction interaction as SHOULD [FHIR-52519](https://jira.hl7.org/browse/FHIR-52519)
   - added format support for json as SHALL and format support for xml as SHOULD [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
-- removed Exchange Format Support section from conformance page [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
 ### Release 1.0.0-ballot
 - Publication date: 2025-08-04
 - Publication status: Ballot for Working Standard
