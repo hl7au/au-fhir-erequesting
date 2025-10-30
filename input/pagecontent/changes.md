@@ -6,7 +6,7 @@
 This change log documents the significant updates and resolutions implemented from version [1.0.0-ballot](https://hl7.org.au/fhir/ereq/1.0.0-ballot/index.html) to TBD.
 
 #### Changes in this version
-- removed Exchange Format Support section from conformance page [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
+- removed Exchange Format Support section from Conformance page [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
 - [AU eRequesting Clinical Context DocumentReference](StructureDefinition-au-erequesting-clinicalcontext-documentreference.html):
   - added Must Support and LOINC code "107903-7" as patternCodeableConcept to DocumentReference.type, and changed cardinality from 0..1 to 1..1 [FHIR-51765](https://jira.hl7.org/browse/FHIR-51765) 
 - [AU eRequesting CommunicationRequest Patient](StructureDefinition-au-erequesting-communicationrequest-patient.html):
