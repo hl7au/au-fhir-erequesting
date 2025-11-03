@@ -13,12 +13,12 @@
   <fhirVersion value="4.0.1"/>
   <format value="json">
     <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-      <valueCode value="MAY"/>
+      <valueCode value="SHALL"/>
     </extension>
   </format>
   <format value="xml">
     <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-      <valueCode value="MAY"/>
+      <valueCode value="SHOULD"/>
     </extension>
   </format>
   <patchFormat value="application/json-patch+json">
@@ -1089,5 +1089,11 @@
         </extension>
       </searchInclude>
     </resource>
+    <interaction>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD"/>
+      </extension>
+      <code value="transaction"/>
+    </interaction>
   </rest>
 </CapabilityStatement>

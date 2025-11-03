@@ -6,6 +6,7 @@
 This change log documents the significant updates and resolutions implemented from version [1.0.0-ballot](https://hl7.org.au/fhir/ereq/1.0.0-ballot/index.html) to TBD.
 
 #### Changes in this version
+- removed Exchange Format Support section from Conformance page [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
 - [AU eRequesting Clinical Context DocumentReference](StructureDefinition-au-erequesting-clinicalcontext-documentreference.html):
   - added Must Support and LOINC code "107903-7" as patternCodeableConcept to DocumentReference.type, and changed cardinality from 0..1 to 1..1 [FHIR-51765](https://jira.hl7.org/browse/FHIR-51765)
   - changed DocumentReference.subject type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
@@ -13,13 +14,14 @@ This change log documents the significant updates and resolutions implemented fr
   - changed CommunicationRequest.subject, CommunicationRequest.requester and CommunicationRequest.recipient type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - changed CommunicationRequest.requester and CommunicationRequest.sender type from AU Core Organization to AU eRequesting Organization [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 - [AU eRequesting CommunicationRequest Patient](StructureDefinition-au-erequesting-communicationrequest-patient.html):
-  - changed CommunicationRequest.recipient type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - removed usage guidance from profile description and added Usage Scenario section to profile [FHIR-51855](https://jira.hl7.org/browse/FHIR-51855)
+  - changed CommunicationRequest.recipient type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 - [AU eRequesting DiagnosticRequest](StructureDefinition-au-erequesting-diagnosticrequest.html):
   - added profile specific implementation guidance on the use of ServiceRequest.occurrenceTiming.repeat.count to represent the number of diagnostic requests to be performed [FHIR-51854](https://jira.hl7.org/browse/FHIR-51854)
   - removed Must Support and obligations from ServiceRequest.bodySite [FHIR-52356](https://jira.hl7.org/browse/FHIR-52356)
   - added Must Support and obligations to ServiceRequest.code.text and ServiceRequest.encounter.reference [FHIR-52362](https://jira.hl7.org/browse/FHIR-52362)
   - changed ServiceRequest.subject type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - removed Must Support and obligations on ServiceRequest.quantity[x] [FHIR-52071](https://jira.hl7.org/browse/FHIR-52071)
 - [AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhrconsentwithdrawal.html):
   - changed cardinality of Consent.category from 1..* to 1..1 [FHIR-51918](https://jira.hl7.org/browse/FHIR-51918)
   - changed Consent.patient and Consent.performer type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
@@ -33,6 +35,17 @@ This change log documents the significant updates and resolutions implemented fr
 - [AU eRequesting Task](StructureDefinition-au-erequesting-task.html):
   - changed Task.for type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - changed Task.owner type from AU Core Organization to AU eRequesting Organization [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+- [AU eRequesting Placer CapabilityStatement](CapabilityStatement-au-erequesting-placer.html):
+  - added support for transaction interaction as SHOULD [FHIR-52519](https://jira.hl7.org/browse/FHIR-52519)
+  - added format support for json as SHOULD and format support for xml as MAY [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
+- [AU eRequesting Filler CapabilityStatement](CapabilityStatement-au-erequesting-filler.html):
+  - added support for transaction interaction as SHOULD [FHIR-52519](https://jira.hl7.org/browse/FHIR-52519)
+  - added format support for json as SHOULD and format support for xml as MAY [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
+- [AU eRequesting Patient CapabilityStatement](CapabilityStatement-au-erequesting-patient.html):
+  - added format support for json as SHOULD and format support for xml as MAY [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
+- [AU eRequesting Server CapabilityStatement](CapabilityStatement-au-erequesting-server.html):
+  - added support for transaction interaction as SHOULD [FHIR-52519](https://jira.hl7.org/browse/FHIR-52519)
+  - added format support for json as SHALL and format support for xml as SHOULD [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
 
 ### Release 1.0.0-ballot
 - Publication date: 2025-08-04
