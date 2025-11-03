@@ -9,7 +9,7 @@
         <valueMarkdown value="Shows an example of a General Practitioner role for the *AU eRequesting PractitionerRole* profile, using a Medicare Provider Number as the role identifier, and references to the associated Practitioner and Organization."/>
     </extension>
     <meta>
-        <profile value="http://hl7.org.au/fhir/core/StructureDefinition/au-erequesting-practitionerrole"/>
+        <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-practitionerrole"/>
     </meta>
     <identifier>
         <type>
