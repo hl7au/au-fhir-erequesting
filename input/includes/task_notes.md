@@ -65,8 +65,8 @@ The following search parameters and search parameter combinations are supported.
     
       1. GET [base]/Task?_tag=fulfilment-task-group
       1. GET [base]/Task?_tag=http://terminology.hl7.org.au/CodeSystem/resource-tag\|fulfilment-task-group
-      1. GET [base]/Task?_tag=fulfilment-task-group&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
-      1. GET [base]/Task?_tag=fulfilment-task-group&_revinclude=Task:part-of
+      1. GET [base]/Task?_tag=fulfilment-task&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
+      1. GET [base]/Task?_tag=fulfilment-task&_revinclude=Task:part-of
 
 
     *Implementation Notes:* Fetches a bundle containing Task resources matching the tag ([how to search by token](http://hl7.org/fhir/R4/search.html#token))

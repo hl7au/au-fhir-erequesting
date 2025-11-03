@@ -12,8 +12,6 @@ Description: "This profile sets the minimum expectations for a CommunicationRequ
 * category from AUeRequestingCommunicationRequestPatientCategory (required)
 
 * doNotPerform 0..1 MS
-  * ^short = "Set to true when SMS or email communication with the patient is not to be performed"
-
 * doNotPerform ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * doNotPerform ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate-if-known
 * doNotPerform ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
