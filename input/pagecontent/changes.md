@@ -12,10 +12,12 @@ This change log documents the significant updates and resolutions implemented fr
   - changed DocumentReference.subject type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 - [AU eRequesting CommunicationRequest](StructureDefinition-au-erequesting-communicationrequest.html):
   - changed CommunicationRequest.subject, CommunicationRequest.requester and CommunicationRequest.recipient type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - removed AU eRequesting Task Group type reference from CommunicationRequest.about [FHIR-52403](https://jira.hl7.org/browse/FHIR-52403)
   - changed CommunicationRequest.requester and CommunicationRequest.sender type from AU Core Organization to AU eRequesting Organization [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 - [AU eRequesting CommunicationRequest Patient](StructureDefinition-au-erequesting-communicationrequest-patient.html):
   - removed usage guidance from profile description and added Usage Scenario section to profile [FHIR-51855](https://jira.hl7.org/browse/FHIR-51855)
   - changed CommunicationRequest.recipient type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - removed AU eRequesting Task Group type reference from CommunicationRequest.about [FHIR-52403](https://jira.hl7.org/browse/FHIR-52403)
 - [AU eRequesting DiagnosticRequest](StructureDefinition-au-erequesting-diagnosticrequest.html):
   - added profile specific implementation guidance on the use of ServiceRequest.occurrenceTiming.repeat.count to represent the number of diagnostic requests to be performed [FHIR-51854](https://jira.hl7.org/browse/FHIR-51854)
   - removed Must Support and obligations from ServiceRequest.bodySite [FHIR-52356](https://jira.hl7.org/browse/FHIR-52356)
@@ -31,6 +33,8 @@ This change log documents the significant updates and resolutions implemented fr
 - [AU eRequesting Pathology Request](StructureDefinition-au-erequesting-servicerequest-path.html):
   - removed Must Support and obligations from ServiceRequest.bodySite [FHIR-52356](https://jira.hl7.org/browse/FHIR-52356)
 - [AU eRequesting Patient](StructureDefinition-au-erequesting-patient.html):
+  - added new profile, including interaction support [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+- [AU eRequesting Practitioner](StructureDefinition-au-erequesting-practitioner.html):
   - added new profile, including interaction support [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 - [AU eRequesting Task](StructureDefinition-au-erequesting-task.html):
   - changed Task.for type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)

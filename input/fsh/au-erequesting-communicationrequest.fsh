@@ -68,7 +68,7 @@ Description: "This profile sets minimum expectations for CommunicationRequest re
 * subject ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error 
 
 * about 1.. MS
-* about only Reference(AUeRequestingPathologyRequest or AUeRequestingImagingRequest or AUeRequestingTaskGroup)
+* about only Reference(AUeRequestingPathologyRequest or AUeRequestingImagingRequest)
 
 * about ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * about ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
