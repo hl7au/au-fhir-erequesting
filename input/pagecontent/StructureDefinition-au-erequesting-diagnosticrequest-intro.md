@@ -5,7 +5,6 @@
 - This profile supports the sex and gender related concept of Sex Parameter for Clinical Use:
    - When exchanging concepts of sex or gender, refer to the guidance in [Sex and Gender](sex-and-gender.html) and the [Gender Harmony Implementation Guide](http://hl7.org/xprod/ig/uv/gender-harmony/).
 - The provision of an insurance attribute describes a recommendation to be considered by the filler and does not guarantee that this recommendation will be satisfied.
-- Encounter.class (Classification of patient encounter), is required by fillers to assist in resolving billing.
 - See guidance on the construction of identifiers in each Identifier profile and the section on [Business Identifiers](https://build.fhir.org/ig/hl7au/au-fhir-base/generalguidance.html#business-identifiers) in AU Base.
 - Refer to the [AU eRequesting Workflow Guidance](workflow.html) page for guidance on managing workflow states in AU eRequesting.
 - `ServiceRequest.occurenceTiming.repeat.count` can be used to specify the number of diagnostic requests to be performed.
