@@ -59,9 +59,6 @@ Servers that are conformant to the AU eRequesting API declare conformance by:
     }
     ```
 
-### Exchange Format Support
-In FHIR, resources are exchanged in the following formats: JSON, XML, and Turtle. Due to the popularity of JavaScript-based apps and ease of usage with JSON, the most popular exchange format for REST-styled APIs is JSON. 
-
 ### Mandatory Elements
 Mandatory elements are elements with minimum cardinality > 0. When an element is mandatory, the data is expected to always be present. 
 
