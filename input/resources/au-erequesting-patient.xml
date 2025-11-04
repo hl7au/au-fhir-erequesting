@@ -468,12 +468,12 @@
         <valueCode value="SHOULD"/>
       </extension>
       <type value="Practitioner"/>
-      <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-practitioner">
+      <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-practitioner">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="If the AU eRequesting Patient actor supports the Practitioner resource, AU eRequesting Patient actor **SHALL** support the AU Core Practitioner profile, and the conformance expectations for the Practitioner resource."/>
+      <documentation value="If the AU eRequesting Patient actor supports the Practitioner resource, AU eRequesting Patient actor **SHALL** support the AU eRequesting Practitioner profile, and the conformance expectations for the Practitioner resource."/>
       <interaction>
 	      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
 	        <valueCode value="SHOULD"/>

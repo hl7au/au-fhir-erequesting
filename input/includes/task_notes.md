@@ -56,8 +56,8 @@ The following search parameters and search parameter combinations are supported.
 
     Example:
     
-      1. GET [base]/Task?_tag=fulfilment-task
-      1. GET [base]/Task?_tag=http://terminology.hl7.org.au/CodeSystem/resource-tag\|fulfilment-task
+      1. GET [base]/Task?_tag=fulfilment-task-group
+      1. GET [base]/Task?_tag=http://terminology.hl7.org.au/CodeSystem/resource-tag\|fulfilment-task-group
       1. GET [base]/Task?_tag=fulfilment-task&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
 
 
