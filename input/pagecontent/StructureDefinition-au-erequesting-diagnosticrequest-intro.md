@@ -4,17 +4,14 @@
   - Imaging requests **SHALL** use [AU eRequesting Imaging Request](StructureDefinition-au-erequesting-servicerequest-imag.html) profile 
 - This profile supports the sex and gender related concept of Sex Parameter for Clinical Use:
    - When exchanging concepts of sex or gender, refer to the guidance in [Sex and Gender](sex-and-gender.html) and the [Gender Harmony Implementation Guide](http://hl7.org/xprod/ig/uv/gender-harmony/).
-- The provision of an insurance attribute describes a recommendation to be considered by the filler and does not guarantee that this recommendation will be satisfied.
 - See guidance on the construction of identifiers in each Identifier profile and the section on [Business Identifiers](https://build.fhir.org/ig/hl7au/au-fhir-base/generalguidance.html#business-identifiers) in AU Base.
 - Refer to the [AU eRequesting Workflow Guidance](workflow.html) page for guidance on managing workflow states in AU eRequesting.
+- See the [Diagnostic Request Grouping](general-guidance.html#diagnostic-request-grouping) section for guidance on grouping diagnostic requests in AU eRequesting.
+- The provision of an insurance attribute describes a recommendation to be considered by the filler and does not guarantee that this recommendation will be satisfied.
+- `Encounter.class` **SHALL** be populated as it is required by fillers to assist in resolving diagnostic request billing.
 - `ServiceRequest.occurenceTiming.repeat.count` can be used to specify the number of diagnostic requests to be performed.
-- Resources referenced by `ServiceRequest.supportingInfo` can be referenced by all ServiceRequests in a group when the information applies across the group, or by individual ServiceRequests when the information is specific to particular requests. `ServiceRequest.supportingInfo` is used to represent the following additional clinical information accompanying the request:
-  - Pregnancy Status:
-    - Represented using `ServiceRequest.supportingInfo:pregnancyStatus` referencing an [Observation Pregnancy - Status (IPS)](https://build.fhir.org/ig/HL7/fhir-ips/StructureDefinition-Observation-pregnancy-status-uv-ips.html).
-    - Only the pregnancy status of 77386006 \|Pregnant\| is permitted.
-  - Clinical context:
-    -  Provides a narrative overview of the patient's current clinical situation and is represented using `ServiceRequest.supportingInfo:clinicalContext` referencing an [AU eRequesting Clinical Context DocumentReference](StructureDefinition-au-erequesting-clinicalcontext-documentreference.html).
-    - The [AU eRequesting Clinical Context DocumentReference](StructureDefinition-au-erequesting-clinicalcontext-documentreference.html) **SHALL** be implemented as a plain text string (`text/plain`) embedded inline using `DocumentReference.content.attachment.data` (base64-encoded).
-    - Although `ServiceRequest.note` can be used for clinical notes, it is limited to notes bound to a single ServiceRequest. `ServiceRequest.supportingInfo:clinicalContext` allows the same clinical context to be referenced across multiple related ServiceRequests. 
-      - To support clear presentation by fillers and avoid duplication, clinical notes common across multiple ServiceRequests in a group **SHOULD** be captured using a single referenced [AU eRequesting Clinical Context DocumentReference](StructureDefinition-au-erequesting-clinicalcontext-documentreference.html), rather than repeated in each instance of `ServiceRequest.note`. 
-      - The information contained in `ServiceRequest.supportingInfo` and `ServiceRequest.note` **SHALL** be unique and not overlap.
+- Resources referenced by `ServiceRequest.supportingInfo` can be referenced by all ServiceRequests in a group when the information applies across the group, or by individual ServiceRequests when the information is specific to particular requests:
+  - Use `ServiceRequest.supportingInfo:pregnancyStatus` to record pregnancy, with the permitted value of Pregnant, only when it applies to the request.
+  - Use `ServiceRequest.supportingInfo:clinicalContext` to supply text narrative that provides the broader clinical background or circumstances related to the request.
+  - Use `ServiceRequest.note` to record general comments or administrative notes about the request.
+  - Information recorded in `ServiceRequest.note` **SHALL NOT** duplicate or overlap with clinical context captured in `ServiceRequest.supportingInfo:clinicalContext`, or with any other information recorded in the ServiceRequest.

@@ -660,7 +660,7 @@
           <valueCode value="SHOULD"/>
         </extension>
       </supportedProfile>
-      <documentation value="The AU eRequesting Patient actor **SHALL** support the ServiceRequest resource, at least one AU eRequesting ServiceRequest profile, and the conformance expectations for the ServiceRequest resource.&#xa;&#xa;The AU eRequesting Patient actor **MAY** support the `_include` parameter for `ServiceRequest:patient`, `ServiceRequest:requester`, `ServiceRequest:encounter` and `ServiceRequest:supporting-info`."/>
+      <documentation value="The AU eRequesting Patient actor **SHALL** support the ServiceRequest resource, at least one AU eRequesting ServiceRequest profile, and the conformance expectations for the ServiceRequest resource.&#xa;&#xa;The AU eRequesting Patient actor **MAY** support the `_include` parameter for `ServiceRequest:patient`, `ServiceRequest:requester`, `ServiceRequest:encounter` and `ServiceRequest:supporting-info`.&#xa;&#xa;Resources referenced by `ServiceRequest.supportingInfo` can be referenced by all ServiceRequests in a group when the information applies across the group, or by individual ServiceRequests when the information is specific to particular requests."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
