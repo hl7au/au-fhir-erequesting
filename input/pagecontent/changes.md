@@ -38,6 +38,8 @@ This change log documents the significant updates and resolutions implemented fr
   - added new profile, including interaction support [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 - [AU eRequesting Practitioner](StructureDefinition-au-erequesting-practitioner.html):
   - added new profile, including interaction support [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+- [AU eRequesting PractitionerRole](StructureDefinition-au-erequesting-practitionerrole.html):
+  - added new profile, including interaction support [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 - [AU eRequesting Task](StructureDefinition-au-erequesting-task.html):
   - changed Task.for type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - changed Task.requester type from AU Core PractitionerRole to AU eRequesting PractitionerRole [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
