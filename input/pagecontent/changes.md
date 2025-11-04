@@ -48,7 +48,8 @@ This change log documents the significant updates and resolutions implemented fr
 - [AU eRequesting Server CapabilityStatement](CapabilityStatement-au-erequesting-server.html):
   - added support for transaction interaction as SHOULD [FHIR-52519](https://jira.hl7.org/browse/FHIR-52519)
   - added format support for json as SHALL and format support for xml as SHOULD [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
-
+  - added part-of search parameter and _revinclude support for Task:part-of as SHALL for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
+  
 ### Release 1.0.0-ballot
 - Publication date: 2025-08-04
 - Publication status: Ballot for Working Standard
