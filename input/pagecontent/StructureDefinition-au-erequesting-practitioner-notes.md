@@ -35,7 +35,7 @@
 
 The following search parameters and search parameter combinations are supported. Conformance obligations are detailed in the table above.
 
-1. **[`_id`](https://hl7.org/fhir/R4/pracitioner.html#search)** search parameter
+1. **[`_id`](https://hl7.org/fhir/R4/practitioner.html#search)** search parameter
 
     `GET [base]/Practitioner?_id=[id]`
 
