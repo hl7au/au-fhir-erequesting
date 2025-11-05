@@ -8,10 +8,10 @@
 - Refer to the [AU eRequesting Workflow Guidance](workflow.html) page for guidance on managing workflow states in AU eRequesting.
 - See the [Diagnostic Request Grouping](general-guidance.html#diagnostic-request-grouping) section for guidance on grouping diagnostic requests in AU eRequesting.
 - The provision of an insurance attribute describes a recommendation to be considered by the filler and does not guarantee that this recommendation will be satisfied.
-- `Encounter.class` **SHALL** be populated as it is required by fillers to assist in resolving diagnostic request billing.
+- `ServiceRequest.encounter` and `ServiceRequest.encounter.reference` are mandatory to support `Encounter.class`, which classifies the patient encounter and is required by fillers for billing purposes.
 - `ServiceRequest.occurenceTiming.repeat.count` can be used to specify the number of diagnostic requests to be performed.
-- Resources referenced by `ServiceRequest.supportingInfo` can be referenced by all ServiceRequests in a group when the information applies across the group, or by individual ServiceRequests when the information is specific to particular requests:
+- Resources referenced by `ServiceRequest.supportingInfo` can be referenced by all ServiceRequests in a group when the information applies across the group, or by individual ServiceRequests when the information is specific to particular requests.
   - Use `ServiceRequest.supportingInfo:pregnancyStatus` to record pregnancy, with the permitted value of Pregnant, only when it applies to the request.
   - Use `ServiceRequest.supportingInfo:clinicalContext` to supply text narrative that provides the broader clinical background or circumstances related to the request.
-  - Use `ServiceRequest.note` to record general comments or administrative notes about the request.
+- Use `ServiceRequest.note` to record general comments or administrative notes about the request.
   - Information recorded in `ServiceRequest.note` **SHALL NOT** duplicate or overlap with clinical context captured in `ServiceRequest.supportingInfo:clinicalContext`, or with any other information recorded in the ServiceRequest.
