@@ -27,7 +27,7 @@
       <td><b>MAY</b></td>
       <td><code>token</code></td>
       <td></td>
-  </tr>
+    </tr>
   </tbody>
 </table>
 
@@ -35,22 +35,22 @@
 
 The following search parameters and search parameter combinations are supported. Conformance obligations are detailed in the table above.
 
-1. **[`_id`](https://hl7.org/fhir/R4/practitioner.html#search)** search parameter
+1. **[`_id`](https://hl7.org/fhir/R4/organization.html#search)** search parameter
 
-    `GET [base]/Practitioner?_id=[id]`
-
-    Example:
-    
-      1. GET [base]/Practitioner?_id=987654
-
-  *Implementation Notes:* Fetches a bundle with the requested Practitioner, instead of just the resource itself, and allows for the inclusion of additional search parameters such as _include, _revinclude, or _lastUpdated ([how to search by id of the resource](https://hl7.org/fhir/r4/search.html#id))
-
-1. **[`identifier`](https://hl7.org/fhir/R4/practitioner.html#search)** search parameter:
-
-    `GET [base]/Practitioner?identifier=[system|][code]`
+    `GET [base]/Organization?_id=[id]`
 
     Example:
     
-      1. GET [base]/Practitioner?identifier=http://ns.electronichealth.net.au/id/hi/hpii/1.0\|8003616566719020
+      1. GET [base]/Organization?_id=123456
 
-    *Implementation Notes:* Fetches a bundle containing all Practitioner resources matching the identifier ([how to search by token](http://hl7.org/fhir/R4/search.html#token))
+  *Implementation Notes:* Fetches a bundle with the requested Organization, instead of just the resource itself, and allows for the inclusion of additional search parameters such as _include, _revinclude, or _lastUpdated ([how to search by id of the resource](https://hl7.org/fhir/r4/search.html#id))
+
+1. **[`identifier`](https://hl7.org/fhir/R4/organization.html#search)** search parameter
+
+    `GET [base]/Organization?identifier=[system|][code]`
+
+    Example:
+    
+      1. GET [base]/Organization?identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0\|8003626566707032
+
+    *Implementation Notes:* Fetches a bundle containing all Organization resources matching the identifier ([how to search by token](http://hl7.org/fhir/R4/search.html#token))
