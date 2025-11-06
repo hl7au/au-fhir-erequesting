@@ -745,7 +745,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="If the AU eRequesting Patient actor supports the Task resource, the AU eRequesting Patient actor **SHALL** support the AU eRequesting profiles, and the conformance expectations for the Task resource.&#xA;&#xA;The AU eRequesting Patient actor **MAY** support the `_include` parameter for `Task:patient`, `Task:requester`, `Task:owner`, `Task:focus`."/>      
+      <documentation value="If the AU eRequesting Patient actor supports the Task resource, the AU eRequesting Patient actor **SHALL** support the AU eRequesting profiles, and the conformance expectations for the Task resource.&#xA;&#xA;The AU eRequesting Patient actor **MAY** support the `_include` parameter for `Task:patient`, `Task:requester`, `Task:owner`, `Task:focus`.&#xA;&#xA;The AU eRequesting Patient actor **MAY** support the `_revinclude` parameter for `Task:part-of`.&#xA;&#xA;"/>      
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
@@ -807,6 +807,14 @@
         <definition value="http://hl7.org/fhir/SearchParameter/Task-owner"/>
         <type value="reference"/>
         <documentation value="The AU eRequesting Patient actor **MAY** support chained search owner.identifier using HPI-O and ABN identifiers as defined in the AU Core Organization profile."/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="part-of"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Task-part-of"/>
+        <type value="reference"/>
       </searchParam>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -902,6 +910,11 @@
         <valueCode value="MAY"/>
         </extension>
       </searchInclude>
+      <searchRevInclude value="Task:part-of">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="MAY"/>
+        </extension>
+      </searchRevInclude>
     </resource>		 
   </rest>
 </CapabilityStatement>
