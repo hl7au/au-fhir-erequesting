@@ -18,7 +18,7 @@ The figure below illustrates the approach taken to develop and mature AU eReques
 <br/>
 
 ### Future Candidate Requirements Under Consideration
-The following items are under consideration to add to AU eRequesting ([Link to Deferred List in Jira](https://jira.hl7.org/browse/FHIR-52613?jql=project%20%3D%20FHIR%20AND%20Specification%20%3D%20%22%5BFHIR-au-erequesting%5D%22%20AND%20status%20%3D%20Deferred)):
+The following items are under consideration to add to AU eRequesting ([Link to Deferred List in Jira](https://jira.hl7.org/issues/?jql=project%20%3D%20FHIR%20AND%20Specification%20%3D%20%22%5BFHIR-au-erequesting%5D%22%20AND%20status%20%3D%20Deferred)):
 * **Adverse reaction risk summary**: Future versions of AU eRequesting will develop and test approaches to addressing Adverse reaction risk summary.
 * **Implanted medical device summary**: Future versions of AU eRequesting will develop and test approaches to addressing Implanted medical device summary.
 * **Problem/Diagnosis summary**: Future versions of AU eRequesting will develop and test approaches to addressing Problem/Diagnosis summary.
