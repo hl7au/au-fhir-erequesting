@@ -20,6 +20,10 @@ This change log documents the significant updates and resolutions implemented fr
   - removed usage guidance from profile description and added Usage Scenario section to profile [FHIR-51855](https://jira.hl7.org/browse/FHIR-51855)
   - changed CommunicationRequest.recipient type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - removed AU eRequesting Task Group type reference from CommunicationRequest.about [FHIR-52403](https://jira.hl7.org/browse/FHIR-52403)
+- [AU eRequesting Coverage](StructureDefinition-au-erequesting-coverage.html):
+  - added Must Support and obligations to Coverage.status, Coverage.payor and Coverage.beneficiary [FHIR-51671](https://jira.hl7.org/browse/FHIR-51671)
+  - changed Coverage.payor type from Organization, Patient, RelatedPerson to AU eRequesting Organization, AU eRequesting Patient, AU Core RelatedPerson [FHIR-52522](https://jira.hl7.org/browse/FHIR-52522)
+  - changed Coverage.beneficiary type from Patient to AU eRequesting Patient [FHIR-52522](https://jira.hl7.org/browse/FHIR-52522)
 - [AU eRequesting DiagnosticRequest](StructureDefinition-au-erequesting-diagnosticrequest.html):
   - added profile specific implementation guidance on the use of ServiceRequest.occurrenceTiming.repeat.count to represent the number of diagnostic requests to be performed [FHIR-51854](https://jira.hl7.org/browse/FHIR-51854)
   - removed Must Support and obligations from ServiceRequest.bodySite [FHIR-52356](https://jira.hl7.org/browse/FHIR-52356)
