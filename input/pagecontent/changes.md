@@ -20,7 +20,7 @@ This change log documents the significant updates and resolutions implemented fr
   - removed usage guidance from profile description and added Usage Scenario section to profile [FHIR-51855](https://jira.hl7.org/browse/FHIR-51855)
   - changed CommunicationRequest.recipient type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - removed AU eRequesting Task Group type reference from CommunicationRequest.about [FHIR-52403](https://jira.hl7.org/browse/FHIR-52403)
-  - removed cardinality constraint on CommunicationRequest.category.coding, changing it from 1..1 to 1..* [FHIR-52337](https://jira.hl7.org/browse/FHIR-52337)
+  - removed cardinality constraint on CommunicationRequest.category.coding, changing it from 1..1 to 0..* [FHIR-52337](https://jira.hl7.org/browse/FHIR-52337)
 - [AU eRequesting Coverage](StructureDefinition-au-erequesting-coverage.html):
   - added Must Support and obligations to Coverage.status, Coverage.payor and Coverage.beneficiary [FHIR-51671](https://jira.hl7.org/browse/FHIR-51671)
   - changed Coverage.payor type from Organization, Patient, RelatedPerson to AU eRequesting Organization, AU eRequesting Patient, AU Core RelatedPerson [FHIR-52522](https://jira.hl7.org/browse/FHIR-52522)
