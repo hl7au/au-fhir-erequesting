@@ -18,6 +18,7 @@ This change log documents the significant updates and resolutions implemented fr
   - removed usage guidance from profile description and added Usage Scenario section to profile [FHIR-51855](https://jira.hl7.org/browse/FHIR-51855)
   - changed CommunicationRequest.recipient type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - removed AU eRequesting Task Group type reference from CommunicationRequest.about [FHIR-52403](https://jira.hl7.org/browse/FHIR-52403)
+  - changed cardinality of CommunicationRequest.category.coding from 1..1 to 1..* [FHIR-52337](https://jira.hl7.org/browse/FHIR-52337)
 - [AU eRequesting DiagnosticRequest](StructureDefinition-au-erequesting-diagnosticrequest.html):
   - added profile specific implementation guidance on the use of ServiceRequest.occurrenceTiming.repeat.count to represent the number of diagnostic requests to be performed [FHIR-51854](https://jira.hl7.org/browse/FHIR-51854)
   - removed Must Support and obligations from ServiceRequest.bodySite [FHIR-52356](https://jira.hl7.org/browse/FHIR-52356)
