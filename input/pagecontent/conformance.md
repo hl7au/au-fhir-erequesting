@@ -64,6 +64,8 @@ Mandatory elements are elements with minimum cardinality > 0. When an element is
 
 The convention in this guide is to mark all mandatory elements as *Must Support* unless they are nested under an optional element.
 
+Missing mandatory data **SHALL NOT** be represented using [data absent reason](https://hl7.org/fhir/R4/extension-data-absent-reason.html) conventions and the SHALL:populate obligation will be specified in the profile element.
+
 ### Must Support and Obligation
 Labelling an element *[Must Support](https://www.hl7.org/fhir/conformance-rules.html#mustSupport)* means that systems that produce or consume resources **SHALL** provide support for the element in some meaningful way. The FHIR standard does not define exactly what 'meaningful' support for an element means, but indicates that a profile **SHALL** make clear exactly what kind of support is required when an element is labelled as *Must Support*.
 

@@ -7,6 +7,7 @@ This change log documents the significant updates and resolutions implemented fr
 
 #### Changes in this version
 - removed Exchange Format Support section from Conformance page [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
+- added guidance on mandatory element missing data to Conformance page [FHIR-52515](https://jira.hl7.org/browse/FHIR-52515)
 - [AU eRequesting Clinical Context DocumentReference](StructureDefinition-au-erequesting-clinicalcontext-documentreference.html):
   - added Must Support and LOINC code "107903-7" as patternCodeableConcept to DocumentReference.type, and changed cardinality from 0..1 to 1..1 [FHIR-51765](https://jira.hl7.org/browse/FHIR-51765)
   - changed DocumentReference.subject type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
