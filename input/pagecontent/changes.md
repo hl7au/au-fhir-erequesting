@@ -11,6 +11,7 @@ This change log documents the significant updates and resolutions implemented fr
 - [AU eRequesting Clinical Context DocumentReference](StructureDefinition-au-erequesting-clinicalcontext-documentreference.html):
   - added Must Support and LOINC code "107903-7" as patternCodeableConcept to DocumentReference.type, and changed cardinality from 0..1 to 1..1 [FHIR-51765](https://jira.hl7.org/browse/FHIR-51765)
   - changed DocumentReference.subject type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - added Must Support and obligations to DocumentReference.date and DocumentReference.author [FHIR-52520](https://jira.hl7.org/browse/FHIR-52520)
 - [AU eRequesting CommunicationRequest](StructureDefinition-au-erequesting-communicationrequest.html):
   - changed CommunicationRequest.subject, CommunicationRequest.requester and CommunicationRequest.recipient type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - removed AU eRequesting Task Group type reference from CommunicationRequest.about [FHIR-52403](https://jira.hl7.org/browse/FHIR-52403)
