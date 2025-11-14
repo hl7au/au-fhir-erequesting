@@ -15,6 +15,20 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
       <valueMarkdown value="Shows an example of a task for fulfilment of a Pathology Request for the *AU eRequesting Task Diagnostic Request* profile. Patient: Fred Roberts."/>
   </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PLAC"/>
+        <display value="Placer Identifier"/>
+      </coding>
+    </type>
+    <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003622500032165"/>
+    <value value="EMC4542244-5625-01"/>
+    <assigner>
+      <display value="Elimbah Medical Center"/>
+    </assigner>
+  </identifier>
   <groupIdentifier>
     <type>
       <coding>
