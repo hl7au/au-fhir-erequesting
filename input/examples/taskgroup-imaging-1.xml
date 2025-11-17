@@ -37,7 +37,7 @@
   <businessStatus>
     <coding>
       <system value="http://terminology.hl7.org.au/CodeSystem/task-business-status"/>
-      <code value="booked"/>
+      <code value="service-booked"/>
     </coding>
   </businessStatus>
   <intent value="order"/>
