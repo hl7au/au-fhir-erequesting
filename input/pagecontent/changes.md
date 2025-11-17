@@ -28,8 +28,7 @@ This change log documents the significant updates and resolutions implemented fr
 - [AU eRequesting DiagnosticRequest](StructureDefinition-au-erequesting-diagnosticrequest.html):
   - added profile specific implementation guidance on the use of ServiceRequest.occurrenceTiming.repeat.count to represent the number of diagnostic requests to be performed [FHIR-51854](https://jira.hl7.org/browse/FHIR-51854)
   - added profile specific implementation guidance on the use of ServiceRequest.encounter to support filler billing [FHIR-52406](https://jira.hl7.org/browse/FHIR-52406)
-  - replaced profile specific implementation guidance on the use ServiceRequest.supportingInfo in Diagnostic Requests [FHIR-52423](https://jira.hl7.org/browse/FHIR-52423)
-  - added link to [Diagnostic Request Grouping](general-guidance.html#diagnostic-request-grouping) section in profile specific implementation guidance [FHIR-52334](https://jira.hl7.org/browse/FHIR-52334)
+  - replaced profile specific implementation guidance on the use ServiceRequest.supportingInfo in Diagnostic Requests [FHIR-52423](https://jira.hl7.org/browse/FHIR-52423)  
   - removed Must Support and obligations from ServiceRequest.bodySite [FHIR-52356](https://jira.hl7.org/browse/FHIR-52356)
   - added Must Support and obligations to ServiceRequest.code.text and ServiceRequest.encounter.reference [FHIR-52362](https://jira.hl7.org/browse/FHIR-52362)
   - changed ServiceRequest.subject type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
@@ -49,7 +48,6 @@ This change log documents the significant updates and resolutions implemented fr
 - [AU eRequesting Task](StructureDefinition-au-erequesting-task.html):
   - changed Task.for type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - changed Task.owner type from AU Core Organization to AU eRequesting Organization [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
-  - added link to [Diagnostic Request Grouping](general-guidance.html#diagnostic-request-grouping) section in profile specific implementation guidance [FHIR-52334](https://jira.hl7.org/browse/FHIR-52334)
 - [AU eRequesting Placer CapabilityStatement](CapabilityStatement-au-erequesting-placer.html):
   - added support for transaction interaction as SHOULD [FHIR-52519](https://jira.hl7.org/browse/FHIR-52519)
   - added format support for json as SHOULD and format support for xml as MAY [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
