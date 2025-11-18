@@ -12,7 +12,6 @@ In addition to the profiles defined in this implementation guide, the following 
 - [AU Local Order Identifier](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-localorderidentifier.html)
 - [AU Core Encounter](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-encounter.html)
 - [Observation Pregnancy - Status (IPS)](https://build.fhir.org/ig/HL7/fhir-ips/StructureDefinition-Observation-pregnancy-status-uv-ips.html)
-- [AU Core PractitionerRole](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-practitionerrole.html)
 
 <div style="background:white"> 
   <img src="au-erequesting-profiles-part1.svg" alt="AU eRequesting Profiles - Part 1" style="width:1200px"/>
