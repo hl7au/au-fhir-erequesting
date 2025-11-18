@@ -52,21 +52,21 @@ This change log documents the significant updates and resolutions implemented fr
   - added support for transaction interaction as SHOULD [FHIR-52519](https://jira.hl7.org/browse/FHIR-52519)
   - added format support for json as SHOULD and format support for xml as MAY [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
   - added part-of search parameter and _revinclude support for Task:part-of as MAY for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)  
-  - added ServiceRequest.supportingInfo guidance to documentation [FHIR-52423](https://jira.hl7.org/browse/FHIR-52423)
+  - added conformance requirements from AU eRequesting Diagnostic Request, AU eRequesting Imaging Request and AU eRequesting Pathology Request profile specific implementation guidance [FHIR-52423](https://jira.hl7.org/browse/FHIR-52423)
 - [AU eRequesting Filler CapabilityStatement](CapabilityStatement-au-erequesting-filler.html):
   - added support for transaction interaction as SHOULD [FHIR-52519](https://jira.hl7.org/browse/FHIR-52519)
   - added format support for json as SHOULD and format support for xml as MAY [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
   - added part-of search parameter and _revinclude support for Task:part-of as MAY for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
-  - added ServiceRequest.supportingInfo guidance to documentation [FHIR-52423](https://jira.hl7.org/browse/FHIR-52423)
+  - added conformance requirements from AU eRequesting Diagnostic Request, AU eRequesting Imaging Request and AU eRequesting Pathology Request profile specific implementation guidance [FHIR-52423](https://jira.hl7.org/browse/FHIR-52423)
 - [AU eRequesting Patient CapabilityStatement](CapabilityStatement-au-erequesting-patient.html):
   - added format support for json as SHOULD and format support for xml as MAY [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
   - added part-of search parameter and _revinclude support for Task:part-of as MAY for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
-  - added ServiceRequest.supportingInfo guidance to documentation [FHIR-52423](https://jira.hl7.org/browse/FHIR-52423)
+  - added conformance requirements from AU eRequesting Diagnostic Request, AU eRequesting Imaging Request and AU eRequesting Pathology Request profile specific implementation guidance [FHIR-52423](https://jira.hl7.org/browse/FHIR-52423)
 - [AU eRequesting Server CapabilityStatement](CapabilityStatement-au-erequesting-server.html):
   - added support for transaction interaction as SHOULD [FHIR-52519](https://jira.hl7.org/browse/FHIR-52519)
   - added format support for json as SHALL and format support for xml as SHOULD [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
   - added part-of search parameter and _revinclude support for Task:part-of as SHALL for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
-  - added ServiceRequest.supportingInfo guidance to documentation [FHIR-52423](https://jira.hl7.org/browse/FHIR-52423)
+  - added conformance requirements from AU eRequesting Diagnostic Request, AU eRequesting Imaging Request and AU eRequesting Pathology Request profile specific implementation guidance [FHIR-52423](https://jira.hl7.org/browse/FHIR-52423)
 
 ### Release 1.0.0-ballot
 - Publication date: 2025-08-04
