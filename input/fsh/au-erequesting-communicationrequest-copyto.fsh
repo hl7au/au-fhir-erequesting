@@ -15,7 +15,7 @@ Description: "This profile sets the minimum expectations for a CommunicationRequ
 
 * about ^short = "Diagnostic request the copy-to communication is about"
 
-* requester only Reference (AUCorePractitionerRole)
+* requester only Reference (AUeRequestingPractitionerRole)
   * ^short = "Individual provider requesting the communication"
 
 * recipient ^short = "Individual provider or patient who is the intended recipient of the copy" 

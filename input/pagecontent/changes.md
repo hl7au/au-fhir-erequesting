@@ -17,10 +17,15 @@ This change log documents the significant updates and resolutions implemented fr
   - changed CommunicationRequest.subject, CommunicationRequest.requester and CommunicationRequest.recipient type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - removed AU eRequesting Task Group type reference from CommunicationRequest.about [FHIR-52403](https://jira.hl7.org/browse/FHIR-52403)
   - changed CommunicationRequest.requester and CommunicationRequest.sender type from AU Core Organization to AU eRequesting Organization [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - changed CommunicationRequest.requester and CommunicationRequest.recipient type from AU Core PractitionerRole to AU eRequesting PractitionerRole [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+- [AU eRequesting CommunicationRequest CopyTo](StructureDefinition-au-erequesting-communicationrequest-copyto.html):
+  - changed CommunicationRequest.requester type from AU Core PractitionerRole to AU eRequesting PractitionerRole [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 - [AU eRequesting CommunicationRequest Patient](StructureDefinition-au-erequesting-communicationrequest-patient.html):
   - removed usage guidance from profile description and added Usage Scenario section to profile [FHIR-51855](https://jira.hl7.org/browse/FHIR-51855)
   - changed CommunicationRequest.recipient type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - removed AU eRequesting Task Group type reference from CommunicationRequest.about [FHIR-52403](https://jira.hl7.org/browse/FHIR-52403)
+- [AU eRequesting CommunicationRequest Urgent Provider](StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html):
+  - changed CommunicationRequest.requester and CommunicationRequest.recipient type from AU Core PractitionerRole to AU eRequesting PractitionerRole [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 - [AU eRequesting Coverage](StructureDefinition-au-erequesting-coverage.html):
   - added Must Support and obligations to Coverage.status, Coverage.payor and Coverage.beneficiary [FHIR-51671](https://jira.hl7.org/browse/FHIR-51671)
   - changed Coverage.payor type from Organization, Patient, RelatedPerson to AU eRequesting Organization, AU eRequesting Patient, AU Core RelatedPerson [FHIR-52522](https://jira.hl7.org/browse/FHIR-52522)
@@ -33,6 +38,7 @@ This change log documents the significant updates and resolutions implemented fr
   - added Must Support and obligations to ServiceRequest.code.text and ServiceRequest.encounter.reference [FHIR-52362](https://jira.hl7.org/browse/FHIR-52362)
   - changed ServiceRequest.subject type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - removed Must Support and obligations on ServiceRequest.quantity[x] [FHIR-52071](https://jira.hl7.org/browse/FHIR-52071)
+  - changed ServiceRequest.requester type from AU Core PractitionerRole to AU eRequesting PractitionerRole [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 - [AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhrconsentwithdrawal.html):
   - changed cardinality of Consent.category from 1..* to 1..1 [FHIR-51918](https://jira.hl7.org/browse/FHIR-51918)
   - changed Consent.patient and Consent.performer type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
@@ -45,9 +51,12 @@ This change log documents the significant updates and resolutions implemented fr
   - added new profile, including interaction support [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 - [AU eRequesting Practitioner](StructureDefinition-au-erequesting-practitioner.html):
   - added new profile, including interaction support [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+- [AU eRequesting PractitionerRole](StructureDefinition-au-erequesting-practitionerrole.html):
+  - added new profile, including interaction support [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 - [AU eRequesting Task](StructureDefinition-au-erequesting-task.html):
   - changed Task.for type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - changed Task.owner type from AU Core Organization to AU eRequesting Organization [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - changed Task.requester type from AU Core PractitionerRole to AU eRequesting PractitionerRole [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 - [AU eRequesting Placer CapabilityStatement](CapabilityStatement-au-erequesting-placer.html):
   - added support for transaction interaction as SHOULD [FHIR-52519](https://jira.hl7.org/browse/FHIR-52519)
   - added format support for json as SHOULD and format support for xml as MAY [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
