@@ -16,3 +16,9 @@ The figure below illustrates the approach taken to develop and mature AU eReques
   </div>
 *Figure 2: Maturing the AU eRequesting baseline*
 <br/>
+
+### Future Candidate Requirements Under Consideration
+The following items are under consideration to add to AU eRequesting ([Link to Deferred List in Jira](https://jira.hl7.org/issues/?jql=project%20%3D%20FHIR%20AND%20Specification%20%3D%20%22%5BFHIR-au-erequesting%5D%22%20AND%20status%20%3D%20Deferred)):
+* **Adverse reaction risk summary**: Future versions of AU eRequesting will develop and test approaches to addressing AUCDI data group 'Adverse reaction risk summary', which is in scope of AUeReqDI Release 1.
+* **Implanted medical device summary**: Future versions of AU eRequesting will develop and test approaches to addressing AUeReqDI data group 'Implanted medical device summary'.
+* **Problem/Diagnosis summary**: Future versions of AU eRequesting will develop and test approaches to addressing AUCDI data group 'Problem/Diagnosis summary', which is in scope of AUeReqDI Release 1.

@@ -40,13 +40,12 @@ Description: "This profile sets the minimum expectations for a CommunicationRequ
 * medium ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 * medium ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 
-* about only Reference (AUeRequestingPathologyRequest or AUeRequestingImagingRequest)
-  * ^short = "Diagnostic request the urgent communication is about"
+* about ^short = "Diagnostic request the urgent communication is about"
 
-* requester only Reference (AUCorePractitionerRole)
+* requester only Reference (AUeRequestingPractitionerRole)
   * ^short = "Individual provider requesting the communication"
 
-* recipient only Reference (AUCorePractitionerRole)
+* recipient only Reference (AUeRequestingPractitionerRole)
   * ^short = "Individual provider receiving the communication"
 
 * reasonCode

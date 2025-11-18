@@ -13,7 +13,7 @@
   <fhirVersion value="4.0.1"/>
   <format value="json">
     <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-      <valueCode value="MAY"/>
+      <valueCode value="SHOULD"/>
     </extension>
   </format>
   <format value="xml">
@@ -465,12 +465,12 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="Organization"/>
-      <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-organization">
+      <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-organization">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="The AU eRequesting Placer actor **SHALL** support the Organization resource, the AU Core profile, and the conformance expectations for the Organization resource."/>
+      <documentation value="The AU eRequesting Placer actor **SHALL** support the Organization resource, the AU eRequesting profile, and the conformance expectations for the Organization resource."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
@@ -515,7 +515,7 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="Patient"/>
-      <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient">
+      <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-patient">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
@@ -525,7 +525,7 @@
 	           <valueCode value="SHALL"/>
 	         </extension>
 	    </supportedProfile>
-      <documentation value="The AU eRequesting Placer actor **SHALL** support the Patient resource, the AU Core profile, the Patient (IPS) profile and the conformance expectations for the Patient resource."/>
+      <documentation value="The AU eRequesting Placer actor **SHALL** support the Patient resource, the AU eRequesting profile, the Patient (IPS) profile and the conformance expectations for the Patient resource."/>
       <interaction>
           <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
             <valueCode value="SHOULD"/>
@@ -571,12 +571,12 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="Practitioner"/>
-      <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-practitioner">
+      <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-practitioner">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="The AU eRequesting Placer actor **SHALL** support the Practitioner resource, the AU Core profile, and the conformance expectations for the Practitioner resource."/>
+      <documentation value="The AU eRequesting Placer actor **SHALL** support the Practitioner resource, the AU eRequesting profile, and the conformance expectations for the Practitioner resource."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
@@ -622,12 +622,12 @@
         <valueCode value="SHALL"/>
       </extension>
       <type value="PractitionerRole"/>
-      <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-practitionerrole">
+      <supportedProfile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-practitionerrole">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="The AU eRequesting Placer actor **SHALL** support the PractitionerRole resource, the AU Core profile, and the conformance expectations for the PractitionerRole resource."/>
+      <documentation value="The AU eRequesting Placer actor **SHALL** support the PractitionerRole resource, the AU eRequesting profile, and the conformance expectations for the PractitionerRole resource."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
@@ -882,7 +882,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="The AU eRequesting Placer actor **SHALL** support the Task resource, the AU eRequesting profiles, and the conformance expectations for the Task resource.&#xA;&#xA;The AU eRequesting Placer actor **MAY** support the `_include` parameter for `Task:patient`, `Task:requester`, `Task:owner`, `Task:focus`."/>      
+      <documentation value="The AU eRequesting Placer actor **SHALL** support the Task resource, the AU eRequesting profiles, and the conformance expectations for the Task resource.&#xA;&#xA;The AU eRequesting Placer actor **MAY** support the `_include` parameter for `Task:patient`, `Task:requester`, `Task:owner`, `Task:focus`.&#xA;&#xA;The AU eRequesting Placer actor **MAY** support the `_revinclude` parameter for `Task:part-of`."/>      
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
@@ -956,6 +956,14 @@
         <definition value="http://hl7.org/fhir/SearchParameter/Task-owner"/>
         <type value="reference"/>
         <documentation value="The AU eRequesting Placer actor **MAY** support chained search owner.identifier using HPI-O and ABN identifiers as defined in the AU Core Organization profile."/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="part-of"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Task-part-of"/>
+        <type value="reference"/>
       </searchParam>
       <searchParam>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -1051,6 +1059,17 @@
         <valueCode value="MAY"/>
         </extension>
       </searchInclude>
+      <searchRevInclude value="Task:part-of">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="MAY"/>
+        </extension>
+      </searchRevInclude>
     </resource>
+    <interaction>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD"/>
+      </extension>
+      <code value="transaction"/>
+    </interaction>
   </rest>
 </CapabilityStatement>

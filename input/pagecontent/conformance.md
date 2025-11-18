@@ -1,5 +1,5 @@
 Each AU eRequesting actor as defined in [Actors and Capabilities](capability-statements.html):
-- **SHALL** implement the [mandatory](#mandatory-elements) and/or [Must Support](#must-support-and-obligation) elements in the AU eRequesting profiles. 
+- **SHALL** implement [Must Support](#must-support-and-obligation) elements in accordance with the specified [obligations](#must-support-and-obligation) for the relevant actors. 
 - **SHALL** implement the required REST API interactions and search parameters as defined in their respective CapabilityStatement.
 
 Additionally, the [AU eRequesting Server](ActorDefinition-au-erequesting-actor-server.html) actor:
@@ -25,47 +25,45 @@ The requirements of the FHIR standard and [FHIR Conformance Rules](http://hl7.or
 #### AU eRequesting Profiles and Extensions
 The [Profiles and Extensions](profiles-and-extensions.html) page lists the AU eRequesting profiles defined for this implementation guide, and the AU eRequesting extensions marked with *Must Support* and referenced by this implementation guide. An AU eRequesting profile [StructureDefinition](http://hl7.org/fhir/R4/structuredefinition.html) defines the minimum elements, extensions, vocabularies and value sets that **SHALL** be present and constrains the way elements are used when conforming to the profile.
 
-AU eRequesting profile elements include mandatory and *Must Support* requirements. [Mandatory elements](#mandatory-elements) are required and have a minimum cardinality of 1 (min=1). [Must Support](#must-support-and-obligation) elements have defined conformance obligations in AU eRequesting based on actor roles.
+AU eRequesting profile elements include mandatory and *Must Support* requirements. [Mandatory elements](#mandatory-elements) are required and have a minimum cardinality > 0. [Must Support](#must-support-and-obligation) elements have defined conformance obligations in AU eRequesting based on actor roles.
 
 The [Actors and Capabilities](capability-statements.html) page lists the AU eRequesting actor definitions and their CapabilityStatements.
 
 #### AU eRequesting Capability Statements
 The [AU eRequesting Placer CapabilityStatement](CapabilityStatement-au-erequesting-placer.html) defines the conformance requirements and expectations of an [AU eRequesting Placer](ActorDefinition-au-erequesting-actor-placer.html) actor responsible for creating diagnostic requests. The complete list of FHIR profiles, REST API interactions, and search parameters that can be implemented by an AU eRequesting Placer are defined in this capability statement. AU eRequesting Placer actors define their capabilities by choosing from this list based on the resource types they need to place requests. 
 
-The [AU eRequesting Filler CapabilityStatement](CapabilityStatement-au-erequesting-filler.html) defines the conformance requirements and expectations of an [AU eRequesting Filler](ActorDefinition-au-erequesting-actor-filler.html) actor responsible for finding and retrieving diagnostic request fulfilments so that service providers can fulfil them. The complete list of FHIR profiles, REST API interactions, and search parameters that can be implemented by an AU eRequesting Filler are defined in this capability statement. AU eRequesting Filler actors define their capabilities by choosing from this list based on the resource types they need to fulfill requests. 
+The [AU eRequesting Filler CapabilityStatement](CapabilityStatement-au-erequesting-filler.html) defines the conformance requirements and expectations of an [AU eRequesting Filler](ActorDefinition-au-erequesting-actor-filler.html) actor responsible for finding and retrieving diagnostic request fulfilments so that service providers can fulfil them. The complete list of FHIR profiles, REST API interactions, and search parameters that can be implemented by an AU eRequesting Filler are defined in this capability statement. AU eRequesting Filler actors define their capabilities by choosing from this list based on the resource types they need to fulfil requests. 
 
 The [AU eRequesting Patient CapabilityStatement](CapabilityStatement-au-erequesting-patient.html) defines the conformance requirements and expectations of an [AU eRequesting Patient](ActorDefinition-au-erequesting-actor-patient.html) actor as the digital interface that allows patients or their representatives to view diagnostic requests and fulfilment of diagnostic requests. The complete list of FHIR profiles, REST API interactions, and search parameters that can be implemented by an AU eRequesting Patient client are defined in this capability statement. AU eRequesting Patient actors define their capabilities by choosing from this list based on the resource types they need to access requests. 
 
 The [AU eRequesting Server CapabilityStatement](CapabilityStatement-au-erequesting-server.html) defines the conformance requirements and expectations of an [AU eRequesting Server](ActorDefinition-au-erequesting-actor-server.html) actor responsible for accepting diagnostic service requests and making diagnostic service requests accessible. The complete list of FHIR profiles, REST API interactions, and search parameters that can be implemented by an AU eRequesting Server actor are defined in this capability statement. An AU eRequesting Server actor declares conformance to this list of capabilities based on the resource types and interactions it implements.
 
 ### Declaring Conformance
-Servers that are conformant to the AU eRequesting API declare conformance by:
-* hosting a capability statement at [url]/metadata that is available to both authenticated and unauthenticated clients and that declares that AU eRequesting is supported using CapabilityStatement.instantiates, as shown in the following fragment:
+Servers that are conformant to the AU eRequesting API declare conformance by hosting a capability statement at [url]/metadata that is available to both authenticated and unauthenticated clients and that declares that AU eRequesting is supported using CapabilityStatement.instantiates, as shown in the following fragment:
 
-    ```
-    {
-      "resourceType": "CapabilityStatement",
-      ...
-      "instantiates": [
-        "http://hl7.org.au/fhir/ereq/CapabilityStatement/au-erequesting-server"
-      ],
-      ...  
-      "rest": [
-        {
-          "mode": "server",
-        ...
-        }
-      ] 
-    }
-    ```
-
-### Exchange Format Support
-In FHIR, resources are exchanged in the following formats: JSON, XML, and Turtle. Due to the popularity of JavaScript-based apps and ease of usage with JSON, the most popular exchange format for REST-styled APIs is JSON. 
+```
+{
+  "resourceType": "CapabilityStatement",
+  ...
+  "instantiates": [
+     "http://hl7.org.au/fhir/ereq/CapabilityStatement/au-erequesting-server"
+   ],
+   ...  
+   "rest": [
+     {
+       "mode": "server",
+       ...
+     }
+   ] 
+}
+```
 
 ### Mandatory Elements
 Mandatory elements are elements with minimum cardinality > 0. When an element is mandatory, the data is expected to always be present. 
+Missing mandatory data **SHALL NOT** be represented using [Data Absent Reason](https://hl7.org/fhir/R4/extension-data-absent-reason.html) conventions and the "SHALL:populate" obligation will be specified in the profile element.
 
 The convention in this guide is to mark all mandatory elements as *Must Support* unless they are nested under an optional element.
+
 
 ### Must Support and Obligation
 Labelling an element *[Must Support](https://www.hl7.org/fhir/conformance-rules.html#mustSupport)* means that systems that produce or consume resources **SHALL** provide support for the element in some meaningful way. The FHIR standard does not define exactly what 'meaningful' support for an element means, but indicates that a profile **SHALL** make clear exactly what kind of support is required when an element is labelled as *Must Support*.

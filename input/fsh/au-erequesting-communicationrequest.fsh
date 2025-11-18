@@ -53,7 +53,7 @@ Description: "This profile sets minimum expectations for CommunicationRequest re
 * category ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error 
 
 * subject 1.. MS
-* subject only Reference (AUCorePatient)
+* subject only Reference (AUeRequestingPatient)
   * ^short = "Patient that is the subject of the communication request"
 
 * subject ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
@@ -68,7 +68,7 @@ Description: "This profile sets minimum expectations for CommunicationRequest re
 * subject ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error 
 
 * about 1.. MS
-* about only Reference(AUeRequestingPathologyRequest or AUeRequestingImagingRequest or AUeRequestingTaskGroup)
+* about only Reference(AUeRequestingPathologyRequest or AUeRequestingImagingRequest)
 
 * about ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * about ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
@@ -82,8 +82,6 @@ Description: "This profile sets minimum expectations for CommunicationRequest re
 * about ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 
 * authoredOn 1.. MS
-  * ^short = "Date/time communication request direction obtained"
-
 * authoredOn ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * authoredOn ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
 * authoredOn ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
@@ -96,7 +94,7 @@ Description: "This profile sets minimum expectations for CommunicationRequest re
 * authoredOn ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 
 * requester 1.. MS
-* requester only Reference(AUCorePractitionerRole or AUCorePatient or AUCoreOrganization)
+* requester only Reference(AUeRequestingPractitionerRole or AUeRequestingPatient or AUeRequestingOrganization)
   * ^short = "Provider, Patient, or Organisation requesting the communication"
 
 * requester ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
@@ -111,7 +109,7 @@ Description: "This profile sets minimum expectations for CommunicationRequest re
 * requester ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 
 * recipient 1..1 MS
-* recipient only Reference(AUCorePractitionerRole or AUCorePatient)
+* recipient only Reference(AUeRequestingPractitionerRole or AUeRequestingPatient)
 
 * recipient ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * recipient ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
@@ -125,11 +123,11 @@ Description: "This profile sets minimum expectations for CommunicationRequest re
 * recipient ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 
 * sender MS
-* sender only Reference(AUCoreOrganization)
+* sender only Reference(AUeRequestingOrganization)
   * ^short = "Organisation sending the communication"
 
 * sender ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
-* sender ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
+* sender ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate-if-known
 * sender ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
 * sender ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[code].valueCode = #SHALL:handle
 * sender ^extension[http://hl7.org/fhir/StructureDefinition/obligation][2].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
