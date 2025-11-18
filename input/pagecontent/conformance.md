@@ -39,30 +39,31 @@ The [AU eRequesting Patient CapabilityStatement](CapabilityStatement-au-erequest
 The [AU eRequesting Server CapabilityStatement](CapabilityStatement-au-erequesting-server.html) defines the conformance requirements and expectations of an [AU eRequesting Server](ActorDefinition-au-erequesting-actor-server.html) actor responsible for accepting diagnostic service requests and making diagnostic service requests accessible. The complete list of FHIR profiles, REST API interactions, and search parameters that can be implemented by an AU eRequesting Server actor are defined in this capability statement. An AU eRequesting Server actor declares conformance to this list of capabilities based on the resource types and interactions it implements.
 
 ### Declaring Conformance
-Servers that are conformant to the AU eRequesting API declare conformance by:
-* hosting a capability statement at [url]/metadata that is available to both authenticated and unauthenticated clients and that declares that AU eRequesting is supported using CapabilityStatement.instantiates, as shown in the following fragment:
+Servers that are conformant to the AU eRequesting API declare conformance by hosting a capability statement at [url]/metadata that is available to both authenticated and unauthenticated clients and that declares that AU eRequesting is supported using CapabilityStatement.instantiates, as shown in the following fragment:
 
-    ```
-    {
-      "resourceType": "CapabilityStatement",
-      ...
-      "instantiates": [
-        "http://hl7.org.au/fhir/ereq/CapabilityStatement/au-erequesting-server"
-      ],
-      ...  
-      "rest": [
-        {
-          "mode": "server",
-        ...
-        }
-      ] 
-    }
-    ```
+```
+{
+  "resourceType": "CapabilityStatement",
+  ...
+  "instantiates": [
+     "http://hl7.org.au/fhir/ereq/CapabilityStatement/au-erequesting-server"
+   ],
+   ...  
+   "rest": [
+     {
+       "mode": "server",
+       ...
+     }
+   ] 
+}
+```
 
 ### Mandatory Elements
 Mandatory elements are elements with minimum cardinality > 0. When an element is mandatory, the data is expected to always be present. 
+Missing mandatory data **SHALL NOT** be represented using [Data Absent Reason](https://hl7.org/fhir/R4/extension-data-absent-reason.html) conventions and the "SHALL:populate" obligation will be specified in the profile element.
 
 The convention in this guide is to mark all mandatory elements as *Must Support* unless they are nested under an optional element.
+
 
 ### Must Support and Obligation
 Labelling an element *[Must Support](https://www.hl7.org/fhir/conformance-rules.html#mustSupport)* means that systems that produce or consume resources **SHALL** provide support for the element in some meaningful way. The FHIR standard does not define exactly what 'meaningful' support for an element means, but indicates that a profile **SHALL** make clear exactly what kind of support is required when an element is labelled as *Must Support*.
