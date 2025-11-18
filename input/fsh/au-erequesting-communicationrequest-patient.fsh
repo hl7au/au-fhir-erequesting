@@ -8,7 +8,6 @@ Description: "This profile sets the minimum expectations for a CommunicationRequ
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 
 * category
-  * coding 1..1
 * category from AUeRequestingCommunicationRequestPatientCategory (required)
 
 * doNotPerform 0..1 MS
