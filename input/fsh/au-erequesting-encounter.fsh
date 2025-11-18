@@ -75,7 +75,7 @@ Description: "This profile sets minimum expectations for an Encounter resource t
 * participant.type ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 * participant.type ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-patient"
 
-* participant.individual only Reference (AUeRequestingPractitioner or AUCorePractitionerRole or AUCoreRelatedPerson)
+* participant.individual only Reference (AUeRequestingPractitioner or AUeRequestingPractitionerRole or AUCoreRelatedPerson)
 * participant.individual ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate-if-known
 * participant.individual ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * participant.individual ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[code].valueCode = #SHALL:handle

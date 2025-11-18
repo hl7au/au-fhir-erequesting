@@ -1,3 +1,7 @@
+### Profile Specific Implementation Guidance
+- See the general [guidance on implementing the Patient resource](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-patient.html#profile-specific-implementation-guidance) in AU Core.
+- This profile supports the sex, gender, and related concepts of: Name to Use, Gender Identity, and Individual Pronouns. See the [Sex and Gender](sex-and-gender.html) page for guidance on exchanging sex and gender related concepts conformant to AU eRequesting.
+  - Sex Assigned at Birth is not marked as *Must Support* but may be exchanged using the [Person Recorded Sex or Gender extension](https://hl7.org/fhir/extensions/StructureDefinition-individual-recordedSexOrGender.html) as profiled by [AU Core Sex Assigned At Birth](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-rsg-sexassignedab.html).
 
 <div class="stu-note" markdown="1">
 
