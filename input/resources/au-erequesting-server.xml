@@ -204,7 +204,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="The AU eRequesting Server actor **SHOULD** support the Coverage resource, the AU Base profile, and the conformance expectations for the Coverage resource."/>
+      <documentation value="The AU eRequesting Server actor **SHALL** support the Coverage resource, the AU eRequesting profile, and the conformance expectations for the Coverage resource."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -306,7 +306,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="The AU eRequesting Server actor **SHOULD** support the Encounter resource, the AU eRequesting profile, and the conformance expectations for the Encounter resource."/>
+      <documentation value="The AU eRequesting Server actor **SHALL** support the Encounter resource, the AU eRequesting profile, and the conformance expectations for the Encounter resource."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
