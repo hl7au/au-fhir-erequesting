@@ -7,8 +7,9 @@ Description: "This profile sets the minimum expectations for a CommunicationRequ
 * ^status = #active
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 
-* category
-* category from AUeRequestingCommunicationRequestPatientCategory (required)
+* category 1..1 
+  * coding 1..1
+  * coding = $communicationrequest-category#patient-preference
 
 * doNotPerform 0..1 MS
 * doNotPerform ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
@@ -42,7 +43,3 @@ Description: "This profile sets the minimum expectations for a CommunicationRequ
 
 * recipient only Reference (AUeRequestingPatient)
   * ^short = "Patient receiving the communication"
-
-* reasonCode
-  * coding 1..1
-  * coding = $comm-req-reason#patient

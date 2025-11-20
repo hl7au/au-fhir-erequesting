@@ -9,7 +9,7 @@ Description: "This profile sets the minimum expectations for a CommunicationRequ
 
 * category 1..1 
   * coding 1..1
-  * coding = $communication-category#notification 
+  * coding = $communicationrequest-category#copyto-reports
 
 * doNotPerform 0..0
 
@@ -19,7 +19,3 @@ Description: "This profile sets the minimum expectations for a CommunicationRequ
   * ^short = "Individual provider requesting the communication"
 
 * recipient ^short = "Individual provider or patient who is the intended recipient of the copy" 
-
-* reasonCode
-  * coding 1..1
-  * coding = $comm-req-reason#copyto

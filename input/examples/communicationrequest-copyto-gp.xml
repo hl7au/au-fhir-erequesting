@@ -30,11 +30,10 @@
   <status value="active"/>
   <category>
     <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/communication-category"/>
-      <code value="notification"/>
-      <display value="Notification"/>
+      <system value="http://terminology.hl7.org.au/CodeSystem/communication-request-category"/>
+      <code value="copyto-reports"/>
+      <display value="Copy To Reports"/>
     </coding>
-    <text value="notification"/>
   </category>
   <subject>
     <reference value="Patient/belger-remedios"/>
@@ -60,12 +59,5 @@
   </recipient>
   <sender>
     <reference value="Organization/kioma-pathology"/>
-  </sender>
-  <reasonCode>
-    <coding>
-      <system value="http://terminology.hl7.org.au/CodeSystem/communicationrequest-reason"/>
-      <code value="copyto"/>
-      <display value="Copy To"/>
-    </coding>
-  </reasonCode>
+  </sender>  
 </CommunicationRequest>
