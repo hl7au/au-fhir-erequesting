@@ -5,3 +5,4 @@
   - Diagnostic request tasks **SHALL** use [AU eRequesting Task Diagnostic Request](StructureDefinition-au-erequesting-task-diagnosticrequest.html) profile
   - Communication request tasks **SHALL** use [AU eRequesting Task Communication Request](StructureDefinition-au-erequesting-task-communicationrequest.html) profile
 - See the [AU eRequesting Workflow Guidance](workflow.html) page for guidance on managing workflow states in AU eRequesting.
+- See the [Diagnostic Request Grouping](general-guidance.html#diagnostic-request-grouping) section for guidance on grouping diagnostic requests in AU eRequesting.
