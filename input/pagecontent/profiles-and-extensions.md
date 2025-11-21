@@ -10,7 +10,6 @@ The following profiles have been defined for this implementation guide.
 #### Other Profiles Used
 In addition to the profiles defined in this implementation guide, the following profiles defined elsewhere are used by AU eRequesting. These profiles are a data type profile for a *Must Support* element in an AU eRequesting profile or are the target of a *Must Support* reference element in an AU eRequesting profile:
 - [AU Local Order Identifier](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-localorderidentifier.html)
-- [AU Core Encounter](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-encounter.html)
 - [Observation Pregnancy - Status (IPS)](https://build.fhir.org/ig/HL7/fhir-ips/StructureDefinition-Observation-pregnancy-status-uv-ips.html)
 
 <div style="background:white"> 
