@@ -10,6 +10,16 @@
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
         <valueMarkdown value="Shows an example of coverage for the *AU eRequesting Coverage* profile, demonstrating a self funded beneficiary type with a concession. Beneficiary: Fred Roberts."/>
     </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PEN"/>
+      </coding>
+    </type>
+    <system value="http://ns.electronichealth.net.au/id/centrelink-customer-reference-number"/>
+    <value value="307111942H"/>
+  </identifier>
   <status value="active"/>
   <type>
     <coding>

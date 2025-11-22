@@ -31,6 +31,7 @@ This change log documents the significant updates and resolutions implemented fr
   - added Must Support and obligations to Coverage.status, Coverage.payor and Coverage.beneficiary [FHIR-51671](https://jira.hl7.org/browse/FHIR-51671)
   - changed Coverage.payor type from Organization, Patient, RelatedPerson to AU eRequesting Organization, AU eRequesting Patient, AU Core RelatedPerson [FHIR-52522](https://jira.hl7.org/browse/FHIR-52522)
   - changed Coverage.beneficiary type from Patient to AU eRequesting Patient [FHIR-52522](https://jira.hl7.org/browse/FHIR-52522)
+  - added Must Support and obligations to Coverage.identifier, including profile specific implementation guidance on the population of Coverage.identifier and Coverage.type [FHIR-52407](https://jira.hl7.org/browse/FHIR-52407), [FHIR-52553](https://jira.hl7.org/browse/FHIR-52553)
 - [AU eRequesting DiagnosticRequest](StructureDefinition-au-erequesting-diagnosticrequest.html):
   - added profile specific implementation guidance on the use of ServiceRequest.occurrenceTiming.repeat.count to represent the number of diagnostic requests to be performed [FHIR-51854](https://jira.hl7.org/browse/FHIR-51854)
   - added profile specific implementation guidance on the use of ServiceRequest.encounter to support filler billing [FHIR-52406](https://jira.hl7.org/browse/FHIR-52406)
