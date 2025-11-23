@@ -38,7 +38,7 @@
   </implementationGuide>
   <rest>
     <mode value="client"/>
-    <documentation value="The AU eRequesting Placer actor **SHALL**:&#xA;1. Support at least one AU eRequesting Diagnostic Request profile, and the conformance expectations for the ServiceRequest resource. &#xA;1. Implement the RESTful behavior according to the FHIR specification."/>
+    <documentation value="The AU eRequesting Placer actor **SHALL**:&#xA;1. Support all resource profiles required by the AU eRequesting Placer actor to create and manage diagnostic requests, as defined in this CapabilityStatement. &#xA;1. Implement the RESTful behavior according to the FHIR specification."/>
     <security>
       <description value="None defined."/>
     </security>
@@ -66,7 +66,7 @@
       <documentation value="The AU eRequesting Placer actor **SHALL** support the CommunicationRequest resource, the AU eRequesting profiles, and the conformance expectations for the CommunicationRequest resource."/>      
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
+          <valueCode value="SHALL"/>
         </extension>
         <code value="read"/>
       </interaction>
@@ -78,7 +78,7 @@
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
+          <valueCode value="SHALL"/>
         </extension>
         <code value="create"/>
       </interaction>
@@ -174,13 +174,13 @@
 	    </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
+          <valueCode value="SHALL"/>
         </extension>
         <code value="update"/>
       </interaction>
 	    <interaction>
 	      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-	        <valueCode value="SHOULD"/>
+	        <valueCode value="SHALL"/>
 	      </extension>
 	      <code value="create"/>
 	    </interaction>
@@ -225,13 +225,13 @@
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
+          <valueCode value="SHALL"/>
         </extension>
         <code value="create"/>
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
+          <valueCode value="SHALL"/>
         </extension>
         <code value="update"/>
       </interaction>        
@@ -276,13 +276,13 @@
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
+          <valueCode value="SHALL"/>
         </extension>
         <code value="create"/>
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
+          <valueCode value="SHALL"/>
         </extension>
         <code value="update"/>
       </interaction>
@@ -327,13 +327,13 @@
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
+          <valueCode value="SHALL"/>
         </extension>
         <code value="create"/>
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
+          <valueCode value="SHALL"/>
         </extension>
         <code value="update"/>
       </interaction>        
@@ -434,13 +434,13 @@
       </interaction>
       <interaction>
           <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-            <valueCode value="SHOULD"/>
+            <valueCode value="SHALL"/>
           </extension>
           <code value="update"/>
       </interaction>
       <interaction>
           <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-            <valueCode value="SHOULD"/>
+            <valueCode value="SHALL"/>
           </extension>
           <code value="create"/>
       </interaction>            
@@ -485,13 +485,13 @@
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
+          <valueCode value="SHALL"/>
         </extension>
         <code value="create"/>
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
+          <valueCode value="SHALL"/>
         </extension>
         <code value="update"/>
       </interaction>        
@@ -540,13 +540,13 @@
       </interaction>
       <interaction>
           <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-            <valueCode value="SHOULD"/>
+            <valueCode value="SHALL"/>
           </extension>
           <code value="create"/>
       </interaction>
       <interaction>
           <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-            <valueCode value="SHOULD"/>
+            <valueCode value="SHALL"/>
           </extension>
           <code value="update"/>
       </interaction>        
@@ -591,13 +591,13 @@
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
+          <valueCode value="SHALL"/>
         </extension>
         <code value="create"/>
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
+          <valueCode value="SHALL"/>
         </extension>
         <code value="update"/>
       </interaction>
@@ -642,13 +642,13 @@
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
+          <valueCode value="SHALL"/>
         </extension>
         <code value="create"/>
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
+          <valueCode value="SHALL"/>
         </extension>
         <code value="update"/>
       </interaction>        
@@ -897,13 +897,13 @@
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
+          <valueCode value="SHALL"/>
         </extension>
         <code value="create"/>
       </interaction>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
-          <valueCode value="SHOULD"/>
+          <valueCode value="SHALL"/>
         </extension>
         <code value="update"/>
       </interaction> 
