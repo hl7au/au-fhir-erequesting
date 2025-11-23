@@ -66,14 +66,14 @@ This change log documents the significant updates and resolutions implemented fr
   - added format support for json as SHOULD and format support for xml as MAY [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
   - added part-of search parameter and _revinclude support for Task:part-of as MAY for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)  
   - added conformance requirements from AU eRequesting Diagnostic Request, AU eRequesting Imaging Request and AU eRequesting Pathology Request profile specific implementation guidance [FHIR-52423](https://jira.hl7.org/browse/FHIR-52423)
-  - changed requirement of AU eRequesting Placer actor in FHIR RESTful Capabilities statement to support all resource profiles required to create and manage diagnostic requests [FHIR-52413](https://jira.hl7.org/browse/FHIR-52413)
-  - changed create and update interaction expectation for resources with conformance of SHALL from SHOULD to SHALL [FHIR-52413](https://jira.hl7.org/browse/FHIR-52413)
+  - changed AU eRequesting Placer actor requirement in FHIR RESTful Capabilities statement to support all resource profiles required to create and manage diagnostic requests [FHIR-52413](https://jira.hl7.org/browse/FHIR-52413)
+  - changed interaction expectation for create and update from SHOULD to SHALL for resources with conformance of SHALL [FHIR-52413](https://jira.hl7.org/browse/FHIR-52413)
 - [AU eRequesting Filler CapabilityStatement](CapabilityStatement-au-erequesting-filler.html):
   - added support for transaction interaction as SHOULD [FHIR-52519](https://jira.hl7.org/browse/FHIR-52519)
   - added format support for json as SHOULD and format support for xml as MAY [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
   - added part-of search parameter and _revinclude support for Task:part-of as MAY for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
   - added conformance requirements from AU eRequesting Diagnostic Request, AU eRequesting Imaging Request and AU eRequesting Pathology Request profile specific implementation guidance [FHIR-52423](https://jira.hl7.org/browse/FHIR-52423)
-  - changed requirement of AU eRequesting Filler actor in FHIR RESTful Capabilities statement to support all resource profiles required for finding and retrieving diagnostic request fulfilments [FHIR-52418](https://jira.hl7.org/browse/FHIR-52418)
+  - changed AU eRequesting Filler actor requirement in FHIR RESTful Capabilities statement to support all resource profiles required for finding and retrieving diagnostic request fulfilments [FHIR-52418](https://jira.hl7.org/browse/FHIR-52418)
 - [AU eRequesting Patient CapabilityStatement](CapabilityStatement-au-erequesting-patient.html):
   - added format support for json as SHOULD and format support for xml as MAY [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
   - added part-of search parameter and _revinclude support for Task:part-of as MAY for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
@@ -83,7 +83,7 @@ This change log documents the significant updates and resolutions implemented fr
   - added format support for json as SHALL and format support for xml as SHOULD [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
   - added part-of search parameter and _revinclude support for Task:part-of as SHALL for Task [FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
   - added conformance requirements from AU eRequesting Diagnostic Request, AU eRequesting Imaging Request and AU eRequesting Pathology Request profile specific implementation guidance [FHIR-52423](https://jira.hl7.org/browse/FHIR-52423)
-  - changed requirement of AU eRequesting Server actor in FHIR RESTful Capabilities statement to support all resource profiles required for the exchange of diagnostic requests [FHIR-52425](https://jira.hl7.org/browse/FHIR-52425)
+  - changed AU eRequesting Server actor requirement in FHIR RESTful Capabilities statement to support all resource profiles required for the exchange of diagnostic requests [FHIR-52425](https://jira.hl7.org/browse/FHIR-52425)
 
 ### Release 1.0.0-ballot
 - Publication date: 2025-08-04
