@@ -38,7 +38,7 @@
   </implementationGuide>
   <rest>
     <mode value="server"/>
-    <documentation value="The AU eRequesting Server actor **SHALL**:&#xA;1. Support at least one AU eRequesting Diagnostic Request profile, and the conformance expectations for the ServiceRequest resource. &#xA;1. Implement the RESTful behavior according to the FHIR specification."/>
+    <documentation value="The AU eRequesting Server actor **SHALL**:&#xA;1. Support all resource profiles required for the exchange of diagnostic requests, as defined in this CapabilityStatement. &#xA;1. Implement the RESTful behavior according to the FHIR specification."/>
     <security>
       <description value="None defined."/>
     </security>
