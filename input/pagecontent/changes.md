@@ -61,6 +61,13 @@ This change log documents the significant updates and resolutions implemented fr
   - changed Task.for type from AU Core Patient to AU eRequesting Patient [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - changed Task.owner type from AU Core Organization to AU eRequesting Organization [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - changed Task.requester type from AU Core PractitionerRole to AU eRequesting PractitionerRole [FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - added Must Support and TaskCode code "fulfill" as patternCodeableConcept to Task.code, and changed cardinality from 0..1 to 1..1 [FHIR-53230](https://jira.hl7.org/browse/FHIR-53230)
+- [AU eRequesting Task Communication Request](StructureDefinition-au-erequesting-task-communicationrequest.html):
+  - added Must Support and TaskCode code "fulfill" as patternCodeableConcept to Task.code, and changed cardinality from 0..1 to 1..1 [FHIR-53230](https://jira.hl7.org/browse/FHIR-53230)
+- [AU eRequesting Task Diagnostic Request](StructureDefinition-au-erequesting-task-diagnosticrequest.html):
+  - added Must Support and TaskCode code "fulfill" as patternCodeableConcept to Task.code, and changed cardinality from 0..1 to 1..1 [FHIR-53230](https://jira.hl7.org/browse/FHIR-53230)
+- [AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html):
+  - added Must Support and TaskCode code "fulfill" as patternCodeableConcept to Task.code, and changed cardinality from 0..1 to 1..1 [FHIR-53230](https://jira.hl7.org/browse/FHIR-53230)
 - [AU eRequesting Placer CapabilityStatement](CapabilityStatement-au-erequesting-placer.html):
   - added support for transaction interaction as SHOULD [FHIR-52519](https://jira.hl7.org/browse/FHIR-52519)
   - added format support for json as SHOULD and format support for xml as MAY [FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
