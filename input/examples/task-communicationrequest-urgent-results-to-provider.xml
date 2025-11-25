@@ -36,6 +36,12 @@
   <status value="requested"/>
   <intent value="order"/>
   <priority value="urgent"/>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/CodeSystem/task-code"/>
+      <code value="fulfill"/>
+    </coding>
+  </code>
   <focus>
     <reference value="CommunicationRequest/communicationrequest-urgent-results-to-provider"/>
   </focus>
