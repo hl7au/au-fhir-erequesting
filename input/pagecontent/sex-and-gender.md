@@ -232,10 +232,14 @@ Sex Assigned at Birth is profiled in AU Core as [AU Core Sex Assigned At Birth](
 ### Sex Parameter for Clinical Use (SPCU)
 
 <p class="stu-note">
+When implementing Sex Parameter for Clinical Use, implementers should be aware that there is currently no national clinical framework supporting its use. It has not yet been endorsed by the Sparked CDG and has not been included in the AUCDI and AUeReqDI as a clinical concept for national use.
+</p>
+
+<p class="stu-note">
 The guidance on this page is dependent on the availability of the <code class=" highlighter-rouge language-plaintext">intendedClinicalUse</code> element, added to the SPCU extension in the September 2025 Ballot of the HL7 International FHIR Extensions Pack.
 </p>
 
-AU eRequesting supports the exchange of the Sex Parameter for Clinical Use (SPCU) data element (as defined by the [HL7 Gender Harmony IG](https://hl7.org/xprod/ig/uv/gender-harmony/informative1/)). The [Patient Sex Parameter for Clinical Use](https://hl7.org/fhir/extensions/5.2.0/StructureDefinition-patient-sexParameterForClinicalUse.html) extension is a *Must Support* element in [AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html), [AU eRequesting Imaging Request](StructureDefinition-au-erequesting-servicerequest-imag.html) and [AU eRequesting Pathology Request](StructureDefinition-au-erequesting-servicerequest-path.html) and a maximum of one SPCU value is allowed. 
+AU eRequesting supports the exchange of the Sex Parameter for Clinical Use (SPCU) data element (as defined by the [HL7 Gender Harmony IG](https://hl7.org/xprod/ig/uv/gender-harmony/informative1/)). The [Patient Sex Parameter for Clinical Use](https://hl7.org/fhir/extensions/5.2.0/StructureDefinition-patient-sexParameterForClinicalUse.html) extension is a *Must Support* element in [AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html), [AU eRequesting Imaging Request](StructureDefinition-au-erequesting-servicerequest-imag.html) and [AU eRequesting Pathology Request](StructureDefinition-au-erequesting-servicerequest-path.html) and a maximum of one SPCU value is allowed. The [Patient Sex Parameter for Clinical Use](https://hl7.org/fhir/extensions/5.2.0/StructureDefinition-patient-sexParameterForClinicalUse.html) extension is not a *Must Support* element in [AU eRequesting Patient](https://build.fhir.org/ig/hl7au/au-fhir-erequesting/StructureDefinition-au-erequesting-patient.html).
 
 The inclusion of an SPCU value indicates that the requester is explicitly providing a sex parameter intended for use in fulfilment of the requested diagnostic service. When it is present in an [AU eRequesting Imaging Request](StructureDefinition-au-erequesting-servicerequest-imag.html) or [AU eRequesting Pathology Request](StructureDefinition-au-erequesting-servicerequest-path.html), it conveys the AU eRequesting Placer's intended SPCU for the diagnostic request and can be relied upon by AU eRequesting Filler to support the requested service.
 
