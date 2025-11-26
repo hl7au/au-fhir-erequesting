@@ -31,7 +31,7 @@ The steps illustrated in Figure 2 are summarised below:
 
 ## AU eRequesting Profile Relationships
 
-The diagrams below provide an overview of the relationships between AU eRequesting profiles. They show the main profiles used to represent an AU eRequesting request together with the clinical and administrative profiles that support it. Details for each profile are provided on the [Profiles and Extensions](profiles-and-extensions.html) page.
+The diagrams below illustrate the references between AU eRequesting profiles. They display the ServiceRequest and Task profiles, which serve as the coordinating resources, along with the profiles that supply clinical, administrative, and contextual information for an AU eRequesting request. The details for all profiles are provided on the [Profiles and Extensions](profiles-and-extensions.html) page.
 
 **Legend:**
 <table>
