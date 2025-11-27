@@ -6,7 +6,7 @@
 This change log documents the significant updates and resolutions implemented from version [1.0.0-ballot](https://hl7.org.au/fhir/ereq/1.0.0-ballot/index.html) to TBD.
 
 #### Changes in this version
-- added Future Candidate Requirements Under Consideration section to Future of eRequesting page [AU eReq FHIR-52581](https://jira.hl7.org/browse/FHIR-52581)
+- added Future Candidate Requirements Under Consideration section to Future of eRequesting page [AU eReq: FHIR-52581](https://jira.hl7.org/browse/FHIR-52581)
 - removed Exchange Format Support section from Conformance page [AU eReq:  FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
 - added guidance on missing mandatory data to Conformance page [AU eReq: FHIR-52515](https://jira.hl7.org/browse/FHIR-52515)
 - added guidance on mandatory element population to SHALL:populate notes in Conformance page [AU eReq: FHIR-52516](https://jira.hl7.org/browse/FHIR-52516)
