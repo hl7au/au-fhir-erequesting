@@ -29,9 +29,9 @@ The steps illustrated in Figure 2 are summarised below:
 - The AU eRequesting Placer actor queries the AU eRequesting Server to monitor request fulfilment status.
 - The AU eRequesting Patient actor queries the AU eRequesting Server to view the details of their own requests.
 
-## AU eRequesting Profile Relationships
+### AU eRequesting Profile Relationships
 
-The diagrams below illustrate the references between AU eRequesting profiles. They display the ServiceRequest and Task profiles, which serve as the coordinating resources, along with the profiles that supply clinical, administrative, and contextual information for an AU eRequesting request. The details for all profiles are provided on the [Profiles and Extensions](profiles-and-extensions.html) page.
+The diagrams below illustrate the references between AU eRequesting profiles, as well as external profiles where applicable. They display the ServiceRequest and Task profiles, which serve as the coordinating resources, along with the profiles that supply clinical, administrative, and contextual information for an AU eRequesting request. The diagrams provide a simplified view and do not show all possible references. The details for all profiles are provided on the [Profiles and Extensions](profiles-and-extensions.html) page.
 
 **Legend:**
 <table>
