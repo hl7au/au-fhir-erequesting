@@ -42,10 +42,10 @@ Description: "This profile sets the minimum expectations for a CommunicationRequ
 
 * about ^short = "Diagnostic request the urgent communication is about"
 
-* requester only Reference (AUCorePractitionerRole)
+* requester only Reference (AUeRequestingPractitionerRole)
   * ^short = "Individual provider requesting the communication"
 
-* recipient only Reference (AUCorePractitionerRole)
+* recipient only Reference (AUeRequestingPractitionerRole)
   * ^short = "Individual provider receiving the communication"
 
 * reasonCode
