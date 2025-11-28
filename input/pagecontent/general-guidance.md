@@ -56,7 +56,7 @@ The diagrams below illustrate the references between AU eRequesting profiles, as
     <img src="other-ig-profile.svg" width="180" />
   </td>
   <td style="text-align: left; vertical-align: middle; padding-left:4px;">
-    Profile from other implementation guide.
+    Profile from external implementation guide.
   </td>
  </tr>
  <tr>
