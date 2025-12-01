@@ -62,7 +62,7 @@
     <reference value="Patient/scott-elijah-ken"/>
   </subject>
   <encounter>
-    <reference value="Encounter/gp-consultation"/>
+    <reference value="Encounter/gp-consult-finger-pain"/>
   </encounter>
   <authoredOn value="2024-05-12"/>
   <requester>
