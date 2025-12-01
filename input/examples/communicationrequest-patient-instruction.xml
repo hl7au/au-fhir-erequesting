@@ -32,8 +32,8 @@
     <coding>
       <system value="http://terminology.hl7.org.au/CodeSystem/communication-request-category"/>
       <code value="patient-preference"/>
-    </coding>
-    <text value="instruction"/>
+      <display value="Patient Preference"/>
+    </coding>    
   </category>
   <medium>
     <coding>
