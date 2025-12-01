@@ -33,9 +33,6 @@
   <beneficiary>
     <reference value="Patient/scott-elijah-ken"/>
   </beneficiary>  
-  <period>
-    <start value="2023-01-01"/>
-  </period>
   <payor>
     <identifier>
       <type>

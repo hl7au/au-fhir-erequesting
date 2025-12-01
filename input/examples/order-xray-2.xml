@@ -2,10 +2,10 @@
 <ServiceRequest xmlns="http://hl7.org/fhir">
   <id value="order-xray-2"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-name">
-    <valueString value="ServiceRequest - X-ray left ring finger"/>
+    <valueString value="ServiceRequest - Hand X-ray (with coded body site)"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
-    <valueMarkdown value="Shows an example of a request for an X-ray of the left ring finger for the *AU eRequesting Imaging Request* profile. Patient: Fred Roberts."/>
+    <valueMarkdown value="Shows an example of a request for Hand X-ray, with coded body site, for the *AU eRequesting Imaging Request* profile. Patient: Elijah KEN SCOTT."/>
   </extension>
   <meta>
     <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest-imag"/>
