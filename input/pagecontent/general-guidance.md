@@ -31,7 +31,7 @@ The steps illustrated in Figure 2 are summarised below:
 
 ### AU eRequesting Profile Relationships
 
-The diagrams below illustrate the references between AU eRequesting profiles, as well as external profiles where applicable. They display the ServiceRequest and Task profiles, which serve as the coordinating resources, along with the profiles that supply clinical, administrative, and contextual information for an AU eRequesting request. The diagrams provide a simplified view and do not show all possible references. The details for all profiles are provided on the [Profiles and Extensions](profiles-and-extensions.html) page.
+The diagrams below illustrate the references between AU eRequesting profiles, as well as external profiles where applicable. They show the ServiceRequest and Task profiles, which serve as the coordinating resources, along with the profiles that supply clinical, administrative, and contextual information for an AU eRequesting request. The CommunicationRequest and Consent inlays highlight how those profiles relate to the diagnostic request profiles within the same request. The diagrams provide a simplified view and do not show all possible references. The diagrams can be clicked to view a larger version and the details for all profiles are provided on the [Profiles and Extensions](profiles-and-extensions.html) page.
 
 **Legend:**
 <table>
@@ -70,20 +70,20 @@ The diagrams below illustrate the references between AU eRequesting profiles, as
 </table>
 
 <div>
-    <a href="au-erequesting-profiles-au-erequesting-profiles.svg" target="_blank">
-     <img src="au-erequesting-profiles-au-erequesting-profiles.svg" alt="AU eRequesting profile relationships overview" style="width:100%"/>
+    <a href="au-erequesting-profiles.svg" target="_blank">
+     <img src="au-erequesting-profiles.svg" alt="AU eRequesting profile relationships overview" style="width:100%"/>
     </a>
 </div>
 <table style="width:100%; margin-top:1em;">
   <tr>
     <td style="width:58%; vertical-align:top; padding-right:4px;">
-      <a href="au-erequesting-profiles-au-erequesting-profiles-communicationrequest.svg" target="_blank">
-        <img src="au-erequesting-profiles-au-erequesting-profiles-communicationrequest.svg" alt="AU eRequesting CommunicationRequest profile relationships" style="width:100%"/>
+      <a href="au-erequesting-profiles-communicationrequest.svg" target="_blank">
+        <img src="au-erequesting-profiles-communicationrequest.svg" alt="AU eRequesting CommunicationRequest profile relationships" style="width:100%"/>
       </a>
     </td>
     <td style="width:42%; vertical-align:top; padding-left:4px;">
-      <a href="au-erequesting-profiles-au-erequesting-profiles-consent.svg" target="_blank">
-        <img src="au-erequesting-profiles-au-erequesting-profiles-consent.svg" alt="AU eRequesting Consent profile relationships" style="width:100%"/>
+      <a href="au-erequesting-profiles-consent.svg" target="_blank">
+        <img src="au-erequesting-profiles-consent.svg" alt="AU eRequesting Consent profile relationships" style="width:100%"/>
       </a>
     </td>
   </tr>
