@@ -19,15 +19,23 @@ This change log documents the significant updates and resolutions implemented fr
   - removed AU eRequesting Task Group type reference from CommunicationRequest.about [AU eReq: FHIR-52403](https://jira.hl7.org/browse/FHIR-52403)
   - changed CommunicationRequest.requester and CommunicationRequest.sender type from AU Core Organization to AU eRequesting Organization [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - changed CommunicationRequest.requester and CommunicationRequest.recipient type from AU Core PractitionerRole to AU eRequesting PractitionerRole [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - added value set binding on CommunicationRequest.category to [AU eRequesting CommunicationRequest Category](ValueSet-au-erequesting-communicationrequest-category.html) (extensible) and removed reasonCode Must Support and obligations [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
+- [AU eRequesting CommunicationRequest Category](ValueSet-au-erequesting-communicationrequest-category.html):
+  - added new value set [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
 - [AU eRequesting CommunicationRequest CopyTo](StructureDefinition-au-erequesting-communicationrequest-copyto.html):
   - changed CommunicationRequest.requester type from AU Core PractitionerRole to AU eRequesting PractitionerRole [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - added coding to CommunicationRequest.category and removed coding from CommunicationRequest.reasonCode [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
 - [AU eRequesting CommunicationRequest Patient](StructureDefinition-au-erequesting-communicationrequest-patient.html):
   - removed usage guidance from profile description and added Usage Scenario section to profile [AU eReq: FHIR-51855](https://jira.hl7.org/browse/FHIR-51855)
   - changed CommunicationRequest.recipient type from AU Core Patient to AU eRequesting Patient [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - removed AU eRequesting Task Group type reference from CommunicationRequest.about [AU eReq: FHIR-52403](https://jira.hl7.org/browse/FHIR-52403)
   - removed cardinality constraint on CommunicationRequest.category.coding, changing it from 1..1 to 0..* [AU eReq: FHIR-52337](https://jira.hl7.org/browse/FHIR-52337)
+  - added coding to CommunicationRequest.category and removed coding from CommunicationRequest.reasonCode [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
 - [AU eRequesting CommunicationRequest Urgent Provider](StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html):
   - changed CommunicationRequest.requester and CommunicationRequest.recipient type from AU Core PractitionerRole to AU eRequesting PractitionerRole [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - added coding to CommunicationRequest.category and removed coding from CommunicationRequest.reasonCode [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
+- [AU eRequesting CommunicationRequest Reason](ValueSet-au-erequesting-communicationrequest-reason.html):
+  - deprecated value set [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
 - [AU eRequesting Coverage](StructureDefinition-au-erequesting-coverage.html):
   - added Must Support and obligations to Coverage.status, Coverage.payor and Coverage.beneficiary [AU eReq FHIR-51671](https://jira.hl7.org/browse/FHIR-51671)
   - changed Coverage.payor type from Organization, Patient, RelatedPerson to AU eRequesting Organization, AU eRequesting Patient, AU Core RelatedPerson [AU eReq: FHIR-52522](https://jira.hl7.org/browse/FHIR-52522)
