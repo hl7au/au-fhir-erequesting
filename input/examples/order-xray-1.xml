@@ -2,7 +2,7 @@
 <ServiceRequest xmlns="http://hl7.org/fhir">
   <id value="order-xray-1"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-name">
-    <valueString value="ServiceRequest - X-ray"/>
+    <valueString value="ServiceRequest - Chest X-ray"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
     <valueMarkdown value="Shows an example of a request for a chest X-ray for the *AU eRequesting Imaging Request* profile. Patient: Fred Roberts."/>
