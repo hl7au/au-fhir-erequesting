@@ -58,5 +58,5 @@
   </recipient>
   <sender>
     <reference value="Organization/mount-charlton-radiology"/>
-  </sender>
+  </sender> 
 </CommunicationRequest>

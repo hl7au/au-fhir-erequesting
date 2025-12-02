@@ -79,6 +79,13 @@
   <requester>
     <reference value="PractitionerRole/obstetrician-losch-sallie"/>
   </requester>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="1268646002"/>
+      <display value="Gestational diabetes mellitus screening"/>
+    </coding>    
+  </reasonCode>
   <supportingInfo>
     <reference value="Observation/observation-pregnancy-status"/>
     <display value="Pregnancy status"/>
