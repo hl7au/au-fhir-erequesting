@@ -7,9 +7,7 @@ Description: "This profile sets the minimum expectations for a CommunicationRequ
 * ^status = #active
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 
-* category 1..1 
-  * coding 1..1
-  * coding = $communicationrequest-category#urgent-results
+* category = $communicationrequest-category#urgent-results 
 
 * priority 1.. MS
 * priority = #urgent (exactly)
