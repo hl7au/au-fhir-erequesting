@@ -22,14 +22,15 @@ This change log documents the significant updates and resolutions implemented fr
 - [AU eRequesting CommunicationRequest CopyTo](StructureDefinition-au-erequesting-communicationrequest-copyto.html):
   - changed CommunicationRequest.requester type from AU Core PractitionerRole to AU eRequesting PractitionerRole [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 - [AU eRequesting CommunicationRequest Patient](StructureDefinition-au-erequesting-communicationrequest-patient.html):
-  - removed usage guidance from profile description and added Usage Scenario section to profile [AU eReq: FHIR-51855](https://jira.hl7.org/browse/FHIR-51855)
+  - removed usage guidance from profile description and added Usage Scenarios to profile [AU eReq: FHIR-51855](https://jira.hl7.org/browse/FHIR-51855)
   - changed CommunicationRequest.recipient type from AU Core Patient to AU eRequesting Patient [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - removed AU eRequesting Task Group type reference from CommunicationRequest.about [AU eReq: FHIR-52403](https://jira.hl7.org/browse/FHIR-52403)
   - removed cardinality constraint on CommunicationRequest.category.coding, changing it from 1..1 to 0..* [AU eReq: FHIR-52337](https://jira.hl7.org/browse/FHIR-52337)
 - [AU eRequesting CommunicationRequest Urgent Provider](StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html):
   - changed CommunicationRequest.requester and CommunicationRequest.recipient type from AU Core PractitionerRole to AU eRequesting PractitionerRole [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 - [AU eRequesting Coverage](StructureDefinition-au-erequesting-coverage.html):
-  - added Must Support and obligations to Coverage.status, Coverage.payor and Coverage.beneficiary [AU eReq FHIR-51671](https://jira.hl7.org/browse/FHIR-51671)
+  - added Must Support and obligations to Coverage.payor and Coverage.beneficiary [AU eReq FHIR-51671](https://jira.hl7.org/browse/FHIR-51671)
+  - added Must Support, obligations and fixed value constraint 'active' to Coverage.status [AU eReq FHIR-51671](https://jira.hl7.org/browse/FHIR-51671)
   - changed Coverage.payor type from Organization, Patient, RelatedPerson to AU eRequesting Organization, AU eRequesting Patient, AU Core RelatedPerson [AU eReq: FHIR-52522](https://jira.hl7.org/browse/FHIR-52522)
   - changed Coverage.beneficiary type from Patient to AU eRequesting Patient [AU eReq: FHIR-52522](https://jira.hl7.org/browse/FHIR-52522)
   - added Must Support and obligations to Coverage.identifier, including profile specific implementation guidance on the population of Coverage.identifier and Coverage.type [AU eReq: FHIR-52407](https://jira.hl7.org/browse/FHIR-52407), [AU eReq: FHIR-52553](https://jira.hl7.org/browse/FHIR-52553)
