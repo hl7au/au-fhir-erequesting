@@ -60,12 +60,5 @@
   </recipient>
   <sender>
     <reference value="Organization/kioma-pathology"/>
-  </sender>
-  <reasonCode>
-    <coding>
-      <system value="http://terminology.hl7.org.au/CodeSystem/communicationrequest-reason"/>
-      <code value="copyto"/>
-      <display value="Copy To"/>
-    </coding>
-  </reasonCode>
+  </sender>  
 </CommunicationRequest>

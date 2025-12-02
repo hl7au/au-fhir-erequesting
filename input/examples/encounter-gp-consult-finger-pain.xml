@@ -1,0 +1,54 @@
+<Encounter xmlns="http://hl7.org/fhir">
+    <id value="gp-consult-finger-pain"/>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-name">
+        <valueString value="Encounter - Finger Pain Consultation"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
+        <valueMarkdown value="Shows an example of an encounter for the *AU eRequesting Encounter* profile, representing a general practice consultation for finger pain. Patient: Elijah KEN SCOTT."/>
+    </extension>
+    <meta>
+        <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-encounter"/>
+    </meta>
+    <status value="finished"/>
+    <class>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+        <code value="AMB"/>
+        <display value="ambulatory"/>
+    </class>
+    <serviceType>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="788007007"/>
+            <display value="General practice service"/>
+        </coding>
+    </serviceType>
+    <subject>
+        <reference value="Patient/scott-elijah-ken"/>
+    </subject>
+    <participant>
+        <type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+                <code value="PPRF"/>
+                <display value="primary performer"/>
+            </coding>
+        </type>
+        <individual>
+            <reference value="PractitionerRole/generalpractitioner-guthridge-jarred"/>
+        </individual>
+    </participant>
+    <period>
+        <start value="2024-05-12T10:15:00+10:00"/>
+        <end value="2024-05-12T10:30:00+10:00"/>
+    </period>
+    <reasonCode>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="18876004"/>
+            <display value="Finger pain"/>
+        </coding>
+    </reasonCode>
+    <serviceProvider>
+        <reference value="Organization/elimbah-medical-center"/>
+    </serviceProvider>
+</Encounter>
