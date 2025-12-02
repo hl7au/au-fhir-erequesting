@@ -502,7 +502,16 @@
         <name value="_id"/>
         <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
         <type value="token"/>
-      </searchParam>      <!-- TBC 
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="identifier"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Organization-identifier"/>
+        <type value="token"/>
+      </searchParam>      
+      <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
@@ -558,6 +567,14 @@
           <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
           <type value="token"/>
       </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="identifier"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Patient-identifier"/>
+        <type value="token"/>
+      </searchParam>
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -608,6 +625,14 @@
         <name value="_id"/>
         <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
         <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="identifier"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/Practitioner-identifier"/>
+        <type value="token"/>
       </searchParam>      
       <!-- TBC 
       <referencePolicy value="resolves">
@@ -627,7 +652,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="The AU eRequesting Placer actor **SHALL** support the PractitionerRole resource, the AU eRequesting profile, and the conformance expectations for the PractitionerRole resource."/>
+      <documentation value="The AU eRequesting Placer actor **SHALL** support the PractitionerRole resource, the AU eRequesting profile, and the conformance expectations for the PractitionerRole resource.&#xa;&#xa;The AU eRequesting Placer actor **MAY** support the `_include` parameter for `PractitionerRole:practitioner` and `PractitionerRole:organization`."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
@@ -660,6 +685,24 @@
         <definition value="http://hl7.org/fhir/SearchParameter/Resource-id"/>
         <type value="token"/>
       </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="identifier"/>
+        <definition value="http://hl7.org/fhir/SearchParameter/PractitionerRole-identifier"/>
+        <type value="token"/>
+      </searchParam>
+      <searchInclude value="PractitionerRole:practitioner">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+      </searchInclude>
+      <searchInclude value="PractitionerRole:organization">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+      </searchInclude>
       <!-- TBC 
       <referencePolicy value="resolves">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">

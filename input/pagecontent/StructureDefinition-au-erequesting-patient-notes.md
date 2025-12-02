@@ -22,7 +22,7 @@
     <tr>
       <td>identifier</td>
       <td><b>SHALL</b></td>
-      <td><b>-</b></td>
+      <td><b>MAY</b></td>
       <td><b>MAY</b></td>
       <td><b>MAY</b></td>
       <td><code>token</code></td>
@@ -43,7 +43,7 @@ The following search parameters and search parameter combinations are supported.
     
       1. GET [base]/Patient?_id=456789
 
-  *Implementation Notes:* Fetches a bundle with the requested Patient, instead of just the resource itself, and allows for the inclusion of additional search parameters such as _include, _revinclude, or _lastUpdated ([how to search by id of the resource](https://hl7.org/fhir/r4/search.html#id))
+    *Implementation Notes:* Fetches a bundle with the requested Patient, instead of just the resource itself, and allows for the inclusion of additional search parameters such as _include, _revinclude, or _lastUpdated ([how to search by id of the resource](https://hl7.org/fhir/r4/search.html#id))
 
 1. **[`identifier`](https://hl7.org/fhir/R4/patient.html#search)** search parameter:
 
