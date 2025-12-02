@@ -29,6 +29,67 @@ The steps illustrated in Figure 2 are summarised below:
 - The AU eRequesting Placer actor queries the AU eRequesting Server to monitor request fulfilment status.
 - The AU eRequesting Patient actor queries the AU eRequesting Server to view the details of their own requests.
 
+### AU eRequesting Profile Relationships
+
+The diagrams below illustrate the references between AU eRequesting profiles, as well as external profiles where applicable. They show the ServiceRequest and Task profiles, which serve as the coordinating resources, along with the profiles that supply clinical, administrative, and contextual information for an AU eRequesting request. The CommunicationRequest and Consent inlays highlight how those profiles relate to the diagnostic request profiles within the same request. The diagrams provide a simplified view and do not show all possible references. The diagrams can be clicked to view a larger version and the details for all profiles are provided on the [Profiles and Extensions](profiles-and-extensions.html) page.
+
+**Legend:**
+<table>
+ <tr>
+  <td style="text-align: left; vertical-align: middle; padding-right:4px;">
+    <img src="au-erequesting-profile.svg" width="180" />
+  </td>
+  <td style="text-align: left; vertical-align: middle; padding-left:4px;">
+    AU eRequesting profile.
+  </td>
+ </tr>
+ <tr>
+  <td style="text-align: left; vertical-align: middle; padding-right:4px;">
+    <img src="au-erequesting-profile-abstract.svg" width="180" />
+  </td>
+  <td style="text-align: left; vertical-align: middle; padding-left:4px;">
+    Abstract AU eRequesting profile.
+  </td>
+ </tr>
+ <tr>
+  <td style="text-align: left; vertical-align: middle; padding-right:4px;">
+    <img src="other-ig-profile.svg" width="180" />
+  </td>
+  <td style="text-align: left; vertical-align: middle; padding-left:4px;">
+    Profile from external implementation guide.
+  </td>
+ </tr>
+ <tr>
+  <td style="text-align: left; vertical-align: middle; padding-right:4px;">
+    <img src="element-reference.svg" width="110" />
+  </td>
+  <td style="text-align: left; vertical-align: middle; padding-left:4px;">
+    Profile element reference to another resource.
+  </td>
+ </tr>
+</table>
+
+<div>
+    <a href="au-erequesting-profiles.svg" target="_blank">
+     <img src="au-erequesting-profiles.svg" alt="AU eRequesting profile relationships overview" style="width:100%"/>
+    </a>
+</div>
+<table style="width:100%; margin-top:1em;">
+  <tr>
+    <td style="width:58%; vertical-align:top; padding-right:4px;">
+      <a href="au-erequesting-profiles-communicationrequest.svg" target="_blank">
+        <img src="au-erequesting-profiles-communicationrequest.svg" alt="AU eRequesting CommunicationRequest profile relationships" style="width:100%"/>
+      </a>
+    </td>
+    <td style="width:42%; vertical-align:top; padding-left:4px;">
+      <a href="au-erequesting-profiles-consent.svg" target="_blank">
+        <img src="au-erequesting-profiles-consent.svg" alt="AU eRequesting Consent profile relationships" style="width:100%"/>
+      </a>
+    </td>
+  </tr>
+</table>
+*Figure 3: AU eRequesting profile relationships*
+
 ### Diagnostic Request Grouping
 
 In AU eRequesting, grouping is applied to requests created by an AU eRequesting Placer actor. This reflects common patterns in Australia where multiple related pathology tests or imaging exams are requested in a single event.
@@ -44,7 +105,7 @@ Each request will also include supporting clinical, administrative and contextua
  <div> 
     <img src="au-erequesting-example-request-group.svg" alt="AU eRequesting example request group" style="width:90%"/>
   </div>
-*Figure 3: AU eRequesting example request group*
+*Figure 4: AU eRequesting example request group*
 
 #### Request Group Guidance
 - A task group:
