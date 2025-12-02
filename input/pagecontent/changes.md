@@ -1,6 +1,6 @@
 ### Release 1.0.0-preview
-- Expected Publication date: 2025-12-04
-- Expected Publication status: Preview
+- Publication date: 2025-12-04
+- Publication status: Preview
 - Based on FHIR version: 4.0.1
 
 This change log documents the significant updates and resolutions implemented from version [1.0.0-ballot](https://hl7.org.au/fhir/ereq/1.0.0-ballot/index.html) to [1.0.0-preview](https://hl7.org.au/fhir/ereq/1.0.0-preview/index.html).
