@@ -65,12 +65,5 @@
   </recipient>
   <sender>
     <reference value="Organization/mount-charlton-radiology"/>
-  </sender>
-  <reasonCode>
-    <coding>
-      <system value="http://terminology.hl7.org.au/CodeSystem/communicationrequest-reason"/>
-      <code value="patient"/>
-      <display value="Patient Request"/>
-    </coding>
-  </reasonCode>
+  </sender> 
 </CommunicationRequest>
