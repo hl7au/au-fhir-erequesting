@@ -8,6 +8,7 @@ Description: "This profile sets the minimum expectations for a CommunicationRequ
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 
 * category = $communicationrequest-category#copyto-reports
+* category 1..1
 
 * doNotPerform 0..0
 
