@@ -20,17 +20,7 @@
   </type>
   <beneficiary>
     <reference value="Patient/roberts-fred"/>
-  </beneficiary>
-  <relationship>
-    <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/subscriber-relationship"/>
-      <code value="self"/>
-    </coding>
-    <text value="Self"/>
-  </relationship>
-  <period>
-    <start value="2023-01-01"/>
-  </period>
+  </beneficiary> 
   <payor>
      <identifier>        
         <type>
