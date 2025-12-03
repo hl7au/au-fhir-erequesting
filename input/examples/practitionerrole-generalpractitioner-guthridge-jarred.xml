@@ -27,7 +27,7 @@
         <reference value="Practitioner/practitioner-guthridge-jarred"/>
     </practitioner>
     <organization>
-        <reference value="Organization/elimbah-medical-center"/>
+        <reference value="Organization/elimbah-medical-centre"/>
     </organization>
     <code>
         <coding>
