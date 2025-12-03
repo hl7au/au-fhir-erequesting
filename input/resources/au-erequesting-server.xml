@@ -63,7 +63,7 @@
             <valueCode value="SHALL"/>
           </extension>
         </supportedProfile>
-        <documentation value="The AU eRequesting Server actor **SHALL** support the CommunicationRequest resource, the AU eRequesting profiles, and the conformance expectations for the CommunicationRequest resource."/>
+        <documentation value="The AU eRequesting Server actor **SHALL** support the CommunicationRequest resource, the AU eRequesting profiles, and the conformance expectations for the CommunicationRequest resource.&#xa;&#xa;Where a CommunicationRequest profile is defined for a specific purpose that profile **SHALL** be used:&#xa;* Communication requests about providing a copy of the report to a patient or clinician **SHALL** use the AU eRequesting CommunicationRequest CopyTo profile&#xa;* Communication requests about communication with a patient from a filler **SHALL** use the AU eRequesting CommunicationRequest Patient profile&#xa;* Communication requests about communication from a filler to a clinical provider to notify them of urgent results **SHALL** use the AU eRequesting CommunicationRequest Urgent Provider profile"/>
         <interaction>
           <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
             <valueCode value="SHALL"/>
@@ -204,7 +204,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="The AU eRequesting Server actor **SHALL** support the Coverage resource, the AU eRequesting profile, and the conformance expectations for the Coverage resource."/>
+      <documentation value="The AU eRequesting Server actor **SHALL** support the Coverage resource, the AU eRequesting profile, and the conformance expectations for the Coverage resource.&#xA;&#xA;When using one of the below Coverage types, at least one of the corresponding identifiers **SHOULD** be populated:&#xA;&#xA;| Coverage Type | Code | Identifier |&#xA;| ----------- | ----------- | ----------- |&#xA;| Medicare | PUBLICPOL | [AU Medicare Card Number](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-medicarecardnumber.html)|&#xA;| Department of Veterans Affairs (DVA) | VET | [AU DVA Number](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-dvanumber.html) |&#xA;| Concession | payconc | [AU Pensioner Concession Card Number](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-pensionerconcessioncardnumber.html), [AU Commonwealth Seniors Health Card Number](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-cwlthseniorshealthcardnumber.html) , [AU Health Care Card Number](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-healthcarecardnumber.html)|&#xA;| Private health insurance | HIP | [AU Insurance Member Number](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-insurancemembernumber.html) |&#xA;| Private (self funded) | pay | N/A |"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
@@ -920,7 +920,7 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="The AU eRequesting Server actor **SHALL** support the Task resource, the AU eRequesting profiles, and the conformance expectations for the Task resource.&#xA;&#xA;The AU eRequesting Server actor **SHALL** support the `_include` parameter for `Task:patient`, `Task:requester`, `Task:owner`, `Task:focus`.&#xA;&#xA;The AU eRequesting Server actor **SHALL** support the `_revinclude` parameter for `Task:part-of`."/>
+      <documentation value="The AU eRequesting Server actor **SHALL** support the Task resource, the AU eRequesting profiles, and the conformance expectations for the Task resource.&#xA;&#xA;The AU eRequesting Server actor **SHALL** support the `_include` parameter for `Task:patient`, `Task:requester`, `Task:owner`, `Task:focus`.&#xA;&#xA;The AU eRequesting Server actor **SHALL** support the `_revinclude` parameter for `Task:part-of`.&#xa;&#xa;Where a task profile is defined for a specific purpose that profile **SHALL** be used:&#xA;&#xA;* Group tasks **SHALL** use AU eRequesting Task Group profile&#xA;&#xA;* Diagnostic request tasks **SHALL** use AU eRequesting Task Diagnostic Request profile&#xA;&#xA;* Communication request tasks **SHALL** use AU eRequesting Task Communication Request profile"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
