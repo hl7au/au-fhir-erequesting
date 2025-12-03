@@ -42,6 +42,6 @@
         <end value="2024-05-11T10:30:00+10:00"/>
     </period>
     <serviceProvider>
-        <reference value="Organization/elimbah-medical-center"/>
+        <reference value="Organization/elimbah-medical-centre"/>
     </serviceProvider>
 </Encounter>

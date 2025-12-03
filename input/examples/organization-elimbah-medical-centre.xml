@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Compliant with Services Australia Test Data -->
 <Organization xmlns="http://hl7.org/fhir">
-    <id value="elimbah-medical-center"/>
+    <id value="elimbah-medical-centre"/>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-name">
-        <valueString value="Organization - Elimbah Medical Center"/>
+        <valueString value="Organization - Elimbah Medical Centre"/>
     </extension>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
-        <valueMarkdown value="Shows an example of an organisation, Elimbah Medical Center, for the *AU eRequesting Organization* profile, with HPI-O and contact details."/>
+        <valueMarkdown value="Shows an example of an organisation, Elimbah Medical Centre, for the *AU eRequesting Organization* profile, with HPI-O and contact details."/>
     </extension>
     <meta>
         <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-organization"/>
@@ -29,9 +29,9 @@
             <code value="288565001"/>
             <display value="Medical centre"/>
         </coding>
-        <text value="Medical Center"/>
+        <text value="Medical Centre"/>
     </type>
-    <name value="Elimbah Medical Center"/>
+    <name value="Elimbah Medical Centre"/>
     <telecom>
         <system value="email"/>
         <value value="info@elimbahmedicalcentre.example.com.au"/>
