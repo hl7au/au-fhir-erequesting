@@ -4,7 +4,7 @@
   - Communication requests about providing a copy of the report to a patient or clinician **SHALL** use the [AU eRequesting CommunicationRequest CopyTo](StructureDefinition-au-erequesting-communicationrequest-copyto.html) profile
   - Communication requests about communication with a patient from a filler **SHALL** use the [AU eRequesting CommunicationRequest Patient](StructureDefinition-au-erequesting-communicationrequest-patient.html) profile
   - Communication requests about communication from a filler to a clinical provider to notify them of urgent results **SHALL** use the [AU eRequesting CommunicationRequest Urgent Provider](StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html) profile
-- The key Must Support elements that distinguish the AU eRequesting CommunicationRequest profiles are outlined below:
+- The key *Must Support* elements that distinguish the AU eRequesting CommunicationRequest profiles are outlined below:
 
 <table border="1" cellspacing="0" cellpadding="6" width="100%">  
     <tr style="background-color: #f2f2f2;">
