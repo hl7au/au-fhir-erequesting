@@ -62,6 +62,11 @@ jobs:
       with:
         repository: hl7au/ig-registry
         path: ig-registry
+        
+    - name: Create directories
+      run: |
+        mkdir -p webroot/fhir/ereq
+        mv publish-setup.json ./webroot/
 
     - name: Update Publisher
       run: |
@@ -72,11 +77,6 @@ jobs:
       run: |
           echo "Generating Publish for AueRequesting IG..."
           java -jar input-cache/publisher.jar -ig hl7au/au-fhir-erequesting/ig.ini
-
-    - name: Create directories
-      run: |
-        mkdir -p webroot/fhir/ereq
-        mv publish-setup.json ./webroot/
 
     - name: Download package-list.json
       run: |
