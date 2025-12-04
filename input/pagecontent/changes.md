@@ -92,6 +92,8 @@ This change log documents the significant updates and resolutions implemented fr
   - added conformance requirements from AU eRequesting Diagnostic Request, AU eRequesting Imaging Request and AU eRequesting Pathology Request profile specific implementation guidance [AU eReq: FHIR-52423](https://jira.hl7.org/browse/FHIR-52423)
   - changed AU eRequesting Placer actor requirement in FHIR RESTful Capabilities statement to support all resource profiles required to create and manage diagnostic requests [AU eReq: FHIR-52413](https://jira.hl7.org/browse/FHIR-52413)
   - changed interaction expectation for create and update from SHOULD to SHALL for resources with conformance of SHALL [AU eReq: FHIR-52413](https://jira.hl7.org/browse/FHIR-52413)
+  - added identifier search parameter as MAY for Organization, Patient and Practitioner [AU eReq: FHIR-53548](https://jira.hl7.org/browse/FHIR-53548)
+  - added identifier search parameter and _include support for PractitionerRole:practitioner and PractitionerRole:organization as MAY for PractitionerRole [AU eReq: FHIR-53548](https://jira.hl7.org/browse/FHIR-53548)
 - [AU eRequesting Filler CapabilityStatement](CapabilityStatement-au-erequesting-filler.html):
   - added support for transaction interaction as SHOULD [AU eReq: FHIR-52519](https://jira.hl7.org/browse/FHIR-52519)
   - added format support for json as SHOULD and format support for xml as MAY [AU eReq: FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
