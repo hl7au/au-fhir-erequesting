@@ -22,6 +22,7 @@ This change log documents the significant updates and resolutions implemented fr
   - added CommunicationRequest.category value set binding to AU eRequesting CommunicationRequest Category (extensible) and removed Must Support and obligations from CommunicationRequest.reasonCode [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
 - [AU eRequesting CommunicationRequest Category](ValueSet-au-erequesting-communicationrequest-category.html):
   - added new value set [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
+  - changed value set url from http://hl7.org.au/fhir/ereq/ValueSet/au-erequesting-communicationrequest-category to http://terminology.hl7.org.au/ValueSet/au-erequesting-communicationrequest-category [AU eReq: FHIR-53571](https://jira.hl7.org/browse/FHIR-53571)
 - [AU eRequesting CommunicationRequest CopyTo](StructureDefinition-au-erequesting-communicationrequest-copyto.html):
   - changed CommunicationRequest.requester type from AU Core PractitionerRole to AU eRequesting PractitionerRole [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - added CommunicationRequest.category value set binding to AU eRequesting CommunicationRequest Category (extensible) and changed patternCodeableConcept from "notification" to "copyto-reports" [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
@@ -35,6 +36,8 @@ This change log documents the significant updates and resolutions implemented fr
   - removed Must Support, obligations and required pattern from CommunicationRequest.reasonCode [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
 - [AU eRequesting CommunicationRequest Patient Category](ValueSet-au-erequesting-communicationrequest-patientcategory.html):
   - deprecated value set [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
+- [AU eRequesting CommunicationRequest Patient Medium ](ValueSet-au-erequesting-communicationrequest-patientmedium.html):
+  - changed value set url from http://hl7.org.au/fhir/ereq/ValueSet/au-erequesting-communicationrequest-patientmedium to http://terminology.hl7.org.au/ValueSet/au-erequesting-communicationrequest-patientmedium [AU eReq: FHIR-53571](https://jira.hl7.org/browse/FHIR-53571)
 - [AU eRequesting CommunicationRequest Reason](ValueSet-au-erequesting-communicationrequest-reason.html):
   - deprecated value set [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
 - [AU eRequesting CommunicationRequest Urgent Provider](StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html):
