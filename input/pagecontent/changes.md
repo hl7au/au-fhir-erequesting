@@ -22,10 +22,12 @@ This change log documents the significant updates and resolutions implemented fr
   - added CommunicationRequest.category value set binding to AU eRequesting CommunicationRequest Category (extensible) and removed Must Support and obligations from CommunicationRequest.reasonCode [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
 - [AU eRequesting CommunicationRequest Category](ValueSet-au-erequesting-communicationrequest-category.html):
   - added new value set [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
+  - changed cardinality of CommunicationRequest.groupIdentifier.type.coding from 1..1 to 1..*, and moved required pattern from CommunicationRequest.groupIdentifier.type.coding to CommunicationRequest.groupIdentifier.type [AU eReq: FHIR-53527](https://jira.hl7.org/browse/FHIR-53527)
 - [AU eRequesting CommunicationRequest CopyTo](StructureDefinition-au-erequesting-communicationrequest-copyto.html):
   - changed CommunicationRequest.requester type from AU Core PractitionerRole to AU eRequesting PractitionerRole [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - added CommunicationRequest.category value set binding to AU eRequesting CommunicationRequest Category (extensible) and changed patternCodeableConcept from "notification" to "copyto-reports" [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
   - removed Must Support, obligations and required pattern from CommunicationRequest.reasonCode [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
+  - changed cardinality of CommunicationRequest.groupIdentifier.type.coding from 1..1 to 1..*, and moved required pattern from CommunicationRequest.groupIdentifier.type.coding to CommunicationRequest.groupIdentifier.type [AU eReq: FHIR-53527](https://jira.hl7.org/browse/FHIR-53527)
 - [AU eRequesting CommunicationRequest Patient](StructureDefinition-au-erequesting-communicationrequest-patient.html):
   - removed usage guidance from profile description and added Usage Scenarios to profile [AU eReq: FHIR-51855](https://jira.hl7.org/browse/FHIR-51855)
   - changed CommunicationRequest.recipient type from AU Core Patient to AU eRequesting Patient [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
@@ -33,6 +35,7 @@ This change log documents the significant updates and resolutions implemented fr
   - removed cardinality constraint on CommunicationRequest.category.coding, changing it from 1..1 to 0..* [AU eReq: FHIR-52337](https://jira.hl7.org/browse/FHIR-52337)
   - changed CommunicationRequest.category value set binding from AU eRequesting Patient Category (required) to AU eRequesting CommunicationRequest Category (extensible), changed cardinality from 1..* to 1..1, and added patternCodeableConcept of "patient-preference" [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
   - removed Must Support, obligations and required pattern from CommunicationRequest.reasonCode [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
+  - changed cardinality of CommunicationRequest.groupIdentifier.type.coding from 1..1 to 1..*, and moved required pattern from CommunicationRequest.groupIdentifier.type.coding to CommunicationRequest.groupIdentifier.type [AU eReq: FHIR-53527](https://jira.hl7.org/browse/FHIR-53527)
 - [AU eRequesting CommunicationRequest Patient Category](ValueSet-au-erequesting-communicationrequest-patientcategory.html):
   - deprecated value set [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
 - [AU eRequesting CommunicationRequest Reason](ValueSet-au-erequesting-communicationrequest-reason.html):
@@ -41,6 +44,7 @@ This change log documents the significant updates and resolutions implemented fr
   - changed CommunicationRequest.requester and CommunicationRequest.recipient type from AU Core PractitionerRole to AU eRequesting PractitionerRole [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - added CommunicationRequest.category value set binding to AU eRequesting CommunicationRequest Category (extensible) and changed patternCodeableConcept from "alert" to "urgent-results" [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
   - removed Must Support, obligations and required pattern from CommunicationRequest.reasonCode [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
+  - changed cardinality of CommunicationRequest.groupIdentifier.type.coding from 1..1 to 1..*, and moved required pattern from CommunicationRequest.groupIdentifier.type.coding to CommunicationRequest.groupIdentifier.type [AU eReq: FHIR-53527](https://jira.hl7.org/browse/FHIR-53527)
 - [AU eRequesting Coverage](StructureDefinition-au-erequesting-coverage.html):
   - added Must Support and obligations to Coverage.payor and Coverage.beneficiary [AU eReq FHIR-51671](https://jira.hl7.org/browse/FHIR-51671)
   - added Must Support, obligations and fixed value constraint 'active' to Coverage.status [AU eReq FHIR-51671](https://jira.hl7.org/browse/FHIR-51671)
@@ -63,6 +67,10 @@ This change log documents the significant updates and resolutions implemented fr
   - changed cardinality of Consent.category from 1..* to 1..1 [AU eReq: FHIR-51918](https://jira.hl7.org/browse/FHIR-51918)
   - changed Consent.patient and Consent.performer type from AU Core Patient to AU eRequesting Patient [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - changed Consent.organization type from AU Core Organization to AU eRequesting Organization [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - changed cardinality of Consent.scope.coding from 1..1 to 1..*, and moved required pattern from Consent.scope.coding to Consent.scope [AU eReq: FHIR-53527](https://jira.hl7.org/browse/FHIR-53527)
+  - changed cardinality of Consent.category.coding from 1..1 to 1..*, and moved required pattern from Consent.category.coding to Consent.category [AU eReq: FHIR-53527](https://jira.hl7.org/browse/FHIR-53527)
+  - changed cardinality of Consent.policyRule.coding from 1..1 to 1..*, and moved required pattern from Consent.policyRule.coding to Consent.policyRule [AU eReq: FHIR-53527](https://jira.hl7.org/browse/FHIR-53527)
+  - changed cardinality of Consent.provision.action.coding from 1..1 to 1..*, and moved required pattern from Consent.provision.action.coding to Consent.provision.action [AU eReq: FHIR-53527](https://jira.hl7.org/browse/FHIR-53527)
 - [AU eRequesting Organization](StructureDefinition-au-erequesting-organization.html):
   - added new profile, including interaction support [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 - [AU eRequesting Pathology Request](StructureDefinition-au-erequesting-servicerequest-path.html):

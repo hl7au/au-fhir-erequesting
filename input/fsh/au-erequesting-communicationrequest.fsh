@@ -10,9 +10,7 @@ Description: "This profile sets minimum expectations for CommunicationRequest re
 
 * groupIdentifier 1.. MS
 * groupIdentifier ^type.profile = $AULocalOrderIdentifier
-* groupIdentifier.type 
-  * coding 1..1
-  * coding = $v2-0203#PGN
+* groupIdentifier.type = $v2-0203#PGN
 
 * groupIdentifier ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * groupIdentifier ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
