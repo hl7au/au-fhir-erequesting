@@ -5,6 +5,8 @@ Description: "Medium values for patient communication used in the Australian eRe
 
 * ^meta.profile[+] = "https://healthterminologies.gov.au/fhir/StructureDefinition/composed-value-set-4"
 * ^version = "1.0.0"
+* ^identifier.value = "urn:oid:2.16.840.1.113883.2.3.4.2.4.41"
+* ^identifier.system = $oid
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * ^date = "2025-02-04"
 * ^publisher = "HL7 Australia"
