@@ -172,17 +172,17 @@ The following table outlines the recommended mapping between [AU eRequesting Tas
   <tbody>
     <tr>
       <td rowspan="7" style="vertical-align: top;">Shared (pathology and radiology)</td>
-      <td>booked</td>
+      <td>service-booked</td>
       <td>The service has been booked.</td>
       <td>accepted</td>
     </tr>
     <tr>
-      <td>claimed</td>
+      <td>request-claimed</td>
       <td>The service request has been claimed by an alternative filler.</td>
       <td>cancelled</td>
     </tr>
     <tr>
-      <td>user-cancelled</td>
+      <td>request-cancelled-placer</td>
       <td>The service request has been cancelled by the placer.</td>
       <td>cancelled</td>
     </tr>
@@ -192,35 +192,35 @@ The following table outlines the recommended mapping between [AU eRequesting Tas
       <td>cancelled</td>
     </tr>
     <tr>
-      <td>data-issue</td>
+      <td>request-data-issue</td>
       <td>A rejected fulfilment due to an issue with the request data.</td>
       <td>rejected</td>
     </tr>
     <tr>
-      <td>preliminary</td>
+      <td>preliminary-results</td>
       <td>A preliminary result has been completed.</td>
       <td>in-progress</td>
     </tr>
     <tr>
-      <td>addendum</td>
+      <td>addendum-report-complete</td>
       <td>An addendum created for reporting.</td>
       <td>completed</td>
     </tr>
     <tr>
       <td>Pathology</td>
-      <td>collected</td>
+      <td>specimen-collected</td>
       <td>The specimen has been collected in lab collection centre.</td>
       <td>in-progress</td>
     </tr>
     <tr>
       <td>Pathology</td>
-      <td>in-lab</td>
+      <td>pathology-in-lab</td>
       <td>The specimen is being processed in the pathology lab.</td>
       <td>in-progress</td>
     </tr>
     <tr>
       <td>Radiology</td>
-      <td>acquired</td>
+      <td>image-acquired</td>
       <td>The image has been acquired at radiology service.</td>
       <td>in-progress</td>
     </tr>
