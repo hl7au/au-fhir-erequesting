@@ -165,63 +165,63 @@ The following table outlines the recommended mapping between [AU eRequesting Tas
     <tr>
       <th style="width:10%; padding:6px;">Context</th>
       <th style="width:25%; padding:6px;">AU eRequesting Task Business Status codes for Task.businessStatus</th>
-      <th style="width:40%; padding:6px;">Description</th>
+      <th style="width:40%; padding:6px;">AU eRequesting Task Business Status code definition</th>
       <th style="width:25%; padding:6px;">Relationship to AU eRequesting Task Status codes for Task.status</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td rowspan="7" style="vertical-align: top;">Shared (pathology and radiology)</td>
-      <td>booked</td>
-      <td>The service has been booked.</td>
+      <td>service-booked</td>
+      <td>Service has been booked.</td>
       <td>accepted</td>
     </tr>
     <tr>
-      <td>claimed</td>
-      <td>The service request has been claimed by an alternative filler.</td>
+      <td>request-claimed</td>
+      <td>The task has been cancelled as the request has been claimed by another filler.</td>
       <td>cancelled</td>
     </tr>
     <tr>
-      <td>user-cancelled</td>
-      <td>The service request has been cancelled by the placer.</td>
+      <td>request-cancelled-placer</td>
+      <td>The task has been cancelled as the request has been cancelled by the placer.</td>
       <td>cancelled</td>
     </tr>
     <tr>
       <td>cancel-handled</td>
-      <td>The cancellation has been handled by the filler.</td>
+      <td>Cancelled task has been handled by the filler.</td>
       <td>cancelled</td>
     </tr>
     <tr>
-      <td>data-issue</td>
-      <td>A rejected fulfilment due to an issue with the request data.</td>
+      <td>request-data-issue</td>
+      <td>Rejected fulfilment task due to an issue with the request data.</td>
       <td>rejected</td>
     </tr>
     <tr>
-      <td>preliminary</td>
-      <td>A preliminary result has been completed.</td>
+      <td>preliminary-results</td>
+      <td>There are preliminary results.</td>
       <td>in-progress</td>
     </tr>
     <tr>
-      <td>addendum</td>
-      <td>An addendum created for reporting.</td>
+      <td>addendum-report-complete</td>
+      <td>Addendum report is complete.</td>
       <td>completed</td>
     </tr>
     <tr>
       <td>Pathology</td>
-      <td>collected</td>
-      <td>The specimen has been collected in lab collection centre.</td>
+      <td>specimen-collected</td>
+      <td>The specimen has been collected.</td>
       <td>in-progress</td>
     </tr>
     <tr>
       <td>Pathology</td>
-      <td>in-lab</td>
-      <td>The specimen is being processed in the pathology lab.</td>
+      <td>pathology-in-lab</td>
+      <td>Specimen is in a pathology lab.</td>
       <td>in-progress</td>
     </tr>
     <tr>
       <td>Radiology</td>
-      <td>acquired</td>
-      <td>The image has been acquired at radiology service.</td>
+      <td>image-acquired</td>
+      <td>Image acquisition complete.</td>
       <td>in-progress</td>
     </tr>
   </tbody>
