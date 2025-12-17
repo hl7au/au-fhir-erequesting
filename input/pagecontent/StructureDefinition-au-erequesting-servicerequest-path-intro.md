@@ -1,5 +1,3 @@
-<div class="stu-note">It is intended that this profile will always support the latest version of the SPIA Requesting Pathology Terminology Reference Set available. At this time the latest version of the SPIA Requesting Pathology Terminology Reference Set is v4.2. Implementers are advised to take note that the current binding <a href="https://www.healthterminologies.gov.au/integration/R4/fhir/ValueSet/spia-requesting-refset-3">RCPA - SPIA Requesting Pathology Terminology Reference Set</a> currently supports v3.1 and will be replaced with a version that support v4.2 as soon as it is available in the National Clinical Terminology Service.</div>
-
 ### Profile Specific Implementation Guidance
 - See [AU eRequesting Diagnostic Request Profile Specific Implementation Guidance](StructureDefinition-au-erequesting-diagnosticrequest.html#profile-specific-implementation-guidance) for general guidance applicable to profiles based on AU eRequesting Diagnostic Request.
 - `ServiceRequest.code`
