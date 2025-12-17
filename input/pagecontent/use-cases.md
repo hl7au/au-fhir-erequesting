@@ -6,7 +6,7 @@ Column attribute descriptions are as follows:
 - **ID**: A unique identifier for each use case.
 - **Description**: Narrative of the use case, outlining the scenario and the sequence of actions involved.
 - **Actor(s)**: Represents the actors involved in the use case. 
-- **Data Group(s)**: Relevant AU eRequest Diagnostic Imaging (AUeReqDI) or the Australian Clinical Diagnostic Imaging (AUCDI) data group.
+- **Data Group(s)**: Relevant AU eRequesting Data for Interoperability (AUeReqDI) or Australian Clinical Data for Interoperability (AUCDI) data group.
 
 See [AU eRequesting Data for Interoperability Mappings](auereqdi.html) for the relationship between the AUeReqDI or AUCDI data groups, elements, and AU eRequesting profiles.
 
