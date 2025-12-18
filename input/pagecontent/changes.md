@@ -12,31 +12,31 @@ This change log documents the significant updates and resolutions implemented fr
 - added guidance on mandatory element population to SHALL:populate notes in Conformance page [AU eReq: FHIR-52516](https://jira.hl7.org/browse/FHIR-52516)
 - [AU eRequesting Clinical Context DocumentReference](StructureDefinition-au-erequesting-clinicalcontext-documentreference.html):
   - added Must Support and LOINC code "107903-7" as patternCodeableConcept to DocumentReference.type, and changed cardinality from 0..1 to 1..1 [AU eReq: FHIR-51765](https://jira.hl7.org/browse/FHIR-51765)
-  - changed DocumentReference.subject type from AU Core Patient to AU eRequesting Patient [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - changed DocumentReference.subject reference target from AU Core Patient to AU eRequesting Patient [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - added Must Support and obligations to DocumentReference.date and DocumentReference.author [AU eReq: FHIR-52520](https://jira.hl7.org/browse/FHIR-52520)
 - [AU eRequesting CommunicationRequest](StructureDefinition-au-erequesting-communicationrequest.html):
-  - changed CommunicationRequest.subject, CommunicationRequest.requester and CommunicationRequest.recipient type from AU Core Patient to AU eRequesting Patient [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - changed CommunicationRequest.subject, CommunicationRequest.requester and CommunicationRequest.recipient reference target from AU Core Patient to AU eRequesting Patient [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - removed AU eRequesting Task Group type reference from CommunicationRequest.about [AU eReq: FHIR-52403](https://jira.hl7.org/browse/FHIR-52403)
-  - changed CommunicationRequest.requester and CommunicationRequest.sender type from AU Core Organization to AU eRequesting Organization [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
-  - changed CommunicationRequest.requester and CommunicationRequest.recipient type from AU Core PractitionerRole to AU eRequesting PractitionerRole [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - changed CommunicationRequest.requester and CommunicationRequest.sender reference target from AU Core Organization to AU eRequesting Organization [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - changed CommunicationRequest.requester and CommunicationRequest.recipient reference target from AU Core PractitionerRole to AU eRequesting PractitionerRole [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - added CommunicationRequest.category value set binding to AU eRequesting CommunicationRequest Category (extensible) and removed Must Support and obligations from CommunicationRequest.reasonCode [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
-  - changed cardinality of CommunicationRequest.groupIdentifier.type.coding from 1..1 to 1..*, and moved required pattern from CommunicationRequest.groupIdentifier.type.coding to CommunicationRequest.groupIdentifier.type [AU eReq: FHIR-53527](https://jira.hl7.org/browse/FHIR-53527)
+  - changed cardinality of CommunicationRequest.groupIdentifier.type.coding from 1..1 to 1..* [AU eReq: FHIR-53527](https://jira.hl7.org/browse/FHIR-53527)
 - [AU eRequesting CommunicationRequest Category](ValueSet-au-erequesting-communicationrequest-category.html):
   - added new value set [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
   - changed value set url from http://hl7.org.au/fhir/ereq/ValueSet/au-erequesting-communicationrequest-category to http://terminology.hl7.org.au/ValueSet/au-erequesting-communicationrequest-category [AU eReq: FHIR-53571](https://jira.hl7.org/browse/FHIR-53571)
 - [AU eRequesting CommunicationRequest CopyTo](StructureDefinition-au-erequesting-communicationrequest-copyto.html):
-  - changed CommunicationRequest.requester type from AU Core PractitionerRole to AU eRequesting PractitionerRole [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - changed CommunicationRequest.requester reference target from AU Core PractitionerRole to AU eRequesting PractitionerRole [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - added CommunicationRequest.category value set binding to AU eRequesting CommunicationRequest Category (extensible) and changed patternCodeableConcept from "notification" to "copyto-reports" [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
   - removed Must Support, obligations and required pattern from CommunicationRequest.reasonCode [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
-  - changed cardinality of CommunicationRequest.groupIdentifier.type.coding from 1..1 to 1..*, and moved required pattern from CommunicationRequest.groupIdentifier.type.coding to CommunicationRequest.groupIdentifier.type [AU eReq: FHIR-53527](https://jira.hl7.org/browse/FHIR-53527)
+  - changed cardinality of CommunicationRequest.groupIdentifier.type.coding from 1..1 to 1..* [AU eReq: FHIR-53527](https://jira.hl7.org/browse/FHIR-53527)
 - [AU eRequesting CommunicationRequest Patient](StructureDefinition-au-erequesting-communicationrequest-patient.html):
   - removed usage guidance from profile description and added Usage Scenarios to profile [AU eReq: FHIR-51855](https://jira.hl7.org/browse/FHIR-51855)
-  - changed CommunicationRequest.recipient type from AU Core Patient to AU eRequesting Patient [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - changed CommunicationRequest.recipient reference target from AU Core Patient to AU eRequesting Patient [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - removed AU eRequesting Task Group type reference from CommunicationRequest.about [AU eReq: FHIR-52403](https://jira.hl7.org/browse/FHIR-52403)
   - removed cardinality constraint on CommunicationRequest.category.coding, changing it from 1..1 to 0..* [AU eReq: FHIR-52337](https://jira.hl7.org/browse/FHIR-52337)
   - changed CommunicationRequest.category value set binding from AU eRequesting Patient Category (required) to AU eRequesting CommunicationRequest Category (extensible), changed cardinality from 1..* to 1..1, and added patternCodeableConcept of "patient-preference" [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
   - removed Must Support, obligations and required pattern from CommunicationRequest.reasonCode [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
-  - changed cardinality of CommunicationRequest.groupIdentifier.type.coding from 1..1 to 1..*, and moved required pattern from CommunicationRequest.groupIdentifier.type.coding to CommunicationRequest.groupIdentifier.type [AU eReq: FHIR-53527](https://jira.hl7.org/browse/FHIR-53527)
+  - changed cardinality of CommunicationRequest.groupIdentifier.type.coding from 1..1 to 1..* [AU eReq: FHIR-53527](https://jira.hl7.org/browse/FHIR-53527)
 - [AU eRequesting CommunicationRequest Patient Category](ValueSet-au-erequesting-communicationrequest-patientcategory.html):
   - deprecated value set [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
 - [AU eRequesting CommunicationRequest Patient Medium ](ValueSet-au-erequesting-communicationrequest-patientmedium.html):
@@ -44,14 +44,14 @@ This change log documents the significant updates and resolutions implemented fr
 - [AU eRequesting CommunicationRequest Reason](ValueSet-au-erequesting-communicationrequest-reason.html):
   - deprecated value set [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
 - [AU eRequesting CommunicationRequest Urgent Provider](StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html):
-  - changed CommunicationRequest.requester and CommunicationRequest.recipient type from AU Core PractitionerRole to AU eRequesting PractitionerRole [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - changed CommunicationRequest.requester and CommunicationRequest.recipient reference target from AU Core PractitionerRole to AU eRequesting PractitionerRole [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - added CommunicationRequest.category value set binding to AU eRequesting CommunicationRequest Category (extensible) and changed patternCodeableConcept from "alert" to "urgent-results" [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
   - removed Must Support, obligations and required pattern from CommunicationRequest.reasonCode [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
-  - changed cardinality of CommunicationRequest.groupIdentifier.type.coding from 1..1 to 1..*, and moved required pattern from CommunicationRequest.groupIdentifier.type.coding to CommunicationRequest.groupIdentifier.type [AU eReq: FHIR-53527](https://jira.hl7.org/browse/FHIR-53527)
+  - changed cardinality of CommunicationRequest.groupIdentifier.type.coding from 1..1 to 1..* [AU eReq: FHIR-53527](https://jira.hl7.org/browse/FHIR-53527)
 - [AU eRequesting Coverage](StructureDefinition-au-erequesting-coverage.html):
   - added Must Support and obligations to Coverage.payor and Coverage.beneficiary [AU eReq FHIR-51671](https://jira.hl7.org/browse/FHIR-51671)
   - added Must Support, obligations and fixed value constraint 'active' to Coverage.status [AU eReq FHIR-51671](https://jira.hl7.org/browse/FHIR-51671)
-  - changed Coverage.payor type from Organization, Patient, RelatedPerson to AU eRequesting Organization, AU eRequesting Patient, AU Core RelatedPerson [AU eReq: FHIR-52522](https://jira.hl7.org/browse/FHIR-52522)
+  - changed Coverage.payor to reference AU eRequesting Organization, AU eRequesting Patient and AU Core RelatedPerson [AU eReq: FHIR-52522](https://jira.hl7.org/browse/FHIR-52522)
   - changed Coverage.beneficiary type from Patient to AU eRequesting Patient [AU eReq: FHIR-52522](https://jira.hl7.org/browse/FHIR-52522)
   - added Must Support and obligations to Coverage.identifier, including profile specific implementation guidance on the population of Coverage.identifier and Coverage.type [AU eReq: FHIR-52407](https://jira.hl7.org/browse/FHIR-52407), [AU eReq: FHIR-52553](https://jira.hl7.org/browse/FHIR-52553)
 - [AU eRequesting DiagnosticRequest](StructureDefinition-au-erequesting-diagnosticrequest.html):
@@ -60,20 +60,17 @@ This change log documents the significant updates and resolutions implemented fr
   - removed profiling detail from profile specific implementation guidance on the use of ServiceRequest.supportingInfo [AU eReq: FHIR-52423](https://jira.hl7.org/browse/FHIR-52423)  
   - removed Must Support and obligations from ServiceRequest.bodySite [AU eReq: FHIR-52356](https://jira.hl7.org/browse/FHIR-52356)
   - added Must Support and obligations to ServiceRequest.code.text and ServiceRequest.encounter.reference [AU eReq: FHIR-52362](https://jira.hl7.org/browse/FHIR-52362)
-  - changed ServiceRequest.subject type from AU Core Patient to AU eRequesting Patient [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - changed ServiceRequest.subject reference target from AU Core Patient to AU eRequesting Patient [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - removed Must Support and obligations on ServiceRequest.quantity[x] [AU eReq: FHIR-52071](https://jira.hl7.org/browse/FHIR-52071)
-  - changed ServiceRequest.requester type from AU Core PractitionerRole to AU eRequesting PractitionerRole [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
-  - changed ServiceRequest.encounter type from AU Core Encounter to AU eRequesting Encounter [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - changed ServiceRequest.requester reference target from AU Core PractitionerRole to AU eRequesting PractitionerRole [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - changed ServiceRequest.encounter reference target from AU Core Encounter to AU eRequesting Encounter [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 - [AU eRequesting Encounter](StructureDefinition-au-erequesting-encounter.html):
   - added new profile, including interaction support [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 - [AU eRequesting MHR Consent Withdrawal](StructureDefinition-au-erequesting-mhrconsentwithdrawal.html):
   - changed cardinality of Consent.category from 1..* to 1..1 [AU eReq: FHIR-51918](https://jira.hl7.org/browse/FHIR-51918)
-  - changed Consent.patient and Consent.performer type from AU Core Patient to AU eRequesting Patient [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
-  - changed Consent.organization type from AU Core Organization to AU eRequesting Organization [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
-  - changed cardinality of Consent.scope.coding from 1..1 to 1..*, and moved required pattern from Consent.scope.coding to Consent.scope [AU eReq: FHIR-53527](https://jira.hl7.org/browse/FHIR-53527)
-  - changed cardinality of Consent.category.coding from 1..1 to 1..*, and moved required pattern from Consent.category.coding to Consent.category [AU eReq: FHIR-53527](https://jira.hl7.org/browse/FHIR-53527)
-  - changed cardinality of Consent.policyRule.coding from 1..1 to 1..*, and moved required pattern from Consent.policyRule.coding to Consent.policyRule [AU eReq: FHIR-53527](https://jira.hl7.org/browse/FHIR-53527)
-  - changed cardinality of Consent.provision.action.coding from 1..1 to 1..*, and moved required pattern from Consent.provision.action.coding to Consent.provision.action [AU eReq: FHIR-53527](https://jira.hl7.org/browse/FHIR-53527)
+  - changed Consent.patient and Consent.performer reference target from AU Core Patient to AU eRequesting Patient [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - changed Consent.organization reference target from AU Core Organization to AU eRequesting Organization [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - changed cardinality of Consent.scope.coding, Consent.category.coding, Consent.policyRule.coding and Consent.provision.action.coding from 1..1 to 1..* [AU eReq: FHIR-53527](https://jira.hl7.org/browse/FHIR-53527)
 - [AU eRequesting Organization](StructureDefinition-au-erequesting-organization.html):
   - added new profile, including interaction support [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 - [AU eRequesting Pathology Request](StructureDefinition-au-erequesting-servicerequest-path.html):
@@ -86,9 +83,9 @@ This change log documents the significant updates and resolutions implemented fr
 - [AU eRequesting PractitionerRole](StructureDefinition-au-erequesting-practitionerrole.html):
   - added new profile, including interaction support [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
 - [AU eRequesting Task](StructureDefinition-au-erequesting-task.html):
-  - changed Task.for type from AU Core Patient to AU eRequesting Patient [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
-  - changed Task.owner type from AU Core Organization to AU eRequesting Organization [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
-  - changed Task.requester type from AU Core PractitionerRole to AU eRequesting PractitionerRole [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - changed Task.for reference target from AU Core Patient to AU eRequesting Patient [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - changed Task.owner reference target from AU Core Organization to AU eRequesting Organization [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
+  - changed Task.requester reference target from AU Core PractitionerRole to AU eRequesting PractitionerRole [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - added Must Support and TaskCode code "fulfill" as patternCodeableConcept to Task.code, and changed cardinality from 0..1 to 1..1 [AU eReq: FHIR-53230](https://jira.hl7.org/browse/FHIR-53230)
 - [AU eRequesting Task Communication Request](StructureDefinition-au-erequesting-task-communicationrequest.html):
   - added Must Support and TaskCode code "fulfill" as patternCodeableConcept to Task.code, and changed cardinality from 0..1 to 1..1 [AU eReq: FHIR-53230](https://jira.hl7.org/browse/FHIR-53230)
@@ -98,7 +95,7 @@ This change log documents the significant updates and resolutions implemented fr
   - added Must Support and TaskCode code "fulfill" as patternCodeableConcept to Task.code, and changed cardinality from 0..1 to 1..1 [AU eReq: FHIR-53230](https://jira.hl7.org/browse/FHIR-53230)
 - [AU eRequesting Placer CapabilityStatement](CapabilityStatement-au-erequesting-placer.html):
   - added support for transaction interaction as SHOULD [AU eReq: FHIR-52519](https://jira.hl7.org/browse/FHIR-52519)
-  - added format support for json as SHOULD and format support for xml as MAY [AU eReq: FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
+  - added supported formats SHOULD support json and MAY support xml [AU eReq: FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
   - added part-of search parameter and _revinclude support for Task:part-of as MAY for Task [AU eReq: FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)  
   - added conformance requirements from AU eRequesting Diagnostic Request, AU eRequesting Imaging Request and AU eRequesting Pathology Request profile specific implementation guidance [AU eReq: FHIR-52423](https://jira.hl7.org/browse/FHIR-52423)
   - changed AU eRequesting Placer actor requirement in FHIR RESTful Capabilities statement to support all resource profiles required to create and manage diagnostic requests [AU eReq: FHIR-52413](https://jira.hl7.org/browse/FHIR-52413)
@@ -107,20 +104,20 @@ This change log documents the significant updates and resolutions implemented fr
   - added identifier search parameter and _include support for PractitionerRole:practitioner and PractitionerRole:organization as MAY for PractitionerRole [AU eReq: FHIR-53548](https://jira.hl7.org/browse/FHIR-53548)
 - [AU eRequesting Filler CapabilityStatement](CapabilityStatement-au-erequesting-filler.html):
   - added support for transaction interaction as SHOULD [AU eReq: FHIR-52519](https://jira.hl7.org/browse/FHIR-52519)
-  - added format support for json as SHOULD and format support for xml as MAY [AU eReq: FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
+  - added supported formats SHOULD support json and MAY support xml [AU eReq: FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
   - added part-of search parameter and _revinclude support for Task:part-of as MAY for Task [AU eReq: FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
   - added conformance requirements from AU eRequesting Diagnostic Request, AU eRequesting Imaging Request and AU eRequesting Pathology Request profile specific implementation guidance [AU eReq: FHIR-52423](https://jira.hl7.org/browse/FHIR-52423)
   - changed AU eRequesting Filler actor requirement in FHIR RESTful Capabilities statement to support all resource profiles required for finding and retrieving diagnostic request fulfilments [AU eReq: FHIR-52418](https://jira.hl7.org/browse/FHIR-52418)
 - [AU eRequesting Patient CapabilityStatement](CapabilityStatement-au-erequesting-patient.html):
-  - added format support for json as SHOULD and format support for xml as MAY [AU eReq: FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
+  - added supported formats SHOULD support json and MAY support xml [AU eReq: FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
   - added part-of search parameter and _revinclude support for Task:part-of as MAY for Task [AU eReq: FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
   - added conformance requirements from AU eRequesting Diagnostic Request, AU eRequesting Imaging Request and AU eRequesting Pathology Request profile specific implementation guidance [AU eReq: FHIR-52423](https://jira.hl7.org/browse/FHIR-52423)
 - [AU eRequesting Server CapabilityStatement](CapabilityStatement-au-erequesting-server.html):
   - added support for transaction interaction as SHOULD [AU eReq: FHIR-52519](https://jira.hl7.org/browse/FHIR-52519)
-  - added format support for json as SHALL and format support for xml as SHOULD [AU eReq: FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
+  - added supported formats SHALL support json and SHOULD support xml [AU eReq: FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
   - added part-of search parameter and _revinclude support for Task:part-of as SHALL for Task [AU eReq: FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
   - added conformance requirements from AU eRequesting Diagnostic Request, AU eRequesting Imaging Request and AU eRequesting Pathology Request profile specific implementation guidance [AU eReq: FHIR-52423](https://jira.hl7.org/browse/FHIR-52423)
-  - changed AU eRequesting Server actor requirement in FHIR RESTful Capabilities statement to support all resource profiles required for the exchange of diagnostic requests [AU eReq: FHIR-52425](https://jira.hl7.org/browse/FHIR-52425)
+  - clarified AU eRequesting Server actor requirement in FHIR RESTful Capabilities statement to support all resource profiles required for the exchange of diagnostic requests [AU eReq: FHIR-52425](https://jira.hl7.org/browse/FHIR-52425)
 
 ### Release 1.0.0-ballot
 - Publication date: 2025-08-04
@@ -223,7 +220,6 @@ This change log documents the significant updates and resolutions implemented fr
   - added identifier search parameter as SHALL for Organization, Patient, Practitioner, and PractitionerRole [FHIR-48934](https://jira.hl7.org/browse/FHIR-48934), [FHIR-47145](https://jira.hl7.org/browse/FHIR-47145)
   - added _include support for PractitionerRole:practitioner and PractitionerRole:organization as SHALL for the PractitionerRole resource type [FHIR-48934](https://jira.hl7.org/browse/FHIR-48934), [FHIR-47145](https://jira.hl7.org/browse/FHIR-47145)
   - added _include support for ServiceRequest:patient and ServiceRequest:requester as SHALL and ServiceRequest:encounter as SHOULD for ServiceRequest resource type [FHIR-46942](https://jira.hl7.org/browse/FHIR-46942)
-  - added default conformance requirements where no prior conformance agreement existed, including resource implementation and supported profile conformance as SHALL, agreed search parameters as SHALL, read and search-type interactions as SHALL, and update and create interactions as SHOULD [FHIR-51636](https://jira.hl7.org/browse/FHIR-51636), [FHIR-51637](https://jira.hl7.org/browse/FHIR-51637)
   - changed the conformance requirement for ServiceRequest create and update interactions from SHALL to SHOULD [FHIR-47141](https://jira.hl7.org/browse/FHIR-47141)
   - changed support for supporting-info search parameter and _include support for ServiceRequest:supporting-info from SHOULD to SHALL for the ServiceRequest resource type [FHIR-51005](https://jira.hl7.org/browse/FHIR-51005), [FHIR-51253](https://jira.hl7.org/browse/FHIR-51253)
   - changed the resource conformance requirement from SHOULD to SHALL for the following resource types: Coverage, Encounter, Organization, Practitioner and PractitionerRole [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976)
@@ -231,7 +227,9 @@ This change log documents the significant updates and resolutions implemented fr
   - added create and update interactions as SHOULD for all currently supported resource types [FHIR-47144](https://jira.hl7.org/browse/FHIR-47144)
   - added supporting-info search parameter and _include support for ServiceRequest:supporting-info as MAY for  ServiceRequest resource type [FHIR-51005](https://jira.hl7.org/browse/FHIR-51005)
   - added _include support for ServiceRequest:patient, ServiceRequest:requester and ServiceRequest:encounter as SHOULD for the ServiceRequest resource type [FHIR-46942](https://jira.hl7.org/browse/FHIR-46942)
-  - added default conformance requirements where no prior conformance agreement existed, including resource implementation and supported profile conformance as SHALL, agreed search parameters as MAY, and read, search-type, update and create interactions as SHOULD [FHIR-51636](https://jira.hl7.org/browse/FHIR-51636), [FHIR-51637](https://jira.hl7.org/browse/FHIR-51637)
+  - added read and search-type interactions as MAY for all supported resource types [FHIR-51636](https://jira.hl7.org/browse/FHIR-51636), [FHIR-51637](https://jira.hl7.org/browse/FHIR-51637)
+  - added _id search parameter as MAY for Condition, Coverage, DocumentReference, Encounter, Location, Organization, Practitioner, PractitionerRole, Procedure, RelatedPerson and ServiceRequest resource types [FHIR-51636](https://jira.hl7.org/browse/FHIR-51636), [FHIR-51637](https://jira.hl7.org/browse/FHIR-51637)
+  - changed supported profile conformance from MAY to SHALL for DocumentReference resource type [FHIR-51636](https://jira.hl7.org/browse/FHIR-51636), [FHIR-51637](https://jira.hl7.org/browse/FHIR-51637)
   - changed _include support for ServiceRequest:patient, ServiceRequest:requester and ServiceRequest:encounter from SHOULD to MAY [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976)
   - changed the resource conformance requirement from SHOULD to SHALL for the following resource types: Coverage, Encounter, Organization, Practitioner and PractitionerRole [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976)
 - [AU eRequesting Filler CapabilityStatement](https://hl7.org.au/fhir/ereq/1.0.0-ballot/CapabilityStatement-au-erequesting-filler.html):
@@ -242,7 +240,8 @@ This change log documents the significant updates and resolutions implemented fr
   - added requisition search parameter as MAY for ServiceRequest resource type [FHIR-47144](https://jira.hl7.org/browse/FHIR-47144)
   - added _include support for ServiceRequest:patient, ServiceRequest:requester and ServiceRequest:encounter as SHOULD for ServiceRequest resource type [FHIR-46942](https://jira.hl7.org/browse/FHIR-46942)
   - added supporting-info search parameter and _include support for ServiceRequest:supporting-info as MAY for ServiceRequest resource type [FHIR-51005](https://jira.hl7.org/browse/FHIR-51005)
-  - added default conformance requirements where no prior conformance agreement existed, including resource implementation and supported profile conformance as SHALL, agreed search parameters as MAY, and read and search-type interactions as SHOULD [FHIR-51636](https://jira.hl7.org/browse/FHIR-51636), [FHIR-51637](https://jira.hl7.org/browse/FHIR-51637)
+  - changed read and search-type interactions from MAY to SHOULD for all supported resource types [FHIR-51636](https://jira.hl7.org/browse/FHIR-51636), [FHIR-51637](https://jira.hl7.org/browse/FHIR-51637)
+  - changed supported profile conformance from MAY to SHALL for DocumentReference resource type [FHIR-51636](https://jira.hl7.org/browse/FHIR-51636), [FHIR-51637](https://jira.hl7.org/browse/FHIR-51637) 
   - changed _include support for ServiceRequest:patient, ServiceRequest:requester and ServiceRequest:encounter from SHOULD to MAY [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976)
   - changed the resource conformance requirement from SHOULD to SHALL for the following resource types: Coverage, Encounter, Organization, Practitioner and PractitionerRole [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976)
 - [AU eRequesting Patient CapabilityStatement](https://hl7.org.au/fhir/ereq/1.0.0-ballot/CapabilityStatement-au-erequesting-patient.html):
@@ -255,6 +254,6 @@ This change log documents the significant updates and resolutions implemented fr
   - added supporting-info search parameter and _include support for ServiceRequest:supporting-info as MAY for ServiceRequest resource type [FHIR-51005](https://jira.hl7.org/browse/FHIR-51005)
   - added _include support for ServiceRequest:patient, ServiceRequest:requester and ServiceRequest:encounter as SHOULD for the ServiceRequest resource type [FHIR-46942](https://jira.hl7.org/browse/FHIR-46942)
   - changed _include support for ServiceRequest:patient, ServiceRequest:requester and ServiceRequest:encounter from SHOULD to MAY [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976).
-  - added default conformance requirements where no prior conformance agreement existed, including resource implementation as SHOULD, supported profile conformance as SHALL, agreed search parameters as MAY, and read and search-type interactions as SHOULD [FHIR-51636](https://jira.hl7.org/browse/FHIR-51636), [FHIR-51637](https://jira.hl7.org/browse/FHIR-51637)
+  - changed read and search-type interactions from MAY to SHOULD for all supported resource types [FHIR-51636](https://jira.hl7.org/browse/FHIR-51636), [FHIR-51637](https://jira.hl7.org/browse/FHIR-51637)
   - changed the resource conformance requirement from SHOULD to SHALL for the following resource types: Coverage, Encounter, Organization, Practitioner and PractitionerRole [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976)
 
