@@ -16,7 +16,7 @@ This change log documents the significant updates and resolutions implemented fr
   - added Must Support and obligations to DocumentReference.date and DocumentReference.author [AU eReq: FHIR-52520](https://jira.hl7.org/browse/FHIR-52520)
 - [AU eRequesting CommunicationRequest](StructureDefinition-au-erequesting-communicationrequest.html):
   - changed CommunicationRequest.subject, CommunicationRequest.requester and CommunicationRequest.recipient reference target from AU Core Patient to AU eRequesting Patient [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
-  - removed AU eRequesting Task Group type reference from CommunicationRequest.about [AU eReq: FHIR-52403](https://jira.hl7.org/browse/FHIR-52403)
+  - removed AU eRequesting Task Group reference target from CommunicationRequest.about [AU eReq: FHIR-52403](https://jira.hl7.org/browse/FHIR-52403)
   - changed CommunicationRequest.requester and CommunicationRequest.sender reference target from AU Core Organization to AU eRequesting Organization [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - changed CommunicationRequest.requester and CommunicationRequest.recipient reference target from AU Core PractitionerRole to AU eRequesting PractitionerRole [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - added CommunicationRequest.category value set binding to AU eRequesting CommunicationRequest Category (extensible) and removed Must Support and obligations from CommunicationRequest.reasonCode [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
@@ -32,7 +32,7 @@ This change log documents the significant updates and resolutions implemented fr
 - [AU eRequesting CommunicationRequest Patient](StructureDefinition-au-erequesting-communicationrequest-patient.html):
   - removed usage guidance from profile description and added Usage Scenarios to profile [AU eReq: FHIR-51855](https://jira.hl7.org/browse/FHIR-51855)
   - changed CommunicationRequest.recipient reference target from AU Core Patient to AU eRequesting Patient [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
-  - removed AU eRequesting Task Group type reference from CommunicationRequest.about [AU eReq: FHIR-52403](https://jira.hl7.org/browse/FHIR-52403)
+  - removed AU eRequesting Task Group reference target from CommunicationRequest.about [AU eReq: FHIR-52403](https://jira.hl7.org/browse/FHIR-52403)
   - removed cardinality constraint on CommunicationRequest.category.coding, changing it from 1..1 to 0..* [AU eReq: FHIR-52337](https://jira.hl7.org/browse/FHIR-52337)
   - changed CommunicationRequest.category value set binding from AU eRequesting Patient Category (required) to AU eRequesting CommunicationRequest Category (extensible), changed cardinality from 1..* to 1..1, and added patternCodeableConcept of "patient-preference" [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
   - removed Must Support, obligations and required pattern from CommunicationRequest.reasonCode [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
@@ -52,7 +52,7 @@ This change log documents the significant updates and resolutions implemented fr
   - added Must Support and obligations to Coverage.payor and Coverage.beneficiary [AU eReq FHIR-51671](https://jira.hl7.org/browse/FHIR-51671)
   - added Must Support, obligations and fixed value constraint 'active' to Coverage.status [AU eReq FHIR-51671](https://jira.hl7.org/browse/FHIR-51671)
   - changed Coverage.payor reference target to AU eRequesting Organization, AU eRequesting Patient and AU Core RelatedPerson [AU eReq: FHIR-52522](https://jira.hl7.org/browse/FHIR-52522)
-  - changed Coverage.beneficiary type from Patient to AU eRequesting Patient [AU eReq: FHIR-52522](https://jira.hl7.org/browse/FHIR-52522)
+  - changed Coverage.beneficiary reference target to AU eRequesting Patient [AU eReq: FHIR-52522](https://jira.hl7.org/browse/FHIR-52522)
   - added Must Support and obligations to Coverage.identifier, including profile specific implementation guidance on the population of Coverage.identifier and Coverage.type [AU eReq: FHIR-52407](https://jira.hl7.org/browse/FHIR-52407), [AU eReq: FHIR-52553](https://jira.hl7.org/browse/FHIR-52553)
 - [AU eRequesting DiagnosticRequest](StructureDefinition-au-erequesting-diagnosticrequest.html):
   - added profile specific implementation guidance on the use of ServiceRequest.occurrenceTiming.repeat.count to represent the number of diagnostic requests to be performed [AU eReq: FHIR-51854](https://jira.hl7.org/browse/FHIR-51854)
@@ -146,7 +146,7 @@ This change log documents the significant updates and resolutions implemented fr
   - added new profile, including interaction support [FHIR-49807](https://jira.hl7.org/browse/FHIR-49807), [FHIR-51636](https://jira.hl7.org/browse/FHIR-51636), [FHIR-51637](https://jira.hl7.org/browse/FHIR-51637)
 - [AU eRequesting CommunicationRequest Patient](https://hl7.org.au/fhir/ereq/1.0.0-ballot/StructureDefinition-au-erequesting-communicationrequest-patient.html):
   - added new profile, including interaction support [FHIR-50230](https://jira.hl7.org/browse/FHIR-50230), [FHIR-51636](https://jira.hl7.org/browse/FHIR-51636), [FHIR-51637](https://jira.hl7.org/browse/FHIR-51637)
-  - added Must Support and cardinality constraint to CommunicationRequest.subject, changing it from 0..1 to 1..1, and type reference AU Core Patient [FHIR-50948](https://jira.hl7.org/browse/FHIR-50948)
+  - added Must Support and cardinality constraint to CommunicationRequest.subject, changing it from 0..1 to 1..1, and reference target to AU Core Patient [FHIR-50948](https://jira.hl7.org/browse/FHIR-50948)
 - [AU eRequesting CommunicationRequest Patient Category](https://hl7.org.au/fhir/ereq/1.0.0-ballot/ValueSet-au-erequesting-communicationrequest-patientcategory.html):
   - added new value set [FHIR-50230](https://jira.hl7.org/browse/FHIR-50230)
 - [AU eRequesting CommunicationRequest Patient Medium](https://hl7.org.au/fhir/ereq/1.0.0-ballot/ValueSet-au-erequesting-communicationrequest-patientmedium.html):
@@ -170,7 +170,7 @@ This change log documents the significant updates and resolutions implemented fr
   - AU eRequesting ServiceRequest profile renamed to AU eRequesting Diagnostic Request [FHIR-46842](https://jira.hl7.org/browse/FHIR-46842)
   - changed the profile to be abstract [FHIR-46813](https://jira.hl7.org/browse/FHIR-46813)
   - changed cardinality of ServiceRequest.encounter from 0..1 to 1..1 [FHIR-47008](https://jira.hl7.org/browse/FHIR-47008)
-  - changed ServiceRequest.insurance reference type to AU eRequesting Coverage [FHIR-46848](https://jira.hl7.org/browse/FHIR-46848)
+  - changed ServiceRequest.insurance reference target to AU eRequesting Coverage [FHIR-46848](https://jira.hl7.org/browse/FHIR-46848)
   - changed base profile from AU Base Diagnostic Request (deprecated) to AU Base Service Request [FHIR-50147](https://jira.hl7.org/browse/FHIR-50147)
   - clarified profile-specific implementation guidance on populating ServiceRequest.code [FHIR-46847](https://jira.hl7.org/browse/FHIR-46847)
   - changed the obligation requirement for AU eRequesting Filler from SHALL:no-error to SHALL:handle for the following Must Support elements: ServiceRequest.identifier, ServiceRequest.intent, ServiceRequest.insurance, ServiceRequest.encounter and ServiceRequest.reasonCode [FHIR-50976](https://jira.hl7.org/browse/FHIR-50976), [FHIR-51636](https://jira.hl7.org/browse/FHIR-51636), [FHIR-51637](https://jira.hl7.org/browse/FHIR-51637)
