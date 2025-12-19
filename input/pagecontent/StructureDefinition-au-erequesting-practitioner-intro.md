@@ -1,5 +1,5 @@
 ### Profile Specific Implementation Guidance
-* See general guidance on implementing the Practitioner resource in [AU Core Practitioner](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-practitioner.html#profile-specific-implementation-guidance).
+* See the general guidance on implementing the Practitioner resource in [AU Core Practitioner](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-practitioner.html#profile-specific-implementation-guidance).
 
 <div class="stu-note" markdown="1">
 
