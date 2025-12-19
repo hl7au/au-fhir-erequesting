@@ -11,7 +11,7 @@ The focus of AU eRequesting Release 1 (R1) is to support pathology and medical i
 This implementation guide is under development through the AU eRequesting project as part of the [Sparked AU FHIR Accelerator](https://sparked.csiro.au). The Sparked AU FHIR Accelerator is a collaborative community of government, technology vendors, provider organisations, peak bodies, practitioners, and domain experts, working together to accelerate the creation and use of national FHIR standards for health information exchange and workflow.
 
 The Sparked AU FHIR Accelerator includes:
-- AU eRequesting Data for Interoperability - clinician focussed data requirements
+- AU eRequesting Data for Interoperability - clinician focused data requirements
 - AU eRequesting FHIR Implementation Guide - HL7 Australia technical data access and exchange specification
 
 The [Australian eRequesting Data for Interoperability (AUeReqDI)](https://sparked.csiro.au/index.php/products-resources/auereqdi/) is focused on an agreement of the minimum data required to support standardised eRequesting within the Australian health context, and forms a common language foundation that allows systems to exchange semantically accurate data for eRequests. AUeReqDI outputs form a set of data requirements to be considered and referred to as part of the development and definition of AU eRequesting. 
@@ -64,7 +64,7 @@ The following technical aspects were not considered priority for the scope of Re
 This guide is divided into several pages which are listed at the top of each page in the menu bar.
 
 - [Home](index.html): This page provides the introduction and scope for this guide.
-- [Conformance](conformance.html): This page describes the set of rules to claim conformance to this guide
+- [Conformance](conformance.html): This page describes the set of rules to claim conformance to this guide.
 - [Guidance](guidance.html): These pages list the guidance for this guide. 
   - [General Guidance](general-guidance.html): This page provides guidance on using the profiles defined in this guide.
   - [AU eRequesting Workflow Guidance](workflow.html): This page provides guidance on managing workflow states in AU eRequesting, where Tasks track the fulfilment of ServiceRequests.
