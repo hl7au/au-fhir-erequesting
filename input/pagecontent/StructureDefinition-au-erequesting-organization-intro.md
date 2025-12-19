@@ -1,5 +1,5 @@
 ### Profile Specific Implementation Guidance
-* See the general [guidance on implementing the Organization resource](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-organization.html#profile-specific-implementation-guidance) in AU Core.
+* See the general guidance on implementing the Organization resource in [AU Core Organization](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-organization.html#profile-specific-implementation-guidance).
 
 <div class="stu-note" markdown="1">
 

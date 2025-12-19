@@ -1,5 +1,5 @@
 ### Profile Specific Implementation Guidance
-* See the general [guidance on implementing the Encounter resource](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-encounter.html#profile-specific-implementation-guidance) in AU Core.
+* See the general guidance on implementing the Encounter resource in [AU Core Encounter](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-encounter.html#profile-specific-implementation-guidance).
 
 <div class="stu-note" markdown="1">
 
