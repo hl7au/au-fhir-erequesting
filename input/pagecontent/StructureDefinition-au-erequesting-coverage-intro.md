@@ -1,6 +1,6 @@
 ### Profile Specific Implementation Guidance
 - See guidance on the construction of identifiers in each Identifier profile and the section on [Business Identifiers](https://build.fhir.org/ig/hl7au/au-fhir-base/generalguidance.html#business-identifiers) in AU Base.
-- See guidance on populating `Coverage.type` in [AU Base Coverage](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-coverage.html) Profile Specific Implementation Guidance.
+- See guidance on populating `Coverage.type` in [AU Base Coverage Profile Specific Implementation Guidance](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-coverage.html#usage-notes).
 - When using one of the below Coverage types, at least one of the corresponding identifiers **SHOULD** be populated:
 <table border="1" cellspacing="0" cellpadding="6" width="100%">
     <tr style="background-color: #f2f2f2;">

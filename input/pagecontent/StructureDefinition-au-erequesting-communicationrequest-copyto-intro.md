@@ -1,0 +1,2 @@
+### Profile Specific Implementation Guidance
+- See [AU eRequesting CommunicationRequest Profile Specific Implementation Guidance](StructureDefinition-au-erequesting-communicationrequest.html#profile-specific-implementation-guidance) for general guidance applicable to profiles based on AU eRequesting CommunicationRequest.
