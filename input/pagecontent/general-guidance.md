@@ -110,7 +110,7 @@ Each request will also include supporting clinical, administrative and contextua
 #### Request Group Guidance
 - A task group:
   - Is used to manage the group as a single coordinated request and is implemented using [AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html) 
-  - **SHALL** always be created, including when there is only a single request for a test or exam. This ensures consistent implementation and uniform processing by the AU eRequesting Filler actor.
+  - **SHALL** always be created, including when there is only a single request for a test or exam. This ensures consistent implementation and uniform processing by the AU eRequesting Filler actor
   - Is assigned the Placer Group Number (PGN) in `Task.groupIdentifier` by the AU eRequesting Placer actor to logically associate all requests in the order 
   - Is identified by the `Task.meta.tag` of "fulfilment-task-group"
 - Each task request in the group:
