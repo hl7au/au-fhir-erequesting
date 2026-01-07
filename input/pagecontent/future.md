@@ -1,24 +1,9 @@
-### AU eRequesting R1 Development Timeline
-The timeline for development of AU eRequesting R1 is shown in the figure below.
+### Future of AU eRequesting
+Planning and scoping for AU eRequesting Release 2 will occur in 2026 through HL7 AU community processes. Scope candidates will be considered based on input from the community, including new proposals and items deferred from Release 1.
 
+The following AUeReqDI Release 1 data groups were deferred and may inform future AU eRequesting scope:
+* Adverse reaction risk summary
+* Implanted medical device summary
+* Problem/Diagnosis summary
 
- <div> 
-    <img src="yearlyupdate.png" alt="AU eRequesting development timeline" style="width:90%"/>
-  </div>
-*Figure 1: AU eRequesting R1 development timeline*
-<br/>
-
-#### Maturing the Baseline
-The figure below illustrates the approach taken to develop and mature AU eRequesting, with reference to the [Australian FHIR Maturity Model (AFMM) levels](https://build.fhir.org/ig/hl7au/au-fhir-base/generalguidance.html#maturity-levels).
-
- <div> 
-    <img src="maturing.png" alt="Maturing the AU eRequesting baseline" style="width:80%"/>
-  </div>
-*Figure 2: Maturing the AU eRequesting baseline*
-<br/>
-
-### Future Candidate Requirements Under Consideration
-The following items are under consideration to add to AU eRequesting ([Link to Deferred List in Jira](https://jira.hl7.org/issues/?jql=project%20%3D%20FHIR%20AND%20Specification%20%3D%20%22%5BFHIR-au-erequesting%5D%22%20AND%20status%20%3D%20Deferred)):
-* **Adverse reaction risk summary**: Future versions of AU eRequesting will develop and test approaches to addressing AUCDI data group 'Adverse reaction risk summary', which is in scope of AUeReqDI Release 1.
-* **Implanted medical device summary**: Future versions of AU eRequesting will develop and test approaches to addressing AUeReqDI data group 'Implanted medical device summary'.
-* **Problem/Diagnosis summary**: Future versions of AU eRequesting will develop and test approaches to addressing AUCDI data group 'Problem/Diagnosis summary', which is in scope of AUeReqDI Release 1.
+Issues deferred during the AU eRequesting Release 1 ballot cycles are tracked in Jira ([Link to Deferred List in Jira](https://jira.hl7.org/issues/?jql=project%20%3D%20FHIR%20AND%20Specification%20%3D%20%22%5BFHIR-au-erequesting%5D%22%20AND%20status%20%3D%20Deferred)).
