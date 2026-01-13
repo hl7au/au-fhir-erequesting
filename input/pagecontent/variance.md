@@ -21,9 +21,9 @@ This implementation guide profiles the following resources that are not profiled
   - [AU eRequesting Clinical Context DocumentReference](StructureDefinition-au-erequesting-clinicalcontext-documentreference.html)
 - Task
   - [AU eRequesting Task](StructureDefinition-au-erequesting-task.html)
+  - [AU eRequesting Task Communication Request](StructureDefinition-au-erequesting-task-communicationrequest.html)
   - [AU eRequesting Task Diagnostic Request](StructureDefinition-au-erequesting-task-diagnosticrequest.html)
   - [AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html)
-  - [AU eRequesting Task Communication Request](StructureDefinition-au-erequesting-task-communicationrequest.html)
 - Extension
   - [AU eRequesting Display Sequence](StructureDefinition-au-erequesting-displaysequence.html)
   - [AU eRequesting Fasting Precondition](StructureDefinition-au-erequesting-fastingprecondition.html)
@@ -50,9 +50,9 @@ This implementation guide profiles the following resources that are not profiled
   - [AU eRequesting Pathology Request](StructureDefinition-au-erequesting-servicerequest-path.html)
 - Task
   - [AU eRequesting Task](StructureDefinition-au-erequesting-task.html)
+  - [AU eRequesting Task Communication Request](StructureDefinition-au-erequesting-task-communicationrequest.html)
   - [AU eRequesting Task Diagnostic Request](StructureDefinition-au-erequesting-task-diagnosticrequest.html)
   - [AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html)
-  - [AU eRequesting Task Communication Request](StructureDefinition-au-erequesting-task-communicationrequest.html)
 - Extension
   - [AU eRequesting Display Sequence](StructureDefinition-au-erequesting-displaysequence.html)
   - [AU eRequesting Fasting Precondition](StructureDefinition-au-erequesting-fastingprecondition.html)
