@@ -33,7 +33,7 @@ This change log documents the significant updates and resolutions implemented fr
   - removed usage guidance from profile description and added Usage Scenarios to profile [AU eReq: FHIR-51855](https://jira.hl7.org/browse/FHIR-51855)
   - changed CommunicationRequest.recipient reference target from AU Core Patient to AU eRequesting Patient [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - removed AU eRequesting Task Group reference target from CommunicationRequest.about [AU eReq: FHIR-52403](https://jira.hl7.org/browse/FHIR-52403)
-  - removed cardinality constraint on CommunicationRequest.category.coding, changing it from 1..1 to 0..* [AU eReq: FHIR-52337](https://jira.hl7.org/browse/FHIR-52337)
+  - removed cardinality constraint on CommunicationRequest.category.coding, changing it from 1..1 to 1..* [AU eReq: FHIR-52337](https://jira.hl7.org/browse/FHIR-52337)
   - changed CommunicationRequest.category value set binding from AU eRequesting Patient Category (required) to AU eRequesting CommunicationRequest Category (extensible), changed cardinality from 1..* to 1..1, and added patternCodeableConcept of "patient-preference" [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
   - removed Must Support, obligations and required pattern from CommunicationRequest.reasonCode [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
   - changed cardinality of CommunicationRequest.groupIdentifier.type.coding from 1..1 to 1..* [AU eReq: FHIR-53527](https://jira.hl7.org/browse/FHIR-53527)
