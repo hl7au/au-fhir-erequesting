@@ -39,7 +39,7 @@ The [AU eRequesting Patient CapabilityStatement](CapabilityStatement-au-erequest
 The [AU eRequesting Server CapabilityStatement](CapabilityStatement-au-erequesting-server.html) defines the conformance requirements and expectations of an [AU eRequesting Server](ActorDefinition-au-erequesting-actor-server.html) actor responsible for accepting diagnostic service requests and making diagnostic service requests accessible. The complete list of FHIR profiles, REST API interactions, and search parameters that can be implemented by an AU eRequesting Server actor are defined in this capability statement. An AU eRequesting Server actor declares conformance to this list of capabilities based on the resource types and interactions it implements.
 
 ### Declaring Conformance
-Servers that are conformant to the AU eRequesting API declare conformance by hosting a capability statement at [url]/metadata that is available to both authenticated and unauthenticated clients and that declares that AU eRequesting is supported using CapabilityStatement.instantiates, as shown in the following fragment:
+Servers that are conformant to the AU eRequesting API declare conformance by hosting a capability statement at [url]/metadata that is available to both authenticated and unauthenticated clients and that declares that AU eRequesting is supported using [CapabilityStatement.instantiates](http://hl7.org/fhir/capabilitystatement-definitions.html#CapabilityStatement.instantiates), as shown in the following fragment:
 
 ```
 {

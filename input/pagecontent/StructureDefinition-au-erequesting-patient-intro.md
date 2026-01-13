@@ -1,5 +1,5 @@
 ### Profile Specific Implementation Guidance
-- See the general [guidance on implementing the Patient resource](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-patient.html#profile-specific-implementation-guidance) in AU Core.
+- See the general guidance on implementing the Patient resource in [AU Core Patient](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-patient.html#profile-specific-implementation-guidance).
 - This profile supports the sex, gender, and related concepts of: Name to Use, Gender Identity, and Individual Pronouns. See the [Sex and Gender](sex-and-gender.html) page for guidance on exchanging sex and gender related concepts conformant to AU eRequesting.
 
 <div class="stu-note" markdown="1">
