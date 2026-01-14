@@ -4,9 +4,9 @@ Id: au-erequesting-patient
 Title: "AU eRequesting Patient"
 Description: "This profile sets minimum expectations for a Patient resource to record, search, and fetch basic demographics and other administrative information about an individual patient. It is based on the [AU Core Patient](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-patient.html) profile and identifies the additional mandatory core elements, extensions, vocabularies and value sets that **SHALL** be present in the Patient resource when conforming to this profile."
 
-* ^status = #draft
+* ^status = #active
 
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 
 * extension[indigenousStatus] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate-if-known
 * extension[indigenousStatus] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"

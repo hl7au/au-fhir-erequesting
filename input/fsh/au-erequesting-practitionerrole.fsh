@@ -4,9 +4,9 @@ Id: au-erequesting-practitionerrole
 Title: "AU eRequesting PractitionerRole"
 Description: "This profile sets minimum expectations for a PractitionerRole resource that is used to record, search, and fetch a practitioner role for a practitioner associated with a patient. It is based on the [AU Core PractitionerRole](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-practitionerrole.html) profile and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the PractitionerRole resource when conforming to this profile."
 
-* ^status = #draft
+* ^status = #active
 
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 
 * identifier ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate-if-known
 * identifier ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"

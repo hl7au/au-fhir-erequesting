@@ -4,9 +4,9 @@ Id: au-erequesting-encounter
 Title: "AU eRequesting Encounter"
 Description: "This profile sets minimum expectations for an Encounter resource that is used to record, search, and fetch basic encounter information for a patient. It is based on the [AU Core Encounter](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-encounter.html) profile and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the Encounter resource when conforming to this profile."
 
-* ^status = #draft
+* ^status = #active
 
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 
 * status ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor][0].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * status ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
