@@ -15,4 +15,4 @@ The following [Australian eRequesting Data for Interoperability (AUeReqDI)](http
 * Implanted medical device summary
 * Problem/Diagnosis summary
 
-Issues deferred during the AU eRequesting Release 1 ballot cycles are tracked in Jira ([Link to Deferred List in Jira](https://jira.hl7.org/issues/?jql=project%20%3D%20FHIR%20AND%20Specification%20%3D%20%22%5BFHIR-au-erequesting%5D%22%20AND%20status%20%3D%20Deferred)).
+Issues deferred during AU eRequesting Release 1 development are tracked in Jira ([Link to Deferred List in Jira](https://jira.hl7.org/issues/?jql=project%20%3D%20FHIR%20AND%20Specification%20%3D%20%22%5BFHIR-au-erequesting%5D%22%20AND%20status%20%3D%20Deferred)).
