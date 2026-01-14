@@ -123,7 +123,7 @@ Column attribute descriptions are as follows:
 |[NameUse](https://hl7.org/fhir/R4/codesystem-name-use.html)|[NameUse](https://hl7.org/fhir/R4/valueset-name-use.html)|FHIR|Health Level Seven International|
 |[Participant type](https://hl7.org/fhir/R4/codesystem-encounter-participant-type.html)|[Participant type](https://hl7.org/fhir/R4/valueset-encounter-participant-type.html)|FHIR|Health Level Seven International|
 |[ParticipationMode](https://terminology.hl7.org/CodeSystem-v3-ParticipationMode.html)|[AU eRequesting CommunicationRequest Patient Medium](ValueSet-au-erequesting-communicationrequest-patientmedium.html)|FHIR|HL7 Terminology (THO)|
-|[Participation Type](https://terminology.hl7.org/CodeSystem-v3-ParticipationType.html)|[Related Person Relationship Type](https://healthterminologies.gov.au/fhir/ValueSet/related-person-relationship-type-1)|FHIR|HL7 Terminology (THO)|
+|[ParticipationType](https://terminology.hl7.org/CodeSystem-v3-ParticipationType.html)|[Related Person Relationship Type](https://healthterminologies.gov.au/fhir/ValueSet/related-person-relationship-type-1)|FHIR|HL7 Terminology (THO)|
 |[RequestStatus](https://hl7.org/fhir/R4/codesystem-request-status.html)|[AU eRequesting RequestStatus](ValueSet-au-erequesting-request-status.html), [RequestStatus](http://hl7.org/fhir/ValueSet/request-status)|FHIR|Health Level Seven International|
 |[RequestPriority](https://hl7.org/fhir/R4/codesystem-request-priority.html)|[Request priority](https://hl7.org/fhir/R4/valueset-request-priority.html)|FHIR|Health Level Seven International|
 |[Resource Tag](https://build.fhir.org/ig/hl7au/au-fhir-base/CodeSystem-resource-tag.html)|[AU eRequesting Fulfilment Task Tags](ValueSet-au-erequesting-fulfilment-task-tags.html)|AU Base|HL7 Australia|
