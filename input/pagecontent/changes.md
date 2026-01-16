@@ -37,12 +37,12 @@ This change log documents the significant updates and resolutions implemented fr
   - changed CommunicationRequest.category value set binding from AU eRequesting Patient Category (required) to AU eRequesting CommunicationRequest Category (extensible), changed cardinality from 1..* to 1..1, and added patternCodeableConcept of "patient-preference" [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
   - removed Must Support, obligations and required pattern from CommunicationRequest.reasonCode [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
   - changed cardinality of CommunicationRequest.groupIdentifier.type.coding from 1..1 to 1..* [AU eReq: FHIR-53527](https://jira.hl7.org/browse/FHIR-53527)
-- [AU eRequesting CommunicationRequest Patient Category](ValueSet-au-erequesting-communicationrequest-patientcategory.html):
+- [AU eRequesting CommunicationRequest Patient Category](https://hl7.org.au/fhir/ereq/1.0.0-ballot/ValueSet-au/ValueSet-au-erequesting-communicationrequest-patientcategory.html):
   - deprecated value set [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
   - removed unreleased value set [AU eReq: FHIR-54178](https://jira.hl7.org/browse/FHIR-54178)
 - [AU eRequesting CommunicationRequest Patient Medium ](ValueSet-au-erequesting-communicationrequest-patientmedium.html):
   - changed value set url from http://hl7.org.au/fhir/ereq/ValueSet/au-erequesting-communicationrequest-patientmedium to http://terminology.hl7.org.au/ValueSet/au-erequesting-communicationrequest-patientmedium [AU eReq: FHIR-53571](https://jira.hl7.org/browse/FHIR-53571)
-- [AU eRequesting CommunicationRequest Reason](ValueSet-au-erequesting-communicationrequest-reason.html):
+- [AU eRequesting CommunicationRequest Reason](https://hl7.org.au/fhir/ereq/1.0.0-ballot/ValueSet-au-erequesting-communicationrequest-reason.html):
   - deprecated value set [AU eReq: FHIR-52409](https://jira.hl7.org/browse/FHIR-52409)
   - removed unreleased value set [AU eReq: FHIR-54178](https://jira.hl7.org/browse/FHIR-54178)
 - [AU eRequesting CommunicationRequest Urgent Provider](StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html):
