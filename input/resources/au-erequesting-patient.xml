@@ -202,6 +202,26 @@
         </extension>
       </referencePolicy> -->
     </resource>
+    <!-- DEVICE -->
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD"/>
+      </extension>
+      <type value="Device"/>     
+      <documentation value="If the AU eRequesting Patient actor supports the Device resource, the AU eRequesting Patient actor **SHOULD** support the conformance expectations for the Device resource."/>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>  
+    </resource>   
     <!-- DOCUMENTREFERENCE -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">

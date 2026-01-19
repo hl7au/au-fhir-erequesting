@@ -14,6 +14,7 @@ This change log documents the significant updates and resolutions implemented fr
   - added Must Support and LOINC code "107903-7" as patternCodeableConcept to DocumentReference.type, and changed cardinality from 0..1 to 1..1 [AU eReq: FHIR-51765](https://jira.hl7.org/browse/FHIR-51765)
   - changed DocumentReference.subject reference target from AU Core Patient to AU eRequesting Patient [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - added Must Support and obligations to DocumentReference.date and DocumentReference.author [AU eReq: FHIR-52520](https://jira.hl7.org/browse/FHIR-52520)
+  - changed DocumentReference.author reference target to AU Core RelatedPerson, AU eRequesting Organization, AU eRequesting Patient, AU eRequesting Practitioner and AU eRequesting PractitionerRole [AU eReq: FHIR-54168](https://jira.hl7.org/browse/FHIR-54168)
 - [AU eRequesting CommunicationRequest](StructureDefinition-au-erequesting-communicationrequest.html):
   - changed CommunicationRequest.subject, CommunicationRequest.requester and CommunicationRequest.recipient reference target from AU Core Patient to AU eRequesting Patient [AU eReq: FHIR-51874](https://jira.hl7.org/browse/FHIR-51874)
   - removed AU eRequesting Task Group reference target from CommunicationRequest.about [AU eReq: FHIR-52403](https://jira.hl7.org/browse/FHIR-52403)
@@ -102,22 +103,26 @@ This change log documents the significant updates and resolutions implemented fr
   - changed interaction expectation for create and update from SHOULD to SHALL for resources with conformance of SHALL [AU eReq: FHIR-52413](https://jira.hl7.org/browse/FHIR-52413)
   - added identifier search parameter as MAY for Organization, Patient and Practitioner [AU eReq: FHIR-53548](https://jira.hl7.org/browse/FHIR-53548)
   - added identifier search parameter and _include support for PractitionerRole:practitioner and PractitionerRole:organization as MAY for PractitionerRole [AU eReq: FHIR-53548](https://jira.hl7.org/browse/FHIR-53548)
+  - applied technical correction to add Device resource agreed as Must Support for DocumentReference.author [AU eReq: FHIR-54087](https://jira.hl7.org/browse/FHIR-54087) 
 - [AU eRequesting Filler CapabilityStatement](CapabilityStatement-au-erequesting-filler.html):
   - added support for transaction interaction as SHOULD [AU eReq: FHIR-52519](https://jira.hl7.org/browse/FHIR-52519)
   - added supported formats SHOULD support json and MAY support xml [AU eReq: FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
   - added part-of search parameter and _revinclude support for Task:part-of as MAY for Task [AU eReq: FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
   - added conformance requirements from AU eRequesting Diagnostic Request, AU eRequesting Imaging Request and AU eRequesting Pathology Request profile specific implementation guidance [AU eReq: FHIR-52423](https://jira.hl7.org/browse/FHIR-52423)
   - changed AU eRequesting Filler actor requirement in FHIR RESTful Capabilities statement to support all resource profiles required for finding and retrieving diagnostic request fulfilments [AU eReq: FHIR-52418](https://jira.hl7.org/browse/FHIR-52418)
+  - applied technical correction to add Device resource agreed as Must Support for DocumentReference.author [AU eReq: FHIR-54087](https://jira.hl7.org/browse/FHIR-54087) 
 - [AU eRequesting Patient CapabilityStatement](CapabilityStatement-au-erequesting-patient.html):
   - added supported formats SHOULD support json and MAY support xml [AU eReq: FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
   - added part-of search parameter and _revinclude support for Task:part-of as MAY for Task [AU eReq: FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
   - added conformance requirements from AU eRequesting Diagnostic Request, AU eRequesting Imaging Request and AU eRequesting Pathology Request profile specific implementation guidance [AU eReq: FHIR-52423](https://jira.hl7.org/browse/FHIR-52423)
+  - applied technical correction to add Device resource agreed as Must Support for DocumentReference.author [AU eReq: FHIR-54087](https://jira.hl7.org/browse/FHIR-54087) 
 - [AU eRequesting Server CapabilityStatement](CapabilityStatement-au-erequesting-server.html):
   - added support for transaction interaction as SHOULD [AU eReq: FHIR-52519](https://jira.hl7.org/browse/FHIR-52519)
   - added supported formats SHALL support json and SHOULD support xml [AU eReq: FHIR-52288](https://jira.hl7.org/browse/FHIR-52288)
   - added part-of search parameter and _revinclude support for Task:part-of as SHALL for Task [AU eReq: FHIR-51501](https://jira.hl7.org/browse/FHIR-51501)
   - added conformance requirements from AU eRequesting Diagnostic Request, AU eRequesting Imaging Request and AU eRequesting Pathology Request profile specific implementation guidance [AU eReq: FHIR-52423](https://jira.hl7.org/browse/FHIR-52423)
   - clarified AU eRequesting Server actor requirement in FHIR RESTful Capabilities statement to support all resource profiles required for the exchange of diagnostic requests [AU eReq: FHIR-52425](https://jira.hl7.org/browse/FHIR-52425)
+  - applied technical correction to add Device resource agreed as Must Support for DocumentReference.author [AU eReq: FHIR-54087](https://jira.hl7.org/browse/FHIR-54087) 
 
 ### Release 1.0.0-ballot
 - Publication date: 2025-08-04
