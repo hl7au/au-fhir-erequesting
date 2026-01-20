@@ -202,6 +202,26 @@
         </extension>
       </referencePolicy> -->
     </resource>
+    <!-- DEVICE -->
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL"/>
+      </extension>
+      <type value="Device"/>     
+      <documentation value="The AU eRequesting Filler actor **SHALL** support the Device resource and the conformance expectations for the Device resource."/>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>  
+    </resource>   
     <!-- DOCUMENTREFERENCE -->
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -252,7 +272,12 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="The AU eRequesting Filler actor **SHALL** support the Encounter resource, the AU eRequesting profile, and the conformance expectations for the Encounter resource."/>
+      <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-encounter">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <documentation value="The AU eRequesting Filler actor **SHALL** support the Encounter resource, the AU eRequesting profile, the AU Core profile, and the conformance expectations for the Encounter resource."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
@@ -374,7 +399,12 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="The AU eRequesting Filler actor **SHALL** support the Organization resource, the AU eRequesting profile, and the conformance expectations for the Organization resource."/>
+      <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-organization">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <documentation value="The AU eRequesting Filler actor **SHALL** support the Organization resource, the AU eRequesting profile, the AU Core profile, and the conformance expectations for the Organization resource."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
@@ -421,12 +451,17 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
+      <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-patient">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
       <supportedProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips">
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="The AU eRequesting Filler actor **SHALL** support the Patient resource, the AU eRequesting profile, the Patient (IPS) profile and the conformance expectations for the Patient resource."/>
+      <documentation value="The AU eRequesting Filler actor **SHALL** support the Patient resource, the AU eRequesting profile, the AU Core profile, the Patient (IPS) profile and the conformance expectations for the Patient resource."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
@@ -473,7 +508,12 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="The AU eRequesting Filler actor **SHALL** support the Practitioner resource, the AU eRequesting profile, and the conformance expectations for the Practitioner resource."/>
+      <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-practitioner">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <documentation value="The AU eRequesting Filler actor **SHALL** support the Practitioner resource, the AU eRequesting profile, the AU Core profile, and the conformance expectations for the Practitioner resource."/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
@@ -520,7 +560,12 @@
           <valueCode value="SHALL"/>
         </extension>
       </supportedProfile>
-      <documentation value="The AU eRequesting Filler actor **SHALL** support the PractitionerRole resource, the AU eRequesting profile, and the conformance expectations for the PractitionerRole resource.&#xa;&#xa;The AU eRequesting Filler actor **MAY** support the `_include` parameter for `PractitionerRole:practitioner` and `PractitionerRole:organization`"/>
+      <supportedProfile value="http://hl7.org.au/fhir/core/StructureDefinition/au-core-practitionerrole">
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+      </supportedProfile>
+      <documentation value="The AU eRequesting Filler actor **SHALL** support the PractitionerRole resource, the AU eRequesting profile, the AU Core profile, and the conformance expectations for the PractitionerRole resource.&#xa;&#xa;The AU eRequesting Filler actor **MAY** support the `_include` parameter for `PractitionerRole:practitioner` and `PractitionerRole:organization`"/>
       <interaction>
         <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
           <valueCode value="SHOULD"/>
