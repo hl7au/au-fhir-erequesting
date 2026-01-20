@@ -49,8 +49,8 @@ The following search parameters and search parameter combinations are supported.
     
       1. GET [base]/Task?_lastUpdated=gt2010-10-01&status=completed&owner=Organization/1234
       1. GET [base]/Task?_lastUpdated=gt2010-10-01&status=completed&owner:Organization.identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0\|8003621566684455
-      1. GET [base]/Task?_lastUpdated=gt2010-10-01&status=accepted,in-progress&owner=https://elimbahmedicalcentre.example.com.au/orders/practitioner-identifier\|EMC1234567-1234&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
-      1. GET [base]/Task?_lastUpdated=gt2010-10-01&status=completed&owner=https://elimbahmedicalcentre.example.com.au/orders/practitioner-identifier\|EMC1234567-1234&_revinclude=Task:part-of
+      1. GET [base]/Task?_lastUpdated=gt2010-10-01&status=accepted,in-progress&owner.identifier=https://elimbahmedicalcentre.example.com.au/orders/practitioner-identifier\|EMC1234567-1234&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
+      1. GET [base]/Task?_lastUpdated=gt2010-10-01&status=completed&owner.identifier=https://elimbahmedicalcentre.example.com.au/orders/practitioner-identifier\|EMC1234567-1234&_revinclude=Task:part-of
 
     *Implementation Notes:* Fetches a bundle containing Task resources matching the _lastUpdated date, owner and status ([how to search by date](https://build.fhir.org/search.html#date), [how to search by token](http://hl7.org/fhir/R4/search.html#token), [how to search by reference](http://hl7.org/fhir/R4/search.html#reference))
 

@@ -60,6 +60,7 @@ Description: "This profile sets minimum expectations for representing clinical c
 * date ^extension[http://hl7.org/fhir/StructureDefinition/obligation][4].extension[code].valueCode = #SHALL:no-error
 
 * author MS
+* author only Reference(AUeRequestingPatient or AUeRequestingPractitioner or AUeRequestingPractitionerRole or AUeRequestingOrganization or AUCoreRelatedPerson or Device)
 * author ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * author ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate-if-known
 * author ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-filler"
