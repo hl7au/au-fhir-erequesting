@@ -123,7 +123,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   excludettl: false
   excludemap: true
   shownav: false
-  version-comparison-master: 1.0.0-ballot
+ 
   # generate: #what does this do - todo: remove and see4
   #   - xml
   #   - json
