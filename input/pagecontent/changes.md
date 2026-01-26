@@ -1,9 +1,9 @@
-### Release TBD
-- Expected Publication date: TBD
-- Expected Publication status: TBD
+### Release 2.0.0
+- Publication date: 11-02-2026
+- Publication status: Working Standard (Trial Use)
 - Based on FHIR version: 4.0.1
 
-This change log documents the significant updates and resolutions implemented from version [1.0.0-ballot](https://hl7.org.au/fhir/ereq/1.0.0-ballot/index.html) to TBD. The list below includes substantive changes to mandatory and *Must Support* elements inherited from AU Base.
+This change log documents the significant updates and resolutions implemented from version [1.0.0-ballot](https://hl7.org.au/fhir/ereq/1.0.0-ballot/index.html) to [1.0.0](https://hl7.org.au/fhir/ereq/1.0.0/index.html). The list below includes substantive changes to mandatory and *Must Support* elements inherited from AU Base.
 
 #### Changes in This Version
 - added Future Candidate Requirements Under Consideration section to Future of eRequesting page [AU eReq: FHIR-52581](https://jira.hl7.org/browse/FHIR-52581)
