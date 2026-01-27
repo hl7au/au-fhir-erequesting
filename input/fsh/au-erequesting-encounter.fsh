@@ -2,7 +2,7 @@ Profile: AUeRequestingEncounter
 Parent: AUCoreEncounter
 Id: au-erequesting-encounter
 Title: "AU eRequesting Encounter"
-Description: "This profile sets minimum expectations for an Encounter resource that is used to record, search, and fetch basic encounter information for a patient. It is based on the [AU Core Encounter](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-encounter.html) profile and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the Encounter resource when conforming to this profile."
+Description: "This profile sets minimum expectations for an Encounter resource that is used to record, search, and fetch basic encounter information for a patient. It is based on the [AU Core Encounter](https://hl7.org.au/fhir/core/2.0.0/StructureDefinition-au-core-encounter.html) profile and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the Encounter resource when conforming to this profile."
 
 * ^status = #active
 

@@ -2,7 +2,7 @@
 
 ### Profile Specific Implementation Guidance
 - See [AU eRequesting Diagnostic Request Profile Specific Implementation Guidance](StructureDefinition-au-erequesting-diagnosticrequest.html#profile-specific-implementation-guidance) for general guidance applicable to profiles based on AU eRequesting Diagnostic Request.
-- See guidance on the representation of body site and associated laterality in [Representing Body Site, Which May Include Laterality](https://build.fhir.org/ig/hl7au/au-fhir-base/generalguidance.html#representing-body-site-which-may-include-laterality) in AU Base.
+- See guidance on the representation of body site and associated laterality in [Representing Body Site, Which May Include Laterality](https://hl7.org.au/fhir/6.0.0/generalguidance.html#representing-body-site-which-may-include-laterality) in AU Base.
 - `ServiceRequest.code`
   - The use of coding for the requested exam can vary significantly across systems, filler systems need to understand that they may encounter codes they do not recognise and be prepared to handle those resources appropriately. Placer systems **SHALL** populate `ServiceRequest.code.text` so that fillers can at least display the service requested, even if they do not recognise the code supplied.
   - Placer systems **SHALL** adhere to the following order of preference when populating the `ServiceRequest.code`:

@@ -32,7 +32,7 @@ The following search parameters and search parameter combinations are supported.
       1. GET [base]/Task?_lastUpdated=gt2010-10-01&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
       1. GET [base]/Task?_lastUpdated=gt2010-10-01&_revinclude=Task:part-of
 
-    *Implementation Notes:* Fetches a bundle matching the _lastUpdated date ([how to search by date](https://build.fhir.org/search.html#date))
+    *Implementation Notes:* Fetches a bundle matching the _lastUpdated date ([how to search by date](http://hl7.org/fhir/R4/search.html#date))
 
 
 1. Combined **[`_lastUpdated`](https://hl7.org/fhir/R4/resource.html#search)** and **[`status`](https://hl7.org/fhir/R4/task.html#search)** and **[`owner`](https://hl7.org/fhir/R4/task.html#search)** search parameters
@@ -52,7 +52,7 @@ The following search parameters and search parameter combinations are supported.
       1. GET [base]/Task?_lastUpdated=gt2010-10-01&status=accepted,in-progress&owner.identifier=https://elimbahmedicalcentre.example.com.au/orders/practitioner-identifier\|EMC1234567-1234&_include=Task:patient&_include=Task:requester&_include=Task:owner&_include=Task:focus
       1. GET [base]/Task?_lastUpdated=gt2010-10-01&status=completed&owner.identifier=https://elimbahmedicalcentre.example.com.au/orders/practitioner-identifier\|EMC1234567-1234&_revinclude=Task:part-of
 
-    *Implementation Notes:* Fetches a bundle containing Task resources matching the _lastUpdated date, owner and status ([how to search by date](https://build.fhir.org/search.html#date), [how to search by token](http://hl7.org/fhir/R4/search.html#token), [how to search by reference](http://hl7.org/fhir/R4/search.html#reference))
+    *Implementation Notes:* Fetches a bundle containing Task resources matching the _lastUpdated date, owner and status ([how to search by date](http://hl7.org/fhir/R4/search.html#date), [how to search by token](http://hl7.org/fhir/R4/search.html#token), [how to search by reference](http://hl7.org/fhir/R4/search.html#reference))
 
 
 1. **[`_tag`](https://hl7.org/fhir/R4/resource.html#search)** search parameter
