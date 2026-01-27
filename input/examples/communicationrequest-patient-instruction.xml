@@ -20,8 +20,8 @@
       </coding>
       <coding>
         <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
-        <code value="PGN"/>
-        <display value="Placer Group Number"/>
+        <code value="PLAC"/>
+        <display value="Placer Identifier"/>
       </coding>
       <text value="Placer Group Number"/>
     </type>
