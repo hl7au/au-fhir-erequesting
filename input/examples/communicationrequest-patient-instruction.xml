@@ -42,7 +42,7 @@
     <coding>
         <system value="http://terminology.hl7.org/CodeSystem/communication-category"/>
         <code value="instruction"/>
-        <display value="The communication conveys an instruction."/>
+        <display value="Instruction"/>
     </coding>  
   </category>
   <medium>
