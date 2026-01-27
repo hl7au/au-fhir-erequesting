@@ -64,7 +64,7 @@
     <encounter>
         <reference value="Encounter/obsgynaeclinic"/>
     </encounter>
-    <authoredOn value="2025-02-21"/>
+    <authoredOn value="2025-02"/>
     <requester>
         <reference value="PractitionerRole/obstetrician-losch-sallie"/>
     </requester>
