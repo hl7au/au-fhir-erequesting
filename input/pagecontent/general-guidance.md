@@ -1,5 +1,5 @@
 ### SNOMED CT Australian (SNOMED CT-AU) Edition
-For guidance on SNOMED CT-AU in FHIR, see the guidance defined in AU Base [SNOMED CT Australian Edition](https://build.fhir.org/ig/hl7au/au-fhir-base/generalguidance.html#snomed-ct-australian-edition).
+For guidance on SNOMED CT-AU in FHIR, see the guidance defined in AU Base [SNOMED CT Australian Edition](https://hl7.org.au/fhir/6.0.0/generalguidance.html#snomed-ct-australian-edition).
 
 ### AU eRequesting FHIR RESTful Interactions
 

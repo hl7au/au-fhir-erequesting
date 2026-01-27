@@ -15,8 +15,8 @@ Implementers are advised to be familiar with the requirements of the FHIR standa
 - [FHIR Workflow](https://hl7.org/fhir/R5/workflow.html)
 
 Additionally, implementers are advised to be familiar with the AU Core requirements on:
-- [Missing Data](https://build.fhir.org/ig/hl7au/au-fhir-core/general-requirements.html#missing-data)
-- [Suppressed Data](https://build.fhir.org/ig/hl7au/au-fhir-core/general-requirements.html#suppressed-data)
+- [Missing Data](https://hl7.org.au/fhir/core/2.0.0/general-requirements.html#missing-data)
+- [Suppressed Data](https://hl7.org.au/fhir/core/2.0.0/general-requirements.html#suppressed-data)
 
 The requirements of the FHIR standard and [FHIR Conformance Rules](http://hl7.org/fhir/conformance-rules.html) apply, and define the use of terms in this guide including the conformance verbs - **SHALL**, **SHALL NOT**, **SHOULD**, **SHOULD NOT**, **MAY**.
 
