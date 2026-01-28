@@ -1,6 +1,10 @@
 This page lists all ValueSets and CodeSystems supported as part of AU eRequesting. 
 
-Terminology supported in AU eRequesting is published in AU eRequesting, AU Base, the FHIR standard, [HL7 Terminology (THO)](https://terminology.hl7.org/), or the [National Clinical Terminology Service (NCTS)](https://www.healthterminologies.gov.au/).
+Terminology supported in AU eRequesting is published in AU eRequesting, [AU Base](https://hl7.org.au/fhir/6.0.0/terminology.html), the FHIR standard, [HL7 Terminology (THO)](https://terminology.hl7.org/), or the [National Clinical Terminology Service (NCTS)](https://www.healthterminologies.gov.au/).
+
+<div class="stu-note">
+Implementers are advised to take note that expansions of value sets visible in this guide may differ from expansions returned with a server using <a href="http://terminology.hl7.org">HL7 Terminology (THO)</a> version 6.0.0 or higher.
+</div>
 
 ### Value Sets
 
