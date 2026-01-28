@@ -60,7 +60,7 @@ Profile reference 'https://healthterminologies.gov.au/fhir/StructureDefinition/c
 # === INFORMATION 01: INHERITED FROM FHIR STANDARD (PREVIOUSLY ACCEPTED BY EREQ TDG): Some FHIR standard ValueSets are deprecated. ===
 Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
 
-# === INFORMATION 02: (2 NEW INFO + ACCEPTED BY FHIR WG/AU CORE TDG + TO BE ACCEPTED BY EREQ TDG): These issues are known FHIR standard and Extension Pack future version and current deprecations. ===
+# === INFORMATION 02: (1 NEW INFO + ACCEPTED BY FHIR WG/AU CORE TDG + TO BE ACCEPTED BY EREQ TDG): These issues are known FHIR standard and Extension Pack future version and current deprecations. ===
 The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
 The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
@@ -74,7 +74,7 @@ This element does not match any known slice defined in the profile http://hl7.or
 # === INFORMATION 05: (NEW + ACCEPTED BY AU CORE TDG + TO BE ACCEPTED BY EREQ TDG): The use of the obligation extension generates multiple slicing information messages in the snapshot. This extension is reused across many resources in leading to repeated validation messages that do not appear to indicate an actual problem. Other IGs that are using obligations (e.g. IPS, IPA, EPS) show the same set of QA "element does not match any known slice" slicing information messages that have been accepted for publication (see https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Obligations.20extension.20does.20not.20meet.20slice/with/553529895). ===
 This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 
-# === INFORMATION 06: (PREVIOUSLY ACCEPTED BY EREQ TDG): Some FHIR standard referenced CodeSystems are published as draft/experimental only. ===
+# === INFORMATION 06: (3 NEW + TO BE ACCEPTED BY EREQ TDG): Some FHIR standard referenced CodeSystems are published as draft/experimental only. ===
 Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/task-code|4.0.1
 Reference to draft CodeSystem http://hl7.org/fhir/request-status|4.0.1
 Reference to draft CodeSystem http://hl7.org/fhir/task-status|4.0.1
