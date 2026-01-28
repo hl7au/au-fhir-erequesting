@@ -8,7 +8,7 @@ The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced
 An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 
-# === WARNING 02: INHERITED FROM AU BASE: Artefacts inherit multiple profiles for certain data types (e.g., Address, Identifier). The IG Publisher cannot match example instances to a single profile and generates these warnings. This behaviour is expected and consistent with the design of AU Base. ===
+# === WARNING 02: INHERITED FROM AU BASE (PREVIOUSLY ACCEPTED BY EREQ TDG): Artefacts inherit multiple profiles for certain data types (e.g., Address, Identifier). The IG Publisher cannot match example instances to a single profile and generates these warnings. This behaviour is expected and consistent with the design of AU Base. ===
 Found multiple matching profiles among 2 choices: http://hl7.org.au/fhir/StructureDefinition/au-dvanumber, http://hl7.org/fhir/StructureDefinition/Identifier
 Found multiple matching profiles among 2 choices: http://hl7.org.au/fhir/StructureDefinition/au-address, http://hl7.org/fhir/StructureDefinition/Address
 Found multiple matching profiles among 2 choices: http://hl7.org.au/fhir/StructureDefinition/au-localorderidentifier, http://hl7.org/fhir/StructureDefinition/Identifier
@@ -19,7 +19,7 @@ Found multiple matching profiles among 2 choices: http://hl7.org.au/fhir/Structu
 Found multiple matching profiles among 2 choices: http://hl7.org.au/fhir/StructureDefinition/au-medicareprovidernumber, http://hl7.org/fhir/StructureDefinition/Identifier
 Found multiple matching profiles among 2 choices: http://hl7.org.au/fhir/StructureDefinition/au-australianbusinessnumber, http://hl7.org/fhir/StructureDefinition/Identifier
 
-= WARNING 03: INHERITED FROM AU BASE: AU Base does not pin the version of these standard FHIR extensions sourced from the FHIR Extensions Pack. ===
+= WARNING 03: INHERITED FROM AU BASE (PREVIOUSLY ACCEPTED BY EREQ TDG): AU Base does not pin the version of these standard FHIR extensions sourced from the FHIR Extensions Pack. ===
 There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 1.0.0 (from hl7.fhir.uv.extensions.r4#1.0.0), 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.1.0 (from hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure' to 'http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure|5.2.0'
 There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace' to 'http://hl7.org/fhir/StructureDefinition/patient-birthPlace|5.2.0'
 There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 1.0.0 (from hl7.fhir.uv.extensions.r4#1.0.0), 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.1.0 (from hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName' to 'http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName|5.2.0'
@@ -32,14 +32,13 @@ There are multiple different potential matches for the url 'http://hl7.org/fhir/
 There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 1.0.0 (from hl7.fhir.uv.extensions.r4#1.0.0), 5.1.0 (from hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender' to 'http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender|5.2.0'
 There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/timezone'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 1.0.0 (from hl7.fhir.uv.extensions.r4#1.0.0), 5.1.0 (from hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/timezone' to 'http://hl7.org/fhir/StructureDefinition/timezone|5.2.0'
 
-= WARNING 04: (PREVIOUSLY ACCEPTED BY EREQ TDG - TO ACKNOWLEDGE) AU eRequesting does not pin the version of these standard FHIR extensions or terminology sourced from the FHIR Extensions Pack or HL7 Terminology (THO). ===
-
+= WARNING 04: (PREVIOUSLY ACCEPTED BY EREQ TDG) AU eRequesting does not pin the version of these standard FHIR extensions or terminology sourced from the FHIR Extensions Pack or HL7 Terminology (THO). ===
 There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/request-statusReason'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 1.0.0 (from hl7.fhir.uv.extensions.r4#1.0.0), 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.1.0 (from hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (from hl7.fhir.uv.extensions.r4#5.2.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/request-statusReason' to 'http://hl7.org/fhir/StructureDefinition/request-statusReason|5.2.0'
 There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-PurposeOfUse'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.1.0', found versions: 3.0.0 (from hl7.terminology#5.5.0), 3.1.0 (from hl7.terminology.r4#7.0.1). Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-PurposeOfUse' to 'http://terminology.hl7.org/ValueSet/v3-PurposeOfUse|3.1.0'
 There are multiple different potential matches for the url 'http://terminology.hl7.org/CodeSystem/communication-category'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '1.0.1', found versions: 1.0.0 (from hl7.terminology#5.5.0), 1.0.1 (from hl7.terminology.r4#7.0.1). Suggested fix: change the canonical reference from 'http://terminology.hl7.org/CodeSystem/communication-category' to 'http://terminology.hl7.org/CodeSystem/communication-category|1.0.1'
 There are multiple different potential matches for the url 'http://terminology.hl7.org/CodeSystem/coverage-selfpay'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '1.0.1', found versions: 1.0.0 (from hl7.terminology#5.5.0), 1.0.1 (from hl7.terminology.r4#7.0.1). Suggested fix: change the canonical reference from 'http://terminology.hl7.org/CodeSystem/coverage-selfpay' to 'http://terminology.hl7.org/CodeSystem/coverage-selfpay|1.0.1'
 
-# === WARNING 05: INHERITED FROM AU BASE: The canonical URL for the following identifier types currently resolves to a html page and not a FHIR artefact. See the list of AU Base identifier profiles for the corresponding data type profile. ===
+# === WARNING 05: INHERITED FROM AU BASE (PREVIOUSLY ACCEPTED BY EREQ TDG): The canonical URL for the following identifier types currently resolves to a html page and not a FHIR artefact. See the list of AU Base identifier profiles for the corresponding data type profile. ===
 No definition could be found for URL value 'http://hl7.org.au/id/abn'
 No definition could be found for URL value 'http://hl7.org.au/id/ahpra-registration-number'
 No definition could be found for URL value 'http://ns.electronichealth.net.au/id/medicare-number'
@@ -47,45 +46,41 @@ No definition could be found for URL value 'http://ns.electronichealth.net.au/id
 No definition could be found for URL value 'http://ns.electronichealth.net.au/id/hi/hpii/1.0'
 No definition could be found for URL value 'http://ns.electronichealth.net.au/id/hi/hpio/1.0'
 No definition could be found for URL value 'http://ns.electronichealth.net.au/id/dva'
+
+# === WARNING 06: (PREVIOUSLY ACCEPTED BY EREQ TDG): The canonical URL for the following MHR consent withdrawal legislation referenced in AU eRequesting MHR Consent Withdrawal resolves to a html page and not a FHIR artefact.  ===
 No definition could be found for URL value 'https://www.health.gov.au'
 No definition could be found for URL value 'https://www.legislation.gov.au/C2012A00063'
 
-# === WARNING 06: (PREVIOUSLY ACCEPTED BY EREQ TDG - TO ACKNOWLEDGE): The canonical URL for the following MHR consent withdrawal legislation resolves to a html page and not a FHIR artefact.  ===
-No definition could be found for URL value 'https://www.health.gov.au'
-No definition could be found for URL value 'https://www.legislation.gov.au/C2012A00063'
-
-# === WARNING 07: (ACCEPTED BY FHIR WG & AU CORE TDG, PREVIOUSLY ACCEPTED BY EREQ TDG - TO ACKNOWLEDGE) Examples of HPIO scoped identifier system URLs do not have formal definition as they are examples. ===
+# === WARNING 07: (ACCEPTED BY FHIR WG, PREVIOUSLY ACCEPTED BY EREQ TDG) Examples of HPIO scoped identifier system URLs do not have formal definition as they are examples. ===
 No definition could be found for URL value 'http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359'
 No definition could be found for URL value 'http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003622500032165'
 
-# === WARNING 08: ACCEPTED BY FHIR WG: Warnings are present as the IG Publisher is unable to resolve National Clinical Terminology Service (NCTS) profiles. At this time no npm package for the NCTS IG is available and there is no timeline for resolution. ===
+# === WARNING 08: (ACCEPTED BY FHIR WG, PREVIOUSLY ACCEPTED BY EREQ TDG) Warnings are present as the IG Publisher is unable to resolve National Clinical Terminology Service (NCTS) profiles. At this time no npm package for the NCTS IG is available and there is no timeline for resolution. ===
 A definition could not be found for Canonical URL 'https://healthterminologies.gov.au/fhir/StructureDefinition/composed-value-set-4'
 Profile reference 'https://healthterminologies.gov.au/fhir/StructureDefinition/composed-value-set-4' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
 
-# === WARNING 09: (PREVIOUSLY ACCEPTED BY EREQ TDG - SIMILAR EXPERIMENTAL SPIA SETS ACCEPTED BY FHIR WG - TO ACKNOWLEDGE) Known NCTS published RCPA ValueSets published as experimental. ===
+# === WARNING 09: (PREVIOUSLY ACCEPTED BY EREQ TDG) Known NCTS published RCPA ValueSets published as experimental. ===
 The definition for the element 'ServiceRequest.code' binds to the value set 'https://www.rcpa.edu.au/fhir/ValueSet/spia-requesting-refset-3' which is experimental, but this structure is not labeled as experimental
 
 # === INFORMATION 01: INHERITED FROM FHIR STANDARD: Some FHIR standard ValueSets are deprecated. ===
 Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
 
-# === INFORMATION 02: INHERITED FROM AU BASE: Known NCTS published RCPA ValueSets published as experimental. ===
-Reference to experimental CodeSystem http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0|20130626
-
-# === INFORMATION 03 (2 NEW INFO + ACCEPTED BY FHIR WG/AU CORE TDG + TO BE ACKNOWLEDGED BY EREQ TDG): These issues are known FHIR standard and Extension Pack future version and current deprecations. ===
+# === INFORMATION 02: (2 NEW INFO + ACCEPTED BY FHIR WG/AU CORE TDG + TO BE ACKNOWLEDGED BY EREQ TDG): These issues are known FHIR standard and Extension Pack future version and current deprecations. ===
 The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
 The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 
-# === INFORMATION 04: (NEW + TO BE ACKNOWLEDGED BY EREQ TDG) INHERITED FROM IPS: This is IPS managed content.===
+# === INFORMATION 03: (NEW + TO BE ACKNOWLEDGED BY EREQ TDG) INHERITED FROM IPS: This is IPS managed content.===
 Reference to trial-use ValueSet http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips|2.0.0
 
-# === INFORMATION 05 (ACCEPTED BY AU CORE TDG, PREVIOUSLY ACCEPTED BY EREQ TDG - TO ACKNOWLEDGE): Information about the use of standard CapabilityStatementExpectation extension in additional contexts to fully express intended capabilities; see FHIR-12419. ===
+# === INFORMATION 04: (ACCEPTED BY AU CORE TDG, PREVIOUSLY ACCEPTED BY EREQ TDG - TO ACKNOWLEDGE): Information about the use of standard CapabilityStatementExpectation extension in additional contexts to fully express intended capabilities; see FHIR-12419. ===
 This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 
-# === INFORMATION 06 (NEW + ACCEPTED BY AU CORE TDG + TO BE ACKNOWLEDGED BY EREQ TDG): The use of the obligation extension generates multiple slicing information messages in the snapshot. This extension is reused across many resources in leading to repeated validation messages that do not appear to indicate an actual problem. Other IGs that are using obligations (e.g. IPS, IPA, EPS) show the same set of QA "element does not match any known slice" slicing information messages that have been accepted for publication (see https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Obligations.20extension.20does.20not.20meet.20slice/with/553529895). ===
+# === INFORMATION 05: (NEW + ACCEPTED BY AU CORE TDG + TO BE ACKNOWLEDGED BY EREQ TDG): The use of the obligation extension generates multiple slicing information messages in the snapshot. This extension is reused across many resources in leading to repeated validation messages that do not appear to indicate an actual problem. Other IGs that are using obligations (e.g. IPS, IPA, EPS) show the same set of QA "element does not match any known slice" slicing information messages that have been accepted for publication (see https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Obligations.20extension.20does.20not.20meet.20slice/with/553529895). ===
 This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation|5.2.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 
-# === INFORMATION 07: (PREVIOUSLY ACCEPTED BY EREQ TDG - TO ACKNOWLEDGE): Some FHIR standard referenced CodeSystems are published as draft/experimental only. ===
+# === INFORMATION 06: (PREVIOUSLY ACCEPTED BY EREQ TDG): Some FHIR standard referenced CodeSystems are published as draft/experimental only. ===
 Reference to draft CodeSystem http://hl7.org/fhir/CodeSystem/task-code|4.0.1
 Reference to draft CodeSystem http://hl7.org/fhir/request-status|4.0.1
 Reference to draft CodeSystem http://hl7.org/fhir/task-status|4.0.1
+Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
