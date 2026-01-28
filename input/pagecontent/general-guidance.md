@@ -94,7 +94,7 @@ The diagrams below illustrate the references between AU eRequesting profiles, as
 
 In AU eRequesting, grouping is applied to requests created by an AU eRequesting Placer actor. This reflects common patterns in Australia where multiple related pathology tests or imaging exams are requested in a single event.
 
-AU eRequesting follows the [shared requisition id](https://hl7.org/fhir/request.html#requisitionid) approach from the [FHIR Request pattern](https://hl7.org/fhir/request.html), where multiple request resources created as part of the same ordering event share a common identifier. The Placer Group Number (PGN) is the common identifier assigned by the AU eRequesting Placer actor at the time of request creation and is recorded in either the `requisition` or `groupIdentifier` elements of resources in the group.
+AU eRequesting follows the [shared requisition id](https://hl7.org/fhir/R4/request.html#requisitionid) approach from the [FHIR Request pattern](https://hl7.org/fhir/R4/request.html), where multiple request resources created as part of the same ordering event share a common identifier. The Placer Group Number (PGN) is the common identifier assigned by the AU eRequesting Placer actor at the time of request creation and is recorded in either the `requisition` or `groupIdentifier` elements of resources in the group.
 
 A single [AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html) is used to represent and coordinate the overall group of requests. It allows the AU eRequesting Filler actor to manage the group as a single coordinated request, supporting fulfilment, progress tracking and status updates across the group.
  
@@ -157,7 +157,7 @@ FHIR provides mechanisms that enable client systems to monitor resource changes 
 
 #### References
 
-FHIR defines several types of references, including literal, logical, and contained references. The characteristics and implications of these reference types are described in the FHIR [Resource References](https://hl7.org/fhir/references.html) page.
+FHIR defines several types of references, including literal, logical, and contained references. The characteristics and implications of these reference types are described in the FHIR [Resource References](https://hl7.org/fhir/R4/references.html) page.
 
 AU eRequesting Release 1 does not constrain the choice of reference type, and implementers should be aware of the implications of the different approaches within their implementation context.
 

@@ -12,7 +12,7 @@ Implementers are advised to be familiar with the requirements of the FHIR standa
 - [FHIR Search](http://hl7.org/fhir/R4/search.html)
 - [FHIR Resource formats](http://hl7.org/fhir/R4/resource.html)
 - [FHIR Data Types](http://hl7.org/fhir/R4/datatypes.html)
-- [FHIR Workflow](https://hl7.org/fhir/R5/workflow.html)
+- [FHIR Workflow](https://hl7.org/fhir/R4/workflow.html)
 
 Additionally, implementers are advised to be familiar with the AU Core requirements on:
 - [Missing Data](https://build.fhir.org/ig/hl7au/au-fhir-core/general-requirements.html#missing-data)
