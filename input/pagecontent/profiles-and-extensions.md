@@ -12,37 +12,23 @@ See the [AU eRequesting Profile Relationships](general-guidance.html#au-erequest
 #### Other Profiles Used
 In addition to the profiles defined in this implementation guide, the following profiles defined elsewhere are used by AU eRequesting. These profiles are a data type profile for a *Must Support* element in an AU eRequesting profile or are the target of a *Must Support* reference element in an AU eRequesting profile:
 - [AU Australian Business Number](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-australianbusinessnumber.html)
-- [AU Australian Company Number](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-australiancompanynumber.html)
-- [AU Australian Registered Body Number](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-australianregistredbodynumber.html)
-- [AU Aphra Registration Number](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-ahpraregistrationnumber.html)
-- [AU Care Agency Employee Identifier](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-careagencyemployeeidentifier.html)
 - [AU Commonwealth Seniors Health Card Number](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-cwlthseniorshealthcardnumber.html)
 - [AU Core Condition](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-condition.html)
 - [AU Core Location](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-location.html)
 - [AU Core Procedure](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-procedure.html) 
 - [AU Core RelatedPerson](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-relatedperson.html)
-- [AU CSP Registration Number](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-cspregistrationnumber.html)
 - [AU DVA Number](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-dvanumber.html)
-- [AU Employee Number](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-employeenumber.html)
 - [AU Health Care Card Number](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-healthcarecardnumber.html)
 - [AU HPI-I](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-hpii.html)
 - [AU HPI-O](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-hpio.html)
 - [AU IHI](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-ihi.html)
 - [AU Insurance Member Number](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-insurancemembernumber.html)
 - [AU Local Order Identifier](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-localorderidentifier.html)
-- [AU Medical Record Number](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-medicalrecordnumber.html)
 - [AU Medicare Card Number](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-medicarecardnumber.html)
 - [AU Medicare Provider Number](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-medicareprovidernumber.html)
-- [AU NATA Accreditation Number](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-nataaccreditationnumber.html)
-- [AU National Provider Identifier At Organisation](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-nationalprovideridentifieratorganisation.html)
-- [AU PAI-O Identifier](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-paioidentifier.html)
-- [AU Patient Internal Identifier](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-pi.html)
 - [AU Pensioner Concession Card Number](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-pensionerconcessioncardnumber.html)
-- [AU Pharmacy Approval Number](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-pharmacyapprovalnumber.html)
-- [AU PBS Prescriber Number](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-pbsprescribernumber.html)
 - [Australian Address](https://build.fhir.org/ig/hl7au/au-fhir-base/StructureDefinition-au-address.html)
 - [Observation Pregnancy - Status (IPS)](https://hl7.org/fhir/uv/ips/STU2/StructureDefinition-Observation-pregnancy-status-uv-ips.html)
-
 
 ### Extensions
 
