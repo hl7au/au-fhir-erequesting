@@ -33,7 +33,7 @@ dependencies:
   hl7.fhir.au.base:
     version: 6.0.0
   hl7.fhir.au.core: 
-    version: current
+    version: 2.0.0
   hl7.fhir.uv.ips: 
     version: 2.0.0
 # The pages property corresponds to IG.definition.page. SUSHI can
