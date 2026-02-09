@@ -11,7 +11,7 @@ description: This implementation guide is provided to support the use of FHIRÂ®Â
 status: active # draft | active | retired | unknown
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
-    valueCode: draft
+    valueCode: trial-use
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm  #<<<<< the default AFMM level for the artifacts in this IG
     valueInteger: 1
 version: 1.0.0-ci-build
