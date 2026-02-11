@@ -78,7 +78,7 @@ jobs:
     - name: Basic Publish for AueRequesting
       run: |
           echo "Generating Publish for AueRequesting IG..."
-          java -jar input-cache/publisher.jar -ig hl7au/au-fhir-core/ig.ini
+          java -jar input-cache/publisher.jar -ig hl7au/au-fhir-erequesting/ig.ini
       
     - name: Download package-list.json
       run: |
