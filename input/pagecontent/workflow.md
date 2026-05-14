@@ -339,3 +339,43 @@ The table below provides request state implementation guidance for AU eRequestin
 
 - While the [AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html) and [AU eRequesting Task Diagnostic Request](StructureDefinition-au-erequesting-task-diagnosticrequest.html) are loosely coupled, in practice, changes in `ServiceRequest.status` are expected to be reflected in the corresponding `Task.status` to maintain alignment across resources involved in the workflow. Placers are responsible for managing this alignment, as changes in the diagnostic request status often require corresponding updates in fulfilment management. Failure to maintain this alignment can lead to workflow inconsistencies, such as orphaned tasks or misaligned expectations between placers and fillers.
 - Some typical business rules on these status relationships are outlined in the [Request States](#request-states) table above.
+
+### Transaction Bundle Assembly
+
+This section describes how to package a new diagnostic request as a single FHIR transaction Bundle suitable for submission to an [AU eRequesting Server](ActorDefinition-au-erequesting-actor-server.html). It is non-normative narrative guidance accompanying the [AU eRequesting Diagnostic Request Bundle](StructureDefinition-au-erequesting-bundle-diagnosticrequest.html) profile family.
+
+#### Profile family
+
+| Profile | Use when |
+|---|---|
+| [AU eRequesting Diagnostic Request Bundle](StructureDefinition-au-erequesting-bundle-diagnosticrequest.html) | Abstract — defines the common shape; do not instantiate directly. |
+| [AU eRequesting Pathology Request Bundle](StructureDefinition-au-erequesting-bundle-pathologyrequest.html) | Submitting one or more pathology requests as a single transaction. |
+| [AU eRequesting Imaging Request Bundle](StructureDefinition-au-erequesting-bundle-imagingrequest.html) | Submitting one or more imaging requests as a single transaction. |
+
+#### Composition
+
+A conformant bundle must contain:
+
+- exactly one `Patient`
+- exactly one requesting `Practitioner` and one `PractitionerRole`
+- one or two `Organization` entries (the placer organization is mandatory; the filler organization is optional and used for assigned requests)
+- one or more `ServiceRequest` entries conforming to the appropriate concrete diagnostic request profile
+- exactly one `Task` conforming to the [AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html) profile
+- one or more `Task` entries conforming to the [AU eRequesting Task Diagnostic Request](StructureDefinition-au-erequesting-task-diagnosticrequest.html) profile — one per `ServiceRequest`
+
+The bundle may also contain `Encounter`, `Coverage`, `DocumentReference`, `CommunicationRequest`, `Observation`, and `Location` resources as required by the request scenario.
+
+#### Transaction semantics
+
+- `Bundle.type` is fixed to `transaction`. The transaction is atomic — if any single entry fails server-side validation the entire transaction is rolled back.
+- Every `entry.fullUrl` is a `urn:uuid:` value. The server assigns the canonical resource id when each `POST` succeeds; references between resources inside the bundle use the matching `urn:uuid:` so they resolve within the bundle.
+- **Workflow** resources (`ServiceRequest`, `Task`, `Encounter`, `Coverage`, `DocumentReference`, `CommunicationRequest`, `Observation`) use `POST` only — they are created unconditionally as new resources.
+- **Actor** resources (`Patient`, `Practitioner`, `PractitionerRole`, `Organization`) may use either:
+  - `POST` with `entry.request.ifNoneExist` populated — conditional create. The server creates the resource only if no existing identifier match is found. The `ifNoneExist` query is typically an identifier search (e.g., HPI-I, HPI-O, IHI, Medicare Provider Number).
+  - `PUT` with the search query embedded in `entry.request.url` (for example, `Patient?identifier=...`) — conditional update by identifier. The server creates if no match, updates if exactly one match.
+- The choice depends on what the placer knows about the actors on the target server. Invariant `au-ereq-bundle-05` enforces the relationship between `request.method` and `request.ifNoneExist`.
+
+#### Example bundles
+
+- [bundle-pathology-multitest-1](Bundle-bundle-pathology-multitest-1.html) — four pathology ServiceRequests for an obstetric clinic visit.
+- [bundle-imaging-1](Bundle-bundle-imaging-1.html) — single chest X-ray imaging request.
