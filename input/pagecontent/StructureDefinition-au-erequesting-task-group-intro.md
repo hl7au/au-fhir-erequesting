@@ -1,2 +1,2 @@
 ### Profile Specific Implementation Guidance
-- See the [AU eRequesting Workflow Guidance](workflow.html) page for guidance on managing workflow states in AU eRequesting.
+- See [AU eRequesting Task Profile Specific Implementation Guidance](StructureDefinition-au-erequesting-task.html#profile-specific-implementation-guidance) for general guidance applicable to profiles based on AU eRequesting Task.

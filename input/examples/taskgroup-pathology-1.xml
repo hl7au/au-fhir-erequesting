@@ -26,8 +26,8 @@
     <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003622500032165"/>
     <value value="EMC4542244-5624"/>
     <assigner>
-      <reference value="Organization/elimbah-medical-center"/>
-      <display value="Elimbah Medical Center"/>
+      <reference value="Organization/elimbah-medical-centre"/>
+      <display value="Elimbah Medical Centre"/>
     </assigner>
   </groupIdentifier>
   <status value="requested"/>

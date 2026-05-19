@@ -83,6 +83,15 @@
 	 <td></td>
   </tr>
   <tr>
+        <td>part-of</td>
+        <td><b>SHALL</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><code>reference</code></td>
+        <td></td>
+  </tr>
+  <tr>
         <td>patient</td>
         <td><b>SHALL</b></td>
         <td><b>MAY</b></td>
@@ -156,6 +165,15 @@
   </tr>
   <tr>
         <td>_include=Task:requester</td>
+        <td><b>SHALL</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><b>MAY</b></td>
+        <td><code>reference</code></td>
+        <td></td>
+  </tr>
+  <tr>
+        <td>_revinclude=Task:part-of</td>
         <td><b>SHALL</b></td>
         <td><b>MAY</b></td>
         <td><b>MAY</b></td>

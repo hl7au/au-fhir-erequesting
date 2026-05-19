@@ -1,90 +1,97 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="28.0.7">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.0.3">
   <diagram name="AU eRequesting Example Request Group" id="NjYE20MvanzqlJ1-iSRo">
-    <mxGraphModel dx="1783" dy="929" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1426" dy="777" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="hb1dm849AL8hyxLntige-1" value="" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="9" y="20" width="810" height="410" as="geometry" />
+        <mxCell id="hb1dm849AL8hyxLntige-1" value="" style="rounded=0;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="9" y="20" width="811" height="370" as="geometry" />
         </mxCell>
-        <mxCell id="hb1dm849AL8hyxLntige-2" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Diagnostic Request&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));&quot;&gt;- requisition: &amp;lt;PGN&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- displaySequence&lt;/div&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#00B0F0;fontColor=#FFFFFF;" vertex="1" parent="1">
-          <mxGeometry x="636" y="90" width="156" height="90" as="geometry" />
+        <mxCell id="O5Z-MIKfs9H5aB9zDUyF-16" value="" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#00B0F0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="647" y="107" width="156" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="hb1dm849AL8hyxLntige-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hb1dm849AL8hyxLntige-7" target="hb1dm849AL8hyxLntige-2">
+        <mxCell id="O5Z-MIKfs9H5aB9zDUyF-17" value="" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#00B0F0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="640" y="99" width="156" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="O5Z-MIKfs9H5aB9zDUyF-14" value="" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#00B0F0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="339" y="107" width="156" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="O5Z-MIKfs9H5aB9zDUyF-15" value="" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#00B0F0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="332" y="99" width="156" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="O5Z-MIKfs9H5aB9zDUyF-12" value="" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#00B0F0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="339" y="257" width="156" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="O5Z-MIKfs9H5aB9zDUyF-13" value="" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#00B0F0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="332" y="249" width="156" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="O5Z-MIKfs9H5aB9zDUyF-10" value="" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#00B0F0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="647" y="257" width="156" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="O5Z-MIKfs9H5aB9zDUyF-11" value="" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#00B0F0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="640" y="249" width="156" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="hb1dm849AL8hyxLntige-2" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;AU eRequesting Diagnostic Request&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));&quot;&gt;- requisition: &amp;lt;PGN&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- displaySequence&lt;/div&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#00B0F0;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="632" y="90" width="156" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="hb1dm849AL8hyxLntige-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="hb1dm849AL8hyxLntige-7" target="hb1dm849AL8hyxLntige-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="hb1dm849AL8hyxLntige-4" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;f&lt;/font&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;ocus&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hb1dm849AL8hyxLntige-3">
+        <mxCell id="hb1dm849AL8hyxLntige-4" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;f&lt;/font&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;ocus&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="hb1dm849AL8hyxLntige-3" vertex="1" connectable="0">
           <mxGeometry x="-0.3077" y="2" relative="1" as="geometry">
-            <mxPoint x="-28" y="17" as="offset" />
+            <mxPoint x="-16" y="17" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hb1dm849AL8hyxLntige-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="hb1dm849AL8hyxLntige-7" target="hb1dm849AL8hyxLntige-8">
+        <mxCell id="hb1dm849AL8hyxLntige-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="hb1dm849AL8hyxLntige-7" target="hb1dm849AL8hyxLntige-8" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="259" y="245" as="targetPoint" />
+            <mxPoint x="255" y="211" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="237" y="135" />
-              <mxPoint x="237" y="245" />
+              <mxPoint x="325" y="136" />
+              <mxPoint x="233" y="136" />
+              <mxPoint x="233" y="211" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="hb1dm849AL8hyxLntige-6" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;partOf&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hb1dm849AL8hyxLntige-5">
+        <mxCell id="hb1dm849AL8hyxLntige-6" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;partOf&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="hb1dm849AL8hyxLntige-5" vertex="1" connectable="0">
           <mxGeometry x="-0.1948" y="-3" relative="1" as="geometry">
-            <mxPoint x="63" y="5" as="offset" />
+            <mxPoint x="56" y="18" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hb1dm849AL8hyxLntige-7" value="&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Task Diagnostic Request&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- groupIdentifier: &amp;lt;PGN&amp;gt;&lt;/div&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#00B0F0;fontColor=#FFFFFF;" vertex="1" parent="1">
-          <mxGeometry x="329" y="90" width="156" height="90" as="geometry" />
+        <mxCell id="hb1dm849AL8hyxLntige-8" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;AU eRequesting Task Group&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;- groupIdentifier: &amp;lt;PGN&amp;gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#00B0F0;strokeColor=default;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="25" y="166" width="156" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="hb1dm849AL8hyxLntige-8" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Task Group&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;- groupIdentifier: &amp;lt;PGN&amp;gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#00B0F0;strokeColor=default;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=#FFFFFF;" vertex="1" parent="1">
-          <mxGeometry x="29" y="200" width="156" height="90" as="geometry" />
+        <mxCell id="hb1dm849AL8hyxLntige-15" value="&lt;font style=&quot;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;AU eRequesting&lt;/font&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt; CommunicationRequest&lt;/span&gt;&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;- groupIdentifier: &amp;lt;PGN&amp;gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#00B0F0;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="632" y="241" width="156" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="hb1dm849AL8hyxLntige-9" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Diagnostic Request&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));&quot;&gt;- requisition: &amp;lt;PGN&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- displaySequence&lt;/div&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#00B0F0;fontColor=#FFFFFF;" vertex="1" parent="1">
-          <mxGeometry x="636" y="200" width="156" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="hb1dm849AL8hyxLntige-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hb1dm849AL8hyxLntige-14" target="hb1dm849AL8hyxLntige-9">
+        <mxCell id="hb1dm849AL8hyxLntige-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="hb1dm849AL8hyxLntige-20" target="hb1dm849AL8hyxLntige-15" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="hb1dm849AL8hyxLntige-11" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;f&lt;/font&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;ocus&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hb1dm849AL8hyxLntige-10">
+        <mxCell id="hb1dm849AL8hyxLntige-17" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;f&lt;/font&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;ocus&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="hb1dm849AL8hyxLntige-16" vertex="1" connectable="0">
           <mxGeometry x="-0.3077" y="2" relative="1" as="geometry">
-            <mxPoint x="-28" y="17" as="offset" />
+            <mxPoint x="-14" y="17" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hb1dm849AL8hyxLntige-12" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;partOf&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="299" y="260" as="geometry" />
+        <mxCell id="hb1dm849AL8hyxLntige-21" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Example Request Group&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="306" y="40" width="220" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="hb1dm849AL8hyxLntige-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hb1dm849AL8hyxLntige-14" target="hb1dm849AL8hyxLntige-8">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="hb1dm849AL8hyxLntige-20" value="&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;AU eRequesting Task&amp;nbsp;&lt;/b&gt;&lt;b&gt;Communication&amp;nbsp;&lt;br&gt;&lt;/b&gt;&lt;b&gt;Request&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- groupIdentifier: &amp;lt;PGN&amp;gt;&lt;/div&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#00B0F0;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="325" y="241" width="156" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="hb1dm849AL8hyxLntige-14" value="&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Task Diagnostic Request&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- groupIdentifier: &amp;lt;PGN&amp;gt;&lt;/div&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#00B0F0;fontColor=#FFFFFF;" vertex="1" parent="1">
-          <mxGeometry x="329" y="200" width="156" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="hb1dm849AL8hyxLntige-15" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Communication Request&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;- groupIdentifier: &amp;lt;PGN&amp;gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#00B0F0;fontColor=#FFFFFF;" vertex="1" parent="1">
-          <mxGeometry x="636" y="310" width="156" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="hb1dm849AL8hyxLntige-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hb1dm849AL8hyxLntige-20" target="hb1dm849AL8hyxLntige-15">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="hb1dm849AL8hyxLntige-17" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;f&lt;/font&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;ocus&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hb1dm849AL8hyxLntige-16">
-          <mxGeometry x="-0.3077" y="2" relative="1" as="geometry">
-            <mxPoint x="-28" y="17" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="hb1dm849AL8hyxLntige-18" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;partOf&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="299" y="370" as="geometry" />
-        </mxCell>
-        <mxCell id="hb1dm849AL8hyxLntige-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="hb1dm849AL8hyxLntige-20" target="hb1dm849AL8hyxLntige-8">
+        <mxCell id="hb1dm849AL8hyxLntige-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="hb1dm849AL8hyxLntige-20" target="hb1dm849AL8hyxLntige-8" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="237" y="355" />
-              <mxPoint x="237" y="245" />
+              <mxPoint x="233" y="286" />
+              <mxPoint x="233" y="211" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="hb1dm849AL8hyxLntige-20" value="&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Task&amp;nbsp;&lt;/b&gt;&lt;b&gt;Communication&amp;nbsp;&lt;br&gt;&lt;/b&gt;&lt;b&gt;Request&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- groupIdentifier: &amp;lt;PGN&amp;gt;&lt;/div&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#00B0F0;fontColor=#FFFFFF;" vertex="1" parent="1">
-          <mxGeometry x="329" y="310" width="156" height="90" as="geometry" />
+        <mxCell id="hb1dm849AL8hyxLntige-18" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;partOf&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="313" y="301" as="geometry">
+            <mxPoint x="-18" y="-2" as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="hb1dm849AL8hyxLntige-21" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Example Request Group&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="306" y="40" width="220" height="30" as="geometry" />
+        <mxCell id="hb1dm849AL8hyxLntige-7" value="&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;AU eRequesting Task Diagnostic Request&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- groupIdentifier: &amp;lt;PGN&amp;gt;&lt;/div&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#00B0F0;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="325" y="90" width="156" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

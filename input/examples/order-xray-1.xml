@@ -2,7 +2,7 @@
 <ServiceRequest xmlns="http://hl7.org/fhir">
   <id value="order-xray-1"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-name">
-    <valueString value="ServiceRequest - X-ray"/>
+    <valueString value="ServiceRequest - Chest X-ray"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
     <valueMarkdown value="Shows an example of a request for a chest X-ray for the *AU eRequesting Imaging Request* profile. Patient: Fred Roberts."/>
@@ -24,7 +24,7 @@
     <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
     <value value="EMC4542244-5624-01"/>
     <assigner>
-      <display value="Elimbah Medical Center"/>
+      <display value="Elimbah Medical Centre"/>
     </assigner>
   </identifier>
   <requisition>
@@ -38,7 +38,7 @@
     <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
     <value value="EMC4542244-5624"/>
     <assigner>
-      <display value="Elimbah Medical Center"/>
+      <display value="Elimbah Medical Centre"/>
     </assigner>
   </requisition>
   <status value="active"/>

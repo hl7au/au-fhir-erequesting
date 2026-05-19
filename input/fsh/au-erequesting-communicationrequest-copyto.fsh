@@ -7,20 +7,14 @@ Description: "This profile sets the minimum expectations for a CommunicationRequ
 * ^status = #active
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 
-* category 1..1 
-  * coding 1..1
-  * coding = $communication-category#notification 
+* category = $communicationrequest-category#copyto-reports
+* category 1..1
 
 * doNotPerform 0..0
 
-* about only Reference (AUeRequestingPathologyRequest or AUeRequestingImagingRequest)
-  * ^short = "Diagnostic request the copy-to communication is about"
+* about ^short = "Diagnostic request the copy-to communication is about"
 
-* requester only Reference (AUCorePractitionerRole)
+* requester only Reference (AUeRequestingPractitionerRole)
   * ^short = "Individual provider requesting the communication"
 
 * recipient ^short = "Individual provider or patient who is the intended recipient of the copy" 
-
-* reasonCode
-  * coding 1..1
-  * coding = $comm-req-reason#copyto

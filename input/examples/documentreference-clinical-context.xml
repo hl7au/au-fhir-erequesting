@@ -13,6 +13,12 @@
     <valueMarkdown value="Shows an example DocumentReference for the *AU eRequesting Clinical Context DocumentReference* profile, associated with a diagnostic request. Patient: Remedios Belger."/>
   </extension>
   <status value="current"/>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="107903-7"/>
+    </coding>
+  </type>
   <subject>
     <reference value="Patient/belger-remedios"/>
   </subject>
@@ -28,6 +34,3 @@
     </attachment>
   </content>
 </DocumentReference>
-
-
-

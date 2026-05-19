@@ -8,10 +8,10 @@ The focus of AU eRequesting Release 1 (R1) is to support pathology and medical i
 
 ### Project Background
 
-This implementation guide is under development through the AU eRequesting project as part of the [Sparked AU FHIR Accelerator](https://sparked.csiro.au). The Sparked AU FHIR Accelerator is a collaborative community of government, technology vendors, provider organisations, peak bodies, practitioners, and domain experts, working together to accelerate the creation and use of national FHIR standards for health information exchange.
+This implementation guide is under development through the AU eRequesting project as part of the [Sparked AU FHIR Accelerator](https://sparked.csiro.au). The Sparked AU FHIR Accelerator is a collaborative community of government, technology vendors, provider organisations, peak bodies, practitioners, and domain experts, working together to accelerate the creation and use of national FHIR standards for health information exchange and workflow.
 
 The Sparked AU FHIR Accelerator includes:
-- AU eRequesting Data for Interoperability - clinician focussed data requirements
+- AU eRequesting Data for Interoperability - clinician focused data requirements
 - AU eRequesting FHIR Implementation Guide - HL7 Australia technical data access and exchange specification
 
 The [Australian eRequesting Data for Interoperability (AUeReqDI)](https://sparked.csiro.au/index.php/products-resources/auereqdi/) is focused on an agreement of the minimum data required to support standardised eRequesting within the Australian health context, and forms a common language foundation that allows systems to exchange semantically accurate data for eRequests. AUeReqDI outputs form a set of data requirements to be considered and referred to as part of the development and definition of AU eRequesting. 
@@ -57,41 +57,14 @@ The following technical aspects were not considered priority for the scope of Re
 ### Dependencies
 
 {% include dependency-table.xhtml %}
-
-### AU eRequesting FHIR RESTful Interactions
-
-AU eRequesting defines four system actors involved in the exchange of diagnostic requests: the AU eRequesting Placer, Filler, Patient and Server actors. The [Actors and Capabilities](capability-statements.html) page provides a summary of these actors and includes links to their definitions and CapabilityStatements. Each capability statement outlines the RESTful interactions supported by that actor, including `create`, `update`, `read` and `search` operations.
-
-Figure 1 shows typical FHIR RESTful interactions between these AU eRequesting actors:
-
-<div> 
-  <img src="au-erequesting-actor-interactions.svg" alt="Typical FHIR RESTful interactions between AU eRequesting actors" style="width:100%"/>
-</div>
-*Figure 1: Typical FHIR RESTful interactions between AU eRequesting actors*
-<br/>
-
-### Example AU eRequesting Interaction Flow
-Figure 2 shows an example of FHIR interactions between AU eRequesting actors, and demonstrates the use of ServiceRequest and Task to support the placement and tracking of pathology and imaging requests. While the diagram focuses on these coordinating resources, the associated exchange also includes other FHIR resources (e.g. Patient) that provide clinical, administrative and contextual information. The full set of profiles used to support the requests is provided on the [Profiles and Extensions](profiles-and-extensions.html) page.
-
-<div> 
-    <img src="au-erequesting-example-interaction-flow.svg" alt="Example AU eRequesting interaction flow" style="width:100%"/>
-</div>
-*Figure 2: Example AU eRequesting interaction flow*
-<br/>
-
-The steps illustrated in Figure 2 are summarised below:
-- The AU eRequesting Placer actor creates ServiceRequest and Task resources on the AU eRequesting Server, along with associated resources that collectively represent the request.
-- The AU eRequesting Filler actor searches for available Task resources to fulfil, and retrieves the associated resources that form the request.
-- The AU eRequesting Filler actor updates the Task resources to reflect the fulfilment status.
-- The AU eRequesting Placer actor queries the AU eRequesting Server to monitor request fulfilment status.
-- The AU eRequesting Patient actor queries the AU eRequesting Server to view the details of their own requests.
+{% include expansion-params.xhtml %}
 
 ### How To Read This Guide
 
 This guide is divided into several pages which are listed at the top of each page in the menu bar.
 
 - [Home](index.html): This page provides the introduction and scope for this guide.
-- [Conformance](conformance.html): This page describes the set of rules to claim conformance to this guide
+- [Conformance](conformance.html): This page describes the set of rules to claim conformance to this guide.
 - [Guidance](guidance.html): These pages list the guidance for this guide. 
   - [General Guidance](general-guidance.html): This page provides guidance on using the profiles defined in this guide.
   - [AU eRequesting Workflow Guidance](workflow.html): This page provides guidance on managing workflow states in AU eRequesting, where Tasks track the fulfilment of ServiceRequests.

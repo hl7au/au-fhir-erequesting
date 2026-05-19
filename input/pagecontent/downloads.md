@@ -9,7 +9,7 @@ It is not recommended to view locally without hosting, but you can extract the f
 
 ### Package File
 
-The following package file includes an NPM package file used by many of the FHIR tools.  It contains all the value sets, profiles, extensions, list of pages and urls in the IG, etc defined as part of this version of the Implementation Guides. This file should be the first choice whenever generating any implementation artefacts since it contains all of the rules about what makes the profiles valid. Implementers will still need to be familiar with the content of the specification and profiles that apply in order to make a conformant implementation:
+The following package file includes an NPM package file used by many of the FHIR tools.  It contains all the value sets, profiles, extensions, list of pages and urls in the IG, etc defined as part of this version of the Implementation Guide. This file should be the first choice whenever generating any implementation artefacts since it contains all of the rules about what makes the profiles valid. Implementers will still need to be familiar with the content of the specification and profiles that apply in order to make a conformant implementation:
 
 - [R4 Package](package.tgz){::download="true"}
 - [R4B Package](package.r4b.tgz){::download="true"}
@@ -39,7 +39,7 @@ The following link to the ImplementationGuide resource defines the technical det
 - [JSON](ImplementationGuide-hl7.fhir.au.ereq.json)
 - [TTL](ImplementationGuide-hl7.fhir.au.ereq.ttl)
 
-### OpenAPI (a.k.a., Swagger) Definition Files
+### OpenAPI (a.k.a. Swagger) Definition Files
 
  The following [OpenAPI](https://www.openapis.org/) files are generated from the AU eRequesting CapabilityStatements:
 
