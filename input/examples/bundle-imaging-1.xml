@@ -80,7 +80,6 @@
         <request>
             <method value="POST"/>
             <url value="Patient"/>
-            <ifNoneExist value="identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608500314661"/>
         </request>
     </entry>
 
@@ -113,7 +112,6 @@
         <request>
             <method value="POST"/>
             <url value="Practitioner"/>
-            <ifNoneExist value="identifier=http://ns.electronichealth.net.au/id/hi/hpii/1.0|8003611566718288"/>
         </request>
     </entry>
 
@@ -166,7 +164,6 @@
         <request>
             <method value="POST"/>
             <url value="PractitionerRole"/>
-            <ifNoneExist value="identifier=http://ns.electronichealth.net.au/id/medicare-provider-number|2448301T"/>
         </request>
     </entry>
 
@@ -220,7 +217,6 @@
         <request>
             <method value="POST"/>
             <url value="Organization"/>
-            <ifNoneExist value="identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0|8003629900040359"/>
         </request>
     </entry>
 
@@ -276,7 +272,6 @@
         <request>
             <method value="POST"/>
             <url value="Organization"/>
-            <ifNoneExist value="identifier=http://ns.electronichealth.net.au/id/hi/hpio/1.0|8003623233373306"/>
         </request>
     </entry>
 
