@@ -370,12 +370,14 @@ The bundle may also contain `Encounter`, `Coverage`, `DocumentReference`, `Commu
 - `Bundle.type` is fixed to `transaction`. The transaction is atomic — if any single entry fails server-side validation the entire transaction is rolled back.
 - Every `entry.fullUrl` is a `urn:uuid:` value. The server assigns the canonical resource id when each `POST` succeeds; references between resources inside the bundle use the matching `urn:uuid:` so they resolve within the bundle.
 - **Workflow** resources (`ServiceRequest`, `Task`, `Encounter`, `Coverage`, `DocumentReference`, `CommunicationRequest`, `Observation`) use `POST` only — they are created unconditionally as new resources.
-- **Actor** resources (`Patient`, `Practitioner`, `PractitionerRole`, `Organization`) may use either:
+- **Actor** resources (`Patient`, `Practitioner`, `PractitionerRole`, `Organization`) use plain `POST` by default — each submission creates a new resource. This is the simplest and most deterministic behaviour and is recommended unless there is a specific reason to reuse a server-side resource.
+- Two optional patterns are available when the placer knows the actor's identifier on the target server:
   - `POST` with `entry.request.ifNoneExist` populated — conditional create. The server creates the resource only if no existing identifier match is found. The `ifNoneExist` query is typically an identifier search (e.g., HPI-I, HPI-O, IHI, Medicare Provider Number).
-  - `PUT` with the search query embedded in `entry.request.url` (for example, `Patient?identifier=...`) — conditional update by identifier. The server creates if no match, updates if exactly one match.
-- The choice depends on what the placer knows about the actors on the target server. Invariant `au-ereq-bundle-05` enforces the relationship between `request.method` and `request.ifNoneExist`.
+  - `PUT` with the search query embedded in `entry.request.url` (for example, `Organization?identifier=...`) — conditional update by identifier. The server creates if no match, updates if exactly one match.
+- **Caution — conditional update has cross-request effects.** A `PUT` (conditional update) to a shared resource such as the requesting `Organization` modifies the stored resource in place. That change is then seen by **every other diagnostic request that references that Organization**, not just the request being submitted. Plain `POST` avoids this because it always creates a fresh resource. Choose conditional update only when updating the shared resource for all of its consumers is the intended outcome.
 
 #### Example bundles
 
-- [bundle-pathology-multitest-1](Bundle-bundle-pathology-multitest-1.html) — four pathology ServiceRequests for an obstetric clinic visit.
-- [bundle-imaging-1](Bundle-bundle-imaging-1.html) — single chest X-ray imaging request.
+- [bundle-pathology-multitest-1](Bundle-bundle-pathology-multitest-1.html) — four pathology ServiceRequests for an obstetric clinic visit; all entries use plain `POST` (create new).
+- [bundle-imaging-1](Bundle-bundle-imaging-1.html) — single chest X-ray imaging request; all entries use plain `POST` (create new).
+- [bundle-imaging-put-1](Bundle-bundle-imaging-put-1.html) — the same chest X-ray request, but the `Organization` entries use `PUT` (conditional update by identifier) to demonstrate reuse of an existing shared resource and its cross-request effects.
