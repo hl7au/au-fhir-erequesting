@@ -78,8 +78,8 @@
             </Patient>
         </resource>
         <request>
-            <method value="PUT"/>
-            <url value="Patient?identifier=http://ns.electronichealth.net.au/id/hi/ihi/1.0|8003608500314661"/>
+            <method value="POST"/>
+            <url value="Patient"/>
         </request>
     </entry>
 
@@ -110,8 +110,8 @@
             </Practitioner>
         </resource>
         <request>
-            <method value="PUT"/>
-            <url value="Practitioner?identifier=http://ns.electronichealth.net.au/id/hi/hpii/1.0|8003611566718288"/>
+            <method value="POST"/>
+            <url value="Practitioner"/>
         </request>
     </entry>
 
@@ -162,8 +162,8 @@
             </PractitionerRole>
         </resource>
         <request>
-            <method value="PUT"/>
-            <url value="PractitionerRole?identifier=http://ns.electronichealth.net.au/id/medicare-provider-number|2448301T"/>
+            <method value="POST"/>
+            <url value="PractitionerRole"/>
         </request>
     </entry>
 
