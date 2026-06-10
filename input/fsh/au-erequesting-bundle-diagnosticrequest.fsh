@@ -2,13 +2,13 @@ Profile: AUeRequestingDiagnosticRequestBundle
 Parent: Bundle
 Id: au-erequesting-bundle-diagnosticrequest
 Title: "AU eRequesting Diagnostic Request Bundle"
-Description: "This profile sets minimum expectations for a Bundle resource that packages the FHIR resources required to create a new diagnostic request (pathology or imaging) as a single FHIR transaction. It is an abstract profile defining the common shape; concrete profiles for pathology and imaging requests derive from it. The bundle gathers the placer's view of the request — the ServiceRequest(s), the placer-side Task Group and Task Diagnostic Request(s), the patient and requesting clinician/organization, and any supporting resources (encounter, coverage, clinical context document, communication requests, supporting observations, filler organization, location). Entries use `urn:uuid:` fullUrls and `POST` request methods, with `ifNoneExist` populated on actor entries so the server only creates resources that don't already exist."
+Description: "This profile sets minimum expectations for a Bundle resource that packages the FHIR resources required to create a new diagnostic request (pathology or imaging) as a single FHIR transaction. It is an abstract profile defining the common shape; concrete profiles for pathology and imaging requests derive from it. The bundle gathers the placer's view of the request — the ServiceRequest(s), the placer-side Task Group and Task Diagnostic Request(s), the patient and requesting clinician/organization, and any supporting resources (encounter, coverage, clinical context document, communication requests, supporting observations, filler organization, location). Entries use `urn:uuid:` fullUrls and `POST` request methods to create new resources. Actor entries may optionally use conditional create (`POST` with `ifNoneExist`) or conditional update (`PUT`) when the placer knows the actor's identifier on the target server."
 
 * ^abstract = true
 * ^status = #active
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 
-* obeys au-ereq-bundle-01 and au-ereq-bundle-02 and au-ereq-bundle-03 and au-ereq-bundle-04 and au-ereq-bundle-05 and au-ereq-bundle-06
+* obeys au-ereq-bundle-01 and au-ereq-bundle-02 and au-ereq-bundle-03 and au-ereq-bundle-04 and au-ereq-bundle-06
 
 * type MS
 * type = #transaction (exactly)
@@ -533,11 +533,6 @@ Invariant: au-ereq-bundle-04
 Description: "Every entry.fullUrl shall be a urn:uuid: value with a lowercase UUID."
 Severity: #error
 Expression: "entry.all(fullUrl.matches('^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$'))"
-
-Invariant: au-ereq-bundle-05
-Description: "Actor resource entries (Patient, Practitioner, PractitionerRole, Organization) shall use HTTP POST with ifNoneExist for conditional create, or HTTP PUT (without ifNoneExist) for conditional update by identifier."
-Severity: #error
-Expression: "entry.where(resource is Patient or resource is Practitioner or resource is PractitionerRole or resource is Organization).all((request.method = 'POST' and request.ifNoneExist.exists()) or (request.method = 'PUT' and request.ifNoneExist.empty()))"
 
 Invariant: au-ereq-bundle-06
 Description: "The placer identifier value shall be unique across all ServiceRequest entries in the bundle. The placer identifier (ServiceRequest.identifier slice 'placer', type PLAC) is the per-test handle used by the $transfer operation; duplicate values would make a partial transfer ambiguous."
