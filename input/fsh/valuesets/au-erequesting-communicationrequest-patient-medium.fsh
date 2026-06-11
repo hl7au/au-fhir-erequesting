@@ -13,5 +13,5 @@ Description: "Medium values for patient communication used in the Australian eRe
 * ^publisher = "HL7 Australia"
 * ^status = #active 
 * ^experimental = false
-* $v3-ParticipationMode#SMSWRIT
-* $v3-ParticipationMode#EMAILWRIT
+* $v3-ParticipationMode|5.0.0#SMSWRIT
+* $v3-ParticipationMode|5.0.0#EMAILWRIT

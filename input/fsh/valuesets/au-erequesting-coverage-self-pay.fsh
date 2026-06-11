@@ -13,7 +13,7 @@ Description: "Coverage type and self-pay codes typically used in the Australian 
 * ^date = "2024-10-31"
 * ^publisher = "HL7 Australia"
 * ^copyright = "HL7 International"
-* $coverageselfpay#pay
-* $coverageselfpay#payconc
+* $coverageselfpay|1.0.1#pay
+* $coverageselfpay|1.0.1#payconc
 * $v3-actcode#PUBLICPOL
 * $v3-actcode#VET
