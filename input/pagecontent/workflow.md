@@ -338,4 +338,29 @@ The table below provides request state implementation guidance for AU eRequestin
 #### Relationship Between ServiceRequest.status and Task.status
 
 - While the [AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html) and [AU eRequesting Task Diagnostic Request](StructureDefinition-au-erequesting-task-diagnosticrequest.html) are loosely coupled, in practice, changes in `ServiceRequest.status` are expected to be reflected in the corresponding `Task.status` to maintain alignment across resources involved in the workflow. Placers are responsible for managing this alignment, as changes in the diagnostic request status often require corresponding updates in fulfilment management. Failure to maintain this alignment can lead to workflow inconsistencies, such as orphaned tasks or misaligned expectations between placers and fillers.
+
+### Specimens in a Pathology Request
+
+A pathology request may involve a specimen in one of two distinct ways. These are represented by different elements on the [AU eRequesting Pathology Request](StructureDefinition-au-erequesting-servicerequest-path.html) and it is important not to confuse them.
+
+#### Suggesting a Specimen to be Collected
+
+When the specimen has **not yet been collected**, for example where the patient will attend a collection centre or the specimen will be drawn by the filler, the requester may suggest the kind of specimen to be collected using the `ServiceRequest.extension:specimenSuggestion` extension.
+
+- In this release the suggestion is expressed as a **specimen type concept only**. Only the `concept` value is used; a reference to a `Specimen` or `ServiceRequest` resource is not supported.
+- The specimen type is coded from the [Specimen Type](https://healthterminologies.gov.au/fhir/ValueSet/specimen-type-1) value set.
+- No `Specimen` resource is created for a suggestion. The requester is indicating *what should be collected*, not describing a specimen that exists.
+
+See the [Urine MCS with Specimen Suggestion](ServiceRequest-order-mcs-suggestion-1.html) example.
+
+#### Referencing a Specimen Collected at the Time of Requesting
+
+When a specimen **has already been collected** at the time the request is raised, for example a biopsy or a swab taken during a consultation, the request references that specimen using `ServiceRequest.specimen`.
+
+- `ServiceRequest.specimen` **SHALL** reference an [AU eRequesting Collected Specimen](StructureDefinition-au-erequesting-specimen-collected.html).
+- The collected specimen is a real, physical sample. The profile carries the specimen type, the patient it was collected from, and, where known, when and from where it was collected and the collection technique.
+- Where a single collection serves more than one test, multiple pathology requests may reference the same collected specimen.
+- A server that supports this reference allows the specimen to be retrieved together with the request using the `_include` parameter for `ServiceRequest:specimen`.
+
+See the [Wound Microscopy, Culture and Sensitivities](ServiceRequest-order-woundmcs-1.html) request and its associated [Wound Swab](Specimen-specimen-wound-swab-1.html) specimen examples.
 - Some typical business rules on these status relationships are outlined in the [Request States](#request-states) table above.

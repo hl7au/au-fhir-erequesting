@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Specimen xmlns="http://hl7.org/fhir">
+    <id value="specimen-wound-swab-1"/>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-name">
+        <valueString value="Specimen - Wound Swab"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-instance-description">
+        <valueMarkdown value="Shows an example of a specimen collected at the time of requesting for the *AU eRequesting Collected Specimen* profile. A wound swab is taken from the index finger during a general practice consultation and referenced from the pathology request via `ServiceRequest.specimen`. Patient: Elijah Ken Scott."/>
+    </extension>
+    <meta>
+        <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-specimen-collected"/>
+    </meta>
+    <identifier>
+        <system value="http://ns.electronichealth.net.au/id/hpio-scoped/specimen/1.0/8003629900040359"/>
+        <value value="EMC4543344-1630-S1"/>
+        <assigner>
+            <display value="Elimbah Medical Centre"/>
+        </assigner>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="258531008"/>
+            <display value="Wound swab"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/scott-elijah-ken"/>
+    </subject>
+    <collection>
+        <collectedDateTime value="2024-05-12T10:20:00+10:00"/>
+        <bodySite>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="83738005"/>
+                <display value="Index finger structure"/>
+            </coding>
+        </bodySite>
+        <method>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="285570007"/>
+                <display value="Taking of swab"/>
+            </coding>
+        </method>
+    </collection>
+</Specimen>
