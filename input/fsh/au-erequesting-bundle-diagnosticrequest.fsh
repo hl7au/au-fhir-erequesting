@@ -8,7 +8,7 @@ Description: "This profile sets minimum expectations for a Bundle resource that 
 * ^status = #active
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 
-* obeys au-ereq-bundle-01 and au-ereq-bundle-02 and au-ereq-bundle-03 and au-ereq-bundle-04 and au-ereq-bundle-06
+* obeys au-ereq-bundle-01 and au-ereq-bundle-02 and au-ereq-bundle-03 and au-ereq-bundle-04 and au-ereq-bundle-06 and au-ereq-bundle-07
 
 * type MS
 * type = #transaction (exactly)
@@ -538,3 +538,8 @@ Invariant: au-ereq-bundle-06
 Description: "The placer identifier value shall be unique across all ServiceRequest entries in the bundle. The placer identifier (ServiceRequest.identifier slice 'placer', type PLAC) is the per-test handle used by the $transfer operation; duplicate values would make a partial transfer ambiguous."
 Severity: #error
 Expression: "entry.where(resource is ServiceRequest).select(resource.identifier.where(type.coding.where(system = 'http://terminology.hl7.org/CodeSystem/v2-0203' and code = 'PLAC').exists()).value).isDistinct()"
+
+Invariant: au-ereq-bundle-07
+Description: "Every entry request method shall be POST or PUT. The bundle creates resources (POST, optionally with ifNoneExist) or conditionally updates them by identifier (PUT); read and delete style interactions (GET, HEAD, DELETE, PATCH) are not permitted in a diagnostic request submission."
+Severity: #error
+Expression: "entry.all(request.method = 'POST' or request.method = 'PUT')"
