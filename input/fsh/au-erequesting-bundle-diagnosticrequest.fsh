@@ -48,6 +48,11 @@ Description: "This profile sets minimum expectations for a Bundle resource that 
 * entry ^extension[http://hl7.org/fhir/StructureDefinition/obligation][2].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
 * entry ^extension[http://hl7.org/fhir/StructureDefinition/obligation][2].extension[code].valueCode = #SHALL:able-to-populate
 
+// Every entry's request method must be POST or PUT (enforced by au-ereq-bundle-07). The element keeps
+// the base FHIR HTTPVerb binding, so the descriptive text below clarifies which verbs actually apply.
+* entry.request.method ^short = "POST | PUT (create or conditional update only)"
+* entry.request.method ^comment = "In an AU eRequesting diagnostic request submission an entry only creates a resource (POST, optionally with ifNoneExist) or conditionally updates one by identifier (PUT). Read and delete style interactions (GET, HEAD, DELETE, PATCH) are not permitted; although the element retains the base FHIR HTTPVerb value set, invariant au-ereq-bundle-07 restricts the permitted values to POST and PUT."
+
 // Patient
 * entry[patient] MS
 * entry[patient] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
@@ -228,6 +233,7 @@ Description: "This profile sets minimum expectations for a Bundle resource that 
 * entry[serviceRequest].request 1..1
 * entry[serviceRequest].request.method = #POST (exactly)
 * entry[serviceRequest].request.method MS
+* entry[serviceRequest].request.method ^short = "POST (create only)"
 * entry[serviceRequest].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * entry[serviceRequest].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
 * entry[serviceRequest].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
@@ -262,6 +268,7 @@ Description: "This profile sets minimum expectations for a Bundle resource that 
 * entry[taskGroup].request 1..1
 * entry[taskGroup].request.method = #POST (exactly)
 * entry[taskGroup].request.method MS
+* entry[taskGroup].request.method ^short = "POST (create only)"
 * entry[taskGroup].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * entry[taskGroup].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
 * entry[taskGroup].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
@@ -296,6 +303,7 @@ Description: "This profile sets minimum expectations for a Bundle resource that 
 * entry[taskDiagnosticRequest].request 1..1
 * entry[taskDiagnosticRequest].request.method = #POST (exactly)
 * entry[taskDiagnosticRequest].request.method MS
+* entry[taskDiagnosticRequest].request.method ^short = "POST (create only)"
 * entry[taskDiagnosticRequest].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * entry[taskDiagnosticRequest].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
 * entry[taskDiagnosticRequest].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
@@ -330,6 +338,7 @@ Description: "This profile sets minimum expectations for a Bundle resource that 
 * entry[encounter].request 1..1
 * entry[encounter].request.method = #POST (exactly)
 * entry[encounter].request.method MS
+* entry[encounter].request.method ^short = "POST (create only)"
 * entry[encounter].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * entry[encounter].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
 * entry[encounter].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
@@ -364,6 +373,7 @@ Description: "This profile sets minimum expectations for a Bundle resource that 
 * entry[coverage].request 1..1
 * entry[coverage].request.method = #POST (exactly)
 * entry[coverage].request.method MS
+* entry[coverage].request.method ^short = "POST (create only)"
 * entry[coverage].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * entry[coverage].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
 * entry[coverage].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
@@ -398,6 +408,7 @@ Description: "This profile sets minimum expectations for a Bundle resource that 
 * entry[clinicalContextDocument].request 1..1
 * entry[clinicalContextDocument].request.method = #POST (exactly)
 * entry[clinicalContextDocument].request.method MS
+* entry[clinicalContextDocument].request.method ^short = "POST (create only)"
 * entry[clinicalContextDocument].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * entry[clinicalContextDocument].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
 * entry[clinicalContextDocument].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
@@ -432,6 +443,7 @@ Description: "This profile sets minimum expectations for a Bundle resource that 
 * entry[communicationRequest].request 1..1
 * entry[communicationRequest].request.method = #POST (exactly)
 * entry[communicationRequest].request.method MS
+* entry[communicationRequest].request.method ^short = "POST (create only)"
 * entry[communicationRequest].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * entry[communicationRequest].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
 * entry[communicationRequest].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
@@ -466,6 +478,7 @@ Description: "This profile sets minimum expectations for a Bundle resource that 
 * entry[supportingObservation].request 1..1
 * entry[supportingObservation].request.method = #POST (exactly)
 * entry[supportingObservation].request.method MS
+* entry[supportingObservation].request.method ^short = "POST (create only)"
 * entry[supportingObservation].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * entry[supportingObservation].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
 * entry[supportingObservation].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
@@ -500,6 +513,7 @@ Description: "This profile sets minimum expectations for a Bundle resource that 
 * entry[location].request 1..1
 * entry[location].request.method = #POST (exactly)
 * entry[location].request.method MS
+* entry[location].request.method ^short = "POST (create only)"
 * entry[location].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-placer"
 * entry[location].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][0].extension[code].valueCode = #SHALL:populate
 * entry[location].request.method ^extension[http://hl7.org/fhir/StructureDefinition/obligation][1].extension[actor].valueCanonical = "http://hl7.org.au/fhir/ereq/ActorDefinition/au-erequesting-actor-server"
