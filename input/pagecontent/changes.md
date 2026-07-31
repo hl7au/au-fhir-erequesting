@@ -14,7 +14,7 @@ This change log documents the significant updates and resolutions implemented fr
 - [AU eRequesting Imaging Request Bundle](StructureDefinition-au-erequesting-bundle-imagingrequest.html):
   - added new profile deriving from AU eRequesting Diagnostic Request Bundle and constraining ServiceRequest entries to [AU eRequesting Imaging Request](StructureDefinition-au-erequesting-servicerequest-imag.html) [AU eReq: FHIR-52518](https://jira.hl7.org/browse/FHIR-52518)
 - [AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html):
-  - added placer slice to ServiceRequest.identifier as Must Support with cardinality 1..1, typed with code PLAC, to carry the placer's per-test identifier distinct from the group identifier in ServiceRequest.requisition [AU eReq: FHIR-XXXXX](https://jira.hl7.org/browse/FHIR-XXXXX)
+  - added placer slice to ServiceRequest.identifier as Must Support with cardinality 1..1, typed with code PLAC, to carry the placer's per-test identifier distinct from the group identifier in ServiceRequest.requisition [AU eReq: FHIR-50081](https://jira.hl7.org/browse/FHIR-50081)
 
 ### Release 1.0.0
 - Publication date: 11-02-2026
