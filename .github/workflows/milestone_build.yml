@@ -11,8 +11,13 @@ on:
 
 
 permissions:
-  id-token: write # This is required for requesting the JWT
   contents: read  # This is required for actions/checkout
+
+# Note: the "Download past versions" step runs `aws s3 sync`, which relies on the
+# AWS credentials already available to the self-hosted runner (e.g. an EC2 instance
+# profile). No id-token permission is requested: OIDC would additionally require an
+# explicit token-exchange step such as aws-actions/configure-aws-credentials, and
+# without one the permission grants nothing.
   
 jobs:
   build:
@@ -38,7 +43,7 @@ jobs:
         
     - name: Get the tag name
       id: get_tag
-      run: echo "##[set-output name=tag;]${GITHUB_REF#refs/tags/}"
+      run: echo "tag=${GITHUB_REF#refs/tags/}" >> "$GITHUB_OUTPUT"
 
     - name: Checkout Publications Repository
       uses: actions/checkout@v4
@@ -82,7 +87,6 @@ jobs:
       
     - name: Download package-list.json
       run: |
-        rm -rf hl7au/au-fhir-ereq/package-list.json
         curl --output webroot/fhir/ereq/package-list.json --url "https://hl7.org.au/fhir/ereq/package-list.json"
 
     - name: Generate Package Registry
