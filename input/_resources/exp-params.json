@@ -12,7 +12,7 @@
       },
       {
         "name": "system-version",
-        "valueUri": "http://terminology.hl7.org/CodeSystem/v3-ParticipationMode|5.0.0"
+        "valueUri": "http://terminology.hl7.org/CodeSystem/v3-ParticipationMode|6.0.0"
       },
       {
         "name": "system-version",
