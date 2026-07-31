@@ -22,6 +22,10 @@ Thumbs.db
 .DS_Store
 .DS_Store?
 
+# Working notes, plans and presentations - kept locally, not part of the IG #
+#############################################################################
+/docs/superpowers/
+
 # backup files #
 ################
 *.bak
