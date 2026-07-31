@@ -7,7 +7,7 @@ This change log documents the significant updates and resolutions implemented fr
 
 #### Changes in This Version
 - [AU eRequesting Diagnostic Request Bundle](StructureDefinition-au-erequesting-bundle-diagnosticrequest.html):
-  - added new abstract profile defining the common shape of a transaction Bundle that packages a new diagnostic request, including sliced entries for the patient, requesting practitioner and practitioner role, organization, ServiceRequest, Task Group and Task Diagnostic Request, and optional supporting resources [AU eReq: FHIR-XXXXX](https://jira.hl7.org/browse/FHIR-XXXXX)
+  - added new abstract profile defining the common shape of a transaction Bundle that packages a new diagnostic request, including sliced entries for the patient, requesting practitioner and practitioner role, organization, ServiceRequest, Task Group and Task Diagnostic Request, and optional supporting resources, and restricting entry request methods to POST and PUT [AU eReq: FHIR-XXXXX](https://jira.hl7.org/browse/FHIR-XXXXX)
 - [AU eRequesting Pathology Request Bundle](StructureDefinition-au-erequesting-bundle-pathologyrequest.html):
   - added new profile deriving from AU eRequesting Diagnostic Request Bundle and constraining ServiceRequest entries to [AU eRequesting Pathology Request](StructureDefinition-au-erequesting-servicerequest-path.html) [AU eReq: FHIR-XXXXX](https://jira.hl7.org/browse/FHIR-XXXXX)
 - [AU eRequesting Imaging Request Bundle](StructureDefinition-au-erequesting-bundle-imagingrequest.html):
