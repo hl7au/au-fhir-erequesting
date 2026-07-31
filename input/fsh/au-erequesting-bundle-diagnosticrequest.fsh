@@ -6,7 +6,7 @@ Description: "This profile sets minimum expectations for a Bundle resource that 
 
 * ^abstract = true
 * ^status = #active
-* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 
 * obeys au-ereq-bundle-01 and au-ereq-bundle-02 and au-ereq-bundle-03 and au-ereq-bundle-04 and au-ereq-bundle-06 and au-ereq-bundle-07
 
