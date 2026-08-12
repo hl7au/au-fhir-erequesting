@@ -36,6 +36,24 @@ dependencies:
     version: current
   hl7.fhir.uv.ips: 
     version: 2.0.0
+# The resources property corresponds to IG.definition.resource. SUSHI
+# auto-detects resources, but raw (non-FSH) examples such as the request
+# Bundles have no description the publisher can infer, so an explicit
+# description is supplied here to satisfy the "Unable to find
+# ImplementationGuide.definition.resource.description" QA warning.
+resources:
+  Bundle/bundle-imaging-1:
+    name: Imaging Request Bundle Example
+    description: "Example AU eRequesting Imaging Request Bundle: a transaction Bundle that places a new imaging diagnostic request with a single ServiceRequest. All entries use plain POST, creating new resources."
+    exampleCanonical: http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-bundle-imagingrequest
+  Bundle/bundle-imaging-put-1:
+    name: Imaging Request Bundle Example (conditional update)
+    description: "Example AU eRequesting Imaging Request Bundle demonstrating conditional update: the same single-imaging-request scenario as bundle-imaging-1, but the Organization entries use HTTP PUT (conditional update by identifier) while all other entries use plain POST. Illustrates reuse of an existing shared Organization and its effect on other requests."
+    exampleCanonical: http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-bundle-imagingrequest
+  Bundle/bundle-pathology-multitest-1:
+    name: Pathology Request Bundle Example (multiple tests)
+    description: "Example AU eRequesting Pathology Request Bundle with multiple tests: a transaction Bundle placing four pathology ServiceRequests in a single order, each with its own per-test placer identifier and Task Diagnostic Request, sharing one Task Group. All entries use plain POST, creating new resources."
+    exampleCanonical: http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-bundle-pathologyrequest
 # The pages property corresponds to IG.definition.page. SUSHI can
 # auto-generate the page list, but if the author includes pages in
 # this file, it is assumed that the author will fully manage the

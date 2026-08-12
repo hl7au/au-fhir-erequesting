@@ -5,6 +5,18 @@
       {
         "name": "system-version",
         "valueUri": "http://snomed.info/sct|http://snomed.info/sct/32506021000036107"
+      },
+      {
+        "name": "system-version",
+        "valueUri": "http://terminology.hl7.org/CodeSystem/v2-0203|5.0.0"
+      },
+      {
+        "name": "system-version",
+        "valueUri": "http://terminology.hl7.org/CodeSystem/v3-ParticipationMode|6.0.0"
+      },
+      {
+        "name": "system-version",
+        "valueUri": "http://terminology.hl7.org/CodeSystem/coverage-selfpay|1.0.1"
       }
     ]
   }

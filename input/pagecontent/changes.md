@@ -6,6 +6,15 @@
 This change log documents the significant updates and resolutions implemented from version [1.0.0](https://hl7.org.au/fhir/ereq/1.0.0/index.html) to TBD. The list below includes substantive changes to mandatory and *Must Support* elements inherited from AU Base.
 
 #### Changes in This Version
+- added Transaction Bundle Assembly guidance to the [Workflow](workflow.html) page, describing how to package a new diagnostic request as a single transaction, which resource types are required or optional in a placer transaction, and which profiles to use for each [AU eReq: FHIR-52518](https://jira.hl7.org/browse/FHIR-52518)
+- [AU eRequesting Diagnostic Request Bundle](StructureDefinition-au-erequesting-bundle-diagnosticrequest.html):
+  - added new abstract profile defining the common shape of a transaction Bundle that packages a new diagnostic request, including sliced entries for the patient, requesting practitioner and practitioner role, organization, ServiceRequest, Task Group and Task Diagnostic Request, and optional supporting resources, and restricting entry request methods to POST and PUT [AU eReq: FHIR-52518](https://jira.hl7.org/browse/FHIR-52518)
+- [AU eRequesting Pathology Request Bundle](StructureDefinition-au-erequesting-bundle-pathologyrequest.html):
+  - added new profile deriving from AU eRequesting Diagnostic Request Bundle and constraining ServiceRequest entries to [AU eRequesting Pathology Request](StructureDefinition-au-erequesting-servicerequest-path.html) [AU eReq: FHIR-52518](https://jira.hl7.org/browse/FHIR-52518)
+- [AU eRequesting Imaging Request Bundle](StructureDefinition-au-erequesting-bundle-imagingrequest.html):
+  - added new profile deriving from AU eRequesting Diagnostic Request Bundle and constraining ServiceRequest entries to [AU eRequesting Imaging Request](StructureDefinition-au-erequesting-servicerequest-imag.html) [AU eReq: FHIR-52518](https://jira.hl7.org/browse/FHIR-52518)
+- [AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html):
+  - added placer slice to ServiceRequest.identifier as Must Support with cardinality 1..1, typed with code PLAC, to carry the placer's per-test identifier distinct from the group identifier in ServiceRequest.requisition [AU eReq: FHIR-50081](https://jira.hl7.org/browse/FHIR-50081)
 
 ### Release 1.0.0
 - Publication date: 11-02-2026

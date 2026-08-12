@@ -339,3 +339,45 @@ The table below provides request state implementation guidance for AU eRequestin
 
 - While the [AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html) and [AU eRequesting Task Diagnostic Request](StructureDefinition-au-erequesting-task-diagnosticrequest.html) are loosely coupled, in practice, changes in `ServiceRequest.status` are expected to be reflected in the corresponding `Task.status` to maintain alignment across resources involved in the workflow. Placers are responsible for managing this alignment, as changes in the diagnostic request status often require corresponding updates in fulfilment management. Failure to maintain this alignment can lead to workflow inconsistencies, such as orphaned tasks or misaligned expectations between placers and fillers.
 - Some typical business rules on these status relationships are outlined in the [Request States](#request-states) table above.
+
+### Transaction Bundle Assembly
+
+This section describes how to package a new diagnostic request as a single FHIR transaction Bundle suitable for submission to an [AU eRequesting Server](ActorDefinition-au-erequesting-actor-server.html). It is non-normative narrative guidance accompanying the [AU eRequesting Diagnostic Request Bundle](StructureDefinition-au-erequesting-bundle-diagnosticrequest.html) profile family.
+
+#### Profile family
+
+| Profile | Use when |
+|---|---|
+| [AU eRequesting Diagnostic Request Bundle](StructureDefinition-au-erequesting-bundle-diagnosticrequest.html) | Abstract — defines the common shape; do not instantiate directly. |
+| [AU eRequesting Pathology Request Bundle](StructureDefinition-au-erequesting-bundle-pathologyrequest.html) | Submitting one or more pathology requests as a single transaction. |
+| [AU eRequesting Imaging Request Bundle](StructureDefinition-au-erequesting-bundle-imagingrequest.html) | Submitting one or more imaging requests as a single transaction. |
+
+#### Composition
+
+A conformant bundle must contain:
+
+- exactly one `Patient`
+- exactly one requesting `Practitioner` and one `PractitionerRole`
+- one or two `Organization` entries (the placer organization is mandatory; the filler organization is optional and used for assigned requests)
+- one or more `ServiceRequest` entries conforming to the appropriate concrete diagnostic request profile
+- exactly one `Task` conforming to the [AU eRequesting Task Group](StructureDefinition-au-erequesting-task-group.html) profile
+- one or more `Task` entries conforming to the [AU eRequesting Task Diagnostic Request](StructureDefinition-au-erequesting-task-diagnosticrequest.html) profile — one per `ServiceRequest`
+
+The bundle may also contain `Encounter`, `Coverage`, `DocumentReference`, `CommunicationRequest`, `Observation`, and `Location` resources as required by the request scenario.
+
+#### Transaction semantics
+
+- `Bundle.type` is fixed to `transaction`. The transaction is atomic — if any single entry fails server-side validation the entire transaction is rolled back.
+- Every `entry.fullUrl` is a `urn:uuid:` value. The server assigns the canonical resource id when each `POST` succeeds; references between resources inside the bundle use the matching `urn:uuid:` so they resolve within the bundle.
+- **Workflow** resources (`ServiceRequest`, `Task`, `Encounter`, `Coverage`, `DocumentReference`, `CommunicationRequest`, `Observation`) use `POST` only — they are created unconditionally as new resources.
+- **Actor** resources (`Patient`, `Practitioner`, `PractitionerRole`, `Organization`) use plain `POST` by default — each submission creates a new resource. This is the simplest and most deterministic behaviour and is recommended unless there is a specific reason to reuse a server-side resource.
+- Two optional patterns are available when the placer knows the actor's identifier on the target server:
+  - `POST` with `entry.request.ifNoneExist` populated — conditional create. The server creates the resource only if no existing identifier match is found. The `ifNoneExist` query is typically an identifier search (e.g., HPI-I, HPI-O, IHI, Medicare Provider Number).
+  - `PUT` with the search query embedded in `entry.request.url` (for example, `Organization?identifier=...`) — conditional update by identifier. The server creates if no match, updates if exactly one match.
+- **Caution — conditional update has cross-request effects.** A `PUT` (conditional update) to a shared resource such as the requesting `Organization` modifies the stored resource in place. That change is then seen by **every other diagnostic request that references that Organization**, not just the request being submitted. Plain `POST` avoids this because it always creates a fresh resource. Choose conditional update only when updating the shared resource for all of its consumers is the intended outcome.
+
+#### Example bundles
+
+- [bundle-pathology-multitest-1](Bundle-bundle-pathology-multitest-1.html) — four pathology ServiceRequests for an obstetric clinic visit; all entries use plain `POST` (create new).
+- [bundle-imaging-1](Bundle-bundle-imaging-1.html) — single chest X-ray imaging request; all entries use plain `POST` (create new).
+- [bundle-imaging-put-1](Bundle-bundle-imaging-put-1.html) — the same chest X-ray request, but the `Organization` entries use `PUT` (conditional update by identifier) to demonstrate reuse of an existing shared resource and its cross-request effects.

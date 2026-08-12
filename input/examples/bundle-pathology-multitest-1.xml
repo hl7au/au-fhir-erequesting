@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="bundle-pathology-multitest-1"/>
+    <meta>
+        <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-bundle-pathologyrequest"/>
+    </meta>
+    <type value="transaction"/>
+
+    <entry>
+        <fullUrl value="urn:uuid:6f5f6f11-0001-4001-8001-000000000101"/>
+        <resource>
+            <Patient xmlns="http://hl7.org/fhir">
+                <meta>
+                    <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-patient"/>
+                </meta>
+                <extension url="http://hl7.org.au/fhir/StructureDefinition/indigenous-status">
+                    <valueCoding>
+                        <system value="https://healthterminologies.gov.au/fhir/CodeSystem/australian-indigenous-status-1"/>
+                        <code value="3"/>
+                        <display value="Both Aboriginal and Torres Strait Islander origin"/>
+                    </valueCoding>
+                </extension>
+                <identifier>
+                    <extension url="http://hl7.org.au/fhir/StructureDefinition/ihi-status">
+                        <valueCoding>
+                            <system value="https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1"/>
+                            <code value="active"/>
+                        </valueCoding>
+                    </extension>
+                    <extension url="http://hl7.org.au/fhir/StructureDefinition/ihi-record-status">
+                        <valueCoding>
+                            <system value="https://healthterminologies.gov.au/fhir/CodeSystem/ihi-record-status-1"/>
+                            <code value="verified"/>
+                            <display value="verified"/>
+                        </valueCoding>
+                    </extension>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="NI"/>
+                        </coding>
+                        <text value="IHI"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+                    <value value="8003608666976378"/>
+                </identifier>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="MC"/>
+                        </coding>
+                        <text value="Medicare Number"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/medicare-number"/>
+                    <value value="49516515811"/>
+                </identifier>
+                <name>
+                    <use value="official"/>
+                    <family value="BELGER"/>
+                    <given value="Remedios"/>
+                </name>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="0770109100"/>
+                    <use value="home"/>
+                </telecom>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="0491570159"/>
+                    <use value="mobile"/>
+                </telecom>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="0770103121"/>
+                    <use value="work"/>
+                </telecom>
+                <gender value="female"/>
+                <birthDate value="1989-01-04"/>
+                <address>
+                    <line value="200 Ocean Pl"/>
+                    <city value="Logan Reserve"/>
+                    <state value="QLD"/>
+                    <postalCode value="4133"/>
+                    <country value="AU"/>
+                </address>
+            </Patient>
+        </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Patient"/>
+        </request>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:6f5f6f11-0001-4001-8001-000000000102"/>
+        <resource>
+            <Practitioner xmlns="http://hl7.org/fhir">
+                <meta>
+                    <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-practitioner"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="NPI"/>
+                            <display value="National provider identifier"/>
+                        </coding>
+                        <text value="HPI-I"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hi/hpii/1.0"/>
+                    <value value="8003613233384866"/>
+                </identifier>
+                <name>
+                    <family value="LOSCH"/>
+                    <given value="Sallie"/>
+                </name>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="0270104128"/>
+                    <use value="work"/>
+                </telecom>
+                <telecom>
+                    <system value="email"/>
+                    <value value="sallie.losch@example.com.au"/>
+                </telecom>
+                <address>
+                    <line value="93 Elizabeth Cl"/>
+                    <city value="Marlowe"/>
+                    <state value="NSW"/>
+                    <postalCode value="2622"/>
+                </address>
+                <gender value="female"/>
+                <qualification>
+                    <identifier>
+                        <type>
+                            <coding>
+                                <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
+                                <code value="AHPRA"/>
+                                <display value="Australian Health Practitioner Regulation Agency Registration Number"/>
+                            </coding>
+                            <text value="Ahpra Registration Number"/>
+                        </type>
+                        <system value="http://hl7.org.au/id/ahpra-registration-number"/>
+                        <value value="HAC0000000068"/>
+                    </identifier>
+                    <code>
+                        <coding>
+                            <system value="http://terminology.hl7.org.au/CodeSystem/v2-0360"/>
+                            <code value="AHPRA"/>
+                            <display value="Ahpra Registration"/>
+                        </coding>
+                        <text value="Ahpra Other Medical Practitioners"/>
+                    </code>
+                </qualification>
+            </Practitioner>
+        </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Practitioner"/>
+        </request>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:6f5f6f11-0001-4001-8001-000000000103"/>
+        <resource>
+            <PractitionerRole xmlns="http://hl7.org/fhir">
+                <meta>
+                    <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-practitionerrole"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
+                            <code value="UPIN"/>
+                        </coding>
+                        <text value="Medicare Provider Number"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/medicare-provider-number"/>
+                    <value value="2448931H"/>
+                </identifier>
+                <practitioner>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000102"/>
+                </practitioner>
+                <code>
+                    <coding>
+                        <system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0"/>
+                        <code value="253913"/>
+                        <display value="Obstetrician and Gynaecologist"/>
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="309367003"/>
+                        <display value="Obstetrician and gynaecologist"/>
+                    </coding>
+                </code>
+                <specialty>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="394585009"/>
+                        <display value="Obstetrics and gynaecology"/>
+                    </coding>
+                </specialty>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="0270104128"/>
+                    <use value="work"/>
+                </telecom>
+                <telecom>
+                    <system value="email"/>
+                    <value value="sallie.losch@example.com.au"/>
+                    <use value="work"/>
+                </telecom>
+            </PractitionerRole>
+        </resource>
+        <request>
+            <method value="POST"/>
+            <url value="PractitionerRole"/>
+        </request>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:6f5f6f11-0001-4001-8001-000000000104"/>
+        <resource>
+            <Organization xmlns="http://hl7.org/fhir">
+                <meta>
+                    <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-organization"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
+                            <code value="NOI"/>
+                            <display value="National Organisation Identifier"/>
+                        </coding>
+                        <text value="HPI-O"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hi/hpio/1.0"/>
+                    <value value="8003629900040359"/>
+                </identifier>
+                <type>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="288565001"/>
+                        <display value="Medical centre"/>
+                    </coding>
+                    <text value="Medical Centre"/>
+                </type>
+                <name value="Elimbah Medical Centre"/>
+                <telecom>
+                    <system value="email"/>
+                    <value value="info@elimbahmedicalcentre.example.com.au"/>
+                    <use value="work"/>
+                </telecom>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="(07)555 03997"/>
+                    <use value="work"/>
+                </telecom>
+                <address>
+                    <line value="199 Copper Esp"/>
+                    <city value="Elimbah"/>
+                    <state value="QLD"/>
+                    <postalCode value="4516"/>
+                    <country value="AU"/>
+                </address>
+            </Organization>
+        </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Organization"/>
+        </request>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:6f5f6f11-0001-4001-8001-000000000105"/>
+        <resource>
+            <Organization xmlns="http://hl7.org/fhir">
+                <meta>
+                    <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-organization"/>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org.au/CodeSystem/v2-0203"/>
+                            <code value="NOI"/>
+                            <display value="National Organisation Identifier"/>
+                        </coding>
+                        <text value="HPI-O"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hi/hpio/1.0"/>
+                    <value value="8003621566705995"/>
+                </identifier>
+                <type>
+                    <coding>
+                        <system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1292.0"/>
+                        <code value="8520"/>
+                        <display value="Pathology and Diagnostic Imaging Services"/>
+                    </coding>
+                    <text value="Pathology laboratory"/>
+                </type>
+                <name value="Kioma Pathology"/>
+                <telecom>
+                    <system value="email"/>
+                    <value value="info@kiomapathology.example.net"/>
+                    <use value="work"/>
+                </telecom>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="(07) 5550 5000"/>
+                    <use value="work"/>
+                </telecom>
+                <address>
+                    <use value="work"/>
+                    <type value="physical"/>
+                    <line value="15 Hazlett Est"/>
+                    <city value="Kioma"/>
+                    <state value="QLD"/>
+                    <postalCode value="4498"/>
+                    <country value="AU"/>
+                </address>
+            </Organization>
+        </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Organization"/>
+        </request>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:6f5f6f11-0001-4001-8001-000000000106"/>
+        <resource>
+            <Encounter xmlns="http://hl7.org/fhir">
+                <meta>
+                    <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-encounter"/>
+                </meta>
+                <status value="finished"/>
+                <class>
+                    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+                    <code value="AMB"/>
+                    <display value="ambulatory"/>
+                </class>
+                <subject>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000101"/>
+                </subject>
+                <period>
+                    <start value="2025-02-21T07:50:00+10:00"/>
+                    <end value="2025-02-21T08:20:00+10:00"/>
+                </period>
+            </Encounter>
+        </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Encounter"/>
+        </request>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:6f5f6f11-0001-4001-8001-000000000108"/>
+        <resource>
+            <ServiceRequest xmlns="http://hl7.org/fhir">
+                <meta>
+                    <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest-path"/>
+                </meta>
+                <extension url="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-displaysequence">
+                    <valueInteger value="2"/>
+                </extension>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="PLAC"/>
+                            <display value="Placer Identifier"/>
+                        </coding>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
+                    <value value="EMC1552642-1110-02"/>
+                    <assigner>
+                        <display value="Elimbah Medical Centre"/>
+                    </assigner>
+                </identifier>
+                <requisition>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="PGN"/>
+                            <display value="Placer Group Number"/>
+                        </coding>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
+                    <value value="EMC1552642-1110"/>
+                    <assigner>
+                        <display value="Elimbah Medical Centre"/>
+                    </assigner>
+                </requisition>
+                <status value="active"/>
+                <intent value="order"/>
+                <category>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="108252007"/>
+                        <display value="Laboratory procedure"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="20099001"/>
+                        <display value="Blood typing, ABO, Rho(D) and RBC antibody screening"/>
+                    </coding>
+                    <text value="Blood Group and Ab Screen"/>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000101"/>
+                </subject>
+                <encounter>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000106"/>
+                </encounter>
+                <authoredOn value="2025-02-21"/>
+                <requester>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000103"/>
+                </requester>
+            </ServiceRequest>
+        </resource>
+        <request>
+            <method value="POST"/>
+            <url value="ServiceRequest"/>
+        </request>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:6f5f6f11-0001-4001-8001-000000000109"/>
+        <resource>
+            <ServiceRequest xmlns="http://hl7.org/fhir">
+                <meta>
+                    <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest-path"/>
+                </meta>
+                <extension url="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-displaysequence">
+                    <valueInteger value="1"/>
+                </extension>
+                <extension url="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-fastingprecondition">
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value="http://snomed.info/sct"/>
+                            <code value="16985007"/>
+                            <display value="Fasting"/>
+                        </coding>
+                    </valueCodeableConcept>
+                </extension>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="PLAC"/>
+                            <display value="Placer Identifier"/>
+                        </coding>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
+                    <value value="EMC1552642-1110-01"/>
+                    <assigner>
+                        <display value="Elimbah Medical Centre"/>
+                    </assigner>
+                </identifier>
+                <requisition>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="PGN"/>
+                            <display value="Placer Group Number"/>
+                        </coding>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
+                    <value value="EMC1552642-1110"/>
+                    <assigner>
+                        <display value="Elimbah Medical Centre"/>
+                    </assigner>
+                </requisition>
+                <status value="active"/>
+                <intent value="order"/>
+                <category>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="108252007"/>
+                        <display value="Laboratory procedure"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="271062006"/>
+                        <display value="Fasting blood glucose"/>
+                    </coding>
+                    <text value="Glucose, Fasting"/>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000101"/>
+                </subject>
+                <encounter>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000106"/>
+                </encounter>
+                <occurrenceDateTime value="2025-02-21T08:00:00+10:00"/>
+                <authoredOn value="2025-02-21"/>
+                <requester>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000103"/>
+                </requester>
+                <reasonCode>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="1268646002"/>
+                        <display value="Gestational diabetes mellitus screening"/>
+                    </coding>
+                </reasonCode>
+            </ServiceRequest>
+        </resource>
+        <request>
+            <method value="POST"/>
+            <url value="ServiceRequest"/>
+        </request>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:6f5f6f11-0001-4001-8001-000000000110"/>
+        <resource>
+            <ServiceRequest xmlns="http://hl7.org/fhir">
+                <meta>
+                    <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest-path"/>
+                </meta>
+                <extension url="http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse">
+                    <extension url="value">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="http://terminology.hl7.org/CodeSystem/sex-parameter-for-clinical-use"/>
+                                <code value="female-typical"/>
+                                <display value="Apply female-typical setting or reference range"/>
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                    <extension url="comment">
+                        <valueString value="Use female reference intervals when interpreting results"/>
+                    </extension>
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/request-statusReason">
+                    <valueCodeableConcept>
+                        <text value="On-hold pending normal urine MCS or resolution of suspected UTI."/>
+                    </valueCodeableConcept>
+                </extension>
+                <extension url="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-displaysequence">
+                    <valueInteger value="4"/>
+                </extension>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="PLAC"/>
+                            <display value="Placer Identifier"/>
+                        </coding>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
+                    <value value="EMC1552642-1110-04"/>
+                    <assigner>
+                        <display value="Elimbah Medical Centre"/>
+                    </assigner>
+                </identifier>
+                <requisition>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="PGN"/>
+                            <display value="Placer Group Number"/>
+                        </coding>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
+                    <value value="EMC1552642-1110"/>
+                    <assigner>
+                        <display value="Elimbah Medical Centre"/>
+                    </assigner>
+                </requisition>
+                <status value="on-hold"/>
+                <intent value="order"/>
+                <category>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="108252007"/>
+                        <display value="Laboratory procedure"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="269820002"/>
+                    </coding>
+                    <text value="Iron studies"/>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000101"/>
+                </subject>
+                <encounter>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000106"/>
+                </encounter>
+                <authoredOn value="2025-02-21"/>
+                <requester>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000103"/>
+                </requester>
+            </ServiceRequest>
+        </resource>
+        <request>
+            <method value="POST"/>
+            <url value="ServiceRequest"/>
+        </request>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:6f5f6f11-0001-4001-8001-000000000111"/>
+        <resource>
+            <ServiceRequest xmlns="http://hl7.org/fhir">
+                <meta>
+                    <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-servicerequest-path"/>
+                </meta>
+                <extension url="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-displaysequence">
+                    <valueInteger value="3"/>
+                </extension>
+                <extension url="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-fastingprecondition">
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value="http://snomed.info/sct"/>
+                            <code value="440565004"/>
+                            <display value="Nonfasting"/>
+                        </coding>
+                    </valueCodeableConcept>
+                </extension>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="PLAC"/>
+                            <display value="Placer Identifier"/>
+                        </coding>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
+                    <value value="EMC1552642-1110-03"/>
+                    <assigner>
+                        <display value="Elimbah Medical Centre"/>
+                    </assigner>
+                </identifier>
+                <requisition>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="PGN"/>
+                            <display value="Placer Group Number"/>
+                        </coding>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
+                    <value value="EMC1552642-1110"/>
+                    <assigner>
+                        <display value="Elimbah Medical Centre"/>
+                    </assigner>
+                </requisition>
+                <status value="active"/>
+                <intent value="order"/>
+                <category>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="108252007"/>
+                        <display value="Laboratory procedure"/>
+                    </coding>
+                </category>
+                <priority value="urgent"/>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="401324008"/>
+                        <display value="Urine microscopy, culture and sensitivities"/>
+                    </coding>
+                    <text value="Urine MCS"/>
+                </code>
+                <subject>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000101"/>
+                </subject>
+                <encounter>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000106"/>
+                </encounter>
+                <occurrenceDateTime value="2025-02-21T08:10:00+10:00"/>
+                <authoredOn value="2025-02-21"/>
+                <requester>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000103"/>
+                </requester>
+            </ServiceRequest>
+        </resource>
+        <request>
+            <method value="POST"/>
+            <url value="ServiceRequest"/>
+        </request>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:6f5f6f11-0001-4001-8001-000000000201"/>
+        <resource>
+            <Task xmlns="http://hl7.org/fhir">
+                <meta>
+                    <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-task-group"/>
+                    <tag>
+                        <system value="http://terminology.hl7.org.au/CodeSystem/resource-tag"/>
+                        <code value="fulfilment-task-group"/>
+                    </tag>
+                </meta>
+                <groupIdentifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="PGN"/>
+                        </coding>
+                        <text value="Placer Group Number"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
+                    <value value="EMC1552642-1110"/>
+                    <assigner>
+                        <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000104"/>
+                        <display value="Elimbah Medical Centre"/>
+                    </assigner>
+                </groupIdentifier>
+                <status value="requested"/>
+                <intent value="order"/>
+                <priority value="routine"/>
+                <code>
+                    <coding>
+                        <system value="http://hl7.org/fhir/CodeSystem/task-code"/>
+                        <code value="fulfill"/>
+                    </coding>
+                </code>
+                <for>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000101"/>
+                </for>
+                <authoredOn value="2025-02-21"/>
+                <requester>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000103"/>
+                </requester>
+                <owner>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000105"/>
+                </owner>
+            </Task>
+        </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Task"/>
+        </request>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:6f5f6f11-0001-4001-8001-000000000202"/>
+        <resource>
+            <Task xmlns="http://hl7.org/fhir">
+                <meta>
+                    <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-task-diagnosticrequest"/>
+                    <tag>
+                        <system value="http://terminology.hl7.org.au/CodeSystem/resource-tag"/>
+                        <code value="fulfilment-task"/>
+                    </tag>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="PLAC"/>
+                            <display value="Placer Identifier"/>
+                        </coding>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
+                    <value value="EMC1552642-1110-02"/>
+                    <assigner>
+                        <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000104"/>
+                        <display value="Elimbah Medical Centre"/>
+                    </assigner>
+                </identifier>
+                <groupIdentifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="PGN"/>
+                        </coding>
+                        <text value="Placer Group Number"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
+                    <value value="EMC1552642-1110"/>
+                    <assigner>
+                        <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000104"/>
+                        <display value="Elimbah Medical Centre"/>
+                    </assigner>
+                </groupIdentifier>
+                <partOf>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000201"/>
+                </partOf>
+                <status value="requested"/>
+                <intent value="order"/>
+                <priority value="routine"/>
+                <code>
+                    <coding>
+                        <system value="http://hl7.org/fhir/CodeSystem/task-code"/>
+                        <code value="fulfill"/>
+                    </coding>
+                </code>
+                <focus>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000108"/>
+                </focus>
+                <for>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000101"/>
+                </for>
+                <authoredOn value="2025-02-21"/>
+                <requester>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000103"/>
+                </requester>
+                <owner>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000105"/>
+                </owner>
+            </Task>
+        </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Task"/>
+        </request>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:6f5f6f11-0001-4001-8001-000000000203"/>
+        <resource>
+            <Task xmlns="http://hl7.org/fhir">
+                <meta>
+                    <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-task-diagnosticrequest"/>
+                    <tag>
+                        <system value="http://terminology.hl7.org.au/CodeSystem/resource-tag"/>
+                        <code value="fulfilment-task"/>
+                    </tag>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="PLAC"/>
+                            <display value="Placer Identifier"/>
+                        </coding>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
+                    <value value="EMC1552642-1110-03"/>
+                    <assigner>
+                        <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000104"/>
+                        <display value="Elimbah Medical Centre"/>
+                    </assigner>
+                </identifier>
+                <groupIdentifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="PGN"/>
+                        </coding>
+                        <text value="Placer Group Number"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
+                    <value value="EMC1552642-1110"/>
+                    <assigner>
+                        <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000104"/>
+                        <display value="Elimbah Medical Centre"/>
+                    </assigner>
+                </groupIdentifier>
+                <partOf>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000201"/>
+                </partOf>
+                <status value="requested"/>
+                <intent value="order"/>
+                <priority value="routine"/>
+                <code>
+                    <coding>
+                        <system value="http://hl7.org/fhir/CodeSystem/task-code"/>
+                        <code value="fulfill"/>
+                    </coding>
+                </code>
+                <focus>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000109"/>
+                </focus>
+                <for>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000101"/>
+                </for>
+                <authoredOn value="2025-02-21"/>
+                <requester>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000103"/>
+                </requester>
+                <owner>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000105"/>
+                </owner>
+            </Task>
+        </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Task"/>
+        </request>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:6f5f6f11-0001-4001-8001-000000000204"/>
+        <resource>
+            <Task xmlns="http://hl7.org/fhir">
+                <meta>
+                    <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-task-diagnosticrequest"/>
+                    <tag>
+                        <system value="http://terminology.hl7.org.au/CodeSystem/resource-tag"/>
+                        <code value="fulfilment-task"/>
+                    </tag>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="PLAC"/>
+                            <display value="Placer Identifier"/>
+                        </coding>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
+                    <value value="EMC1552642-1110-04"/>
+                    <assigner>
+                        <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000104"/>
+                        <display value="Elimbah Medical Centre"/>
+                    </assigner>
+                </identifier>
+                <groupIdentifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="PGN"/>
+                        </coding>
+                        <text value="Placer Group Number"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
+                    <value value="EMC1552642-1110"/>
+                    <assigner>
+                        <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000104"/>
+                        <display value="Elimbah Medical Centre"/>
+                    </assigner>
+                </groupIdentifier>
+                <partOf>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000201"/>
+                </partOf>
+                <status value="requested"/>
+                <intent value="order"/>
+                <priority value="routine"/>
+                <code>
+                    <coding>
+                        <system value="http://hl7.org/fhir/CodeSystem/task-code"/>
+                        <code value="fulfill"/>
+                    </coding>
+                </code>
+                <focus>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000110"/>
+                </focus>
+                <for>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000101"/>
+                </for>
+                <authoredOn value="2025-02-21"/>
+                <requester>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000103"/>
+                </requester>
+                <owner>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000105"/>
+                </owner>
+            </Task>
+        </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Task"/>
+        </request>
+    </entry>
+
+    <entry>
+        <fullUrl value="urn:uuid:6f5f6f11-0001-4001-8001-000000000205"/>
+        <resource>
+            <Task xmlns="http://hl7.org/fhir">
+                <meta>
+                    <profile value="http://hl7.org.au/fhir/ereq/StructureDefinition/au-erequesting-task-diagnosticrequest"/>
+                    <tag>
+                        <system value="http://terminology.hl7.org.au/CodeSystem/resource-tag"/>
+                        <code value="fulfilment-task"/>
+                    </tag>
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="PLAC"/>
+                            <display value="Placer Identifier"/>
+                        </coding>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
+                    <value value="EMC1552642-1110-05"/>
+                    <assigner>
+                        <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000104"/>
+                        <display value="Elimbah Medical Centre"/>
+                    </assigner>
+                </identifier>
+                <groupIdentifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                            <code value="PGN"/>
+                        </coding>
+                        <text value="Placer Group Number"/>
+                    </type>
+                    <system value="http://ns.electronichealth.net.au/id/hpio-scoped/order/1.0/8003629900040359"/>
+                    <value value="EMC1552642-1110"/>
+                    <assigner>
+                        <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000104"/>
+                        <display value="Elimbah Medical Centre"/>
+                    </assigner>
+                </groupIdentifier>
+                <partOf>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000201"/>
+                </partOf>
+                <status value="requested"/>
+                <intent value="order"/>
+                <priority value="routine"/>
+                <code>
+                    <coding>
+                        <system value="http://hl7.org/fhir/CodeSystem/task-code"/>
+                        <code value="fulfill"/>
+                    </coding>
+                </code>
+                <focus>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000111"/>
+                </focus>
+                <for>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000101"/>
+                </for>
+                <authoredOn value="2025-02-21"/>
+                <requester>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000103"/>
+                </requester>
+                <owner>
+                    <reference value="urn:uuid:6f5f6f11-0001-4001-8001-000000000105"/>
+                </owner>
+            </Task>
+        </resource>
+        <request>
+            <method value="POST"/>
+            <url value="Task"/>
+        </request>
+    </entry>
+
+</Bundle>
