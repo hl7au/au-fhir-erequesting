@@ -11,15 +11,15 @@ description: This implementation guide is provided to support the use of FHIR®�
 status: active # draft | active | retired | unknown
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
-    valueCode: trial-use
+    valueCode: draft
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm  #<<<<< the default AFMM level for the artifacts in this IG
     valueInteger: 1
-version: 1.0.0
+version: 1.0.1-preview1
 fhirVersion: 4.0.1
 language: en
 copyright: Used by permission of HL7 International, all rights reserved Creative Commons License. HL7 Australia© 2024+; Licensed Under Creative Commons No Rights Reserved.
 copyrightYear: 2024
-releaseLabel: Working Standard # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: Preview # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 license: CC0-1.0 
 publisher:
   name: HL7 Australia
