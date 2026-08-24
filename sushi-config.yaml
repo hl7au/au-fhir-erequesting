@@ -11,7 +11,7 @@ description: This implementation guide is provided to support the use of FHIRÂ®Â
 status: active # draft | active | retired | unknown
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
-    valueCode: draft
+    valueCode: trial-use
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm  #<<<<< the default AFMM level for the artifacts in this IG
     valueInteger: 1
 version: 1.0.1-preview1
@@ -136,7 +136,6 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - generate #generate: Log when producing an individual resource (troubleshooting only - leave off)
     - init #init: Messages describing the start up process (for debugging)
     - progress #progress: Overall progress messages
-  releaselabel: CI Build
   fmm-definition: https://build.fhir.org/ig/hl7au/au-fhir-base/generalguidance.html#maturity-levels
 #
 # The parameters property represents IG.definition.parameter. Rather

@@ -3,8 +3,8 @@
     "version" : "1.0.1-preview1",
     "path" : "http://hl7.org.au/fhir/ereq/1.0.1-preview1",
     "mode" : "working",
-    "status" : "preview",
+    "status" : "trial-use",
     "sequence" : "R1",
-    "desc" : "This preview snapshot includes the hl7.au.fhir.template migration and the IPS 2.0.1 technical correction, published for review ahead of a 1.0.1 release.",
+    "desc" : "This technical correction to the AU eRequesting Implementation Guide includes the IPS 2.0.1 technical correction, reviewed and commented upon by the public through the HL7 errata process.",
     "first" : false
 }
