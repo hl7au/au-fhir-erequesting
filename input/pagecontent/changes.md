@@ -16,6 +16,14 @@ This change log documents the significant updates and resolutions implemented fr
 - [AU eRequesting Diagnostic Request](StructureDefinition-au-erequesting-diagnosticrequest.html):
   - added placer slice to ServiceRequest.identifier as Must Support with cardinality 1..1, typed with code PLAC, to carry the placer's per-test identifier distinct from the group identifier in ServiceRequest.requisition [AU eReq: FHIR-50081](https://jira.hl7.org/browse/FHIR-50081)
 
+### Release 1.0.1
+- Publication date: TBA
+- Publication status: Working Standard (Trial Use)
+- Based on FHIR version: 4.0.1
+
+#### Changes in This Version
+- This technical correction to the AU eRequesting Implementation Guide includes the IPS 2.0.1 technical correction, reviewed and commented upon by the public through the HL7 errata process. [AU eReq:  FHIR-58675](https://jira.hl7.org/browse/FHIR-58675)
+
 ### Release 1.0.0
 - Publication date: 11-02-2026
 - Publication status: Working Standard (Trial Use)
