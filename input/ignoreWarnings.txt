@@ -3,6 +3,9 @@
 # === ERROR 01: This issue will be fixed in a later version of the IG Publisher (see: https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Publisher.20v2.2E0.2E24.20-.20error.20in.20local.20build). ===
 No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters' 
 
+# === ERROR 02: The IG Publisher does not package examples.ttl.zip even though Turtle output is not excluded, so the link on the downloads page cannot be resolved. Reported upstream (see: https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/The.20link.20to.20examples.2Ettl.2Ezip.20for.20TTL.20cannot.20be.20resolved/with/619164111). ===
+The link 'examples.ttl.zip' for "TTL" cannot be resolved
+
 # === WARNING 01: These are warnings for publication artefacts not used in HL7 AU specifications at this time and are accepted by the AU FHIR WG. ===
 The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
