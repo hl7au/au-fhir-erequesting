@@ -1,5 +1,8 @@
 == Suppressed Messages ==
 
+# === ERROR 02: The IG Publisher does not package examples.ttl.zip even though Turtle output is not excluded, so the link on the downloads page cannot be resolved. Reported upstream (see: https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/The.20link.20to.20examples.2Ettl.2Ezip.20for.20TTL.20cannot.20be.20resolved/with/619164111). ===
+The link 'examples.ttl.zip' for "TTL" cannot be resolved
+
 # HL7 core warnings
 The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
