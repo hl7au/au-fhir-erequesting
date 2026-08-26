@@ -1,3 +1,11 @@
+### Release 1.0.1
+- Publication date: TBA
+- Publication status: Working Standard (Trial Use)
+- Based on FHIR version: 4.0.1
+
+#### Changes in This Version
+- This technical correction to the AU eRequesting Implementation Guide includes the IPS 2.0.1 technical correction, reviewed and commented upon by the public through the HL7 errata process. [AU eReq:  FHIR-58675](https://jira.hl7.org/browse/FHIR-58675)
+
 ### Release 1.0.0
 - Publication date: 2026-02-11
 - Publication status: Working Standard (Trial Use)
