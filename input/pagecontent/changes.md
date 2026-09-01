@@ -4,7 +4,7 @@
 - Based on FHIR version: 4.0.1
 
 #### Changes in This Version
-- This technical correction to the AU eRequesting Implementation Guide includes the IPS 2.0.1 technical correction, reviewed and commented upon by the public through the HL7 errata process. [AU eReq:  FHIR-58675](https://jira.hl7.org/browse/FHIR-58675)
+- This technical correction to the AU eRequesting Implementation Guide 1.0.0 updates the dependency from IPS 2.0.0 to IPS 2.0.1, which includes an updated dependency on the FHIR Extensions package version 5.3.0. [AU eReq:  FHIR-58675](https://jira.hl7.org/browse/FHIR-58675)
 
 ### Release 1.0.0
 - Publication date: 2026-02-11
