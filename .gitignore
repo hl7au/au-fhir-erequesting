@@ -7,6 +7,12 @@
 /.vs/
 /fsh-generated/
 
+# Node dependencies (not required to be source controlled) #
+##############################################################
+/node_modules/
+/package.json
+/package-lock.json
+
 
 # Don't commit this because it's so large #
 ###########################################

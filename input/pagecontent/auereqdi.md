@@ -287,18 +287,18 @@ Column attribute descriptions are as follows:
   <tr>
     <td rowspan="4">Adverse reaction risk summary</td>
     <td colspan="2">Substance name</td>
-    <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-allergyintolerance.html">AU Core AllergyIntolerance</a></td>
+    <td><a href="https://hl7.org.au/fhir/core/2.0.0/StructureDefinition-au-core-allergyintolerance.html">AU Core AllergyIntolerance</a></td>
     <td><code>AllergyIntolerance.code</code></td>
     <td rowspan="4">This AUCDI Data Group is a <a href="future.html#future-candidate-requirements-under-consideration">Future Candidate Requirement Under Consideration</a>. Future versions of AU eRequesting will develop and test approaches to addressing Adverse reaction risk summary.</td>
   </tr>
   <tr>
     <td colspan="2">Manifestation</td>
-    <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-allergyintolerance.html">AU Core AllergyIntolerance</a></td>
+    <td><a href="https://hl7.org.au/fhir/core/2.0.0/StructureDefinition-au-core-allergyintolerance.html">AU Core AllergyIntolerance</a></td>
     <td><code>AllergyInterolance.reaction</code></td>
   </tr>
   <tr>
     <td colspan="2">Comment</td>
-    <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-allergyintolerance.html">AU Core AllergyIntolerance</a></td>
+    <td><a href="https://hl7.org.au/fhir/core/2.0.0/StructureDefinition-au-core-allergyintolerance.html">AU Core AllergyIntolerance</a></td>
     <td><code>AllergyIntolerance.note</code></td>
   </tr>
   <tr>
@@ -309,23 +309,23 @@ Column attribute descriptions are as follows:
   <tr>
     <td rowspan="5">Problem/Diagnosis summary</td>
     <td colspan="2">Problem / Diagnosis name</td>
-    <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-condition.html">AU Core Condition</a></td>
+    <td><a href="https://hl7.org.au/fhir/core/2.0.0/StructureDefinition-au-core-condition.html">AU Core Condition</a></td>
     <td><code>Condition.code</code></td>
     <td rowspan="5">This AUCDI Data Group is a <a href="future.html#future-candidate-requirements-under-consideration">Future Candidate Requirement Under Consideration</a>. Future versions of AU eRequesting will develop and test approaches to addressing Problem/Diagnosis summary.</td>
   </tr>
   <tr>
     <td colspan="2">Body site/laterality</td>
-    <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-condition.html">AU Core Condition</a></td>
+    <td><a href="https://hl7.org.au/fhir/core/2.0.0/StructureDefinition-au-core-condition.html">AU Core Condition</a></td>
     <td><code>Condition.code</code></td>
   </tr>
   <tr>
     <td colspan="2">Status</td>
-    <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-condition.html">AU Core Condition</a></td>
+    <td><a href="https://hl7.org.au/fhir/core/2.0.0/StructureDefinition-au-core-condition.html">AU Core Condition</a></td>
     <td><code>Condition.clinicalStatus</code></td>
   </tr>
   <tr>
     <td colspan="2">Comment</td>
-    <td><a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-condition.html">AU Core Condition</a></td>
+    <td><a href="https://hl7.org.au/fhir/core/2.0.0/StructureDefinition-au-core-condition.html">AU Core Condition</a></td>
     <td><code>Condition.note</code></td>
   </tr>
   <tr>
@@ -338,7 +338,7 @@ Column attribute descriptions are as follows:
     <td colspan="2">Sex assigned at birth</td>
     <td><a href="StructureDefinition-au-erequesting-patient.html">AU eRequesting Patient</a></td>
     <td><code>Patient.extension.where(url='http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender')</code></td>
-    <td>The <a href="http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender">Person Recorded Sex or Gender extension</a> is profiled by <a href="https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-rsg-sexassignedab.html">AU Core Sex Assigned At Birth (RSG)</a> to represent the concept of Sex assigned at birth.</td>
+    <td>The <a href="http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender">Person Recorded Sex or Gender extension</a> is profiled by <a href="https://hl7.org.au/fhir/core/2.0.0/StructureDefinition-au-core-rsg-sexassignedab.html">AU Core Sex Assigned At Birth (RSG)</a> to represent the concept of Sex assigned at birth.</td>
   </tr>
   <tr>
     <td colspan="2">Gender identity</td>
@@ -356,7 +356,7 @@ Column attribute descriptions are as follows:
     <td colspan="2">Last updated</td>
     <td>-</td>
     <td>-</td>
-    <td>This AUCDI element is a <a href="https://build.fhir.org/ig/hl7au/au-fhir-core/future.html#future-candidate-requirements-under-consideration">Future Candidate Requirement Under Consideration</a> in AU Core. Future versions of AU Core will develop and test approaches to addressing Last Updated.</td>
+    <td>This AUCDI element is a <a href="https://hl7.org.au/fhir/core/2.0.0/future.html#future-candidate-requirements-under-consideration">Future Candidate Requirement Under Consideration</a> in AU Core. Future versions of AU Core will develop and test approaches to addressing Last Updated.</td>
   </tr>
 </tbody>
 </table>

@@ -4,7 +4,7 @@
   - Imaging requests **SHALL** use [AU eRequesting Imaging Request](StructureDefinition-au-erequesting-servicerequest-imag.html) profile 
 - This profile supports the sex and gender related concept of Sex Parameter for Clinical Use:
    - When exchanging concepts of sex or gender, refer to the guidance in [Sex and Gender](sex-and-gender.html) and the [Gender Harmony Implementation Guide](http://hl7.org/xprod/ig/uv/gender-harmony/).
-- See guidance on the construction of identifiers in each Identifier profile and the section on [Business Identifiers](https://build.fhir.org/ig/hl7au/au-fhir-base/generalguidance.html#business-identifiers) in AU Base.
+- See guidance on the construction of identifiers in each Identifier profile and the section on [Business Identifiers](https://hl7.org.au/fhir/6.0.0/generalguidance.html#business-identifiers) in AU Base.
 - See the [AU eRequesting Workflow Guidance](workflow.html) page for guidance on managing workflow states in AU eRequesting.
 - See the [Diagnostic Request Grouping](general-guidance.html#diagnostic-request-grouping) section for guidance on grouping diagnostic requests in AU eRequesting.
 - The provision of an insurance attribute describes a recommendation to be considered by the filler and does not guarantee that this recommendation will be satisfied.

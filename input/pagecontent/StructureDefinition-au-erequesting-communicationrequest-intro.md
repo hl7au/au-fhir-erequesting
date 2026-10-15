@@ -4,7 +4,7 @@
   - Communication requests about providing a copy of the report to a patient or clinician **SHALL** use the [AU eRequesting CommunicationRequest CopyTo](StructureDefinition-au-erequesting-communicationrequest-copyto.html) profile
   - Communication requests about communication with a patient from a filler **SHALL** use the [AU eRequesting CommunicationRequest Patient](StructureDefinition-au-erequesting-communicationrequest-patient.html) profile
   - Communication requests about communication from a filler to a clinical provider to notify them of urgent results **SHALL** use the [AU eRequesting CommunicationRequest Urgent Provider](StructureDefinition-au-erequesting-communicationrequest-urgentprovider.html) profile
-- See guidance on the construction of identifiers in each Identifier profile and the section on [Business Identifiers](https://build.fhir.org/ig/hl7au/au-fhir-base/generalguidance.html#business-identifiers) in AU Base.
+- See guidance on the construction of identifiers in each Identifier profile and the section on [Business Identifiers](https://hl7.org.au/fhir/6.0.0/generalguidance.html#business-identifiers) in AU Base.
 - The key *Must Support* elements that distinguish the AU eRequesting CommunicationRequest profiles are outlined below:
 
 |Element|AU eRequesting CommunicationRequest CopyTo|AU eRequesting CommunicationRequest Patient|AU eRequesting CommunicationRequest Urgent Provider|

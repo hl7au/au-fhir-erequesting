@@ -1,9 +1,17 @@
-### Release TBD
-- Expected Publication date: TBD
-- Expected Publication status: TBD
+### Release 1.0.1
+- Publication date: TBA
+- Publication status: Working Standard (Trial Use)
 - Based on FHIR version: 4.0.1
 
-This change log documents the significant updates and resolutions implemented from version [1.0.0](https://hl7.org.au/fhir/ereq/1.0.0/index.html) to TBD. The list below includes substantive changes to mandatory and *Must Support* elements inherited from AU Base.
+#### Changes in This Version
+- This technical correction to the AU eRequesting Implementation Guide 1.0.0 updates the dependency from IPS 2.0.0 to IPS 2.0.1, which includes an updated dependency on the FHIR Extensions package version 5.3.0. [AU eReq:  FHIR-58675](https://jira.hl7.org/browse/FHIR-58675)
+
+### Release 1.0.0
+- Publication date: 2026-02-11
+- Publication status: Working Standard (Trial Use)
+- Based on FHIR version: 4.0.1
+
+This change log documents the significant updates and resolutions implemented from version [1.0.0-ballot](https://hl7.org.au/fhir/ereq/1.0.0-ballot/index.html) to [1.0.0](https://hl7.org.au/fhir/ereq/1.0.0/index.html). The list below includes substantive changes to mandatory and *Must Support* elements inherited from AU Base.
 
 #### Changes in This Version
 
@@ -196,7 +204,7 @@ This change log documents the significant updates and resolutions implemented fr
   - added [AU eRequesting Fasting Precondition](https://hl7.org.au/fhir/ereq/1.0.0-ballot/StructureDefinition-au-erequesting-fastingprecondition.html) extension as Must Support element with cardinality 0..1 [AU eReq: FHIR-49917](https://jira.hl7.org/browse/FHIR-49917).
   - added Must Support to ServiceRequest.occurrence [AU eReq: FHIR-49918](https://jira.hl7.org/browse/FHIR-49918).
   - added Must Support to ServiceRequest.quantity and constrain to type Quantity and Range [AU eReq: FHIR-49919](https://jira.hl7.org/browse/FHIR-49919)
-  - added pregnancyStatus slice to ServiceRequest.supportingInfo as Must Support with cardinality 0..1 referencing [Observation Pregnancy - Status (IPS)](https://build.fhir.org/ig/HL7/fhir-ips/StructureDefinition-Observation-pregnancy-status-uv-ips.html) [AU eReq: FHIR-47006](https://jira.hl7.org/browse/FHIR-47006)
+  - added pregnancyStatus slice to ServiceRequest.supportingInfo as Must Support with cardinality 0..1 referencing Observation Pregnancy - Status (IPS) [AU eReq: FHIR-47006](https://jira.hl7.org/browse/FHIR-47006)
   - added clinicalContext slice to ServiceRequest.supportingInfo as Must Support referencing [AU eRequesting Clinical Context DocumentReference](https://hl7.org.au/fhir/ereq/1.0.0-ballot/StructureDefinition-au-erequesting-clinicalcontext-documentreference.html) [AU eReq: FHIR-50956](https://jira.hl7.org/browse/FHIR-50956), [AU eReq: FHIR-50957](https://jira.hl7.org/browse/FHIR-50957)
   - added Must Support to ServiceRequest.priority [AU eReq: FHIR-46939](https://jira.hl7.org/browse/FHIR-46939)
   - added profile specific implementation guidance on the use of ServiceRequest.supportingInfo for pregnancy status and clinical context [AU eReq: FHIR-51565](https://jira.hl7.org/browse/FHIR-51565)

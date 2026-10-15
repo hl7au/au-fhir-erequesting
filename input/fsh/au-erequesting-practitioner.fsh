@@ -2,7 +2,7 @@ Profile: AUeRequestingPractitioner
 Parent: AUCorePractitioner
 Id: au-erequesting-practitioner
 Title: "AU eRequesting Practitioner"
-Description: "This profile sets minimum expectations for a Practitioner resource that is used to record, search, and fetch basic demographics and other administrative information about an individual practitioner. It is based on the [AU Core Practitioner](https://build.fhir.org/ig/hl7au/au-fhir-core/StructureDefinition-au-core-practitioner.html) profile and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the Practitioner resource when conforming to this profile."
+Description: "This profile sets minimum expectations for a Practitioner resource that is used to record, search, and fetch basic demographics and other administrative information about an individual practitioner. It is based on the [AU Core Practitioner](https://hl7.org.au/fhir/core/2.0.0/StructureDefinition-au-core-practitioner.html) profile and identifies the additional constraints, extensions, vocabularies and value sets that **SHALL** be present in the Practitioner resource when conforming to this profile."
 
 * ^status = #active
 
