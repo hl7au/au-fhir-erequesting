@@ -35,7 +35,7 @@ dependencies:
   hl7.fhir.au.core: 
     version: current
   hl7.fhir.uv.ips: 
-    version: 2.0.0
+    version: 2.0.1
 # The resources property corresponds to IG.definition.resource. SUSHI
 # auto-detects resources, but raw (non-FSH) examples such as the request
 # Bundles have no description the publisher can infer, so an explicit
