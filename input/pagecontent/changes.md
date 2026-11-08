@@ -3,7 +3,7 @@
 - Expected Publication status: TBD
 - Based on FHIR version: 4.0.1
 
-This change log documents the significant updates and resolutions implemented from version [1.0.0](https://hl7.org.au/fhir/ereq/1.0.0/index.html) to TBD. The list below includes substantive changes to mandatory and *Must Support* elements inherited from AU Base.
+This change log documents the significant updates and resolutions implemented from version [1.0.1](https://hl7.org.au/fhir/ereq/1.0.1/index.html) to TBD. The list below includes substantive changes to mandatory and *Must Support* elements inherited from AU Base.
 
 #### Changes in This Version
 - added Transaction Bundle Assembly guidance to the [Workflow](workflow.html) page, describing how to package a new diagnostic request as a single transaction, which resource types are required or optional in a placer transaction, and which profiles to use for each [AU eReq: FHIR-52518](https://jira.hl7.org/browse/FHIR-52518)
